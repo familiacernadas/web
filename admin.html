@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin - Árbol genealógico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Panel de administración</h1>
+    <nav><a href="index.html">Público</a></nav>
+  </header>
+
+  <main class="container">
+    <section id="auth">
+      <h2>Acceso</h2>
+      <div id="userArea">
+        <input id="email" placeholder="Correo" />
+        <input id="password" type="password" placeholder="Contraseña" />
+        <button id="loginBtn">Entrar</button>
+        <button id="logoutBtn" style="display:none">Salir</button>
+      </div>
+    </section>
+
+    <section id="adminPanel" style="display:none">
+      <h2>Gestionar miembros</h2>
+      <form id="memberForm">
+        <input id="memberId" type="hidden" />
+        <input id="name" placeholder="Nombre completo" required />
+        <textarea id="description" placeholder="Descripción / notas"></textarea>
+        <input id="photo" type="file" accept="image/*" />
+        <div style="display:flex;gap:8px">
+          <button type="submit">Guardar</button>
+          <button id="cancelEdit" type="button">Cancelar</button>
+        </div>
+      </form>
+
+      <h3>Miembros existentes</h3>
+      <ul id="list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">Admin - Familia Cernadas</footer>
+
+  <script type="module">
+    import { initFirebase } from './admin.js';
+    const firebaseConfig = {
+      apiKey: "AIzaSyCwL9iZXaPAwFpEkMcsogbXgwitQjZWHx4",
+      authDomain: "familia-cernadas.firebaseapp.com",
+      projectId: "familia-cernadas",
+      storageBucket: "familia-cernadas.firebasestorage.app",
+      messagingSenderId: "218976620410",
+      appId: "1:218976620410:web:3719cbee4c9dda323790c3",
+      measurementId: "G-BCX4SGNW38"
+    };
+    initFirebase(firebaseConfig);
+  </script>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

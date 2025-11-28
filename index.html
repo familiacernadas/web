@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Árbol genealógico - Pública</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Árbol genealógico</h1>
+    <nav><a href="admin.html">Administración</a></nav>
+  </header>
+
+  <main class="container">
+    <section id="search">
+      <input id="searchInput" placeholder="Buscar por nombre..." />
+    </section>
+
+    <section id="members" class="grid"></section>
+  </main>
+
+  <footer class="site-footer">Familia Cernadas — sitio público.</footer>
+
+  <script type="module">
+    import { initFirebase, fetchMembers } from './admin.js';
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCwL9iZXaPAwFpEkMcsogbXgwitQjZWHx4",
+      authDomain: "familia-cernadas.firebaseapp.com",
+      projectId: "familia-cernadas",
+      storageBucket: "familia-cernadas.firebasestorage.app",
+      messagingSenderId: "218976620410",
+      appId: "1:218976620410:web:3719cbee4c9dda323790c3",
+      measurementId: "G-BCX4SGNW38"
+    };
+
+    const app = initFirebase(firebaseConfig, { readOnly: true });
+
+    const searchInput = document.getElementById('searchInput');
+    const membersEl = document.getElementById('members');
+
+    async function renderMembers(q){
+      membersEl.innerHTML = '<p>Cargando...</p>';
+      const list = await fetchMembers(q);
+      if(!list.length) { membersEl.innerHTML = '<p>No hay miembros.</p>'; return; }
+      membersEl.innerHTML = '';
+      list.forEach(m => {
+        const card = document.createElement('article');
+        card.className = 'card';
+        const photo = m.photoUrl ? `<img src="${m.photoUrl}" alt="">` : '<div class="noimg">No foto</div>';
+        card.innerHTML = `
+          <div class="thumb">${photo}</div>
+          <div class="info">
+            <h3>${m.name}</h3>
+            <p>${m.description || ''}</p>
+            <p style="font-size:12px;color:#666">${m.createdAt ? new Date(m.createdAt).toLocaleDateString() : ''}</p>
+          </div>
+        `;
+        membersEl.appendChild(card);
+      });
+    }
+
+    searchInput.addEventListener('input', e => renderMembers(e.target.value.trim()));
+
+    // initial load
+    renderMembers('');
+  </script>
+</body>
+</html>
