@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Admin - Árbol genealógico</title>
+  <title>Admin - Familia Cernadas</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <h1>Panel de administración</h1>
-    <nav><a href="index.html">Público</a></nav>
+    <nav><a href="index.html">Público</a> · <a href="tree.html">Árbol</a></nav>
   </header>
 
   <main class="container">
@@ -27,9 +27,22 @@
       <h2>Gestionar miembros</h2>
       <form id="memberForm">
         <input id="memberId" type="hidden" />
-        <input id="name" placeholder="Nombre completo" required />
-        <textarea id="description" placeholder="Descripción / notas"></textarea>
-        <input id="photo" type="file" accept="image/*" />
+        <label>Nombre (obligatorio)<br><input id="name" placeholder="Nombre completo" required /></label>
+        <label>Fecha de nacimiento<br><input id="birthDate" type="date" /></label>
+        <label>Género<br>
+          <select id="gender">
+            <option value="">--</option>
+            <option value="male">Hombre</option>
+            <option value="female">Mujer</option>
+            <option value="other">Otro</option>
+          </select>
+        </label>
+        <label>Descripción / notas<br><textarea id="description" placeholder="Notas"></textarea></label>
+        <label>Padre<br><select id="parent1"><option value="">(ninguno)</option></select></label>
+        <label>Madre<br><select id="parent2"><option value="">(ninguno)</option></select></label>
+        <label>Pareja<br><select id="partner"><option value="">(ninguno)</option></select></label>
+        <label>Foto (opcional)<br><input id="photo" type="file" accept="image/*" /></label>
+
         <div style="display:flex;gap:8px">
           <button type="submit">Guardar</button>
           <button id="cancelEdit" type="button">Cancelar</button>
@@ -37,25 +50,14 @@
       </form>
 
       <h3>Miembros existentes</h3>
+      <input id="filter" placeholder="Filtrar por nombre..." />
       <ul id="list"></ul>
     </section>
   </main>
 
   <footer class="site-footer">Admin - Familia Cernadas</footer>
 
-  <script type="module">
-    import { initFirebase } from './admin.js';
-    const firebaseConfig = {
-      apiKey: "AIzaSyCwL9iZXaPAwFpEkMcsogbXgwitQjZWHx4",
-      authDomain: "familia-cernadas.firebaseapp.com",
-      projectId: "familia-cernadas",
-      storageBucket: "familia-cernadas.firebasestorage.app",
-      messagingSenderId: "218976620410",
-      appId: "1:218976620410:web:3719cbee4c9dda323790c3",
-      measurementId: "G-BCX4SGNW38"
-    };
-    initFirebase(firebaseConfig);
-  </script>
-  <script type="module" src="admin.js"></script>
+  <script type="module" src="./firebase.js"></script>
+  <script type="module" src="./admin.js"></script>
 </body>
 </html>

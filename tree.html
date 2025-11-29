@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Árbol familiar</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://unpkg.com/vis-network/styles/vis-network.min.css" rel="stylesheet" />
+</head><body>
+<header class="site-header"><h1>Árbol familiar</h1><nav><a href="index.html">Público</a></nav></header>
+<main class="container">
+  <div style="margin-bottom:8px">
+    <select id="rootSel"><option value="">(selecciona)</option></select>
+    <button id="centerBtn">Centrar</button>
+  </div>
+  <div id="network" style="height:700px; border:1px solid #ddd; background:#fff;"></div>
+</main>
+
+<script type="module" src="./tree.js"></script>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</body></html>

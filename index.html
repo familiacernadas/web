@@ -9,7 +9,7 @@
 <body>
   <header class="site-header">
     <h1>Árbol genealógico</h1>
-    <nav><a href="admin.html">Administración</a></nav>
+    <nav><a href="admin.html">Administración</a> · <a href="tree.html">Árbol</a></nav>
   </header>
 
   <main class="container">
@@ -23,27 +23,25 @@
   <footer class="site-footer">Familia Cernadas — sitio público.</footer>
 
   <script type="module">
-    import { initFirebase, fetchMembers } from './admin.js';
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyCwL9iZXaPAwFpEkMcsogbXgwitQjZWHx4",
-      authDomain: "familia-cernadas.firebaseapp.com",
-      projectId: "familia-cernadas",
-      storageBucket: "familia-cernadas.firebasestorage.app",
-      messagingSenderId: "218976620410",
-      appId: "1:218976620410:web:3719cbee4c9dda323790c3",
-      measurementId: "G-BCX4SGNW38"
-    };
-
-    const app = initFirebase(firebaseConfig, { readOnly: true });
+    import { db } from './firebase.js';
+    import { collection, getDocs, query, orderBy } from 'https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js';
 
     const searchInput = document.getElementById('searchInput');
     const membersEl = document.getElementById('members');
 
-    async function renderMembers(q){
+    async function fetchMembers(q=''){
+      const col = collection(db,'members');
+      const snap = await getDocs(query(col, orderBy('name')));
+      const list = [];
+      snap.forEach(d => { const data = d.data(); data.id = d.id; list.push(data); });
+      if(q) return list.filter(x => (x.name||'').toLowerCase().includes(q.toLowerCase()));
+      return list;
+    }
+
+    async function renderMembers(q=''){
       membersEl.innerHTML = '<p>Cargando...</p>';
       const list = await fetchMembers(q);
-      if(!list.length) { membersEl.innerHTML = '<p>No hay miembros.</p>'; return; }
+      if(!list.length){ membersEl.innerHTML = '<p>No hay miembros.</p>'; return; }
       membersEl.innerHTML = '';
       list.forEach(m => {
         const card = document.createElement('article');
@@ -54,7 +52,7 @@
           <div class="info">
             <h3>${m.name}</h3>
             <p>${m.description || ''}</p>
-            <p style="font-size:12px;color:#666">${m.createdAt ? new Date(m.createdAt).toLocaleDateString() : ''}</p>
+            <p style="font-size:12px;color:#666">${m.birthDate || ''}</p>
           </div>
         `;
         membersEl.appendChild(card);
@@ -62,8 +60,6 @@
     }
 
     searchInput.addEventListener('input', e => renderMembers(e.target.value.trim()));
-
-    // initial load
     renderMembers('');
   </script>
 </body>

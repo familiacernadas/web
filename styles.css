@@ -1,4 +1,4 @@
-:root{ --bg:#f7f7fb; --card:#fff; --accent:#1f6feb; --muted:#666; --maxw:1000px; }
+:root{ --bg:#f7f7fb; --card:#fff; --accent:#1f6feb; --muted:#666; --maxw:1200px; }
 *{box-sizing:border-box}
 body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial; background:var(--bg); color:#111; margin:0; padding:0}
 .container{max-width:var(--maxw); margin:24px auto; padding:12px}
@@ -14,4 +14,4 @@ body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial; background:var(--bg)
 #list{list-style:none; padding:0; margin:0}
 #list li{background:var(--card); padding:8px; margin-bottom:6px; border-radius:6px; display:flex; justify-content:space-between; align-items:center}
 button{background:var(--accent); color:white; border:0; padding:8px 12px; border-radius:6px; cursor:pointer}
-input,textarea{padding:8px; border-radius:6px; border:1px solid #ddd; width:100%}
+input,textarea,select{padding:8px; border-radius:6px; border:1px solid #ddd; width:100%}
