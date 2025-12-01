@@ -1,63 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Admin - Familia Cernadas</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Panel Administración - Familia Cernadas</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <h1>Panel de administración</h1>
-    <nav><a href="index.html">Público</a> · <a href="tree.html">Árbol</a></nav>
-  </header>
 
-  <main class="container">
-    <section id="auth">
-      <h2>Acceso</h2>
-      <div id="userArea">
-        <input id="email" placeholder="Correo" />
-        <input id="password" type="password" placeholder="Contraseña" />
-        <button id="loginBtn">Entrar</button>
-        <button id="logoutBtn" style="display:none">Salir</button>
-      </div>
-    </section>
+<h1>Administración de Miembros</h1>
 
-    <section id="adminPanel" style="display:none">
-      <h2>Gestionar miembros</h2>
-      <form id="memberForm">
-        <input id="memberId" type="hidden" />
-        <label>Nombre (obligatorio)<br><input id="name" placeholder="Nombre completo" required /></label>
-        <label>Fecha de nacimiento<br><input id="birthDate" type="date" /></label>
-        <label>Género<br>
-          <select id="gender">
-            <option value="">--</option>
-            <option value="male">Hombre</option>
-            <option value="female">Mujer</option>
-            <option value="other">Otro</option>
-          </select>
-        </label>
-        <label>Descripción / notas<br><textarea id="description" placeholder="Notas"></textarea></label>
-        <label>Padre<br><select id="parent1"><option value="">(ninguno)</option></select></label>
-        <label>Madre<br><select id="parent2"><option value="">(ninguno)</option></select></label>
-        <label>Pareja<br><select id="partner"><option value="">(ninguno)</option></select></label>
-        <label>Foto (opcional)<br><input id="photo" type="file" accept="image/*" /></label>
+<section id="loginSection">
+    <h2>Acceso</h2>
+    <input id="email" placeholder="Email admin">
+    <input id="pass" placeholder="Contraseña" type="password">
+    <button id="loginBtn">Entrar</button>
+</section>
 
-        <div style="display:flex;gap:8px">
-          <button type="submit">Guardar</button>
-          <button id="cancelEdit" type="button">Cancelar</button>
-        </div>
-      </form>
+<section id="adminPanel" class="hidden">
+    <h2>Nuevo / Editar miembro</h2>
+    
+    <form id="memberForm">
+        <input name="nombre" placeholder="Nombre">
+        <input name="apellidos" placeholder="Apellidos">
+        <input name="paisNac" placeholder="País nacimiento">
+        <input name="lugarNac" placeholder="Lugar nacimiento">
+        <input name="yearNac" placeholder="Año nacimiento">
+        <input name="fechaNac" placeholder="Fecha nacimiento">
+        <input name="fechaMatr" placeholder="Fecha matrimonio">
+        <input name="lugarMatr" placeholder="Lugar matrimonio">
+        <input name="email" placeholder="Mail contacto">
+        <input name="oficio" placeholder="Oficio">
+        <input name="aficiones" placeholder="Aficiones">
+        <input name="yearFall" placeholder="Año fallecimiento">
+        <input name="fechaFall" placeholder="Fecha fallecimiento">
+        <input name="lugarFall" placeholder="Lugar fallecimiento">
+        <input name="causaFall" placeholder="Causa fallecimiento">
 
-      <h3>Miembros existentes</h3>
-      <input id="filter" placeholder="Filtrar por nombre..." />
-      <ul id="list"></ul>
-    </section>
-  </main>
+        <textarea name="historia" placeholder="Historia de vida"></textarea>
 
-  <footer class="site-footer">Admin - Familia Cernadas</footer>
+        <label>Fotografía</label>
+        <input type="file" id="foto">
 
-  <script type="module" src="./firebase.js"></script>
-  <script type="module" src="./admin.js"></script>
+        <label>ID Padre</label>
+        <input name="padre">
+
+        <label>ID Madre</label>
+        <input name="madre">
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <h2>Listado</h2>
+    <div id="lista"></div>
+</section>
+
+<script type="module" src="./js/admin.js"></script>
 </body>
 </html>

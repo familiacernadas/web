@@ -1,66 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Árbol genealógico - Pública</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<title>Familia Cernadas - Árbol Genealógico</title>
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <h1>Árbol genealógico</h1>
-    <nav><a href="admin.html">Administración</a> · <a href="tree.html">Árbol</a></nav>
-  </header>
 
-  <main class="container">
-    <section id="search">
-      <input id="searchInput" placeholder="Buscar por nombre..." />
-    </section>
+<header>
+    <img src="img/escudo.png" class="escudo" />
+    <h1>Familia Cernadas</h1>
+    <p class="intro">
+        El apellido Cernadas tiene su origen en Galicia, documentado desde la Edad Media.
+        La familia se asocia tradicionalmente con labores agrícolas, ganaderas y oficios locales
+        en el área de A Coruña y Lugo.
+    </p>
+</header>
 
-    <section id="members" class="grid"></section>
-  </main>
+<section class="buscador">
+    <h2>Buscar miembro del árbol</h2>
+    <input type="text" id="searchInput" placeholder="Introduce un nombre..." />
+    <button onclick="buscarMiembro()">Buscar</button>
+</section>
 
-  <footer class="site-footer">Familia Cernadas — sitio público.</footer>
+<section id="tree"></section>
 
-  <script type="module">
-    import { db } from './firebase.js';
-    import { collection, getDocs, query, orderBy } from 'https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js';
-
-    const searchInput = document.getElementById('searchInput');
-    const membersEl = document.getElementById('members');
-
-    async function fetchMembers(q=''){
-      const col = collection(db,'members');
-      const snap = await getDocs(query(col, orderBy('name')));
-      const list = [];
-      snap.forEach(d => { const data = d.data(); data.id = d.id; list.push(data); });
-      if(q) return list.filter(x => (x.name||'').toLowerCase().includes(q.toLowerCase()));
-      return list;
-    }
-
-    async function renderMembers(q=''){
-      membersEl.innerHTML = '<p>Cargando...</p>';
-      const list = await fetchMembers(q);
-      if(!list.length){ membersEl.innerHTML = '<p>No hay miembros.</p>'; return; }
-      membersEl.innerHTML = '';
-      list.forEach(m => {
-        const card = document.createElement('article');
-        card.className = 'card';
-        const photo = m.photoUrl ? `<img src="${m.photoUrl}" alt="">` : '<div class="noimg">No foto</div>';
-        card.innerHTML = `
-          <div class="thumb">${photo}</div>
-          <div class="info">
-            <h3>${m.name}</h3>
-            <p>${m.description || ''}</p>
-            <p style="font-size:12px;color:#666">${m.birthDate || ''}</p>
-          </div>
-        `;
-        membersEl.appendChild(card);
-      });
-    }
-
-    searchInput.addEventListener('input', e => renderMembers(e.target.value.trim()));
-    renderMembers('');
-  </script>
+<script type="module" src="./js/tree.js"></script>
 </body>
 </html>
