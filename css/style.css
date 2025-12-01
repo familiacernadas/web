@@ -1,1 +1,167 @@
+/* ----------- ESTILO GENERAL ----------- */
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header .escudo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.intro {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: #444;
+}
+
+/* ----------- BUSCADOR ----------- */
+
+.buscador {
+    text-align: center;
+    padding: 20px;
+}
+
+.buscador input {
+    width: 240px;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+.buscador button {
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: none;
+    background: #004aad;
+    color: white;
+    cursor: pointer;
+}
+
+.buscador button:hover {
+    background: #00367f;
+}
+
+/* ----------- ÁRBOL GENEALÓGICO ----------- */
+
+.tree-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+    overflow-x: auto;
+}
+
+.nodo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+
+/* Pareja mostrada horizontalmente */
+.pareja {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Cada persona */
+.miembro {
+    text-align: center;
+    width: 150px;
+}
+
+.miembro .foto {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+}
+
+.nombre {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.detalles {
+    font-size: 0.85em;
+    color: #555;
+}
+
+/* Contenedor hijos */
+.hijos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #ccc;
+}
+
+/* ----------- ADMINISTRACIÓN ----------- */
+
+.hidden {
+    display: none;
+}
+
+#loginSection, #adminPanel {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    margin-bottom: 12px;
+}
+
+button {
+    background: #006ccb;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0053a0;
+}
+
+.item {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ----------- RESPONSIVE -----------*
