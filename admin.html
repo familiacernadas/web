@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Panel Administración - Familia Cernadas</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin - Familia Cernadas</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header>
+  <img src="img/escudo.png" class="escudo" alt="Escudo Cernadas">
+  <h1>Panel de administración</h1>
+</header>
 
-<h1>Administración de Miembros</h1>
-
-<section id="loginSection">
+<main class="container">
+  <section id="loginSection">
     <h2>Acceso</h2>
-    <input id="email" placeholder="Email admin">
-    <input id="pass" placeholder="Contraseña" type="password">
+    <input id="email" placeholder="Email" type="email">
+    <input id="password" placeholder="Contraseña" type="password">
     <button id="loginBtn">Entrar</button>
-</section>
+    <button id="logoutBtn" style="display:none;">Salir</button>
+  </section>
 
-<section id="adminPanel" class="hidden">
-    <h2>Nuevo / Editar miembro</h2>
-    
+  <section id="adminPanel" style="display:none;">
+    <h2>Miembros</h2>
+    <select id="memberSelect"><option value="">Nuevo miembro</option></select>
+    <button id="deleteBtn">Eliminar seleccionado</button>
+
     <form id="memberForm">
-        <input name="nombre" placeholder="Nombre">
-        <input name="apellidos" placeholder="Apellidos">
-        <input name="paisNac" placeholder="País nacimiento">
-        <input name="lugarNac" placeholder="Lugar nacimiento">
-        <input name="yearNac" placeholder="Año nacimiento">
-        <input name="fechaNac" placeholder="Fecha nacimiento">
-        <input name="fechaMatr" placeholder="Fecha matrimonio">
-        <input name="lugarMatr" placeholder="Lugar matrimonio">
-        <input name="email" placeholder="Mail contacto">
-        <input name="oficio" placeholder="Oficio">
-        <input name="aficiones" placeholder="Aficiones">
-        <input name="yearFall" placeholder="Año fallecimiento">
-        <input name="fechaFall" placeholder="Fecha fallecimiento">
-        <input name="lugarFall" placeholder="Lugar fallecimiento">
-        <input name="causaFall" placeholder="Causa fallecimiento">
+      <input id="memberId" type="hidden">
 
-        <textarea name="historia" placeholder="Historia de vida"></textarea>
+      <label>Nombre: <input id="nombre" required></label>
+      <label>Apellidos: <input id="apellidos" required></label>
 
-        <label>Fotografía</label>
-        <input type="file" id="foto">
+      <label>País nacimiento: <input id="paisNacimiento"></label>
+      <label>Lugar nacimiento: <input id="lugarNacimiento"></label>
+      <label>Año nacimiento: <input id="anoNacimiento" type="number"></label>
+      <label>Fecha nacimiento: <input id="fechaNacimiento" type="date"></label>
 
-        <label>ID Padre</label>
-        <input name="padre">
+      <label>Fecha matrimonio: <input id="fechaMatrimonio" type="date"></label>
+      <label>Lugar matrimonio: <input id="lugarMatrimonio"></label>
 
-        <label>ID Madre</label>
-        <input name="madre">
+      <label>Mail contacto: <input id="mailContacto" type="email"></label>
+      <label>Historia de vida: <textarea id="historiaVida" rows="3"></textarea></label>
+      <label>Oficio: <input id="oficio"></label>
+      <label>Aficiones: <input id="aficiones"></label>
 
-        <button type="submit">Guardar</button>
+      <label>Año fallecimiento: <input id="anoFallecimiento" type="number"></label>
+      <label>Fecha fallecimiento: <input id="fechaFallecimiento" type="date"></label>
+      <label>Lugar fallecimiento: <input id="lugarFallecimiento"></label>
+      <label>Causa fallecimiento: <input id="causaFallecimiento"></label>
+
+      <label>
+        <input type="checkbox" id="photoEnabled"> Este miembro tiene foto
+      </label>
+
+      <div id="photoFileContainer" style="display:none;">
+        <label>Nombre archivo foto (subir a repo /img): <input id="photoFile" placeholder="nombre_apellidos.jpg"></label>
+        <p class="note">Sube el archivo real a /img/ en el repositorio para que la web lo muestre.</p>
+      </div>
+
+      <label>Pareja: <select id="pareja"><option value="">(ninguno)</option></select></label>
+      <label>Hijos (Ctrl/Cmd+click para seleccionar varios): <select id="hijos" multiple size="6"></select></label>
+
+      <div style="margin-top:12px;">
+        <button type="submit" id="saveBtn">Guardar miembro</button>
+        <button type="button" id="cancelBtn">Cancelar</button>
+      </div>
     </form>
 
-    <h2>Listado</h2>
-    <div id="lista"></div>
-</section>
+    <h3>Listado</h3>
+    <input id="filter" placeholder="Filtrar por nombre..." />
+    <ul id="list"></ul>
+  </section>
+</main>
 
-<script type="module" src="./js/admin.js"></script>
+<script type="module" src="js/admin.js"></script>
 </body>
 </html>
