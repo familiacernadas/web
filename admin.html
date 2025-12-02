@@ -1,79 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Admin - Familia Cernadas</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Administración - Árbol Genealógico</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header>
-  <img src="img/escudo.png" class="escudo" alt="Escudo Cernadas">
-  <h1>Panel de administración</h1>
-</header>
 
-<main class="container">
-  <section id="loginSection">
-    <h2>Acceso</h2>
-    <input id="email" placeholder="Email" type="email">
-    <input id="password" placeholder="Contraseña" type="password">
-    <button id="loginBtn">Entrar</button>
-    <button id="logoutBtn" style="display:none;">Salir</button>
-  </section>
+  <h1>Panel de Administración</h1>
 
-  <section id="adminPanel" style="display:none;">
-    <h2>Miembros</h2>
-    <select id="memberSelect"><option value="">Nuevo miembro</option></select>
-    <button id="deleteBtn">Eliminar seleccionado</button>
+  <button onclick="location.href='index.html'">Volver a la vista pública</button>
 
-    <form id="memberForm">
-      <input id="memberId" type="hidden">
+  <h2>Añadir / Editar Miembro</h2>
 
-      <label>Nombre: <input id="nombre" required></label>
-      <label>Apellidos: <input id="apellidos" required></label>
+  <form id="memberForm">
+    <input type="hidden" id="memberId">
 
-      <label>País nacimiento: <input id="paisNacimiento"></label>
-      <label>Lugar nacimiento: <input id="lugarNacimiento"></label>
-      <label>Año nacimiento: <input id="anoNacimiento" type="number"></label>
-      <label>Fecha nacimiento: <input id="fechaNacimiento" type="date"></label>
+    <label>Nombre</label>
+    <input type="text" id="nombre" required>
 
-      <label>Fecha matrimonio: <input id="fechaMatrimonio" type="date"></label>
-      <label>Lugar matrimonio: <input id="lugarMatrimonio"></label>
+    <label>Apellidos</label>
+    <input type="text" id="apellidos" required>
 
-      <label>Mail contacto: <input id="mailContacto" type="email"></label>
-      <label>Historia de vida: <textarea id="historiaVida" rows="3"></textarea></label>
-      <label>Oficio: <input id="oficio"></label>
-      <label>Aficiones: <input id="aficiones"></label>
+    <label>País de nacimiento</label>
+    <input type="text" id="paisNac">
 
-      <label>Año fallecimiento: <input id="anoFallecimiento" type="number"></label>
-      <label>Fecha fallecimiento: <input id="fechaFallecimiento" type="date"></label>
-      <label>Lugar fallecimiento: <input id="lugarFallecimiento"></label>
-      <label>Causa fallecimiento: <input id="causaFallecimiento"></label>
+    <label>Lugar de nacimiento</label>
+    <input type="text" id="lugarNac">
 
-      <label>
-        <input type="checkbox" id="photoEnabled"> Este miembro tiene foto
-      </label>
+    <label>Año de nacimiento</label>
+    <input type="number" id="anioNac">
 
-      <div id="photoFileContainer" style="display:none;">
-        <label>Nombre archivo foto (subir a repo /img): <input id="photoFile" placeholder="nombre_apellidos.jpg"></label>
-        <p class="note">Sube el archivo real a /img/ en el repositorio para que la web lo muestre.</p>
-      </div>
+    <label>Año de fallecimiento</label>
+    <input type="number" id="anioFall">
 
-      <label>Pareja: <select id="pareja"><option value="">(ninguno)</option></select></label>
-      <label>Hijos (Ctrl/Cmd+click para seleccionar varios): <select id="hijos" multiple size="6"></select></label>
+    <label>Lugar de fallecimiento</label>
+    <input type="text" id="lugarFall">
 
-      <div style="margin-top:12px;">
-        <button type="submit" id="saveBtn">Guardar miembro</button>
-        <button type="button" id="cancelBtn">Cancelar</button>
-      </div>
-    </form>
+    <label>Padre (ID)</label>
+    <input type="text" id="padre">
 
-    <h3>Listado</h3>
-    <input id="filter" placeholder="Filtrar por nombre..." />
-    <ul id="list"></ul>
-  </section>
-</main>
+    <label>Madre (ID)</label>
+    <input type="text" id="madre">
 
-<script type="module" src="js/admin.js"></script>
+    <label>
+      <input type="checkbox" id="hasPhoto"> Tiene fotografía
+    </label>
+
+    <button type="submit">Guardar</button>
+  </form>
+
+  <h2>Miembros Registrados</h2>
+  <div id="memberList"></div>
+
+  <hr>
+
+  <h2>📸 Verificación de fotografías</h2>
+  <button onclick="checkMissingPhotos()">Detectar fotos faltantes</button>
+
+  <pre id="photoLog"></pre>
+
+
+  <!-- Firebase -->
+  <script src="firebase.js"></script>
+
+  <!-- Admin logic -->
+  <script>
+    // ================================
+    // CARGAR MIEMBROS
+    // ================================
+    async function loadMembers() {
+      const container = document.getElementById("memberList");
+      container.innerHTML = "Cargando...";
+
+      const snapshot = await db.collection("members").get();
+
+      let html = "<ul>";
+      snapshot.forEach(doc => {
+        const m = doc.data();
+        html += `<li>
+          <b>${m.nombre} ${m.apellidos}</b> (ID: ${doc.id})
+          <button onclick="editMember('${doc.id}')">Editar</button>
+          <button onclick="deleteMember('${doc.id}')">Eliminar</button>
+        </li>`;
+      });
+      html += "</ul>";
+
+      container.innerHTML = html;
+    }
+
+    loadMembers();
+
+
+    // ================================
+    // GUARDAR MIEMBRO
+    // ================================
+    document.getElementById("memberForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const id = document.getElementById("memberId").value;
+      const data = {
+        nombre: document.getElementById("nombre").value,
+        apellidos: document.getElementById("apellidos").value,
+        paisNac: document.getElementById("paisNac").value,
+        lugarNac: document.getElementById("lugarNac").value,
+        anioNac: parseInt(document.getElementById("anioNac").value),
+        anioFall: parseInt(document.getElementById("anioFall").value),
+        lugarFall: document.getElementById("lugarFall").value,
+        padre: document.getElementById("padre").value || null,
+        madre: document.getElementById("madre").value || null,
+        hasPhoto: document.getElementById("hasPhoto").checked
+      };
+
+      if (id) {
+        await db.collection("members").doc(id).update(data);
+      } else {
+        await db.collection("members").add(data);
+      }
+
+      alert("Guardado correctamente");
+      document.getElementById("memberForm").reset();
+      document.getElementById("memberId").value = "";
+
+      loadMembers();
+    });
+
+
+    // ================================
+    // EDITAR MIEMBRO
+    // ================================
+    async function editMember(id) {
+      const doc = await db.collection("members").doc(id).get();
+      const m = doc.data();
+
+      document.getElementById("memberId").value = id;
+      document.getElementById("nombre").value = m.nombre;
+      document.getElementById("apellidos").value = m.apellidos;
+      document.getElementById("paisNac").value = m.paisNac;
+      document.getElementById("lugarNac").value = m.lugarNac;
+      document.getElementById("anioNac").value = m.anioNac;
+      document.getElementById("anioFall").value = m.anioFall;
+      document.getElementById("lugarFall").value = m.lugarFall;
+      document.getElementById("padre").value = m.padre;
+      document.getElementById("madre").value = m.madre;
+      document.getElementById("hasPhoto").checked = m.hasPhoto;
+
+      window.scrollTo(0, 0);
+    }
+
+
+    // ================================
+    // ELIMINAR MIEMBRO
+    // ================================
+    async function deleteMember(id) {
+      if (confirm("¿Seguro que quieres eliminar este miembro?")) {
+        await db.collection("members").doc(id).delete();
+        loadMembers();
+      }
+    }
+
+
+    // ================================
+    // 🔍 VERIFICAR FOTOS FALTANTES
+    // ================================
+    async function checkMissingPhotos() {
+      const log = document.getElementById("photoLog");
+      log.textContent = "Comprobando...";
+
+      const imgDir = "img/";
+
+      const membersSnapshot = await db.collection("members").get();
+      const members = membersSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+
+      const missing = [];
+
+      for (const m of members) {
+        if (m.hasPhoto) {
+
+          const fileName =
+            `${m.nombre.replace(/ /g, "_")}_${m.apellidos.replace(/ /g, "_")}.jpg`
+              .toLowerCase();
+
+          const imagePath = `${imgDir}${fileName}`;
+
+          try {
+            const res = await fetch(imagePath, { method: "HEAD" });
+            if (!res.ok) missing.push({ name: `${m.nombre} ${m.apellidos}`, fileName });
+          } catch (err) {
+            missing.push({ name: `${m.nombre} ${m.apellidos}`, fileName });
+          }
+        }
+      }
+
+      if (missing.length === 0) {
+        log.textContent = "✅ Todas las fotografías están presentes.";
+      } else {
+        log.textContent = "⚠️ Fotografías faltantes:\n\n" +
+          missing.map(m => `➡️ Subir: ${m.fileName} (para ${m.name})`).join("\n");
+      }
+    }
+  </script>
+
 </body>
 </html>

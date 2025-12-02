@@ -1,19 +1,44 @@
 <!doctype html>
-<html lang="es"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Árbol familiar</title>
-<link rel="stylesheet" href="styles.css">
-<link href="https://unpkg.com/vis-network/styles/vis-network.min.css" rel="stylesheet" />
-</head><body>
-<header class="site-header"><h1>Árbol familiar</h1><nav><a href="index.html">Público</a></nav></header>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Árbol Familiar - Familia Cernadas</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="header">
+  <img src="img/escudo.png" class="escudo" alt="Escudo Cernadas">
+  <h1>Árbol Familiar</h1>
+  <nav><a href="index.html">Inicio</a> · <a href="admin.html">Administración</a></nav>
+</header>
+
 <main class="container">
-  <div style="margin-bottom:8px">
-    <select id="rootSel"><option value="">(selecciona)</option></select>
-    <button id="centerBtn">Centrar</button>
+  <div class="controls">
+    <label>Miembro raíz:
+      <select id="select-root"><option value="">(elige)</option></select>
+    </label>
+
+    <label>Generaciones:
+      <select id="select-gen">
+        <option value="1">1</option>
+        <option value="2" selected>2</option>
+        <option value="3">3</option>
+      </select>
+    </label>
+
+    <button id="btn-generate">Generar árbol</button>
+    <button id="btn-reset">Mostrar todo (raíces detectadas)</button>
   </div>
-  <div id="network" style="height:700px; border:1px solid #ddd; background:#fff;"></div>
+
+  <div id="tree-container" class="tree-container"></div>
+
+  <section id="family-nav" class="family-nav">
+    <h3>Navegación por miembros</h3>
+    <div id="family-nav-list" class="family-nav-list"></div>
+  </section>
 </main>
 
-<script type="module" src="./tree.js"></script>
-<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
-</body></html>
+<script type="module" src="js/tree.js"></script>
+</body>
+</html>
