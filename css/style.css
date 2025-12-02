@@ -1,167 +1,33 @@
-/* ----------- ESTILO GENERAL ----------- */
+/* styles.css (árbol + admin coherente) */
+:root{--accent:#0d6efd;--muted:#666;--card:#fff}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif; margin:0; background:#f6f7fb; color:#222}
+.header{display:flex;align-items:center;gap:16px;padding:18px;background:#fff;border-bottom:1px solid #eee}
+.header .escudo{height:70px}
+.header h1{margin:0;font-size:20px}
+.container{max-width:1100px;margin:28px auto;padding:16px}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
+.controls label{font-size:14px}
+.controls select, .controls button{padding:8px;border-radius:6px;border:1px solid #ddd}
+button{background:var(--accent);color:#fff;border:0;cursor:pointer}
+.tree-container{background:#fff;padding:18px;border-radius:10px;box-shadow:0 4px 18px rgba(15,15,15,.04);overflow:auto}
+.forest{display:flex;flex-wrap:wrap;gap:24px;justify-content:center}
+.nodo{display:flex;flex-direction:column;align-items:center}
+.pair{display:flex;gap:12px;background:#fafafa;padding:12px;border-radius:10px;border:1px solid #e6e6e6}
+.miembro{width:180px;display:flex;gap:10px;align-items:center}
+.thumb img{width:64px;height:64px;object-fit:cover;border-radius:6px;border:1px solid #ddd}
+.thumb .noimg{width:64px;height:64px;background:#eee;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#888}
+.info .nombre{font-weight:700}
+.info .det{font-size:13px;color:var(--muted)}
+.hijos{display:flex;gap:28px;margin-top:16px;border-top:2px solid #eee;padding-top:14px}
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f7f7f7;
-    margin: 0;
-    padding: 0;
-    color: #333;
+/* Bottom navigation */
+.family-nav{margin-top:22px;padding:12px;background:#fff;border-radius:10px;border:1px solid #eee}
+.family-nav-list{display:flex;flex-wrap:wrap;gap:8px;padding-top:8px}
+.family-nav-list a{background:#f0f4ff;padding:8px 12px;border-radius:8px;color:#064; text-decoration:none}
+
+/* Responsive */
+@media(max-width:800px){
+  .pair{flex-direction:column;align-items:center}
+  .miembro{width:140px}
 }
-
-h1, h2 {
-    text-align: center;
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-}
-
-header .escudo {
-    width: 180px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.intro {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 1.1em;
-    color: #444;
-}
-
-/* ----------- BUSCADOR ----------- */
-
-.buscador {
-    text-align: center;
-    padding: 20px;
-}
-
-.buscador input {
-    width: 240px;
-    padding: 8px;
-    border: 1px solid #bbb;
-    border-radius: 6px;
-}
-
-.buscador button {
-    padding: 8px 18px;
-    border-radius: 6px;
-    border: none;
-    background: #004aad;
-    color: white;
-    cursor: pointer;
-}
-
-.buscador button:hover {
-    background: #00367f;
-}
-
-/* ----------- ÁRBOL GENEALÓGICO ----------- */
-
-.tree-container {
-    display: flex;
-    justify-content: center;
-    padding: 30px 10px;
-    overflow-x: auto;
-}
-
-.nodo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 25px;
-}
-
-/* Pareja mostrada horizontalmente */
-.pareja {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    background: white;
-    border: 2px solid #ddd;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-/* Cada persona */
-.miembro {
-    text-align: center;
-    width: 150px;
-}
-
-.miembro .foto {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid #ccc;
-}
-
-.nombre {
-    font-weight: bold;
-    margin-top: 8px;
-}
-
-.detalles {
-    font-size: 0.85em;
-    color: #555;
-}
-
-/* Contenedor hijos */
-.hijos {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 25px;
-    padding-top: 20px;
-    border-top: 2px solid #ccc;
-}
-
-/* ----------- ADMINISTRACIÓN ----------- */
-
-.hidden {
-    display: none;
-}
-
-#loginSection, #adminPanel {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 25px;
-    background: white;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #bbb;
-    margin-bottom: 12px;
-}
-
-button {
-    background: #006ccb;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #0053a0;
-}
-
-.item {
-    background: #fafafa;
-    border: 1px solid #ddd;
-    padding: 12px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-/* ----------- RESPONSIVE -----------*
