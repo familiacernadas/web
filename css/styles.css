@@ -1,0 +1,45 @@
+/* styles.css - diseño general y árbol con líneas */
+
+/* ----- base ----- */
+:root { --accent: #1f6fed; --muted:#666; --card:#fff; }
+*{box-sizing:border-box}
+body{font-family: Inter, Arial, Helvetica, sans-serif; margin:0; padding:18px; background:#f6f7fb; color:#222}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;background:#fff;border-bottom:1px solid #eee}
+h1{margin:0;font-size:20px}
+
+/* controls */
+.tree-controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tree-controls select, .tree-controls button{padding:8px;border-radius:6px;border:1px solid #ddd}
+.admin-link{padding:8px 10px;background:#0b63d6;color:#fff;border-radius:6px;text-decoration:none}
+
+/* container */
+main{max-width:1100px;margin:22px auto;padding:0 12px}
+
+/* tree area */
+#treeContainer{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 22px rgba(0,0,0,0.06);min-height:220px;overflow:auto}
+
+/* node */
+.node-outer{display:inline-block;vertical-align:top;text-align:center;position:relative;margin:0 16px 40px}
+.pair{display:flex;gap:12px;align-items:flex-start;justify-content:center}
+.person-box{background:#fff;border:1px solid #d9d9d9;border-radius:10px;padding:10px;min-width:180px;box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+.person-box img{width:130px;height:130px;object-fit:cover;border-radius:8px;border:1px solid #ccc;display:block;margin:6px auto}
+.person-name{font-weight:700;margin-top:6px}
+.person-meta{color:var(--muted);font-size:13px;margin-top:6px}
+
+/* connectors */
+.connector-vertical{width:2px;height:16px;background:#9aa7c2;margin:6px auto}
+.children-row{display:flex;justify-content:center;gap:32px;position:relative;padding-top:22px}
+.children-row:before{content:"";position:absolute;left:10%;right:10%;top:8px;height:2px;background:#9aa7c2;opacity:0.6}
+
+/* small adjustments */
+.children-row .node-outer:before{content:"";position:absolute;left:50%;transform:translateX(-50%);top:-8px;width:2px;height:16px;background:#9aa7c2}
+
+/* navigation footer */
+.navigator{margin-top:26px;padding:14px;background:#fff;border-radius:10px;border:1px solid #eee;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.nav-btn{padding:8px 12px;border-radius:8px;border:1px solid #dfe7ff;background:#f3f7ff;cursor:pointer}
+
+/* responsive */
+@media(max-width:780px){
+  .pair{flex-direction:column;align-items:center}
+  .person-box{min-width:140px}
+}
