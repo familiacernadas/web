@@ -1,9 +1,15 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    match /members/{id} {
+    match /members/{memberId} {
+      // Lectura pública permitida (web pública muestra solo campos públicos)
       allow read: if true;
+      // Escritura solo autenticado (admin)
       allow write: if request.auth != null;
+    }
+    // bloqueo por defecto
+    match /{document=**} {
+      allow read, write: if false;
     }
   }
 }

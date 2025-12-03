@@ -1,206 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Administración - Árbol Genealógico</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <title>Admin - Familia Cernadas</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
+<header>
+  <h1>Administración - Familia Cernadas</h1>
+  <div style="display:flex;gap:10px;align-items:center;">
+    <a href="index.html" class="admin-link">← Volver a pública</a>
+    <button id="logoutBtn" style="display:none">Cerrar sesión</button>
+  </div>
+</header>
 
-  <h1>Panel de Administración</h1>
+<main>
+  <section id="authSection">
+    <h2>Acceder</h2>
+    <input id="email" placeholder="Email admin" />
+    <input id="password" placeholder="Contraseña" type="password" />
+    <button id="loginBtn">Entrar</button>
+  </section>
 
-  <button onclick="location.href='index.html'">Volver a la vista pública</button>
+  <section id="adminPanel" style="display:none">
+    <h2>Crear / Editar miembro</h2>
+    <form id="memberForm">
+      <input id="memberId" type="hidden" />
 
-  <h2>Añadir / Editar Miembro</h2>
+      <label>Nombre (completo)</label>
+      <input id="name" required />
 
-  <form id="memberForm">
-    <input type="hidden" id="memberId">
+      <label>Fecha nacimiento (YYYY-MM-DD)</label>
+      <input id="birthDate" />
 
-    <label>Nombre</label>
-    <input type="text" id="nombre" required>
+      <label>País nacimiento</label>
+      <input id="birthCountry" />
 
-    <label>Apellidos</label>
-    <input type="text" id="apellidos" required>
+      <label>Lugar nacimiento</label>
+      <input id="birthPlace" />
 
-    <label>País de nacimiento</label>
-    <input type="text" id="paisNac">
+      <label>Fecha fallecimiento</label>
+      <input id="deathDate" />
 
-    <label>Lugar de nacimiento</label>
-    <input type="text" id="lugarNac">
+      <label>Lugar fallecimiento</label>
+      <input id="deathPlace" />
 
-    <label>Año de nacimiento</label>
-    <input type="number" id="anioNac">
+      <label>Tiene foto (subir a /img/ en repo)</label>
+      <input id="hasPhoto" type="checkbox" />
+      <label>Nombre archivo (ej: david_cernadas.jpg)</label>
+      <input id="photoFile" placeholder="david_cernadas.jpg" />
 
-    <label>Año de fallecimiento</label>
-    <input type="number" id="anioFall">
+      <label>Parents (Ctrl+click para seleccionar varios)</label>
+      <select id="parents" multiple size="4"></select>
 
-    <label>Lugar de fallecimiento</label>
-    <input type="text" id="lugarFall">
+      <label>Partners (Ctrl+click)</label>
+      <select id="partners" multiple size="4"></select>
 
-    <label>Padre (ID)</label>
-    <input type="text" id="padre">
+      <label>Children (Ctrl+click)</label>
+      <select id="children" multiple size="6"></select>
 
-    <label>Madre (ID)</label>
-    <input type="text" id="madre">
+      <div style="margin-top:12px">
+        <button type="submit">Guardar</button>
+        <button type="button" id="cancelBtn">Cancelar</button>
+      </div>
+    </form>
 
-    <label>
-      <input type="checkbox" id="hasPhoto"> Tiene fotografía
-    </label>
+    <h3>Miembros</h3>
+    <div id="memberList">Cargando...</div>
 
-    <button type="submit">Guardar</button>
-  </form>
+    <hr>
+    <h3>Comprobar fotos pendientes</h3>
+    <button id="checkPhotosBtn">Ver fotos faltantes</button>
+    <pre id="photoLog"></pre>
+  </section>
+</main>
 
-  <h2>Miembros Registrados</h2>
-  <div id="memberList"></div>
-
-  <hr>
-
-  <h2>📸 Verificación de fotografías</h2>
-  <button onclick="checkMissingPhotos()">Detectar fotos faltantes</button>
-
-  <pre id="photoLog"></pre>
-
-
-  <!-- Firebase -->
-  <script src="firebase.js"></script>
-
-  <!-- Admin logic -->
-  <script>
-    // ================================
-    // CARGAR MIEMBROS
-    // ================================
-    async function loadMembers() {
-      const container = document.getElementById("memberList");
-      container.innerHTML = "Cargando...";
-
-      const snapshot = await db.collection("members").get();
-
-      let html = "<ul>";
-      snapshot.forEach(doc => {
-        const m = doc.data();
-        html += `<li>
-          <b>${m.nombre} ${m.apellidos}</b> (ID: ${doc.id})
-          <button onclick="editMember('${doc.id}')">Editar</button>
-          <button onclick="deleteMember('${doc.id}')">Eliminar</button>
-        </li>`;
-      });
-      html += "</ul>";
-
-      container.innerHTML = html;
-    }
-
-    loadMembers();
-
-
-    // ================================
-    // GUARDAR MIEMBRO
-    // ================================
-    document.getElementById("memberForm").addEventListener("submit", async (e) => {
-      e.preventDefault();
-
-      const id = document.getElementById("memberId").value;
-      const data = {
-        nombre: document.getElementById("nombre").value,
-        apellidos: document.getElementById("apellidos").value,
-        paisNac: document.getElementById("paisNac").value,
-        lugarNac: document.getElementById("lugarNac").value,
-        anioNac: parseInt(document.getElementById("anioNac").value),
-        anioFall: parseInt(document.getElementById("anioFall").value),
-        lugarFall: document.getElementById("lugarFall").value,
-        padre: document.getElementById("padre").value || null,
-        madre: document.getElementById("madre").value || null,
-        hasPhoto: document.getElementById("hasPhoto").checked
-      };
-
-      if (id) {
-        await db.collection("members").doc(id).update(data);
-      } else {
-        await db.collection("members").add(data);
-      }
-
-      alert("Guardado correctamente");
-      document.getElementById("memberForm").reset();
-      document.getElementById("memberId").value = "";
-
-      loadMembers();
-    });
-
-
-    // ================================
-    // EDITAR MIEMBRO
-    // ================================
-    async function editMember(id) {
-      const doc = await db.collection("members").doc(id).get();
-      const m = doc.data();
-
-      document.getElementById("memberId").value = id;
-      document.getElementById("nombre").value = m.nombre;
-      document.getElementById("apellidos").value = m.apellidos;
-      document.getElementById("paisNac").value = m.paisNac;
-      document.getElementById("lugarNac").value = m.lugarNac;
-      document.getElementById("anioNac").value = m.anioNac;
-      document.getElementById("anioFall").value = m.anioFall;
-      document.getElementById("lugarFall").value = m.lugarFall;
-      document.getElementById("padre").value = m.padre;
-      document.getElementById("madre").value = m.madre;
-      document.getElementById("hasPhoto").checked = m.hasPhoto;
-
-      window.scrollTo(0, 0);
-    }
-
-
-    // ================================
-    // ELIMINAR MIEMBRO
-    // ================================
-    async function deleteMember(id) {
-      if (confirm("¿Seguro que quieres eliminar este miembro?")) {
-        await db.collection("members").doc(id).delete();
-        loadMembers();
-      }
-    }
-
-
-    // ================================
-    // 🔍 VERIFICAR FOTOS FALTANTES
-    // ================================
-    async function checkMissingPhotos() {
-      const log = document.getElementById("photoLog");
-      log.textContent = "Comprobando...";
-
-      const imgDir = "img/";
-
-      const membersSnapshot = await db.collection("members").get();
-      const members = membersSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-
-      const missing = [];
-
-      for (const m of members) {
-        if (m.hasPhoto) {
-
-          const fileName =
-            `${m.nombre.replace(/ /g, "_")}_${m.apellidos.replace(/ /g, "_")}.jpg`
-              .toLowerCase();
-
-          const imagePath = `${imgDir}${fileName}`;
-
-          try {
-            const res = await fetch(imagePath, { method: "HEAD" });
-            if (!res.ok) missing.push({ name: `${m.nombre} ${m.apellidos}`, fileName });
-          } catch (err) {
-            missing.push({ name: `${m.nombre} ${m.apellidos}`, fileName });
-          }
-        }
-      }
-
-      if (missing.length === 0) {
-        log.textContent = "✅ Todas las fotografías están presentes.";
-      } else {
-        log.textContent = "⚠️ Fotografías faltantes:\n\n" +
-          missing.map(m => `➡️ Subir: ${m.fileName} (para ${m.name})`).join("\n");
-      }
-    }
-  </script>
-
+<script type="module" src="js/admin.js"></script>
 </body>
 </html>
