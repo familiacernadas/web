@@ -1,0 +1,28 @@
+/* portada.css - estilos portada */
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#fafbfc;color:#222}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:#fff;border-bottom:1px solid #eee}
+.brand{display:flex;gap:12px;align-items:center}
+.escudo{
+  height:28px;          /* tamaño más pequeño */
+  display:block;        /* permite centrar */
+  margin:0 auto;        /* centrado horizontal */
+}
+.nav a{margin-left:12px;color:#1f6fed;text-decoration:none;font-weight:600}
+.main{max-width:1200px;margin:20px auto;padding:0 16px}
+.hero{display:flex;gap:24px;align-items:flex-start}
+.hero-left{flex:1}
+.hero-right{width:420px}
+.collage{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:110px;gap:6px;border-radius:8px;overflow:hidden;background:#fff;padding:6px;box-shadow:0 6px 20px rgba(15,15,15,0.06)}
+.collage img{width:100%;height:100%;object-fit:cover;border-radius:6px}
+.map-section{margin-top:24px}
+.cta{display:flex;gap:12px;justify-content:center;margin:28px 0}
+.btn{background:#1f6fed;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700}
+.btn.ghost{background:#fff;color:#1f6fed;border:2px solid #1f6fed}
+.footer{padding:16px;text-align:center;color:#888;margin-top:30px;border-top:1px solid #eee}
+.highlights ul{padding-left:18px}
+@media(max-width:920px){
+  .hero{flex-direction:column}
+  .hero-right{width:100%}
+  .collage{grid-template-columns:repeat(3,1fr);grid-auto-rows:90px}
+}

@@ -1,33 +1,92 @@
-/* styles.css (árbol + admin coherente) */
-:root{--accent:#0d6efd;--muted:#666;--card:#fff}
-*{box-sizing:border-box}
-body{font-family:Inter, system-ui, Arial, sans-serif; margin:0; background:#f6f7fb; color:#222}
-.header{display:flex;align-items:center;gap:16px;padding:18px;background:#fff;border-bottom:1px solid #eee}
-.header .escudo{height:70px}
-.header h1{margin:0;font-size:20px}
-.container{max-width:1100px;margin:28px auto;padding:16px}
-.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
-.controls label{font-size:14px}
-.controls select, .controls button{padding:8px;border-radius:6px;border:1px solid #ddd}
-button{background:var(--accent);color:#fff;border:0;cursor:pointer}
-.tree-container{background:#fff;padding:18px;border-radius:10px;box-shadow:0 4px 18px rgba(15,15,15,.04);overflow:auto}
-.forest{display:flex;flex-wrap:wrap;gap:24px;justify-content:center}
-.nodo{display:flex;flex-direction:column;align-items:center}
-.pair{display:flex;gap:12px;background:#fafafa;padding:12px;border-radius:10px;border:1px solid #e6e6e6}
-.miembro{width:180px;display:flex;gap:10px;align-items:center}
-.thumb img{width:64px;height:64px;object-fit:cover;border-radius:6px;border:1px solid #ddd}
-.thumb .noimg{width:64px;height:64px;background:#eee;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#888}
-.info .nombre{font-weight:700}
-.info .det{font-size:13px;color:var(--muted)}
-.hijos{display:flex;gap:28px;margin-top:16px;border-top:2px solid #eee;padding-top:14px}
+/* ================================
+   ESTILOS GENERALES
+=================================== */
 
-/* Bottom navigation */
-.family-nav{margin-top:22px;padding:12px;background:#fff;border-radius:10px;border:1px solid #eee}
-.family-nav-list{display:flex;flex-wrap:wrap;gap:8px;padding-top:8px}
-.family-nav-list a{background:#f0f4ff;padding:8px 12px;border-radius:8px;color:#064; text-decoration:none}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
 
-/* Responsive */
-@media(max-width:800px){
-  .pair{flex-direction:column;align-items:center}
-  .miembro{width:140px}
+h1, h2 {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    background: #2d70d6;
+    color: white;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #1b4f9c;
+}
+
+select {
+    padding: 8px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+/* ================================
+   ÁRBOL GENEALÓGICO
+=================================== */
+
+#treeContainer {
+    margin-top: 20px;
+    overflow-x: auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.tree-node {
+    display: inline-block;
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: white;
+    margin: 15px;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.tree-node:hover {
+    background: #f0f8ff;
+}
+
+.tree-node img {
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-top: 8px;
+    border: 1px solid #888;
+}
+
+.children-container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* ================================
+   PANEL DE NAVEGACIÓN
+=================================== */
+
+#navigationBar {
+    margin-top: 50px;
+    padding: 15px;
+    background: #e6e6e6;
+    border-top: 2px solid #c3c3c3;
 }

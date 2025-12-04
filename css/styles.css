@@ -15,7 +15,11 @@ body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(-
   border-bottom:1px solid #eee
 }
 .brand{display:flex;gap:12px;align-items:center}
-.escudo{height:80px}
+.escudo{
+  height:28px;          /* tamaño más pequeño */
+  display:block;        /* permite centrar */
+  margin:0 auto;        /* centrado horizontal */
+}
 .brand h1{margin:0;font-size:26px}
 .subtitle{margin:0;color:#555;font-size:14px}
 .nav a{margin-left:12px;color:var(--accent);text-decoration:none;font-weight:600}
