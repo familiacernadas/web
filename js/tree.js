@@ -61,7 +61,7 @@ function populateSelectors() {
 
     // seleccionar David automáticamente si existe
     const david = Object.values(membersMap)
-      .find(x => x.name && x.name.toLowerCase().includes('david') && x.name.toLowerCase().includes('cernadas'));
+      .find(x => x.name && x.name.toLowerCase().includes('David') && x.name.toLowerCase().includes('Cernadas'));
 
     if (david) rootSel.value = david.id;
   }
