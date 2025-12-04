@@ -1,67 +1,28 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Árbol Genealógico</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<main class="container">
 
-<body>
+  <div class="controls">
+    <label>Miembro raíz:
+      <select id="selectPerson"></select>
+    </label>
 
-<!-- ============ TOPBAR ============ -->
-<div class="topbar">
-    <div class="brand">
-        <img src="escudo.png" class="escudo" alt="Escudo">
-        <div>
-            <h1>Árbol Familiar</h1>
-            <p class="subtitle">Genealogía de la familia</p>
-        </div>
-    </div>
-
-    <div class="nav">
-        <a href="index.html">Inicio</a>
-        <a href="tree.html">Árbol</a>
-    </div>
-</div>
-
-<!-- ============ MAIN ============ -->
-<div class="main">
-
-    <h2>Árbol Genealógico</h2>
-
-    <!-- ====== CONTROLES ====== -->
-    <div class="tree-controls">
-        <label for="selectPerson">Ver desde:</label>
-        <select id="selectPerson"></select>
-
-        <button id="centerTree">Centrar</button>
-    </div>
-
-    <!-- ====== ZOOM ====== -->
     <div class="zoom-controls">
-        <button id="zoomOut">−</button>
-        <span id="zoomLabel">100%</span>
-        <button id="zoomIn">+</button>
+      <button id="zoomOut">−</button>
+      <span id="zoomLabel">100%</span>
+      <button id="zoomIn">+</button>
+      <button id="centerTree">Centrar</button>
     </div>
+  </div>
 
-    <!-- ====== CONTENEDOR ÁRBOL ====== -->
-    <div id="treeContainer">
-        <div id="treeContent">
-            <!-- Aquí el JS insertará el árbol genealógico -->
-        </div>
-    </div>
+  <div id="treeContainer" class="tree-wrapper">
+    <div id="treeContent"></div>
+  </div>
 
-    <!-- ====== NAVEGADOR INFERIOR ====== -->
-    <div class="navigator">
-        <button class="nav-btn" id="goUp">↑ Generación anterior</button>
-        <button class="nav-btn" id="goDown">↓ Descendientes</button>
-        <button class="nav-btn" id="goHome">Ir al origen</button>
-    </div>
+  <div class="navigator">
+    <button id="goHome" class="nav-btn">Inicio</button>
+    <button id="goUp" class="nav-btn">↑ Padres</button>
+    <button id="goDown" class="nav-btn">↓ Hijos</button>
+  </div>
 
-</div>
+</main>
 
-<!-- ============ JS ============ -->
-<script src="tree.js"></script>
-
-</body>
-</html>
+<script type="module" src="js/tree.js"></script>
