@@ -1,8 +1,10 @@
-// js/portada.js
-import { db } from './js/firebase.js';
+// js/portada.js  (CORREGIDO)
+
+// 🔥 Import Firebase correctamente
+import { db } from './firebase.js';
 import { collection, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-// Coordenadas por país (añade las que necesites)
+// 🌍 Coordenadas por país
 const COUNTRY_COORDS = {
   "spain":[40.4168, -3.7038],
   "españa":[40.4168, -3.7038],
@@ -16,8 +18,13 @@ const COUNTRY_COORDS = {
   "colombia":[4.7109,-74.0721]
 };
 
-function normCountry(s){ if(!s) return null; return s.toString().trim().toLowerCase(); }
+// Normaliza nombres de países
+function normCountry(s){
+  if(!s) return null;
+  return s.toString().trim().toLowerCase();
+}
 
+// Cargar miembros desde Firestore
 async function loadMembers(){
   const snap = await getDocs(collection(db,'members'));
   const arr = [];
@@ -25,53 +32,70 @@ async function loadMembers(){
   return arr;
 }
 
+// 📸 Collage de 9 fotos
 function buildCollage(members){
   const collage = document.getElementById('collage');
   collage.innerHTML = '';
+
   const withPhoto = members.filter(m => m.photoUrl);
   const fallback = members.filter(m => !m.photoUrl);
+
   const chosen = withPhoto.slice(0,9);
-  if(chosen.length < 9) chosen.push(...fallback.slice(0,9-chosen.length));
-  while(chosen.length < 9) chosen.push({ photoUrl: 'img/default.png', name: '' });
+  if(chosen.length < 9) chosen.push(...fallback.slice(0,9 - chosen.length));
+
+  while(chosen.length < 9)
+    chosen.push({ photoUrl: 'img/default.png', name: '' });
+
   chosen.forEach(m => {
     const img = document.createElement('img');
-    img.src = m.photoUrl ? m.photoUrl : (`img/${(m.name||'').replace(/\s+/g,'_')}.jpg`);
+    img.src = m.photoUrl || `img/${(m.name || '').replace(/\s+/g,'_')}.jpg`;
     img.alt = m.name || '';
     collage.appendChild(img);
   });
 }
 
+// 🗺️ Construye mapa Leaflet con miembros por país
 function buildMap(members){
   const map = L.map('map', { scrollWheelZoom: false }).setView([20,0], 2);
+
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
   const byCountry = {};
+
   members.forEach(m => {
     const c = normCountry(m.birthCountry || m.birthPlace || m.country || '');
     if(!c) return;
+
     if(!byCountry[c]) byCountry[c] = [];
     byCountry[c].push(m);
   });
 
-  Object.entries(byCountry).forEach(([country,list])=>{
+  Object.entries(byCountry).forEach(([country, list])=>{
     const coords = COUNTRY_COORDS[country];
     if(!coords) return;
+
     const marker = L.marker(coords).addTo(map);
-    const popupHtml = `<strong>${country.toUpperCase()}</strong><br>${list.length} miembro(s)<br>
-      <ul style="text-align:left;padding-left:12px;margin:6px 0">${list.slice(0,8).map(m=>`<li>${m.name}</li>`).join('')}</ul>`;
+    const popupHtml = `
+      <strong>${country.toUpperCase()}</strong><br>
+      ${list.length} miembro(s)<br>
+      <ul style="text-align:left;padding-left:12px;margin:6px 0">
+        ${list.slice(0,8).map(m=>`<li>${m.name}</li>`).join('')}
+      </ul>
+    `;
     marker.bindPopup(popupHtml);
   });
 }
 
+// 🚀 Inicio
 (async function init(){
   const members = await loadMembers();
   buildCollage(members);
   buildMap(members);
-  // notables placeholder - can be updated manually in portada.html or via admin
+
   const notablesEl = document.getElementById('notables');
   if(notablesEl && notablesEl.children.length === 1) {
-    // keep placeholder
+    // dejar el placeholder
   }
 })();
