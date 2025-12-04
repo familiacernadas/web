@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Familia Cernadas — Inicio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-sA+g2XnBr5q2s8bQGQGp2qQySgk6HnP9F0h1kM6mY3w=" crossorigin=""/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="img/escudo.png" alt="Escudo Familia" class="escudo"/>
+      <div>
+        <h1>Familia Cernadas</h1>
+        <p class="subtitle">Árbol genealógico y memoria familiar</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="portada.html">Inicio</a>
+      <a href="index.html">Árbol</a>
+      <a href="admin.html">Administración</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Orígenes y presencia mundial</h2>
+        <div id="history" class="history">
+          <p>
+            El apellido <strong>Cernadas</strong> tiene raíces gallegas, documentado desde
+            siglos atrás en el noroeste de la península Ibérica. Procede de topónimos locales
+            y con el paso del tiempo la familia se extendió por España y América.
+          </p>
+          <p>
+            En esta web encontrarás el árbol genealógico, fichas públicas de los miembros y
+            un mapa con su distribución por países.
+          </p>
+        </div>
+
+        <div class="highlights">
+          <h3>Personajes destacables</h3>
+          <ul id="notables">
+            <li>Introduce aquí nombres reales y una breve descripción (edítalos en admin).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="collage" id="collage">
+          <!-- JS generará hasta 9 imágenes -->
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <h3>Miembros por país</h3>
+      <div id="map" style="height:420px;"></div>
+    </section>
+
+    <section class="cta">
+      <a class="btn" href="index.html">Ver el árbol completo</a>
+      <a class="btn ghost" href="admin.html">Administrar miembros</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© Familia Cernadas — Sitio para uso familiar.</small>
+  </footer>
+
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1jpr0lqg+g0p0n3Gk9Qk3lG8hM9xqzH6vGQ2z3Gk=" crossorigin=""></script>
+
+  <!-- Firebase -->
+  <script type="module" src="js/firebase.js"></script>
+
+  <!-- Portada logic -->
+  <script type="module" src="js/portada.js"></script>
+</body>
+</html>

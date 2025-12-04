@@ -1,103 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Familia Cernadas - Árbol Genealógico</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta http-equiv="refresh" content="0; url=portada.html">
+  <title>Familia Cernadas</title>
 </head>
 <body>
-<header>
-  <h1>Familia Cernadas</h1>
-  <div class="tree-controls">
-    <label>Mostrar desde:
-      <select id="rootSelector"><option value="">Cargando...</option></select>
-    </label>
-
-    <label>Generaciones:
-      <select id="levelsSelector">
-        <option value="1">1</option>
-        <option value="2" selected>2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-    </label>
-
-    <button id="renderTreeBtn">Actualizar árbol</button>
-    <a class="admin-link" href="admin.html">Administración</a>
-  </div>
-</header>
-
-<main>
-  <div id="treeContainer">Cargando árbol...</div>
-
-  <div class="navigator" id="navigator">Cargando miembros…</div>
-</main>
-
-<script type="module">
-import { db } from "./js/firebase.js";
-import { collection, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-import { renderSubtree, renderForest } from "./js/tree.js";
-
-const rootSelect = document.getElementById('rootSelector');
-const levelsSelect = document.getElementById('levelsSelector');
-const renderBtn = document.getElementById('renderTreeBtn');
-const treeContainer = document.getElementById('treeContainer');
-const navigatorDiv = document.getElementById('navigator');
-
-let membersMap = {}; // id -> member (raw)
-
-// load all members
-async function loadMembers(){
-  const snap = await getDocs(collection(db,'members'));
-  membersMap = {};
-  snap.forEach(d => membersMap[d.id] = { id:d.id, ...d.data() });
-}
-
-// populate selects & navigator
-function populateUI(){
-  rootSelect.innerHTML = '<option value="">(elige)</option>';
-  navigatorDiv.innerHTML = '';
-  const arr = Object.values(membersMap).sort((a,b)=> (a.name||'').localeCompare(b.name||''));
-  arr.forEach(m=>{
-    const opt = document.createElement('option'); opt.value = m.id; opt.textContent = m.name;
-    rootSelect.appendChild(opt);
-
-    const btn = document.createElement('button'); btn.className='nav-btn'; btn.textContent = m.name;
-    btn.onclick = ()=> { rootSelect.value = m.id; renderTree(); };
-    navigatorDiv.appendChild(btn);
-  });
-}
-
-// detect David by name (default root)
-function setDefaultRoot(){
-  const david = Object.values(membersMap).find(x => x.name && x.name.toLowerCase().includes('david') && x.name.toLowerCase().includes('cernadas'));
-  if(david) rootSelect.value = david.id;
-}
-
-function renderTree(){
-  const rootId = rootSelect.value;
-  const levels = Number(levelsSelect.value);
-  if(!rootId){
-    // show forest: roots = those who are not child of anyone
-    const allChildren = new Set();
-    Object.values(membersMap).forEach(m => (m.children||[]).forEach(c=>allChildren.add(c)));
-    const roots = Object.values(membersMap).filter(m => !allChildren.has(m.id)).map(m=>m.id);
-    treeContainer.innerHTML = renderForest(roots, membersMap, levels);
-    return;
-  }
-  treeContainer.innerHTML = renderSubtree(rootId, membersMap, levels);
-}
-
-renderBtn.addEventListener('click', renderTree);
-
-(async function init(){
-  treeContainer.innerHTML = "Cargando...";
-  await loadMembers();
-  populateUI();
-  setDefaultRoot(); // David if exists
-  renderTree();
-})();
-</script>
+  Si no eres redirigido, <a href="portada.html">haz clic aquí</a>.
 </body>
 </html>
