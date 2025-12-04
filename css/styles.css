@@ -1,25 +1,47 @@
-/* styles.css - diseño general y árbol con líneas */
+/* styles.css - portada, árbol vertical, zoom/pan UI */
 
-/* ----- base ----- */
-:root { --accent: #1f6fed; --muted:#666; --card:#fff; }
+/* ---------- base ---------- */
+:root { --accent: #1f6fed; --muted: #666; --bg: #f6f7fb; --card: #fff; }
 *{box-sizing:border-box}
-body{font-family: Inter, Arial, Helvetica, sans-serif; margin:0; padding:18px; background:#f6f7fb; color:#222}
-header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;background:#fff;border-bottom:1px solid #eee}
-h1{margin:0;font-size:20px}
+body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(--bg); color:#222}
 
-/* controls */
-.tree-controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.tree-controls select, .tree-controls button{padding:8px;border-radius:6px;border:1px solid #ddd}
-.admin-link{padding:8px 10px;background:#0b63d6;color:#fff;border-radius:6px;text-decoration:none}
+/* ---------- topbar / header ---------- */
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:var(--card);border-bottom:1px solid #eee}
+.brand{display:flex;gap:12px;align-items:center}
+.escudo{height:90px}
+.brand h1{margin:0;font-size:20px}
+.nav a{margin-left:12px;color:var(--accent);text-decoration:none;font-weight:600}
 
-/* container */
-main{max-width:1100px;margin:22px auto;padding:0 12px}
+/* ---------- main layout ---------- */
+.main{max-width:1200px;margin:20px auto;padding:0 16px}
+.hero{display:flex;gap:24px;align-items:flex-start}
+.hero-left{flex:1}
+.hero-right{width:420px}
 
-/* tree area */
-#treeContainer{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 22px rgba(0,0,0,0.06);min-height:220px;overflow:auto}
+/* ---------- collage ---------- */
+.collage{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:110px;gap:6px;border-radius:8px;overflow:hidden;background:var(--card);padding:6px;box-shadow:0 6px 20px rgba(15,15,15,0.06)}
+.collage img{width:100%;height:100%;object-fit:cover;border-radius:6px}
 
-/* node */
-.node-outer{display:inline-block;vertical-align:top;text-align:center;position:relative;margin:0 16px 40px}
+/* ---------- history & highlights ---------- */
+.history p{line-height:1.5;color:#222}
+.highlights{margin-top:12px}
+.highlights ul{padding-left:18px;color:#333}
+
+/* ---------- map ---------- */
+.map-section{margin-top:24px;background:var(--card);padding:12px;border-radius:10px;box-shadow:0 6px 20px rgba(15,15,15,0.04)}
+
+/* ---------- CTA ---------- */
+.cta{display:flex;gap:12px;justify-content:center;margin:28px 0}
+.btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700}
+.btn.ghost{background:#fff;color:var(--accent);border:2px solid var(--accent)}
+
+/* ---------- tree area ---------- */
+.tree-wrapper{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 22px rgba(0,0,0,0.06);min-height:300px}
+.tree-controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+#treeContainer{background:#fff;padding:18px;border-radius:8px;min-height:320px;overflow:auto;position:relative}
+
+/* node and connectors (vertical tree) */
+.node-outer{display:inline-block;vertical-align:top;text-align:center;position:relative;margin:0 12px 40px}
 .pair{display:flex;gap:12px;align-items:flex-start;justify-content:center}
 .person-box{background:#fff;border:1px solid #d9d9d9;border-radius:10px;padding:10px;min-width:180px;box-shadow:0 4px 12px rgba(0,0,0,0.06)}
 .person-box img{width:130px;height:130px;object-fit:cover;border-radius:8px;border:1px solid #ccc;display:block;margin:6px auto}
@@ -29,17 +51,20 @@ main{max-width:1100px;margin:22px auto;padding:0 12px}
 /* connectors */
 .connector-vertical{width:2px;height:16px;background:#9aa7c2;margin:6px auto}
 .children-row{display:flex;justify-content:center;gap:32px;position:relative;padding-top:22px}
-.children-row:before{content:"";position:absolute;left:10%;right:10%;top:8px;height:2px;background:#9aa7c2;opacity:0.6}
-
-/* small adjustments */
+.children-row:before{content:"";position:absolute;left:5%;right:5%;top:8px;height:2px;background:#9aa7c2;opacity:0.6}
 .children-row .node-outer:before{content:"";position:absolute;left:50%;transform:translateX(-50%);top:-8px;width:2px;height:16px;background:#9aa7c2}
 
-/* navigation footer */
-.navigator{margin-top:26px;padding:14px;background:#fff;border-radius:10px;border:1px solid #eee;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+/* ---------- navigator footer ---------- */
+.navigator{margin-top:26px;padding:14px;background:var(--card);border-radius:10px;border:1px solid #eee;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .nav-btn{padding:8px 12px;border-radius:8px;border:1px solid #dfe7ff;background:#f3f7ff;cursor:pointer}
 
-/* responsive */
-@media(max-width:780px){
-  .pair{flex-direction:column;align-items:center}
-  .person-box{min-width:140px}
+/* ---------- zoom controls ---------- */
+.zoom-controls{display:flex;gap:8px;align-items:center;justify-content:center;margin:10px 0}
+.zoom-controls button{padding:6px 10px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer}
+
+/* ---------- responsive ---------- */
+@media(max-width:920px){
+  .hero{flex-direction:column}
+  .hero-right{width:100%}
+  .collage{grid-template-columns:repeat(3,1fr);grid-auto-rows:90px}
 }
