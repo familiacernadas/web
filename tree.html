@@ -5,7 +5,6 @@
   <title>Árbol Familiar - Familia Cernadas</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <!-- IMPORTANTE: solo 1 CSS: styles.css -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -28,36 +27,37 @@
 
   <!-- CONTROLES -->
   <div class="tree-controls">
-    <label>Miembro raíz:
-      <select id="select-root"><option value="">(elige)</option></select>
+    
+    <label>
+      Miembro raíz:
+      <select id="selectPerson"></select>
     </label>
 
-    <label>Generaciones:
-      <select id="select-gen">
-        <option value="1">1</option>
-        <option value="2" selected>2</option>
-        <option value="3">3</option>
-      </select>
-    </label>
+    <div class="zoom-controls">
+      <button id="zoomOut">−</button>
+      <span id="zoomLabel">100%</span>
+      <button id="zoomIn">+</button>
 
-    <button id="btn-generate">Generar árbol</button>
-    <button id="btn-reset">Mostrar todos</button>
+      <button id="centerTree">Centrar</button>
+    </div>
+
   </div>
 
   <!-- ARBOL -->
-<div id="treeContainer" class="tree-wrapper">
-  <div id="treeContent"></div>
-</div>
-  
+  <div id="treeContainer" class="tree-wrapper">
+    <div id="treeContent"></div>
+  </div>
+
   <!-- NAVEGADOR -->
   <section class="navigator">
     <strong>Navegación rápida:</strong>
-    <div id="family-nav-list"></div>
+    <button id="goHome" class="nav-btn">Inicio</button>
+    <button id="goUp" class="nav-btn">↑ Padres</button>
+    <button id="goDown" class="nav-btn">↓ Hijos</button>
   </section>
 
 </main>
 
-<!-- LÓGICA DEL ÁRBOL -->
 <script type="module" src="js/tree.js"></script>
 
 </body>
