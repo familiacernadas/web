@@ -206,12 +206,10 @@ function centerTree(){
   await loadMembers();
   fillSelect();
 
-  // dibujar raíz por defecto
-  const roots = findRoots();
-  if(roots.length){
-    drawTree(roots[0]);
-    document.getElementById("selectPerson").value = roots[0];
-  }
+  // --- establecer miembro raíz por defecto ---
+  const defaultRoot = "dDBj85CJtTcxtPh4juT1";   // David Cernadas Fernández
+  document.getElementById("selectPerson").value = defaultRoot;
+  drawTree(defaultRoot);
 
   // eventos UI
   document.getElementById("selectPerson").addEventListener("change",(e)=>{
@@ -232,3 +230,4 @@ function centerTree(){
   document.getElementById("goUp").addEventListener("click", goUp);
   document.getElementById("goDown").addEventListener("click", goDown);
 })();
+
