@@ -1,197 +1,234 @@
-/* ==========================================================
-   tree.js — Árbol genealógico vertical + zoom + navegación
-========================================================== */
-
-/* ------------ 1. DATOS DEL ÁRBOL (EDITA AQUÍ) ------------- */
-
-const family = {
-    id: "root",
-    name: "Persona Inicial",
-    born: "1900",
-    died: "1980",
-    photo: "img/default.jpg",
-
-    parents: null,    // { father: {...}, mother: {...} }
-    children: [
-        {
-            id: "c1",
-            name: "Hijo 1",
-            born: "1930",
-            photo: "img/default.jpg",
-            parents: null,
-            children: []
-        },
-        {
-            id: "c2",
-            name: "Hijo 2",
-            born: "1934",
-            photo: "img/default.jpg",
-            parents: null,
-            children: [
-                {
-                    id: "n1",
-                    name: "Nieto 1",
-                    born: "1960",
-                    photo: "img/default.jpg",
-                    parents: null,
-                    children: []
-                }
-            ]
-        }
-    ]
-};
+// ===============================
+//   IMPORT FIREBASE
+// ===============================
+import { db } from "./firebase.js";
+import { collection, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 
-/* ------------ 2. CONSTRUCCIÓN DEL ÁRBOL ------------------- */
+// ===============================
+//   HELPERS GENERAL
+// ===============================
+function yearFrom(dateStr){
+  if(!dateStr) return "";
+  const m = dateStr.match(/(\d{4})/);
+  return m ? m[1] : dateStr;
+}
 
-function createNode(person) {
-    const box = document.createElement("div");
-    box.className = "node-outer";
+function safe(x){ return x || ""; }
 
-    let html = `
-        <div class="person-box">
-            <img src="${person.photo || 'img/default.jpg'}" alt="">
-            <div class="person-name">${person.name}</div>
-            <div class="person-meta">${person.born || ""} ${person.died ? " - " + person.died : ""}</div>
-        </div>
+function publicFields(member){
+  return {
+    id: member.id,
+    name: safe(member.name),
+    birthCountry: safe(member.birthCountry),
+    birthPlace: safe(member.birthPlace),
+    birthYear: yearFrom(member.birthDate),
+    deathYear: yearFrom(member.deathDate),
+    deathPlace: safe(member.deathPlace),
+    photoUrl: member.photoUrl || null,
+    parents: Array.isArray(member.parents) ? member.parents : [],
+    partners: Array.isArray(member.partners) ? member.partners : [],
+    children: Array.isArray(member.children) ? member.children : []
+  };
+}
+
+
+// ===============================
+//   HTML PERSON
+// ===============================
+function buildPersonHtml(m){
+  const photo = m.photoUrl ? m.photoUrl : ( `img/${m.name.replace(/\s+/g,'_')}.jpg` );
+  return `
+    <div class="person-box" data-id="${m.id}">
+      <img src="${photo}" alt="${m.name}">
+      <div class="person-name">${m.name}</div>
+      <div class="person-meta">
+        ${m.birthCountry ? m.birthCountry + " • " : ""}${m.birthPlace}<br>
+        ${m.birthYear ? "Nac: " + m.birthYear : ""} ${m.deathYear ? " • Fal: " + m.deathYear : ""}<br>
+        ${m.deathPlace || ""}
+      </div>
+    </div>
+  `;
+}
+
+
+// ===============================
+//   PAREJA
+// ===============================
+function buildPairHtml(map, member){
+  const partnerId = member.partners?.[0];
+  if(partnerId && map[partnerId]){
+    const p = publicFields(map[partnerId]);
+    return `<div class="pair">${buildPersonHtml(publicFields(member))}${buildPersonHtml(p)}</div>`;
+  }
+  return `<div class="pair">${buildPersonHtml(publicFields(member))}</div>`;
+}
+
+
+// ===============================
+//   ÁRBOL RECURSIVO
+// ===============================
+export function renderSubtree(id, map, depth){
+  if(!map[id] || depth < 1) return "";
+  const m = map[id];
+  let html = `<div class="node-outer" id="node-${id}">${buildPairHtml(map, m)}`;
+
+  const kids = m.children || [];
+  if(kids.length && depth > 1){
+    const childrenHtml = kids.map(cid => renderSubtree(cid, map, depth - 1)).join("");
+    html += `
+      <div class="connector-vertical"></div>
+      <div class="children-row">${childrenHtml}</div>
     `;
+  }
 
-    // CONTENEDOR DE HIJOS
-    if (person.children && person.children.length > 0) {
-        const childrenDiv = document.createElement("div");
-        childrenDiv.className = "children-row";
+  html += `</div>`;
+  return html;
+}
 
-        person.children.forEach(child => {
-            childrenDiv.appendChild(createNode(child));
-        });
-
-        // Conector vertical
-        html += `<div class="connector-vertical"></div>`;
-        box.innerHTML = html;
-        box.appendChild(childrenDiv);
-
-    } else {
-        box.innerHTML = html;
-    }
-
-    return box;
+export function renderForest(rootIds, map, depth){
+  return rootIds.map(id => renderSubtree(id, map, depth)).join("");
 }
 
 
-/* ------------ 3. RENDER PRINCIPAL -------------------------- */
+// ==============================================================
+//     🔥  LÓGICA QUE FALTABA  — AHORA EL ÁRBOL FUNCIONA
+// ==============================================================
 
-function renderTree(rootPerson) {
-    const container = document.getElementById("treeContent");
-    container.innerHTML = "";
-    container.appendChild(createNode(rootPerson));
+let members = [];
+let membersMap = {};
+let currentRoot = null;
+
+// ---- cargar miembros ----
+async function loadMembers(){
+  const snap = await getDocs(collection(db, "members"));
+  members = [];
+  snap.forEach(doc => members.push({ id: doc.id, ...doc.data() }));
+  membersMap = Object.fromEntries(members.map(m => [m.id, m]));
 }
 
+// ---- encontrar raíces ----
+function findRoots(){
+  const allIds = new Set(members.map(m => m.id));
+  const childrenIds = new Set(members.flatMap(m => m.children || []));
+  return [...allIds].filter(id => !childrenIds.has(id));
+}
 
-/* ------------ 4. SELECTOR DE PERSONA ------------------------ */
+// ---- rellenar el selector ----
+function fillSelect(){
+  const sel = document.getElementById("selectPerson");
+  sel.innerHTML = "";
 
-function populateSelect() {
-    const select = document.getElementById("selectPerson");
-    select.innerHTML = "";
+  const optEmpty = document.createElement("option");
+  optEmpty.value = "";
+  optEmpty.textContent = "(elige)";
+  sel.appendChild(optEmpty);
 
-    const list = [];
-    (function walk(node) {
-        list.push(node);
-        if (node.children) node.children.forEach(walk);
-    })(family);
-
-    list.forEach(p => {
-        const opt = document.createElement("option");
-        opt.value = p.id;
-        opt.textContent = p.name;
-        select.appendChild(opt);
-    });
-
-    select.addEventListener("change", () => {
-        const target = list.find(p => p.id === select.value);
-        renderTree(target);
+  members
+    .sort((a,b)=>a.name.localeCompare(b.name))
+    .forEach(m=>{
+      const o = document.createElement("option");
+      o.value = m.id;
+      o.textContent = m.name;
+      sel.appendChild(o);
     });
 }
 
 
-/* ------------ 5. ZOOM Y PAN -------------------------------- */
+// ---- generar árbol ----
+function drawTree(rootId){
+  if(!rootId) return;
 
-let zoom = 1;
-const treeContent = document.getElementById("treeContent");
-const zoomLabel = document.getElementById("zoomLabel");
+  const depth = 3;  // profundidad fija (puedes cambiar)
+  const html = renderSubtree(rootId, membersMap, depth);
 
-function applyZoom() {
-    treeContent.style.transform = `scale(${zoom})`;
-    zoomLabel.textContent = Math.round(zoom * 100) + "%";
+  document.getElementById("treeContent").innerHTML = html;
+  currentRoot = rootId;
+
+  centerTree();
 }
 
-document.getElementById("zoomIn").addEventListener("click", () => {
-    zoom += 0.1;
+
+// ==============================================================
+//     NAVEGACION (padres / hijos / inicio)
+// ==============================================================
+
+function goHome(){
+  const roots = findRoots();
+  if(roots.length){
+    drawTree(roots[0]);
+    document.getElementById("selectPerson").value = roots[0];
+  }
+}
+
+function goUp(){
+  if(!currentRoot) return;
+  const m = membersMap[currentRoot];
+  if(m.parents && m.parents.length){
+    drawTree(m.parents[0]);
+    document.getElementById("selectPerson").value = m.parents[0];
+  }
+}
+
+function goDown(){
+  if(!currentRoot) return;
+  const m = membersMap[currentRoot];
+  if(m.children && m.children.length){
+    drawTree(m.children[0]);
+    document.getElementById("selectPerson").value = m.children[0];
+  }
+}
+
+
+// ==============================================================
+//     ZOOM + CENTRAR
+// ==============================================================
+
+let zoom = 1.0;
+
+function applyZoom(){
+  document.getElementById("treeContent").style.transform = `scale(${zoom})`;
+  document.getElementById("zoomLabel").textContent = Math.round(zoom*100)+"%";
+}
+
+function centerTree(){
+  const cont = document.getElementById("treeContainer");
+  const content = document.getElementById("treeContent");
+  cont.scrollLeft = (content.scrollWidth - cont.clientWidth) / 2;
+}
+
+
+// ==============================================================
+//     INIT
+// ==============================================================
+
+(async function init(){
+  await loadMembers();
+  fillSelect();
+
+  // dibujar raíz por defecto
+  const roots = findRoots();
+  if(roots.length){
+    drawTree(roots[0]);
+    document.getElementById("selectPerson").value = roots[0];
+  }
+
+  // eventos UI
+  document.getElementById("selectPerson").addEventListener("change",(e)=>{
+    if(e.target.value) drawTree(e.target.value);
+  });
+
+  document.getElementById("zoomIn").addEventListener("click",()=>{
+    zoom = Math.min(zoom+0.1, 2);
     applyZoom();
-});
-
-document.getElementById("zoomOut").addEventListener("click", () => {
-    zoom = Math.max(0.2, zoom - 0.1);
+  });
+  document.getElementById("zoomOut").addEventListener("click",()=>{
+    zoom = Math.max(zoom-0.1, 0.3);
     applyZoom();
-});
+  });
+  document.getElementById("centerTree").addEventListener("click", centerTree);
 
-document.getElementById("centerTree").addEventListener("click", () => {
-    zoom = 1;
-    applyZoom();
-    document.getElementById("treeContainer").scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-    });
-});
-
-
-/* Permitir arrastrar (pan) */
-let isDragging = false;
-let startX, startY, scrollLeft, scrollTop;
-
-const container = document.getElementById("treeContainer");
-
-container.addEventListener("mousedown", e => {
-    isDragging = true;
-    container.classList.add("dragging");
-    startX = e.pageX - container.offsetLeft;
-    startY = e.pageY - container.offsetTop;
-    scrollLeft = container.scrollLeft;
-    scrollTop = container.scrollTop;
-});
-
-container.addEventListener("mouseleave", () => (isDragging = false));
-container.addEventListener("mouseup", () => (isDragging = false));
-
-container.addEventListener("mousemove", e => {
-    if (!isDragging) return;
-    e.preventDefault();
-    const x = e.pageX - container.offsetLeft;
-    const y = e.pageY - container.offsetTop;
-    const walkX = (x - startX);
-    const walkY = (y - startY);
-    container.scrollLeft = scrollLeft - walkX;
-    container.scrollTop = scrollTop - walkY;
-});
-
-
-/* ------------ 6. NAVEGADOR (UP / DOWN / HOME) --------------- */
-
-document.getElementById("goUp").addEventListener("click", () => {
-    alert("Funcionalidad pendiente: subir generación");
-});
-
-document.getElementById("goDown").addEventListener("click", () => {
-    alert("Funcionalidad pendiente: bajar a descendientes");
-});
-
-document.getElementById("goHome").addEventListener("click", () => {
-    renderTree(family);
-});
-
-
-/* ------------ 7. INICIO ------------------------------------- */
-
-populateSelect();
-renderTree(family);
-applyZoom();
+  document.getElementById("goHome").addEventListener("click", goHome);
+  document.getElementById("goUp").addEventListener("click", goUp);
+  document.getElementById("goDown").addEventListener("click", goDown);
+})();
