@@ -207,7 +207,7 @@ function centerTree(){
   fillSelect();
 
   // --- establecer miembro raíz por defecto ---
-  const defaultRoot = "David Cernadas Fernandez";   // dDBj85CJtTcxtPh4juT1
+  const defaultRoot = "dDBj85CJtTcxtPh4juT1";   // David Cernadas Fernandez
   document.getElementById("selectPerson").value = defaultRoot;
   drawTree(defaultRoot);
 
@@ -230,6 +230,7 @@ function centerTree(){
   document.getElementById("goUp").addEventListener("click", goUp);
   document.getElementById("goDown").addEventListener("click", goDown);
 })();
+
 
 
 
