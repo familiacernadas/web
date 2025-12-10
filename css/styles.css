@@ -16,7 +16,7 @@ body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(-
 }
 .brand{display:flex;gap:12px;align-items:center}
 .escudo{
-  height:28px;          /* tamaño más pequeño */
+  height:38px;          /* tamaño más pequeño */
   display:block;        /* permite centrar */
   margin:0 auto;        /* centrado horizontal */
 }
@@ -233,3 +233,4 @@ body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(-
   .hero-right{width:100%;max-width:100%}
   .collage{grid-auto-rows:120px}
 }
+
