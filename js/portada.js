@@ -1,3 +1,13 @@
+<!-- LEAFLET — Cargar SIEMPRE ANTES QUE PORTADA.JS -->
+<script 
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-o9N1jpr0lqg+g0p0n3Gk9Qk3lG8hM9xqzH6vGQ2z3Gk="
+  crossorigin="">
+</script>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/portada.js"></script>
+
 // js/portada.js  (CORREGIDO)
 
 // 🔥 Import Firebase correctamente
@@ -99,3 +109,4 @@ function buildMap(members){
     // dejar el placeholder
   }
 })();
+
