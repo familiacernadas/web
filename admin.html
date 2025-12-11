@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 <header>
   <h1>Administración - Familia Cernadas</h1>
@@ -16,6 +17,8 @@
 </header>
 
 <main>
+
+  <!-- LOGIN -->
   <section id="authSection">
     <h2>Acceder</h2>
     <input id="email" placeholder="Email admin" />
@@ -23,22 +26,34 @@
     <button id="loginBtn">Entrar</button>
   </section>
 
+
+  <!-- PANEL ADMIN -->
   <section id="adminPanel" style="display:none">
     <h2>Crear / Editar miembro</h2>
+
     <form id="memberForm">
       <input id="memberId" type="hidden" />
 
       <label>Nombre (completo)</label>
       <input id="name" required />
 
+
       <label>Fecha nacimiento (YYYY-MM-DD)</label>
       <input id="birthDate" />
 
-      <label>País nacimiento</label>
-      <input id="birthCountry" />
 
-      <label>Lugar nacimiento</label>
-      <input id="birthPlace" />
+      <!-- SELECT CERRADO DE PAÍSES -->
+      <label>País de nacimiento</label>
+      <select id="birthCountry" required>
+        <option value="">(elige país)</option>
+      </select>
+
+      <!-- SELECT DINÁMICO SEGÚN PAÍS -->
+      <label>Lugar de nacimiento</label>
+      <select id="birthPlace" required>
+        <option value="">(selecciona país primero)</option>
+      </select>
+
 
       <label>Fecha fallecimiento</label>
       <input id="deathDate" />
@@ -46,10 +61,13 @@
       <label>Lugar fallecimiento</label>
       <input id="deathPlace" />
 
+
       <label>Tiene foto (subir a /img/ en repo)</label>
       <input id="hasPhoto" type="checkbox" />
+
       <label>Nombre archivo (ej: david_cernadas.jpg)</label>
       <input id="photoFile" placeholder="david_cernadas.jpg" />
+
 
       <label>Parents (Ctrl+click para seleccionar varios)</label>
       <select id="parents" multiple size="4"></select>
@@ -60,11 +78,13 @@
       <label>Children (Ctrl+click)</label>
       <select id="children" multiple size="6"></select>
 
+
       <div style="margin-top:12px">
         <button type="submit">Guardar</button>
         <button type="button" id="cancelBtn">Cancelar</button>
       </div>
     </form>
+
 
     <h3>Miembros</h3>
     <div id="memberList">Cargando...</div>
@@ -73,6 +93,7 @@
     <h3>Comprobar fotos pendientes</h3>
     <button id="checkPhotosBtn">Ver fotos faltantes</button>
     <pre id="photoLog"></pre>
+
   </section>
 </main>
 
