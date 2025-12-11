@@ -58,6 +58,8 @@ export const COUNTRY_PLACES = {
 let members = [];
 let editingId = null;
 
+function $(id){ return document.getElementById(id); }
+
 
 // ======================================================
 //  LOAD MEMBERS
@@ -77,7 +79,7 @@ async function loadMembers() {
 //  FILL SELECT: PAISES
 // ======================================================
 function fillCountrySelect() {
-  const sel = document.getElementById("birthCountry");
+  const sel = $("birthCountry");
   sel.innerHTML = `<option value="">(elige país)</option>`;
 
   COUNTRY_LIST.forEach(p => {
@@ -93,12 +95,23 @@ function fillCountrySelect() {
 //  FILL SELECT: PLACES (cuando cambias país)
 // ======================================================
 function updatePlaceSelect() {
-  const country = document.getElementById("birthCountry").value;
-  const placeSel = document.getElementById("birthPlace");
+  const country = $("birthCountry").value;
+  const placeSel = $("birthPlace");
+  const manual = $("birthPlaceManual");
 
   placeSel.innerHTML = `<option value="">(elige lugar)</option>`;
 
-  if (!country || !COUNTRY_PLACES[country]) return;
+  // Si NO hay lista predefinida → mostrar campo manual
+  if (!country || !COUNTRY_PLACES[country]) {
+    placeSel.style.display = "none";
+    manual.style.display = "block";
+    manual.value = "";
+    return;
+  }
+
+  // Si hay lista → mostrar select
+  placeSel.style.display = "block";
+  manual.style.display = "none";
 
   COUNTRY_PLACES[country].forEach(city => {
     const op = document.createElement("option");
@@ -137,14 +150,46 @@ function refreshMemberList() {
   );
 }
 
+// ======================================================
+//  BUSQUEDA RÁPIDA DE MIEMBROS
+// ======================================================
+function filterMembers() {
+  const q = document.getElementById("memberSearch").value.toLowerCase();
+  const div = document.getElementById("memberList");
+
+  div.innerHTML = "";
+
+  members
+    .filter(m => m.name.toLowerCase().includes(q))
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .forEach(m => {
+      const row = document.createElement("div");
+      row.className = "member-row";
+      row.innerHTML = `
+        <strong>${m.name}</strong> 
+        <button data-id="${m.id}" class="editBtn">Editar</button>
+        <button data-id="${m.id}" class="deleteBtn">Eliminar</button>
+      `;
+      div.appendChild(row);
+    });
+
+  // Reasignar eventos tras filtrado
+  document.querySelectorAll(".editBtn").forEach(btn =>
+    btn.onclick = () => loadForEdit(btn.dataset.id)
+  );
+  document.querySelectorAll(".deleteBtn").forEach(btn =>
+    btn.onclick = () => deleteMember(btn.dataset.id)
+  );
+}
+
 
 // ======================================================
 //  SELECTS DE RELACIONES (padres, parejas, hijos)
 // ======================================================
 function fillRelationshipSelectors() {
-  const parents = document.getElementById("parents");
-  const partners = document.getElementById("partners");
-  const children = document.getElementById("children");
+  const parents = $("parents");
+  const partners = $("partners");
+  const children = $("children");
 
   parents.innerHTML = "";
   partners.innerHTML = "";
@@ -153,12 +198,9 @@ function fillRelationshipSelectors() {
   members
     .sort((a, b) => a.name.localeCompare(b.name))
     .forEach(m => {
-      const op1 = new Option(m.name, m.id);
-      const op2 = new Option(m.name, m.id);
-      const op3 = new Option(m.name, m.id);
-      parents.add(op1);
-      partners.add(op2);
-      children.add(op3);
+      parents.add(new Option(m.name, m.id));
+      partners.add(new Option(m.name, m.id));
+      children.add(new Option(m.name, m.id));
     });
 }
 
@@ -172,61 +214,65 @@ function loadForEdit(id) {
 
   editingId = id;
 
-  document.getElementById("memberId").value = id;
-  document.getElementById("name").value = m.name || "";
-  document.getElementById("birthDate").value = m.birthDate || "";
-  document.getElementById("birthCountry").value = m.birthCountry || "";
-  
+  $("memberId").value = id;
+  $("name").value = m.name || "";
+  $("birthDate").value = m.birthDate || "";
+  $("birthCountry").value = m.birthCountry || "";
+
   updatePlaceSelect();
-  document.getElementById("birthPlace").value = m.birthPlace || "";
 
-  document.getElementById("deathDate").value = m.deathDate || "";
-  document.getElementById("deathPlace").value = m.deathPlace || "";
+  if (COUNTRY_PLACES[m.birthCountry]) {
+    $("birthPlace").value = m.birthPlace || "";
+  } else {
+    $("birthPlaceManual").value = m.birthPlace || "";
+  }
 
-  document.getElementById("hasPhoto").checked = !!m.photoUrl;
-  document.getElementById("photoFile").value = m.photoUrl ? m.photoUrl.replace("img/", "") : "";
+  $("deathDate").value = m.deathDate || "";
+  $("deathPlace").value = m.deathPlace || "";
 
-  // Relaciones
+  $("hasPhoto").checked = !!m.photoUrl;
+  $("photoFile").value = m.photoUrl ? m.photoUrl.replace("img/", "") : "";
+
   selectMultiple("parents", m.parents);
   selectMultiple("partners", m.partners);
   selectMultiple("children", m.children);
 }
 
 function selectMultiple(id, arr) {
-  const sel = document.getElementById(id);
+  const sel = $(id);
   [...sel.options].forEach(o => o.selected = arr?.includes(o.value));
 }
 
 
 // ======================================================
-//  GUARDAR MIEMBRO
+//  GUARDAR MIEMBRO (con BirthPlace automático)
 // ======================================================
-document.getElementById("memberForm").onsubmit = async (e) => {
+$("memberForm").onsubmit = async (e) => {
   e.preventDefault();
 
-  const id = document.getElementById("memberId").value || crypto.randomUUID();
-
-  const name = document.getElementById("name").value.trim();
-  const birthDate = document.getElementById("birthDate").value.trim();
-  const birthCountry = document.getElementById("birthCountry").value.trim();
-  const birthPlace = document.getElementById("birthPlace").value.trim();
-
-  const deathDate = document.getElementById("deathDate").value.trim();
-  const deathPlace = document.getElementById("deathPlace").value.trim();
-
-  const hasPhoto = document.getElementById("hasPhoto").checked;
-  const photoFile = document.getElementById("photoFile").value.trim();
-  const photoUrl = hasPhoto && photoFile ? `img/${photoFile}` : "";
-
-  const parents = getSelected("parents");
-  const partners = getSelected("partners");
-  const children = getSelected("children");
+  const id = $("memberId").value || crypto.randomUUID();
 
   const data = {
-    name, birthDate, birthCountry, birthPlace,
-    deathDate, deathPlace,
-    parents, partners, children,
-    photoUrl
+    name: $("name").value.trim(),
+    birthDate: $("birthDate").value.trim(),
+    birthCountry: $("birthCountry").value.trim(),
+
+    birthPlace: (
+      $("birthPlace").style.display !== "none"
+        ? $("birthPlace").value
+        : $("birthPlaceManual").value
+    ),
+
+    deathDate: $("deathDate").value.trim(),
+    deathPlace: $("deathPlace").value.trim(),
+
+    parents: getSelected("parents"),
+    partners: getSelected("partners"),
+    children: getSelected("children"),
+
+    photoUrl: $("hasPhoto").checked && $("photoFile").value.trim()
+      ? `img/${$("photoFile").value.trim()}`
+      : ""
   };
 
   await setDoc(doc(db, "members", id), data);
@@ -238,7 +284,7 @@ document.getElementById("memberForm").onsubmit = async (e) => {
 };
 
 function getSelected(id) {
-  return [...document.getElementById(id).selectedOptions].map(o => o.value);
+  return [...$(id).selectedOptions].map(o => o.value);
 }
 
 
@@ -255,9 +301,9 @@ async function deleteMember(id) {
 // ======================================================
 //  LOGIN / LOGOUT
 // ======================================================
-document.getElementById("loginBtn").onclick = async () => {
-  const email = document.getElementById("email").value.trim();
-  const pass = document.getElementById("password").value.trim();
+$("loginBtn").onclick = async () => {
+  const email = $("email").value.trim();
+  const pass = $("password").value.trim();
 
   try {
     await signInWithEmailAndPassword(auth, email, pass);
@@ -266,20 +312,18 @@ document.getElementById("loginBtn").onclick = async () => {
   }
 };
 
-document.getElementById("logoutBtn").onclick = () => {
-  signOut(auth);
-};
+$("logoutBtn").onclick = () => signOut(auth);
 
 onAuthStateChanged(auth, (user) => {
   if (user) {
-    document.getElementById("authSection").style.display = "none";
-    document.getElementById("adminPanel").style.display = "block";
-    document.getElementById("logoutBtn").style.display = "block";
+    $("authSection").style.display = "none";
+    $("adminPanel").style.display = "block";
+    $("logoutBtn").style.display = "block";
     loadMembers();
   } else {
-    document.getElementById("authSection").style.display = "block";
-    document.getElementById("adminPanel").style.display = "none";
-    document.getElementById("logoutBtn").style.display = "none";
+    $("authSection").style.display = "block";
+    $("adminPanel").style.display = "none";
+    $("logoutBtn").style.display = "none";
   }
 });
 
@@ -288,4 +332,6 @@ onAuthStateChanged(auth, (user) => {
 //  INIT
 // ======================================================
 fillCountrySelect();
-document.getElementById("birthCountry").addEventListener("change", updatePlaceSelect);
+$("birthCountry").addEventListener("change", updatePlaceSelect);
+document.getElementById("memberSearch")
+  .addEventListener("input", filterMembers);
