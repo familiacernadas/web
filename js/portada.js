@@ -186,7 +186,7 @@ const COUNTRY_COORDS = {
   "sudan":[15.5007,32.5599],
   "suriname":[5.8520,-55.2038],
   "sweden":[59.3293,18.0686],
-  "switzerland":[46.9480,7.4474],
+  "Suiza":[46.9480,7.4474],
   "syria":[33.5138,36.2765],
 
   "taiwan":[25.0330,121.5654],
@@ -302,5 +302,6 @@ function buildMap(members){
     // dejar el placeholder
   }
 })();
+
 
 
