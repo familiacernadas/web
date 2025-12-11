@@ -37,10 +37,8 @@
       <label>Nombre (completo)</label>
       <input id="name" required />
 
-
       <label>Fecha nacimiento (YYYY-MM-DD)</label>
       <input id="birthDate" />
-
 
       <!-- SELECT CERRADO DE PAÍSES -->
       <label>País de nacimiento</label>
@@ -54,6 +52,10 @@
         <option value="">(selecciona país primero)</option>
       </select>
 
+      <!-- NUEVO — CAMPO MANUAL SI EL PAÍS NO TIENE LISTA -->
+      <input id="birthPlaceManual"
+             placeholder="Escribe el lugar manualmente"
+             style="display:none" />
 
       <label>Fecha fallecimiento</label>
       <input id="deathDate" />
@@ -61,13 +63,11 @@
       <label>Lugar fallecimiento</label>
       <input id="deathPlace" />
 
-
       <label>Tiene foto (subir a /img/ en repo)</label>
       <input id="hasPhoto" type="checkbox" />
 
       <label>Nombre archivo (ej: david_cernadas.jpg)</label>
       <input id="photoFile" placeholder="david_cernadas.jpg" />
-
 
       <label>Parents (Ctrl+click para seleccionar varios)</label>
       <select id="parents" multiple size="4"></select>
@@ -78,15 +78,17 @@
       <label>Children (Ctrl+click)</label>
       <select id="children" multiple size="6"></select>
 
-
       <div style="margin-top:12px">
         <button type="submit">Guardar</button>
         <button type="button" id="cancelBtn">Cancelar</button>
       </div>
     </form>
 
-
     <h3>Miembros</h3>
+	 <input id="memberSearch" placeholder="Buscar miembro..." style="margin-bottom:10px;width:100%;padding:6px;">
+	 <div id="memberList">Cargando...</div>
+
+	<h3>Miembros</h3>
     <div id="memberList">Cargando...</div>
 
     <hr>
