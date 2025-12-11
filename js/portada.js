@@ -1,10 +1,3 @@
-<!-- LEAFLET — Cargar SIEMPRE ANTES QUE PORTADA.JS -->
-<script 
-  src="css/leaflet.js"></script>
-
-<script type="module" src="js/firebase.js"></script>
-<script type="module" src="js/portada.js"></script>
-
 // js/portada.js  (CORREGIDO)
 
 // 🔥 Import Firebase correctamente
@@ -106,5 +99,3 @@ function buildMap(members){
     // dejar el placeholder
   }
 })();
-
-
