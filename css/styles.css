@@ -234,4 +234,122 @@ body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(-
   .collage{grid-auto-rows:120px}
 }
 
+/* ─────────────────────────────
+   ADMIN ESTILO MODERNO
+────────────────────────────── */
+.admin-header {
+  background: #1f6fed;
+  padding: 16px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-header-links a,
+.admin-header-links button {
+  color: white;
+  font-weight: bold;
+}
+
+.admin-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.center-card {
+  max-width: 380px;
+  text-align: center;
+}
+
+.form-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-full-width {
+  grid-column: span 2;
+}
+
+.form-block label {
+  font-weight: 600;
+}
+
+input, select {
+  padding: 10px !important;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.manual-input {
+  margin-top: 8px;
+}
+
+.btn-primary {
+  background: #1f6fed;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background: #e0e7ff;
+  color: #1f3c94;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+}
+
+.member-list .member-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f8f9fc;
+  margin-bottom: 8px;
+}
+
+.member-row button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.member-row .editBtn {
+  background: #d1e7ff;
+}
+
+.member-row .deleteBtn {
+  background: #ffe1e1;
+}
+
+.photo-log {
+  padding: 12px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
 
