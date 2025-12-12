@@ -181,7 +181,7 @@ const COUNTRY_COORDS = {
   "south africa":[-25.7479,28.2293],
   "south korea":[37.5665,126.9780],
   "south sudan":[4.8594,31.5713],
-  "spain":[40.4168,-3.7038],
+  "España":[40.4168,-3.7038],
   "sri lanka":[6.9271,79.8612],
   "sudan":[15.5007,32.5599],
   "suriname":[5.8520,-55.2038],
@@ -302,6 +302,7 @@ function buildMap(members){
     // dejar el placeholder
   }
 })();
+
 
 
 
