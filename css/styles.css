@@ -1,9 +1,19 @@
-/* styles.css - portada, árbol vertical, zoom/pan UI */
+/* styles.css - portada, árbol vertical, zoom/pan UI y admin moderno*/
 
 /* ---------- base ---------- */
-:root { --accent: #1f6fed; --muted: #666; --bg: #f6f7fb; --card: #fff; }
+:root { 
+  --accent: #1f6fed;
+  --muted: #666;
+  --bg: #f6f7fb;
+  --card: #fff;
+}
 *{box-sizing:border-box}
-body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(--bg); color:#222}
+body{
+  font-family:Inter, Arial, Helvetica, sans-serif;
+  margin:0;
+  background:var(--bg);
+  color:#222;
+}
 
 /* ---------- topbar / header ---------- */
 .topbar{
@@ -12,13 +22,13 @@ body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(-
   align-items:center;
   padding:14px 20px;
   background:var(--card);
-  border-bottom:1px solid #eee
+  border-bottom:1px solid #eee;
 }
 .brand{display:flex;gap:22px;align-items:center}
 .escudo{
-  height:108px;          /* tamaño del escudo */
-  display:block;        /* permite centrar */
-  margin:0 auto;        /* centrado horizontal */
+  height:108px;
+  display:block;
+  margin:0 auto;
 }
 .brand h1{margin:0;font-size:26px}
 .subtitle{margin:0;color:#555;font-size:14px}
@@ -38,11 +48,7 @@ body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(-
 }
 
 .hero-left{flex:1}
-
-.hero-right{
-  width:100%;
-  max-width:480px;
-}
+.hero-right{width:100%;max-width:480px}
 
 /* ---------- collage ---------- */
 .collage{
@@ -54,16 +60,15 @@ body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(-
   overflow:hidden;
   background:var(--card);
   padding:6px;
-  box-shadow:0 6px 20px rgba(15,15,15,0.06)
+  box-shadow:0 6px 20px rgba(15,15,15,0.06);
 }
 .collage img{
-  width:100%;
-  height:100%;
+  width:100%;height:100%;
   object-fit:cover;
-  border-radius:6px
+  border-radius:6px;
 }
 
-/* ---------- history & highlights ---------- */
+/* ---------- history ---------- */
 .history p{line-height:1.5;color:#222}
 .highlights{margin-top:12px}
 .highlights ul{padding-left:18px;color:#333}
@@ -74,15 +79,14 @@ body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(-
   background:var(--card);
   padding:12px;
   border-radius:10px;
-  box-shadow:0 6px 20px rgba(15,15,15,0.04)
+  box-shadow:0 6px 20px rgba(15,15,15,0.04);
 }
 
 /* ---------- CTA ---------- */
 .cta{
-  display:flex;
-  gap:12px;
+  display:flex;gap:12px;
   justify-content:center;
-  margin:28px 0
+  margin:28px 0;
 }
 .btn{
   background:var(--accent);
@@ -90,12 +94,12 @@ body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(-
   padding:12px 18px;
   border-radius:8px;
   text-decoration:none;
-  font-weight:700
+  font-weight:700;
 }
 .btn.ghost{
   background:#fff;
   color:var(--accent);
-  border:2px solid var(--accent)
+  border:2px solid var(--accent);
 }
 
 /* ---------- tree area ---------- */
@@ -104,14 +108,13 @@ body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(-
   padding:18px;
   border-radius:10px;
   box-shadow:0 6px 22px rgba(0,0,0,0.06);
-  min-height:300px
+  min-height:300px;
 }
 .tree-controls{
-  display:flex;
-  flex-wrap:wrap;
+  display:flex;flex-wrap:wrap;
   gap:8px;
   align-items:center;
-  margin-bottom:12px
+  margin-bottom:12px;
 }
 #treeContainer{
   background:#fff;
@@ -119,22 +122,21 @@ body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(-
   border-radius:8px;
   min-height:320px;
   overflow:auto;
-  position:relative
+  position:relative;
 }
 
-/* node and connectors (vertical tree) */
+/* nodes */
 .node-outer{
   display:inline-block;
   vertical-align:top;
   text-align:center;
   position:relative;
-  margin:0 12px 40px
+  margin:0 12px 40px;
 }
 .pair{
   display:flex;
   gap:12px;
-  align-items:flex-start;
-  justify-content:center
+  justify-content:center;
 }
 .person-box{
   background:#fff;
@@ -142,53 +144,46 @@ body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(-
   border-radius:10px;
   padding:10px;
   min-width:180px;
-  box-shadow:0 4px 12px rgba(0,0,0,0.06)
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
 }
 .person-box img{
-  width:130px;
-  height:130px;
+  width:130px;height:130px;
   object-fit:cover;
   border-radius:8px;
   border:1px solid #ccc;
-  display:block;
-  margin:6px auto
+  display:block;margin:6px auto;
 }
 .person-name{font-weight:700;margin-top:6px}
 .person-meta{color:var(--muted);font-size:13px;margin-top:6px}
 
 /* connectors */
 .connector-vertical{
-  width:2px;
-  height:16px;
+  width:2px;height:16px;
   background:#9aa7c2;
-  margin:6px auto
+  margin:6px auto;
 }
 .children-row{
   display:flex;
   justify-content:center;
   gap:32px;
   position:relative;
-  padding-top:22px
+  padding-top:22px;
 }
 .children-row:before{
   content:"";
   position:absolute;
-  left:5%;
-  right:5%;
-  top:8px;
+  left:5%;right:5%;top:8px;
   height:2px;
   background:#9aa7c2;
-  opacity:0.6
+  opacity:0.6;
 }
 .children-row .node-outer:before{
   content:"";
   position:absolute;
-  left:50%;
-  transform:translateX(-50%);
+  left:50%;transform:translateX(-50%);
   top:-8px;
-  width:2px;
-  height:16px;
-  background:#9aa7c2
+  width:2px;height:16px;
+  background:#9aa7c2;
 }
 
 /* ---------- navigator footer ---------- */
@@ -201,155 +196,165 @@ body{font-family:Inter, Arial, Helvetica, sans-serif; margin:0; background:var(-
   display:flex;
   flex-wrap:wrap;
   gap:8px;
-  align-items:center
+  align-items:center;
 }
 .nav-btn{
   padding:8px 12px;
   border-radius:8px;
   border:1px solid #dfe7ff;
   background:#f3f7ff;
-  cursor:pointer
+  cursor:pointer;
 }
 
 /* ---------- zoom controls ---------- */
 .zoom-controls{
   display:flex;
   gap:8px;
-  align-items:center;
   justify-content:center;
-  margin:10px 0
+  margin:10px 0;
 }
 .zoom-controls button{
   padding:6px 10px;
   border-radius:6px;
   border:1px solid #ddd;
   background:#fff;
-  cursor:pointer
+  cursor:pointer;
 }
 
 /* ---------- responsive ---------- */
 @media(max-width:920px){
   .hero{flex-direction:column}
-  .hero-right{width:100%;max-width:100%}
+  .hero-right{max-width:100%}
   .collage{grid-auto-rows:120px}
 }
 
 /* ─────────────────────────────
-   ADMIN ESTILO MODERNO
+   🧩 ADMIN: ESTILO MODERNO
 ────────────────────────────── */
-.admin-header {
-  background: #1f6fed;
-  padding: 16px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+/* HEADER ADMIN */
+.admin-header{
+  background:#1f6fed;
+  color:white;
+  padding:16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 4px 14px rgba(0,0,0,0.15);
 }
 
 .admin-header-links a,
-.admin-header-links button {
-  color: white;
-  font-weight: bold;
+.admin-header-links button{
+  color:white;
+  font-weight:bold;
 }
 
-.admin-card {
-  background: #ffffff;
-  padding: 22px;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  max-width: 1000px;
-  margin: 20px auto;
+/* TARJETAS DE PANEL */
+.admin-card{
+  background:#fff;
+  padding:26px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  max-width:1100px;
+  margin:25px auto;
 }
 
-.center-card {
-  max-width: 380px;
-  text-align: center;
+.center-card{
+  max-width:380px;
+  text-align:center;
 }
 
-.form-grid-2col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
+/* GRID */
+.form-grid-2col{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+.form-full-width{grid-column:span 2}
+
+/* INPUTS */
+input, select{
+  padding:12px !important;
+  font-size:16px;
+  border-radius:10px;
+  border:1px solid #d1d5db;
+  background:#f9fafc;
+  transition:0.2s;
+}
+input:focus, select:focus{
+  background:#fff;
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(31,111,237,0.25);
+  outline:none;
 }
 
-.form-full-width {
-  grid-column: span 2;
+/* "CAJONES" visuales */
+.panel-drawer{
+  background:white;
+  padding:22px;
+  border-radius:14px;
+  border:1px solid #e4e7ec;
+  margin-bottom:20px;
+  box-shadow:0 4px 18px rgba(0,0,0,0.05);
+}
+.panel-drawer h3{
+  margin-top:0;
+  margin-bottom:12px;
+  color:#1f3c94;
 }
 
-.form-block label {
-  font-weight: 600;
+/* BOTONES */
+.btn-primary,
+.btn-secondary{
+  padding:12px 20px;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.2s;
+}
+.btn-primary{
+  background:#1f6fed;color:white;
+}
+.btn-primary:hover{background:#195ccb}
+
+.btn-secondary{
+  background:#e0e7ff;
+  color:#1f3c94;
+}
+.btn-secondary:hover{
+  background:#d4ddff;
 }
 
-input, select {
-  padding: 10px !important;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  width: 100%;
-  margin-top: 4px;
+.btn-shadow{
+  box-shadow:0 4px 14px rgba(0,0,0,0.15);
 }
 
-.manual-input {
-  margin-top: 8px;
+/* LISTA DE MIEMBROS */
+#memberList .member-row{
+  display:flex;
+  justify-content:space-between;
+  padding:12px;
+  border-radius:12px;
+  background:#f2f4f9;
+  margin-bottom:8px;
 }
-
-.btn-primary {
-  background: #1f6fed;
-  color: white;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
+.member-row:hover{background:#e9ecf4}
+.member-row button{
+  padding:6px 12px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+  font-weight:bold;
 }
+.editBtn{background:#d1e7ff}
+.deleteBtn{background:#ffe1e1}
 
-.btn-secondary {
-  background: #e0e7ff;
-  color: #1f3c94;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
+/* LOG DE FOTOS */
+.photo-log{
+  background:#f3f4f6;
+  padding:14px;
+  border-radius:10px;
+  font-size:14px;
+  white-space:pre-wrap;
 }
-
-.search-input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  border: 1px solid #ccc;
-}
-
-.member-list .member-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  border-radius: 8px;
-  background: #f8f9fc;
-  margin-bottom: 8px;
-}
-
-.member-row button {
-  padding: 6px 12px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-}
-
-.member-row .editBtn {
-  background: #d1e7ff;
-}
-
-.member-row .deleteBtn {
-  background: #ffe1e1;
-}
-
-.photo-log {
-  padding: 12px;
-  background: #f3f4f6;
-  border-radius: 8px;
-  font-size: 14px;
-}
-
-
