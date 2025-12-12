@@ -13,113 +13,136 @@
   <h1>Administración - Familia Cernadas</h1>
   <div class="admin-header-links">
     <a href="index.html" class="admin-link">← Volver a pública</a>
-    <button id="logoutBtn" style="display:none">Cerrar sesión</button>
+    <button id="logoutBtn" class="btn-shadow" style="display:none">Cerrar sesión</button>
   </div>
 </header>
 
 <main>
 
   <!-- LOGIN -->
-  <section id="authSection" class="admin-card center-card">
+  <section id="authSection" class="admin-card glass-panel center-card">
     <h2>Acceder</h2>
-    <input id="email" placeholder="Email admin" />
-    <input id="password" placeholder="Contraseña" type="password" />
-    <button id="loginBtn" class="btn-primary">Entrar</button>
+    <input id="email" placeholder="Email admin" class="input-box"/>
+    <input id="password" placeholder="Contraseña" type="password" class="input-box"/>
+    <button id="loginBtn" class="btn-primary btn-shadow">Entrar</button>
   </section>
 
 
   <!-- PANEL ADMIN -->
-  <section id="adminPanel" class="admin-card" style="display:none">
+  <section id="adminPanel" class="admin-card glass-panel" style="display:none">
 
     <h2>Crear / Editar miembro</h2>
 
     <form id="memberForm" class="form-grid-2col">
-      <input id="memberId" type="hidden" />
 
-      <div class="form-block">
-        <label>Nombre (completo)</label>
-        <input id="name" required />
+      <input id="memberId" type="hidden"/>
+
+      <!-- CAMPOS PRINCIPALES -->
+      <div class="panel-drawer">
+        <h3>Datos personales</h3>
+
+        <div class="form-grid-2col inner-grid">
+
+          <div>
+            <label>Nombre completo</label>
+            <input id="name" class="input-box" required/>
+          </div>
+
+          <div>
+            <label>Fecha de nacimiento</label>
+            <input id="birthDate" class="input-box"/>
+          </div>
+
+          <div>
+            <label>País de nacimiento</label>
+            <select id="birthCountry" class="input-box" required>
+              <option value="">(elige país)</option>
+            </select>
+          </div>
+
+          <div>
+            <label>Lugar de nacimiento</label>
+            <select id="birthPlace" class="input-box" required>
+              <option value="">(selecciona país primero)</option>
+            </select>
+
+            <input id="birthPlaceManual"
+                   placeholder="Escribe lugar manualmente"
+                   class="input-box"
+                   style="display:none;margin-top:6px"/>
+          </div>
+
+          <div>
+            <label>Fecha fallecimiento</label>
+            <input id="deathDate" class="input-box"/>
+          </div>
+
+          <div>
+            <label>Lugar fallecimiento</label>
+            <input id="deathPlace" class="input-box"/>
+          </div>
+
+        </div>
       </div>
 
-      <div class="form-block">
-        <label>Fecha nacimiento (YYYY-MM-DD)</label>
-        <input id="birthDate" />
+      <!-- FOTOS -->
+      <div class="panel-drawer">
+        <h3>Fotografía</h3>
+        <div class="inner-grid">
+          <div>
+            <label>¿Tiene foto?</label>
+            <input id="hasPhoto" type="checkbox"/>
+          </div>
+
+          <div class="form-full-width">
+            <label>Archivo foto</label>
+            <input id="photoFile" class="input-box" placeholder="david_cernadas.jpg"/>
+          </div>
+        </div>
       </div>
 
-      <div class="form-block">
-        <label>País de nacimiento</label>
-        <select id="birthCountry" required>
-          <option value="">(elige país)</option>
-        </select>
-      </div>
+      <!-- RELACIONES -->
+      <div class="panel-drawer">
+        <h3>Relaciones</h3>
 
-      <div class="form-block">
-        <label>Lugar de nacimiento</label>
-        <select id="birthPlace" required>
-          <option value="">(selecciona país primero)</option>
-        </select>
-        <input id="birthPlaceManual"
-               class="manual-input"
-               placeholder="Escribe el lugar manualmente"
-               style="display:none" />
-      </div>
+        <label>Parents</label>
+        <select id="parents" multiple size="4" class="input-box"></select>
 
-      <div class="form-block">
-        <label>Fecha fallecimiento</label>
-        <input id="deathDate" />
-      </div>
-
-      <div class="form-block">
-        <label>Lugar fallecimiento</label>
-        <input id="deathPlace" />
-      </div>
-
-      <div class="form-block">
-        <label>Tiene foto (subir a /img/ en repo)</label>
-        <input id="hasPhoto" type="checkbox" />
-      </div>
-
-      <div class="form-block">
-        <label>Archivo foto (ej: david_cernadas.jpg)</label>
-        <input id="photoFile" placeholder="david_cernadas.jpg" />
-      </div>
-
-      <div class="form-full-width">
-        <label>Parents (Ctrl+click)</label>
-        <select id="parents" multiple size="4"></select>
-      </div>
-
-      <div class="form-full-width">
         <label>Partners</label>
-        <select id="partners" multiple size="4"></select>
-      </div>
+        <select id="partners" multiple size="4" class="input-box"></select>
 
-      <div class="form-full-width">
         <label>Children</label>
-        <select id="children" multiple size="6"></select>
+        <select id="children" multiple size="6" class="input-box"></select>
+
       </div>
 
-      <div class="form-actions form-full-width">
-        <button type="submit" class="btn-primary">Guardar</button>
-        <button type="button" id="cancelBtn" class="btn-secondary">Cancelar</button>
+      <div class="form-actions">
+        <button type="submit" class="btn-primary btn-shadow">Guardar</button>
+        <button type="button" id="cancelBtn" class="btn-secondary btn-shadow">Cancelar</button>
       </div>
 
     </form>
 
+    <!-- LISTA DE MIEMBROS -->
+    <div class="panel-drawer">
+      <h3>Miembros</h3>
 
-    <h3>Miembros</h3>
+      <input id="memberSearch"
+             class="input-box"
+             placeholder="Buscar miembro..."
 
-    <input id="memberSearch"
-           placeholder="Buscar miembro..."
-           class="search-input">
+             style="margin-bottom:14px">
 
-    <div id="memberList" class="member-list">Cargando...</div>
+      <div id="memberList">Cargando...</div>
+    </div>
 
     <hr>
 
-    <h3>Comprobar fotos pendientes</h3>
-    <button id="checkPhotosBtn" class="btn-secondary">Ver fotos faltantes</button>
-    <pre id="photoLog" class="photo-log"></pre>
+    <div class="panel-drawer">
+      <h3>Comprobar fotos pendientes</h3>
+      <button id="checkPhotosBtn" class="btn-secondary btn-shadow">Ver fotos faltantes</button>
+      <pre id="photoLog" class="photo-log"></pre>
+    </div>
 
   </section>
 </main>
