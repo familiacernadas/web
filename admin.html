@@ -8,9 +8,10 @@
 </head>
 
 <body>
-<header>
+
+<header class="admin-header">
   <h1>Administración - Familia Cernadas</h1>
-  <div style="display:flex;gap:10px;align-items:center;">
+  <div class="admin-header-links">
     <a href="index.html" class="admin-link">← Volver a pública</a>
     <button id="logoutBtn" style="display:none">Cerrar sesión</button>
   </div>
@@ -19,82 +20,106 @@
 <main>
 
   <!-- LOGIN -->
-  <section id="authSection">
+  <section id="authSection" class="admin-card center-card">
     <h2>Acceder</h2>
     <input id="email" placeholder="Email admin" />
     <input id="password" placeholder="Contraseña" type="password" />
-    <button id="loginBtn">Entrar</button>
+    <button id="loginBtn" class="btn-primary">Entrar</button>
   </section>
 
 
   <!-- PANEL ADMIN -->
-  <section id="adminPanel" style="display:none">
+  <section id="adminPanel" class="admin-card" style="display:none">
+
     <h2>Crear / Editar miembro</h2>
 
-    <form id="memberForm">
+    <form id="memberForm" class="form-grid-2col">
       <input id="memberId" type="hidden" />
 
-      <label>Nombre (completo)</label>
-      <input id="name" required />
-
-      <label>Fecha nacimiento (YYYY-MM-DD)</label>
-      <input id="birthDate" />
-
-      <!-- SELECT CERRADO DE PAÍSES -->
-      <label>País de nacimiento</label>
-      <select id="birthCountry" required>
-        <option value="">(elige país)</option>
-      </select>
-
-      <!-- SELECT DINÁMICO SEGÚN PAÍS -->
-      <label>Lugar de nacimiento</label>
-      <select id="birthPlace" required>
-        <option value="">(selecciona país primero)</option>
-      </select>
-
-      <!-- NUEVO — CAMPO MANUAL SI EL PAÍS NO TIENE LISTA -->
-      <input id="birthPlaceManual"
-             placeholder="Escribe el lugar manualmente"
-             style="display:none" />
-
-      <label>Fecha fallecimiento</label>
-      <input id="deathDate" />
-
-      <label>Lugar fallecimiento</label>
-      <input id="deathPlace" />
-
-      <label>Tiene foto (subir a /img/ en repo)</label>
-      <input id="hasPhoto" type="checkbox" />
-
-      <label>Nombre archivo (ej: david_cernadas.jpg)</label>
-      <input id="photoFile" placeholder="david_cernadas.jpg" />
-
-      <label>Parents (Ctrl+click para seleccionar varios)</label>
-      <select id="parents" multiple size="4"></select>
-
-      <label>Partners (Ctrl+click)</label>
-      <select id="partners" multiple size="4"></select>
-
-      <label>Children (Ctrl+click)</label>
-      <select id="children" multiple size="6"></select>
-
-      <div style="margin-top:12px">
-        <button type="submit">Guardar</button>
-        <button type="button" id="cancelBtn">Cancelar</button>
+      <div class="form-block">
+        <label>Nombre (completo)</label>
+        <input id="name" required />
       </div>
+
+      <div class="form-block">
+        <label>Fecha nacimiento (YYYY-MM-DD)</label>
+        <input id="birthDate" />
+      </div>
+
+      <div class="form-block">
+        <label>País de nacimiento</label>
+        <select id="birthCountry" required>
+          <option value="">(elige país)</option>
+        </select>
+      </div>
+
+      <div class="form-block">
+        <label>Lugar de nacimiento</label>
+        <select id="birthPlace" required>
+          <option value="">(selecciona país primero)</option>
+        </select>
+        <input id="birthPlaceManual"
+               class="manual-input"
+               placeholder="Escribe el lugar manualmente"
+               style="display:none" />
+      </div>
+
+      <div class="form-block">
+        <label>Fecha fallecimiento</label>
+        <input id="deathDate" />
+      </div>
+
+      <div class="form-block">
+        <label>Lugar fallecimiento</label>
+        <input id="deathPlace" />
+      </div>
+
+      <div class="form-block">
+        <label>Tiene foto (subir a /img/ en repo)</label>
+        <input id="hasPhoto" type="checkbox" />
+      </div>
+
+      <div class="form-block">
+        <label>Archivo foto (ej: david_cernadas.jpg)</label>
+        <input id="photoFile" placeholder="david_cernadas.jpg" />
+      </div>
+
+      <div class="form-full-width">
+        <label>Parents (Ctrl+click)</label>
+        <select id="parents" multiple size="4"></select>
+      </div>
+
+      <div class="form-full-width">
+        <label>Partners</label>
+        <select id="partners" multiple size="4"></select>
+      </div>
+
+      <div class="form-full-width">
+        <label>Children</label>
+        <select id="children" multiple size="6"></select>
+      </div>
+
+      <div class="form-actions form-full-width">
+        <button type="submit" class="btn-primary">Guardar</button>
+        <button type="button" id="cancelBtn" class="btn-secondary">Cancelar</button>
+      </div>
+
     </form>
 
-    <h3>Miembros</h3>
-	 <input id="memberSearch" placeholder="Buscar miembro..." style="margin-bottom:10px;width:100%;padding:6px;">
-	 <div id="memberList">Cargando...</div>
 
-	<h3>Miembros</h3>
-    <div id="memberList">Cargando...</div>
+    <h3>Miembros</h3>
+
+    <input id="memberSearch"
+           placeholder="Buscar miembro..."
+           class="search-input">
+
+    <div id="memberList" class="member-list">Cargando...</div>
 
     <hr>
+
     <h3>Comprobar fotos pendientes</h3>
-    <button id="checkPhotosBtn">Ver fotos faltantes</button>
-    <pre id="photoLog"></pre>
+    <button id="checkPhotosBtn" class="btn-secondary">Ver fotos faltantes</button>
+    <pre id="photoLog" class="photo-log"></pre>
 
   </section>
 </main>
