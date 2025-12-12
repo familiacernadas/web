@@ -63,6 +63,7 @@ const COUNTRY_COORDS = {
   "estonia":[59.4370,24.7536],
   "eswatini":[-26.3054,31.1367],
   "ethiopia":[9.0300,38.7400],
+  "España":[40.4168,-3.7038],
 
   "fiji":[-18.1248,178.4501],
   "finland":[60.1699,24.9384],
@@ -181,7 +182,7 @@ const COUNTRY_COORDS = {
   "south africa":[-25.7479,28.2293],
   "south korea":[37.5665,126.9780],
   "south sudan":[4.8594,31.5713],
-  "España":[40.4168,-3.7038],
+  "Spain":[40.4168,-3.7038],
   "sri lanka":[6.9271,79.8612],
   "sudan":[15.5007,32.5599],
   "suriname":[5.8520,-55.2038],
@@ -302,6 +303,7 @@ function buildMap(members){
     // dejar el placeholder
   }
 })();
+
 
 
 
