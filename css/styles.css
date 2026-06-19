@@ -15,6 +15,37 @@ body{
   color:#222;
 }
 
+/* --------boton pronostico mundial 2026------*/
+
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.worldcup-btn{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.btn-mundial{
+  background:#00875a;
+  color:white;
+  text-decoration:none;
+  padding:10px 20px;
+  border-radius:8px;
+  font-weight:700;
+  transition:0.3s;
+  box-shadow:0 2px 6px rgba(0,0,0,.2);
+}
+
+.btn-mundial:hover{
+  background:#006c48;
+  transform:translateY(-2px);
+}
+
 /* ---------- topbar / header ---------- */
 .topbar{
   display:flex;
