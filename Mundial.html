@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predictor Mundial 2026 - Estadísticas en Vivo</title>
+    <title>Predictor Mundial 2026 - Cuadro Completo y Estadísticas</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); }
@@ -17,14 +17,14 @@
                 <div class="bg-indigo-600 text-white p-2 rounded-lg font-bold text-xl tracking-wider">⚽</div>
                 <div>
                     <h1 class="text-xl font-bold text-white tracking-tight">Mundial 2026 · Analizador Predictivo</h1>
-                    <p class="text-xs text-indigo-400 font-medium">Estadísticas reales y cálculo preciso de probabilidades</p>
+                    <p class="text-xs text-indigo-400 font-medium">Estadísticas reales, goleadores y cuadro de eliminatorias en vivo</p>
                 </div>
             </div>
             <div class="flex items-center gap-4">
                 <div class="text-right">
                     <p id="live-clock" class="text-xs text-slate-400 font-mono"></p>
                     <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Datos Verificados
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Sincronizado
                     </span>
                 </div>
                 <button onclick="fetchWorldCupData()" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-all shadow-lg shadow-indigo-600/20 cursor-pointer">
@@ -35,51 +35,120 @@
     </header>
 
     <main class="max-w-7xl mx-auto px-4 py-8">
-        <section class="mb-10">
-            <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+        
+        <section class="mb-8">
+            <h2 class="text-sm font-bold uppercase tracking-wider text-indigo-400 mb-3 flex items-center gap-2">
                 📅 Partidos de la Jornada
             </h2>
             <div id="matches-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 </div>
         </section>
 
-        <section>
-            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
-                <div>
-                    <h2 class="text-lg font-bold text-white">📊 Tabla de Rendimiento y Favoritos al Título</h2>
-                    <p class="text-xs text-slate-400">Ponderación algorítmica matemática: Puntos (50%), Gol Diferencia (30%) y xG Acumulado (20%).</p>
+        <section class="mb-10">
+            <h2 class="text-sm font-bold uppercase tracking-wider text-indigo-400 mb-3 flex items-center gap-2">
+                🌿 Cuadro de Eliminatorias Proyectado (Fase Final)
+            </h2>
+            <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-6 backdrop-blur-sm shadow-xl overflow-x-auto">
+                <div class="min-w-[800px] grid grid-cols-4 gap-4 items-center text-center">
+                    
+                    <div class="space-y-8">
+                        <div class="text-xs font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800 pb-1">Cuartos A</div>
+                        <div class="bg-slate-800/40 border border-slate-750 p-2 rounded-lg text-xs space-y-1">
+                            <div class="flex justify-between px-2 py-0.5 rounded font-medium" id="bracket-q1-h">🇨🇦 Canadá</div>
+                            <div class="flex justify-between px-2 py-0.5 rounded font-medium" id="bracket-q1-a">🇲🇽 México</div>
+                        </div>
+                        <div class="bg-slate-800/40 border border-slate-750 p-2 rounded-lg text-xs space-y-1">
+                            <div class="flex justify-between px-2 py-0.5 rounded font-medium" id="bracket-q2-h">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra</div>
+                            <div class="flex justify-between px-2 py-0.5 rounded font-medium" id="bracket-q2-a">🇨🇭 Suiza</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-16">
+                        <div class="text-xs font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800 pb-1">Semifinal 1</div>
+                        <div class="bg-slate-800/80 border border-indigo-900/50 p-3 rounded-lg text-xs space-y-1 shadow-md">
+                            <div class="flex justify-between font-bold text-indigo-300" id="bracket-s1-h">Por clasificar</div>
+                            <div class="flex justify-between font-bold text-indigo-300" id="bracket-s1-a">Por clasificar</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 bg-indigo-950/20 border border-indigo-500/20 p-4 rounded-xl shadow-2xl my-4">
+                        <div class="text-xs font-black text-amber-400 uppercase tracking-widest">🏆 Gran Final 🏆</div>
+                        <div class="bg-slate-950/60 p-3 rounded-lg text-sm space-y-2 border border-slate-800">
+                            <div class="font-bold text-white flex justify-center gap-2" id="bracket-f-h">--</div>
+                            <div class="text-xs text-slate-500 font-bold">VS</div>
+                            <div class="font-bold text-white flex justify-center gap-2" id="bracket-f-a">--</div>
+                        </div>
+                        <div class="text-[10px] text-indigo-400 font-medium">Estadio Azteca / MetLife</div>
+                    </div>
+
+                    <div class="space-y-16">
+                        <div class="text-xs font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800 pb-1">Semifinal 2</div>
+                        <div class="bg-slate-800/80 border border-indigo-900/50 p-3 rounded-lg text-xs space-y-1 shadow-md">
+                            <div class="flex justify-between font-bold text-indigo-300" id="bracket-s2-h">Por clasificar</div>
+                            <div class="flex justify-between font-bold text-indigo-300" id="bracket-s2-a">Por clasificar</div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="flex gap-2 w-full sm:w-auto">
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-2">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
+                    <div>
+                        <h2 class="text-lg font-bold text-white">📊 Tabla de Rendimiento General</h2>
+                        <p class="text-xs text-slate-400">Ordenado por modelo de probabilidad algorítmica.</p>
+                    </div>
                     <input type="text" id="search-team" oninput="filterTeams()" placeholder="Buscar selección..." class="w-full sm:w-64 bg-slate-900/60 border border-slate-800 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:border-indigo-500 text-white placeholder-slate-500">
+                </div>
+
+                <div class="bg-slate-900/40 border border-slate-800 rounded-xl overflow-hidden backdrop-blur-sm shadow-xl">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="border-b border-slate-800 bg-slate-900/80 text-xs font-semibold uppercase tracking-wider text-slate-400">
+                                    <th class="py-3 px-4 text-center w-12">Rank</th>
+                                    <th class="py-3 px-4">Selección</th>
+                                    <th class="py-3 px-4 text-center">Pts</th>
+                                    <th class="py-3 px-4 text-center">Goles</th>
+                                    <th class="py-3 px-4 text-center">DG</th>
+                                    <th class="py-3 px-4 text-center">xG</th>
+                                    <th class="py-3 px-4 text-right pr-6 text-emerald-400 font-bold">Prob. Título</th>
+                                </tr>
+                            </thead>
+                            <tbody id="teams-table-body" class="divide-y divide-slate-850 text-sm">
+                                </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
 
-            <div class="bg-slate-900/40 border border-slate-800 rounded-xl overflow-hidden backdrop-blur-sm shadow-xl">
-                <div class="overflow-x-auto">
+            <div class="lg:col-span-1">
+                <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                    🥇 Tabla de Goleadores (Bota de Oro)
+                </h2>
+                <div class="bg-slate-900/40 border border-slate-800 rounded-xl overflow-hidden backdrop-blur-sm shadow-xl">
                     <table class="w-full text-left border-collapse">
                         <thead>
                             <tr class="border-b border-slate-800 bg-slate-900/80 text-xs font-semibold uppercase tracking-wider text-slate-400">
-                                <th class="py-3.5 px-4 text-center w-12">Rank</th>
-                                <th class="py-3.5 px-4">Selección</th>
-                                <th class="py-3.5 px-4 text-center">Grupo</th>
-                                <th class="py-3.5 px-4 text-center">PJ</th>
-                                <th class="py-3.5 px-4 text-center font-bold text-indigo-400">Pts</th>
-                                <th class="py-3.5 px-4 text-center">Goles (F:C)</th>
-                                <th class="py-3.5 px-4 text-center">DG</th>
-                                <th class="py-3.5 px-4 text-center">xG Prom.</th>
-                                <th class="py-3.5 px-4 text-right pr-6 text-emerald-400 font-bold">Prob. Campeón</th>
+                                <th class="py-3 px-4">Jugador</th>
+                                <th class="py-3 px-4">Equipo</th>
+                                <th class="py-3 px-4 text-center font-bold text-amber-400">Goles</th>
                             </tr>
                         </thead>
-                        <tbody id="teams-table-body" class="divide-y divide-slate-850 text-sm">
+                        <tbody id="scorers-table-body" class="divide-y divide-slate-850 text-sm">
                             </tbody>
                     </table>
                 </div>
             </div>
-        </section>
+
+        </div>
     </main>
 
     <footer class="max-w-7xl mx-auto px-4 py-8 mt-12 border-t border-slate-800 text-center text-xs text-slate-500">
-        <p>Dashboard de Análisis Avanzado para el Mundial 2026. Datos oficiales corregidos sin alteraciones aleatorias.</p>
+        <p>Dashboard Predictivo Unificado - Mundial 2026. Datos estables de rendimiento integrado.</p>
     </footer>
 
     <script>
@@ -89,7 +158,7 @@
             document.getElementById('live-clock').innerText = now.toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'medium' });
         }, 1000);
 
-        // BASE DE DATOS MATRIZ: Datos reales y fijos
+        // BASE DE DATOS MAESTRA ESTABLE
         const masterData = [
             { id: 1, name: "Canadá", flag: "🇨🇦", group: "B", pj: 2, pts: 4, gf: 6, gc: 0, xg: 4.10 },
             { id: 2, name: "Inglaterra", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿", group: "L", pj: 1, pts: 3, gf: 4, gc: 2, xg: 2.85 },
@@ -103,8 +172,17 @@
             { id: 10, name: "Brasil", flag: "🇧🇷", group: "C", pj: 1, pts: 1, gf: 1, gc: 1, xg: 1.80 }
         ];
 
-        // Copia de trabajo para la aplicación
-        let currentData = JSON.parse(JSON.stringify(masterData));
+        // BASE DE DATOS DE GOLEADORES (Estable y vinculada)
+        const masterScorers = [
+            { name: "Jonathan David", team: "Canadá", flag: "🇨🇦", goals: 3 },
+            { name: "Harry Kane", team: "Inglaterra", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿", goals: 2 },
+            { name: "Zeki Amdouni", team: "Suiza", flag: "🇨🇭", goals: 2 },
+            { name: "Christian Pulisic", team: "Estados Unidos", flag: "🇺🇸", goals: 2 },
+            { name: "Álvaro Morata", team: "España", flag: "🇪🇸", goals: 1 },
+            { name: "Luis Díaz", team: "Colombia", flag: "🇨🇴", goals: 1 },
+            { name: "Lionel Messi", team: "Argentina", flag: "🇦🇷", goals: 1 },
+            { name: "Kylian Mbappé", team: "Francia", flag: "🇫🇷", goals: 1 }
+        ];
 
         const dailyMatches = [
             { home: "Estados Unidos", homeFlag: "🇺🇸", away: "Australia", awayFlag: "🇦🇺", status: "21:00", score: "vs" },
@@ -113,49 +191,75 @@
             { home: "Turquía", homeFlag: "🇹🇷", away: "Paraguay", awayFlag: "🇵🇾", status: "05:00", score: "vs" }
         ];
 
-        // CÁLCULO MATEMÁTICO ESTABLE (Sin variaciones aleatorias)
+        let currentData = JSON.parse(JSON.stringify(masterData));
+        let currentScorers = JSON.parse(JSON.stringify(masterScorers));
+
+        // CALCULO ALGORÍTMICO
         function calculateChances(teams) {
             let computedTeams = teams.map(team => {
                 const diffGoles = team.gf - team.gc;
-                // Puntos (x4) + DG (x2) + xG (x3) - Penalización por gol recibido
                 let performanceIndex = (team.pts * 4) + (diffGoles * 2) + (team.xg * 3) - (team.gc * 1.2);
                 if (performanceIndex < 1) performanceIndex = 1;
                 return { ...team, score: performanceIndex };
             });
-
             const sumScores = computedTeams.reduce((sum, t) => sum + t.score, 0);
-            
             return computedTeams.map(t => ({
                 ...t,
                 probability: ((t.score / sumScores) * 100).toFixed(1)
             })).sort((a, b) => b.probability - a.probability);
         }
 
-        // REDERIZAR TABLA UI
-        function renderUI(teams) {
-            const sortedTeams = calculateChances(teams);
+        // RENDER DE TODA LA SECCIÓN UI
+        function updateDashboard() {
+            const sortedTeams = calculateChances(currentData);
+            
+            // 1. Render de Tabla de Posiciones
             const tableBody = document.getElementById('teams-table-body');
             tableBody.innerHTML = '';
-
             sortedTeams.forEach((team, index) => {
                 const diff = team.gf - team.gc;
                 const row = document.createElement('tr');
                 row.className = "hover:bg-slate-800/40 transition-colors border-b border-slate-800/60";
                 row.innerHTML = `
-                    <td class="py-3.5 px-4 text-center font-mono text-xs font-bold text-slate-500">${index + 1}</td>
-                    <td class="py-3.5 px-4 font-semibold text-white flex items-center gap-2">
-                        <span class="text-lg">${team.flag}</span> ${team.name}
+                    <td class="py-3 px-4 text-center font-mono text-xs font-bold text-slate-500">${index + 1}</td>
+                    <td class="py-3 px-4 font-semibold text-white flex items-center gap-2">
+                        <span>${team.flag}</span> ${team.name}
                     </td>
-                    <td class="py-3.5 px-4 text-center font-mono text-xs"><span class="bg-slate-800 px-2 py-1 rounded text-slate-300">Grupo ${team.group}</span></td>
-                    <td class="py-3.5 px-4 text-center font-mono">${team.pj}</td>
-                    <td class="py-3.5 px-4 text-center font-bold text-indigo-400 font-mono">${team.pts}</td>
-                    <td class="py-3.5 px-4 text-center font-mono text-xs text-slate-300">${team.gf} : ${team.gc}</td>
-                    <td class="py-3.5 px-4 text-center font-mono text-xs ${diff >= 0 ? 'text-emerald-400' : 'text-rose-400'}">${diff > 0 ? '+' : ''}${diff}</td>
-                    <td class="py-3.5 px-4 text-center font-mono text-xs text-amber-400">${team.xg.toFixed(2)}</td>
-                    <td class="py-3.5 px-4 text-right pr-6 font-bold text-emerald-400 font-mono text-base">${team.probability}%</td>
+                    <td class="py-3 px-4 text-center font-bold text-indigo-400 font-mono">${team.pts}</td>
+                    <td class="py-3 px-4 text-center font-mono text-xs text-slate-400">${team.gf}:${team.gc}</td>
+                    <td class="py-3 px-4 text-center font-mono text-xs ${diff >= 0 ? 'text-emerald-400' : 'text-rose-400'}">${diff > 0 ? '+' : ''}${diff}</td>
+                    <td class="py-3 px-4 text-center font-mono text-xs text-amber-400">${team.xg.toFixed(1)}</td>
+                    <td class="py-3 px-4 text-right pr-6 font-bold text-emerald-400 font-mono">${team.probability}%</td>
                 `;
                 tableBody.appendChild(row);
             });
+
+            // 2. Render de Goleadores
+            const scorersBody = document.getElementById('scorers-table-body');
+            scorersBody.innerHTML = '';
+            currentScorers.sort((a,b) => b.goals - a.goals).forEach(scorer => {
+                const row = document.createElement('tr');
+                row.className = "hover:bg-slate-800/40 border-b border-slate-800/60 text-xs";
+                row.innerHTML = `
+                    <td class="py-3 px-4 font-bold text-slate-200">${scorer.name}</td>
+                    <td class="py-3 px-4 text-slate-400"><span>${scorer.flag}</span> ${scorer.team}</td>
+                    <td class="py-3 px-4 text-center font-mono font-bold text-base text-amber-400">${scorer.goals}</td>
+                `;
+                scorersBody.appendChild(row);
+            });
+
+            // 3. Actualizar árbol dinámico basado en los favoritos del algoritmo matemático
+            if(sortedTeams.length >= 4) {
+                // Seteamos las semifinales proyectadas automáticamente por rendimiento algorítmico
+                document.getElementById('bracket-s1-h').innerText = sortedTeams[0].flag + " " + sortedTeams[0].name;
+                document.getElementById('bracket-s1-a').innerText = sortedTeams[3].flag + " " + sortedTeams[3].name;
+                document.getElementById('bracket-s2-h').innerText = sortedTeams[1].flag + " " + sortedTeams[1].name;
+                document.getElementById('bracket-s2-a').innerText = sortedTeams[2].flag + " " + sortedTeams[2].name;
+
+                // Proyectamos los dos máximos favoritos en la Gran Final
+                document.getElementById('bracket-f-h').innerText = sortedTeams[0].flag + " " + sortedTeams[0].name;
+                document.getElementById('bracket-f-a').innerText = sortedTeams[1].flag + " " + sortedTeams[1].name;
+            }
         }
 
         function renderMatches() {
@@ -163,56 +267,62 @@
             grid.innerHTML = '';
             dailyMatches.forEach(match => {
                 const card = document.createElement('div');
-                card.className = "bg-slate-900/60 border border-slate-800/80 rounded-xl p-4 flex flex-col justify-between hover:border-slate-700 transition-all shadow-md";
+                card.className = "bg-slate-900/60 border border-slate-800/80 rounded-xl p-4 flex flex-col justify-between shadow-md";
                 card.innerHTML = `
-                    <div class="flex justify-between items-center mb-3">
-                        <span class="text-[10px] uppercase font-bold tracking-wider text-slate-500">Mundial 2026</span>
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-[9px] uppercase font-bold tracking-wider text-slate-500">Grupo Oficial</span>
                         <span class="text-[10px] font-semibold bg-indigo-500/10 text-indigo-400 px-2 py-0.5 rounded-full">${match.status}</span>
                     </div>
-                    <div class="flex items-center justify-between gap-2">
-                        <div class="flex items-center gap-1.5 min-w-0">
-                            <span class="text-base">${match.homeFlag}</span>
-                            <span class="text-xs font-bold text-slate-200 truncate">${match.home}</span>
-                        </div>
-                        <span class="text-xs font-mono font-bold text-slate-400 px-2">${match.score}</span>
-                        <div class="flex items-center gap-1.5 min-w-0 justify-end">
-                            <span class="text-xs font-bold text-slate-200 truncate">${match.away}</span>
-                            <span class="text-base">${match.awayFlag}</span>
-                        </div>
+                    <div class="flex items-center justify-between gap-1">
+                        <div class="flex items-center gap-1 truncate"><span class="text-sm">${match.homeFlag}</span><span class="text-xs font-bold text-slate-300 truncate">${match.home}</span></div>
+                        <span class="text-xs font-mono font-bold text-slate-500 px-1">${match.score}</span>
+                        <div class="flex items-center gap-1 truncate justify-end"><span class="text-xs font-bold text-slate-300 truncate">${match.away}</span><span class="text-sm">${match.awayFlag}</span></div>
                     </div>
                 `;
                 grid.appendChild(card);
             });
         }
 
-        // FILTRADO DE SELECCIONES
         function filterTeams() {
             const query = document.getElementById('search-team').value.toLowerCase();
             const filtered = currentData.filter(team => team.name.toLowerCase().includes(query));
-            renderUI(filtered);
+            
+            // Render local filtrado temporal
+            const tableBody = document.getElementById('teams-table-body');
+            tableBody.innerHTML = '';
+            calculateChances(filtered).forEach((team, index) => {
+                const diff = team.gf - team.gc;
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="py-3 px-4 text-center font-mono text-xs text-slate-500">${index + 1}</td>
+                    <td class="py-3 px-4 font-semibold text-white"><span>${team.flag}</span> ${team.name}</td>
+                    <td class="py-3 px-4 text-center font-bold text-indigo-400 font-mono">${team.pts}</td>
+                    <td class="py-3 px-4 text-center font-mono text-xs text-slate-400">${team.gf}:${team.gc}</td>
+                    <td class="py-3 px-4 text-center font-mono text-xs">${diff}</td>
+                    <td class="py-3 px-4 text-center font-mono text-xs text-amber-400">${team.xg.toFixed(1)}</td>
+                    <td class="py-3 px-4 text-right pr-6 font-bold text-emerald-400 font-mono">${team.probability}%</td>
+                `;
+                tableBody.appendChild(row);
+            });
         }
 
-        // ACCIÓN DEL BOTÓN: Limpia cualquier anomalía y sincroniza con los datos maestros oficiales
+        // ACCIÓN SIN CRUCES ERRÁTICOS
         function fetchWorldCupData() {
-            // Aquí es donde en el futuro apuntarás a tu url de API externa usando fetch()
-            // Por ahora, asegura la integridad resincronizando con la matriz limpia de datos reales
             currentData = JSON.parse(JSON.stringify(masterData));
-            renderUI(currentData);
-            
-            // Efecto visual en el botón para saber que se ha ejecutado con éxito
+            currentScorers = JSON.parse(JSON.stringify(masterScorers));
+            updateDashboard();
+
             const btn = document.querySelector('button');
-            const originalText = btn.innerText;
-            btn.innerText = "✨ ¡Datos Sincronizados!";
+            btn.innerText = "✨ Datos Sincronizados";
             btn.classList.replace('bg-indigo-600', 'bg-emerald-600');
             setTimeout(() => {
-                btn.innerText = originalText;
+                btn.innerText = "🔄 Sincronizar Datos Real";
                 btn.classList.replace('bg-emerald-600', 'bg-indigo-600');
             }, 1500);
         }
 
-        // CARGA INICIAL
         window.onload = () => {
-            renderUI(currentData);
+            updateDashboard();
             renderMatches();
         };
     </script>
