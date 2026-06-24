@@ -7,8 +7,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); }
-        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
-        input[type=number] { -moz-appearance: textfield; }
     </style>
 </head>
 <body class="gradient-bg text-slate-100 min-h-screen font-sans antialiased">
@@ -20,14 +18,14 @@
                 <div class="bg-indigo-600 text-white p-2 rounded-lg font-bold text-xl">⚽</div>
                 <div>
                     <h1 class="text-xl font-bold text-white tracking-tight">Mundial 2026 · Live Feed Oficial</h1>
-                    <p class="text-xs text-indigo-400 font-medium">Actualización automática real por API desde Dieciseisavos</p>
+                    <p class="text-xs text-indigo-400 font-medium">Actualización automática real (Fase de Grupos y Eliminatorias)</p>
                 </div>
             </div>
             <div class="flex items-center gap-4">
                 <div class="text-right">
                     <p id="live-clock" class="text-xs text-slate-400 font-mono">Cargando hora...</p>
                     <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">
-                        <span id="sync-status" class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Sincronizado con API-Sports
+                        <span id="sync-status" class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Conectado a API-Sports
                     </span>
                 </div>
                 <button onclick="fetchWorldCupData()" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-all cursor-pointer shadow-lg shadow-indigo-600/20">
@@ -50,23 +48,23 @@
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Dieciseisavos</div>
                     <!-- LLAVE 1 -->
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d1">
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d1-h-team">Esperando...</span><span class="font-bold font-mono" id="d1-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d1-a-team">Esperando...</span><span class="font-bold font-mono" id="d1-a-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d1-h-team">Por definir</span><span class="font-bold font-mono" id="d1-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d1-a-team">Por definir</span><span class="font-bold font-mono" id="d1-a-score">-</span></div>
                     </div>
                     <!-- LLAVE 2 -->
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d2">
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d2-h-team">Esperando...</span><span class="font-bold font-mono" id="d2-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d2-a-team">Esperando...</span><span class="font-bold font-mono" id="d2-a-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d2-h-team">Por definir</span><span class="font-bold font-mono" id="d2-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d2-a-team">Por definir</span><span class="font-bold font-mono" id="d2-a-score">-</span></div>
                     </div>
                     <!-- LLAVE 3 -->
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d3">
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d3-h-team">Esperando...</span><span class="font-bold font-mono" id="d3-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d3-a-team">Esperando...</span><span class="font-bold font-mono" id="d3-a-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d3-h-team">Por definir</span><span class="font-bold font-mono" id="d3-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d3-a-team">Por definir</span><span class="font-bold font-mono" id="d3-a-score">-</span></div>
                     </div>
                     <!-- LLAVE 4 -->
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d4">
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d4-h-team">Esperando...</span><span class="font-bold font-mono" id="d4-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d4-a-team">Esperando...</span><span class="font-bold font-mono" id="d4-a-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d4-h-team">Por definir</span><span class="font-bold font-mono" id="d4-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d4-a-team">Por definir</span><span class="font-bold font-mono" id="d4-a-score">-</span></div>
                     </div>
                 </div>
 
@@ -148,23 +146,23 @@
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Dieciseisavos</div>
                     <!-- LLAVE 5 -->
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d5">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d5-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d5-h-team">Esperando...</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d5-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d5-a-team">Esperando...</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d5-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d5-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d5-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d5-a-team">Por definir</span></div>
                     </div>
                     <!-- LLAVE 6 -->
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d6">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d6-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d6-h-team">Esperando...</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d6-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d6-a-team">Esperando...</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d6-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d6-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d6-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d6-a-team">Por definir</span></div>
                     </div>
                     <!-- LLAVE 7 -->
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d7">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d7-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d7-h-team">Esperando...</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d7-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d7-a-team">Esperando...</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d7-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d7-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d7-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d7-a-team">Por definir</span></div>
                     </div>
                     <!-- LLAVE 8 -->
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d8">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d8-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d8-h-team">Esperando...</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d8-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d8-a-team">Esperando...</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d8-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d8-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d8-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d8-a-team">Por definir</span></div>
                     </div>
                 </div>
 
@@ -174,7 +172,7 @@
         <!-- SECCIÓN ESTADÍSTICAS Y GOLEADORES EN DIRECTO -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div class="lg:col-span-2">
-                <h2 class="text-lg font-bold text-white mb-3">📊 Tabla General de Rendimiento (Fase Final)</h2>
+                <h2 class="text-lg font-bold text-white mb-3">📊 Rendimiento Real General (Fase de Grupos en Curso)</h2>
                 <div class="bg-slate-900/40 border border-slate-800 rounded-xl overflow-hidden backdrop-blur-sm shadow-xl">
                     <table class="w-full text-left border-collapse">
                         <thead>
@@ -214,7 +212,7 @@
     <script>
         // Configuración de Conexión Oficial
         const API_KEY = "bfd6931d068d64af26b5e952e8e9d09b"; 
-        const LEAGUE_ID = 1; // ID Internacional unificado FIFA World Cup en API-Football
+        const LEAGUE_ID = 1; // ID Mundial FIFA en API-Football
         const SEASON = 2026;
 
         setInterval(() => {
@@ -223,22 +221,27 @@
         }, 1000);
 
         async function fetchWorldCupData() {
-            if (API_KEY === "bfd6931d068d64af26b5e952e8e9d09b") {
+            if (API_KEY === "bfd6931d068d64af26b5e952e8e9d09b" || API_KEY.trim() === "") {
                 document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-amber-500";
-                console.warn("Falta añadir la API Key en el script.");
+                document.getElementById('sync-status').parentElement.innerHTML = "<span class='text-amber-400'>Falta añadir tu API Key en el código</span>";
                 return;
             }
 
             try {
-                // 1. Obtener partidos de Fase Final (Fixtures)
+                // 1. Obtener TODOS los partidos (Grupos + Eliminatorias)
                 const responseFixtures = await fetch(`https://v3.football.api-sports.io/fixtures?league=${LEAGUE_ID}&season=${SEASON}`, {
                     method: "GET",
                     headers: { "x-rapidapi-key": API_KEY, "x-rapidapi-host": "v3.football.api-sports.io" }
                 });
                 const dataFixtures = await responseFixtures.json();
-                if (dataFixtures.response) processFixtures(dataFixtures.response);
+                
+                if (dataFixtures.response && dataFixtures.response.length > 0) {
+                    processFixtures(dataFixtures.response);
+                } else {
+                    console.warn("No se encontraron partidos devueltos por la API.");
+                }
 
-                // 2. Obtener Máximos Goleadores (Top Scorers)
+                // 2. Obtener Máximos Goleadores Actuales
                 const responseScorers = await fetch(`https://v3.football.api-sports.io/players/topscorers?league=${LEAGUE_ID}&season=${SEASON}`, {
                     method: "GET",
                     headers: { "x-rapidapi-key": API_KEY, "x-rapidapi-host": "v3.football.api-sports.io" }
@@ -253,21 +256,20 @@
         }
 
         function processFixtures(fixtures) {
-            // Mapeamos e identificamos los partidos por sus rondas oficiales de eliminación directa
-            // Filtrar las rondas que contengan "Round of 32", "Round of 16", "Quarter-finals", "Semi-finals", "Final"
-            const roundOf32 = fixtures.filter(f => f.league.round.includes("Round of 32"));
-            const roundOf16 = fixtures.filter(f => f.league.round.includes("Round of 16"));
-            const quarters = fixtures.filter(f => f.league.round.includes("Quarter-finals"));
-            const semis = fixtures.filter(f => f.league.round.includes("Semi-finals"));
-            const finalMatch = fixtures.find(f => f.league.round.includes("Final") && !f.league.round.includes("Semi"));
+            // Separar de forma robusta las fases
+            const roundOf32 = fixtures.filter(f => f.league.round && f.league.round.includes("Round of 32"));
+            const roundOf16 = fixtures.filter(f => f.league.round && f.league.round.includes("Round of 16"));
+            const quarters = fixtures.filter(f => f.league.round && f.league.round.includes("Quarter-finals"));
+            const semis = fixtures.filter(f => f.league.round && f.league.round.includes("Semi-finals"));
+            const finalMatch = fixtures.find(f => f.league.round && f.league.round.includes("Final") && !f.league.round.includes("Semi"));
 
-            // Rellenar dinámicamente Dieciseisavos (Mostramos las primeras 8 llaves del flujo asignado)
+            // Rellenar Dieciseisavos si ya existen datos de llaves
             for (let i = 0; i < 8; i++) {
                 if (roundOf32[i]) {
                     const match = roundOf32[i];
                     const idx = i + 1;
-                    document.getElementById(`d${idx}-h-team`).innerText = match.teams.home.name;
-                    document.getElementById(`d${idx}-a-team`).innerText = match.teams.away.name;
+                    if(match.teams.home.name) document.getElementById(`d${idx}-h-team`).innerText = match.teams.home.name;
+                    if(match.teams.away.name) document.getElementById(`d${idx}-a-team`).innerText = match.teams.away.name;
                     document.getElementById(`d${idx}-h-score`).innerText = match.goals.home !== null ? match.goals.home : '-';
                     document.getElementById(`d${idx}-a-score`).innerText = match.goals.away !== null ? match.goals.away : '-';
                 }
@@ -278,8 +280,8 @@
                 if (roundOf16[i]) {
                     const match = roundOf16[i];
                     const idx = i + 1;
-                    document.getElementById(`o${idx}-h-team`).innerText = match.teams.home.name;
-                    document.getElementById(`o${idx}-a-team`).innerText = match.teams.away.name;
+                    if(match.teams.home.name) document.getElementById(`o${idx}-h-team`).innerText = match.teams.home.name;
+                    if(match.teams.away.name) document.getElementById(`o${idx}-a-team`).innerText = match.teams.away.name;
                     document.getElementById(`o${idx}-h-score`).innerText = match.goals.home !== null ? match.goals.home : '-';
                     document.getElementById(`o${idx}-a-score`).innerText = match.goals.away !== null ? match.goals.away : '-';
                 }
@@ -290,8 +292,8 @@
                 if (quarters[i]) {
                     const match = quarters[i];
                     const idx = i + 1;
-                    document.getElementById(`c${idx}-h-team`).innerText = match.teams.home.name;
-                    document.getElementById(`c${idx}-a-team`).innerText = match.teams.away.name;
+                    if(match.teams.home.name) document.getElementById(`c${idx}-h-team`).innerText = match.teams.home.name;
+                    if(match.teams.away.name) document.getElementById(`c${idx}-a-team`).innerText = match.teams.away.name;
                     document.getElementById(`c${idx}-h-score`).innerText = match.goals.home !== null ? match.goals.home : '-';
                     document.getElementById(`c${idx}-a-score`).innerText = match.goals.away !== null ? match.goals.away : '-';
                 }
@@ -299,20 +301,20 @@
 
             // Rellenar Semifinales
             if (semis[0]) {
-                document.getElementById(`s1-h-team`).innerText = semis[0].teams.home.name;
-                document.getElementById(`s1-a-team`).innerText = semis[0].teams.away.name;
+                document.getElementById(`s1-h-team`).innerText = semis[0].teams.home.name || "Por Clasificar";
+                document.getElementById(`s1-a-team`).innerText = semis[0].teams.away.name || "Por Clasificar";
                 document.getElementById(`s1-h-score`).innerText = semis[0].goals.home !== null ? semis[0].goals.home : '-';
                 document.getElementById(`s1-a-score`).innerText = semis[0].goals.away !== null ? semis[0].goals.away : '-';
             }
             if (semis[1]) {
-                document.getElementById(`s2-h-team`).innerText = semis[1].teams.home.name;
-                document.getElementById(`s2-a-team`).innerText = semis[1].teams.away.name;
+                document.getElementById(`s2-h-team`).innerText = semis[1].teams.home.name || "Por Clasificar";
+                document.getElementById(`s2-a-team`).innerText = semis[1].teams.away.name || "Por Clasificar";
                 document.getElementById(`s2-h-score`).innerText = semis[1].goals.home !== null ? semis[1].goals.home : '-';
                 document.getElementById(`s2-a-score`).innerText = semis[1].goals.away !== null ? semis[1].goals.away : '-';
             }
 
             // Gran Final
-            if (finalMatch) {
+            if (finalMatch && finalMatch.teams.home.name) {
                 document.getElementById('f-t1').innerText = finalMatch.teams.home.name;
                 document.getElementById('f-t2').innerText = finalMatch.teams.away.name;
                 if (finalMatch.fixture.status.short === "FT") {
@@ -323,31 +325,44 @@
                 }
             }
 
+            // Renderizar la tabla con TODOS los partidos que ya tengan goles anotados (Fase de Grupos activa)
             renderPerformanceTable(fixtures);
         }
 
         function renderPerformanceTable(fixtures) {
             const statsMap = {};
             fixtures.forEach(f => {
+                // Procesar cualquier partido jugado (status FT = Finished, o que tenga goles registrados)
                 if (f.goals.home !== null && f.goals.away !== null) {
-                    [f.teams.home.name, f.teams.away.name].forEach(name => {
-                        if (!statsMap[name]) statsMap[name] = { name, pj: 0, gf: 0, gc: 0 };
-                    });
-                    statsMap[f.teams.home.name].pj += 1;
-                    statsMap[f.teams.home.name].gf += f.goals.home;
-                    statsMap[f.teams.home.name].gc += f.goals.away;
+                    const homeName = f.teams.home.name;
+                    const awayName = f.teams.away.name;
 
-                    statsMap[f.teams.away.name].pj += 1;
-                    statsMap[f.teams.away.name].gf += f.goals.away;
-                    statsMap[f.teams.away.name].gc += f.goals.home;
+                    if (!statsMap[homeName]) statsMap[homeName] = { name: homeName, pj: 0, gf: 0, gc: 0 };
+                    if (!statsMap[awayName]) statsMap[awayName] = { name: awayName, pj: 0, gf: 0, gc: 0 };
+
+                    statsMap[homeName].pj += 1;
+                    statsMap[homeName].gf += f.goals.home;
+                    statsMap[homeName].gc += f.goals.away;
+
+                    statsMap[awayName].pj += 1;
+                    statsMap[awayName].gf += f.goals.away;
+                    statsMap[awayName].gc += f.goals.home;
                 }
             });
 
             const tBody = document.getElementById('teams-table-body');
             tBody.innerHTML = '';
-            Object.values(statsMap).sort((a,b) => b.gf - a.gf).forEach(t => {
+            
+            const sortedTeams = Object.values(statsMap).sort((a,b) => b.gf - a.gf);
+
+            if(sortedTeams.length === 0) {
+                tBody.innerHTML = `<tr><td colspan="4" class="py-4 text-center text-slate-500">No hay partidos disputados registrados en la API todavía.</td></tr>`;
+                return;
+            }
+
+            sortedTeams.forEach(t => {
                 tBody.innerHTML += `
-                    <tr class="border-b border-slate-800/60">
+                    <tr class="border-b border-slate-800/60 hover:bg-slate-900/20 transition-colors">
                         <td class="py-3 px-4 font-bold text-white">${t.name}</td>
                         <td class="py-3 px-4 text-center font-mono">${t.pj}</td>
                         <td class="py-3 px-4 text-center font-mono text-emerald-400 font-bold">${t.gf}</td>
@@ -360,9 +375,15 @@
         function renderLiveScorers(scorersResponse) {
             const sBody = document.getElementById('scorers-table-body');
             sBody.innerHTML = '';
-            scorersResponse.slice(0, 5).forEach(p => {
+
+            if(!scorersResponse || scorersResponse.length === 0) {
+                sBody.innerHTML = `<tr><td colspan="2" class="py-4 text-center text-slate-500">Aún no hay goleadores reportados.</td></tr>`;
+                return;
+            }
+
+            scorersResponse.slice(0, 7).forEach(p => {
                 sBody.innerHTML += `
-                    <tr class="border-b border-slate-800/60">
+                    <tr class="border-b border-slate-800/60 hover:bg-slate-900/20 transition-colors">
                         <td class="py-3 px-4 font-medium text-slate-200">${p.player.name} <span class="text-xs text-slate-500">(${p.statistics[0].team.name})</span></td>
                         <td class="py-3 px-4 text-center font-mono text-base font-bold text-amber-400">${p.statistics[0].goals.total}</td>
                     </tr>
