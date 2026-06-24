@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 const API_KEY = "bfd6931d068d64af26b5e952e8e9d09b"; 
 const LEAGUE_ID = 1; 
 const SEASON = 2026;
-const INTERVALO = 10 * 60 * 1000; // 10 minutos en milisegundos
+const INTERVALO = 20 * 60 * 1000; // 10 minutos en milisegundos
 
 async function actualizarCache() {
     try {
