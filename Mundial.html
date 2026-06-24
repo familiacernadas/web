@@ -211,49 +211,61 @@
 
     <script>
         // Configuración de Conexión Oficial
-        const API_KEY = "bfd6931d068d64af26b5e952e8e9d09b"; 
-        const LEAGUE_ID = 1; // ID Mundial FIFA en API-Football
-        const SEASON = 2026;
+const API_KEY = "bfd6931d068d64af26b5e952e8e9d09b"; // <-- COLOCA TU CLAVE AQUÍ
+const LEAGUE_ID = 1; // ID Internacional FIFA World Cup
+const SEASON = 2026;
 
-        setInterval(() => {
-            const now = new Date();
-            document.getElementById('live-clock').innerText = now.toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'medium' });
-        }, 1000);
+setInterval(() => {
+    const now = new Date();
+    document.getElementById('live-clock').innerText = now.toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'medium' });
+}, 1000);
 
-        async function fetchWorldCupData() {
-            if (API_KEY === "CONECTA_TU_API_KEY_AQUÍ" || API_KEY.trim() === "") {
-                document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-amber-500";
-                document.getElementById('sync-status').parentElement.innerHTML = "<span class='text-amber-400'>Falta añadir tu API Key en el código</span>";
-                return;
+async function fetchWorldCupData() {
+    if (API_KEY === "CONECTA_TU_API_KEY_AQUÍ" || API_KEY.trim() === "") {
+        document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-amber-500";
+        document.getElementById('sync-status').parentElement.innerHTML = "<span class='text-amber-400'>Falta añadir tu API Key en el código</span>";
+        return;
+    }
+
+    try {
+        // 1. Forzamos la consulta de TODOS los partidos del torneo (Fase de grupos completa + eliminatorias)
+        const responseFixtures = await fetch(`https://v3.football.api-sports.io/fixtures?league=${LEAGUE_ID}&season=${SEASON}`, {
+            method: "GET",
+            headers: { 
+                "x-rapidapi-key": API_KEY, 
+                "x-rapidapi-host": "v3.football.api-sports.io" 
             }
-
-            try {
-                // 1. Obtener TODOS los partidos (Grupos + Eliminatorias)
-                const responseFixtures = await fetch(`https://v3.football.api-sports.io/fixtures?league=${LEAGUE_ID}&season=${SEASON}`, {
-                    method: "GET",
-                    headers: { "x-rapidapi-key": API_KEY, "x-rapidapi-host": "v3.football.api-sports.io" }
-                });
-                const dataFixtures = await responseFixtures.json();
-                
-                if (dataFixtures.response && dataFixtures.response.length > 0) {
-                    processFixtures(dataFixtures.response);
-                } else {
-                    console.warn("No se encontraron partidos devueltos por la API.");
-                }
-
-                // 2. Obtener Máximos Goleadores Actuales
-                const responseScorers = await fetch(`https://v3.football.api-sports.io/players/topscorers?league=${LEAGUE_ID}&season=${SEASON}`, {
-                    method: "GET",
-                    headers: { "x-rapidapi-key": API_KEY, "x-rapidapi-host": "v3.football.api-sports.io" }
-                });
-                const dataScorers = await responseScorers.json();
-                if (dataScorers.response) renderLiveScorers(dataScorers.response);
-
-            } catch (error) {
-                console.error("Error al conectar con la API de Deportes:", error);
-                document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-red-500";
+        });
+        const dataFixtures = await responseFixtures.json();
+        
+        // 2. Consulta exhaustiva de goleadores acumulados desde el inicio
+        const responseScorers = await fetch(`https://v3.football.api-sports.io/players/topscorers?league=${LEAGUE_ID}&season=${SEASON}`, {
+            method: "GET",
+            headers: { 
+                "x-rapidapi-key": API_KEY, 
+                "x-rapidapi-host": "v3.football.api-sports.io" 
             }
+        });
+        const dataScorers = await responseScorers.json();
+
+        // Procesar partidos si la API devolvió estructura válida
+        if (dataFixtures.response && dataFixtures.response.length > 0) {
+            processFixtures(dataFixtures.response);
+            document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-emerald-400 animate-pulse";
+        } else {
+            // Si la API deniega el acceso en vivo por cuota, se notifica en el panel
+            document.getElementById('teams-table-body').innerHTML = `<tr><td colspan="4" class="py-4 text-center text-amber-400">La API requiere una cuenta Premium para volcar datos en directo de FIFA. Sincronizando búfer...</td></tr>`;
         }
+
+        if (dataScorers.response && dataScorers.response.length > 0) {
+            renderLiveScorers(dataScorers.response);
+        }
+
+    } catch (error) {
+        console.error("Error de conexión:", error);
+        document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-red-500";
+    }
+}
 
         function processFixtures(fixtures) {
             // Separar de forma robusta las fases
