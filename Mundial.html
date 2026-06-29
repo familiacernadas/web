@@ -207,39 +207,56 @@
         const SEASON = 2026;
 
         async function fetchWorldCupData() {
-            document.getElementById('sync-text').innerText = "Conectando con la API...";
-            
-            // Usamos un proxy de código abierto que añade las cabeceras CORS para que funcione en GitHub Pages de forma directa
-            const proxy = "https://api.allorigins.win/get?url=";
-            const urlFixtures = encodeURIComponent(`https://v3.football.api-sports.io/fixtures?league=${LEAGUE_ID}&season=${SEASON}`);
-            const urlScorers = encodeURIComponent(`https://v3.football.api-sports.io/players/topscorers?league=${LEAGUE_ID}&season=${SEASON}`);
+    document.getElementById('sync-text').innerText = "Conectando con la API...";
+    
+    // 1. Apuntamos DIRECTAMENTE a los servidores oficiales
+    const urlFixtures = `https://v3.football.api-sports.io/fixtures?league=${LEAGUE_ID}&season=${SEASON}`;
+    const urlScorers = `https://v3.football.api-sports.io/players/topscorers?league=${LEAGUE_ID}&season=${SEASON}`;
 
-            try {
-                // 1. Obtener partidos en directo y terminados
-                const resF = await fetch(`${proxy}${urlFixtures}`, { headers: { "x-rapidapi-key": KEY } });
-                const jsonF = await resF.json();
-                const dataFixtures = JSON.parse(jsonF.contents);
-
-                // 2. Obtener goleadores reales
-                const resS = await fetch(`${proxy}${urlScorers}`, { headers: { "x-rapidapi-key": KEY } });
-                const jsonS = await resS.json();
-                const dataScorers = JSON.parse(jsonS.contents);
-
-                document.getElementById('sync-text').innerText = "Datos Actualizados";
-
-                if (dataFixtures.response && dataFixtures.response.length > 0) {
-                    processFixtures(dataFixtures.response);
-                }
-                if (dataScorers.response && dataScorers.response.length > 0) {
-                    renderLiveScorers(dataScorers.response);
-                }
-
-            } catch (error) {
-                console.error("Error consultando la API de deportes:", error);
-                document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-amber-500 text-amber-400";
-                document.getElementById('sync-text').innerText = "Error de conexión en vivo";
-            }
+    // 2. Configuramos las cabeceras exactas que exige API-Sports
+    const opcionesFetch = {
+        method: 'GET',
+        headers: {
+            'x-rapidapi-key': KEY,
+            'x-rapidapi-host': 'v3.football.api-sports.io'
         }
+    };
+
+    try {
+        // Consultar Partidos
+        const resF = await fetch(urlFixtures, opcionesFetch);
+        if (!resF.ok) throw new Error(`Error en partidos: ${resF.status}`);
+        const dataFixtures = await resF.json();
+
+        // Consultar Goleadores
+        const resS = await fetch(urlScorers, opcionesFetch);
+        if (!resS.ok) throw new Error(`Error en goleadores: ${resS.status}`);
+        const dataScorers = await resS.json();
+
+        // Si la API nos devuelve un error interno estructurado
+        if (dataFixtures.errors && Object.keys(dataFixtures.errors).length > 0) {
+            console.error("Error interno de la API:", dataFixtures.errors);
+            throw new Error("API KEY inválida o sin créditos");
+        }
+
+        // Cambiar estado a verde
+        document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-emerald-400 animate-pulse";
+        document.getElementById('sync-text').innerText = "Datos Actualizados";
+
+        // Procesar la información en el HTML
+        if (dataFixtures.response && dataFixtures.response.length > 0) {
+            processFixtures(dataFixtures.response);
+        }
+        if (dataScorers.response && dataScorers.response.length > 0) {
+            renderLiveScorers(dataScorers.response);
+        }
+
+    } catch (error) {
+        console.error("Error detallado:", error);
+        document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-amber-500";
+        document.getElementById('sync-text').innerText = "Error de conexión en vivo";
+    }
+}
 
         function processFixtures(fixtures) {
             const roundOf32 = fixtures.filter(f => f.league.round && f.league.round.includes("Round of 32"));
