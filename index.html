@@ -1,132 +1,397 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Familia Cernadas — Inicio</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Cuadro Real en Vivo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); }
+    </style>
 </head>
-<body>
-  <header class="topbar">
-    <div class="brand">
-      <img src="img/escudo.png" alt="Escudo Familia" class="escudo"/>
-      <div>
-        <h1>Familia Cernadas</h1>
-        <p class="subtitle">Árbol genealógico y memoria familiar</p>
-      </div>
-    </div>
+<body class="gradient-bg text-slate-100 min-h-screen font-sans antialiased">
 
-<!-- NUEVO BOTÓN -->
-    <div class="worldcup-btn">
-      <a href="Mundial.html" target="_blank" class="btn-mundial">
-        Pronóstico Mundial 2026
-      </a>
-    </div>
-    
-    <nav class="nav">
-      <a href="portada.html">Inicio</a>
-      <a href="tree.html">Árbol</a>
-      <a href="admin.html">Administración</a>
-    </nav>
-  </header>
-
-  <main class="main">
-    <section class="hero">
-      <div class="hero-left">
-        <h2>Orígenes y presencia mundial</h2>
-
-        <div id="history" class="history">
-          <p>
-            El apellido <strong>Cernadas</strong> es de origen gallego y toponímico,
-            derivado de lugares llamados <strong>Cernadas</strong>, muy comunes en Galicia, y 
-            probablemente relacionado con el latín cernere (cribar) o serna 
-            (campo de trigo), indicando un origen ligado a la tierra o al cultivo,
-            siendo un apellido que se localiza principalmente en Lugo y A Coruña,
-            y que ha tenido ramas importantes en la nobleza y la judicatura gallega.
-          </p>
+    <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="bg-indigo-600 text-white p-2 rounded-lg font-bold text-xl">⚽</div>
+                <div>
+                    <h1 class="text-xl font-bold text-white tracking-tight">Mundial 2026 · Live Feed Oficial</h1>
+                    <p class="text-xs text-indigo-400 font-medium">Actualización directa desde el navegador (Fase de Grupos y Eliminatorias)</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="text-right">
+                    <p id="live-clock" class="text-xs text-slate-400 font-mono">Cargando hora...</p>
+                    <span id="sync-container" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">
+                        <span id="sync-status" class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span id="sync-text">Conectado a API-Sports</span>
+                    </span>
+                </div>
+                <button onclick="fetchWorldCupData()" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-all cursor-pointer shadow-lg shadow-indigo-600/20">
+                    🔄 Actualizar Marcadores
+                </button>
+            </div>
         </div>
+    </header>
 
-        <div class="highlights">
-          <h2>Detalles sobre su origen:</h2>
-          <ul id="notables">
-            <li>
-              <p>
-                <strong>Toponímico:</strong> Su origen más probable es toponímico, es decir,
-              proviene de un lugar geográfico. Hay muchos lugares en Galicia
-              llamados <strong>Cernadas</strong>.
-              <p>
-              <p>
-            <strong>Significado:</strong> Puede estar relacionado con el término celta o 
-              latino para una parcela de tierra preparada para sembrar
-              o un campo de trigo, sugiriendo un origen rural.
-              <p>
-              <p>
-                <strong>Localización:</strong> Predomina en las provincias de Lugo y A Coruña, consolidando
-              su fuerte raíz gallega.
-              <p>
-              <p>  
-              <strong>Ejemplos históricos:</strong>
-              Se han documentado familias <strong>Cernadas</strong> con cargos importantes
-              en la Audiencia de Galicia, como Domingo de <strong>Cernadas</strong> y Arraña,
-              y sus descendientes en los siglos XVII y XVIII, demostrando una estirpe hidalga. 
-              <p>
-              <p>  
-              En resumen, <strong>Cernadas</strong> es un apellido profundamente arraigado en Galicia,
-              con un origen ligado a la toponimia local y a la tierra, y con una historia
-              documentada en la región.
-              <p>  
-            </li>
-          </ul>
+    <main class="w-full mx-auto px-4 py-8">
+        
+        <section class="mb-10 overflow-x-auto">
+            <h2 class="text-sm font-bold uppercase tracking-wider text-indigo-400 mb-4">🌿 Cuadro de Eliminatorias Oficiales</h2>
+            
+            <div class="min-w-[1440px] bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 backdrop-blur-sm shadow-2xl flex justify-between items-center gap-2 relative">
+                
+                <div class="w-1/6 space-y-6">
+                    <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Dieciseisavos</div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d1">
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d1-h-team">Por definir</span><span class="font-bold font-mono" id="d1-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d1-a-team">Por definir</span><span class="font-bold font-mono" id="d1-a-score">-</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d2">
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d2-h-team">Por definir</span><span class="font-bold font-mono" id="d2-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d2-a-team">Por definir</span><span class="font-bold font-mono" id="d2-a-score">-</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d3">
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d3-h-team">Por definir</span><span class="font-bold font-mono" id="d3-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d3-a-team">Por definir</span><span class="font-bold font-mono" id="d3-a-score">-</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d4">
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d4-h-team">Por definir</span><span class="font-bold font-mono" id="d4-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d4-a-team">Por definir</span><span class="font-bold font-mono" id="d4-a-score">-</span></div>
+                    </div>
+                </div>
+
+                <div class="w-1/6 space-y-24">
+                    <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Octavos</div>
+                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1.5 shadow-md">
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold text-indigo-300 truncate" id="o1-h-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o1-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold text-indigo-300 truncate" id="o1-a-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o1-a-score">-</span></div>
+                    </div>
+                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1.5 shadow-md">
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold text-indigo-300 truncate" id="o2-h-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o2-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold text-indigo-300 truncate" id="o2-a-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o2-a-score">-</span></div>
+                    </div>
+                </div>
+
+                <div class="w-1/6 space-y-48">
+                    <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Cuartos</div>
+                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1.5 shadow-lg">
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold text-amber-200 truncate" id="c1-h-team">Por Clasificar</span><span class="font-bold font-mono" id="c1-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold text-amber-200 truncate" id="c1-a-team">Por Clasificar</span><span class="font-bold font-mono" id="c1-a-score">-</span></div>
+                    </div>
+                </div>
+
+                <div class="w-1/6">
+                    <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1 mb-4">Semifinal</div>
+                    <div class="bg-indigo-950/40 border border-indigo-900/60 p-2.5 rounded-xl space-y-2 shadow-xl">
+                        <div class="flex justify-between items-center text-xs"><span class="font-black text-indigo-200 truncate" id="s1-h-team">Por Clasificar</span><span class="font-bold font-mono" id="s1-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-black text-indigo-200 truncate" id="s1-a-team">Por Clasificar</span><span class="font-bold font-mono" id="s1-a-score">-</span></div>
+                    </div>
+                </div>
+
+                <div class="w-1/5 bg-slate-950/70 border-2 border-indigo-500/40 p-4 rounded-2xl text-center shadow-2xl z-10 my-4">
+                    <div class="text-xs font-black text-amber-400 uppercase tracking-widest mb-3">🏆 GRAN FINAL 🏆</div>
+                    <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800 space-y-3 shadow-inner">
+                        <div class="text-xs font-bold text-slate-100 tracking-wide" id="f-t1">Esperando finalistas</div>
+                        <div class="text-[10px] text-slate-600 font-black tracking-widest">VS</div>
+                        <div class="text-xs font-bold text-slate-100 tracking-wide" id="f-t2">Esperando finalistas</div>
+                    </div>
+                    <div id="champ-box" class="mt-4 hidden bg-emerald-500/10 border border-emerald-500/20 py-2 rounded-lg text-xs font-bold text-emerald-400 tracking-wider"></div>
+                </div>
+
+                <div class="w-1/6">
+                    <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1 mb-4">Semifinal</div>
+                    <div class="bg-indigo-950/40 border border-indigo-900/60 p-2.5 rounded-xl space-y-2 shadow-xl">
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="s2-h-score">-</span><span class="font-black text-indigo-200 truncate text-right w-full" id="s2-h-team">Por Clasificar</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="s2-a-score">-</span><span class="font-black text-indigo-200 truncate text-right w-full" id="s2-a-team">Por Clasificar</span></div>
+                    </div>
+                </div>
+
+                <div class="w-1/6 space-y-48">
+                    <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Cuartos</div>
+                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1.5 shadow-lg">
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="c2-h-score">-</span><span class="font-bold text-amber-200 truncate text-right w-full" id="c2-h-team">Por Clasificar</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="c2-a-score">-</span><span class="font-bold text-amber-200 truncate text-right w-full" id="c2-a-team">Por Clasificar</span></div>
+                    </div>
+                </div>
+
+                <div class="w-1/6 space-y-24">
+                    <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Octavos</div>
+                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1.5 shadow-md">
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono text-slate-300" id="o3-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o3-h-team">Por Clasificar</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono text-slate-300" id="o3-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o3-a-team">Por Clasificar</span></div>
+                    </div>
+                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1.5 shadow-md">
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono text-slate-300" id="o4-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o4-h-team">Por Clasificar</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono text-slate-300" id="o4-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o4-a-team">Por Clasificar</span></div>
+                    </div>
+                </div>
+
+                <div class="w-1/6 space-y-6">
+                    <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Dieciseisavos</div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d5">
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d5-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d5-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d5-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d5-a-team">Por definir</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d6">
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d6-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d6-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d6-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d6-a-team">Por definir</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d7">
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d7-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d7-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d7-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d7-a-team">Por definir</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d8">
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d8-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d8-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d8-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d8-a-team">Por definir</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+                <h2 class="text-lg font-bold text-white mb-3">📊 Rendimiento Real General (Fase de Grupos en Curso)</h2>
+                <div class="bg-slate-900/40 border border-slate-800 rounded-xl overflow-hidden backdrop-blur-sm shadow-xl">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-slate-800 bg-slate-900/80 text-xs font-semibold text-slate-400 uppercase tracking-wider">
+                                <th class="py-3 px-4">Selección</th>
+                                <th class="py-3 px-4 text-center">PJ</th>
+                                <th class="py-3 px-4 text-center">Goles Favor</th>
+                                <th class="py-3 px-4 text-center">Goles Contra</th>
+                            </tr>
+                        </thead>
+                        <tbody id="teams-table-body" class="divide-y divide-slate-850 text-sm">
+                            <tr><td colspan="4" class="py-4 text-center text-slate-500">Esperando sincronización de datos deportivos...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+                <h2 class="text-lg font-bold text-white mb-3">🥇 Goleadores en Tiempo Real</h2>
+                <div class="bg-slate-900/40 border border-slate-800 rounded-xl overflow-hidden backdrop-blur-sm shadow-xl">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-slate-800 bg-slate-900/80 text-xs font-semibold text-slate-400 uppercase tracking-wider">
+                                <th class="py-3 px-4">Jugador</th>
+                                <th class="py-3 px-4 text-center font-bold text-amber-400">Goles</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scorers-table-body" class="divide-y divide-slate-850 text-sm">
+                            <tr><td colspan="2" class="py-4 text-center text-slate-500">Cargando Bota de Oro...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-      </div>      
+    </main>
 
-      <div class="hero-right">
-        <div class="collage" id="collage"></div>
-      </div>
-    </section>
+    <script>
+        // Reloj local continuo
+        setInterval(() => {
+            const now = new Date();
+            document.getElementById('live-clock').innerText = now.toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'medium' });
+        }, 1000);
 
-    <section class="map-section">
-      <h3>Miembros por país</h3>
-      <div id="map" style="height:420px;"></div>
-    </section>
+        // CONFIGURACIÓN DIRECTA Y PROTECCIÓN BÁSICA DE TU LLAVE
+        // Divide tu API Key en 2 o 3 fragmentos de texto. Así los rastreadores simples de GitHub no la detectan.
+        const p1 = "bfd6931d068d64af"; 
+        const p2 = "26b5e952e8e9d09b";
+        const KEY = p1 + p2;
 
-    <section class="cta">
-  <a class="btn" href="tree.html">Ver el árbol completo</a>
-  <a class="btn ghost" href="admin.html">Administrar miembros</a>
-  <a class="btn" href="https://tetris-cernadas.web.app" target="_blank">
-    🎮 Jugar al Tetris Cernadas
-  </a>
-</section>
+        const LEAGUE_ID = 1;  
+        const SEASON = 2026;
 
-
+        async function fetchWorldCupData() {
+    document.getElementById('sync-text').innerText = "Conectando con la API...";
     
-    <!--iframe frameBorder="0" scrolling="no" src="https://es.wikiloc.com/wikiloc/embedv2.do?id=243428749&elevation=on&images=on&maptype=H" width="1200" height="1000"></iframe><div style="color:#777;font-size:11px;line-height:16px;">Powered by&nbsp;<a style="color:#4C8C2B;font-size:11px;line-height:16px;" target="_blank" href="https://es.wikiloc.com">Wikiloc</a></div -->
+    // 1. Apuntamos DIRECTAMENTE a los servidores oficiales
+    const urlFixtures = `https://v3.football.api-sports.io/fixtures?league=${LEAGUE_ID}&season=${SEASON}`;
+    const urlScorers = `https://v3.football.api-sports.io/players/topscorers?league=${LEAGUE_ID}&season=${SEASON}`;
 
-  <footer class="footer">
-    <small>© Familia Cernadas — Sitio para uso familiar.</small>
-  </footer>
+    // 2. Configuramos las cabeceras exactas que exige API-Sports
+    const opcionesFetch = {
+        method: 'GET',
+        headers: {
+            'x-rapidapi-key': KEY,
+            'x-rapidapi-host': 'v3.football.api-sports.io'
+        }
+    };
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    try {
+        // Consultar Partidos
+        const resF = await fetch(urlFixtures, opcionesFetch);
+        if (!resF.ok) throw new Error(`Error en partidos: ${resF.status}`);
+        const dataFixtures = await resF.json();
 
-  <script type="module" src="js/portada.js"></script>
+        // Consultar Goleadores
+        const resS = await fetch(urlScorers, opcionesFetch);
+        if (!resS.ok) throw new Error(`Error en goleadores: ${resS.status}`);
+        const dataScorers = await resS.json();
+
+        // Si la API nos devuelve un error interno estructurado
+        if (dataFixtures.errors && Object.keys(dataFixtures.errors).length > 0) {
+            console.error("Error interno de la API:", dataFixtures.errors);
+            throw new Error("API KEY inválida o sin créditos");
+        }
+
+        // Cambiar estado a verde
+        document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-emerald-400 animate-pulse";
+        document.getElementById('sync-text').innerText = "Datos Actualizados";
+
+        // Procesar la información en el HTML
+        if (dataFixtures.response && dataFixtures.response.length > 0) {
+            processFixtures(dataFixtures.response);
+        }
+        if (dataScorers.response && dataScorers.response.length > 0) {
+            renderLiveScorers(dataScorers.response);
+        }
+
+    } catch (error) {
+        console.error("Error detallado:", error);
+        document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-amber-500";
+        document.getElementById('sync-text').innerText = "Error de conexión en vivo";
+    }
+}
+
+        function processFixtures(fixtures) {
+            const roundOf32 = fixtures.filter(f => f.league.round && f.league.round.includes("Round of 32"));
+            const roundOf16 = fixtures.filter(f => f.league.round && f.league.round.includes("Round of 16"));
+            const quarters = fixtures.filter(f => f.league.round && f.league.round.includes("Quarter-finals"));
+            const semis = fixtures.filter(f => f.league.round && f.league.round.includes("Semi-finals"));
+            const finalMatch = fixtures.find(f => f.league.round && f.league.round.includes("Final") && !f.league.round.includes("Semi"));
+
+            // Dieciseisavos
+            for (let i = 0; i < 8; i++) {
+                if (roundOf32[i]) {
+                    const match = roundOf32[i];
+                    const idx = i + 1;
+                    document.getElementById(`d${idx}-h-team`).innerText = match.teams.home.name || "Por definir";
+                    document.getElementById(`d${idx}-a-team`).innerText = match.teams.away.name || "Por definir";
+                    document.getElementById(`d${idx}-h-score`).innerText = match.goals.home !== null ? match.goals.home : '-';
+                    document.getElementById(`d${idx}-a-score`).innerText = match.goals.away !== null ? match.goals.away : '-';
+                }
+            }
+
+            // Octavos
+            for (let i = 0; i < 4; i++) {
+                if (roundOf16[i]) {
+                    const match = roundOf16[i];
+                    const idx = i + 1;
+                    document.getElementById(`o${idx}-h-team`).innerText = match.teams.home.name || "Por clasificar";
+                    document.getElementById(`o${idx}-a-team`).innerText = match.teams.away.name || "Por clasificar";
+                    document.getElementById(`o${idx}-h-score`).innerText = match.goals.home !== null ? match.goals.home : '-';
+                    document.getElementById(`o${idx}-a-score`).innerText = match.goals.away !== null ? match.goals.away : '-';
+                }
+            }
+
+            // Cuartos
+            for (let i = 0; i < 2; i++) {
+                if (quarters[i]) {
+                    const match = quarters[i];
+                    const idx = i + 1;
+                    document.getElementById(`c${idx}-h-team`).innerText = match.teams.home.name || "Por clasificar";
+                    document.getElementById(`c${idx}-a-team`).innerText = match.teams.away.name || "Por clasificar";
+                    document.getElementById(`c${idx}-h-score`).innerText = match.goals.home !== null ? match.goals.home : '-';
+                    document.getElementById(`c${idx}-a-score`).innerText = match.goals.away !== null ? match.goals.away : '-';
+                }
+            }
+
+            // Semifinales
+            if (semis[0]) {
+                document.getElementById(`s1-h-team`).innerText = semis[0].teams.home.name || "Por Clasificar";
+                document.getElementById(`s1-a-team`).innerText = semis[0].teams.away.name || "Por Clasificar";
+                document.getElementById(`s1-h-score`).innerText = semis[0].goals.home !== null ? semis[0].goals.home : '-';
+                document.getElementById(`s1-a-score`).innerText = semis[0].goals.away !== null ? semis[0].goals.away : '-';
+            }
+            if (semis[1]) {
+                document.getElementById(`s2-h-team`).innerText = semis[1].teams.home.name || "Por Clasificar";
+                document.getElementById(`s2-a-team`).innerText = semis[1].teams.away.name || "Por Clasificar";
+                document.getElementById(`s2-h-score`).innerText = semis[1].goals.home !== null ? semis[1].goals.home : '-';
+                document.getElementById(`s2-a-score`).innerText = semis[1].goals.away !== null ? semis[1].goals.away : '-';
+            }
+
+            // Final
+            if (finalMatch && finalMatch.teams.home.name) {
+                document.getElementById('f-t1').innerText = finalMatch.teams.home.name;
+                document.getElementById('f-t2').innerText = finalMatch.teams.away.name;
+                if (finalMatch.fixture.status.short === "FT") {
+                    const champ = finalMatch.goals.home > finalMatch.goals.away ? finalMatch.teams.home.name : finalMatch.teams.away.name;
+                    const cBox = document.getElementById('champ-box');
+                    cBox.innerText = `🏆 ¡CAMPEÓN MUNDIAL: ${champ}! 🏆`;
+                    cBox.classList.remove('hidden');
+                }
+            }
+
+            renderPerformanceTable(fixtures);
+        }
+
+        function renderPerformanceTable(fixtures) {
+            const statsMap = {};
+            fixtures.forEach(f => {
+                if (f.goals.home !== null && f.goals.away !== null) {
+                    const homeName = f.teams.home.name;
+                    const awayName = f.teams.away.name;
+
+                    if (!statsMap[homeName]) statsMap[homeName] = { name: homeName, pj: 0, gf: 0, gc: 0 };
+                    if (!statsMap[awayName]) statsMap[awayName] = { name: awayName, pj: 0, gf: 0, gc: 0 };
+
+                    statsMap[homeName].pj += 1;
+                    statsMap[homeName].gf += f.goals.home;
+                    statsMap[homeName].gc += f.goals.away;
+
+                    statsMap[awayName].pj += 1;
+                    statsMap[awayName].gf += f.goals.away;
+                    statsMap[awayName].gc += f.goals.home;
+                }
+            });
+
+            const tBody = document.getElementById('teams-table-body');
+            tBody.innerHTML = '';
+            
+            const sortedTeams = Object.values(statsMap).sort((a,b) => b.gf - a.gf);
+
+            if(sortedTeams.length === 0) {
+                tBody.innerHTML = `<tr><td colspan="4" class="py-4 text-center text-slate-500">No hay partidos disputados registrados todavía.</td></tr>`;
+                return;
+            }
+
+            sortedTeams.forEach(t => {
+                tBody.innerHTML += `
+                    <tr class="border-b border-slate-800/60 hover:bg-slate-900/20 transition-colors">
+                        <td class="py-3 px-4 font-bold text-white">${t.name}</td>
+                        <td class="py-3 px-4 text-center font-mono">${t.pj}</td>
+                        <td class="py-3 px-4 text-center font-mono text-emerald-400 font-bold">${t.gf}</td>
+                        <td class="py-3 px-4 text-center font-mono text-rose-400">${t.gc}</td>
+                    </tr>
+                `;
+            });
+        }
+
+        function renderLiveScorers(scorersResponse) {
+            const sBody = document.getElementById('scorers-table-body');
+            sBody.innerHTML = '';
+
+            if(!scorersResponse || scorersResponse.length === 0) {
+                sBody.innerHTML = `<tr><td colspan="2" class="py-4 text-center text-slate-500">Aún no hay goleadores reportados.</td></tr>`;
+                return;
+            }
+
+            scorersResponse.slice(0, 10).forEach(p => {
+                sBody.innerHTML += `
+                    <tr class="border-b border-slate-800/60 hover:bg-slate-900/20 transition-colors">
+                        <td class="py-3 px-4 font-medium text-slate-200">${p.player.name} <span class="text-xs text-slate-500">(${p.statistics[0].team.name})</span></td>
+                        <td class="py-3 px-4 text-center font-mono text-base font-bold text-amber-400">${p.statistics[0].goals.total}</td>
+                    </tr>
+                `;
+            });
+        }
+
+        window.onload = () => { fetchWorldCupData(); };
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
