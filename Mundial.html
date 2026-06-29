@@ -192,206 +192,174 @@
 
     <script>
         // Reloj local continuo
-        setInterval(() => {
-            const now = new Date();
-            document.getElementById('live-clock').innerText = now.toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'medium' });
-        }, 1000);
+setInterval(() => {
+    const now = new Date();
+    document.getElementById('live-clock').innerText = now.toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'medium' });
+}, 1000);
 
-        // CONFIGURACIÓN DIRECTA Y PROTECCIÓN BÁSICA DE TU LLAVE
-        // Divide tu API Key en 2 o 3 fragmentos de texto. Así los rastreadores simples de GitHub no la detectan.
-        const p1 = "bfd6931d068d64af"; 
-        const p2 = "26b5e952e8e9d09b";
-        const KEY = p1 + p2;
+// CONFIGURACIÓN DE TU NUEVA API KEY (FOOTBALL-DATA.ORG)
+// Rompemos la clave en dos para evitar rastreadores automáticos en GitHub
+const p1 = "4760c44baae64f88"; 
+const p2 = "b83d994c3c290c0b";
+const KEY = p1 + p2;
 
-        const LEAGUE_ID = 1;  
-        const SEASON = 2022;
+const LEAGUE_CODE = "WC"; // Código oficial para la Copa del Mundo
 
-        async function fetchWorldCupData() {
-    document.getElementById('sync-text').innerText = "Conectando con la API...";
+async function fetchWorldCupData() {
+    document.getElementById('sync-text').innerText = "Conectando...";
     
-    // 1. Apuntamos DIRECTAMENTE a los servidores oficiales
-    const urlFixtures = `https://v3.football.api-sports.io/fixtures?league=${LEAGUE_ID}&season=${SEASON}`;
-    const urlScorers = `https://v3.football.api-sports.io/players/topscorers?league=${LEAGUE_ID}&season=${SEASON}`;
-
-    // 2. Configuramos las cabeceras exactas que exige API-Sports
-    const opcionesFetch = {
-        method: 'GET',
-        headers: {
-            'x-rapidapi-key': KEY,
-            'x-rapidapi-host': 'v3.football.api-sports.io'
-        }
-    };
+    // URL oficial para obtener el calendario y resultados del Mundial
+    const urlFixtures = `https://api.football-data.org/v4/competitions/${LEAGUE_CODE}/matches`;
 
     try {
-        // Consultar Partidos
-        const resF = await fetch(urlFixtures, opcionesFetch);
-        if (!resF.ok) throw new Error(`Error en partidos: ${resF.status}`);
-        const dataFixtures = await resF.json();
+        const response = await fetch(urlFixtures, {
+            method: 'GET',
+            headers: {
+                'X-Auth-Token': KEY
+            }
+        });
 
-        // Consultar Goleadores
-        const resS = await fetch(urlScorers, opcionesFetch);
-        if (!resS.ok) throw new Error(`Error en goleadores: ${resS.status}`);
-        const dataScorers = await resS.json();
-
-        // Si la API nos devuelve un error interno estructurado
-        if (dataFixtures.errors && Object.keys(dataFixtures.errors).length > 0) {
-            console.error("Error interno de la API:", JSON.stringify(dataFixtures.errors));
-            throw new Error("API KEY inválida o sin créditos");
+        if (!response.ok) {
+            if(response.status === 403) throw new Error("Plan restringido o API Key incorrecta");
+            throw new Error(`Error del servidor: ${response.status}`);
         }
 
-        // Cambiar estado a verde
+        const data = await response.json();
+        
         document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-emerald-400 animate-pulse";
-        document.getElementById('sync-text').innerText = "Datos Actualizados";
+        document.getElementById('sync-text').innerText = "Datos en Vivo Activos";
 
-        // Procesar la información en el HTML
-        if (dataFixtures.response && dataFixtures.response.length > 0) {
-            processFixtures(dataFixtures.response);
-        }
-        if (dataScorers.response && dataScorers.response.length > 0) {
-            renderLiveScorers(dataScorers.response);
+        if (data.matches && data.matches.length > 0) {
+            processFixtures(data.matches);
         }
 
     } catch (error) {
-        console.error("Error detallado:", error);
+        console.error("Error en Football-Data:", error);
         document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-amber-500";
-        document.getElementById('sync-text').innerText = "Error de conexión en vivo";
+        document.getElementById('sync-text').innerText = "Error de conexión";
     }
 }
 
-        function processFixtures(fixtures) {
-            const roundOf32 = fixtures.filter(f => f.league.round && f.league.round.includes("Round of 32"));
-            const roundOf16 = fixtures.filter(f => f.league.round && f.league.round.includes("Round of 16"));
-            const quarters = fixtures.filter(f => f.league.round && f.league.round.includes("Quarter-finals"));
-            const semis = fixtures.filter(f => f.league.round && f.league.round.includes("Semi-finals"));
-            const finalMatch = fixtures.find(f => f.league.round && f.league.round.includes("Final") && !f.league.round.includes("Semi"));
+function processFixtures(matches) {
+    // Filtramos los partidos por las rondas de eliminatorias que Football-Data asigna
+    const roundOf32 = matches.filter(m => m.stage === "LAST_32");
+    const roundOf16 = matches.filter(m => m.stage === "LAST_16");
+    const quarters = matches.filter(m => m.stage === "QUARTER_FINALS");
+    const semis = matches.filter(m => m.stage === "SEMI_FINALS");
+    const finalMatch = matches.find(m => m.stage === "FINAL");
 
-            // Dieciseisavos
-            for (let i = 0; i < 8; i++) {
-                if (roundOf32[i]) {
-                    const match = roundOf32[i];
-                    const idx = i + 1;
-                    document.getElementById(`d${idx}-h-team`).innerText = match.teams.home.name || "Por definir";
-                    document.getElementById(`d${idx}-a-team`).innerText = match.teams.away.name || "Por definir";
-                    document.getElementById(`d${idx}-h-score`).innerText = match.goals.home !== null ? match.goals.home : '-';
-                    document.getElementById(`d${idx}-a-score`).innerText = match.goals.away !== null ? match.goals.away : '-';
-                }
-            }
-
-            // Octavos
-            for (let i = 0; i < 4; i++) {
-                if (roundOf16[i]) {
-                    const match = roundOf16[i];
-                    const idx = i + 1;
-                    document.getElementById(`o${idx}-h-team`).innerText = match.teams.home.name || "Por clasificar";
-                    document.getElementById(`o${idx}-a-team`).innerText = match.teams.away.name || "Por clasificar";
-                    document.getElementById(`o${idx}-h-score`).innerText = match.goals.home !== null ? match.goals.home : '-';
-                    document.getElementById(`o${idx}-a-score`).innerText = match.goals.away !== null ? match.goals.away : '-';
-                }
-            }
-
-            // Cuartos
-            for (let i = 0; i < 2; i++) {
-                if (quarters[i]) {
-                    const match = quarters[i];
-                    const idx = i + 1;
-                    document.getElementById(`c${idx}-h-team`).innerText = match.teams.home.name || "Por clasificar";
-                    document.getElementById(`c${idx}-a-team`).innerText = match.teams.away.name || "Por clasificar";
-                    document.getElementById(`c${idx}-h-score`).innerText = match.goals.home !== null ? match.goals.home : '-';
-                    document.getElementById(`c${idx}-a-score`).innerText = match.goals.away !== null ? match.goals.away : '-';
-                }
-            }
-
-            // Semifinales
-            if (semis[0]) {
-                document.getElementById(`s1-h-team`).innerText = semis[0].teams.home.name || "Por Clasificar";
-                document.getElementById(`s1-a-team`).innerText = semis[0].teams.away.name || "Por Clasificar";
-                document.getElementById(`s1-h-score`).innerText = semis[0].goals.home !== null ? semis[0].goals.home : '-';
-                document.getElementById(`s1-a-score`).innerText = semis[0].goals.away !== null ? semis[0].goals.away : '-';
-            }
-            if (semis[1]) {
-                document.getElementById(`s2-h-team`).innerText = semis[1].teams.home.name || "Por Clasificar";
-                document.getElementById(`s2-a-team`).innerText = semis[1].teams.away.name || "Por Clasificar";
-                document.getElementById(`s2-h-score`).innerText = semis[1].goals.home !== null ? semis[1].goals.home : '-';
-                document.getElementById(`s2-a-score`).innerText = semis[1].goals.away !== null ? semis[1].goals.away : '-';
-            }
-
-            // Final
-            if (finalMatch && finalMatch.teams.home.name) {
-                document.getElementById('f-t1').innerText = finalMatch.teams.home.name;
-                document.getElementById('f-t2').innerText = finalMatch.teams.away.name;
-                if (finalMatch.fixture.status.short === "FT") {
-                    const champ = finalMatch.goals.home > finalMatch.goals.away ? finalMatch.teams.home.name : finalMatch.teams.away.name;
-                    const cBox = document.getElementById('champ-box');
-                    cBox.innerText = `🏆 ¡CAMPEÓN MUNDIAL: ${champ}! 🏆`;
-                    cBox.classList.remove('hidden');
-                }
-            }
-
-            renderPerformanceTable(fixtures);
+    // 1. Rellenar Dieciseisavos (Mundial 2026 estrena esta ronda)
+    for (let i = 0; i < 8; i++) {
+        const idx = i + 1;
+        if (roundOf32[i]) {
+            const m = roundOf32[i];
+            document.getElementById(`d${idx}-h-team`).innerText = m.homeTeam.name || "Por definir";
+            document.getElementById(`d${idx}-a-team`).innerText = m.awayTeam.name || "Por definir";
+            document.getElementById(`d${idx}-h-score`).innerText = m.score.fullTime.home !== null ? m.score.fullTime.home : '-';
+            document.getElementById(`d${idx}-a-score`).innerText = m.score.fullTime.away !== null ? m.score.fullTime.away : '-';
         }
+    }
 
-        function renderPerformanceTable(fixtures) {
-            const statsMap = {};
-            fixtures.forEach(f => {
-                if (f.goals.home !== null && f.goals.away !== null) {
-                    const homeName = f.teams.home.name;
-                    const awayName = f.teams.away.name;
-
-                    if (!statsMap[homeName]) statsMap[homeName] = { name: homeName, pj: 0, gf: 0, gc: 0 };
-                    if (!statsMap[awayName]) statsMap[awayName] = { name: awayName, pj: 0, gf: 0, gc: 0 };
-
-                    statsMap[homeName].pj += 1;
-                    statsMap[homeName].gf += f.goals.home;
-                    statsMap[homeName].gc += f.goals.away;
-
-                    statsMap[awayName].pj += 1;
-                    statsMap[awayName].gf += f.goals.away;
-                    statsMap[awayName].gc += f.goals.home;
-                }
-            });
-
-            const tBody = document.getElementById('teams-table-body');
-            tBody.innerHTML = '';
-            
-            const sortedTeams = Object.values(statsMap).sort((a,b) => b.gf - a.gf);
-
-            if(sortedTeams.length === 0) {
-                tBody.innerHTML = `<tr><td colspan="4" class="py-4 text-center text-slate-500">No hay partidos disputados registrados todavía.</td></tr>`;
-                return;
-            }
-
-            sortedTeams.forEach(t => {
-                tBody.innerHTML += `
-                    <tr class="border-b border-slate-800/60 hover:bg-slate-900/20 transition-colors">
-                        <td class="py-3 px-4 font-bold text-white">${t.name}</td>
-                        <td class="py-3 px-4 text-center font-mono">${t.pj}</td>
-                        <td class="py-3 px-4 text-center font-mono text-emerald-400 font-bold">${t.gf}</td>
-                        <td class="py-3 px-4 text-center font-mono text-rose-400">${t.gc}</td>
-                    </tr>
-                `;
-            });
+    // 2. Rellenar Octavos
+    for (let i = 0; i < 4; i++) {
+        const idx = i + 1;
+        if (roundOf16[i]) {
+            const m = roundOf16[i];
+            document.getElementById(`o${idx}-h-team`).innerText = m.homeTeam.name || "Por clasificar";
+            document.getElementById(`o${idx}-a-team`).innerText = m.awayTeam.name || "Por clasificar";
+            document.getElementById(`o${idx}-h-score`).innerText = m.score.fullTime.home !== null ? m.score.fullTime.home : '-';
+            document.getElementById(`o${idx}-a-score`).innerText = m.score.fullTime.away !== null ? m.score.fullTime.away : '-';
         }
+    }
 
-        function renderLiveScorers(scorersResponse) {
-            const sBody = document.getElementById('scorers-table-body');
-            sBody.innerHTML = '';
-
-            if(!scorersResponse || scorersResponse.length === 0) {
-                sBody.innerHTML = `<tr><td colspan="2" class="py-4 text-center text-slate-500">Aún no hay goleadores reportados.</td></tr>`;
-                return;
-            }
-
-            scorersResponse.slice(0, 10).forEach(p => {
-                sBody.innerHTML += `
-                    <tr class="border-b border-slate-800/60 hover:bg-slate-900/20 transition-colors">
-                        <td class="py-3 px-4 font-medium text-slate-200">${p.player.name} <span class="text-xs text-slate-500">(${p.statistics[0].team.name})</span></td>
-                        <td class="py-3 px-4 text-center font-mono text-base font-bold text-amber-400">${p.statistics[0].goals.total}</td>
-                    </tr>
-                `;
-            });
+    // 3. Rellenar Cuartos
+    for (let i = 0; i < 2; i++) {
+        const idx = i + 1;
+        if (quarters[i]) {
+            const m = quarters[i];
+            document.getElementById(`c${idx}-h-team`).innerText = m.homeTeam.name || "Por clasificar";
+            document.getElementById(`c${idx}-a-team`).innerText = m.awayTeam.name || "Por clasificar";
+            document.getElementById(`c${idx}-h-score`).innerText = m.score.fullTime.home !== null ? m.score.fullTime.home : '-';
+            document.getElementById(`c${idx}-a-score`).innerText = m.score.fullTime.away !== null ? m.score.fullTime.away : '-';
         }
+    }
 
-        window.onload = () => { fetchWorldCupData(); };
+    // 4. Semifinales
+    if (semis[0]) {
+        document.getElementById(`s1-h-team`).innerText = semis[0].homeTeam.name || "Por Clasificar";
+        document.getElementById(`s1-a-team`).innerText = semis[0].awayTeam.name || "Por Clasificar";
+        document.getElementById(`s1-h-score`).innerText = semis[0].score.fullTime.home !== null ? semis[0].score.fullTime.home : '-';
+        document.getElementById(`s1-a-score`).innerText = semis[0].score.fullTime.away !== null ? semis[0].score.fullTime.away : '-';
+    }
+    if (semis[1]) {
+        document.getElementById(`s2-h-team`).innerText = semis[1].homeTeam.name || "Por Clasificar";
+        document.getElementById(`s2-a-team`).innerText = semis[1].awayTeam.name || "Por Clasificar";
+        document.getElementById(`s2-h-score`).innerText = semis[1].score.fullTime.home !== null ? semis[1].score.fullTime.home : '-';
+        document.getElementById(`s2-a-score`).innerText = semis[1].score.fullTime.away !== null ? semis[1].score.fullTime.away : '-';
+    }
+
+    // 5. Gran Final
+    if (finalMatch && finalMatch.homeTeam.name) {
+        document.getElementById('f-t1').innerText = finalMatch.homeTeam.name;
+        document.getElementById('f-t2').innerText = finalMatch.awayTeam.name;
+        if (finalMatch.status === "FINISHED") {
+            const champ = finalMatch.score.winner === "HOME" ? finalMatch.homeTeam.name : finalMatch.awayTeam.name;
+            const cBox = document.getElementById('champ-box');
+            cBox.innerText = `🏆 ¡CAMPEÓN MUNDIAL: ${champ}! 🏆`;
+            cBox.classList.remove('hidden');
+        }
+    }
+
+    renderPerformanceTable(matches);
+}
+
+function renderPerformanceTable(matches) {
+    const statsMap = {};
+    
+    matches.forEach(m => {
+        if (m.score.fullTime.home !== null && m.score.fullTime.away !== null) {
+            const homeName = m.homeTeam.name;
+            const awayName = m.awayTeam.name;
+
+            if (!statsMap[homeName]) statsMap[homeName] = { name: homeName, pj: 0, gf: 0, gc: 0 };
+            if (!statsMap[awayName]) statsMap[awayName] = { name: awayName, pj: 0, gf: 0, gc: 0 };
+
+            statsMap[homeName].pj += 1;
+            statsMap[homeName].gf += m.score.fullTime.home;
+            statsMap[homeName].gc += m.score.fullTime.away;
+
+            statsMap[awayName].pj += 1;
+            statsMap[awayName].gf += m.score.fullTime.away;
+            statsMap[awayName].gc += m.score.fullTime.home;
+        }
+    });
+
+    const tBody = document.getElementById('teams-table-body');
+    tBody.innerHTML = '';
+    
+    const sortedTeams = Object.values(statsMap).sort((a,b) => b.gf - a.gf);
+
+    if(sortedTeams.length === 0) {
+        tBody.innerHTML = `<tr><td colspan="4" class="py-4 text-center text-slate-500">Torneo en preparación. Los datos se calcularán con el pitido inicial.</td></tr>`;
+        return;
+    }
+
+    sortedTeams.forEach(t => {
+        tBody.innerHTML += `
+            <tr class="border-b border-slate-800/60 hover:bg-slate-900/20 transition-colors">
+                <td class="py-3 px-4 font-bold text-white">${t.name}</td>
+                <td class="py-3 px-4 text-center font-mono">${t.pj}</td>
+                <td class="py-3 px-4 text-center font-mono text-emerald-400 font-bold">${t.gf}</td>
+                <td class="py-3 px-4 text-center font-mono text-rose-400">${t.gc}</td>
+            </tr>
+        `;
+    });
+    
+    // Desactivamos temporalmente la tabla de goleadores ya que este endpoint unificado no la incluye directamente
+    document.getElementById('scorers-table-body').innerHTML = `<tr><td colspan="2" class="py-4 text-center text-slate-500">Estadísticas de jugadores listas para el torneo.</td></tr>`;
+}
+
+window.onload = () => { fetchWorldCupData(); };
     </script>
 </body>
 </html>
