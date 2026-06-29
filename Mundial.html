@@ -208,11 +208,13 @@ const LEAGUE_CODE = "WC"; // Código oficial para la Copa del Mundo
 async function fetchWorldCupData() {
     document.getElementById('sync-text').innerText = "Conectando...";
     
-    // URL oficial para obtener el calendario y resultados del Mundial
-    const urlFixtures = `https://api.football-data.org/v4/competitions/${LEAGUE_CODE}/matches`;
-
+    // Usamos un proxy alternativo específico para saltar las cabeceras CORS incorrectas de football-data
+    const proxy = "https://corsproxy.io/?";
+    const urlTarget = `https://api.football-data.org/v4/competitions/${LEAGUE_CODE}/matches`;
+    
     try {
-        const response = await fetch(urlFixtures, {
+        // La petición pasa a través del proxy seguro
+        const response = await fetch(`${proxy}${encodeURIComponent(urlTarget)}`, {
             method: 'GET',
             headers: {
                 'X-Auth-Token': KEY
@@ -234,7 +236,7 @@ async function fetchWorldCupData() {
         }
 
     } catch (error) {
-        console.error("Error en Football-Data:", error);
+        console.error("Error en Football-Data con Proxy:", error);
         document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-amber-500";
         document.getElementById('sync-text').innerText = "Error de conexión";
     }
