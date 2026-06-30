@@ -205,74 +205,67 @@ const KEY = p1 + p2;
 
 const LEAGUE_CODE = "WC"; // Código oficial para la Copa del Mundo
 
+
 async function fetchWorldCupData() {
     document.getElementById('sync-text').innerText = "Sincronizando canales con Google Cloud...";
     
     const SPREADSHEET_ID = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT0CVxc6YQ6WHCdwUt20gGs7NZsrnfyTJ8--s93jSjO_oVhlbn3csE6ba_gu-9Hnpmf9AzhfcpH7aZs/pub?output=csv"; 
-    // Pedimos el rango A2:C2 para traernos las tres celdas de golpe en una sola petición
-    const urlGoogleSheet = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:json&range=A2:C2`;
+    
+    // Generamos las URLs para aislar perfectamente cada celda y evitar que Google altere las comillas
+    const urlPartidos = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:json&range=A2`;
+    const urlGoleadores = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:json&range=C2`;
 
     try {
-        const response = await fetch(urlGoogleSheet);
-        if (!response.ok) throw new Error("No se pudo conectar con el almacén de datos");
-        
-        const text = await response.text();
-        const jsonString = text.substring(text.indexOf('{'), text.lastIndexOf('}') + 1);
-        const googleData = JSON.parse(jsonString);
-        
-        if (!googleData.table || !googleData.table.rows || googleData.table.rows.length === 0) {
-            throw new Error("Las celdas de almacenamiento están vacías");
+        // --- 1. PROCESAR CELDA A2 (PARTIDOS Y ELIMINATORIAS) ---
+        const resPartidos = await fetch(urlPartidos);
+        if (resPartidos.ok) {
+            const textP = await resPartidos.text();
+            const cleanStringP = textP.substring(textP.indexOf('{'), textP.lastIndexOf('}') + 1);
+            const googleDataP = JSON.parse(cleanStringP);
+            
+            if (googleDataP.table && googleDataP.table.rows && googleDataP.table.rows.length > 0) {
+                const celdaA2 = googleDataP.table.rows[0].c[0].v;
+                if (celdaA2 && !celdaA2.startsWith("Error")) {
+                    const dataPartidos = JSON.parse(celdaA2);
+                    if (dataPartidos.matches) processFixtures(dataPartidos.matches);
+                }
+            }
         }
 
-        // Extraemos los tres bloques de celdas mapeando la fila devuelta por Google
-        const filaCeldas = googleData.table.rows[0].c;
-        const celdaPartidos = filaCeldas[0] ? filaCeldas[0].v : null;
-        const celdaProximos = filaCeldas[1] ? filaCeldas[1].v : null;
-        const celdaGoleadores = filaCeldas[2] ? filaCeldas[2].v : null;
-
-        // 1. PROCESAR CUADRO DE ELIMINATORIAS Y TABLA GENERAL (Celda A2)
-        if (celdaPartidos && !celdaPartidos.startsWith("Error")) {
-            const dataPartidos = JSON.parse(celdaPartidos);
-            if (dataPartidos.matches) processFixtures(dataPartidos.matches);
-        }
-
-        // 2. PROCESAR MÁXIMOS GOLEADORES EN VIVO (Celda C2)
-        if (celdaGoleadores && !celdaGoleadores.startsWith("Error")) {
-            const dataGoleadores = JSON.parse(celdaGoleadores);
-            if (dataGoleadores.scorers) renderLiveScorers(dataGoleadores.scorers);
+        // --- 2. PROCESAR CELDA C2 (MÁXIMOS GOLEADORES) ---
+        const resGoleadores = await fetch(urlGoleadores);
+        if (resGoleadores.ok) {
+            const textG = await resGoleadores.text();
+            const cleanStringG = textG.substring(textG.indexOf('{'), textG.lastIndexOf('}') + 1);
+            const googleDataG = JSON.parse(cleanStringG);
+            
+            if (googleDataG.table && googleDataG.table.rows && googleDataG.table.rows.length > 0) {
+                const celdaC2 = googleDataG.table.rows[0].c[0].v;
+                if (celdaC2 && !celdaC2.startsWith("Error")) {
+                    const dataGoleadores = JSON.parse(celdaC2);
+                    if (dataGoleadores.scorers) renderLiveScorers(dataGoleadores.scorers);
+                } else {
+                    marcarGoleadoresVacios();
+                }
+            }
         } else {
-            document.getElementById('scorers-table-body').innerHTML = `<tr><td colspan="2" class="py-4 text-center text-slate-500">Goleadores listos para el torneo.</td></tr>`;
+            marcarGoleadoresVacios();
         }
         
         document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-emerald-400 animate-pulse";
         document.getElementById('sync-text').innerText = "Sincronización completa de datos";
 
     } catch (error) {
-        console.error("Error en la sincronización multicanal:", error);
+        console.error("Error en el procesado individual de celdas:", error);
         document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-amber-500";
         document.getElementById('sync-text').innerText = "Error de sincronización";
     }
 }
 
-// NUEVA FUNCIÓN OPTIMIZADA PARA PINTAR LOS GOLEADORES DE FORMA AUTOMÁTICA
-function renderLiveScorers(scorers) {
-    const sBody = document.getElementById('scorers-table-body');
-    sBody.innerHTML = '';
-
-    if (scorers.length === 0) {
-        sBody.innerHTML = `<tr><td colspan="2" class="py-4 text-center text-slate-500">Aún no hay goles anotados.</td></tr>`;
-        return;
-    }
-
-    scorers.slice(0, 10).forEach(p => {
-        sBody.innerHTML += `
-            <tr class="border-b border-slate-800/60 hover:bg-slate-900/20 transition-colors">
-                <td class="py-3 px-4 font-medium text-slate-200">${p.playerName} <span class="text-xs text-slate-500">(${p.teamName})</span></td>
-                <td class="py-3 px-4 text-center font-mono text-base font-bold text-amber-400">${p.goals}</td>
-            </tr>
-        `;
-    });
+function marcarGoleadoresVacios() {
+    document.getElementById('scorers-table-body').innerHTML = `<tr><td colspan="2" class="py-4 text-center text-slate-500">Goleadores listos para el torneo.</td></tr>`;
 }
+
 
 function processFixtures(matches) {
     // Filtramos los partidos por las rondas de eliminatorias que Football-Data asigna
