@@ -209,7 +209,7 @@ const LEAGUE_CODE = "WC"; // Código oficial para la Copa del Mundo
 async function fetchWorldCupData() {
     document.getElementById('sync-text').innerText = "Sincronizando canales con Google Cloud...";
     
-    const SPREADSHEET_ID = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT0CVxc6YQ6WHCdwUt20gGs7NZsrnfyTJ8--s93jSjO_oVhlbn3csE6ba_gu-9Hnpmf9AzhfcpH7aZs/pub?output=csv"; 
+    const SPREADSHEET_ID = "1QfV7qgAMgoC6IrRXgkHTh2QEY4BhkCVWg_quXZeNv-4"; 
     
     // Generamos las URLs para aislar perfectamente cada celda y evitar que Google altere las comillas
     const urlPartidos = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:json&range=A2`;
