@@ -38,51 +38,84 @@
     <main class="w-full mx-auto px-4 py-8">
         
         <section class="mb-10 overflow-x-auto">
-            <h2 class="text-sm font-bold uppercase tracking-wider text-indigo-400 mb-4">🌿 Cuadro de Eliminatorias Oficiales</h2>
+            <h2 class="text-sm font-bold uppercase tracking-wider text-indigo-400 mb-4">🌿 Cuadro de Eliminatorias Oficiales (Formato 48 Selecciones)</h2>
             
-            <div class="min-w-[1440px] bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 backdrop-blur-sm shadow-2xl flex justify-between items-center gap-2 relative">
+            <div class="min-w-[1600px] bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 backdrop-blur-sm shadow-2xl flex justify-between items-center gap-4 relative">
                 
-                <div class="w-1/6 space-y-6">
-                    <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Dieciseisavos</div>
-                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d1">
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d1-h-team">Por definir</span><span class="font-bold font-mono" id="d1-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d1-a-team">Por definir</span><span class="font-bold font-mono" id="d1-a-score">-</span></div>
+                <!-- LADO IZQUIERDO DEL CUADRO (8 de Final / 4 de Final / Semifinal) -->
+                <!-- Dieciseisavos Izquierda (8 Partidos: d1 a d8) -->
+                <div class="w-1/8 space-y-4">
+                    <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Dieciseisavos L</div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d1">
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d1-h-team">Por definir</span><span class="font-bold font-mono" id="d1-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d1-a-team">Por definir</span><span class="font-bold font-mono" id="d1-a-score">-</span></div>
                     </div>
-                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d2">
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d2-h-team">Por definir</span><span class="font-bold font-mono" id="d2-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d2-a-team">Por definir</span><span class="font-bold font-mono" id="d2-a-score">-</span></div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d2">
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d2-h-team">Por definir</span><span class="font-bold font-mono" id="d2-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d2-a-team">Por definir</span><span class="font-bold font-mono" id="d2-a-score">-</span></div>
                     </div>
-                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d3">
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d3-h-team">Por definir</span><span class="font-bold font-mono" id="d3-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d3-a-team">Por definir</span><span class="font-bold font-mono" id="d3-a-score">-</span></div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d3">
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d3-h-team">Por definir</span><span class="font-bold font-mono" id="d3-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d3-a-team">Por definir</span><span class="font-bold font-mono" id="d3-a-score">-</span></div>
                     </div>
-                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d4">
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d4-h-team">Por definir</span><span class="font-bold font-mono" id="d4-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="truncate font-medium text-slate-400" id="d4-a-team">Por definir</span><span class="font-bold font-mono" id="d4-a-score">-</span></div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d4">
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d4-h-team">Por definir</span><span class="font-bold font-mono" id="d4-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d4-a-team">Por definir</span><span class="font-bold font-mono" id="d4-a-score">-</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d5">
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d5-h-team">Por definir</span><span class="font-bold font-mono" id="d5-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d5-a-team">Por definir</span><span class="font-bold font-mono" id="d5-a-score">-</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d6">
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d6-h-team">Por definir</span><span class="font-bold font-mono" id="d6-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d6-a-team">Por definir</span><span class="font-bold font-mono" id="d6-a-score">-</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d7">
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d7-h-team">Por definir</span><span class="font-bold font-mono" id="d7-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d7-a-team">Por definir</span><span class="font-bold font-mono" id="d7-a-score">-</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d8">
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d8-h-team">Por definir</span><span class="font-bold font-mono" id="d8-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d8-a-team">Por definir</span><span class="font-bold font-mono" id="d8-a-score">-</span></div>
                     </div>
                 </div>
 
-                <div class="w-1/6 space-y-24">
+                <!-- Octavos Izquierda (4 Partidos: o1 a o4) -->
+                <div class="w-1/8 space-y-16">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Octavos</div>
-                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1.5 shadow-md">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold text-indigo-300 truncate" id="o1-h-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o1-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold text-indigo-300 truncate" id="o1-a-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o1-a-score">-</span></div>
+                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o1-h-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o1-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o1-a-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o1-a-score">-</span></div>
                     </div>
-                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1.5 shadow-md">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold text-indigo-300 truncate" id="o2-h-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o2-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold text-indigo-300 truncate" id="o2-a-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o2-a-score">-</span></div>
+                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o2-h-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o2-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o2-a-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o2-a-score">-</span></div>
+                    </div>
+                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o3-h-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o3-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o3-a-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o3-a-score">-</span></div>
+                    </div>
+                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o4-h-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o4-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o4-a-team">Por Clasificar</span><span class="font-bold font-mono text-slate-300" id="o4-a-score">-</span></div>
                     </div>
                 </div>
 
-                <div class="w-1/6 space-y-48">
+                <!-- Cuartos Izquierda (2 Partidos: c1 y c2) -->
+                <div class="w-1/8 space-y-40">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Cuartos</div>
-                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1.5 shadow-lg">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold text-amber-200 truncate" id="c1-h-team">Por Clasificar</span><span class="font-bold font-mono" id="c1-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold text-amber-200 truncate" id="c1-a-team">Por Clasificar</span><span class="font-bold font-mono" id="c1-a-score">-</span></div>
+                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1 shadow-lg">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-amber-200 truncate" id="c1-h-team">Por Clasificar</span><span class="font-bold font-mono" id="c1-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-amber-200 truncate" id="c1-a-team">Por Clasificar</span><span class="font-bold font-mono" id="c1-a-score">-</span></div>
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1 shadow-lg">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-amber-200 truncate" id="c2-h-team">Por Clasificar</span><span class="font-bold font-mono" id="c2-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-amber-200 truncate" id="c2-a-team">Por Clasificar</span><span class="font-bold font-mono" id="c2-a-score">-</span></div>
                     </div>
                 </div>
 
-                <div class="w-1/6">
+                <!-- Semifinal Izquierda (s1) -->
+                <div class="w-1/8">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1 mb-4">Semifinal</div>
                     <div class="bg-indigo-950/40 border border-indigo-900/60 p-2.5 rounded-xl space-y-2 shadow-xl">
                         <div class="flex justify-between items-center text-xs"><span class="font-black text-indigo-200 truncate" id="s1-h-team">Por Clasificar</span><span class="font-bold font-mono" id="s1-h-score">-</span></div>
@@ -90,6 +123,7 @@
                     </div>
                 </div>
 
+                <!-- CENTRO: GRAN FINAL -->
                 <div class="w-1/5 bg-slate-950/70 border-2 border-indigo-500/40 p-4 rounded-2xl text-center shadow-2xl z-10 my-4">
                     <div class="text-xs font-black text-amber-400 uppercase tracking-widest mb-3">🏆 GRAN FINAL 🏆</div>
                     <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800 space-y-3 shadow-inner">
@@ -100,7 +134,9 @@
                     <div id="champ-box" class="mt-4 hidden bg-emerald-500/10 border border-emerald-500/20 py-2 rounded-lg text-xs font-bold text-emerald-400 tracking-wider"></div>
                 </div>
 
-                <div class="w-1/6">
+                <!-- LADO DERECHO DEL CUADRO (Semifinal / 4 de Final / 8 de Final) -->
+                <!-- Semifinal Derecha (s2) -->
+                <div class="w-1/8">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1 mb-4">Semifinal</div>
                     <div class="bg-indigo-950/40 border border-indigo-900/60 p-2.5 rounded-xl space-y-2 shadow-xl">
                         <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="s2-h-score">-</span><span class="font-black text-indigo-200 truncate text-right w-full" id="s2-h-team">Por Clasificar</span></div>
@@ -108,49 +144,81 @@
                     </div>
                 </div>
 
-                <div class="w-1/6 space-y-48">
+                <!-- Cuartos Derecha (2 Partidos: c3 y c4) -->
+                <div class="w-1/8 space-y-40">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Cuartos</div>
-                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1.5 shadow-lg">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="c2-h-score">-</span><span class="font-bold text-amber-200 truncate text-right w-full" id="c2-h-team">Por Clasificar</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="c2-a-score">-</span><span class="font-bold text-amber-200 truncate text-right w-full" id="c2-a-team">Por Clasificar</span></div>
+                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1 shadow-lg">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="c3-h-score">-</span><span class="font-bold text-amber-200 truncate text-right w-full" id="c3-h-team">Por Clasificar</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="c3-a-score">-</span><span class="font-bold text-amber-200 truncate text-right w-full" id="c3-a-team">Por Clasificar</span></div>
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1 shadow-lg">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="c4-h-score">-</span><span class="font-bold text-amber-200 truncate text-right w-full" id="c4-h-team">Por Clasificar</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="c4-a-score">-</span><span class="font-bold text-amber-200 truncate text-right w-full" id="c4-a-team">Por Clasificar</span></div>
                     </div>
                 </div>
 
-                <div class="w-1/6 space-y-24">
+                <!-- Octavos Derecha (4 Partidos: o5 a o8) -->
+                <div class="w-1/8 space-y-16">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Octavos</div>
-                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1.5 shadow-md">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono text-slate-300" id="o3-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o3-h-team">Por Clasificar</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono text-slate-300" id="o3-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o3-a-team">Por Clasificar</span></div>
+                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o5-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o5-h-team">Por Clasificar</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o5-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o5-a-team">Por Clasificar</span></div>
                     </div>
-                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1.5 shadow-md">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono text-slate-300" id="o4-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o4-h-team">Por Clasificar</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono text-slate-300" id="o4-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o4-a-team">Por Clasificar</span></div>
+                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o6-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o6-h-team">Por Clasificar</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o6-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o6-a-team">Por Clasificar</span></div>
+                    </div>
+                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o7-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o7-h-team">Por Clasificar</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o7-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o7-a-team">Por Clasificar</span></div>
+                    </div>
+                    <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o8-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o8-h-team">Por Clasificar</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o8-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o8-a-team">Por Clasificar</span></div>
                     </div>
                 </div>
 
-                <div class="w-1/6 space-y-6">
-                    <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Dieciseisavos</div>
-                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d5">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d5-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d5-h-team">Por definir</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d5-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d5-a-team">Por definir</span></div>
+                <!-- Dieciseisavos Derecha (8 Partidos: d9 a d16) -->
+                <div class="w-1/8 space-y-4">
+                    <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Dieciseisavos R</div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d9">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d9-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d9-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d9-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d9-a-team">Por definir</span></div>
                     </div>
-                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d6">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d6-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d6-h-team">Por definir</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d6-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d6-a-team">Por definir</span></div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d10">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d10-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d10-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d10-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d10-a-team">Por definir</span></div>
                     </div>
-                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d7">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d7-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d7-h-team">Por definir</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d7-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d7-a-team">Por definir</span></div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d11">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d11-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d11-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d11-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d11-a-team">Por definir</span></div>
                     </div>
-                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1.5 shadow" id="match-d8">
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d8-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d8-h-team">Por definir</span></div>
-                        <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="d8-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d8-a-team">Por definir</span></div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d12">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d12-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d12-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d12-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d12-a-team">Por definir</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d13">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d13-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d13-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d13-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d13-a-team">Por definir</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d14">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d14-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d14-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d14-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d14-a-team">Por definir</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d15">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d15-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d15-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d15-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d15-a-team">Por definir</span></div>
+                    </div>
+                    <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d16">
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d16-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d16-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d16-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d16-a-team">Por definir</span></div>
                     </div>
                 </div>
 
             </div>
         </section>
 
+        <!-- WIDGET DE PRÓXIMOS ENCUENTROS -->
         <div class="mt-8 mb-8 bg-slate-900/40 border border-slate-800 rounded-xl p-6 backdrop-blur-md">
             <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
                 📅 Próximos Encuentros y Probabilidades Estadísticas
@@ -200,23 +268,16 @@
     </main>
 
     <script>
-        // Reloj local continuo
         setInterval(() => {
             const now = new Date();
             document.getElementById('live-clock').innerText = now.toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'medium' });
         }, 1000);
 
-        // ==========================================
-        // MÓDULOS DE RENDERIZADO VISUAL
-        // ==========================================
-
-        // 1. LIMPIAR CONTENEDOR EN CASO DE TABLA DE GOLEADORES VACÍA o CON ERROR
         function marcarGoleadoresVacios() {
             const sBody = document.getElementById('scorers-table-body');
             if (sBody) sBody.innerHTML = `<tr><td colspan="2" class="py-4 text-center text-slate-500">Goleadores listos para el torneo.</td></tr>`;
         }
 
-        // 2. PINTAR LOS GOLEADORES DE LA CELDA C2 EN LA TABLA LATERAL
         function renderLiveScorers(scorers) {
             const sBody = document.getElementById('scorers-table-body');
             if (!sBody) return;
@@ -237,7 +298,6 @@
             });
         }
 
-        // 3. CALCULAR PROBABILIDADES Y ENLAZAR PRÓXIMOS ENCUENTROS (CELDA B2)
         function renderNextMatches(proximos, historicoMatches) {
             const container = document.getElementById('next-matches-container');
             if (!container) return;
@@ -248,7 +308,6 @@
                 return;
             }
 
-            // Calculamos el histórico de goles en fase de grupos/previos para el algoritmo dinámico
             const stats = {};
             if (historicoMatches) {
                 historicoMatches.forEach(m => {
@@ -270,7 +329,6 @@
                 const ratioLocal = stats[local] && stats[local].pj > 0 ? (stats[local].gf / stats[local].pj) : 1.2;
                 const ratioVisitante = stats[visitante] && stats[visitante].pj > 0 ? (stats[visitante].gf / stats[visitante].pj) : 1.1;
 
-                // Modificadores de peso competitivo histórico
                 const pesosHistoricos = { "Brasil": 0.4, "Argentina": 0.4, "Francia": 0.3, "España": 0.3, "Alemania": 0.2 };
                 const pesoL = pesosHistoricos[local] || 0.0;
                 const pesoV = pesosHistoricos[visitante] || 0.0;
@@ -281,7 +339,6 @@
                 const porcLocal = Math.round((poderL / (poderL + poderV)) * 100) || 50;
                 const porcVisitante = 100 - porcLocal;
 
-                // Localización del huso horario de UTC a hora local de España
                 const fechaPartido = new Date(m.utcDate);
                 const fechaFormateada = fechaPartido.toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit' });
                 const horaFormateada = fechaPartido.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
@@ -294,11 +351,11 @@
                         </div>
                         <div class="space-y-2 mb-4">
                             <div class="flex justify-between items-center">
-                                <span class="text-white font-medium">${local}</span>
+                                <span class="text-white font-medium text-xs truncate">${local}</span>
                                 <span class="text-xs font-bold text-slate-400 font-mono">${porcLocal}%</span>
                             </div>
                             <div class="flex justify-between items-center">
-                                <span class="text-white font-medium">${visitante}</span>
+                                <span class="text-white font-medium text-xs truncate">${visitante}</span>
                                 <span class="text-xs font-bold text-slate-400 font-mono">${porcVisitante}%</span>
                             </div>
                         </div>
@@ -311,7 +368,6 @@
             });
         }
 
-        // 4. DISTRIBUIR LOS CRUCES EN LAS IDs DEL CUADRO HTML
         function processFixtures(matches) {
             const roundOf32 = matches.filter(m => m.stage === "LAST_32");
             const roundOf16 = matches.filter(m => m.stage === "LAST_16");
@@ -319,7 +375,7 @@
             const semis = matches.filter(m => m.stage === "SEMI_FINALS");
             const finalMatch = matches.find(m => m.stage === "FINAL");
 
-            // Rellenar Dieciseisavos (Hasta 16 cruces permitidos en la plantilla)
+            // Mapear los 16 partidos de Dieciseisavos
             for (let i = 0; i < 16; i++) {
                 const idx = i + 1;
                 if (roundOf32[i]) {
@@ -333,7 +389,7 @@
                 }
             }
 
-            // Rellenar Octavos (Hasta 8 cruces en total)
+            // Mapear los 8 partidos de Octavos
             for (let i = 0; i < 8; i++) {
                 const idx = i + 1;
                 if (roundOf16[i]) {
@@ -347,16 +403,16 @@
                 }
             }
 
-            // Rellenar Cuartos (Hasta 4 cruces en total)
+            // Mapear los 4 partidos de Cuartos
             for (let i = 0; i < 4; i++) {
                 const idx = i + 1;
                 if (quarters[i]) {
                     const m = quarters[i];
                     if (document.getElementById(`c${idx}-h-team`)) {
-                        document.getElementById(`c${idx}-h-team`).innerText = m.homeTeam.name || "Por clasificar";
-                        document.getElementById(`c${idx}-a-team`).innerText = m.awayTeam.name || "Por clasificar";
-                        document.getElementById(`c${idx}-h-score`).innerText = m.score.fullTime.home !== null ? m.score.fullTime.home : '-';
-                        document.getElementById(`c${idx}-a-score`).innerText = m.score.fullTime.away !== null ? m.score.fullTime.away : '-';
+                        document.getElementById(`c` + idx + `-h-team`).innerText = m.homeTeam.name || "Por clasificar";
+                        document.getElementById(`c` + idx + `-a-team`).innerText = m.awayTeam.name || "Por clasificar";
+                        document.getElementById(`c` + idx + `-h-score`).innerText = m.score.fullTime.home !== null ? m.score.fullTime.home : '-';
+                        document.getElementById(`c` + idx + `-a-score`).innerText = m.score.fullTime.away !== null ? m.score.fullTime.away : '-';
                     }
                 }
             }
@@ -375,7 +431,7 @@
                 document.getElementById(`s2-a-score`).innerText = semis[1].score.fullTime.away !== null ? semis[1].score.fullTime.away : '-';
             }
 
-            // Gran Final
+            // Final
             if (finalMatch && finalMatch.homeTeam.name) {
                 document.getElementById('f-t1').innerText = finalMatch.homeTeam.name;
                 document.getElementById('f-t2').innerText = finalMatch.awayTeam.name;
@@ -390,22 +446,18 @@
             renderPerformanceTable(matches);
         }
 
-        // 5. TABLA GENERAL RENDIMIENTO DE GOLES
         function renderPerformanceTable(matches) {
             const statsMap = {};
-            
             matches.forEach(m => {
                 if (m.score && m.score.fullTime && m.score.fullTime.home !== null && m.score.fullTime.away !== null) {
                     const homeName = m.homeTeam.name;
                     const awayName = m.awayTeam.name;
-
                     if (!statsMap[homeName]) statsMap[homeName] = { name: homeName, pj: 0, gf: 0, gc: 0 };
                     if (!statsMap[awayName]) statsMap[awayName] = { name: awayName, pj: 0, gf: 0, gc: 0 };
 
                     statsMap[homeName].pj += 1;
                     statsMap[homeName].gf += m.score.fullTime.home;
                     statsMap[homeName].gc += m.score.fullTime.away;
-
                     statsMap[awayName].pj += 1;
                     statsMap[awayName].gf += m.score.fullTime.away;
                     statsMap[awayName].gc += m.score.fullTime.home;
@@ -417,9 +469,8 @@
             tBody.innerHTML = '';
             
             const sortedTeams = Object.values(statsMap).sort((a,b) => b.gf - a.gf);
-
             if(sortedTeams.length === 0) {
-                tBody.innerHTML = `<tr><td colspan="4" class="py-4 text-center text-slate-500">Torneo en preparación. Los datos se calcularán con el pitido inicial.</td></tr>`;
+                tBody.innerHTML = `<tr><td colspan="4" class="py-4 text-center text-slate-500">Torneo en preparación. Datos calculados al arrancar los encuentros.</td></tr>`;
                 return;
             }
 
@@ -435,13 +486,8 @@
             });
         }
 
-        // ==========================================
-        // CAPA DE CONEXIÓN CON GOOGLE SHEETS
-        // ==========================================
         async function fetchWorldCupData() {
             document.getElementById('sync-text').innerText = "Sincronizando canales con Google Cloud...";
-            
-            // Reemplaza esto con tu código largo de la URL de Google Sheets
             const SPREADSHEET_ID = "1QfV7qgAMgoC6IrRXgkHTh2QEY4BhkCVWg_quXZeNv-4"; 
             
             const urlPartidos = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:json&range=A2`;
@@ -451,13 +497,11 @@
             let cachedMatches = null;
 
             try {
-                // --- 1. PROCESAR CELDA A2 (PARTIDOS Y ELIMINATORIAS) ---
                 const resPartidos = await fetch(urlPartidos);
                 if (resPartidos.ok) {
                     const textP = await resPartidos.text();
                     const cleanStringP = textP.substring(textP.indexOf('{'), textP.lastIndexOf('}') + 1);
                     const googleDataP = JSON.parse(cleanStringP);
-                    
                     if (googleDataP.table && googleDataP.table.rows && googleDataP.table.rows.length > 0) {
                         const celdaA2 = googleDataP.table.rows[0].c[0].v;
                         if (celdaA2 && !celdaA2.startsWith("Error")) {
@@ -470,13 +514,11 @@
                     }
                 }
 
-                // --- 2. PROCESAR CELDA C2 (MÁXIMOS GOLEADORES) ---
                 const resGoleadores = await fetch(urlGoleadores);
                 if (resGoleadores.ok) {
                     const textG = await resGoleadores.text();
                     const cleanStringG = textG.substring(textG.indexOf('{'), textG.lastIndexOf('}') + 1);
                     const googleDataG = JSON.parse(cleanStringG);
-                    
                     if (googleDataG.table && googleDataG.table.rows && googleDataG.table.rows.length > 0) {
                         const celdaC2 = googleDataG.table.rows[0].c[0].v;
                         if (celdaC2 && !celdaC2.startsWith("Error")) {
@@ -490,13 +532,11 @@
                     marcarGoleadoresVacios();
                 }
                 
-                // --- 3. PROCESAR CELDA B2 (PRÓXIMOS PARTIDOS Y PREDICCIONES) ---
                 const resProximos = await fetch(urlProximos);
                 if (resProximos.ok) {
                     const textB = await resProximos.text();
                     const cleanStringB = textB.substring(textB.indexOf('{'), textB.lastIndexOf('}') + 1);
                     const googleDataB = JSON.parse(cleanStringB);
-                    
                     if (googleDataB.table && googleDataB.table.rows && googleDataB.table.rows.length > 0) {
                         const celdaB2 = googleDataB.table.rows[0].c[0].v;
                         if (celdaB2 && !celdaB2.startsWith("Error")) {
@@ -510,7 +550,7 @@
                 document.getElementById('sync-text').innerText = "Sincronización completa de datos";
 
             } catch (error) {
-                console.error("Error en el procesado individual de celdas:", error);
+                console.error("Error en el procesado:", error);
                 document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-amber-500";
                 document.getElementById('sync-text').innerText = "Error de sincronización";
             }
