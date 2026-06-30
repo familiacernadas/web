@@ -386,6 +386,27 @@ function renderPerformanceTable(matches) {
     document.getElementById('scorers-table-body').innerHTML = `<tr><td colspan="2" class="py-4 text-center text-slate-500">Estadísticas de jugadores listas para el torneo.</td></tr>`;
 }
 
+// FUNCIÓN PARA PINTAR LOS GOLEADORES EN LA TABLA
+function renderLiveScorers(scorers) {
+    const sBody = document.getElementById('scorers-table-body');
+    sBody.innerHTML = '';
+
+    if (!scorers || scorers.length === 0) {
+        sBody.innerHTML = `<tr><td colspan="2" class="py-4 text-center text-slate-500">Aún no hay goles anotados.</td></tr>`;
+        return;
+    }
+
+    // Mostramos los 10 máximos goleadores en la tabla
+    scorers.slice(0, 10).forEach(p => {
+        sBody.innerHTML += `
+            <tr class="border-b border-slate-800/60 hover:bg-slate-900/20 transition-colors">
+                <td class="py-3 px-4 font-medium text-slate-200">${p.playerName} <span class="text-xs text-slate-500">(${p.teamName})</span></td>
+                <td class="py-3 px-4 text-center font-mono text-base font-bold text-amber-400">${p.goals}</td>
+            </tr>
+        `;
+    });
+}
+        
 window.onload = () => { fetchWorldCupData(); };
     </script>
 </body>
