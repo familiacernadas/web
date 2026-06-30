@@ -206,39 +206,40 @@ const KEY = p1 + p2;
 const LEAGUE_CODE = "WC"; // Código oficial para la Copa del Mundo
 
 async function fetchWorldCupData() {
-    document.getElementById('sync-text').innerText = "Conectando...";
+    document.getElementById('sync-text').innerText = "Sincronizando con Google Cloud...";
     
-    // Usamos un proxy alternativo específico para saltar las cabeceras CORS incorrectas de football-data
-    const proxy = "https://corsproxy.io/?";
-    const urlTarget = `https://api.football-data.org/v4/competitions/${LEAGUE_CODE}/matches`;
-    
-    try {
-        // La petición pasa a través del proxy seguro
-        const response = await fetch(`${proxy}${encodeURIComponent(urlTarget)}`, {
-            method: 'GET',
-            headers: {
-                'X-Auth-Token': KEY
-            }
-        });
+    // Pega aquí el enlace de "Publicar en la web" de tu Google Sheets (el que termina en output=csv)
+    const urlGoogleSheet = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT0CVxc6YQ6WHCdwUt20gGs7NZsrnfyTJ8--s93jSjO_oVhlbn3csE6ba_gu-9Hnpmf9AzhfcpH7aZs/pub?output=csv"; 
 
-        if (!response.ok) {
-            if(response.status === 403) throw new Error("Plan restringido o API Key incorrecta");
-            throw new Error(`Error del servidor: ${response.status}`);
+    try {
+        const response = await fetch(urlGoogleSheet);
+        if (!response.ok) throw new Error("No se pudo conectar con el almacén de datos");
+        
+        const csvText = await response.text();
+        
+        // El CSV de Google Sheets suele venir entrecomillado. Extraemos la celda A2 de forma limpia.
+        const lineas = csvText.split("\n");
+        if (lineas.length < 2) throw new Error("Formato de datos incompleto");
+        
+        // Quitamos las comillas iniciales y finales que mete el formato CSV a la celda
+        let jsonRaw = lineas.slice(1).join("\n").trim();
+        if (jsonRaw.startsWith('"') && jsonRaw.endsWith('"')) {
+            jsonRaw = jsonRaw.substring(1, jsonRaw.length - 1).replace(/""/g, '"');
         }
 
-        const data = await response.json();
+        const data = JSON.parse(jsonRaw);
         
         document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-emerald-400 animate-pulse";
-        document.getElementById('sync-text').innerText = "Datos en Vivo Activos";
+        document.getElementById('sync-text').innerText = "Sincronizado vía Google Sheets";
 
         if (data.matches && data.matches.length > 0) {
             processFixtures(data.matches);
         }
 
     } catch (error) {
-        console.error("Error en Football-Data con Proxy:", error);
+        console.error("Error leyendo desde Google Sheets:", error);
         document.getElementById('sync-status').className = "w-2 h-2 rounded-full bg-amber-500";
-        document.getElementById('sync-text').innerText = "Error de conexión";
+        document.getElementById('sync-text').innerText = "Error de sincronización automática";
     }
 }
 
