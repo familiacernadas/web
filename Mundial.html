@@ -275,43 +275,49 @@ function processFixtures(matches) {
     const semis = matches.filter(m => m.stage === "SEMI_FINALS");
     const finalMatch = matches.find(m => m.stage === "FINAL");
 
-    // 1. Rellenar Dieciseisavos (Mundial 2026 estrena esta ronda)
-    for (let i = 0; i < 8; i++) {
+    // 1. Rellenar Dieciseisavos (16 partidos en el nuevo formato del Mundial 2026)
+    for (let i = 0; i < 16; i++) {
         const idx = i + 1;
         if (roundOf32[i]) {
             const m = roundOf32[i];
-            document.getElementById(`d${idx}-h-team`).innerText = m.homeTeam.name || "Por definir";
-            document.getElementById(`d${idx}-a-team`).innerText = m.awayTeam.name || "Por definir";
-            document.getElementById(`d${idx}-h-score`).innerText = m.score.fullTime.home !== null ? m.score.fullTime.home : '-';
-            document.getElementById(`d${idx}-a-score`).innerText = m.score.fullTime.away !== null ? m.score.fullTime.away : '-';
+            if (document.getElementById(`d${idx}-h-team`)) {
+                document.getElementById(`d${idx}-h-team`).innerText = m.homeTeam.name || "Por definir";
+                document.getElementById(`d${idx}-a-team`).innerText = m.awayTeam.name || "Por definir";
+                document.getElementById(`d${idx}-h-score`).innerText = m.score.fullTime.home !== null ? m.score.fullTime.home : '-';
+                document.getElementById(`d${idx}-a-score`).innerText = m.score.fullTime.away !== null ? m.score.fullTime.away : '-';
+            }
         }
     }
 
-    // 2. Rellenar Octavos
-    for (let i = 0; i < 4; i++) {
+    // 2. Rellenar Octavos (8 partidos en total)
+    for (let i = 0; i < 8; i++) {
         const idx = i + 1;
         if (roundOf16[i]) {
             const m = roundOf16[i];
-            document.getElementById(`o${idx}-h-team`).innerText = m.homeTeam.name || "Por clasificar";
-            document.getElementById(`o${idx}-a-team`).innerText = m.awayTeam.name || "Por clasificar";
-            document.getElementById(`o${idx}-h-score`).innerText = m.score.fullTime.home !== null ? m.score.fullTime.home : '-';
-            document.getElementById(`o${idx}-a-score`).innerText = m.score.fullTime.away !== null ? m.score.fullTime.away : '-';
+            if (document.getElementById(`o${idx}-h-team`)) {
+                document.getElementById(`o${idx}-h-team`).innerText = m.homeTeam.name || "Por clasificar";
+                document.getElementById(`o${idx}-a-team`).innerText = m.awayTeam.name || "Por clasificar";
+                document.getElementById(`o${idx}-h-score`).innerText = m.score.fullTime.home !== null ? m.score.fullTime.home : '-';
+                document.getElementById(`o${idx}-a-score`).innerText = m.score.fullTime.away !== null ? m.score.fullTime.away : '-';
+            }
         }
     }
 
-    // 3. Rellenar Cuartos
-    for (let i = 0; i < 2; i++) {
+    // 3. Rellenar Cuartos (4 partidos en total)
+    for (let i = 0; i < 4; i++) {
         const idx = i + 1;
         if (quarters[i]) {
             const m = quarters[i];
-            document.getElementById(`c${idx}-h-team`).innerText = m.homeTeam.name || "Por clasificar";
-            document.getElementById(`c${idx}-a-team`).innerText = m.awayTeam.name || "Por clasificar";
-            document.getElementById(`c${idx}-h-score`).innerText = m.score.fullTime.home !== null ? m.score.fullTime.home : '-';
-            document.getElementById(`c${idx}-a-score`).innerText = m.score.fullTime.away !== null ? m.score.fullTime.away : '-';
+            if (document.getElementById(`c${idx}-h-team`)) {
+                document.getElementById(`c${idx}-h-team`).innerText = m.homeTeam.name || "Por clasificar";
+                document.getElementById(`c${idx}-a-team`).innerText = m.awayTeam.name || "Por clasificar";
+                document.getElementById(`c${idx}-h-score`).innerText = m.score.fullTime.home !== null ? m.score.fullTime.home : '-';
+                document.getElementById(`c${idx}-a-score`).innerText = m.score.fullTime.away !== null ? m.score.fullTime.away : '-';
+            }
         }
     }
 
-    // 4. Semifinales
+    // 4. Semifinales (2 partidos)
     if (semis[0]) {
         document.getElementById(`s1-h-team`).innerText = semis[0].homeTeam.name || "Por Clasificar";
         document.getElementById(`s1-a-team`).innerText = semis[0].awayTeam.name || "Por Clasificar";
@@ -339,7 +345,6 @@ function processFixtures(matches) {
 
     renderPerformanceTable(matches);
 }
-
 function renderPerformanceTable(matches) {
     const statsMap = {};
     
