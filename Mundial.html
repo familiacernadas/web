@@ -17,7 +17,7 @@
                 <div class="bg-indigo-600 text-white p-2 rounded-lg font-bold text-xl">⚽</div>
                 <div>
                     <h1 class="text-xl font-bold text-white tracking-tight">Mundial 2026 · Live Feed Oficial</h1>
-                    <p class="text-xs text-indigo-400 font-medium">Actualización directa desde el navegador (Fase de Grupos y Eliminatorias)</p>
+                    <p class="text-xs text-indigo-400 font-medium">Actualización automática y árbol evolutivo de eliminatorias</p>
                 </div>
             </div>
             <div class="flex items-center gap-4">
@@ -42,12 +42,14 @@
             
             <div class="min-w-[1650px] bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 backdrop-blur-sm shadow-2xl flex justify-between items-center gap-2 relative">
                 
+                <!-- ================= LADO IZQUIERDO DEL CUADRO ================= -->
+                <!-- Dieciseisavos Izquierda (8 Partidos: d1 a d8) -->
                 <div class="w-1/8 space-y-4">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Dieciseisavos L</div>
                     
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d1">
                         <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d1-h-team">Canadá</span><span class="font-bold font-mono" id="d1-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d1-a-team">Bosnia</span><span class="font-bold font-mono" id="d1-a-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d1-a-team">Sudáfrica</span><span class="font-bold font-mono" id="d1-a-score">-</span></div>
                     </div>
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d2">
                         <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d2-h-team">Costa de Marfil</span><span class="font-bold font-mono" id="d2-h-score">-</span></div>
@@ -74,7 +76,7 @@
 
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d7">
                         <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d7-h-team">Estados Unidos</span><span class="font-bold font-mono" id="d7-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d7-a-team">Ecuador</span><span class="font-bold font-mono" id="d7-a-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d7-a-team">Bosnia-Herzegovina</span><span class="font-bold font-mono" id="d7-a-score">-</span></div>
                     </div>
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d8">
                         <div class="flex justify-between items-center text-[11px]"><span class="truncate font-medium text-slate-400" id="d8-h-team">Bélgica</span><span class="font-bold font-mono" id="d8-h-score">-</span></div>
@@ -82,46 +84,50 @@
                     </div>
                 </div>
 
+                <!-- Octavos Izquierda (4 Partidos: o1 a o4) -->
                 <div class="w-1/8 space-y-14">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Octavos L</div>
                     <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md" id="match-o1">
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o1-h-team">Canadá</span><span class="font-bold font-mono text-slate-300" id="o1-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o1-a-team">Marruecos</span><span class="font-bold font-mono text-slate-300" id="o1-a-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o1-h-team">Por definir</span><span class="font-bold font-mono text-slate-300" id="o1-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o1-a-team">Por definir</span><span class="font-bold font-mono text-slate-300" id="o1-a-score">-</span></div>
                     </div>
                     <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md" id="match-o2">
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o2-h-team">Paraguay</span><span class="font-bold font-mono text-slate-300" id="o2-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o2-a-team">Francia</span><span class="font-bold font-mono text-slate-300" id="o2-a-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o2-h-team">Por definir</span><span class="font-bold font-mono text-slate-300" id="o2-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o2-a-team">Por definir</span><span class="font-bold font-mono text-slate-300" id="o2-a-score">-</span></div>
                     </div>
                     <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md" id="match-o3">
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o3-h-team">Portugal</span><span class="font-bold font-mono text-slate-300" id="o3-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o3-a-team">España</span><span class="font-bold font-mono text-slate-300" id="o3-a-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o3-h-team">Por definir</span><span class="font-bold font-mono text-slate-300" id="o3-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o3-a-team">Por definir</span><span class="font-bold font-mono text-slate-300" id="o3-a-score">-</span></div>
                     </div>
                     <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md" id="match-o4">
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o4-h-team">Estados Unidos</span><span class="font-bold font-mono text-slate-300" id="o4-h-score">-</span></div>
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o4-a-team">Bélgica</span><span class="font-bold font-mono text-slate-300" id="o4-a-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o4-h-team">Por definir</span><span class="font-bold font-mono text-slate-300" id="o4-h-score">-</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-indigo-300 truncate" id="o4-a-team">Por definir</span><span class="font-bold font-mono text-slate-300" id="o4-a-score">-</span></div>
                     </div>
                 </div>
 
+                <!-- Cuartos Izquierda (2 Partidos: c1 y c2) -->
                 <div class="w-1/8 space-y-40">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Cuartos L</div>
-                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1 shadow-lg">
+                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1 shadow-lg" id="match-c1">
                         <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-amber-200 truncate" id="c1-h-team">Por definir</span><span class="font-bold font-mono" id="c1-h-score">-</span></div>
                         <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-amber-200 truncate" id="c1-a-team">Por definir</span><span class="font-bold font-mono" id="c1-a-score">-</span></div>
                     </div>
-                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1 shadow-lg">
+                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1 shadow-lg" id="match-c2">
                         <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-amber-200 truncate" id="c2-h-team">Por definir</span><span class="font-bold font-mono" id="c2-h-score">-</span></div>
                         <div class="flex justify-between items-center text-[11px]"><span class="font-bold text-amber-200 truncate" id="c2-a-team">Por definir</span><span class="font-bold font-mono" id="c2-a-score">-</span></div>
                     </div>
                 </div>
 
+                <!-- Semifinal Izquierda (s1) -->
                 <div class="w-1/8">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1 mb-4">Semifinal L</div>
-                    <div class="bg-indigo-950/40 border border-indigo-900/60 p-2.5 rounded-xl space-y-2 shadow-xl">
+                    <div class="bg-indigo-950/40 border border-indigo-900/60 p-2.5 rounded-xl space-y-2 shadow-xl" id="match-s1">
                         <div class="flex justify-between items-center text-xs"><span class="font-black text-indigo-200 truncate" id="s1-h-team">Por definir</span><span class="font-bold font-mono" id="s1-h-score">-</span></div>
                         <div class="flex justify-between items-center text-xs"><span class="font-black text-indigo-200 truncate" id="s1-a-team">Por definir</span><span class="font-bold font-mono" id="s1-a-score">-</span></div>
                     </div>
                 </div>
 
+                <!-- ================= CENTRO: GRAN FINAL ================= -->
                 <div class="w-1/5 bg-slate-950/70 border-2 border-indigo-500/40 p-4 rounded-2xl text-center shadow-2xl z-10 my-4">
                     <div class="text-xs font-black text-amber-400 uppercase tracking-widest mb-3">🏆 GRAN FINAL 🏆</div>
                     <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-800 space-y-3 shadow-inner">
@@ -129,49 +135,55 @@
                         <div class="text-[10px] text-slate-600 font-black tracking-widest">VS</div>
                         <div class="text-xs font-bold text-slate-100 tracking-wide" id="f-t2">Esperando finalistas</div>
                     </div>
+                    <div id="f-score-display" class="mt-2 text-sm font-mono font-black text-indigo-400 hidden"><span id="f-h-score">-</span> : <span id="f-a-score">-</span></div>
                     <div id="champ-box" class="mt-4 hidden bg-emerald-500/10 border border-emerald-500/20 py-2 rounded-lg text-xs font-bold text-emerald-400 tracking-wider"></div>
                 </div>
 
+                <!-- ================= LADO DERECHO DEL CUADRO ================= -->
+                <!-- Semifinal Derecha (s2) -->
                 <div class="w-1/8">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1 mb-4">Semifinal R</div>
-                    <div class="bg-indigo-950/40 border border-indigo-900/60 p-2.5 rounded-xl space-y-2 shadow-xl">
+                    <div class="bg-indigo-950/40 border border-indigo-900/60 p-2.5 rounded-xl space-y-2 shadow-xl" id="match-s2">
                         <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="s2-h-score">-</span><span class="font-black text-indigo-200 truncate text-right w-full" id="s2-h-team">Por definir</span></div>
                         <div class="flex justify-between items-center text-xs"><span class="font-bold font-mono" id="s2-a-score">-</span><span class="font-black text-indigo-200 truncate text-right w-full" id="s2-a-team">Por definir</span></div>
                     </div>
                 </div>
 
+                <!-- Cuartos Derecha (2 Partidos: c3 y c4) -->
                 <div class="w-1/8 space-y-40">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Cuartos R</div>
-                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1 shadow-lg">
+                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1 shadow-lg" id="match-c3">
                         <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="c3-h-score">-</span><span class="font-bold text-amber-200 truncate text-right w-full" id="c3-h-team">Por definir</span></div>
                         <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="c3-a-score">-</span><span class="font-bold text-amber-200 truncate text-right w-full" id="c3-a-team">Por definir</span></div>
                     </div>
-                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1 shadow-lg">
+                    <div class="bg-slate-800 border border-slate-700 p-2 rounded-lg space-y-1 shadow-lg" id="match-c4">
                         <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="c4-h-score">-</span><span class="font-bold text-amber-200 truncate text-right w-full" id="c4-h-team">Por definir</span></div>
                         <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="c4-a-score">-</span><span class="font-bold text-amber-200 truncate text-right w-full" id="c4-a-team">Por definir</span></div>
                     </div>
                 </div>
 
+                <!-- Octavos Derecha (4 Partidos: o5 a o8) -->
                 <div class="w-1/8 space-y-14">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Octavos R</div>
                     <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md" id="match-o5">
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o5-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o5-h-team">Brasil</span></div>
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o5-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o5-a-team">Noruega</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o5-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o5-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o5-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o5-a-team">Por definir</span></div>
                     </div>
                     <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md" id="match-o6">
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o6-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o6-h-team">México</span></div>
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o6-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o6-a-team">Inglaterra</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o6-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o6-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o6-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o6-a-team">Por definir</span></div>
                     </div>
                     <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md" id="match-o7">
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o7-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o7-h-team">Suiza</span></div>
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o7-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o7-a-team">Ganador Col/Gha</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o7-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o7-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o7-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o7-a-team">Por definir</span></div>
                     </div>
                     <div class="bg-slate-850 border border-slate-750 p-2 rounded-lg space-y-1 shadow-md" id="match-o8">
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o8-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o8-h-team">Ganador Arg/CV</span></div>
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o8-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o8-a-team">Ganador Aus/Egy</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o8-h-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o8-h-team">Por definir</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono text-slate-300" id="o8-a-score">-</span><span class="font-medium text-indigo-300 truncate text-right w-full" id="o8-a-team">Por definir</span></div>
                     </div>
                 </div>
 
+                <!-- Dieciseisavos Derecha (8 Partidos: d9 a d16) -->
                 <div class="w-1/8 space-y-4">
                     <div class="text-center text-[10px] font-bold text-slate-500 uppercase tracking-widest border-b border-slate-800/50 pb-1">Dieciseisavos R</div>
                     
@@ -181,7 +193,7 @@
                     </div>
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d10">
                         <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d10-h-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d10-h-team">Brasil</span></div>
-                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d10-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d10-a-team">Inglaterra (D10)</span></div>
+                        <div class="flex justify-between items-center text-[11px]"><span class="font-bold font-mono" id="d10-a-score">-</span><span class="truncate text-right w-full font-medium text-slate-400" id="d10-a-team">Noruega</span></div>
                     </div>
                     
                     <div class="bg-slate-900/60 border border-slate-800 p-2 rounded-lg space-y-1" id="match-d11">
@@ -215,18 +227,10 @@
             </div>
         </section>
 
-        <div class="mt-8 mb-8 bg-slate-900/40 border border-slate-800 rounded-xl p-6 backdrop-blur-md">
-            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                📅 Próximos Encuentros y Probabilidades Estadísticas
-            </h3>
-            <div id="next-matches-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="col-span-full text-center text-slate-500 py-4">Esperando cálculo de cuotas y fechas...</div>
-            </div>
-        </div>
-
+        <!-- SECCIÓN DE DETALLES INFERIORES -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div class="lg:col-span-2">
-                <h2 class="text-lg font-bold text-white mb-3">📊 Rendimiento Real General (Fase de Grupos en Curso)</h2>
+                <h2 class="text-lg font-bold text-white mb-3">📊 Rendimiento Real General (Fase Eliminatoria)</h2>
                 <div class="bg-slate-900/40 border border-slate-800 rounded-xl overflow-hidden backdrop-blur-sm shadow-xl">
                     <table class="w-full text-left border-collapse">
                         <thead>
@@ -269,21 +273,14 @@
             document.getElementById('live-clock').innerText = now.toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'medium' });
         }, 1000);
 
-        function marcarGoleadoresVacios() {
-            const sBody = document.getElementById('scorers-table-body');
-            if (sBody) sBody.innerHTML = `<tr><td colspan="2" class="py-4 text-center text-slate-500">Goleadores listos para el torneo.</td></tr>`;
-        }
-
         function renderLiveScorers(scorers) {
             const sBody = document.getElementById('scorers-table-body');
             if (!sBody) return;
             sBody.innerHTML = '';
-
             if (!scorers || scorers.length === 0) {
-                marcarGoleadoresVacios();
+                sBody.innerHTML = `<tr><td colspan="2" class="py-4 text-center text-slate-500">Goleadores listos para el torneo.</td></tr>`;
                 return;
             }
-
             scorers.slice(0, 10).forEach(p => {
                 sBody.innerHTML += `
                     <tr class="border-b border-slate-800/60 hover:bg-slate-900/20 transition-colors">
@@ -294,156 +291,150 @@
             });
         }
 
-        function renderNextMatches(proximos, historicoMatches) {
-            const container = document.getElementById('next-matches-container');
-            if (!container) return;
-            container.innerHTML = '';
-
-            if (!proximos || proximos.length === 0) {
-                container.innerHTML = `<div class="col-span-full text-center text-slate-500 py-4">No hay más partidos programados. Torneo finalizado.</div>`;
-                return;
-            }
-
-            const stats = {};
-            if (historicoMatches) {
-                historicoMatches.forEach(m => {
-                    if (m.score && m.score.fullTime && m.score.fullTime.home !== null && m.score.fullTime.away !== null) {
-                        const h = m.homeTeam.name;
-                        const a = m.awayTeam.name;
-                        if(!stats[h]) stats[h] = { gf: 0, pj: 0 };
-                        if(!stats[a]) stats[a] = { gf: 0, pj: 0 };
-                        stats[h].gf += m.score.fullTime.home; stats[h].pj++;
-                        stats[a].gf += m.score.fullTime.away; stats[a].pj++;
-                    }
-                });
-            }
-
-            proximos.forEach(m => {
-                const local = m.homeTeam.name;
-                const visitante = m.awayTeam.name;
-
-                const ratioLocal = stats[local] && stats[local].pj > 0 ? (stats[local].gf / stats[local].pj) : 1.2;
-                const ratioVisitante = stats[visitante] && stats[visitante].pj > 0 ? (stats[visitante].gf / stats[visitante].pj) : 1.1;
-
-                const pesosHistoricos = { "Brasil": 0.4, "Argentina": 0.4, "Francia": 0.3, "España": 0.3, "Alemania": 0.2 };
-                const pesoL = pesosHistoricos[local] || 0.0;
-                const pesoV = pesosHistoricos[visitante] || 0.0;
-
-                const poderL = ratioLocal + pesoL;
-                const poderV = ratioVisitante + pesoV;
-
-                const porcLocal = Math.round((poderL / (poderL + poderV)) * 100) || 50;
-                const porcVisitante = 100 - porcLocal;
-
-                const fechaPartido = new Date(m.utcDate);
-                const fechaFormateada = fechaPartido.toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit' });
-                const horaFormateada = fechaPartido.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
-
-                container.innerHTML += `
-                    <div class="bg-slate-950/60 border border-slate-800/80 rounded-lg p-4 flex flex-col justify-between transition-all hover:border-slate-700">
-                        <div class="flex justify-between items-center mb-3">
-                            <span class="text-xs font-bold text-amber-400 tracking-wider bg-amber-500/10 px-2 py-0.5 rounded">${m.stage ? m.stage.replace('LAST_', 'R') : 'PROX'}</span>
-                            <span class="text-xs text-slate-400 font-mono">📅 ${fechaFormateada} - ⏰ ${horaFormateada} h</span>
-                        </div>
-                        <div class="space-y-2 mb-4">
-                            <div class="flex justify-between items-center">
-                                <span class="text-white font-medium text-xs truncate">${local}</span>
-                                <span class="text-xs font-bold text-slate-400 font-mono">${porcLocal}%</span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="text-white font-medium text-xs truncate">${visitante}</span>
-                                <span class="text-xs font-bold text-slate-400 font-mono">${porcVisitante}%</span>
-                            </div>
-                        </div>
-                        <div class="w-full bg-slate-800 rounded-full h-1.5 flex overflow-hidden">
-                            <div class="bg-emerald-500 h-full transition-all" style="width: ${porcLocal}%"></div>
-                            <div class="bg-rose-500 h-full transition-all" style="width: ${porcVisitante}%"></div>
-                        </div>
-                    </div>
-                `;
-            });
+        // ================= MOTOR DE TRANSMISIÓN DE GANADORES DE FORMA NATURAL =================
+        function obtenerGanador(partido) {
+            if (!partido || !partido.score || !partido.score.fullTime || partido.score.fullTime.home === null) return null;
+            
+            const gH = partido.score.fullTime.home;
+            const gA = partido.score.fullTime.away;
+            
+            if (gH > gA) return partido.homeTeam.name;
+            if (gA > gH) return partido.awayTeam.name;
+            
+            // Si hay empate en marcador normal, se evalúa el ganador definitivo (Prórroga/Penaltis)
+            if (partido.score.winner === "HOME_TEAM" || partido.score.winner === "HOME") return partido.homeTeam.name;
+            if (partido.score.winner === "AWAY_TEAM" || partido.score.winner === "AWAY") return partido.awayTeam.name;
+            return null;
         }
 
-        // ================= SOLUCIÓN NATURAL DE MAPEADO DINÁMICO =================
         function findMatchByTeams(matchesList, teamA, teamB) {
-            if (!matchesList) return null;
+            if (!matchesList || !teamA || !teamB) return null;
             return matchesList.find(m => 
-                (m.homeTeam && m.homeTeam.name === teamA && m.awayTeam && m.awayTeam.name === teamB) ||
-                (m.homeTeam && m.homeTeam.name === teamB && m.awayTeam && m.awayTeam.name === teamA)
+                (m.homeTeam && m.homeTeam.name.toLowerCase() === teamA.toLowerCase() && m.awayTeam && m.awayTeam.name.toLowerCase() === teamB.toLowerCase()) ||
+                (m.homeTeam && m.homeTeam.name.toLowerCase() === teamB.toLowerCase() && m.awayTeam && m.awayTeam.name.toLowerCase() === teamA.toLowerCase())
             );
         }
 
-        function setVisualMatchData(htmlId, matchObj) {
-            if (!matchObj) return;
+        function setVisualMatchData(htmlId, matchObj, fallbackLocal = "Por definir", fallbackVisitante = "Por definir") {
             const hTeam = document.getElementById(`${htmlId}-h-team`);
             const aTeam = document.getElementById(`${htmlId}-a-team`);
             const hScore = document.getElementById(`${htmlId}-h-score`);
             const aScore = document.getElementById(`${htmlId}-a-score`);
 
-            if(hTeam && matchObj.homeTeam) hTeam.innerText = matchObj.homeTeam.name || "Por definir";
-            if(aTeam && matchObj.awayTeam) aTeam.innerText = matchObj.awayTeam.name || "Por definir";
-            if(hScore) hScore.innerText = (matchObj.score && matchObj.score.fullTime && matchObj.score.fullTime.home !== null) ? matchObj.score.fullTime.home : '-';
-            if(aScore) aScore.innerText = (matchObj.score && matchObj.score.fullTime && matchObj.score.fullTime.away !== null) ? matchObj.score.fullTime.away : '-';
+            if (hTeam) hTeam.innerText = matchObj && matchObj.homeTeam ? matchObj.homeTeam.name : fallbackLocal;
+            if (aTeam) aTeam.innerText = matchObj && matchObj.awayTeam ? matchObj.awayTeam.name : fallbackVisitante;
+            
+            if (hScore) hScore.innerText = (matchObj && matchObj.score && matchObj.score.fullTime && matchObj.score.fullTime.home !== null) ? matchObj.score.fullTime.home : '-';
+            if (aScore) aScore.innerText = (matchObj && matchObj.score && matchObj.score.fullTime && matchObj.score.fullTime.away !== null) ? matchObj.score.fullTime.away : '-';
+            
+            return matchObj ? obtenerGanador(matchObj) : null;
         }
 
         function processFixtures(matches) {
-            // Filtrar las fases limpiamente
-            const roundOf32 = matches.filter(m => m.stage === "LAST_32");
-            const roundOf16 = matches.filter(m => m.stage === "LAST_16");
+            const r32 = matches.filter(m => m.stage === "GROUP_STAGE" || m.stage === "LAST_32");
+            const r16 = matches.filter(m => m.stage === "LAST_16");
             const quarters = matches.filter(m => m.stage === "QUARTER_FINALS");
             const semis = matches.filter(m => m.stage === "SEMI_FINALS");
             const finalMatch = matches.find(m => m.stage === "FINAL");
 
-            // 1. ASIGNACIÓN NATURAL DE DIECISEISAVOS (Búsqueda por nombres exactos del JSON)
-            setVisualMatchData('d1', findMatchByTeams(roundOf32, 'Canada', 'Bosnia-Herzegovina'));
-            setVisualMatchData('d2', findMatchByTeams(roundOf32, 'Ivory Coast', 'Morocco'));
-            setVisualMatchData('d3', findMatchByTeams(roundOf32, 'Germany', 'Paraguay'));
-            setVisualMatchData('d4', findMatchByTeams(roundOf32, 'Norway', 'France'));
-            setVisualMatchData('d5', findMatchByTeams(roundOf32, 'Austria', 'Portugal'));
-            setVisualMatchData('d6', findMatchByTeams(roundOf32, 'Spain', 'Sweden'));
-            setVisualMatchData('d7', findMatchByTeams(roundOf32, 'United States', 'Ecuador'));
-            setVisualMatchData('d8', findMatchByTeams(roundOf32, 'Belgium', 'Senegal'));
+            // --- DIECISEISAVOS DE FINAL ---
+            const g_d1 = setVisualMatchData('d1', findMatchByTeams(r32, 'Canada', 'South Africa'));
+            const g_d2 = setVisualMatchData('d2', findMatchByTeams(r32, 'Ivory Coast', 'Morocco'));
+            const g_d3 = setVisualMatchData('d3', findMatchByTeams(r32, 'Germany', 'Paraguay'));
+            const g_d4 = setVisualMatchData('d4', findMatchByTeams(r32, 'Norway', 'France'));
+            const g_d5 = setVisualMatchData('d5', findMatchByTeams(r32, 'Austria', 'Portugal'));
+            const g_d6 = setVisualMatchData('d6', findMatchByTeams(r32, 'Spain', 'Sweden'));
+            const g_d7 = setVisualMatchData('d7', findMatchByTeams(r32, 'United States', 'Bosnia-Herzegovina'));
+            const g_d8 = setVisualMatchData('d8', findMatchByTeams(r32, 'Belgium', 'Senegal'));
             
-            setVisualMatchData('d9', findMatchByTeams(roundOf32, 'South Korea', 'Czechia'));
-            setVisualMatchData('d10', findMatchByTeams(roundOf32, 'Brazil', 'Norway')); // Ajustable según claves del JSON
-            setVisualMatchData('d11', findMatchByTeams(roundOf32, 'Mexico', 'South Africa'));
-            setVisualMatchData('d12', findMatchByTeams(roundOf32, 'England', 'Congo DR'));
-            setVisualMatchData('d13', findMatchByTeams(roundOf32, 'Switzerland', 'Croatia'));
-            setVisualMatchData('d14', findMatchByTeams(roundOf32, 'Colombia', 'Ghana'));
-            setVisualMatchData('d15', findMatchByTeams(roundOf32, 'Argentina', 'Cape Verde Islands'));
-            setVisualMatchData('d16', findMatchByTeams(roundOf32, 'Australia', 'Egypt'));
+            const g_d9 = setVisualMatchData('d9', findMatchByTeams(r32, 'South Korea', 'Czechia'));
+            const g_d10 = setVisualMatchData('d10', findMatchByTeams(r32, 'Brazil', 'Norway'));
+            const g_d11 = setVisualMatchData('d11', findMatchByTeams(r32, 'Mexico', 'South Africa'));
+            const g_d12 = setVisualMatchData('d12', findMatchByTeams(r32, 'England', 'Congo DR'));
+            const g_d13 = setVisualMatchData('d13', findMatchByTeams(r32, 'Switzerland', 'Croatia'));
+            const g_d14 = setVisualMatchData('d14', findMatchByTeams(r32, 'Colombia', 'Ghana'));
+            const g_d15 = setVisualMatchData('d15', findMatchByTeams(r32, 'Argentina', 'Cape Verde Islands'));
+            const g_d16 = setVisualMatchData('d16', findMatchByTeams(r32, 'Australia', 'Egipto') || findMatchByTeams(r32, 'Australia', 'Egypt'));
 
-            // 2. ASIGNACIÓN NATURAL DE OCTAVOS DE FINAL
-            setVisualMatchData('o1', findMatchByTeams(roundOf16, 'Canada', 'Morocco'));
-            setVisualMatchData('o2', findMatchByTeams(roundOf16, 'Paraguay', 'France'));
-            setVisualMatchData('o3', findMatchByTeams(roundOf16, 'Portugal', 'Spain'));
-            setVisualMatchData('o4', findMatchByTeams(roundOf16, 'United States', 'Belgium'));
-            setVisualMatchData('o5', findMatchByTeams(roundOf16, 'Brazil', 'Norway'));
-            setVisualMatchData('o6', findMatchByTeams(roundOf16, 'Mexico', 'Inglaterra')); // Cambiar a 'England' si viene en inglés
-            if(!findMatchByTeams(roundOf16, 'Mexico', 'Inglaterra')) {
-                setVisualMatchData('o6', findMatchByTeams(roundOf16, 'Mexico', 'England'));
-            }
-            setVisualMatchData('o7', findMatchByTeams(roundOf16, 'Switzerland', 'Algeria')); // Mapeo de Suiza
+            // --- OCTAVOS DE FINAL (Predicción automática basada en herencia si el partido no se ha jugado) ---
+            const local_o1 = g_d1 || "Canadá"; 
+            const visiting_o1 = g_d2 || "Marruecos";
+            const g_o1 = setVisualMatchData('o1', findMatchByTeams(r16, local_o1, visiting_o1), local_o1, visiting_o1);
+
+            const local_o2 = g_d3 || "Paraguay";
+            const visiting_o2 = g_d4 || "Francia";
+            const g_o2 = setVisualMatchData('o2', findMatchByTeams(r16, local_o2, visiting_o2), local_o2, visiting_o2);
+
+            const local_o3 = g_d5 || "Portugal";
+            const visiting_o3 = g_d6 || "España";
+            const g_o3 = setVisualMatchData('o3', findMatchByTeams(r16, local_o3, visiting_o3), local_o3, visiting_o3);
+
+            const local_o4 = g_d7 || "Estados Unidos";
+            const visiting_o4 = g_d8 || "Bélgica";
+            const g_o4 = setVisualMatchData('o4', findMatchByTeams(r16, local_o4, visiting_o4), local_o4, visiting_o4);
+
+            const local_o5 = g_d9 || "Ganador D9";
+            const visiting_o5 = g_d10 || "Noruega"; 
+            const g_o5 = setVisualMatchData('o5', findMatchByTeams(r16, 'Brazil', 'Norway') || findMatchByTeams(r16, local_o5, visiting_o5), "Brasil", visiting_o5);
+
+            const local_o6 = g_d11 || "México";
+            const visiting_o6 = g_d12 || "Inglaterra";
+            const g_o6 = setVisualMatchData('o6', findMatchByTeams(r16, local_o6, visiting_o6) || findMatchByTeams(r16, 'Mexico', 'England'), local_o6, visiting_o6);
+
+            const local_o7 = g_d13 || "Suiza";
+            const visiting_o7 = g_d14 || "Ganador Col/Gha";
+            const g_o7 = setVisualMatchData('o7', findMatchByTeams(r16, local_o7, g_d14) || findMatchByTeams(r16, 'Switzerland', 'Algeria'), local_o7, visiting_o7);
+
+            const local_o8 = g_d15 || "Ganador Arg/CV";
+            const visiting_o8 = g_d16 || "Ganador Aus/Egy";
+            const g_o8 = setVisualMatchData('o8', findMatchByTeams(r16, g_d15, g_d16), local_o8, visiting_o8);
+
+            // --- CUARTOS DE FINAL ---
+            const local_c1 = g_o1 || "Ganador Octavos 1";
+            const visiting_c1 = g_o2 || "Ganador Octavos 2";
+            const g_c1 = setVisualMatchData('c1', findMatchByTeams(quarters, local_c1, visiting_c1), local_c1, visiting_c1);
+
+            const local_c2 = g_o3 || "Ganador Octavos 3";
+            const visiting_c2 = g_o4 || "Ganador Octavos 4";
+            const g_c2 = setVisualMatchData('c2', findMatchByTeams(quarters, local_c2, visiting_c2), local_c2, visiting_c2);
+
+            const local_c3 = g_o5 || "Ganador Octavos 5";
+            const visiting_c3 = g_o6 || "Ganador Octavos 6";
+            const g_c3 = setVisualMatchData('c3', findMatchByTeams(quarters, local_c3, visiting_c3), local_c3, visiting_c3);
+
+            const local_c4 = g_o7 || "Ganador Octavos 7";
+            const visiting_c4 = g_o8 || "Ganador Octavos 8";
+            const g_c4 = setVisualMatchData('c4', findMatchByTeams(quarters, local_c4, visiting_c4), local_c4, visiting_c4);
+
+            // --- SEMIFINALES ---
+            const local_s1 = g_c1 || "Ganador Cuartos 1";
+            const visiting_s1 = g_c2 || "Ganador Cuartos 2";
+            const g_s1 = setVisualMatchData('s1', findMatchByTeams(semis, local_s1, visiting_s1), local_s1, visiting_s1);
+
+            const local_s2 = g_c3 || "Ganador Cuartos 3";
+            const visiting_s2 = g_c4 || "Ganador Cuartos 4";
+            const g_s2 = setVisualMatchData('s2', findMatchByTeams(semis, local_s2, visiting_s2), local_s2, visiting_s2);
+
+            // --- GRAN FINAL ---
+            const finalista1 = g_s1 || "Finalista Izquierda";
+            const finalista2 = g_s2 || "Finalista Derecha";
             
-            // Si el partido de octavos 8 u otros aún no existen en el API feed de Octavos, se pueden dejar por defecto
-            // O calcular dinámicamente si los cuartos ya tienen información.
+            document.getElementById('f-t1').innerText = finalista1;
+            document.getElementById('f-t2').innerText = finalista2;
 
-            // 3. PROCESAR CUARTOS, SEMIFINALES Y FINAL (Mapeo secuencial o por llaves)
-            if (quarters[0]) setVisualMatchData('c1', quarters[0]);
-            if (quarters[1]) setVisualMatchData('c2', quarters[1]);
-            if (quarters[2]) setVisualMatchData('c3', quarters[2]);
-            if (quarters[3]) setVisualMatchData('c4', quarters[3]);
+            if (finalMatch) {
+                const hScoreF = document.getElementById('f-h-score');
+                const aScoreF = document.getElementById('f-a-score');
+                const scoreDisplay = document.getElementById('f-score-display');
+                
+                if(scoreDisplay) scoreDisplay.classList.remove('hidden');
+                if(hScoreF) hScoreF.innerText = (finalMatch.score && finalMatch.score.fullTime && finalMatch.score.fullTime.home !== null) ? finalMatch.score.fullTime.home : '-';
+                if(aScoreF) aScoreF.innerText = (finalMatch.score && finalMatch.score.fullTime && finalMatch.score.fullTime.away !== null) ? finalMatch.score.fullTime.away : '-';
 
-            if (semis[0]) setVisualMatchData('s1', semis[0]);
-            if (semis[1]) setVisualMatchData('s2', semis[1]);
-
-            if (finalMatch && finalMatch.homeTeam) {
-                document.getElementById('f-t1').innerText = finalMatch.homeTeam.name || "Esperando finalista";
-                document.getElementById('f-t2').innerText = finalMatch.awayTeam.name || "Esperando finalista";
-                if (finalMatch.status === "FINISHED") {
-                    const champ = finalMatch.score.winner === "HOME_TEAM" || finalMatch.score.winner === "HOME" ? finalMatch.homeTeam.name : finalMatch.awayTeam.name;
+                const campeonReal = obtenerGanador(finalMatch);
+                if (campeonReal) {
                     const cBox = document.getElementById('champ-box');
-                    cBox.innerText = `🏆 ¡CAMPEÓN MUNDIAL: ${champ}! 🏆`;
+                    cBox.innerText = `🏆 ¡CAMPEÓN MUNDIAL: ${campeonReal.toUpperCase()}! 🏆`;
                     cBox.classList.remove('hidden');
                 }
             }
@@ -475,7 +466,7 @@
             
             const sortedTeams = Object.values(statsMap).sort((a,b) => b.gf - a.gf);
             if(sortedTeams.length === 0) {
-                tBody.innerHTML = `<tr><td colspan="4" class="py-4 text-center text-slate-500">Torneo en preparación. Datos calculados al arrancar los encuentros.</td></tr>`;
+                tBody.innerHTML = `<tr><td colspan="4" class="py-4 text-center text-slate-500">No hay datos de rendimiento procesables.</td></tr>`;
                 return;
             }
 
@@ -496,10 +487,7 @@
             const SPREADSHEET_ID = "1QfV7qgAMgoC6IrRXgkHTh2QEY4BhkCVWg_quXZeNv-4"; 
             
             const urlPartidos = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:json&range=A2`;
-            const urlProximos = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:json&range=B2`;
             const urlGoleadores = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:json&range=C2`;
-            
-            let cachedMatches = null;
 
             try {
                 const resPartidos = await fetch(urlPartidos);
@@ -511,10 +499,7 @@
                         const celdaA2 = googleDataP.table.rows[0].c[0].v;
                         if (celdaA2 && !celdaA2.startsWith("Error")) {
                             const dataPartidos = JSON.parse(celdaA2);
-                            if (dataPartidos.matches) {
-                                cachedMatches = dataPartidos.matches;
-                                processFixtures(dataPartidos.matches);
-                            }
+                            if (dataPartidos.matches) processFixtures(dataPartidos.matches);
                         }
                     }
                 }
@@ -529,24 +514,6 @@
                         if (celdaC2 && !celdaC2.startsWith("Error")) {
                             const dataGoleadores = JSON.parse(celdaC2);
                             if (dataGoleadores.scorers) renderLiveScorers(dataGoleadores.scorers);
-                        } else {
-                            marcarGoleadoresVacios();
-                        }
-                    }
-                } else {
-                    marcarGoleadoresVacios();
-                }
-                
-                const resProximos = await fetch(urlProximos);
-                if (resProximos.ok) {
-                    const textB = await resProximos.text();
-                    const cleanStringB = textB.substring(textB.indexOf('{'), textB.lastIndexOf('}') + 1);
-                    const googleDataB = JSON.parse(cleanStringB);
-                    if (googleDataB.table && googleDataB.table.rows && googleDataB.table.rows.length > 0) {
-                        const celdaB2 = googleDataB.table.rows[0].c[0].v;
-                        if (celdaB2 && !celdaB2.startsWith("Error")) {
-                            const dataProximos = JSON.parse(celdaB2);
-                            if (dataProximos.matches) renderNextMatches(dataProximos.matches, cachedMatches); 
                         }
                     }
                 }
