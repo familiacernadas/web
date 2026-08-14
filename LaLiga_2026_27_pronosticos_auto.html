@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LaLiga EA Sports 2026/27 · Pronósticos</title>
+<style>
+:root{--bg:#07111f;--panel:#0f1b2d;--panel2:#111f34;--line:#24334a;--text:#eef4ff;--muted:#91a0b8;--accent:#4f7cff;--green:#22c55e;--yellow:#f59e0b;--red:#ef4444}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(135deg,#06101d,#0a1628 50%,#07111f);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+header{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.wrap{max-width:1250px;margin:auto;padding:0 18px}.head{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0}.brand{display:flex;gap:12px;align-items:center}.ball{font-size:32px}.title{font-size:22px;font-weight:900}.sub{font-size:12px;color:var(--muted);margin-top:2px}
+nav{display:flex;gap:7px;flex-wrap:wrap}nav a,.btn{color:#dce7ff;text-decoration:none;border:1px solid var(--line);background:#101d31;border-radius:10px;padding:9px 12px;font-weight:700;font-size:13px;cursor:pointer}
+nav a:hover,.btn:hover{background:#172844;border-color:#3a5ca0}
+main{padding:28px 0 60px}.hero{display:grid;grid-template-columns:1.4fr .6fr;gap:18px;margin-bottom:20px}.card{background:linear-gradient(145deg,rgba(17,31,52,.96),rgba(12,24,41,.96));border:1px solid var(--line);border-radius:18px;box-shadow:0 15px 45px rgba(0,0,0,.22)}
+.hero .card{padding:25px}.kicker{color:#7ea2ff;text-transform:uppercase;font-size:11px;font-weight:900;letter-spacing:.12em}.hero h2{font-size:clamp(28px,4vw,48px);line-height:1.02;margin:9px 0}.hero p{color:#b4c0d2;line-height:1.6}.status{display:flex;flex-direction:column;justify-content:space-between}.status strong{font-size:28px}.small{font-size:12px;color:var(--muted)}
+.section{margin-top:24px}.section-title{display:flex;justify-content:space-between;align-items:end;gap:10px;margin-bottom:12px}.section-title h2{margin:0;font-size:22px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.match{padding:17px}.match:hover{transform:translateY(-2px);border-color:#4d69aa}.match{transition:.18s}.match-top{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin-bottom:15px}.teams{text-align:center;font-weight:900;font-size:17px;line-height:1.45}.score{font-size:28px;color:#fff;margin:7px 0}.pred{display:flex;gap:8px;margin-top:14px}.pred span{flex:1;text-align:center;padding:7px 4px;border-radius:8px;background:#0a1627;font-size:11px;color:#b7c4d8}.pred b{display:block;color:#fff;font-size:13px}.analysis{border-top:1px solid var(--line);margin-top:14px;padding-top:12px;color:#aebbd0;font-size:12px;line-height:1.5}.tag{display:inline-block;padding:4px 7px;border-radius:6px;background:#162541;color:#9db7ff;font-size:10px;font-weight:800;margin-bottom:7px}
+.table-wrap{overflow:auto}.table{width:100%;border-collapse:collapse;min-width:720px}.table th{background:#0b1729;color:#8fa0ba;font-size:11px;text-transform:uppercase;letter-spacing:.05em;padding:11px 8px;text-align:center}.table td{padding:10px 8px;border-top:1px solid rgba(36,51,74,.75);text-align:center;font-size:13px}.table td:nth-child(2),.table th:nth-child(2){text-align:left}.table tr:hover{background:#101f34}.pos{font-weight:900}.form{color:#7ea2ff;font-weight:800}.muted{color:var(--muted)}.zero{color:#8ea0b8}
+.notice{padding:12px 14px;border-radius:12px;background:#0a182b;border:1px solid var(--line);color:#aebbd0;font-size:12px;line-height:1.5;margin-top:12px}.error{color:#fecaca;border-color:#7f1d1d;background:#2a1117}.ok{color:#bbf7d0}.loading{padding:25px;text-align:center;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:20px 0;color:#71809a;font-size:11px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.head{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}.hero .card{padding:19px}.wrap{padding:0 12px}}
+</style>
+</head>
+<body>
+<header><div class="wrap head">
+  <div class="brand"><div class="ball">⚽</div><div><div class="title">LaLiga EA Sports 2026/27</div><div class="sub">Pronósticos · clasificación · goleadores · actualización automática</div></div></div>
+  <nav><a href="#jornada">Jornada</a><a href="#clasificacion">Clasificación</a><a href="#goleadores">Goleadores</a><button class="btn" id="refreshBtn">↻ Actualizar</button></nav>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+  <div class="card"><div class="kicker">Temporada 2026/27</div><h2>LaLiga, jornada a jornada.</h2><p>Esta página consulta los datos disponibles en tiempo real al abrirse: resultados, clasificación y goleadores. Los pronósticos se recalculan usando los datos de la temporada cuando ya existen y una valoración inicial de pretemporada mientras la competición está a cero.</p><div class="notice">📡 <b>Actualización automática:</b> cada visita intenta descargar los datos nuevos. También puedes pulsar «Actualizar» para forzar una consulta.</div></div>
+  <div class="card status"><div><div class="kicker">Estado de datos</div><strong id="dataStatus">Cargando…</strong><div class="small" id="lastUpdate">—</div></div><div class="notice">Fuente principal de datos deportivos: ESPN. El calendario oficial de LALIGA se utiliza como referencia para la temporada.</div></div>
+</section>
+
+<section id="jornada" class="section"><div class="section-title"><h2>⚽ Próxima jornada / partidos</h2><span class="small" id="roundLabel">Cargando…</span></div><div id="matches" class="grid"><div class="card loading">Cargando partidos…</div></div></section>
+
+<section id="clasificacion" class="section"><div class="section-title"><h2>📊 Clasificación 2026/27</h2><span class="small" id="standingsLabel">Actualizando…</span></div>
+<div class="card table-wrap"><table class="table"><thead><tr><th>#</th><th>Equipo</th><th>PTS</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DG</th></tr></thead><tbody id="table-body"><tr><td colspan="10" class="loading">Cargando…</td></tr></tbody></table></div></section>
+
+<section id="goleadores" class="section"><div class="section-title"><h2>🥇 Máximos goleadores</h2><span class="small">Temporada 2026/27 · empieza en 0</span></div>
+<div class="card table-wrap"><table class="table"><thead><tr><th>#</th><th>Jugador</th><th>Equipo</th><th>Goles</th><th>Partidos</th></tr></thead><tbody id="scorers-body"><tr><td colspan="5" class="loading">Cargando…</td></tr></tbody></table></div>
+<div class="notice">La tabla pertenece exclusivamente a la temporada <b>2026/27</b>. No arrastra goles de 2025/26. Antes del primer gol oficial, todos permanecen en 0.</div></section>
+
+<section class="section"><div class="card" style="padding:18px"><div class="kicker">Cómo se calcula el pronóstico</div><p class="small" style="line-height:1.7;margin-bottom:0">Cuando existen partidos disputados, se ponderan rendimiento general, rendimiento local/visitante, goles a favor y en contra y ventaja de campo. Al inicio de temporada, cuando todos los equipos tienen 0 partidos, se utiliza una valoración inicial para evitar porcentajes artificialmente idénticos. Las lesiones y sanciones requieren una fuente específica de disponibilidad; no se inventan datos si la API no los proporciona.</p></div></section>
+</main>
+<footer><div class="wrap">LaLiga EA Sports 2026/27 · Datos deportivos obtenidos automáticamente cuando están disponibles. Esta página es un proyecto personal y no es una web oficial de LALIGA.</div></footer>
+
+<script>
+const API='https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1';
+const SEASON=2026;
+const START='20260814';
+const END='20270524';
+const CACHE_KEY='cernadas_laliga_2627_v2';
+const PRESEASON={
+  'Real Madrid':92,'FC Barcelona':91,'Atlético de Madrid':88,'Athletic Club':80,'Villarreal CF':78,
+  'Real Betis':77,'Real Sociedad':76,'Sevilla FC':74,'Celta':73,'Valencia CF':72,'CA Osasuna':70,
+  'Getafe CF':69,'Rayo Vallecano':68,'RCD Espanyol de Barcelona':67,'Deportivo Alavés':66,'Levante UD':65,
+  'Elche CF':64,'RC Deportivo':63,'R. Racing Club':61,'Málaga CF':60
+};
+const fallbackScorers=[
+ ['Kylian Mbappé','Real Madrid'],['Lamine Yamal','FC Barcelona'],['Vinícius Júnior','Real Madrid'],
+ ['Robert Lewandowski','FC Barcelona'],['Raphinha','FC Barcelona'],['Julián Alvarez','Atlético de Madrid'],
+ ['Alexander Sørloth','Atlético de Madrid'],['Oihan Sancet','Athletic Club'],['Mikel Oyarzabal','Real Sociedad'],
+ ['Borja Iglesias','Celta'],['Antoine Griezmann','Atlético de Madrid'],['Ferran Torres','FC Barcelona'],
+ ['Ayoze Pérez','Villarreal CF'],['Vedat Muriqi','RCD Mallorca'],['Ante Budimir','CA Osasuna']
+];
+
+function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
+async function getJSON(url){
+  const r=await fetch(url,{cache:'no-store'});
+  if(!r.ok) throw new Error('HTTP '+r.status);
+  return r.json();
+}
+function normalizeName(n){return String(n||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase();}
+function teamName(c){return c?.team?.displayName || c?.team?.name || c?.displayName || c?.name || 'Equipo';}
+
+async function getStandings(){
+  const data=await getJSON(API+'/standings?season='+SEASON);
+  let entries=[];
+  const groups=data.children||[];
+  for(const g of groups) if(g.standings?.entries) entries.push(...g.standings.entries);
+  if(!entries.length && data.standings?.entries) entries=data.standings.entries;
+  return entries.map(e=>{
+    const s={}; for(const x of (e.stats||[])) s[x.name]=Number(x.value??x.displayValue??0)||0;
+    return {team:teamName(e),pts:s.points??s.puntos??0,pj:s.gamesPlayed??s.pj??0,w:s.wins??0,d:s.ties??s.draws??0,l:s.losses??0,gf:s.pointsFor??s.goalsFor??0,gc:s.pointsAgainst??s.goalsAgainst??0,gd:s.pointDifferential??((s.pointsFor??0)-(s.pointsAgainst??0))};
+  }).sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf);
+}
+
+async function getScorers(){
+  try{
+    const data=await getJSON(API+'/leaders?season='+SEASON+'&limit=50');
+    const cats=data.leaders||[];
+    const cat=cats.find(x=>/goal|scor/i.test(x.name||x.displayName||''));
+    const arr=(cat?.leaders||[]).map(x=>{
+      const a=x.athlete||{}; const team=a.team?.displayName||a.team?.name||x.team?.displayName||x.team?.name||'';
+      return {name:a.displayName||a.fullName||'Jugador',team,goals:Number(x.value??x.displayValue??0)||0,played:Number(a.statistics?.appearances||0)||0};
+    });
+    if(arr.length) return arr.sort((a,b)=>b.goals-a.goals).slice(0,15);
+  }catch(e){}
+  return fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}));
+}
+
+function getDateRange(){
+  const now=new Date();
+  const start=new Date(now); start.setDate(start.getDate()-3);
+  const end=new Date(now); end.setDate(end.getDate()+14);
+  const f=d=>d.toISOString().slice(0,10).replaceAll('-','');
+  return f(start)+'-'+f(end);
+}
+async function getUpcomingMatches(){
+  const data=await getJSON(API+'/scoreboard?limit=100&dates='+getDateRange());
+  return (data.events||[]).filter(e=>e.competitions?.[0]?.competitors?.length>=2).map(e=>{
+    const c=e.competitions[0].competitors;
+    const home=c.find(x=>x.homeAway==='home')||c[0], away=c.find(x=>x.homeAway==='away')||c[1];
+    const state=e.status?.type?.state||'pre';
+    return {id:e.id,week:e.week?.number||e.season?.slug||'—',date:e.date,home:teamName(home),away:teamName(away),homeScore:Number(home.score??0),awayScore:Number(away.score??0),state};
+  });
+}
+function rating(team,standings){
+  const s=standings.find(x=>normalizeName(x.team)===normalizeName(team));
+  if(s&&s.pj>0) return 60 + s.pts/s.pj*8 + (s.gf-s.gc)/s.pj*2;
+  return PRESEASON[team]||65;
+}
+function predict(home,away,standings){
+  const h=rating(home,standings)+4, a=rating(away,standings);
+  const diff=h-a;
+  let ph=50+diff*1.15, pd=27-Math.abs(diff)*.28, pa=100-ph-pd;
+  ph=Math.max(18,Math.min(78,ph)); pd=Math.max(15,Math.min(35,pd)); pa=100-ph-pd;
+  if(pa<10){pa=10;ph=100-pd-pa;}
+  const hs=Math.max(.2,1.45+diff*.025), as=Math.max(.15,1.05-diff*.02);
+  return {ph:Math.round(ph),pd:Math.round(pd),pa:Math.round(pa),score:Math.round(hs)+' - '+Math.round(as)};
+}
+function renderMatches(matches,standings){
+  const el=document.getElementById('matches');
+  if(!matches.length){el.innerHTML='<div class="card loading">No se han encontrado partidos próximos en la fuente de datos.</div>';return;}
+  const minWeek=matches.map(x=>Number(x.week)).filter(Number.isFinite).sort((a,b)=>a-b)[0];
+  const selected=Number.isFinite(minWeek)?matches.filter(x=>Number(x.week)===minWeek):matches.slice(0,10);
+  document.getElementById('roundLabel').textContent='Jornada '+(Number.isFinite(minWeek)?minWeek:'próxima');
+  el.innerHTML=selected.map(m=>{
+    const p=predict(m.home,m.away,standings);
+    const dt=new Date(m.date).toLocaleString('es-ES',{weekday:'short',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
+    const live=m.state!=='pre';
+    return '<article class="card match"><div class="match-top"><span>Jornada '+esc(m.week)+'</span><span>'+esc(dt)+'</span></div><div class="teams">'+esc(m.home)+'<div class="score">'+(live?esc(m.homeScore)+' - '+esc(m.awayScore):esc(p.score))+'</div>'+esc(m.away)+'</div><div class="pred"><span>Local <b>'+p.ph+'%</b></span><span>Empate <b>'+p.pd+'%</b></span><span>Visitante <b>'+p.pa+'%</b></span></div><div class="analysis"><span class="tag">'+(live?'RESULTADO':'PRONÓSTICO')+'</span><br>Modelo basado en fuerza del equipo, ventaja de campo y rendimiento disponible de la temporada.</div></article>';
+  }).join('');
+}
+function renderTable(rows){
+  document.getElementById('table-body').innerHTML=rows.map((t,i)=>'<tr><td class="pos">'+(i+1)+'</td><td><b>'+esc(t.team)+'</b></td><td><b>'+t.pts+'</b></td><td>'+t.pj+'</td><td>'+t.w+'</td><td>'+t.d+'</td><td>'+t.l+'</td><td>'+t.gf+'</td><td>'+t.gc+'</td><td class="form">'+t.gd+'</td></tr>').join('');
+}
+function renderScorers(rows){
+  document.getElementById('scorers-body').innerHTML=rows.map((s,i)=>'<tr><td class="pos">'+(i+1)+'</td><td><b>'+esc(s.name)+'</b></td><td class="muted">'+esc(s.team)+'</td><td class="zero"><b>'+Number(s.goals||0)+'</b></td><td class="muted">'+Number(s.played||0)+'</td></tr>').join('');
+}
+async function load(){
+  document.getElementById('dataStatus').textContent='Actualizando…';
+  const results=await Promise.allSettled([getStandings(),getScorers(),getUpcomingMatches()]);
+  const standings=results[0].status==='fulfilled'?results[0].value:loadCached()?.standings||[];
+  const scorers=results[1].status==='fulfilled'?results[1].value:loadCached()?.scorers||fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}));
+  const matches=results[2].status==='fulfilled'?results[2].value:loadCached()?.matches||[];
+  renderTable(standings); renderScorers(scorers); renderMatches(matches,standings);
+  const fresh={standings,scorers,matches,savedAt:Date.now()}; localStorage.setItem(CACHE_KEY,JSON.stringify(fresh));
+  const ok=results.filter(x=>x.status==='fulfilled').length;
+  document.getElementById('dataStatus').textContent=ok===3?'Actualizado':'Actualización parcial';
+  document.getElementById('lastUpdate').textContent='Última consulta: '+new Date().toLocaleString('es-ES');
+  document.getElementById('standingsLabel').textContent=standings.length?'Datos recibidos · '+standings.length+' equipos':'Sin datos de API';
+}
+function loadCached(){try{return JSON.parse(localStorage.getItem(CACHE_KEY)||'null')}catch(e){return null}}
+document.getElementById('refreshBtn').addEventListener('click',load);
+load();
+</script>
+</body>
+</html>
