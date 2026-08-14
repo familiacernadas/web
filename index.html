@@ -6,7 +6,43 @@
   <title>Familia Cernadas — Inicio</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    .laliga-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 18px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #7c3aed, #2563eb);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      box-shadow: 0 5px 14px rgba(37, 99, 235, .25);
+      transition: transform .2s ease, box-shadow .2s ease;
+      white-space: nowrap;
+    }
+    .laliga-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(37, 99, 235, .35);
+    }
+    .topbar .laliga-access {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+    @media (max-width: 920px) {
+      .topbar {
+        flex-wrap: wrap;
+      }
+      .topbar .laliga-access {
+        order: 3;
+        flex-basis: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header class="topbar">
     <div class="brand">
@@ -17,13 +53,19 @@
       </div>
     </div>
 
-<!-- NUEVO BOTÓN -->
-    <div class="worldcup-btn">
-      <a href="Mundial.html" target="_blank" class="btn-mundial">
-        Pronóstico Mundial 2026
+    <!-- ACCESO A PRONÓSTICOS DE LALIGA -->
+    <div class="laliga-access">
+      <a
+        href="LaLiga_2026_27_pronosticos_auto.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="laliga-btn"
+        aria-label="Abrir Pronósticos LaLiga 2026-2027"
+      >
+        ⚽ Pronósticos LaLiga 2026-27
       </a>
     </div>
-    
+
     <nav class="nav">
       <a href="portada.html">Inicio</a>
       <a href="tree.html">Árbol</a>
@@ -39,8 +81,8 @@
         <div id="history" class="history">
           <p>
             El apellido <strong>Cernadas</strong> es de origen gallego y toponímico,
-            derivado de lugares llamados <strong>Cernadas</strong>, muy comunes en Galicia, y 
-            probablemente relacionado con el latín cernere (cribar) o serna 
+            derivado de lugares llamados <strong>Cernadas</strong>, muy comunes en Galicia, y
+            probablemente relacionado con el latín cernere (cribar) o serna
             (campo de trigo), indicando un origen ligado a la tierra o al cultivo,
             siendo un apellido que se localiza principalmente en Lugo y A Coruña,
             y que ha tenido ramas importantes en la nobleza y la judicatura gallega.
@@ -53,33 +95,33 @@
             <li>
               <p>
                 <strong>Toponímico:</strong> Su origen más probable es toponímico, es decir,
-              proviene de un lugar geográfico. Hay muchos lugares en Galicia
-              llamados <strong>Cernadas</strong>.
+                proviene de un lugar geográfico. Hay muchos lugares en Galicia
+                llamados <strong>Cernadas</strong>.
+              </p>
               <p>
+                <strong>Significado:</strong> Puede estar relacionado con el término celta o
+                latino para una parcela de tierra preparada para sembrar
+                o un campo de trigo, sugiriendo un origen rural.
+              </p>
               <p>
-            <strong>Significado:</strong> Puede estar relacionado con el término celta o 
-              latino para una parcela de tierra preparada para sembrar
-              o un campo de trigo, sugiriendo un origen rural.
+                <strong>Localización:</strong> Predomina en las provincias de Lugo y A Coruña,
+                consolidando su fuerte raíz gallega.
+              </p>
               <p>
+                <strong>Ejemplos históricos:</strong> Se han documentado familias
+                <strong>Cernadas</strong> con cargos importantes
+                en la Audiencia de Galicia, como Domingo de <strong>Cernadas</strong> y Arraña,
+                y sus descendientes en los siglos XVII y XVIII, demostrando una estirpe hidalga.
+              </p>
               <p>
-                <strong>Localización:</strong> Predomina en las provincias de Lugo y A Coruña, consolidando
-              su fuerte raíz gallega.
-              <p>
-              <p>  
-              <strong>Ejemplos históricos:</strong>
-              Se han documentado familias <strong>Cernadas</strong> con cargos importantes
-              en la Audiencia de Galicia, como Domingo de <strong>Cernadas</strong> y Arraña,
-              y sus descendientes en los siglos XVII y XVIII, demostrando una estirpe hidalga. 
-              <p>
-              <p>  
-              En resumen, <strong>Cernadas</strong> es un apellido profundamente arraigado en Galicia,
-              con un origen ligado a la toponimia local y a la tierra, y con una historia
-              documentada en la región.
-              <p>  
+                En resumen, <strong>Cernadas</strong> es un apellido profundamente arraigado en Galicia,
+                con un origen ligado a la toponimia local y a la tierra, y con una historia
+                documentada en la región.
+              </p>
             </li>
           </ul>
         </div>
-      </div>      
+      </div>
 
       <div class="hero-right">
         <div class="collage" id="collage"></div>
@@ -92,23 +134,20 @@
     </section>
 
     <section class="cta">
-  <a class="btn" href="tree.html">Ver el árbol completo</a>
-  <a class="btn ghost" href="admin.html">Administrar miembros</a>
-  <a class="btn" href="https://tetris-cernadas.web.app" target="_blank">
-    🎮 Jugar al Tetris Cernadas
-  </a>
-</section>
+      <a class="btn" href="tree.html">Ver el árbol completo</a>
+      <a class="btn ghost" href="admin.html">Administrar miembros</a>
+      <a class="btn" href="https://tetris-cernadas.web.app" target="_blank" rel="noopener noreferrer">
+        🎮 Jugar al Tetris Cernadas
+      </a>
+    </section>
 
-
-    
-    <!--iframe frameBorder="0" scrolling="no" src="https://es.wikiloc.com/wikiloc/embedv2.do?id=243428749&elevation=on&images=on&maptype=H" width="1200" height="1000"></iframe><div style="color:#777;font-size:11px;line-height:16px;">Powered by&nbsp;<a style="color:#4C8C2B;font-size:11px;line-height:16px;" target="_blank" href="https://es.wikiloc.com">Wikiloc</a></div -->
+  </main>
 
   <footer class="footer">
     <small>© Familia Cernadas — Sitio para uso familiar.</small>
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
   <script type="module" src="js/portada.js"></script>
 </body>
 </html>
