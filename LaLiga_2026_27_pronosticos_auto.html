@@ -116,17 +116,95 @@ async function getStandings(){
 }
 
 async function getScorers(){
-  try{
-    const data=await getJSON(API+'/leaders?season='+SEASON+'&limit=50');
-    const cats=data.leaders||[];
-    const cat=cats.find(x=>/goal|scor/i.test(x.name||x.displayName||''));
-    const arr=(cat?.leaders||[]).map(x=>{
-      const a=x.athlete||{}; const team=a.team?.displayName||a.team?.name||x.team?.displayName||x.team?.name||'';
-      return {name:a.displayName||a.fullName||'Jugador',team,goals:Number(x.value??x.displayValue??0)||0,played:Number(a.statistics?.appearances||0)||0};
-    });
-    if(arr.length) return arr.sort((a,b)=>b.goals-a.goals).slice(0,15);
-  }catch(e){}
-  return fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}));
+  /*
+   * Goleadores: la API site/v2 no ofrece de forma fiable el ranking de
+   * goleadores de fútbol. ESPN publica los líderes en Core API v2/v3.
+   * Probamos primero la clasificación específica de la temporada 2026.
+   */
+  const endpoints = [
+    'https://sports.core.api.espn.com/v2/sports/soccer/leagues/esp.1/seasons/'+SEASON+'/leaders',
+    'https://sports.core.api.espn.com/v2/sports/soccer/leagues/esp.1/leaders',
+    'https://sports.core.api.espn.com/v3/sports/soccer/esp.1/seasons/'+SEASON+'/leaders'
+  ];
+
+  let lastError=null;
+
+  for(const url of endpoints){
+    try{
+      const data=await getJSON(url);
+
+      // ESPN ha utilizado tanto "leaders" como "categories" según versión.
+      let categories=[];
+      if(Array.isArray(data?.leaders)) categories=data.leaders;
+      if(Array.isArray(data?.categories)) categories=data.categories;
+      if(Array.isArray(data?.stats)) categories=data.stats;
+
+      // Si la respuesta es un único bloque de líderes.
+      if(!categories.length && Array.isArray(data?.leaders?.leaders)) {
+        categories=[data.leaders];
+      }
+
+      const goalCategory=categories.find(c=>{
+        const key=String(c?.name||c?.displayName||c?.shortName||c?.abbreviation||'').toLowerCase();
+        return key.includes('goal') || key.includes('goles') || key==='gls' || key==='goals';
+      }) || categories.find(c=>Array.isArray(c?.leaders));
+
+      const leaders=goalCategory?.leaders || [];
+      const arr=[];
+
+      for(const item of leaders){
+        const athlete=item?.athlete || item?.player || {};
+        const teamObj=athlete?.team || item?.team || {};
+        const name=athlete?.displayName || athlete?.fullName || athlete?.name || item?.name;
+        if(!name) continue;
+
+        const goals=Number(
+          item?.value ??
+          item?.stats?.goals ??
+          item?.statistics?.goals ??
+          item?.displayValue ?? 0
+        );
+
+        if(!Number.isFinite(goals)) continue;
+
+        const played=Number(
+          athlete?.statistics?.appearances ??
+          athlete?.statistics?.gamesPlayed ??
+          item?.statistics?.appearances ??
+          item?.stats?.appearances ?? 0
+        );
+
+        arr.push({
+          name,
+          team:teamObj?.displayName || teamObj?.name || item?.teamName || '',
+          goals,
+          played:Number.isFinite(played)?played:0
+        });
+      }
+
+      if(arr.length){
+        return arr
+          .sort((a,b)=>b.goals-a.goals || a.name.localeCompare(b.name,'es'))
+          .slice(0,15);
+      }
+    }catch(e){
+      lastError=e;
+      console.warn('Error obteniendo goleadores desde',url,e);
+    }
+  }
+
+  /*
+   * No mostramos goleadores históricos ni inventados para 2026/27.
+   * Al principio de temporada la tabla debe arrancar en 0 y, si la API
+   * todavía no publica líderes, conservamos los 15 jugadores previstos.
+   */
+  console.warn('No se pudieron obtener los goleadores 2026/27',lastError);
+  return fallbackScorers.map(x=>({
+    name:x[0],
+    team:x[1],
+    goals:0,
+    played:0
+  }));
 }
 
 function getDateRange(){
