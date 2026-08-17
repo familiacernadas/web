@@ -126,21 +126,15 @@ async function getStandings(){
 
 async function getScorers(){
   /*
-   * ESPN tiene varias versiones del recurso de líderes y, en LaLiga,
-   * algunos endpoints de Core devuelven 404/400 según la temporada.
-   * No debemos llenar la consola de errores ni mezclar datos históricos.
-   *
-   * Orden de consulta:
-   * 1) Site API /statistics (más estable para líderes de fútbol).
-   * 2) Core API de la temporada + tipo de competición.
-   * 3) Si todavía no hay líderes 2026/27, tabla inicial a 0.
+   * Goleadores 2026/27.
+   * No usamos los endpoints Core /leaders porque para LaLiga 2026/27
+   * están devolviendo 400/404. La página intenta únicamente el recurso
+   * público de estadísticas de ESPN y, si todavía no hay datos de esta
+   * temporada, muestra la tabla inicial a 0 sin generar errores de consola.
    */
   const endpoints = [
-    API + '/statistics?season=' + SEASON + '&seasontype=1',
     API + '/statistics?season=' + SEASON + '&seasontype=2',
-    'https://sports.core.api.espn.com/v2/sports/soccer/leagues/esp.1/seasons/' + SEASON + '/types/1/leaders',
-    'https://sports.core.api.espn.com/v2/sports/soccer/leagues/esp.1/seasons/' + SEASON + '/types/2/leaders',
-    'https://sports.core.api.espn.com/v2/sports/soccer/leagues/esp.1/leaders'
+    API + '/statistics?season=' + SEASON
   ];
 
   for(const url of endpoints){
@@ -149,14 +143,12 @@ async function getScorers(){
       const rows=extractGoalLeaders(data);
       if(rows.length) return rows.slice(0,15);
     }catch(e){
-      // 404/400 es una respuesta posible de ESPN para este recurso.
-      // Se ignora silenciosamente y se prueba el siguiente endpoint.
+      // ESPN puede no publicar todavía estadísticas de la temporada.
+      // Se ignora silenciosamente para mantener limpia la consola.
     }
   }
 
-  // Al principio de 2026/27 no mostramos datos de la temporada anterior.
-  // Estos jugadores son únicamente una lista inicial de referencia y todos
-  // empiezan con 0 goles hasta que ESPN publique estadísticas de esta liga.
+  // Inicio de temporada: nunca arrastramos goles de 2025/26.
   return fallbackScorers.map(x=>({
     name:x[0], team:x[1], goals:0, played:0
   }));
@@ -377,7 +369,7 @@ function updateStats(matches){
   document.getElementById('statTotal').textContent=total; document.getElementById('statHits').textContent=hits; document.getElementById('statMisses').textContent=Math.max(0,total-hits); document.getElementById('statPct').textContent=total?Math.round(hits/total*100)+'%':'0%';
 }
 async function getEuropeanMatches(){
- const leagues=[['Champions League','uefa.champions'],['Europa League','uefa.europa'],['Conference League','uefa.europa-conference']];
+ const leagues=[['Champions League','uefa.champions'],['Europa League','uefa.europa'],['Conference League','uefa.europa.conf']];
  const all=[];
  for(const [name,code] of leagues){
    try{
@@ -428,9 +420,10 @@ async function load(){
   renderTable(standings); renderScorers(scorers); renderMatches(matches,standings); renderEuropeanMatches(euroMatches);
   const fresh={standings,scorers,matches,savedAt:Date.now()}; localStorage.setItem(CACHE_KEY,JSON.stringify(fresh));
   const ok=results.filter(x=>x.status==='fulfilled').length;
-  document.getElementById('dataStatus').textContent=ok===3?'Actualizado':'Actualización parcial';
+  document.getElementById('dataStatus').textContent=ok===4?'Actualizado':(ok>0?'Actualización parcial':'Sin datos de API');
   document.getElementById('lastUpdate').textContent='Última consulta: '+new Date().toLocaleString('es-ES');
   document.getElementById('standingsLabel').textContent=standings.length?'Datos recibidos · '+standings.length+' equipos':'Sin datos de API';
+  document.querySelector('#goleadores .small').textContent=scorers.some(s=>Number(s.goals)>0)?'Temporada 2026/27 · datos ESPN':'Temporada 2026/27 · empieza en 0 / estadísticas aún no publicadas';
 }
 function loadCached(){try{return JSON.parse(localStorage.getItem(CACHE_KEY)||'null')}catch(e){return null}}
 document.getElementById('refreshBtn').addEventListener('click',load);
