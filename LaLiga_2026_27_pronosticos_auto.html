@@ -75,15 +75,44 @@ function normalizeName(n){return String(n||'').normalize('NFD').replace(/[\\u030
 function teamName(c){return c?.team?.displayName || c?.team?.name || c?.displayName || c?.name || 'Equipo';}
 
 async function getStandings(){
-  const data=await getJSON(API+'/standings?season='+SEASON);
+  const urls = [
+    API.replace('/apis/site/v2','/apis/v2') + '/standings?season='+SEASON+'&seasontype=2',
+    API.replace('/apis/site/v2','/apis/v2') + '/standings?season='+SEASON,
+    API + '/standings?season='+SEASON+'&seasontype=2'
+  ];
+  let data=null, lastError=null;
+  for(const url of urls){
+    try{
+      data=await getJSON(url);
+      if(data && (Array.isArray(data.children)||Array.isArray(data.standings?.entries)||Array.isArray(data.entries)||Array.isArray(data.items))) break;
+    }catch(e){ lastError=e; }
+  }
+  if(!data) throw lastError || new Error('No se pudo obtener la clasificación');
   let entries=[];
-  const groups=data.children||[];
-  for(const g of groups) if(g.standings?.entries) entries.push(...g.standings.entries);
+  for(const g of (data.children||[])){
+    if(g.standings?.entries) entries.push(...g.standings.entries);
+    if(g.entries) entries.push(...g.entries);
+  }
   if(!entries.length && data.standings?.entries) entries=data.standings.entries;
+  if(!entries.length && Array.isArray(data.entries)) entries=data.entries;
+  if(!entries.length && Array.isArray(data.items)) entries=data.items;
+  if(!entries.length) throw new Error('La API respondió sin equipos');
   return entries.map(e=>{
-    const s={}; for(const x of (e.stats||[])) s[x.name]=Number(x.value??x.displayValue??0)||0;
-    return {team:teamName(e),pts:s.points??s.puntos??0,pj:s.gamesPlayed??s.pj??0,w:s.wins??0,d:s.ties??s.draws??0,l:s.losses??0,gf:s.pointsFor??s.goalsFor??0,gc:s.pointsAgainst??s.goalsAgainst??0,gd:s.pointDifferential??((s.pointsFor??0)-(s.pointsAgainst??0))};
-  }).sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf);
+    const s={};
+    for(const x of (e.stats||[])){
+      const key=x.name || x.abbreviation || x.displayName;
+      const value=Number(x.value ?? x.displayValue ?? 0);
+      if(key) s[key]=Number.isFinite(value)?value:0;
+    }
+    const getStat=(...names)=>{ for(const n of names) if(s[n]!==undefined) return s[n]; return 0; };
+    const gf=getStat('pointsFor','goalsFor','goalsForTotal','gf');
+    const gc=getStat('pointsAgainst','goalsAgainst','goalsAgainstTotal','gc');
+    return {
+      team:teamName(e), pts:getStat('points','puntos','pts'), pj:getStat('gamesPlayed','games','pj','played'),
+      w:getStat('wins','won','w'), d:getStat('ties','draws','drawn','d'), l:getStat('losses','lost','l'),
+      gf, gc, gd:getStat('pointDifferential','goalDifference','goalDiff','gd') || (gf-gc)
+    };
+  }).sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf||a.team.localeCompare(b.team,'es'));
 }
 
 async function getScorers(){
