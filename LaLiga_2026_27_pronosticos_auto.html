@@ -17,13 +17,15 @@ main{padding:28px 0 60px}.hero{display:grid;grid-template-columns:1.4fr .6fr;gap
 .table-wrap{overflow:auto}.table{width:100%;border-collapse:collapse;min-width:720px}.table th{background:#0b1729;color:#8fa0ba;font-size:11px;text-transform:uppercase;letter-spacing:.05em;padding:11px 8px;text-align:center}.table td{padding:10px 8px;border-top:1px solid rgba(36,51,74,.75);text-align:center;font-size:13px}.table td:nth-child(2),.table th:nth-child(2){text-align:left}.table tr:hover{background:#101f34}.pos{font-weight:900}.form{color:#7ea2ff;font-weight:800}.muted{color:var(--muted)}.zero{color:#8ea0b8}
 .notice{padding:12px 14px;border-radius:12px;background:#0a182b;border:1px solid var(--line);color:#aebbd0;font-size:12px;line-height:1.5;margin-top:12px}.error{color:#fecaca;border-color:#7f1d1d;background:#2a1117}.ok{color:#bbf7d0}.loading{padding:25px;text-align:center;color:var(--muted)}
 footer{border-top:1px solid var(--line);padding:20px 0;color:#71809a;font-size:11px}
+
+.section-tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.collapse-btn{border:1px solid var(--line);background:#101d31;color:#dce7ff;border-radius:9px;padding:7px 10px;font-weight:800;cursor:pointer}.collapse-btn:hover{background:#172844}.collapsible{overflow:hidden;transition:max-height .25s ease,opacity .2s ease}.collapsible.is-collapsed{max-height:0!important;opacity:0}.table-card{position:relative}.compact-note{margin:0 0 10px;color:var(--muted);font-size:12px}.match-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px}.badge{display:inline-flex;align-items:center;gap:4px;padding:5px 8px;border-radius:999px;font-size:10px;font-weight:900}.badge.ok{background:rgba(34,197,94,.12);color:#86efac;border:1px solid rgba(34,197,94,.25)}.badge.bad{background:rgba(239,68,68,.12);color:#fca5a5;border:1px solid rgba(239,68,68,.25)}.badge.pending{background:rgba(245,158,11,.12);color:#fcd34d;border:1px solid rgba(245,158,11,.25)}.tv{color:#c7d4ea;font-size:11px;margin-top:10px}.resultline{margin-top:8px;font-weight:800}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{padding:16px}.stat strong{display:block;font-size:28px;margin-top:5px}.matchday-selector{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:6px;background:#0a1627;border:1px solid var(--line);border-radius:12px}.matchday-btn{border:1px solid transparent;background:transparent;color:#9fb0c8;border-radius:8px;padding:8px 11px;font-weight:800;font-size:12px;cursor:pointer;transition:.18s}.matchday-btn:hover:not(:disabled){background:#162541;color:#fff}.matchday-btn.active{background:var(--accent);color:#fff;box-shadow:0 5px 14px rgba(79,124,255,.25)}.matchday-btn:disabled{opacity:.35;cursor:not-allowed}.matchday-info{margin-top:8px;display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.matchday-note{color:var(--muted);font-size:11px}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.news-card{padding:17px}.news-card a{color:#eaf1ff;text-decoration:none;font-weight:850;line-height:1.35}.news-card a:hover{color:#8eacff}.news-meta{color:var(--muted);font-size:10px;margin-bottom:8px}.euro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.euro-card{padding:15px}.euro-card h3{margin:0 0 7px;font-size:15px}.team-pill{display:inline-block;margin:4px 4px 0 0;padding:5px 8px;border-radius:999px;background:#0a1627;border:1px solid var(--line);font-size:11px}.legend{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.legend span{font-size:11px;color:var(--muted)}
 @media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.head{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}.hero .card{padding:19px}.wrap{padding:0 12px}}
 </style>
 </head>
 <body>
 <header><div class="wrap head">
   <div class="brand"><div class="ball">⚽</div><div><div class="title">LaLiga EA Sports 2026/27</div><div class="sub">Pronósticos · clasificación · goleadores · actualización automática</div></div></div>
-  <nav><a href="#jornada">Jornada</a><a href="#clasificacion">Clasificación</a><a href="#goleadores">Goleadores</a><button class="btn" id="refreshBtn">↻ Actualizar</button></nav>
+  <nav><a href="#jornada">Jornada</a><a href="#clasificacion">Clasificación</a><a href="#goleadores">Goleadores</a><a href="#estadisticas">Aciertos</a><a href="#europa">Europa</a><a href="#noticias">Noticias</a><button class="btn" id="refreshBtn">↻ Actualizar</button></nav>
 </div></header>
 
 <main class="wrap">
@@ -32,14 +34,20 @@ footer{border-top:1px solid var(--line);padding:20px 0;color:#71809a;font-size:1
   <div class="card status"><div><div class="kicker">Estado de datos</div><strong id="dataStatus">Cargando…</strong><div class="small" id="lastUpdate">—</div></div><div class="notice">Fuente principal de datos deportivos: ESPN. El calendario oficial de LALIGA se utiliza como referencia para la temporada.</div></div>
 </section>
 
-<section id="jornada" class="section"><div class="section-title"><h2>⚽ Próxima jornada / partidos</h2><span class="small" id="roundLabel">Cargando…</span></div><div id="matches" class="grid"><div class="card loading">Cargando partidos…</div></div></section>
+<section id="jornada" class="section"><div class="section-title"><h2>⚽ Partidos y pronósticos</h2><span class="small" id="roundLabel">Cargando…</span></div><div class="matchday-selector" aria-label="Selector de jornada"><button class="matchday-btn" id="prevRoundBtn" data-round-action="prev">‹ Jornada anterior</button><button class="matchday-btn active" id="currentRoundBtn" data-round-action="current">Jornada actual</button><button class="matchday-btn" id="nextRoundBtn" data-round-action="next">Próxima jornada ›</button></div><div class="matchday-info"><span class="matchday-note" id="roundInfo">Selecciona la jornada que quieras consultar.</span><span class="small" id="roundCount"></span></div><div id="matches" class="grid" style="margin-top:12px"><div class="card loading">Cargando partidos…</div></div></section>
 
 <section id="clasificacion" class="section"><div class="section-title"><h2>📊 Clasificación 2026/27</h2><span class="small" id="standingsLabel">Actualizando…</span></div>
-<div class="card table-wrap"><table class="table"><thead><tr><th>#</th><th>Equipo</th><th>PTS</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DG</th></tr></thead><tbody id="table-body"><tr><td colspan="10" class="loading">Cargando…</td></tr></tbody></table></div></section>
+<div class="card table-wrap"><table class="table"><thead><tr><th>#</th><th>Equipo</th><th>PTS</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DG</th></tr></thead><tbody id="table-body"><tr><td colspan="10" class="loading">Cargando…</td></tr></tbody></table></div></div></section>
 
 <section id="goleadores" class="section"><div class="section-title"><h2>🥇 Máximos goleadores</h2><span class="small">Temporada 2026/27 · empieza en 0</span></div>
 <div class="card table-wrap"><table class="table"><thead><tr><th>#</th><th>Jugador</th><th>Equipo</th><th>Goles</th><th>Partidos</th></tr></thead><tbody id="scorers-body"><tr><td colspan="5" class="loading">Cargando…</td></tr></tbody></table></div>
 <div class="notice">La tabla pertenece exclusivamente a la temporada <b>2026/27</b>. No arrastra goles de 2025/26. Antes del primer gol oficial, todos permanecen en 0.</div></section>
+
+<section id="estadisticas" class="section"><div class="section-title"><h2>🎯 Mi balance de pronósticos</h2><span class="small">Solo partidos con pronóstico guardado antes del inicio</span></div><div class="stats-grid"><div class="card stat"><span class="small">Pronósticos resueltos</span><strong id="statTotal">0</strong></div><div class="card stat"><span class="small">Aciertos 1X2</span><strong id="statHits">0</strong></div><div class="card stat"><span class="small">Fallos</span><strong id="statMisses">0</strong></div><div class="card stat"><span class="small">% de acierto</span><strong id="statPct">0%</strong></div></div></section>
+
+<section id="europa" class="section"><div class="section-title"><h2>🌍 LaLiga en Europa</h2><span class="small">Temporada 2026/27</span></div><div class="euro-grid"><div class="card euro-card"><h3>🏆 Champions League</h3><span class="team-pill">FC Barcelona</span><span class="team-pill">Real Madrid</span><span class="team-pill">Atlético de Madrid</span><span class="team-pill">Villarreal</span></div><div class="card euro-card"><h3>🏆 Europa League</h3><span class="team-pill">Real Betis</span><span class="team-pill">Celta</span><span class="team-pill">Real Sociedad</span></div><div class="card euro-card"><h3>🏆 Conference League</h3><span class="team-pill">Getafe CF</span><p class="small">El Getafe afronta además la fase previa.</p></div></div><div class="notice">España cuenta con ocho clubes en competiciones UEFA esta temporada. A continuación se intentan cargar también sus próximos partidos europeos desde ESPN. Si una competición no publica todavía el calendario en esa API, se mostrará un aviso en lugar de inventar encuentros.</div><div id="euroMatches" class="grid" style="margin-top:14px"><div class="card loading">Cargando calendario europeo…</div></div></section>
+
+<section id="noticias" class="section"><div class="section-title"><h2>📰 Noticias y rendimiento</h2><span class="small">Actualidad relacionada con LaLiga</span></div><div class="news-grid" id="newsGrid"></div><div class="notice">Las noticias son enlaces externos. Para una actualización continua, abre también la búsqueda de <a href="https://news.google.com/search?q=LaLiga%202026%202027&hl=es&gl=ES&ceid=ES:es" target="_blank" rel="noopener" style="color:#9db7ff">Google News · LaLiga 2026/27</a>.</div></section>
 
 <section class="section"><div class="card" style="padding:18px"><div class="kicker">Cómo se calcula el pronóstico</div><p class="small" style="line-height:1.7;margin-bottom:0">Cuando existen partidos disputados, se ponderan rendimiento general, rendimiento local/visitante, goles a favor y en contra y ventaja de campo. Al inicio de temporada, cuando todos los equipos tienen 0 partidos, se utiliza una valoración inicial para evitar porcentajes artificialmente idénticos. Las lesiones y sanciones requieren una fuente específica de disponibilidad; no se inventan datos si la API no los proporciona.</p></div></section>
 </main>
@@ -50,7 +58,8 @@ const API='https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1';
 const SEASON=2026;
 const START='20260814';
 const END='20270524';
-const CACHE_KEY='cernadas_laliga_2627_v2';
+const CACHE_KEY='cernadas_laliga_2627_v3';
+const PRED_CACHE_KEY='cernadas_laliga_2627_predictions_v1';
 const PRESEASON={
   'Real Madrid':92,'FC Barcelona':91,'Atlético de Madrid':88,'Athletic Club':80,'Villarreal CF':78,
   'Real Betis':77,'Real Sociedad':76,'Sevilla FC':74,'Celta':73,'Valencia CF':72,'CA Osasuna':70,
@@ -62,7 +71,7 @@ const fallbackScorers=[
  ['Robert Lewandowski','FC Barcelona'],['Raphinha','FC Barcelona'],['Julián Alvarez','Atlético de Madrid'],
  ['Alexander Sørloth','Atlético de Madrid'],['Oihan Sancet','Athletic Club'],['Mikel Oyarzabal','Real Sociedad'],
  ['Borja Iglesias','Celta'],['Antoine Griezmann','Atlético de Madrid'],['Ferran Torres','FC Barcelona'],
- ['Ayoze Pérez','Villarreal CF'],['Vedat Muriqi','RCD Mallorca'],['Ante Budimir','CA Osasuna']
+ ['Ayoze Pérez','Villarreal CF'],['Roberto Fernández','RCD Espanyol de Barcelona'],['Ante Budimir','CA Osasuna']
 ];
 
 function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
@@ -207,15 +216,17 @@ async function getScorers(){
   }));
 }
 
-function getDateRange(){
+function getDateRange(daysBefore=14,daysAfter=28){
   const now=new Date();
-  const start=new Date(now); start.setDate(start.getDate()-3);
-  const end=new Date(now); end.setDate(end.getDate()+14);
+  const start=new Date(now); start.setDate(start.getDate()-daysBefore);
+  const end=new Date(now); end.setDate(end.getDate()+daysAfter);
   const f=d=>d.toISOString().slice(0,10).replaceAll('-','');
   return f(start)+'-'+f(end);
 }
 async function getUpcomingMatches(){
-  const data=await getJSON(API+'/scoreboard?limit=100&dates='+getDateRange());
+  // Ampliamos la ventana para disponer simultáneamente de jornada anterior,
+  // actual y próxima, incluso cuando hay partidos aplazados.
+  const data=await getJSON(API+'/scoreboard?limit=100&dates='+getDateRange(14,28));
   return (data.events||[]).filter(e=>e.competitions?.[0]?.competitors?.length>=2).map(e=>{
     const c=e.competitions[0].competitors;
     const home=c.find(x=>x.homeAway==='home')||c[0], away=c.find(x=>x.homeAway==='away')||c[1];
@@ -237,19 +248,148 @@ function predict(home,away,standings){
   const hs=Math.max(.2,1.45+diff*.025), as=Math.max(.15,1.05-diff*.02);
   return {ph:Math.round(ph),pd:Math.round(pd),pa:Math.round(pa),score:Math.round(hs)+' - '+Math.round(as)};
 }
-function renderMatches(matches,standings){
-  const el=document.getElementById('matches');
-  if(!matches.length){el.innerHTML='<div class="card loading">No se han encontrado partidos próximos en la fuente de datos.</div>';return;}
-  const minWeek=matches.map(x=>Number(x.week)).filter(Number.isFinite).sort((a,b)=>a-b)[0];
-  const selected=Number.isFinite(minWeek)?matches.filter(x=>Number(x.week)===minWeek):matches.slice(0,10);
-  document.getElementById('roundLabel').textContent='Jornada '+(Number.isFinite(minWeek)?minWeek:'próxima');
-  el.innerHTML=selected.map(m=>{
-    const p=predict(m.home,m.away,standings);
-    const dt=new Date(m.date).toLocaleString('es-ES',{weekday:'short',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
-    const live=m.state!=='pre';
-    return '<article class="card match"><div class="match-top"><span>Jornada '+esc(m.week)+'</span><span>'+esc(dt)+'</span></div><div class="teams">'+esc(m.home)+'<div class="score">'+(live?esc(m.homeScore)+' - '+esc(m.awayScore):esc(p.score))+'</div>'+esc(m.away)+'</div><div class="pred"><span>Local <b>'+p.ph+'%</b></span><span>Empate <b>'+p.pd+'%</b></span><span>Visitante <b>'+p.pa+'%</b></span></div><div class="analysis"><span class="tag">'+(live?'RESULTADO':'PRONÓSTICO')+'</span><br>Modelo basado en fuerza del equipo, ventaja de campo y rendimiento disponible de la temporada.</div></article>';
-  }).join('');
+function predictionStore(){try{return JSON.parse(localStorage.getItem(PRED_CACHE_KEY)||'{}')}catch(e){return {}}}
+function savePredictionStore(x){localStorage.setItem(PRED_CACHE_KEY,JSON.stringify(x));}
+function outcome(h,a){return h>a?'1':h<a?'2':'X';}
+function predictionResult(pred,m){
+  if(m.state==='pre') return {cls:'pending',text:'Pendiente'};
+  const actual=outcome(m.homeScore,m.awayScore), ok=pred.result===actual;
+  return {cls:ok?'ok':'bad',text:ok?'✅ Acierto 1X2':'❌ Fallo 1X2'};
 }
+function tvInfo(){return '📺 Pago: Movistar Plus+ / DAZN · En abierto: no consta';}
+let matchdayState={rounds:[],currentIndex:0,selectedIndex:0,standings:[]};
+
+function buildMatchdays(matches){
+  const groups=new Map();
+  matches.forEach(m=>{
+    const numeric=Number(m.week);
+    const key=Number.isFinite(numeric)?String(numeric):'date-'+new Date(m.date).toISOString().slice(0,10);
+    if(!groups.has(key)) groups.set(key,{key,number:Number.isFinite(numeric)?numeric:null,matches:[]});
+    groups.get(key).matches.push(m);
+  });
+  const rounds=[...groups.values()].map(r=>{
+    r.matches.sort((a,b)=>new Date(a.date)-new Date(b.date));
+    r.start=new Date(r.matches[0].date);
+    r.end=new Date(r.matches[r.matches.length-1].date);
+    return r;
+  });
+  rounds.sort((a,b)=>a.start-b.start || ((a.number??999)-(b.number??999)));
+  return rounds;
+}
+function findCurrentRoundIndex(rounds){
+  if(!rounds.length) return 0;
+  const now=Date.now();
+  // Preferimos la jornada que esté desarrollándose en torno a hoy.
+  const active=[];
+  rounds.forEach((r,i)=>{
+    const hasLiveOrUpcoming=r.matches.some(m=>m.state==='pre'||m.state==='in');
+    const distance=Math.min(...r.matches.map(m=>Math.abs(new Date(m.date).getTime()-now)));
+    if(hasLiveOrUpcoming && distance<=7*86400000) active.push({i,distance});
+  });
+  if(active.length) return active.sort((a,b)=>a.distance-b.distance)[0].i;
+  // Si no hay una jornada activa, elegimos la más cercana a la fecha actual.
+  let best=0,bestDistance=Infinity;
+  rounds.forEach((r,i)=>{
+    const d=Math.min(...r.matches.map(m=>Math.abs(new Date(m.date).getTime()-now)));
+    if(d<bestDistance){best=i;bestDistance=d;}
+  });
+  return best;
+}
+function roundTitle(round){
+  return round && round.number!=null ? 'Jornada '+round.number : 'Jornada seleccionada';
+}
+function setRoundButtonState(){
+  const prev=document.getElementById('prevRoundBtn'), cur=document.getElementById('currentRoundBtn'), next=document.getElementById('nextRoundBtn');
+  if(!prev||!cur||!next) return;
+  prev.disabled=matchdayState.selectedIndex<=0;
+  next.disabled=matchdayState.selectedIndex>=matchdayState.rounds.length-1;
+  cur.classList.toggle('active',matchdayState.selectedIndex===matchdayState.currentIndex);
+  prev.textContent=matchdayState.selectedIndex>0 ? '‹ '+roundTitle(matchdayState.rounds[matchdayState.selectedIndex-1]) : '‹ Jornada anterior';
+  next.textContent=matchdayState.selectedIndex<matchdayState.rounds.length-1 ? roundTitle(matchdayState.rounds[matchdayState.selectedIndex+1])+' ›' : 'Próxima jornada ›';
+}
+function selectRound(mode){
+  if(!matchdayState.rounds.length) return;
+  if(mode==='current') matchdayState.selectedIndex=matchdayState.currentIndex;
+  if(mode==='prev') matchdayState.selectedIndex=Math.max(0,matchdayState.selectedIndex-1);
+  if(mode==='next') matchdayState.selectedIndex=Math.min(matchdayState.rounds.length-1,matchdayState.selectedIndex+1);
+  renderSelectedRound();
+}
+function renderSelectedRound(){
+  const rounds=matchdayState.rounds;
+  const el=document.getElementById('matches');
+  if(!rounds.length){el.innerHTML='<div class="card loading">No se han encontrado jornadas en la fuente de datos.</div>';return;}
+  const round=rounds[matchdayState.selectedIndex];
+  const matches=round.matches;
+  document.getElementById('roundLabel').textContent=roundTitle(round)+(matchdayState.selectedIndex===matchdayState.currentIndex?' · actual':'');
+  document.getElementById('roundCount').textContent=matches.length+' partido'+(matches.length===1?'':'s');
+  document.getElementById('roundInfo').textContent=matchdayState.selectedIndex<matchdayState.currentIndex?'Jornada anterior':matchdayState.selectedIndex>matchdayState.currentIndex?'Próxima jornada':'Jornada que se está disputando o más cercana a la fecha actual';
+  setRoundButtonState();
+  const store=predictionStore(); let changed=false;
+  el.innerHTML=matches.map(m=>{
+    const p=predict(m.home,m.away,matchdayState.standings);
+    if(!store[m.id] && m.state==='pre') { store[m.id]={result:p.ph>p.pa&&p.ph>p.pd?'1':p.pa>p.ph&&p.pa>p.pd?'2':'X',score:p.score,ph:p.ph,pd:p.pd,pa:p.pa,createdAt:Date.now(),home:m.home,away:m.away,week:m.week}; changed=true; }
+    const saved=store[m.id]||{result:p.ph>p.pa&&p.ph>p.pd?'1':p.pa>p.ph&&p.pa>p.pd?'2':'X',score:p.score,ph:p.ph,pd:p.pd,pa:p.pa};
+    if(m.state==='post'||m.state==='final'){
+      store[m.id]={...store[m.id],...saved,actual:m.homeScore+' - '+m.awayScore,actualResult:outcome(m.homeScore,m.awayScore),resolvedAt:Date.now()};
+      changed=true;
+    }
+    const dt=new Date(m.date).toLocaleString('es-ES',{weekday:'short',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
+    const finished=m.state==='post'||m.state==='final';
+    const status=predictionResult(saved,m);
+    const actual=finished?m.homeScore+' - '+m.awayScore:'Pendiente';
+    return '<article class="card match"><div class="match-top"><span>Jornada '+esc(m.week)+'</span><span>'+esc(dt)+'</span></div><div class="teams">'+esc(m.home)+'<div class="score">'+(finished?esc(actual):esc(saved.score))+'</div>'+esc(m.away)+'</div><div class="pred"><span>Local <b>'+saved.ph+'%</b></span><span>Empate <b>'+saved.pd+'%</b></span><span>Visitante <b>'+saved.pa+'%</b></span></div><div class="resultline">Pronóstico: <b>'+esc(saved.result)+'</b> · '+(finished?'Resultado: <b>'+esc(actual)+'</b>':'Resultado: pendiente')+'</div><div class="match-actions"><span class="badge '+status.cls+'">'+status.text+'</span></div><div class="tv">'+tvInfo()+'</div><div class="analysis"><span class="tag">'+(finished?'RESULTADO':'PRONÓSTICO')+'</span><br>Modelo basado en fuerza del equipo, rendimiento disponible y ventaja de campo. El pronóstico queda guardado antes del partido para que el resultado posterior no lo modifique.</div></article>';
+  }).join('');
+  if(changed) savePredictionStore(store);
+  updateStats(matches);
+}
+function renderMatches(matches,standings){
+  matchdayState.rounds=buildMatchdays(matches);
+  matchdayState.currentIndex=findCurrentRoundIndex(matchdayState.rounds);
+  matchdayState.selectedIndex=matchdayState.currentIndex;
+  matchdayState.standings=standings||[];
+  renderSelectedRound();
+}
+function updateStats(matches){
+  const store=predictionStore(); let total=0,hits=0;
+  Object.keys(store).forEach(id=>{const m=matches.find(x=>String(x.id)===String(id)); if(!m||!(m.state==='post'||m.state==='final')) return; total++; if(store[id].result===outcome(m.homeScore,m.awayScore)) hits++;});
+  document.getElementById('statTotal').textContent=total; document.getElementById('statHits').textContent=hits; document.getElementById('statMisses').textContent=Math.max(0,total-hits); document.getElementById('statPct').textContent=total?Math.round(hits/total*100)+'%':'0%';
+}
+async function getEuropeanMatches(){
+ const leagues=[['Champions League','uefa.champions'],['Europa League','uefa.europa'],['Conference League','uefa.europa-conference']];
+ const all=[];
+ for(const [name,code] of leagues){
+   try{
+     const data=await getJSON('https://site.api.espn.com/apis/site/v2/sports/soccer/'+code+'/scoreboard?limit=100&dates='+getDateRange());
+     for(const e of (data.events||[])){
+       const c=e.competitions?.[0]?.competitors||[]; if(c.length<2) continue;
+       const home=c.find(x=>x.homeAway==='home')||c[0], away=c.find(x=>x.homeAway==='away')||c[1];
+       const names=[teamName(home),teamName(away)];
+       const spanish=['FC Barcelona','Real Madrid','Atlético de Madrid','Villarreal CF','Real Betis','Celta','Real Sociedad','Getafe CF'];
+       if(!names.some(n=>spanish.some(t=>normalizeName(n).includes(normalizeName(t))))) continue;
+       all.push({comp:name,date:e.date,home:teamName(home),away:teamName(away),state:e.status?.type?.state||'pre',homeScore:Number(home.score??0),awayScore:Number(away.score??0)});
+     }
+   }catch(err){console.warn('Europe API',name,err)}
+ }
+ return all.sort((a,b)=>new Date(a.date)-new Date(b.date)).slice(0,12);
+}
+function renderEuropeanMatches(rows){
+ const el=document.getElementById('euroMatches'); if(!el) return;
+ if(!rows.length){el.innerHTML='<div class="card loading">Todavía no hay próximos partidos europeos disponibles en la fuente automática.</div>';return;}
+ el.innerHTML=rows.map(m=>{const dt=new Date(m.date).toLocaleString('es-ES',{weekday:'short',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}); const done=m.state==='post'||m.state==='final'; return '<article class="card match"><div class="match-top"><span>'+esc(m.comp)+'</span><span>'+esc(dt)+'</span></div><div class="teams">'+esc(m.home)+'<div class="score">'+(done?esc(m.homeScore+' - '+m.awayScore):'VS')+'</div>'+esc(m.away)+'</div><div class="small">'+(done?'Resultado final':'Próximo partido')+'</div></article>';}).join('');
+}
+
+function renderNews(){
+ const items=[
+  ['17/08/2026','Espanyol 3-0 Levante: arranque contundente','https://cadenaser.com/nacional/2026/08/16/espanyol-3-0-levante-resumen-resultado-y-goles-del-partido-de-la-jornada-1-de-laliga-ea-sports-cadena-ser/'],
+  ['17/08/2026','Racing 2-2 Villarreal: regreso histórico a Primera','https://cadenaser.com/nacional/2026/08/16/racing-club-2-2-villarreal-resumen-resultado-y-goles-del-partido-de-la-jornada-1-de-laliga-ea-sports-cadena-ser/'],
+  ['17/08/2026','Espanyol, líder provisional tras la jornada 1','https://as.com/futbol/primera/el-nuevo-coliseum-abre-las-puertas-f202608-n/'],
+  ['17/08/2026','Celta: Europa League y última temporada de Aspas','https://as.com/futbol/primera/celta-de-vigo-en-laliga-ea-sports-202627-plantilla-fichajes-bajas-figuras-y-claves-de-la-temporada-f202608-n/'],
+  ['16/08/2026','Rodri, cerca de incorporarse al Barcelona','https://elpais.com/deportes/futbol/2026-08-16/el-barcelona-ata-a-rodri-hasta-2030.html'],
+  ['17/08/2026','Guía 2026/27: plantillas, fichajes y claves','https://as.com/futbol/primera/guia-de-laliga-ea-sports-202627-equipos-plantillas-fichajes-y-jugadores-a-seguir-f202608-n/']
+ ];
+ document.getElementById('newsGrid').innerHTML=items.map(x=>'<article class="card news-card"><div class="news-meta">'+x[0]+' · ACTUALIDAD</div><a href="'+x[2]+'" target="_blank" rel="noopener">'+esc(x[1])+' ↗</a></article>').join('');
+}
+
 function renderTable(rows){
   document.getElementById('table-body').innerHTML=rows.map((t,i)=>'<tr><td class="pos">'+(i+1)+'</td><td><b>'+esc(t.team)+'</b></td><td><b>'+t.pts+'</b></td><td>'+t.pj+'</td><td>'+t.w+'</td><td>'+t.d+'</td><td>'+t.l+'</td><td>'+t.gf+'</td><td>'+t.gc+'</td><td class="form">'+t.gd+'</td></tr>').join('');
 }
@@ -258,11 +398,12 @@ function renderScorers(rows){
 }
 async function load(){
   document.getElementById('dataStatus').textContent='Actualizando…';
-  const results=await Promise.allSettled([getStandings(),getScorers(),getUpcomingMatches()]);
+  const results=await Promise.allSettled([getStandings(),getScorers(),getUpcomingMatches(),getEuropeanMatches()]);
   const standings=results[0].status==='fulfilled'?results[0].value:loadCached()?.standings||[];
   const scorers=results[1].status==='fulfilled'?results[1].value:loadCached()?.scorers||fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}));
   const matches=results[2].status==='fulfilled'?results[2].value:loadCached()?.matches||[];
-  renderTable(standings); renderScorers(scorers); renderMatches(matches,standings);
+  const euroMatches=results[3].status==='fulfilled'?results[3].value:[];
+  renderTable(standings); renderScorers(scorers); renderMatches(matches,standings); renderEuropeanMatches(euroMatches);
   const fresh={standings,scorers,matches,savedAt:Date.now()}; localStorage.setItem(CACHE_KEY,JSON.stringify(fresh));
   const ok=results.filter(x=>x.status==='fulfilled').length;
   document.getElementById('dataStatus').textContent=ok===3?'Actualizado':'Actualización parcial';
@@ -271,6 +412,9 @@ async function load(){
 }
 function loadCached(){try{return JSON.parse(localStorage.getItem(CACHE_KEY)||'null')}catch(e){return null}}
 document.getElementById('refreshBtn').addEventListener('click',load);
+document.querySelectorAll('.collapse-btn').forEach(btn=>btn.addEventListener('click',()=>{const p=document.getElementById(btn.dataset.target); p.classList.toggle('is-collapsed');}));
+document.querySelectorAll('.matchday-btn').forEach(btn=>btn.addEventListener('click',()=>selectRound(btn.dataset.roundAction)));
+renderNews();
 load();
 </script>
 </body>
