@@ -19,6 +19,9 @@ main{padding:28px 0 60px}.hero{display:grid;grid-template-columns:1.4fr .6fr;gap
 footer{border-top:1px solid var(--line);padding:20px 0;color:#71809a;font-size:11px}
 
 .section-tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.collapse-btn{border:1px solid var(--line);background:#101d31;color:#dce7ff;border-radius:9px;padding:7px 10px;font-weight:800;cursor:pointer}.collapse-btn:hover{background:#172844}.collapsible{overflow:hidden;transition:max-height .25s ease,opacity .2s ease}.collapsible.is-collapsed{max-height:0!important;opacity:0}.table-card{position:relative}.compact-note{margin:0 0 10px;color:var(--muted);font-size:12px}.match-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px}.badge{display:inline-flex;align-items:center;gap:4px;padding:5px 8px;border-radius:999px;font-size:10px;font-weight:900}.badge.ok{background:rgba(34,197,94,.12);color:#86efac;border:1px solid rgba(34,197,94,.25)}.badge.bad{background:rgba(239,68,68,.12);color:#fca5a5;border:1px solid rgba(239,68,68,.25)}.badge.pending{background:rgba(245,158,11,.12);color:#fcd34d;border:1px solid rgba(245,158,11,.25)}.tv{color:#c7d4ea;font-size:11px;margin-top:10px}.resultline{margin-top:8px;font-weight:800}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{padding:16px}.stat strong{display:block;font-size:28px;margin-top:5px}.matchday-selector{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:6px;background:#0a1627;border:1px solid var(--line);border-radius:12px}.matchday-btn{border:1px solid transparent;background:transparent;color:#9fb0c8;border-radius:8px;padding:8px 11px;font-weight:800;font-size:12px;cursor:pointer;transition:.18s}.matchday-btn:hover:not(:disabled){background:#162541;color:#fff}.matchday-btn.active{background:var(--accent);color:#fff;box-shadow:0 5px 14px rgba(79,124,255,.25)}.matchday-btn:disabled{opacity:.35;cursor:not-allowed}.matchday-info{margin-top:8px;display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.matchday-note{color:var(--muted);font-size:11px}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.news-card{padding:17px}.news-card a{color:#eaf1ff;text-decoration:none;font-weight:850;line-height:1.35}.news-card a:hover{color:#8eacff}.news-meta{color:var(--muted);font-size:10px;margin-bottom:8px}.euro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.euro-card{padding:15px}.euro-card h3{margin:0 0 7px;font-size:15px}.team-pill{display:inline-block;margin:4px 4px 0 0;padding:5px 8px;border-radius:999px;background:#0a1627;border:1px solid var(--line);font-size:11px}.legend{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.legend span{font-size:11px;color:var(--muted)}
+.balance-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:12px}.balance-card{padding:14px}.balance-card strong{display:block;font-size:24px;margin-top:4px}.balance-good{color:#86efac}.balance-warn{color:#fcd34d}.balance-bad{color:#fca5a5}.substats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}.substats .card{padding:15px}.mini-table{min-width:560px}.difficulty-high{background:rgba(239,68,68,.08)}.difficulty-mid{background:rgba(245,158,11,.07)}.difficulty-low{background:rgba(34,197,94,.06)}.difficulty-pill{display:inline-flex;padding:4px 7px;border-radius:999px;font-size:10px;font-weight:900}.difficulty-pill.high{background:rgba(239,68,68,.14);color:#fca5a5}.difficulty-pill.mid{background:rgba(245,158,11,.14);color:#fcd34d}.difficulty-pill.low{background:rgba(34,197,94,.14);color:#86efac}.quiniela-note{margin:0 0 12px;color:var(--muted);font-size:12px;line-height:1.5}.pick{font-weight:950;font-size:16px}.pick-1{color:#7ea2ff}.pick-x{color:#fcd34d}.pick-2{color:#c4b5fd}.real{font-weight:900}.real.pending{color:#91a0b8}.real.hit{color:#86efac}.real.miss{color:#fca5a5}.accuracy-bar{height:7px;background:#0a1627;border-radius:999px;overflow:hidden;margin-top:5px}.accuracy-fill{height:100%;border-radius:999px;background:var(--accent)}
+@media(max-width:1100px){.balance-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.balance-grid{grid-template-columns:repeat(2,1fr)}.substats{grid-template-columns:1fr}}
 @media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.head{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}.hero .card{padding:19px}.wrap{padding:0 12px}}
 </style>
 </head>
@@ -36,6 +39,14 @@ footer{border-top:1px solid var(--line);padding:20px 0;color:#71809a;font-size:1
 
 <section id="jornada" class="section"><div class="section-title"><h2>⚽ Partidos y pronósticos</h2><span class="small" id="roundLabel">Cargando…</span></div><div class="matchday-selector" aria-label="Selector de jornada"><button class="matchday-btn" id="prevRoundBtn" data-round-action="prev">‹ Jornada anterior</button><button class="matchday-btn active" id="currentRoundBtn" data-round-action="current">Jornada actual</button><button class="matchday-btn" id="nextRoundBtn" data-round-action="next">Próxima jornada ›</button></div><div class="matchday-info"><span class="matchday-note" id="roundInfo">Selecciona la jornada que quieras consultar.</span><span class="small" id="roundCount"></span></div><div id="matches" class="grid" style="margin-top:12px"><div class="card loading">Cargando partidos…</div></div></section>
 
+<section id="quiniela" class="section">
+  <div class="section-title"><h2>🎟️ Quiniela de la jornada</h2><span class="small" id="quinielaLabel">Jornada actual</span></div>
+  <div class="card" style="padding:16px">
+    <p class="quiniela-note">Aquí puedes comparar directamente nuestro 1X2 con la dificultad estadística del partido. <b>Prob. acierto</b> es la probabilidad que asigna el modelo al signo elegido; cuanto menor sea, más difícil es el partido para nuestro modelo. El resultado real se completa automáticamente cuando termina.</p>
+    <div class="table-wrap"><table class="table mini-table"><thead><tr><th>#</th><th>Partido</th><th>1</th><th>X</th><th>2</th><th>Pronóstico</th><th>Prob. acierto</th><th>Dificultad</th><th>Resultado real</th><th>Estado</th></tr></thead><tbody id="quiniela-body"><tr><td colspan="10" class="loading">Cargando jornada…</td></tr></tbody></table></div>
+  </div>
+</section>
+
 <section id="clasificacion" class="section"><div class="section-title"><h2>📊 Clasificación 2026/27</h2><span class="small" id="standingsLabel">Actualizando…</span></div>
 <div class="card table-wrap"><table class="table"><thead><tr><th>#</th><th>Equipo</th><th>PTS</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DG</th></tr></thead><tbody id="table-body"><tr><td colspan="10" class="loading">Cargando…</td></tr></tbody></table></div></div></section>
 
@@ -43,7 +54,23 @@ footer{border-top:1px solid var(--line);padding:20px 0;color:#71809a;font-size:1
 <div class="card table-wrap"><table class="table"><thead><tr><th>#</th><th>Jugador</th><th>Equipo</th><th>Goles</th><th>Partidos</th></tr></thead><tbody id="scorers-body"><tr><td colspan="5" class="loading">Cargando…</td></tr></tbody></table></div>
 <div class="notice">La tabla pertenece exclusivamente a la temporada <b>2026/27</b>. No arrastra goles de 2025/26. Antes del primer gol oficial, todos permanecen en 0.</div></section>
 
-<section id="estadisticas" class="section"><div class="section-title"><h2>🎯 Mi balance de pronósticos</h2><span class="small">Solo partidos con pronóstico guardado antes del inicio</span></div><div class="stats-grid"><div class="card stat"><span class="small">Pronósticos resueltos</span><strong id="statTotal">0</strong></div><div class="card stat"><span class="small">Aciertos 1X2</span><strong id="statHits">0</strong></div><div class="card stat"><span class="small">Fallos</span><strong id="statMisses">0</strong></div><div class="card stat"><span class="small">% de acierto</span><strong id="statPct">0%</strong></div></div></section>
+<section id="estadisticas" class="section">
+  <div class="section-title"><h2>🎯 Mi balance de pronósticos</h2><span class="small">Balance acumulado de toda la temporada 2026/27 en este navegador</span></div>
+  <div class="balance-grid">
+    <div class="card balance-card"><span class="small">Resueltos</span><strong id="statTotal">0</strong></div>
+    <div class="card balance-card"><span class="small">Aciertos</span><strong id="statHits" class="balance-good">0</strong></div>
+    <div class="card balance-card"><span class="small">Fallos</span><strong id="statMisses" class="balance-bad">0</strong></div>
+    <div class="card balance-card"><span class="small">% acierto</span><strong id="statPct">0%</strong></div>
+    <div class="card balance-card"><span class="small">Racha actual</span><strong id="statStreak">0</strong></div>
+    <div class="card balance-card"><span class="small">Mejor racha</span><strong id="statBestStreak">0</strong></div>
+  </div>
+  <div class="substats">
+    <div class="card"><div class="kicker">Por signo</div><table class="table mini-table"><thead><tr><th>Signo</th><th>Pron.</th><th>Aciertos</th><th>%</th></tr></thead><tbody id="signStats"><tr><td>1</td><td>0</td><td>0</td><td>0%</td></tr><tr><td>X</td><td>0</td><td>0</td><td>0%</td></tr><tr><td>2</td><td>0</td><td>0</td><td>0%</td></tr></tbody></table></div>
+    <div class="card"><div class="kicker">Según confianza</div><table class="table mini-table"><thead><tr><th>Confianza</th><th>Pron.</th><th>Aciertos</th><th>%</th></tr></thead><tbody id="confidenceStats"><tr><td>≥70%</td><td>0</td><td>0</td><td>0%</td></tr><tr><td>60–69%</td><td>0</td><td>0</td><td>0%</td></tr><tr><td>&lt;60%</td><td>0</td><td>0</td><td>0%</td></tr></tbody></table></div>
+    <div class="card"><div class="kicker">Lectura del modelo</div><p id="modelAdvice" class="small" style="line-height:1.65;margin-bottom:0">Todavía no hay suficientes resultados para ajustar criterios. La muestra se irá acumulando jornada a jornada.</p></div>
+  </div>
+  <div class="notice">⚠️ El objetivo es mejorar el modelo y medir su calibración; ningún sistema puede garantizar un 100% de aciertos. El balance se conserva en <b>localStorage</b>, por lo que permanece al cambiar de jornada mientras uses este navegador.</div>
+</section>
 
 <section id="europa" class="section"><div class="section-title"><h2>🌍 LaLiga en Europa</h2><span class="small">Temporada 2026/27</span></div><div class="euro-grid"><div class="card euro-card"><h3>🏆 Champions League</h3><span class="team-pill">FC Barcelona</span><span class="team-pill">Real Madrid</span><span class="team-pill">Atlético de Madrid</span><span class="team-pill">Villarreal</span></div><div class="card euro-card"><h3>🏆 Europa League</h3><span class="team-pill">Real Betis</span><span class="team-pill">Celta</span><span class="team-pill">Real Sociedad</span></div><div class="card euro-card"><h3>🏆 Conference League</h3><span class="team-pill">Getafe CF</span><p class="small">El Getafe afronta además la fase previa.</p></div></div><div class="notice">España cuenta con ocho clubes en competiciones UEFA esta temporada. A continuación se intentan cargar también sus próximos partidos europeos desde ESPN. Si una competición no publica todavía el calendario en esa API, se mostrará un aviso en lugar de inventar encuentros.</div><div id="euroMatches" class="grid" style="margin-top:14px"><div class="card loading">Cargando calendario europeo…</div></div></section>
 
@@ -354,6 +381,7 @@ function renderSelectedRound(){
     return '<article class="card match"><div class="match-top"><span>Jornada '+esc(m.week)+'</span><span>'+esc(dt)+'</span></div><div class="teams">'+esc(m.home)+'<div class="score">'+(finished?esc(actual):esc(saved.score))+'</div>'+esc(m.away)+'</div><div class="pred"><span>Local <b>'+saved.ph+'%</b></span><span>Empate <b>'+saved.pd+'%</b></span><span>Visitante <b>'+saved.pa+'%</b></span></div><div class="resultline">Pronóstico: <b>'+esc(saved.result)+'</b> · '+(finished?'Resultado: <b>'+esc(actual)+'</b>':'Resultado: pendiente')+'</div><div class="match-actions"><span class="badge '+status.cls+'">'+status.text+'</span></div><div class="tv">'+tvInfo()+'</div><div class="analysis"><span class="tag">'+(finished?'RESULTADO':'PRONÓSTICO')+'</span><br>Modelo basado en fuerza del equipo, rendimiento disponible y ventaja de campo. El pronóstico queda guardado antes del partido para que el resultado posterior no lo modifique.</div></article>';
   }).join('');
   if(changed) savePredictionStore(store);
+  renderQuiniela(matches);
   updateStats(matches);
 }
 function renderMatches(matches,standings){
@@ -364,10 +392,93 @@ function renderMatches(matches,standings){
   renderSelectedRound();
 }
 function updateStats(matches){
-  const store=predictionStore(); let total=0,hits=0;
-  Object.keys(store).forEach(id=>{const m=matches.find(x=>String(x.id)===String(id)); if(!m||!(m.state==='post'||m.state==='final')) return; total++; if(store[id].result===outcome(m.homeScore,m.awayScore)) hits++;});
-  document.getElementById('statTotal').textContent=total; document.getElementById('statHits').textContent=hits; document.getElementById('statMisses').textContent=Math.max(0,total-hits); document.getElementById('statPct').textContent=total?Math.round(hits/total*100)+'%':'0%';
+  const store=predictionStore();
+  const currentById=new Map((matches||[]).map(m=>[String(m.id),m]));
+  let total=0,hits=0;
+  const signs={"1":{n:0,h:0},"X":{n:0,h:0},"2":{n:0,h:0}};
+  const conf={high:{n:0,h:0},mid:{n:0,h:0},low:{n:0,h:0}};
+  const resolved=[];
+
+  Object.keys(store).forEach(id=>{
+    const saved=store[id];
+    const live=currentById.get(String(id));
+    const actual=live && (live.state==='post'||live.state==='final')
+      ? outcome(live.homeScore,live.awayScore)
+      : saved.actualResult;
+    if(!actual || !['1','X','2'].includes(saved.result)) return;
+
+    const hit=saved.result===actual;
+    total++; if(hit) hits++;
+    if(signs[saved.result]){ signs[saved.result].n++; if(hit) signs[saved.result].h++; }
+    const confidence=Math.max(Number(saved.ph||0),Number(saved.pd||0),Number(saved.pa||0));
+    const bucket=confidence>=70?'high':confidence>=60?'mid':'low';
+    conf[bucket].n++; if(hit) conf[bucket].h++;
+    resolved.push({id:String(id),saved,actual,hit,finishedAt:saved.resolvedAt||0});
+  });
+
+  // Orden cronológico para calcular rachas acumuladas.
+  resolved.sort((a,b)=>(a.finishedAt||0)-(b.finishedAt||0));
+  let currentStreak=0,bestStreak=0;
+  resolved.forEach(r=>{
+    if(r.hit){ currentStreak++; bestStreak=Math.max(bestStreak,currentStreak); }
+    else currentStreak=0;
+  });
+
+  const pct=n=>n?Math.round(n*100):0;
+  document.getElementById('statTotal').textContent=total;
+  document.getElementById('statHits').textContent=hits;
+  document.getElementById('statMisses').textContent=Math.max(0,total-hits);
+  document.getElementById('statPct').textContent=total?Math.round(hits/total*100)+'%':'0%';
+  document.getElementById('statStreak').textContent=currentStreak;
+  document.getElementById('statBestStreak').textContent=bestStreak;
+
+  const signBody=document.getElementById('signStats');
+  if(signBody) signBody.innerHTML=['1','X','2'].map(k=>'<tr><td><b>'+k+'</b></td><td>'+signs[k].n+'</td><td>'+signs[k].h+'</td><td>'+pct(signs[k].h/(signs[k].n||1))+'%</td></tr>').join('');
+  const confBody=document.getElementById('confidenceStats');
+  if(confBody) confBody.innerHTML=[['high','≥70%'],['mid','60–69%'],['low','<60%']].map(([k,label])=>'<tr><td>'+label+'</td><td>'+conf[k].n+'</td><td>'+conf[k].h+'</td><td>'+pct(conf[k].h/(conf[k].n||1))+'%</td></tr>').join('');
+
+  const advice=document.getElementById('modelAdvice');
+  if(advice){
+    if(total<10) advice.textContent='Muestra todavía pequeña. No conviene cambiar los criterios del modelo por unos pocos resultados; acumula al menos 10–20 partidos antes de sacar conclusiones.';
+    else {
+      const rate=hits/total*100;
+      const highRate=conf.high.n?conf.high.h/conf.high.n*100:null;
+      const signRates=Object.entries(signs).filter(([,v])=>v.n>=3).sort((a,b)=>a[1].h/a[1].n-b[1].h/b[1].n);
+      const weakest=signRates[0];
+      let msg='Balance acumulado: '+rate.toFixed(1)+'% de acierto en '+total+' partidos. ';
+      if(highRate!==null) msg+='En pronósticos con ≥70% de confianza: '+highRate.toFixed(1)+'%. ';
+      if(weakest) msg+='El signo que peor está funcionando con al menos 3 casos es '+weakest[0]+' ('+(weakest[1].h/weakest[1].n*100).toFixed(1)+'%).';
+      advice.textContent=msg;
+    }
+  }
 }
+
+function renderQuiniela(matches){
+  const body=document.getElementById('quiniela-body');
+  const label=document.getElementById('quinielaLabel');
+  if(!body) return;
+  if(!matches||!matches.length){
+    body.innerHTML='<tr><td colspan="10" class="loading">No hay partidos disponibles para esta jornada.</td></tr>';
+    return;
+  }
+  const store=predictionStore();
+  if(label) label.textContent=matches[0]?.week ? 'Jornada '+matches[0].week+' · '+matches.length+' partidos' : 'Jornada seleccionada';
+  body.innerHTML=matches.map((m,i)=>{
+    const p=store[m.id]||predict(m.home,m.away,matchdayState.standings);
+    const pick=p.result||'X';
+    const confidence=Math.max(Number(p.ph||0),Number(p.pd||0),Number(p.pa||0));
+    const difficulty=100-confidence;
+    const diffClass=difficulty>=40?'high':difficulty>=30?'mid':'low';
+    const diffText=difficulty>=40?'Difícil':difficulty>=30?'Media':'Favorable';
+    const done=m.state==='post'||m.state==='final';
+    const actual=done?outcome(m.homeScore,m.awayScore):null;
+    const resultText=done?m.homeScore+'-'+m.awayScore:'—';
+    const hit=done&&actual===pick;
+    const probs='<span>1 '+Number(p.ph||0)+'%</span><br><span>X '+Number(p.pd||0)+'%</span><br><span>2 '+Number(p.pa||0)+'%</span>';
+    return '<tr class="difficulty-'+diffClass+'"><td>'+(i+1)+'</td><td style="text-align:left"><b>'+esc(m.home)+'</b><br><span class="muted">'+esc(m.away)+'</span></td><td>'+Number(p.ph||0)+'%</td><td>'+Number(p.pd||0)+'%</td><td>'+Number(p.pa||0)+'%</td><td class="pick pick-'+pick.toLowerCase()+'">'+pick+'</td><td><b>'+confidence+'%</b><div class="accuracy-bar"><div class="accuracy-fill" style="width:'+confidence+'%"></div></div></td><td><span class="difficulty-pill '+diffClass+'">'+diffText+' · '+difficulty+'%</span></td><td class="real '+(done?(hit?'hit':'miss'):'pending')+'">'+resultText+(done?' · '+actual:'')+'</td><td>'+(done?(hit?'✅ Acierto':'❌ Fallo'):'⏳ Pendiente')+'</td></tr>';
+  }).join('');
+}
+
 async function getEuropeanMatches(){
  const leagues=[['Champions League','uefa.champions'],['Europa League','uefa.europa'],['Conference League','uefa.europa.conf']];
  const all=[];
