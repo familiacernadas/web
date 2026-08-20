@@ -4,9 +4,12 @@
     "season": 2026,
     "league": "LaLiga",
     "seasonLabel": "2026/27",
-    "source": "API-Football",
-    "generatedAt": null,
-    "requestsThisRun": 0
+    "source": "ESPN + API-Football",
+    "generatedAt": "2026-08-20T15:56:15.140Z",
+    "requestsThisRun": 1,
+    "primarySource": "ESPN",
+    "secondarySource": "API-Football",
+    "apiFootballSeasonAvailable": false
   },
   "matches": [],
   "standings": [],
@@ -21,11 +24,11 @@
         "total": 0,
         "correct": 0
       },
-      "X": {
+      "2": {
         "total": 0,
         "correct": 0
       },
-      "2": {
+      "X": {
         "total": 0,
         "correct": 0
       }
@@ -44,5 +47,6 @@
         "correct": 0
       }
     }
-  }
+  },
+  "news": []
 }
