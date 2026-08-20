@@ -1,1 +1,48 @@
-
+{
+  "meta": {
+    "leagueId": 140,
+    "season": 2026,
+    "league": "LaLiga",
+    "seasonLabel": "2026/27",
+    "source": "API-Football",
+    "generatedAt": null,
+    "requestsThisRun": 0
+  },
+  "matches": [],
+  "standings": [],
+  "scorers": [],
+  "injuries": [],
+  "predictionBalance": {
+    "total": 0,
+    "correct": 0,
+    "accuracy": 0,
+    "bySign": {
+      "1": {
+        "total": 0,
+        "correct": 0
+      },
+      "X": {
+        "total": 0,
+        "correct": 0
+      },
+      "2": {
+        "total": 0,
+        "correct": 0
+      }
+    },
+    "byDifficulty": {
+      "fácil": {
+        "total": 0,
+        "correct": 0
+      },
+      "media": {
+        "total": 0,
+        "correct": 0
+      },
+      "difícil": {
+        "total": 0,
+        "correct": 0
+      }
+    }
+  }
+}
