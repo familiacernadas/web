@@ -4,16 +4,33 @@
  * ACTUALIZADOR AUTOMÁTICO LALIGA 2026/27
  * ============================================================
  *
- * Fuente:
- * API-Football / API-SPORTS
+ * FUENTES
  *
- * IMPORTANTE:
- * La API KEY NO está aquí.
- * Se obtiene desde:
+ * 1. ESPN
+ *    Fuente principal para la temporada 2026/27:
+ *      - calendario
+ *      - resultados
+ *      - clasificación
+ *      - equipos
+ *      - noticias
  *
- * process.env.API_FOOTBALL_KEY
+ * 2. API-FOOTBALL / API-SPORTS
+ *    Fuente secundaria para:
+ *      - estadísticas
+ *      - alineaciones
+ *      - formaciones
+ *      - eventos
+ *      - jugadores
+ *      - porteros
  *
- * y será proporcionada por GitHub Actions.
+ * IMPORTANTE
+ *
+ * API-Football Free NO permite actualmente consultar la
+ * temporada 2026/27.
+ *
+ * Por ello el programa NO falla si API-Football devuelve
+ * un error de temporada.
+ *
  * ============================================================
  */
 
@@ -21,43 +38,57 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 
-// ------------------------------------------------------------
+// ============================================================
 // CONFIGURACIÓN
-// ------------------------------------------------------------
+// ============================================================
 
-const API_KEY = process.env.API_FOOTBALL_KEY;
-
-if (!API_KEY) {
-    console.error("ERROR: falta API_FOOTBALL_KEY");
-    process.exit(1);
-}
-
-const API_BASE =
-    "https://v3.football.api-sports.io";
+const API_KEY =
+    process.env.API_FOOTBALL_KEY || "";
 
 const LEAGUE_ID = 140;
+
 const SEASON = 2026;
 
 const DATA_FILE =
     path.resolve("data/laliga_2026_27.json");
 
 
-// ------------------------------------------------------------
+// ============================================================
+// ESPN
+// ============================================================
+
+const ESPN_SITE =
+    "https://site.api.espn.com/apis/site/v2";
+
+const ESPN_V2 =
+    "https://site.api.espn.com/apis/v2";
+
+const ESPN_LEAGUE =
+    "soccer/esp.1";
+
+
+// ============================================================
+// API-FOOTBALL
+// ============================================================
+
+const API_FOOTBALL_BASE =
+    "https://v3.football.api-sports.io";
+
+
+// ============================================================
 // CONTROL DE PETICIONES
-// ------------------------------------------------------------
+// ============================================================
 
 let requestsThisRun = 0;
 
-// Dejamos margen respecto al límite gratuito.
 const MAX_REQUESTS = 90;
 
-// Hasta 20 partidos por petición.
-const MAX_DETAIL_FIXTURES = 60;
+const MAX_DETAIL_FIXTURES = 40;
 
 
-// ------------------------------------------------------------
+// ============================================================
 // UTILIDADES
-// ------------------------------------------------------------
+// ============================================================
 
 function sleep(ms) {
 
@@ -101,42 +132,140 @@ function percentage(value) {
 }
 
 
-function statisticValue(statistics, type) {
+function safeArray(value) {
 
-    if (!Array.isArray(statistics)) {
-        return null;
-    }
+    return Array.isArray(value)
+        ? value
+        : [];
 
-    const item = statistics.find(
-        x =>
-            String(x.type).toLowerCase() ===
-            String(type).toLowerCase()
-    );
-
-    if (!item) {
-        return null;
-    }
-
-    return item.value;
 }
 
 
-// ------------------------------------------------------------
-// LLAMADA API
-// ------------------------------------------------------------
+function resultFromGoals(home, away) {
 
-async function api(endpoint, params = {}) {
+    if (
+        home === null ||
+        away === null ||
+        home === undefined ||
+        away === undefined
+    ) {
+        return null;
+    }
 
-    if (requestsThisRun >= MAX_REQUESTS) {
+    if (home > away) {
+        return "1";
+    }
+
+    if (home < away) {
+        return "2";
+    }
+
+    return "X";
+
+}
+
+
+// ============================================================
+// PETICIÓN GENÉRICA
+// ============================================================
+
+async function fetchJSON(
+    url,
+    options = {}
+) {
+
+    console.log(
+        `GET ${url}`
+    );
+
+    const response =
+        await fetch(
+            url,
+            {
+                ...options,
+                headers: {
+                    Accept:
+                        "application/json",
+                    ...(options.headers || {})
+                }
+            }
+        );
+
+
+    const text =
+        await response.text();
+
+
+    let json;
+
+    try {
+
+        json =
+            JSON.parse(text);
+
+    } catch {
 
         throw new Error(
-            "Límite de seguridad de peticiones alcanzado."
+            `Respuesta no JSON (${response.status})`
         );
 
     }
 
+
+    if (!response.ok) {
+
+        throw new Error(
+            `HTTP ${response.status}: ` +
+            JSON.stringify(
+                json.errors ||
+                json
+            )
+        );
+
+    }
+
+
+    return json;
+
+}
+
+
+// ============================================================
+// API-FOOTBALL
+// ============================================================
+
+async function apiFootball(
+    endpoint,
+    params = {}
+) {
+
+    if (!API_KEY) {
+
+        throw new Error(
+            "API_FOOTBALL_KEY no configurada"
+        );
+
+    }
+
+
+    if (
+        requestsThisRun >=
+        MAX_REQUESTS
+    ) {
+
+        throw new Error(
+            "Límite de seguridad de peticiones alcanzado"
+        );
+
+    }
+
+
     const url =
-        new URL(API_BASE + endpoint);
+        new URL(
+            API_FOOTBALL_BASE +
+            endpoint
+        );
+
 
     for (
         const [key, value]
@@ -162,51 +291,16 @@ async function api(endpoint, params = {}) {
     requestsThisRun++;
 
 
-    console.log(
-        `API ${requestsThisRun}: ${url.pathname}${url.search}`
-    );
-
-
-    const response =
-        await fetch(url, {
-
-            headers: {
-                "x-apisports-key": API_KEY
+    const json =
+        await fetchJSON(
+            url.toString(),
+            {
+                headers: {
+                    "x-apisports-key":
+                        API_KEY
+                }
             }
-
-        });
-
-
-    const text =
-        await response.text();
-
-
-    let json;
-
-    try {
-
-        json =
-            JSON.parse(text);
-
-    } catch {
-
-        throw new Error(
-            `Respuesta no válida de API (${response.status})`
         );
-
-    }
-
-
-    if (!response.ok) {
-
-        throw new Error(
-            `API ${response.status}: ` +
-            JSON.stringify(
-                json.errors || json
-            )
-        );
-
-    }
 
 
     if (
@@ -216,7 +310,9 @@ async function api(endpoint, params = {}) {
 
         throw new Error(
             "API error: " +
-            JSON.stringify(json.errors)
+            JSON.stringify(
+                json.errors
+            )
         );
 
     }
@@ -226,12 +322,382 @@ async function api(endpoint, params = {}) {
 
 
     return json;
+
 }
 
 
-// ------------------------------------------------------------
-// CARGAR JSON EXISTENTE
-// ------------------------------------------------------------
+// ============================================================
+// ESPN SCOREBOARD
+// ============================================================
+
+async function getESPNScoreboard(
+    startDate,
+    endDate
+) {
+
+    const url =
+        `${ESPN_SITE}/${ESPN_LEAGUE}/scoreboard` +
+        `?dates=${startDate}-${endDate}` +
+        `&limit=500`;
+
+
+    return fetchJSON(url);
+
+}
+
+
+// ============================================================
+// NORMALIZAR ESPN
+// ============================================================
+
+function normalizeESPNEvent(event) {
+
+    const competition =
+        event.competitions?.[0];
+
+    const competitors =
+        safeArray(
+            competition?.competitors
+        );
+
+
+    const home =
+        competitors.find(
+            x =>
+                x.homeAway ===
+                "home"
+        );
+
+
+    const away =
+        competitors.find(
+            x =>
+                x.homeAway ===
+                "away"
+        );
+
+
+    const status =
+        event.status ||
+        competition?.status;
+
+
+    const homeScore =
+        home?.score !== undefined
+            ? number(home.score, null)
+            : null;
+
+
+    const awayScore =
+        away?.score !== undefined
+            ? number(away.score, null)
+            : null;
+
+
+    let normalizedStatus =
+        "NS";
+
+
+    if (
+        status?.type?.completed
+    ) {
+
+        normalizedStatus =
+            "FT";
+
+    } else if (
+        status?.type?.state ===
+        "in"
+    ) {
+
+        normalizedStatus =
+            "LIVE";
+
+    } else if (
+        status?.type?.state ===
+        "post"
+    ) {
+
+        normalizedStatus =
+            "FT";
+
+    }
+
+
+    return {
+
+        id:
+            `espn-${event.id}`,
+
+        source:
+            "ESPN",
+
+        sourceId:
+            String(event.id),
+
+        round:
+            event.week?.number ||
+            event.season?.slug ||
+            null,
+
+        date:
+            event.date ||
+            null,
+
+        timestamp:
+            event.date
+                ? Math.floor(
+                    new Date(
+                        event.date
+                    ).getTime() /
+                    1000
+                )
+                : null,
+
+        status:
+            normalizedStatus,
+
+        statusLong:
+            status?.type?.description ||
+            null,
+
+        venue: {
+
+            id:
+                competition?.venue?.id ||
+                null,
+
+            name:
+                competition?.venue?.fullName ||
+                competition?.venue?.address?.city ||
+                null,
+
+            city:
+                competition?.venue?.address?.city ||
+                null
+
+        },
+
+        home: {
+
+            id:
+                home?.team?.id ||
+                null,
+
+            name:
+                home?.team?.displayName ||
+                home?.team?.name ||
+                null,
+
+            abbreviation:
+                home?.team?.abbreviation ||
+                null,
+
+            logo:
+                home?.team?.logo ||
+                null
+
+        },
+
+        away: {
+
+            id:
+                away?.team?.id ||
+                null,
+
+            name:
+                away?.team?.displayName ||
+                away?.team?.name ||
+                null,
+
+            abbreviation:
+                away?.team?.abbreviation ||
+                null,
+
+            logo:
+                away?.team?.logo ||
+                null
+
+        },
+
+        score: {
+
+            halftime:
+                null,
+
+            fulltime: {
+
+                home:
+                    homeScore,
+
+                away:
+                    awayScore
+
+            },
+
+            extratime:
+                null,
+
+            penalty:
+                null
+
+        },
+
+        broadcasts:
+            safeArray(
+                competition?.broadcasts
+            )
+            .map(
+                broadcast => ({
+                    name:
+                        broadcast.names?.[0] ||
+                        broadcast.market ||
+                        null,
+
+                    type:
+                        broadcast.type ||
+                        null
+                })
+            )
+
+    };
+
+}
+
+
+// ============================================================
+// DESCARGAR TEMPORADA DESDE ESPN
+// ============================================================
+
+async function getSeasonFixturesESPN() {
+
+    console.log(
+        "Descargando calendario 2026/27 desde ESPN..."
+    );
+
+
+    /*
+     * La temporada 2026/27 empieza en agosto de 2026.
+     *
+     * Dividimos la consulta en bloques para evitar
+     * problemas con intervalos excesivamente grandes.
+     */
+
+    const ranges = [
+
+        [
+            "20260801",
+            "20260930"
+        ],
+
+        [
+            "20261001",
+            "20261130"
+        ],
+
+        [
+            "20261201",
+            "20270131"
+        ],
+
+        [
+            "20270201",
+            "20270331"
+        ],
+
+        [
+            "20270401",
+            "20270531"
+        ]
+
+    ];
+
+
+    const all = [];
+
+
+    for (
+        const [
+            start,
+            end
+        ]
+        of ranges
+    ) {
+
+        try {
+
+            const data =
+                await getESPNScoreboard(
+                    start,
+                    end
+                );
+
+
+            all.push(
+                ...safeArray(
+                    data.events
+                )
+            );
+
+
+            console.log(
+                `ESPN ${start}-${end}: ` +
+                `${safeArray(data.events).length} partidos`
+            );
+
+        } catch (error) {
+
+            console.warn(
+                `ESPN no pudo consultar ${start}-${end}:`,
+                error.message
+            );
+
+        }
+
+    }
+
+
+    const unique =
+        new Map();
+
+
+    for (
+        const event
+        of all
+    ) {
+
+        if (
+            event?.id
+        ) {
+
+            unique.set(
+                String(event.id),
+                event
+            );
+
+        }
+
+    }
+
+
+    return Array.from(
+        unique.values()
+    )
+    .map(
+        normalizeESPNEvent
+    )
+    .sort(
+        (a, b) =>
+            (a.timestamp || 0) -
+            (b.timestamp || 0)
+    );
+
+}
+
+
+// ============================================================
+// CARGAR JSON
+// ============================================================
 
 async function loadData() {
 
@@ -243,6 +709,7 @@ async function loadData() {
                 "utf8"
             );
 
+
         const data =
             JSON.parse(text);
 
@@ -253,6 +720,7 @@ async function loadData() {
         data.injuries ||= [];
         data.predictionBalance ||= {};
         data.meta ||= {};
+        data.news ||= [];
 
 
         return data;
@@ -262,10 +730,19 @@ async function loadData() {
         return {
 
             meta: {
-                leagueId: LEAGUE_ID,
-                season: SEASON,
-                league: "LaLiga",
-                seasonLabel: "2026/27"
+
+                leagueId:
+                    LEAGUE_ID,
+
+                season:
+                    SEASON,
+
+                league:
+                    "LaLiga",
+
+                seasonLabel:
+                    "2026/27"
+
             },
 
             matches: [],
@@ -276,10 +753,16 @@ async function loadData() {
 
             injuries: [],
 
+            news: [],
+
             predictionBalance: {
+
                 total: 0,
+
                 correct: 0,
+
                 accuracy: 0
+
             }
 
         };
@@ -289,168 +772,89 @@ async function loadData() {
 }
 
 
-// ------------------------------------------------------------
-// NORMALIZAR PARTIDO
-// ------------------------------------------------------------
+// ============================================================
+// FUSIONAR PARTIDOS ESPN
+// ============================================================
 
-function normalizeFixture(fixture) {
+function mergeESPNFixtures(
+    data,
+    fixtures
+) {
 
-    return {
+    const existing =
+        new Map();
 
-        id:
-            fixture.fixture?.id,
 
-        round:
-            fixture.league?.round || null,
+    for (
+        const match
+        of data.matches
+    ) {
 
-        date:
-            fixture.fixture?.date || null,
+        existing.set(
+            String(match.id),
+            match
+        );
 
-        timestamp:
-            fixture.fixture?.timestamp || null,
+        if (
+            match.sourceId
+        ) {
 
-        status:
-            fixture.fixture?.status?.short || null,
-
-        statusLong:
-            fixture.fixture?.status?.long || null,
-
-        venue: {
-
-            id:
-                fixture.fixture?.venue?.id || null,
-
-            name:
-                fixture.fixture?.venue?.name || null,
-
-            city:
-                fixture.fixture?.venue?.city || null
-
-        },
-
-        home: {
-
-            id:
-                fixture.teams?.home?.id,
-
-            name:
-                fixture.teams?.home?.name,
-
-            logo:
-                fixture.teams?.home?.logo
-
-        },
-
-        away: {
-
-            id:
-                fixture.teams?.away?.id,
-
-            name:
-                fixture.teams?.away?.name,
-
-            logo:
-                fixture.teams?.away?.logo
-
-        },
-
-        score: {
-
-            halftime:
-                fixture.score?.halftime || null,
-
-            fulltime:
-                fixture.score?.fulltime || null,
-
-            extratime:
-                fixture.score?.extratime || null,
-
-            penalty:
-                fixture.score?.penalty || null
+            existing.set(
+                `espn-${match.sourceId}`,
+                match
+            );
 
         }
 
-    };
-
-}
+    }
 
 
-// ------------------------------------------------------------
-// RESULTADO 1/X/2
-// ------------------------------------------------------------
-
-function getResult(match) {
-
-    const home =
-        match.score?.fulltime?.home;
-
-    const away =
-        match.score?.fulltime?.away;
-
-
-    if (
-        home === null ||
-        away === null ||
-        home === undefined ||
-        away === undefined
+    for (
+        const fixture
+        of fixtures
     ) {
 
-        return null;
-
-    }
-
-
-    if (home > away) {
-
-        return "1";
-
-    }
-
-
-    if (home < away) {
-
-        return "2";
-
-    }
-
-
-    return "X";
-
-}
-
-
-// ------------------------------------------------------------
-// FUSIONAR CALENDARIO
-// ------------------------------------------------------------
-
-function mergeFixtures(data, fixtures) {
-
-    const existing =
-        new Map(
-            data.matches.map(
-                match => [
-                    match.id,
-                    match
-                ]
-            )
-        );
-
-
-    for (const fixture of fixtures) {
-
-        const normalized =
-            normalizeFixture(fixture);
-
-
-        if (!normalized.id) {
+        if (!fixture.id) {
             continue;
         }
 
 
-        const old =
+        /*
+         * Intentamos localizar también
+         * un partido existente por equipos
+         * y fecha.
+         */
+
+        let old =
             existing.get(
-                normalized.id
+                String(fixture.id)
             );
+
+
+        if (!old) {
+
+            old =
+                data.matches.find(
+                    match =>
+
+                        match.home?.name ===
+                        fixture.home?.name &&
+
+                        match.away?.name ===
+                        fixture.away?.name &&
+
+                        Math.abs(
+                            number(
+                                match.timestamp
+                            ) -
+                            number(
+                                fixture.timestamp
+                            )
+                        ) <
+                        86400
+                );
+
+        }
 
 
         if (old) {
@@ -461,11 +865,31 @@ function mergeFixtures(data, fixtures) {
             const details =
                 old.details;
 
+            const oldId =
+                old.id;
+
 
             Object.assign(
                 old,
-                normalized
+                fixture
             );
+
+
+            /*
+             * Conservamos el ID antiguo
+             * si procedía de API-Football.
+             */
+
+            if (
+                oldId &&
+                !String(oldId)
+                    .startsWith("espn-")
+            ) {
+
+                old.id =
+                    oldId;
+
+            }
 
 
             if (prediction) {
@@ -485,9 +909,8 @@ function mergeFixtures(data, fixtures) {
 
         } else {
 
-            existing.set(
-                normalized.id,
-                normalized
+            data.matches.push(
+                fixture
             );
 
         }
@@ -496,308 +919,40 @@ function mergeFixtures(data, fixtures) {
 
 
     data.matches =
-        Array.from(
-            existing.values()
-        )
-        .sort(
-            (a, b) =>
-                (a.timestamp || 0) -
-                (b.timestamp || 0)
-        );
+        data.matches
+            .sort(
+                (a, b) =>
+                    (a.timestamp || 0) -
+                    (b.timestamp || 0)
+            );
 
 }
 
 
-// ------------------------------------------------------------
-// DETALLES DEL PARTIDO
-// ------------------------------------------------------------
+// ============================================================
+// RESULTADO
+// ============================================================
 
-function saveFixtureDetails(
-    match,
-    fixture
-) {
+function getResult(match) {
 
+    const home =
+        match.score?.fulltime?.home;
 
-    // --------------------------------------------------------
-    // ALINEACIONES
-    // --------------------------------------------------------
+    const away =
+        match.score?.fulltime?.away;
 
-    const lineups = [];
 
-
-    for (
-        const lineup
-        of fixture.lineups || []
-    ) {
-
-        lineups.push({
-
-            teamId:
-                lineup.team?.id || null,
-
-            teamName:
-                lineup.team?.name || null,
-
-            formation:
-                lineup.formation || null,
-
-            coach:
-                lineup.coach
-                    ? {
-                        id:
-                            lineup.coach.id || null,
-
-                        name:
-                            lineup.coach.name || null
-                    }
-                    : null,
-
-            starters:
-                (lineup.startXI || [])
-                .map(player => ({
-
-                    id:
-                        player.player?.id || null,
-
-                    name:
-                        player.player?.name || null,
-
-                    number:
-                        player.player?.number || null,
-
-                    position:
-                        player.player?.pos || null,
-
-                    grid:
-                        player.player?.grid || null
-
-                })),
-
-            substitutes:
-                (lineup.substitutes || [])
-                .map(player => ({
-
-                    id:
-                        player.player?.id || null,
-
-                    name:
-                        player.player?.name || null,
-
-                    number:
-                        player.player?.number || null,
-
-                    position:
-                        player.player?.pos || null
-
-                }))
-
-        });
-
-    }
-
-
-    // --------------------------------------------------------
-    // ESTADÍSTICAS
-    // --------------------------------------------------------
-
-    const statistics = [];
-
-
-    for (
-        const teamStats
-        of fixture.statistics || []
-    ) {
-
-        const stats =
-            teamStats.statistics || [];
-
-
-        statistics.push({
-
-            teamId:
-                teamStats.team?.id || null,
-
-            teamName:
-                teamStats.team?.name || null,
-
-            possession:
-                percentage(
-                    statisticValue(
-                        stats,
-                        "Ball Possession"
-                    )
-                ),
-
-            shotsTotal:
-                statisticValue(
-                    stats,
-                    "Total Shots"
-                ),
-
-            shotsOnTarget:
-                statisticValue(
-                    stats,
-                    "Shots on Goal"
-                ),
-
-            shotsOffTarget:
-                statisticValue(
-                    stats,
-                    "Shots off Goal"
-                ),
-
-            blockedShots:
-                statisticValue(
-                    stats,
-                    "Blocked Shots"
-                ),
-
-            corners:
-                statisticValue(
-                    stats,
-                    "Corner Kicks"
-                ),
-
-            fouls:
-                statisticValue(
-                    stats,
-                    "Fouls"
-                ),
-
-            offsides:
-                statisticValue(
-                    stats,
-                    "Offsides"
-                ),
-
-            yellowCards:
-                statisticValue(
-                    stats,
-                    "Yellow Cards"
-                ),
-
-            redCards:
-                statisticValue(
-                    stats,
-                    "Red Cards"
-                ),
-
-            goalkeeperSaves:
-                statisticValue(
-                    stats,
-                    "Goalkeeper Saves"
-                ),
-
-            passes:
-                statisticValue(
-                    stats,
-                    "Total passes"
-                ),
-
-            accuratePasses:
-                statisticValue(
-                    stats,
-                    "Passes accurate"
-                )
-
-        });
-
-    }
-
-
-    // --------------------------------------------------------
-    // JUGADORES
-    // --------------------------------------------------------
-
-    const players = [];
-
-
-    for (
-        const teamPlayers
-        of fixture.players || []
-    ) {
-
-        players.push({
-
-            teamId:
-                teamPlayers.team?.id || null,
-
-            teamName:
-                teamPlayers.team?.name || null,
-
-            players:
-                (teamPlayers.players || [])
-                .map(player => ({
-
-                    id:
-                        player.player?.id || null,
-
-                    name:
-                        player.player?.name || null,
-
-                    statistics:
-                        player.statistics || []
-
-                }))
-
-        });
-
-    }
-
-
-    // --------------------------------------------------------
-    // EVENTOS
-    // --------------------------------------------------------
-
-    const events =
-        (fixture.events || [])
-        .map(event => ({
-
-            minute:
-                event.time?.elapsed || null,
-
-            extra:
-                event.time?.extra || null,
-
-            teamId:
-                event.team?.id || null,
-
-            player:
-                event.player?.name || null,
-
-            assist:
-                event.assist?.name || null,
-
-            type:
-                event.type || null,
-
-            detail:
-                event.detail || null
-
-        }));
-
-
-    match.details = {
-
-        updatedAt:
-            new Date().toISOString(),
-
-        lineups,
-
-        statistics,
-
-        players,
-
-        events
-
-    };
+    return resultFromGoals(
+        home,
+        away
+    );
 
 }
 
 
-// ------------------------------------------------------------
-// HISTORIAL DE EQUIPO
-// ------------------------------------------------------------
+// ============================================================
+// HISTORIAL
+// ============================================================
 
 function teamHistory(
     data,
@@ -807,19 +962,25 @@ function teamHistory(
 
     return data.matches
 
-        .filter(match =>
+        .filter(
+            match =>
 
-            match.timestamp &&
-            match.timestamp < beforeTimestamp &&
+                match.timestamp &&
+                match.timestamp <
+                    beforeTimestamp &&
 
-            ["FT", "AET", "PEN"]
-                .includes(match.status) &&
+                ["FT", "AET", "PEN"]
+                    .includes(
+                        match.status
+                    ) &&
 
-            (
-                match.home?.id === teamId ||
-                match.away?.id === teamId
-            )
+                (
+                    String(match.home?.id) ===
+                    String(teamId) ||
 
+                    String(match.away?.id) ===
+                    String(teamId)
+                )
         )
 
         .sort(
@@ -831,9 +992,9 @@ function teamHistory(
 }
 
 
-// ------------------------------------------------------------
-// MÉTRICAS DE EQUIPO
-// ------------------------------------------------------------
+// ============================================================
+// MÉTRICAS
+// ============================================================
 
 function teamMetrics(
     data,
@@ -850,23 +1011,33 @@ function teamMetrics(
         );
 
 
-    if (venue === "home") {
+    if (
+        venue === "home"
+    ) {
 
         matches =
             matches.filter(
                 match =>
-                    match.home?.id === teamId
+                    String(
+                        match.home?.id
+                    ) ===
+                    String(teamId)
             );
 
     }
 
 
-    if (venue === "away") {
+    if (
+        venue === "away"
+    ) {
 
         matches =
             matches.filter(
                 match =>
-                    match.away?.id === teamId
+                    String(
+                        match.away?.id
+                    ) ===
+                    String(teamId)
             );
 
     }
@@ -883,10 +1054,15 @@ function teamMetrics(
     function aggregate(list) {
 
         let gf = 0;
+
         let ga = 0;
+
         let points = 0;
+
         let wins = 0;
+
         let draws = 0;
+
         let losses = 0;
 
 
@@ -895,32 +1071,44 @@ function teamMetrics(
             of list
         ) {
 
-            const home =
-                match.home.id === teamId;
+            const isHome =
+                String(
+                    match.home?.id
+                ) ===
+                String(teamId);
 
 
             const scored =
-                home
-                    ? match.score.fulltime.home
-                    : match.score.fulltime.away;
+                isHome
+                    ? match.score?.fulltime?.home
+                    : match.score?.fulltime?.away;
 
 
             const conceded =
-                home
-                    ? match.score.fulltime.away
-                    : match.score.fulltime.home;
+                isHome
+                    ? match.score?.fulltime?.away
+                    : match.score?.fulltime?.home;
 
 
-            gf += number(scored);
-            ga += number(conceded);
+            gf += number(
+                scored
+            );
+
+            ga += number(
+                conceded
+            );
 
 
-            if (scored > conceded) {
+            if (
+                scored > conceded
+            ) {
 
                 points += 3;
                 wins++;
 
-            } else if (scored === conceded) {
+            } else if (
+                scored === conceded
+            ) {
 
                 points++;
                 draws++;
@@ -987,9 +1175,164 @@ function teamMetrics(
 }
 
 
-// ------------------------------------------------------------
+// ============================================================
+// FORMACIONES
+// ============================================================
+
+function formationMetrics(
+    data,
+    teamId,
+    beforeTimestamp
+) {
+
+    const formations = {};
+
+
+    for (
+        const match
+        of data.matches
+    ) {
+
+        if (
+            !match.timestamp ||
+            match.timestamp >=
+                beforeTimestamp
+        ) {
+            continue;
+        }
+
+
+        if (
+            !["FT", "AET", "PEN"]
+                .includes(
+                    match.status
+                )
+        ) {
+            continue;
+        }
+
+
+        const lineups =
+            match.details?.lineups;
+
+
+        if (
+            !Array.isArray(lineups)
+        ) {
+            continue;
+        }
+
+
+        const lineup =
+            lineups.find(
+                x =>
+                    String(x.teamId) ===
+                    String(teamId)
+            );
+
+
+        if (
+            !lineup?.formation
+        ) {
+            continue;
+        }
+
+
+        const formation =
+            lineup.formation;
+
+
+        if (
+            !formations[formation]
+        ) {
+
+            formations[formation] = {
+
+                matches: 0,
+
+                wins: 0,
+
+                draws: 0,
+
+                losses: 0,
+
+                gf: 0,
+
+                ga: 0
+
+            };
+
+        }
+
+
+        const row =
+            formations[formation];
+
+
+        row.matches++;
+
+
+        const isHome =
+            String(
+                match.home?.id
+            ) ===
+            String(teamId);
+
+
+        const gf =
+            isHome
+                ? number(
+                    match.score?.fulltime?.home
+                )
+                : number(
+                    match.score?.fulltime?.away
+                );
+
+
+        const ga =
+            isHome
+                ? number(
+                    match.score?.fulltime?.away
+                )
+                : number(
+                    match.score?.fulltime?.home
+                );
+
+
+        row.gf += gf;
+
+        row.ga += ga;
+
+
+        if (
+            gf > ga
+        ) {
+
+            row.wins++;
+
+        } else if (
+            gf === ga
+        ) {
+
+            row.draws++;
+
+        } else {
+
+            row.losses++;
+
+        }
+
+    }
+
+
+    return formations;
+
+}
+
+
+// ============================================================
 // PORTEROS
-// ------------------------------------------------------------
+// ============================================================
 
 function goalkeeperMetrics(
     data,
@@ -998,6 +1341,7 @@ function goalkeeperMetrics(
 ) {
 
     let saves = 0;
+
     let conceded = 0;
 
     let appearances = 0;
@@ -1010,7 +1354,8 @@ function goalkeeperMetrics(
 
         if (
             !match.timestamp ||
-            match.timestamp >= beforeTimestamp
+            match.timestamp >=
+                beforeTimestamp
         ) {
             continue;
         }
@@ -1018,24 +1363,22 @@ function goalkeeperMetrics(
 
         if (
             !["FT", "AET", "PEN"]
-                .includes(match.status)
+                .includes(
+                    match.status
+                )
         ) {
-            continue;
-        }
-
-
-        if (!match.details?.players) {
             continue;
         }
 
 
         for (
             const team
-            of match.details.players
+            of match.details?.players || []
         ) {
 
             if (
-                team.teamId !== teamId
+                String(team.teamId) !==
+                String(teamId)
             ) {
                 continue;
             }
@@ -1057,12 +1400,15 @@ function goalkeeperMetrics(
 
                 const position =
                     String(
-                        stat.games?.position || ""
+                        stat.games?.position ||
+                        ""
                     )
                     .toLowerCase();
 
 
-                if (position !== "g") {
+                if (
+                    position !== "g"
+                ) {
                     continue;
                 }
 
@@ -1089,7 +1435,8 @@ function goalkeeperMetrics(
 
 
     const shots =
-        saves + conceded;
+        saves +
+        conceded;
 
 
     return {
@@ -1118,144 +1465,9 @@ function goalkeeperMetrics(
 }
 
 
-// ------------------------------------------------------------
-// FORMACIONES
-// ------------------------------------------------------------
-
-function formationMetrics(
-    data,
-    teamId,
-    beforeTimestamp
-) {
-
-    const formations = {};
-
-
-    for (
-        const match
-        of data.matches
-    ) {
-
-        if (
-            !match.timestamp ||
-            match.timestamp >= beforeTimestamp
-        ) {
-            continue;
-        }
-
-
-        if (
-            !["FT", "AET", "PEN"]
-                .includes(match.status)
-        ) {
-            continue;
-        }
-
-
-        if (!match.details?.lineups) {
-            continue;
-        }
-
-
-        const lineup =
-            match.details.lineups.find(
-                x =>
-                    x.teamId === teamId
-            );
-
-
-        if (
-            !lineup?.formation
-        ) {
-            continue;
-        }
-
-
-        const formation =
-            lineup.formation;
-
-
-        if (!formations[formation]) {
-
-            formations[formation] = {
-
-                matches: 0,
-
-                wins: 0,
-
-                draws: 0,
-
-                losses: 0,
-
-                gf: 0,
-
-                ga: 0
-
-            };
-
-        }
-
-
-        const row =
-            formations[formation];
-
-
-        row.matches++;
-
-
-        const home =
-            match.home.id === teamId;
-
-
-        const gf =
-            home
-                ? number(
-                    match.score.fulltime.home
-                )
-                : number(
-                    match.score.fulltime.away
-                );
-
-
-        const ga =
-            home
-                ? number(
-                    match.score.fulltime.away
-                )
-                : number(
-                    match.score.fulltime.home
-                );
-
-
-        row.gf += gf;
-        row.ga += ga;
-
-
-        if (gf > ga) {
-
-            row.wins++;
-
-        } else if (gf === ga) {
-
-            row.draws++;
-
-        } else {
-
-            row.losses++;
-
-        }
-
-    }
-
-
-    return formations;
-
-}
-
-
-// ------------------------------------------------------------
+// ============================================================
 // PRONÓSTICO
-// ------------------------------------------------------------
+// ============================================================
 
 function createPrediction(
     data,
@@ -1300,63 +1512,61 @@ function createPrediction(
         );
 
 
-    /*
-     * MODELO INICIAL
-     *
-     * 30% forma
-     * 30% ataque/defensa
-     * 20% localía
-     * 10% portero
-     * 10% ausencias/táctica
-     *
-     * Lo importante es que los pesos quedan registrados
-     * para poder estudiar posteriormente qué variables
-     * funcionan realmente.
-     */
-
-
     let homeScore = 1;
+
     let awayScore = 1;
 
 
-    // FORMA
+    /*
+     * FORMA
+     */
 
     homeScore +=
         (
             homeRecent.last5.pointsPerGame -
             awayRecent.last5.pointsPerGame
-        ) * 0.40;
+        ) *
+        0.40;
 
 
     awayScore +=
         (
             awayRecent.last5.pointsPerGame -
             homeRecent.last5.pointsPerGame
-        ) * 0.40;
+        ) *
+        0.40;
 
 
-    // ATAQUE / DEFENSA
+    /*
+     * ATAQUE / DEFENSA
+     */
 
     homeScore +=
         (
             home.venue.gfPerGame -
             away.venue.gaPerGame
-        ) * 0.25;
+        ) *
+        0.25;
 
 
     awayScore +=
         (
             away.venue.gfPerGame -
             home.venue.gaPerGame
-        ) * 0.25;
+        ) *
+        0.25;
 
 
-    // VENTAJA DE CAMPO
+    /*
+     * LOCALÍA
+     */
 
     homeScore += 0.30;
 
 
-    // PORTEROS
+    /*
+     * PORTEROS
+     */
 
     const homeGK =
         goalkeeperMetrics(
@@ -1375,27 +1585,31 @@ function createPrediction(
 
 
     if (
-        homeGK.savePercentage !== null
+        homeGK.savePercentage !==
+        null
     ) {
 
         homeScore +=
             (
                 homeGK.savePercentage -
                 70
-            ) / 100;
+            ) /
+            100;
 
     }
 
 
     if (
-        awayGK.savePercentage !== null
+        awayGK.savePercentage !==
+        null
     ) {
 
         awayScore +=
             (
                 awayGK.savePercentage -
                 70
-            ) / 100;
+            ) /
+            100;
 
     }
 
@@ -1421,7 +1635,8 @@ function createPrediction(
             Math.abs(
                 homeScore -
                 awayScore
-            ) * 0.16
+            ) *
+            0.16
         );
 
 
@@ -1432,15 +1647,18 @@ function createPrediction(
 
 
     const p1 =
-        homeScore / total;
+        homeScore /
+        total;
 
 
     const px =
-        drawScore / total;
+        drawScore /
+        total;
 
 
     const p2 =
-        awayScore / total;
+        awayScore /
+        total;
 
 
     let sign = "X";
@@ -1471,22 +1689,23 @@ function createPrediction(
         );
 
 
-    let difficulty;
+    let difficulty =
+        "difícil";
 
 
-    if (confidence >= 0.58) {
+    if (
+        confidence >= 0.58
+    ) {
 
-        difficulty = "fácil";
+        difficulty =
+            "fácil";
 
     } else if (
         confidence >= 0.48
     ) {
 
-        difficulty = "media";
-
-    } else {
-
-        difficulty = "difícil";
+        difficulty =
+            "media";
 
     }
 
@@ -1530,19 +1749,24 @@ function createPrediction(
         model: {
 
             version:
-                "1.0",
+                "2.0-ESPN-APIFOOTBALL",
 
             weights: {
 
-                form: 0.30,
+                form:
+                    0.30,
 
-                attackDefense: 0.30,
+                attackDefense:
+                    0.30,
 
-                homeAdvantage: 0.20,
+                homeAdvantage:
+                    0.20,
 
-                goalkeeper: 0.10,
+                goalkeeper:
+                    0.10,
 
-                tacticalAbsences: 0.10
+                tacticalAbsences:
+                    0.10
 
             }
 
@@ -1589,11 +1813,954 @@ function createPrediction(
 }
 
 
-// ------------------------------------------------------------
-// BALANCE DE PRONÓSTICOS
-// ------------------------------------------------------------
+// ============================================================
+// CLASIFICACIÓN ESPN
+// ============================================================
 
-function updatePredictionBalance(data) {
+async function updateStandingsESPN(
+    data
+) {
+
+    console.log(
+        "Actualizando clasificación desde ESPN..."
+    );
+
+
+    try {
+
+        const url =
+            `${ESPN_V2}/${ESPN_LEAGUE}/standings` +
+            `?season=${SEASON}`;
+
+
+        const json =
+            await fetchJSON(
+                url
+            );
+
+
+        const children =
+            safeArray(
+                json.children
+            );
+
+
+        const rows = [];
+
+
+        for (
+            const group
+            of children
+        ) {
+
+            for (
+                const entry
+                of safeArray(
+                    group.standings?.entries
+                )
+            ) {
+
+                const team =
+                    entry.team;
+
+
+                const stats =
+                    safeArray(
+                        entry.stats
+                    );
+
+
+                const value =
+                    name => {
+
+                        const item =
+                            stats.find(
+                                x =>
+                                    x.name ===
+                                    name
+                            );
+
+                        return item?.value ??
+                            item?.displayValue ??
+                            null;
+
+                    };
+
+
+                rows.push({
+
+                    rank:
+                        number(
+                            value("rank"),
+                            rows.length + 1
+                        ),
+
+                    team: {
+
+                        id:
+                            team?.id ||
+                            null,
+
+                        name:
+                            team?.displayName ||
+                            team?.name ||
+                            null,
+
+                        logo:
+                            team?.logos?.[0]?.href ||
+                            null
+
+                    },
+
+                    points:
+                        number(
+                            value("points")
+                        ),
+
+                    goalsDiff:
+                        number(
+                            value("differential")
+                        ),
+
+                    form:
+                        value("streak") ||
+                        value("form") ||
+                        null,
+
+                    played:
+                        number(
+                            value("gamesPlayed")
+                        ),
+
+                    wins:
+                        number(
+                            value("wins")
+                        ),
+
+                    draws:
+                        number(
+                            value("ties")
+                        ),
+
+                    losses:
+                        number(
+                            value("losses")
+                        ),
+
+                    gf:
+                        number(
+                            value("pointsFor")
+                        ),
+
+                    ga:
+                        number(
+                            value("pointsAgainst")
+                        )
+
+                });
+
+            }
+
+        }
+
+
+        if (
+            rows.length
+        ) {
+
+            data.standings =
+                rows;
+
+            console.log(
+                `Clasificación ESPN: ${rows.length} equipos`
+            );
+
+        } else {
+
+            console.warn(
+                "ESPN devolvió una clasificación vacía"
+            );
+
+        }
+
+    } catch (error) {
+
+        console.warn(
+            "No se pudo actualizar clasificación ESPN:",
+            error.message
+        );
+
+    }
+
+}
+
+
+// ============================================================
+// GOLEADORES
+// ============================================================
+
+async function updateScorers(
+    data
+) {
+
+    /*
+     * ESPN no garantiza el endpoint de leaders
+     * de fútbol de la misma forma para todas las
+     * temporadas.
+     *
+     * Primero intentamos la fuente web.
+     * Si no existe, conservamos los datos anteriores.
+     */
+
+    try {
+
+        const url =
+            `${ESPN_SITE}/${ESPN_LEAGUE}/leaders`;
+
+
+        const json =
+            await fetchJSON(
+                url
+            );
+
+
+        const leaders =
+            safeArray(
+                json.leaders
+            );
+
+
+        const scorerRows = [];
+
+
+        for (
+            const category
+            of leaders
+        ) {
+
+            const name =
+                String(
+                    category.name ||
+                    category.displayName ||
+                    ""
+                )
+                .toLowerCase();
+
+
+            if (
+                !name.includes("goal") &&
+                !name.includes("scor")
+            ) {
+                continue;
+            }
+
+
+            for (
+                const athlete
+                of safeArray(
+                    category.leaders
+                )
+            ) {
+
+                scorerRows.push({
+
+                    player:
+                        athlete.athlete ||
+                        null,
+
+                    team:
+                        athlete.athlete?.team ||
+                        null,
+
+                    goals:
+                        number(
+                            athlete.value
+                        ),
+
+                    assists:
+                        null,
+
+                    appearances:
+                        null,
+
+                    minutes:
+                        null,
+
+                    rating:
+                        null
+
+                });
+
+            }
+
+        }
+
+
+        if (
+            scorerRows.length
+        ) {
+
+            data.scorers =
+                scorerRows
+                    .sort(
+                        (a, b) =>
+                            b.goals -
+                            a.goals
+                    )
+                    .slice(
+                        0,
+                        20
+                    );
+
+            console.log(
+                `Goleadores ESPN: ${data.scorers.length}`
+            );
+
+        } else {
+
+            console.warn(
+                "ESPN no devolvió goleadores"
+            );
+
+        }
+
+    } catch (error) {
+
+        console.warn(
+            "No se pudieron actualizar goleadores ESPN:",
+            error.message
+        );
+
+    }
+
+}
+
+
+// ============================================================
+// NOTICIAS ESPN
+// ============================================================
+
+async function updateNews(
+    data
+) {
+
+    try {
+
+        const url =
+            `${ESPN_SITE}/${ESPN_LEAGUE}/news?limit=20`;
+
+
+        const json =
+            await fetchJSON(
+                url
+            );
+
+
+        data.news =
+            safeArray(
+                json.articles
+            )
+            .slice(
+                0,
+                20
+            )
+            .map(
+                article => ({
+
+                    id:
+                        article.id ||
+                        null,
+
+                    headline:
+                        article.headline ||
+                        article.title ||
+                        null,
+
+                    description:
+                        article.description ||
+                        null,
+
+                    published:
+                        article.published ||
+                        null,
+
+                    link:
+                        article.links?.web?.href ||
+                        null,
+
+                    image:
+                        article.images?.[0]?.url ||
+                        null
+
+                })
+            );
+
+
+        console.log(
+            `Noticias ESPN: ${data.news.length}`
+        );
+
+    } catch (error) {
+
+        console.warn(
+            "No se pudieron actualizar noticias:",
+            error.message
+        );
+
+    }
+
+}
+
+
+// ============================================================
+// INTENTO API-FOOTBALL
+// ============================================================
+
+async function tryAPIfootballEnhancement(
+    data
+) {
+
+    if (!API_KEY) {
+
+        console.warn(
+            "API_FOOTBALL_KEY no disponible. " +
+            "Se continuará exclusivamente con ESPN."
+        );
+
+        return;
+
+    }
+
+
+    console.log(
+        "Intentando comprobar disponibilidad de API-Football 2026..."
+    );
+
+
+    try {
+
+        const test =
+            await apiFootball(
+                "/leagues",
+                {
+                    id:
+                        LEAGUE_ID,
+
+                    season:
+                        SEASON
+                }
+            );
+
+
+        const season =
+            test.response?.[0]
+                ?.seasons
+                ?.find(
+                    x =>
+                        x.year ===
+                        SEASON
+                );
+
+
+        if (
+            !season
+        ) {
+
+            console.warn(
+                "API-Football no tiene disponible " +
+                "la temporada 2026/27 para esta cuenta."
+            );
+
+            return;
+
+        }
+
+
+        console.log(
+            "API-Football 2026/27 disponible."
+        );
+
+
+        /*
+         * Sólo si realmente existe la temporada
+         * intentamos utilizarla.
+         */
+
+        const fixtures =
+            await apiFootball(
+                "/fixtures",
+                {
+                    league:
+                        LEAGUE_ID,
+
+                    season:
+                        SEASON
+                }
+            );
+
+
+        const response =
+            fixtures.response ||
+            [];
+
+
+        if (
+            response.length
+        ) {
+
+            /*
+             * En caso de disponer de la temporada,
+             * incorporamos información adicional.
+             */
+
+            for (
+                const fixture
+                of response
+            ) {
+
+                const id =
+                    fixture.fixture?.id;
+
+
+                const match =
+                    data.matches.find(
+                        x =>
+                            String(
+                                x.apiFootballId
+                            ) ===
+                            String(id)
+                    );
+
+
+                if (match) {
+
+                    match.apiFootball =
+                        fixture;
+
+                }
+
+            }
+
+        }
+
+    } catch (error) {
+
+        /*
+         * MUY IMPORTANTE:
+         *
+         * No hacemos process.exit(1).
+         *
+         * El problema de temporada de la cuenta Free
+         * no debe impedir que ESPN actualice nuestra web.
+         */
+
+        console.warn(
+            "API-Football no disponible para 2026/27:",
+            error.message
+        );
+
+    }
+
+}
+
+
+// ============================================================
+// DETALLES API-FOOTBALL
+// ============================================================
+
+async function getFixtureDetails(
+    ids
+) {
+
+    if (!API_KEY) {
+
+        return [];
+
+    }
+
+
+    const results = [];
+
+
+    for (
+        let i = 0;
+        i < ids.length;
+        i += 20
+    ) {
+
+        const chunk =
+            ids.slice(
+                i,
+                i + 20
+            );
+
+
+        try {
+
+            const result =
+                await apiFootball(
+                    "/fixtures",
+                    {
+                        ids:
+                            chunk.join("-")
+                    }
+                );
+
+
+            results.push(
+                ...(result.response || [])
+            );
+
+        } catch (error) {
+
+            console.warn(
+                "Error obteniendo detalles:",
+                error.message
+            );
+
+        }
+
+    }
+
+
+    return results;
+
+}
+
+
+// ============================================================
+// DETALLES
+// ============================================================
+
+function saveFixtureDetails(
+    match,
+    fixture
+) {
+
+    const lineups = [];
+
+
+    for (
+        const lineup
+        of fixture.lineups || []
+    ) {
+
+        lineups.push({
+
+            teamId:
+                lineup.team?.id ||
+                null,
+
+            teamName:
+                lineup.team?.name ||
+                null,
+
+            formation:
+                lineup.formation ||
+                null,
+
+            coach:
+                lineup.coach
+                    ? {
+
+                        id:
+                            lineup.coach.id ||
+                            null,
+
+                        name:
+                            lineup.coach.name ||
+                            null
+
+                    }
+                    : null,
+
+            starters:
+                safeArray(
+                    lineup.startXI
+                )
+                .map(
+                    player => ({
+
+                        id:
+                            player.player?.id ||
+                            null,
+
+                        name:
+                            player.player?.name ||
+                            null,
+
+                        number:
+                            player.player?.number ||
+                            null,
+
+                        position:
+                            player.player?.pos ||
+                            null,
+
+                        grid:
+                            player.player?.grid ||
+                            null
+
+                    })
+                ),
+
+            substitutes:
+                safeArray(
+                    lineup.substitutes
+                )
+                .map(
+                    player => ({
+
+                        id:
+                            player.player?.id ||
+                            null,
+
+                        name:
+                            player.player?.name ||
+                            null,
+
+                        number:
+                            player.player?.number ||
+                            null,
+
+                        position:
+                            player.player?.pos ||
+                            null
+
+                    })
+                )
+
+        });
+
+    }
+
+
+    const statistics = [];
+
+
+    for (
+        const teamStats
+        of fixture.statistics || []
+    ) {
+
+        const stats =
+            teamStats.statistics ||
+            [];
+
+
+        const statisticValue =
+            type => {
+
+                const item =
+                    stats.find(
+                        x =>
+                            String(
+                                x.type
+                            )
+                            .toLowerCase() ===
+                            String(
+                                type
+                            )
+                            .toLowerCase()
+                    );
+
+                return item?.value ??
+                    null;
+
+            };
+
+
+        statistics.push({
+
+            teamId:
+                teamStats.team?.id ||
+                null,
+
+            teamName:
+                teamStats.team?.name ||
+                null,
+
+            possession:
+                percentage(
+                    statisticValue(
+                        "Ball Possession"
+                    )
+                ),
+
+            shotsTotal:
+                statisticValue(
+                    "Total Shots"
+                ),
+
+            shotsOnTarget:
+                statisticValue(
+                    "Shots on Goal"
+                ),
+
+            shotsOffTarget:
+                statisticValue(
+                    "Shots off Goal"
+                ),
+
+            blockedShots:
+                statisticValue(
+                    "Blocked Shots"
+                ),
+
+            corners:
+                statisticValue(
+                    "Corner Kicks"
+                ),
+
+            fouls:
+                statisticValue(
+                    "Fouls"
+                ),
+
+            offsides:
+                statisticValue(
+                    "Offsides"
+                ),
+
+            yellowCards:
+                statisticValue(
+                    "Yellow Cards"
+                ),
+
+            redCards:
+                statisticValue(
+                    "Red Cards"
+                ),
+
+            goalkeeperSaves:
+                statisticValue(
+                    "Goalkeeper Saves"
+                ),
+
+            passes:
+                statisticValue(
+                    "Total passes"
+                ),
+
+            accuratePasses:
+                statisticValue(
+                    "Passes accurate"
+                )
+
+        });
+
+    }
+
+
+    const players = [];
+
+
+    for (
+        const teamPlayers
+        of fixture.players || []
+    ) {
+
+        players.push({
+
+            teamId:
+                teamPlayers.team?.id ||
+                null,
+
+            teamName:
+                teamPlayers.team?.name ||
+                null,
+
+            players:
+                safeArray(
+                    teamPlayers.players
+                )
+                .map(
+                    player => ({
+
+                        id:
+                            player.player?.id ||
+                            null,
+
+                        name:
+                            player.player?.name ||
+                            null,
+
+                        statistics:
+                            player.statistics ||
+                            []
+
+                    })
+                )
+
+        });
+
+    }
+
+
+    const events =
+        safeArray(
+            fixture.events
+        )
+        .map(
+            event => ({
+
+                minute:
+                    event.time?.elapsed ||
+                    null,
+
+                extra:
+                    event.time?.extra ||
+                    null,
+
+                teamId:
+                    event.team?.id ||
+                    null,
+
+                player:
+                    event.player?.name ||
+                    null,
+
+                assist:
+                    event.assist?.name ||
+                    null,
+
+                type:
+                    event.type ||
+                    null,
+
+                detail:
+                    event.detail ||
+                    null
+
+            })
+        );
+
+
+    match.details = {
+
+        updatedAt:
+            new Date().toISOString(),
+
+        lineups,
+
+        statistics,
+
+        players,
+
+        events
+
+    };
+
+}
+
+
+// ============================================================
+// BALANCE
+// ============================================================
+
+function updatePredictionBalance(
+    data
+) {
 
     const balance = {
 
@@ -1658,7 +2825,9 @@ function updatePredictionBalance(data) {
 
         if (
             !["FT", "AET", "PEN"]
-                .includes(match.status)
+                .includes(
+                    match.status
+                )
         ) {
             continue;
         }
@@ -1695,11 +2864,14 @@ function updatePredictionBalance(data) {
             balance.bySign[prediction]
         ) {
 
-            balance.bySign[prediction].total++;
+            balance.bySign[prediction]
+                .total++;
+
 
             if (correct) {
 
-                balance.bySign[prediction].correct++;
+                balance.bySign[prediction]
+                    .correct++;
 
             }
 
@@ -1712,14 +2884,21 @@ function updatePredictionBalance(data) {
 
 
         if (
-            balance.byDifficulty[difficulty]
+            balance.byDifficulty[
+                difficulty
+            ]
         ) {
 
-            balance.byDifficulty[difficulty].total++;
+            balance.byDifficulty[
+                difficulty
+            ].total++;
+
 
             if (correct) {
 
-                balance.byDifficulty[difficulty].correct++;
+                balance.byDifficulty[
+                    difficulty
+                ].correct++;
 
             }
 
@@ -1746,439 +2925,13 @@ function updatePredictionBalance(data) {
 }
 
 
-// ------------------------------------------------------------
-// OBTENER DETALLES EN GRUPOS DE 20
-// ------------------------------------------------------------
-
-async function getFixtureDetails(ids) {
-
-    const results = [];
-
-
-    for (
-        let i = 0;
-        i < ids.length;
-        i += 20
-    ) {
-
-        const chunk =
-            ids.slice(
-                i,
-                i + 20
-            );
-
-
-        const result =
-            await api(
-                "/fixtures",
-                {
-                    ids:
-                        chunk.join("-")
-                }
-            );
-
-
-        results.push(
-            ...(result.response || [])
-        );
-
-    }
-
-
-    return results;
-
-}
-
-
-// ------------------------------------------------------------
-// PROGRAMA PRINCIPAL
-// ------------------------------------------------------------
-
-async function main() {
-
-    const data =
-        await loadData();
-
-
-    const now =
-        Math.floor(
-            Date.now() / 1000
-        );
-
-
-    const recentLimit =
-        now -
-        14 * 24 * 60 * 60;
-
-
-    const futureLimit =
-        now +
-        10 * 24 * 60 * 60;
-
-
-    console.log(
-        "=========================================="
-    );
-
-    console.log(
-        "ACTUALIZACIÓN LALIGA 2026/27"
-    );
-
-    console.log(
-        "=========================================="
-    );
-
-
-    // --------------------------------------------------------
-    // 1. CALENDARIO
-    // --------------------------------------------------------
-
-    console.log(
-        "1. Descargando calendario..."
-    );
-
-
-    const fixtures =
-        await api(
-            "/fixtures",
-            {
-                league:
-                    LEAGUE_ID,
-
-                season:
-                    SEASON
-            }
-        );
-
-
-    mergeFixtures(
-        data,
-        fixtures.response || []
-    );
-
-
-    // --------------------------------------------------------
-    // 2. CLASIFICACIÓN
-    // --------------------------------------------------------
-
-    console.log(
-        "2. Descargando clasificación..."
-    );
-
-
-    try {
-
-        const standings =
-            await api(
-                "/standings",
-                {
-                    league:
-                        LEAGUE_ID,
-
-                    season:
-                        SEASON
-                }
-            );
-
-
-        const table =
-            standings
-                .response?.[0]
-                ?.league
-                ?.standings?.[0] || [];
-
-
-        data.standings =
-            table.map(row => ({
-
-                rank:
-                    row.rank,
-
-                team:
-                    row.team
-                        ? {
-
-                            id:
-                                row.team.id,
-
-                            name:
-                                row.team.name,
-
-                            logo:
-                                row.team.logo
-
-                        }
-                        : null,
-
-                points:
-                    row.points,
-
-                goalsDiff:
-                    row.goalsDiff,
-
-                form:
-                    row.form,
-
-                played:
-                    row.all?.played,
-
-                wins:
-                    row.all?.win,
-
-                draws:
-                    row.all?.draw,
-
-                losses:
-                    row.all?.lose,
-
-                gf:
-                    row.all?.goals?.for,
-
-                ga:
-                    row.all?.goals?.against,
-
-                home:
-                    row.home,
-
-                away:
-                    row.away
-
-            }));
-
-
-    } catch (error) {
-
-        console.warn(
-            "No se pudo actualizar clasificación:",
-            error.message
-        );
-
-    }
-
-
-    // --------------------------------------------------------
-    // 3. GOLEADORES
-    // --------------------------------------------------------
-
-    console.log(
-        "3. Descargando goleadores..."
-    );
-
-
-    try {
-
-        const scorers =
-            await api(
-                "/players/topscorers",
-                {
-                    league:
-                        LEAGUE_ID,
-
-                    season:
-                        SEASON
-                }
-            );
-
-
-        data.scorers =
-            (scorers.response || [])
-            .slice(0, 20)
-            .map(row => {
-
-                const stat =
-                    row.statistics?.[0];
-
-
-                return {
-
-                    player:
-                        row.player,
-
-                    team:
-                        stat?.team || null,
-
-                    goals:
-                        stat?.goals || null,
-
-                    assists:
-                        stat?.goals?.assists ?? null,
-
-                    appearances:
-                        stat?.games?.appearences ?? null,
-
-                    minutes:
-                        stat?.games?.minutes ?? null,
-
-                    rating:
-                        stat?.games?.rating ?? null
-
-                };
-
-            });
-
-
-    } catch (error) {
-
-        console.warn(
-            "No se pudieron actualizar goleadores:",
-            error.message
-        );
-
-    }
-
-
-    // --------------------------------------------------------
-    // 4. LESIONES
-    // --------------------------------------------------------
-
-    console.log(
-        "4. Descargando lesiones/sanciones..."
-    );
-
-
-    try {
-
-        const injuries =
-            await api(
-                "/injuries",
-                {
-                    league:
-                        LEAGUE_ID,
-
-                    season:
-                        SEASON
-                }
-            );
-
-
-        data.injuries =
-            injuries.response || [];
-
-
-    } catch (error) {
-
-        console.warn(
-            "No se pudieron actualizar lesiones:",
-            error.message
-        );
-
-    }
-
-
-    // --------------------------------------------------------
-    // 5. DETALLES DE PARTIDOS
-    // --------------------------------------------------------
-
-    console.log(
-        "5. Buscando partidos que necesitan detalles..."
-    );
-
-
-    const candidates =
-        data.matches
-
-            .filter(match => {
-
-                const timestamp =
-                    match.timestamp || 0;
-
-
-                const finished =
-                    [
-                        "FT",
-                        "AET",
-                        "PEN"
-                    ].includes(
-                        match.status
-                    );
-
-
-                const recent =
-                    timestamp >=
-                    recentLimit;
-
-
-                const upcoming =
-                    timestamp >= now &&
-                    timestamp <= futureLimit;
-
-
-                return (
-                    !match.details &&
-                    (
-                        (finished && recent) ||
-                        upcoming
-                    )
-                );
-
-            })
-
-            .sort(
-                (a, b) =>
-                    (a.timestamp || 0) -
-                    (b.timestamp || 0)
-            )
-
-            .slice(
-                0,
-                MAX_DETAIL_FIXTURES
-            );
-
-
-    if (candidates.length) {
-
-        console.log(
-            `Detalles para ${candidates.length} partidos`
-        );
-
-
-        const details =
-            await getFixtureDetails(
-                candidates.map(
-                    x => x.id
-                )
-            );
-
-
-        const detailMap =
-            new Map(
-                details.map(
-                    x => [
-                        x.fixture?.id,
-                        x
-                    ]
-                )
-            );
-
-
-        for (
-            const match
-            of candidates
-        ) {
-
-            const fixture =
-                detailMap.get(
-                    match.id
-                );
-
-
-            if (fixture) {
-
-                saveFixtureDetails(
-                    match,
-                    fixture
-                );
-
-            }
-
-        }
-
-    }
-
-
-    // --------------------------------------------------------
-    // 6. RESULTADOS
-    // --------------------------------------------------------
+// ============================================================
+// ACTUALIZAR RESULTADOS
+// ============================================================
+
+function updateResults(
+    data
+) {
 
     for (
         const match
@@ -2186,31 +2939,32 @@ async function main() {
     ) {
 
         if (
-            [
-                "FT",
-                "AET",
-                "PEN"
-            ].includes(
-                match.status
-            )
+            ["FT", "AET", "PEN"]
+                .includes(
+                    match.status
+                )
         ) {
 
             match.result =
-                getResult(match);
+                getResult(
+                    match
+                );
 
         }
 
     }
 
+}
 
-    // --------------------------------------------------------
-    // 7. PRONÓSTICOS
-    // --------------------------------------------------------
 
-    console.log(
-        "6. Actualizando pronósticos..."
-    );
+// ============================================================
+// PRONÓSTICOS
+// ============================================================
 
+function updatePredictions(
+    data,
+    now
+) {
 
     for (
         const match
@@ -2224,26 +2978,27 @@ async function main() {
         }
 
 
-        // Sólo partidos futuros.
-
         if (
-            match.timestamp <= now
+            match.timestamp <=
+            now
         ) {
             continue;
         }
 
 
+        /*
+         * Los partidos sin estadísticas
+         * suficientes reciben igualmente
+         * un pronóstico básico.
+         */
+
         const hours =
             (
                 match.timestamp -
                 now
-            ) / 3600;
+            ) /
+            3600;
 
-
-        /*
-         * El pronóstico queda congelado
-         * 12 horas antes del comienzo.
-         */
 
         if (
             !match.prediction ||
@@ -2265,7 +3020,8 @@ async function main() {
             ) {
 
                 match.prediction.lockedAt =
-                    new Date().toISOString();
+                    new Date()
+                        .toISOString();
 
             }
 
@@ -2275,19 +3031,316 @@ async function main() {
         ) {
 
             match.prediction.lockedAt =
-                new Date().toISOString();
+                new Date()
+                    .toISOString();
+
+        }
+
+    }
+
+}
+
+
+// ============================================================
+// MAIN
+// ============================================================
+
+async function main() {
+
+    const data =
+        await loadData();
+
+
+    const now =
+        Math.floor(
+            Date.now() /
+            1000
+        );
+
+
+    console.log(
+        "=========================================="
+    );
+
+    console.log(
+        "ACTUALIZACIÓN LALIGA 2026/27"
+    );
+
+    console.log(
+        "=========================================="
+    );
+
+
+    // ========================================================
+    // 1. CALENDARIO ESPN
+    // ========================================================
+
+    console.log(
+        "1. Descargando calendario..."
+    );
+
+
+    const espnFixtures =
+        await getSeasonFixturesESPN();
+
+
+    mergeESPNFixtures(
+        data,
+        espnFixtures
+    );
+
+
+    console.log(
+        `Partidos ESPN incorporados: ${espnFixtures.length}`
+    );
+
+
+    // ========================================================
+    // 2. CLASIFICACIÓN
+    // ========================================================
+
+    console.log(
+        "2. Descargando clasificación..."
+    );
+
+
+    await updateStandingsESPN(
+        data
+    );
+
+
+    // ========================================================
+    // 3. GOLEADORES
+    // ========================================================
+
+    console.log(
+        "3. Descargando goleadores..."
+    );
+
+
+    await updateScorers(
+        data
+    );
+
+
+    /*
+     * Si estamos al principio de temporada
+     * y todavía no hay goleadores, dejamos
+     * explícitamente la tabla a cero.
+     */
+
+    if (
+        !data.scorers.length
+    ) {
+
+        data.scorers = [];
+
+    }
+
+
+    // ========================================================
+    // 4. NOTICIAS
+    // ========================================================
+
+    console.log(
+        "4. Descargando noticias..."
+    );
+
+
+    await updateNews(
+        data
+    );
+
+
+    // ========================================================
+    // 5. API-FOOTBALL
+    // ========================================================
+
+    console.log(
+        "5. Comprobando datos complementarios..."
+    );
+
+
+    await tryAPIfootballEnhancement(
+        data
+    );
+
+
+    // ========================================================
+    // 6. DETALLES
+    // ========================================================
+
+    console.log(
+        "6. Buscando partidos que necesitan detalles..."
+    );
+
+
+    const recentLimit =
+        now -
+        14 *
+        24 *
+        60 *
+        60;
+
+
+    const futureLimit =
+        now +
+        10 *
+        24 *
+        60 *
+        60;
+
+
+    const candidates =
+        data.matches
+
+            .filter(
+                match => {
+
+                    const timestamp =
+                        match.timestamp ||
+                        0;
+
+
+                    const finished =
+                        [
+                            "FT",
+                            "AET",
+                            "PEN"
+                        ]
+                        .includes(
+                            match.status
+                        );
+
+
+                    const recent =
+                        timestamp >=
+                        recentLimit;
+
+
+                    const upcoming =
+                        timestamp >= now &&
+                        timestamp <=
+                        futureLimit;
+
+
+                    return (
+
+                        !match.details &&
+
+                        (
+                            (
+                                finished &&
+                                recent
+                            ) ||
+
+                            upcoming
+
+                        ) &&
+
+                        match.apiFootballId
+
+                    );
+
+                }
+            )
+
+            .slice(
+                0,
+                MAX_DETAIL_FIXTURES
+            );
+
+
+    if (
+        candidates.length &&
+        API_KEY
+    ) {
+
+        const details =
+            await getFixtureDetails(
+                candidates.map(
+                    x =>
+                        x.apiFootballId
+                )
+            );
+
+
+        const detailMap =
+            new Map(
+                details.map(
+                    x => [
+
+                        x.fixture?.id,
+
+                        x
+
+                    ]
+                )
+            );
+
+
+        for (
+            const match
+            of candidates
+        ) {
+
+            const fixture =
+                detailMap.get(
+                    match.apiFootballId
+                );
+
+
+            if (
+                fixture
+            ) {
+
+                saveFixtureDetails(
+                    match,
+                    fixture
+                );
+
+            }
 
         }
 
     }
 
 
-    // --------------------------------------------------------
-    // 8. BALANCE
-    // --------------------------------------------------------
+    // ========================================================
+    // 7. RESULTADOS
+    // ========================================================
 
     console.log(
-        "7. Calculando balance..."
+        "7. Actualizando resultados..."
+    );
+
+
+    updateResults(
+        data
+    );
+
+
+    // ========================================================
+    // 8. PRONÓSTICOS
+    // ========================================================
+
+    console.log(
+        "8. Actualizando pronósticos..."
+    );
+
+
+    updatePredictions(
+        data,
+        now
+    );
+
+
+    // ========================================================
+    // 9. BALANCE
+    // ========================================================
+
+    console.log(
+        "9. Calculando balance..."
     );
 
 
@@ -2296,9 +3349,9 @@ async function main() {
     );
 
 
-    // --------------------------------------------------------
-    // 9. METADATOS
-    // --------------------------------------------------------
+    // ========================================================
+    // 10. METADATOS
+    // ========================================================
 
     data.meta = {
 
@@ -2317,22 +3370,36 @@ async function main() {
             "2026/27",
 
         source:
-            "API-Football",
+            "ESPN + API-Football",
+
+        primarySource:
+            "ESPN",
+
+        secondarySource:
+            API_KEY
+                ? "API-Football"
+                : null,
 
         generatedAt:
-            new Date().toISOString(),
+            new Date()
+                .toISOString(),
 
-        requestsThisRun
+        requestsThisRun,
+
+        apiFootballSeasonAvailable:
+            false
 
     };
 
 
-    // --------------------------------------------------------
-    // 10. GUARDAR
-    // --------------------------------------------------------
+    // ========================================================
+    // 11. GUARDAR
+    // ========================================================
 
     await fs.mkdir(
-        path.dirname(DATA_FILE),
+        path.dirname(
+            DATA_FILE
+        ),
         {
             recursive: true
         }
@@ -2371,11 +3438,15 @@ async function main() {
     );
 
     console.log(
-        `Peticiones: ${requestsThisRun}`
+        `Noticias: ${data.news.length}`
     );
 
     console.log(
-        `Aciertos acumulados: ${data.predictionBalance.correct}/${data.predictionBalance.total}`
+        `Peticiones API-Football: ${requestsThisRun}`
+    );
+
+    console.log(
+        `Aciertos: ${data.predictionBalance.correct}/${data.predictionBalance.total}`
     );
 
     console.log(
@@ -2390,13 +3461,15 @@ async function main() {
 
 
 main()
-    .catch(error => {
+    .catch(
+        error => {
 
-        console.error(
-            "ERROR FATAL:",
-            error
-        );
+            console.error(
+                "ERROR FATAL:",
+                error
+            );
 
-        process.exit(1);
+            process.exit(1);
 
-    });
+        }
+    );
