@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-08-21T07:42:33.537Z",
-    "requestsThisRun": 37,
+    "generatedAt": "2026-08-22T05:43:54.872Z",
+    "requestsThisRun": 11,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": false,
@@ -55,7 +55,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -1300,7 +1303,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -2572,7 +2578,9 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -3826,7 +3834,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -4765,7 +4776,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -5857,7 +5871,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -7003,7 +7020,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -8172,8 +8192,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-21T19:00Z",
       "timestamp": 1787338800,
-      "status": "Scheduled",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "id": "2781",
         "name": "Estadio La Cartuja",
@@ -8197,269 +8217,18 @@
           "away": null
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
-        {
-          "overUnder": 2.5,
-          "link": {
-            "language": "en-US",
-            "rel": [
-              "game",
-              "desktop",
-              "bets"
-            ],
-            "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521984",
-            "text": "Game",
-            "shortText": "Game",
-            "isExternal": true,
-            "isPremium": false,
-            "isHidden": false
-          },
-          "provider": {
-            "id": "100",
-            "name": "DraftKings",
-            "priority": 1,
-            "displayName": "DraftKings",
-            "logos": [
-              {
-                "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
-                "rel": [
-                  "light"
-                ]
-              },
-              {
-                "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
-                "rel": [
-                  "dark"
-                ]
-              }
-            ]
-          },
-          "drawOdds": {
-            "moneyLine": 250,
-            "link": {
-              "language": "en-US",
-              "rel": [
-                "draw",
-                "desktop",
-                "bets",
-                "draftkings"
-              ],
-              "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521984%3Foutcomes%3D0ML85876389_2",
-              "text": "Draw Bet",
-              "shortText": "Draw Bet",
-              "isExternal": true,
-              "isPremium": false,
-              "isHidden": false
-            }
-          },
-          "total": {
-            "displayName": "Total",
-            "shortDisplayName": "Total",
-            "over": {
-              "open": {
-                "line": "o2.5",
-                "odds": "+115"
-              },
-              "close": {
-                "line": "o2.5",
-                "odds": "-110",
-                "link": {
-                  "rel": [
-                    "over",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521984%3Foutcomes%3D0OU85876779O250_1",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882914,
-                      "betSide": "over",
-                      "betType": "straight",
-                      "betDetails": "Over:2.5"
-                    }
-                  }
-                }
-              }
-            },
-            "under": {
-              "open": {
-                "line": "u2.5",
-                "odds": "-150"
-              },
-              "close": {
-                "line": "u2.5",
-                "odds": "-110",
-                "link": {
-                  "rel": [
-                    "under",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521984%3Foutcomes%3D0OU85876779U250_3",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882914,
-                      "betSide": "under",
-                      "betType": "straight",
-                      "betDetails": "Under:2.5"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "pointSpread": {
-            "displayName": "Spread",
-            "shortDisplayName": "Spread",
-            "home": {
-              "open": {
-                "line": "-0.5",
-                "odds": "+100"
-              },
-              "close": {
-                "line": "-0.5",
-                "odds": "+100",
-                "link": {
-                  "rel": [
-                    "homeSpread",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521984%3Foutcomes%3D0HC85876784N50_1",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882914,
-                      "betSide": "home",
-                      "betType": "straight",
-                      "betDetails": "Spread:BET-0.5"
-                    }
-                  }
-                }
-              }
-            },
-            "away": {
-              "open": {
-                "line": "+0.5",
-                "odds": "-145"
-              },
-              "close": {
-                "line": "+0.5",
-                "odds": "-140",
-                "link": {
-                  "rel": [
-                    "awaySpread",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521984%3Foutcomes%3D0HC85876784P50_3",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882914,
-                      "betSide": "away",
-                      "betType": "straight",
-                      "betDetails": "Spread:RSO+0.5"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "moneyline": {
-            "displayName": "Moneyline",
-            "shortDisplayName": "ML",
-            "home": {
-              "open": {
-                "odds": "+105"
-              },
-              "close": {
-                "odds": "+110",
-                "link": {
-                  "rel": [
-                    "home",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521984%3Foutcomes%3D0ML85876389_1",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882914,
-                      "betSide": "home",
-                      "betType": "straight"
-                    }
-                  }
-                }
-              }
-            },
-            "away": {
-              "open": {
-                "odds": "+265"
-              },
-              "close": {
-                "odds": "+255",
-                "link": {
-                  "rel": [
-                    "away",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521984%3Foutcomes%3D0ML85876389_3",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882914,
-                      "betSide": "away",
-                      "betType": "straight"
-                    }
-                  }
-                }
-              }
-            },
-            "draw": {
-              "open": {
-                "odds": "+235"
-              },
-              "close": {
-                "odds": "+250",
-                "link": {
-                  "rel": [
-                    "draw",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521984%3Foutcomes%3D0ML85876389_2",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882914,
-                      "betSide": "draw",
-                      "betType": "straight"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "details": "BET +110"
-        }
+        null
       ],
       "details": {
         "updatedAt": "2026-08-21T07:42:29.842Z",
@@ -8587,7 +8356,8 @@
           "homeFormations": {},
           "awayFormations": {}
         }
-      }
+      },
+      "result": "1"
     },
     {
       "id": 401882916,
@@ -8627,7 +8397,11 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN2",
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         {
           "overUnder": 2.5,
@@ -8648,10 +8422,25 @@
           "provider": {
             "id": "100",
             "name": "DraftKings",
-            "priority": 1
+            "priority": 1,
+            "displayName": "DraftKings",
+            "logos": [
+              {
+                "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+                "rel": [
+                  "light"
+                ]
+              },
+              {
+                "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+                "rel": [
+                  "dark"
+                ]
+              }
+            ]
           },
           "drawOdds": {
-            "moneyLine": 270,
+            "moneyLine": 260,
             "link": {
               "language": "en-US",
               "rel": [
@@ -8796,7 +8585,7 @@
                 "odds": "-140"
               },
               "close": {
-                "odds": "-135",
+                "odds": "-140",
                 "link": {
                   "rel": [
                     "home",
@@ -8821,7 +8610,7 @@
                 "odds": "+370"
               },
               "close": {
-                "odds": "+400",
+                "odds": "+425",
                 "link": {
                   "rel": [
                     "away",
@@ -8846,7 +8635,7 @@
                 "odds": "+260"
               },
               "close": {
-                "odds": "+270",
+                "odds": "+260",
                 "link": {
                   "rel": [
                     "draw",
@@ -8867,7 +8656,7 @@
               }
             }
           },
-          "details": "ATH -135"
+          "details": "ATH -140"
         }
       ],
       "details": {
@@ -8919,7 +8708,7 @@
         "confidence": 0.7597,
         "difficulty": "fácil",
         "generatedAt": "2026-08-21T07:42:33.515Z",
-        "lockedAt": null,
+        "lockedAt": "2026-08-22T05:43:54.871Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -9036,7 +8825,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         {
           "overUnder": 2.5,
@@ -9060,7 +8852,7 @@
             "priority": 1
           },
           "drawOdds": {
-            "moneyLine": 225,
+            "moneyLine": 220,
             "link": {
               "language": "en-US",
               "rel": [
@@ -9115,7 +8907,7 @@
               },
               "close": {
                 "line": "u2.5",
-                "odds": "-155",
+                "odds": "-150",
                 "link": {
                   "rel": [
                     "under",
@@ -9147,7 +8939,7 @@
               },
               "close": {
                 "line": "-0.5",
-                "odds": "+125",
+                "odds": "+135",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -9175,7 +8967,7 @@
               },
               "close": {
                 "line": "+0.5",
-                "odds": "-170",
+                "odds": "-190",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -9205,7 +8997,7 @@
                 "odds": "+110"
               },
               "close": {
-                "odds": "+135",
+                "odds": "+150",
                 "link": {
                   "rel": [
                     "home",
@@ -9230,7 +9022,7 @@
                 "odds": "+250"
               },
               "close": {
-                "odds": "+220",
+                "odds": "+200",
                 "link": {
                   "rel": [
                     "away",
@@ -9255,7 +9047,7 @@
                 "odds": "+225"
               },
               "close": {
-                "odds": "+225",
+                "odds": "+220",
                 "link": {
                   "rel": [
                     "draw",
@@ -9276,7 +9068,7 @@
               }
             }
           },
-          "details": "VAL +135"
+          "details": "VAL +150"
         }
       ],
       "details": {
@@ -9328,7 +9120,7 @@
         "confidence": 0.4275,
         "difficulty": "difícil",
         "generatedAt": "2026-08-21T07:42:33.515Z",
-        "lockedAt": null,
+        "lockedAt": "2026-08-22T05:43:54.871Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -9445,7 +9237,11 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ABC",
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         {
           "overUnder": 2.5,
@@ -9496,7 +9292,7 @@
               },
               "close": {
                 "line": "o2.5",
-                "odds": "-140",
+                "odds": "-150",
                 "link": {
                   "rel": [
                     "over",
@@ -9524,7 +9320,7 @@
               },
               "close": {
                 "line": "u2.5",
-                "odds": "+115",
+                "odds": "+120",
                 "link": {
                   "rel": [
                     "under",
@@ -9854,7 +9650,11 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN2",
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         {
           "overUnder": 2.5,
@@ -10263,7 +10063,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         {
           "overUnder": 1.5,
@@ -10374,7 +10177,7 @@
               },
               "close": {
                 "line": "-0.5",
-                "odds": "+105",
+                "odds": "+110",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -10402,7 +10205,7 @@
               },
               "close": {
                 "line": "+0.5",
-                "odds": "-145",
+                "odds": "-150",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -10432,7 +10235,7 @@
                 "odds": "-115"
               },
               "close": {
-                "odds": "+115",
+                "odds": "+120",
                 "link": {
                   "rel": [
                     "home",
@@ -10457,7 +10260,7 @@
                 "odds": "+390"
               },
               "close": {
-                "odds": "+295",
+                "odds": "+285",
                 "link": {
                   "rel": [
                     "away",
@@ -10503,7 +10306,7 @@
               }
             }
           },
-          "details": "GET +115"
+          "details": "GET +120"
         }
       ],
       "details": {
@@ -10672,7 +10475,11 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ABC",
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         {
           "overUnder": 3.5,
@@ -10696,7 +10503,7 @@
             "priority": 1
           },
           "drawOdds": {
-            "moneyLine": 500,
+            "moneyLine": 475,
             "link": {
               "language": "en-US",
               "rel": [
@@ -10723,7 +10530,7 @@
               },
               "close": {
                 "line": "o3.5",
-                "odds": "+115",
+                "odds": "+110",
                 "link": {
                   "rel": [
                     "over",
@@ -10751,7 +10558,7 @@
               },
               "close": {
                 "line": "u3.5",
-                "odds": "-145",
+                "odds": "-140",
                 "link": {
                   "rel": [
                     "under",
@@ -10841,7 +10648,7 @@
                 "odds": "+650"
               },
               "close": {
-                "odds": "+700",
+                "odds": "+750",
                 "link": {
                   "rel": [
                     "home",
@@ -10866,7 +10673,7 @@
                 "odds": "-320"
               },
               "close": {
-                "odds": "-300",
+                "odds": "-310",
                 "link": {
                   "rel": [
                     "away",
@@ -10891,7 +10698,7 @@
                 "odds": "+475"
               },
               "close": {
-                "odds": "+500",
+                "odds": "+475",
                 "link": {
                   "rel": [
                     "draw",
@@ -10912,7 +10719,7 @@
               }
             }
           },
-          "details": "BAR -300"
+          "details": "BAR -310"
         }
       ],
       "details": {
@@ -11081,9 +10888,251 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
-        null
+        {
+          "overUnder": 2.5,
+          "link": {
+            "language": "en-US",
+            "rel": [
+              "game",
+              "desktop",
+              "bets"
+            ],
+            "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521969",
+            "text": "Game",
+            "shortText": "Game",
+            "isExternal": true,
+            "isPremium": false,
+            "isHidden": false
+          },
+          "provider": {
+            "id": "100",
+            "name": "DraftKings",
+            "priority": 1
+          },
+          "drawOdds": {
+            "moneyLine": 265,
+            "link": {
+              "language": "en-US",
+              "rel": [
+                "draw",
+                "desktop",
+                "bets",
+                "draftkings"
+              ],
+              "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521969%3Foutcomes%3D0ML85876375_2",
+              "text": "Draw Bet",
+              "shortText": "Draw Bet",
+              "isExternal": true,
+              "isPremium": false,
+              "isHidden": false
+            }
+          },
+          "total": {
+            "displayName": "Total",
+            "shortDisplayName": "Total",
+            "over": {
+              "open": {
+                "line": "o2.5",
+                "odds": "+100"
+              },
+              "close": {
+                "line": "o2.5",
+                "odds": "+100",
+                "link": {
+                  "rel": [
+                    "over",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521969%3Foutcomes%3D0OU85876422O250_1",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882909,
+                      "betSide": "over",
+                      "betType": "straight",
+                      "betDetails": "Over:2.5"
+                    }
+                  }
+                }
+              }
+            },
+            "under": {
+              "open": {
+                "line": "u2.5",
+                "odds": "-130"
+              },
+              "close": {
+                "line": "u2.5",
+                "odds": "-125",
+                "link": {
+                  "rel": [
+                    "under",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521969%3Foutcomes%3D0OU85876422U250_3",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882909,
+                      "betSide": "under",
+                      "betType": "straight",
+                      "betDetails": "Under:2.5"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "pointSpread": {
+            "displayName": "Spread",
+            "shortDisplayName": "Spread",
+            "home": {
+              "open": {
+                "line": "-0.5",
+                "odds": "-135"
+              },
+              "close": {
+                "line": "-0.5",
+                "odds": "-135",
+                "link": {
+                  "rel": [
+                    "homeSpread",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521969%3Foutcomes%3D0HC85876427N50_1",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882909,
+                      "betSide": "home",
+                      "betType": "straight",
+                      "betDetails": "Spread:OSA-0.5"
+                    }
+                  }
+                }
+              }
+            },
+            "away": {
+              "open": {
+                "line": "+0.5",
+                "odds": "-110"
+              },
+              "close": {
+                "line": "+0.5",
+                "odds": "-105",
+                "link": {
+                  "rel": [
+                    "awaySpread",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521969%3Foutcomes%3D0HC85876427P50_3",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882909,
+                      "betSide": "away",
+                      "betType": "straight",
+                      "betDetails": "Spread:LEV+0.5"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "moneyline": {
+            "displayName": "Moneyline",
+            "shortDisplayName": "ML",
+            "home": {
+              "open": {
+                "odds": "-115"
+              },
+              "close": {
+                "odds": "-125",
+                "link": {
+                  "rel": [
+                    "home",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521969%3Foutcomes%3D0ML85876375_1",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882909,
+                      "betSide": "home",
+                      "betType": "straight"
+                    }
+                  }
+                }
+              }
+            },
+            "away": {
+              "open": {
+                "odds": "+320"
+              },
+              "close": {
+                "odds": "+350",
+                "link": {
+                  "rel": [
+                    "away",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521969%3Foutcomes%3D0ML85876375_3",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882909,
+                      "betSide": "away",
+                      "betType": "straight"
+                    }
+                  }
+                }
+              }
+            },
+            "draw": {
+              "open": {
+                "odds": "+255"
+              },
+              "close": {
+                "odds": "+265",
+                "link": {
+                  "rel": [
+                    "draw",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521969%3Foutcomes%3D0ML85876375_2",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882909,
+                      "betSide": "draw",
+                      "betType": "straight"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "details": "OSA -125"
+        }
       ],
       "details": {
         "updatedAt": "2026-08-21T07:42:31.031Z",
@@ -11251,9 +11300,251 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
-        null
+        {
+          "overUnder": 2.5,
+          "link": {
+            "language": "en-US",
+            "rel": [
+              "game",
+              "desktop",
+              "bets"
+            ],
+            "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521989",
+            "text": "Game",
+            "shortText": "Game",
+            "isExternal": true,
+            "isPremium": false,
+            "isHidden": false
+          },
+          "provider": {
+            "id": "100",
+            "name": "DraftKings",
+            "priority": 1
+          },
+          "drawOdds": {
+            "moneyLine": 210,
+            "link": {
+              "language": "en-US",
+              "rel": [
+                "draw",
+                "desktop",
+                "bets",
+                "draftkings"
+              ],
+              "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521989%3Foutcomes%3D0ML85876408_2",
+              "text": "Draw Bet",
+              "shortText": "Draw Bet",
+              "isExternal": true,
+              "isPremium": false,
+              "isHidden": false
+            }
+          },
+          "total": {
+            "displayName": "Total",
+            "shortDisplayName": "Total",
+            "over": {
+              "open": {
+                "line": "o1.5",
+                "odds": "-195"
+              },
+              "close": {
+                "line": "o2.5",
+                "odds": "+150",
+                "link": {
+                  "rel": [
+                    "over",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521989%3Foutcomes%3D0OU85876938O250_1",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882910,
+                      "betSide": "over",
+                      "betType": "straight",
+                      "betDetails": "Over:2.5"
+                    }
+                  }
+                }
+              }
+            },
+            "under": {
+              "open": {
+                "line": "u1.5",
+                "odds": "+150"
+              },
+              "close": {
+                "line": "u2.5",
+                "odds": "-185",
+                "link": {
+                  "rel": [
+                    "under",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521989%3Foutcomes%3D0OU85876938U250_3",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882910,
+                      "betSide": "under",
+                      "betType": "straight",
+                      "betDetails": "Under:2.5"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "pointSpread": {
+            "displayName": "Spread",
+            "shortDisplayName": "Spread",
+            "home": {
+              "open": {
+                "line": "-0.5",
+                "odds": "+135"
+              },
+              "close": {
+                "line": "-0.5",
+                "odds": "+135",
+                "link": {
+                  "rel": [
+                    "homeSpread",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521989%3Foutcomes%3D0HC85876943N50_1",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882910,
+                      "betSide": "home",
+                      "betType": "straight",
+                      "betDetails": "Spread:MCF-0.5"
+                    }
+                  }
+                }
+              }
+            },
+            "away": {
+              "open": {
+                "line": "+0.5",
+                "odds": "-195"
+              },
+              "close": {
+                "line": "+0.5",
+                "odds": "-185",
+                "link": {
+                  "rel": [
+                    "awaySpread",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521989%3Foutcomes%3D0HC85876943P50_3",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882910,
+                      "betSide": "away",
+                      "betType": "straight",
+                      "betDetails": "Spread:DEP+0.5"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "moneyline": {
+            "displayName": "Moneyline",
+            "shortDisplayName": "ML",
+            "home": {
+              "open": {
+                "odds": "+155"
+              },
+              "close": {
+                "odds": "+150",
+                "link": {
+                  "rel": [
+                    "home",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521989%3Foutcomes%3D0ML85876408_1",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882910,
+                      "betSide": "home",
+                      "betType": "straight"
+                    }
+                  }
+                }
+              }
+            },
+            "away": {
+              "open": {
+                "odds": "+200"
+              },
+              "close": {
+                "odds": "+210",
+                "link": {
+                  "rel": [
+                    "away",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521989%3Foutcomes%3D0ML85876408_3",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882910,
+                      "betSide": "away",
+                      "betType": "straight"
+                    }
+                  }
+                }
+              }
+            },
+            "draw": {
+              "open": {
+                "odds": "+205"
+              },
+              "close": {
+                "odds": "+210",
+                "link": {
+                  "rel": [
+                    "draw",
+                    "bets"
+                  ],
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34521989%3Foutcomes%3D0ML85876408_2",
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "esp.1",
+                      "sport": "soccer",
+                      "gameId": 401882910,
+                      "betSide": "draw",
+                      "betType": "straight"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "details": "MCF +150"
+        }
       ],
       "details": {
         "updatedAt": "2026-08-21T07:42:31.189Z",
@@ -11421,7 +11712,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         {
           "overUnder": 2.5,
@@ -11830,7 +12124,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         {
           "overUnder": 3.5,
@@ -12239,7 +12536,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         {
           "overUnder": 2.5,
@@ -12250,7 +12550,7 @@
               "desktop",
               "bets"
             ],
-            "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34363085",
+            "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34552203",
             "text": "Game",
             "shortText": "Game",
             "isExternal": true,
@@ -12263,7 +12563,7 @@
             "priority": 1
           },
           "drawOdds": {
-            "moneyLine": 250,
+            "moneyLine": 240,
             "link": {
               "language": "en-US",
               "rel": [
@@ -12272,7 +12572,7 @@
                 "bets",
                 "draftkings"
               ],
-              "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34363085%3Foutcomes%3D0ML85402197_2",
+              "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34552203%3Foutcomes%3D0ML85965271_2",
               "text": "Draw Bet",
               "shortText": "Draw Bet",
               "isExternal": true,
@@ -12290,13 +12590,13 @@
               },
               "close": {
                 "line": "o2.5",
-                "odds": "+115",
+                "odds": "+105",
                 "link": {
                   "rel": [
                     "over",
                     "bets"
                   ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34363085%3Foutcomes%3D0OU85402324O250_1",
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34552203%3Foutcomes%3D0OU85965277O250_1",
                   "tracking": {
                     "campaign": "betting-integrations",
                     "tags": {
@@ -12318,13 +12618,13 @@
               },
               "close": {
                 "line": "u2.5",
-                "odds": "-140",
+                "odds": "-135",
                 "link": {
                   "rel": [
                     "under",
                     "bets"
                   ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34363085%3Foutcomes%3D0OU85402324U250_3",
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34552203%3Foutcomes%3D0OU85965277U250_3",
                   "tracking": {
                     "campaign": "betting-integrations",
                     "tags": {
@@ -12356,7 +12656,7 @@
                     "homeSpread",
                     "bets"
                   ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34363085%3Foutcomes%3D0HC85402329N50_1",
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34552203%3Foutcomes%3D0HC85965282N50_1",
                   "tracking": {
                     "campaign": "betting-integrations",
                     "tags": {
@@ -12378,13 +12678,13 @@
               },
               "close": {
                 "line": "+0.5",
-                "odds": "-135",
+                "odds": "-140",
                 "link": {
                   "rel": [
                     "awaySpread",
                     "bets"
                   ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34363085%3Foutcomes%3D0HC85402329P50_3",
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34552203%3Foutcomes%3D0HC85965282P50_3",
                   "tracking": {
                     "campaign": "betting-integrations",
                     "tags": {
@@ -12414,7 +12714,7 @@
                     "home",
                     "bets"
                   ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34363085%3Foutcomes%3D0ML85402197_1",
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34552203%3Foutcomes%3D0ML85965271_1",
                   "tracking": {
                     "campaign": "betting-integrations",
                     "tags": {
@@ -12433,13 +12733,13 @@
                 "odds": "+255"
               },
               "close": {
-                "odds": "+265",
+                "odds": "+260",
                 "link": {
                   "rel": [
                     "away",
                     "bets"
                   ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34363085%3Foutcomes%3D0ML85402197_3",
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34552203%3Foutcomes%3D0ML85965271_3",
                   "tracking": {
                     "campaign": "betting-integrations",
                     "tags": {
@@ -12458,13 +12758,13 @@
                 "odds": "+240"
               },
               "close": {
-                "odds": "+250",
+                "odds": "+240",
                 "link": {
                   "rel": [
                     "draw",
                     "bets"
                   ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34363085%3Foutcomes%3D0ML85402197_2",
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34552203%3Foutcomes%3D0ML85965271_2",
                   "tracking": {
                     "campaign": "betting-integrations",
                     "tags": {
@@ -12648,7 +12948,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         {
           "overUnder": 3.5,
@@ -13057,7 +13360,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -13227,7 +13533,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -13397,7 +13706,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -13567,7 +13879,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -13737,7 +14052,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -13907,7 +14225,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -14077,7 +14398,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -14247,7 +14571,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -14417,10 +14744,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN Deportes",
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -14511,6 +14835,45 @@
           "homeFormations": {},
           "awayFormations": {}
         }
+      },
+      "details": {
+        "updatedAt": "2026-08-22T05:43:54.709Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 97,
+            "teamName": "Osasuna",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 2922,
+            "teamName": "Getafe",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -14551,10 +14914,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN Deportes",
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -14645,6 +15005,45 @@
           "homeFormations": {},
           "awayFormations": {}
         }
+      },
+      "details": {
+        "updatedAt": "2026-08-22T05:43:54.871Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 83,
+            "teamName": "Barcelona",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 101,
+            "teamName": "Rayo Vallecano",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -61282,6 +61681,26 @@
     {
       "rank": 5,
       "team": {
+        "id": 244,
+        "name": "Real Betis",
+        "abbreviation": "BET",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
+      },
+      "points": 3,
+      "goalsDiff": 1,
+      "form": null,
+      "played": 1,
+      "wins": 1,
+      "draws": 0,
+      "losses": 0,
+      "gf": 1,
+      "ga": 0,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 6,
+      "team": {
         "id": 87,
         "name": "Racing Santander",
         "abbreviation": "RAC",
@@ -61300,7 +61719,7 @@
       "away": null
     },
     {
-      "rank": 6,
+      "rank": 7,
       "team": {
         "id": 102,
         "name": "Villarreal",
@@ -61320,7 +61739,7 @@
       "away": null
     },
     {
-      "rank": 7,
+      "rank": 8,
       "team": {
         "id": 90,
         "name": "Deportivo",
@@ -61340,7 +61759,7 @@
       "away": null
     },
     {
-      "rank": 8,
+      "rank": 9,
       "team": {
         "id": 3751,
         "name": "Elche",
@@ -61360,7 +61779,7 @@
       "away": null
     },
     {
-      "rank": 9,
+      "rank": 10,
       "team": {
         "id": 101,
         "name": "Rayo Vallecano",
@@ -61380,7 +61799,7 @@
       "away": null
     },
     {
-      "rank": 10,
+      "rank": 11,
       "team": {
         "id": 93,
         "name": "Athletic Club",
@@ -61400,7 +61819,7 @@
       "away": null
     },
     {
-      "rank": 11,
+      "rank": 12,
       "team": {
         "id": 83,
         "name": "Barcelona",
@@ -61420,7 +61839,7 @@
       "away": null
     },
     {
-      "rank": 12,
+      "rank": 13,
       "team": {
         "id": 85,
         "name": "Celta Vigo",
@@ -61440,32 +61859,12 @@
       "away": null
     },
     {
-      "rank": 13,
+      "rank": 14,
       "team": {
         "id": 97,
         "name": "Osasuna",
         "abbreviation": "OSA",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
-      },
-      "points": 0,
-      "goalsDiff": 0,
-      "form": null,
-      "played": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "gf": 0,
-      "ga": 0,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 14,
-      "team": {
-        "id": 244,
-        "name": "Real Betis",
-        "abbreviation": "BET",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
       },
       "points": 0,
       "goalsDiff": 0,
@@ -61502,10 +61901,10 @@
     {
       "rank": 16,
       "team": {
-        "id": 89,
-        "name": "Real Sociedad",
-        "abbreviation": "RSO",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+        "id": 94,
+        "name": "Valencia",
+        "abbreviation": "VAL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
       },
       "points": 0,
       "goalsDiff": 0,
@@ -61522,20 +61921,20 @@
     {
       "rank": 17,
       "team": {
-        "id": 94,
-        "name": "Valencia",
-        "abbreviation": "VAL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
+        "id": 89,
+        "name": "Real Sociedad",
+        "abbreviation": "RSO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
       },
       "points": 0,
-      "goalsDiff": 0,
+      "goalsDiff": -1,
       "form": null,
-      "played": 0,
+      "played": 1,
       "wins": 0,
       "draws": 0,
-      "losses": 0,
+      "losses": 1,
       "gf": 0,
-      "ga": 0,
+      "ga": 1,
       "home": null,
       "away": null
     },
@@ -61601,201 +62000,6 @@
     }
   ],
   "scorers": [
-    {
-      "player": {
-        "id": "318773",
-        "name": "Roberto Fernández",
-        "photo": null
-      },
-      "team": {
-        "id": "88",
-        "name": "Espanyol",
-        "abbreviation": "ESP",
-        "displayName": "Espanyol",
-        "color": "3366CC",
-        "logos": [
-          {
-            "href": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
-            "width": 500,
-            "height": 500,
-            "alt": "",
-            "rel": [
-              "full",
-              "default"
-            ],
-            "lastUpdated": "2019-05-08T16:07Z"
-          },
-          {
-            "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/88.png",
-            "width": 500,
-            "height": 500,
-            "alt": "",
-            "rel": [
-              "full",
-              "dark"
-            ],
-            "lastUpdated": "2019-05-08T16:07Z"
-          }
-        ],
-        "links": [
-          {
-            "language": "en-US",
-            "rel": [
-              "clubhouse",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/club/_/id/88/espanyol",
-            "text": "Clubhouse",
-            "shortText": "Clubhouse",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "stats",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/stats/_/id/88/espanyol",
-            "text": "Stats",
-            "shortText": "Stats",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "stats",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:88&section=stats",
-            "text": "Stats",
-            "shortText": "Stats",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "schedule",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/fixtures/_/id/88/espanyol",
-            "text": "Fixtures",
-            "shortText": "Fixtures",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "schedule",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:88&section=scores",
-            "text": "Fixtures",
-            "shortText": "Fixtures",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "results",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/results/_/id/88/espanyol",
-            "text": "Results",
-            "shortText": "Results",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "results",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:88&section=scores",
-            "text": "Results",
-            "shortText": "Results",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "standings",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/standings/_/league/esp.1",
-            "text": "Standings",
-            "shortText": "Standings",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "standings",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:88&section=standings",
-            "text": "Standings",
-            "shortText": "Standings",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "squad",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/squad/_/id/88/espanyol",
-            "text": "Squad",
-            "shortText": "Squad",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "squad",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:88&section=squad",
-            "text": "Squad",
-            "shortText": "Squad",
-            "isExternal": false,
-            "isPremium": false
-          }
-        ]
-      },
-      "goals": {
-        "total": 2,
-        "assists": null
-      },
-      "appearances": null,
-      "minutes": null,
-      "rating": null
-    },
     {
       "player": {
         "id": "198832",
@@ -61993,19 +62197,19 @@
     },
     {
       "player": {
-        "id": "301406",
-        "name": "Marc Aguado",
+        "id": "318773",
+        "name": "Roberto Fernández",
         "photo": null
       },
       "team": {
-        "id": "3751",
-        "name": "Elche",
-        "abbreviation": "ELC",
-        "displayName": "Elche",
-        "color": "288A00",
+        "id": "88",
+        "name": "Espanyol",
+        "abbreviation": "ESP",
+        "displayName": "Espanyol",
+        "color": "3366CC",
         "logos": [
           {
-            "href": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
+            "href": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
             "width": 500,
             "height": 500,
             "alt": "",
@@ -62016,7 +62220,7 @@
             "lastUpdated": "2019-05-08T16:07Z"
           },
           {
-            "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/3751.png",
+            "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/88.png",
             "width": 500,
             "height": 500,
             "alt": "",
@@ -62035,7 +62239,7 @@
               "desktop",
               "team"
             ],
-            "href": "https://www.espn.com/soccer/club/_/id/3751/elche",
+            "href": "https://www.espn.com/soccer/club/_/id/88/espanyol",
             "text": "Clubhouse",
             "shortText": "Clubhouse",
             "isExternal": false,
@@ -62048,7 +62252,7 @@
               "desktop",
               "team"
             ],
-            "href": "https://www.espn.com/soccer/team/stats/_/id/3751/elche",
+            "href": "https://www.espn.com/soccer/team/stats/_/id/88/espanyol",
             "text": "Stats",
             "shortText": "Stats",
             "isExternal": false,
@@ -62062,7 +62266,7 @@
               "app",
               "team"
             ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=stats",
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:88&section=stats",
             "text": "Stats",
             "shortText": "Stats",
             "isExternal": false,
@@ -62075,7 +62279,7 @@
               "desktop",
               "team"
             ],
-            "href": "https://www.espn.com/soccer/team/fixtures/_/id/3751/elche",
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/88/espanyol",
             "text": "Fixtures",
             "shortText": "Fixtures",
             "isExternal": false,
@@ -62089,7 +62293,7 @@
               "app",
               "team"
             ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=scores",
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:88&section=scores",
             "text": "Fixtures",
             "shortText": "Fixtures",
             "isExternal": false,
@@ -62102,7 +62306,7 @@
               "desktop",
               "team"
             ],
-            "href": "https://www.espn.com/soccer/team/results/_/id/3751/elche",
+            "href": "https://www.espn.com/soccer/team/results/_/id/88/espanyol",
             "text": "Results",
             "shortText": "Results",
             "isExternal": false,
@@ -62116,7 +62320,7 @@
               "app",
               "team"
             ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=scores",
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:88&section=scores",
             "text": "Results",
             "shortText": "Results",
             "isExternal": false,
@@ -62143,7 +62347,7 @@
               "app",
               "team"
             ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=standings",
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:88&section=standings",
             "text": "Standings",
             "shortText": "Standings",
             "isExternal": false,
@@ -62156,7 +62360,7 @@
               "desktop",
               "team"
             ],
-            "href": "https://www.espn.com/soccer/team/squad/_/id/3751/elche",
+            "href": "https://www.espn.com/soccer/team/squad/_/id/88/espanyol",
             "text": "Squad",
             "shortText": "Squad",
             "isExternal": false,
@@ -62170,7 +62374,7 @@
               "app",
               "team"
             ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=squad",
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:88&section=squad",
             "text": "Squad",
             "shortText": "Squad",
             "isExternal": false,
@@ -62179,7 +62383,7 @@
         ]
       },
       "goals": {
-        "total": 1,
+        "total": 2,
         "assists": null
       },
       "appearances": null,
@@ -62366,6 +62570,786 @@
               "team"
             ],
             "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:96&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "goals": {
+        "total": 1,
+        "assists": null
+      },
+      "appearances": null,
+      "minutes": null,
+      "rating": null
+    },
+    {
+      "player": {
+        "id": "276652",
+        "name": "Sergio Camello",
+        "photo": null
+      },
+      "team": {
+        "id": "101",
+        "name": "Rayo Vallecano",
+        "abbreviation": "RAY",
+        "displayName": "Rayo Vallecano",
+        "color": "ffffff",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2019-05-08T16:07Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/101.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2019-05-08T16:07Z"
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/club/_/id/101/rayo-vallecano",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/101/rayo-vallecano",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/101/rayo-vallecano",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/101/rayo-vallecano",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/esp.1",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/101/rayo-vallecano",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "goals": {
+        "total": 1,
+        "assists": null
+      },
+      "appearances": null,
+      "minutes": null,
+      "rating": null
+    },
+    {
+      "player": {
+        "id": "125200",
+        "name": "Álvaro García",
+        "photo": null
+      },
+      "team": {
+        "id": "101",
+        "name": "Rayo Vallecano",
+        "abbreviation": "RAY",
+        "displayName": "Rayo Vallecano",
+        "color": "ffffff",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2019-05-08T16:07Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/101.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2019-05-08T16:07Z"
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/club/_/id/101/rayo-vallecano",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/101/rayo-vallecano",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/101/rayo-vallecano",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/101/rayo-vallecano",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/esp.1",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/101/rayo-vallecano",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "goals": {
+        "total": 1,
+        "assists": null
+      },
+      "appearances": null,
+      "minutes": null,
+      "rating": null
+    },
+    {
+      "player": {
+        "id": "396612",
+        "name": "Mikel Rodriguez",
+        "photo": null
+      },
+      "team": {
+        "id": "96",
+        "name": "Alavés",
+        "abbreviation": "ALA",
+        "displayName": "Alavés",
+        "color": "0000ff",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2021-08-02T20:09Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/96.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2021-08-02T20:12Z"
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/club/_/id/96/alaves",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/96/alaves",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:96&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/96/alaves",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:96&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/96/alaves",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:96&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/esp.1",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:96&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/96/alaves",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:96&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "goals": {
+        "total": 1,
+        "assists": null
+      },
+      "appearances": null,
+      "minutes": null,
+      "rating": null
+    },
+    {
+      "player": {
+        "id": "301406",
+        "name": "Marc Aguado",
+        "photo": null
+      },
+      "team": {
+        "id": "3751",
+        "name": "Elche",
+        "abbreviation": "ELC",
+        "displayName": "Elche",
+        "color": "288A00",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2019-05-08T16:07Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/3751.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2019-05-08T16:07Z"
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/club/_/id/3751/elche",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/3751/elche",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/3751/elche",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/3751/elche",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/esp.1",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/3751/elche",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=squad",
             "text": "Squad",
             "shortText": "Squad",
             "isExternal": false,
@@ -63553,201 +64537,6 @@
     },
     {
       "player": {
-        "id": "125200",
-        "name": "Álvaro García",
-        "photo": null
-      },
-      "team": {
-        "id": "101",
-        "name": "Rayo Vallecano",
-        "abbreviation": "RAY",
-        "displayName": "Rayo Vallecano",
-        "color": "ffffff",
-        "logos": [
-          {
-            "href": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
-            "width": 500,
-            "height": 500,
-            "alt": "",
-            "rel": [
-              "full",
-              "default"
-            ],
-            "lastUpdated": "2019-05-08T16:07Z"
-          },
-          {
-            "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/101.png",
-            "width": 500,
-            "height": 500,
-            "alt": "",
-            "rel": [
-              "full",
-              "dark"
-            ],
-            "lastUpdated": "2019-05-08T16:07Z"
-          }
-        ],
-        "links": [
-          {
-            "language": "en-US",
-            "rel": [
-              "clubhouse",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/club/_/id/101/rayo-vallecano",
-            "text": "Clubhouse",
-            "shortText": "Clubhouse",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "stats",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/stats/_/id/101/rayo-vallecano",
-            "text": "Stats",
-            "shortText": "Stats",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "stats",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=stats",
-            "text": "Stats",
-            "shortText": "Stats",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "schedule",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/fixtures/_/id/101/rayo-vallecano",
-            "text": "Fixtures",
-            "shortText": "Fixtures",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "schedule",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=scores",
-            "text": "Fixtures",
-            "shortText": "Fixtures",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "results",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/results/_/id/101/rayo-vallecano",
-            "text": "Results",
-            "shortText": "Results",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "results",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=scores",
-            "text": "Results",
-            "shortText": "Results",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "standings",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/standings/_/league/esp.1",
-            "text": "Standings",
-            "shortText": "Standings",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "standings",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=standings",
-            "text": "Standings",
-            "shortText": "Standings",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "squad",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/squad/_/id/101/rayo-vallecano",
-            "text": "Squad",
-            "shortText": "Squad",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "squad",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=squad",
-            "text": "Squad",
-            "shortText": "Squad",
-            "isExternal": false,
-            "isPremium": false
-          }
-        ]
-      },
-      "goals": {
-        "total": 1,
-        "assists": null
-      },
-      "appearances": null,
-      "minutes": null,
-      "rating": null
-    },
-    {
-      "player": {
         "id": "409318",
         "name": "Sergio Martínez",
         "photo": null
@@ -64121,201 +64910,6 @@
               "team"
             ],
             "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:243&section=squad",
-            "text": "Squad",
-            "shortText": "Squad",
-            "isExternal": false,
-            "isPremium": false
-          }
-        ]
-      },
-      "goals": {
-        "total": 1,
-        "assists": null
-      },
-      "appearances": null,
-      "minutes": null,
-      "rating": null
-    },
-    {
-      "player": {
-        "id": "396612",
-        "name": "Mikel Rodriguez",
-        "photo": null
-      },
-      "team": {
-        "id": "96",
-        "name": "Alavés",
-        "abbreviation": "ALA",
-        "displayName": "Alavés",
-        "color": "0000ff",
-        "logos": [
-          {
-            "href": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
-            "width": 500,
-            "height": 500,
-            "alt": "",
-            "rel": [
-              "full",
-              "default"
-            ],
-            "lastUpdated": "2021-08-02T20:09Z"
-          },
-          {
-            "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/96.png",
-            "width": 500,
-            "height": 500,
-            "alt": "",
-            "rel": [
-              "full",
-              "dark"
-            ],
-            "lastUpdated": "2021-08-02T20:12Z"
-          }
-        ],
-        "links": [
-          {
-            "language": "en-US",
-            "rel": [
-              "clubhouse",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/club/_/id/96/alaves",
-            "text": "Clubhouse",
-            "shortText": "Clubhouse",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "stats",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/stats/_/id/96/alaves",
-            "text": "Stats",
-            "shortText": "Stats",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "stats",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:96&section=stats",
-            "text": "Stats",
-            "shortText": "Stats",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "schedule",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/fixtures/_/id/96/alaves",
-            "text": "Fixtures",
-            "shortText": "Fixtures",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "schedule",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:96&section=scores",
-            "text": "Fixtures",
-            "shortText": "Fixtures",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "results",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/results/_/id/96/alaves",
-            "text": "Results",
-            "shortText": "Results",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "results",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:96&section=scores",
-            "text": "Results",
-            "shortText": "Results",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "standings",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/standings/_/league/esp.1",
-            "text": "Standings",
-            "shortText": "Standings",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "standings",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:96&section=standings",
-            "text": "Standings",
-            "shortText": "Standings",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "squad",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/squad/_/id/96/alaves",
-            "text": "Squad",
-            "shortText": "Squad",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "squad",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:96&section=squad",
             "text": "Squad",
             "shortText": "Squad",
             "isExternal": false,
@@ -64723,6 +65317,201 @@
     },
     {
       "player": {
+        "id": "260740",
+        "name": "Jorge de Frutos",
+        "photo": null
+      },
+      "team": {
+        "id": "101",
+        "name": "Rayo Vallecano",
+        "abbreviation": "RAY",
+        "displayName": "Rayo Vallecano",
+        "color": "ffffff",
+        "logos": [
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "default"
+            ],
+            "lastUpdated": "2019-05-08T16:07Z"
+          },
+          {
+            "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/101.png",
+            "width": 500,
+            "height": 500,
+            "alt": "",
+            "rel": [
+              "full",
+              "dark"
+            ],
+            "lastUpdated": "2019-05-08T16:07Z"
+          }
+        ],
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/club/_/id/101/rayo-vallecano",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/101/rayo-vallecano",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/101/rayo-vallecano",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/101/rayo-vallecano",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/esp.1",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/101/rayo-vallecano",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:101&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "goals": {
+        "total": 1,
+        "assists": null
+      },
+      "appearances": null,
+      "minutes": null,
+      "rating": null
+    },
+    {
+      "player": {
         "id": "356639",
         "name": "Lorenzo Amatucci",
         "photo": null
@@ -65110,401 +65899,11 @@
       "appearances": null,
       "minutes": null,
       "rating": null
-    },
-    {
-      "player": {
-        "id": "273424",
-        "name": "Gonzalo Villar",
-        "photo": null
-      },
-      "team": {
-        "id": "3751",
-        "name": "Elche",
-        "abbreviation": "ELC",
-        "displayName": "Elche",
-        "color": "288A00",
-        "logos": [
-          {
-            "href": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
-            "width": 500,
-            "height": 500,
-            "alt": "",
-            "rel": [
-              "full",
-              "default"
-            ],
-            "lastUpdated": "2019-05-08T16:07Z"
-          },
-          {
-            "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/3751.png",
-            "width": 500,
-            "height": 500,
-            "alt": "",
-            "rel": [
-              "full",
-              "dark"
-            ],
-            "lastUpdated": "2019-05-08T16:07Z"
-          }
-        ],
-        "links": [
-          {
-            "language": "en-US",
-            "rel": [
-              "clubhouse",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/club/_/id/3751/elche",
-            "text": "Clubhouse",
-            "shortText": "Clubhouse",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "stats",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/stats/_/id/3751/elche",
-            "text": "Stats",
-            "shortText": "Stats",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "stats",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=stats",
-            "text": "Stats",
-            "shortText": "Stats",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "schedule",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/fixtures/_/id/3751/elche",
-            "text": "Fixtures",
-            "shortText": "Fixtures",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "schedule",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=scores",
-            "text": "Fixtures",
-            "shortText": "Fixtures",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "results",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/results/_/id/3751/elche",
-            "text": "Results",
-            "shortText": "Results",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "results",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=scores",
-            "text": "Results",
-            "shortText": "Results",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "standings",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/standings/_/league/esp.1",
-            "text": "Standings",
-            "shortText": "Standings",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "standings",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=standings",
-            "text": "Standings",
-            "shortText": "Standings",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "squad",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/squad/_/id/3751/elche",
-            "text": "Squad",
-            "shortText": "Squad",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "squad",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:3751&section=squad",
-            "text": "Squad",
-            "shortText": "Squad",
-            "isExternal": false,
-            "isPremium": false
-          }
-        ]
-      },
-      "goals": {
-        "total": 1,
-        "assists": null
-      },
-      "appearances": null,
-      "minutes": null,
-      "rating": null
-    },
-    {
-      "player": {
-        "id": "257786",
-        "name": "Dávid Hancko",
-        "photo": "https://a.espncdn.com/i/headshots/soccer/players/full/257786.png"
-      },
-      "team": {
-        "id": "1068",
-        "name": "Atlético Madrid",
-        "abbreviation": "ATM",
-        "displayName": "Atlético Madrid",
-        "color": "ca3624",
-        "logos": [
-          {
-            "href": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
-            "width": 500,
-            "height": 500,
-            "alt": "",
-            "rel": [
-              "full",
-              "default"
-            ],
-            "lastUpdated": "2025-09-19T20:43Z"
-          },
-          {
-            "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/1068.png",
-            "width": 500,
-            "height": 500,
-            "alt": "",
-            "rel": [
-              "full",
-              "dark"
-            ],
-            "lastUpdated": "2025-09-19T20:42Z"
-          }
-        ],
-        "links": [
-          {
-            "language": "en-US",
-            "rel": [
-              "clubhouse",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/club/_/id/1068/atletico-madrid",
-            "text": "Clubhouse",
-            "shortText": "Clubhouse",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "stats",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/stats/_/id/1068/atletico-madrid",
-            "text": "Stats",
-            "shortText": "Stats",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "stats",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:1068&section=stats",
-            "text": "Stats",
-            "shortText": "Stats",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "schedule",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/fixtures/_/id/1068/atletico-madrid",
-            "text": "Fixtures",
-            "shortText": "Fixtures",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "schedule",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:1068&section=scores",
-            "text": "Fixtures",
-            "shortText": "Fixtures",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "results",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/results/_/id/1068/atletico-madrid",
-            "text": "Results",
-            "shortText": "Results",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "results",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:1068&section=scores",
-            "text": "Results",
-            "shortText": "Results",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "standings",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/standings/_/league/esp.1",
-            "text": "Standings",
-            "shortText": "Standings",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "standings",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:1068&section=standings",
-            "text": "Standings",
-            "shortText": "Standings",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "squad",
-              "desktop",
-              "team"
-            ],
-            "href": "https://www.espn.com/soccer/team/squad/_/id/1068/atletico-madrid",
-            "text": "Squad",
-            "shortText": "Squad",
-            "isExternal": false,
-            "isPremium": false
-          },
-          {
-            "language": "en-US",
-            "rel": [
-              "squad",
-              "sportscenter",
-              "app",
-              "team"
-            ],
-            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:1068&section=squad",
-            "text": "Squad",
-            "shortText": "Squad",
-            "isExternal": false,
-            "isPremium": false
-          }
-        ]
-      },
-      "goals": {
-        "total": 1,
-        "assists": null
-      },
-      "appearances": null,
-      "minutes": null,
-      "rating": null
     }
   ],
   "injuries": [],
   "predictionBalance": {
-    "total": 0,
+    "total": 1,
     "correct": 0,
     "accuracy": 0,
     "bySign": {
@@ -65517,7 +65916,7 @@
         "correct": 0
       },
       "X": {
-        "total": 0,
+        "total": 1,
         "correct": 0
       }
     },
@@ -65531,12 +65930,313 @@
         "correct": 0
       },
       "difícil": {
-        "total": 0,
+        "total": 1,
         "correct": 0
       }
     }
   },
   "news": [
+    {
+      "id": 49684853,
+      "headline": "Moreno: Real Madrid need Jose Mourinho's 'it factor'",
+      "description": "Moreno: Real Madrid need Jose Mourinho's 'it factor'",
+      "published": "2026-08-21T22:13:31Z",
+      "link": "https://www.espn.com/video/clip/_/id/49684853/real-madrid-need-jose-mourinho-factor",
+      "images": [
+        {
+          "name": "Moreno: Real Madrid need Jose Mourinho's 'it factor'",
+          "caption": "Moreno: Real Madrid need Jose Mourinho's 'it factor'",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0821/dm_260821_COM_SOC_Analysis_Moreno_Real_Madrid_need_Jose_Mourinhos_it_factor_20260821_GLOBAL/dm_260821_COM_SOC_Analysis_Moreno_Real_Madrid_need_Jose_Mourinhos_it_factor_20260821_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49684467,
+      "headline": "Real Betis vs. Real Sociedad - Game Highlights",
+      "description": "Watch the Game Highlights from Real Betis vs. Real Sociedad, 08/21/2026",
+      "published": "2026-08-21T21:07:14Z",
+      "link": "https://www.espn.com/video/clip/_/id/49684467/real-betis-vs-real-sociedad-game-highlights",
+      "images": [
+        {
+          "name": "Real Betis vs. Real Sociedad - Game Highlights",
+          "caption": "Watch the Game Highlights from Real Betis vs. Real Sociedad, 08/21/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0821/fbff3571-bc3e-4ce9-8476-a6c020d19646/fbff3571-bc3e-4ce9-8476-a6c020d19646.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49678076,
+      "headline": "Transfer rumors, news: Man United looking at move for Barça's Balde",
+      "description": "Manchester United are looking into the possibility of signing defender Alejandro Balde from Barcelona. Transfer Talk has the latest.",
+      "published": "2026-08-21T20:37:22Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49678076/transfer-rumors-news-arsenal-want-yildiz-al-hilal-add-martinelli-shortlist",
+      "images": [
+        {
+          "dataSourceIdentifier": "1ad738aaa9a0b",
+          "id": 49684033,
+          "type": "header",
+          "name": "Balde [1296x729]",
+          "credit": "(Photo by Jose Breton/Pics Action/NurPhoto via Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0821/r1705008_2_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Why Ezri Konsa would be an 'outstanding signing' for Arsenal",
+          "caption": "Why Ezri Konsa would be an 'outstanding signing' for Arsenal",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0820/dm_260820_COM_SOC_Analysis_Why_Ezri_Konsa_would_be_an_outstanding_signing_for_Arsenal_20260820_GLOBAL/dm_260820_COM_SOC_Analysis_Why_Ezri_Konsa_would_be_an_outstanding_signing_for_Arsenal_20260820_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
+      "id": 48990955,
+      "headline": "Summer transfer window: Grading big signings in men's soccer",
+      "description": "The 2026 summer transfer window is open. Here is how we rated the biggest deals.",
+      "published": "2026-08-21T18:59:04Z",
+      "link": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
+      "images": [
+        {
+          "dataSourceIdentifier": "2672a47b2806f",
+          "id": 48440852,
+          "type": "header",
+          "name": "Ezri Konsa [1296x729]",
+          "credit": "Getty",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0409/r1641030_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Why Ezri Konsa would be an 'outstanding signing' for Arsenal",
+          "caption": "Why Ezri Konsa would be an 'outstanding signing' for Arsenal",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0820/dm_260820_COM_SOC_Analysis_Why_Ezri_Konsa_would_be_an_outstanding_signing_for_Arsenal_20260820_GLOBAL/dm_260820_COM_SOC_Analysis_Why_Ezri_Konsa_would_be_an_outstanding_signing_for_Arsenal_20260820_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49683218,
+      "headline": "Puyol: Playing with Barcelona's best shaped my career",
+      "description": "Puyol: Playing with Barcelona's best shaped my career",
+      "published": "2026-08-21T18:36:03Z",
+      "link": "https://www.espn.com/video/clip/_/id/49683218/playing-barcelona-best-shaped-my-career",
+      "images": [
+        {
+          "name": "Puyol: Playing with Barcelona's best shaped my career",
+          "caption": "Puyol: Playing with Barcelona's best shaped my career",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0821/dm_260821_Puyol_Playing_with_Barcelonas_best_shaped_my_career/dm_260821_Puyol_Playing_with_Barcelonas_best_shaped_my_career.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49683108,
+      "headline": "What advice would 2013 Mourinho give to today's Mourinho?",
+      "description": "What advice would 2013 Mourinho give to today's Mourinho?",
+      "published": "2026-08-21T18:25:46Z",
+      "link": "https://www.espn.com/video/clip/_/id/49683108/what-advice-2013-mourinho-give-today-mourinho",
+      "images": [
+        {
+          "name": "What advice would 2013 Mourinho give to today's Mourinho?",
+          "caption": "What advice would 2013 Mourinho give to today's Mourinho?",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0821/dm_260821_What_advice_would_2013_Mourinho_give_to_todays_Mourinho/dm_260821_What_advice_would_2013_Mourinho_give_to_todays_Mourinho.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49681055,
+      "headline": "Thomas Partey signs for Al Shabab after leaving Villarreal",
+      "description": "Thomas Partey has signed for Saudi Pro League side Al Shabab, the club announced on Friday.",
+      "published": "2026-08-21T14:12:35Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49681055/thomas-partey-signs-al-shabab-leaving-villarreal",
+      "images": [
+        {
+          "dataSourceIdentifier": "01c7fef9fb6a5",
+          "id": 49681073,
+          "type": "header",
+          "name": "Thomas Partey [1296x729]",
+          "alt": "Thomas Partey looks on while playing for Villarreal.",
+          "credit": "(Photo by Juan Manuel Serrano Arce/Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0821/r1704831_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Laurens: Gap has grown between Arsenal & Premier League chasers",
+          "caption": "Laurens: Gap has grown between Arsenal & Premier League chasers",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0820/dm_260820_COM_SOC_Analysis_Laurens_Gap_has_grown_between_Arsenal_Premier_League_chasers_20260820_GLOBAL/dm_260820_COM_SOC_Analysis_Laurens_Gap_has_grown_between_Arsenal_Premier_League_chasers_20260820_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49679666,
+      "headline": "Mourinho: Rodri would have been the icing on the cake for Real Madrid",
+      "description": "Mourinho: Rodri would have been the icing on the cake for Real Madrid",
+      "published": "2026-08-21T11:11:38Z",
+      "link": "https://www.espn.com/video/clip/_/id/49679666/rodri-the-icing-cake-real-madrid",
+      "images": [
+        {
+          "name": "Mourinho: Rodri would have been the icing on the cake for Real Madrid",
+          "caption": "Mourinho: Rodri would have been the icing on the cake for Real Madrid",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0821/dm_260821_COM_SOC_Presser_Mourinho_Rodri_would_have_been_the_icing_on_the_cake_for_Real_Madrid_20260821_G/dm_260821_COM_SOC_Presser_Mourinho_Rodri_would_have_been_the_icing_on_the_cake_for_Real_Madrid_20260821_G.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49678976,
+      "headline": "Kylian Mbappé, Vinícius Júnior, Jude Bellingham aren't 'incompatible' at Real Madrid - José Mourinho",
+      "description": "José Mourinho admitted he faces a \"difficult\" task fitting Kylian Mbappé, Vinícius Júnior and Jude Bellingham into his starting 11.",
+      "published": "2026-08-21T11:12:39Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49678976/kylian-mbappe-vinicius-junior-jude-bellingham-arent-incompatible-real-madrid-jose-mourinho",
+      "images": [
+        {
+          "dataSourceIdentifier": "a92860c30c5ed",
+          "id": 49678984,
+          "type": "header",
+          "name": "Mourinho [1296x729]",
+          "credit": "Getty",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0821/r1704746_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Moreno: Mourinho at Real Madrid won't work long term",
+          "caption": "Moreno: Mourinho at Real Madrid won't work long term",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0820/dm_260820_COM_SOC_Analysis_Moreno3A_Mourinho_at_Real_Madrid_wonE28099t_work_long_term_GLOBAL_2026-08-20/dm_260820_COM_SOC_Analysis_Moreno3A_Mourinho_at_Real_Madrid_wonE28099t_work_long_term_GLOBAL_2026-08-20.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49678731,
+      "headline": "Atlético Madrid working on loan deal for Chelsea's Nicolas Jackson, Aston Villa also interested - sources",
+      "description": "Atlético Madrid are looking to beat Aston Villa to the loan signing of Nicolas Jackson from Chelsea, sources told ESPN.",
+      "published": "2026-08-21T09:20:26Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49678731/atletico-madrid-loan-deal-chelsea-nicolas-jackson-aston-villa-interested",
+      "images": [
+        {
+          "dataSourceIdentifier": "1ad1ed5adc091",
+          "id": 49678738,
+          "type": "header",
+          "name": "Nicolas Jackson [1296x729]",
+          "alt": "Nicolas Jackson runs while playing for Chelsea.",
+          "credit": "(Photo by Darren Walsh/Chelsea FC via Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0821/r1704740_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Can Chelsea really finish top four?",
+          "caption": "The \"ESPN FC\" panel preview Chelsea's upcoming season.",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0820/dm_260820_Chelsea_StudioShow_9x16/dm_260820_Chelsea_StudioShow_9x16.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49678889,
+      "headline": "Wild boars strike repeatedly to pile problems onto relegated Real Oviedo",
+      "description": "Real Oviedo were relegated from La Liga in Spain last season and their preparations to bounce back have been interrupted by wild boars at their training ground.",
+      "published": "2026-08-21T09:20:23Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49678889/wild-boars-strike-repeatedly-pile-problems-relegated-real-oviedo",
+      "images": [
+        {
+          "dataSourceIdentifier": "259649dc5e1fa",
+          "id": 49678851,
+          "type": "header",
+          "name": "Oviedo [1296x729]",
+          "credit": "Getty",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0821/r1704741_1296x729_16-9.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49668652,
+      "headline": "If Barcelona want a striker like Julián Álvarez, only a few options match up",
+      "description": "Barcelona want a No. 9 striker but have been unable to land their first-choice target of Julián Álvarez. Who should they go for instead? And what do the stats tell us?",
+      "published": "2026-08-21T13:42:47Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49668652/if-barcelona-want-striker-julian-alvarez-only-options-match-up",
+      "images": [
+        {
+          "dataSourceIdentifier": "86c426d9fdf47",
+          "id": 49669669,
+          "type": "header",
+          "name": "Julian Alvarez replacement split art [1296x729]",
+          "credit": "Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0820/r1704345_5_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "8fe23273046c7",
+          "id": 33087341,
+          "type": "header",
+          "name": "Sociedad LEAD 220117 [1296x729]",
+          "credit": "Ricardo Larreina/Europa Press via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2022/0117/r962798_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "2dcc08cbf865b",
+          "id": 49671304,
+          "type": "header",
+          "name": "Georges Mikautadze of Villarreal FC reacts during the LaLiga EA Sports 2026/27 match between Real Racing Club de Santander and Villarreal [1296x729]",
+          "caption": "Georges Mikautadze of Villarreal FC reacts during the LaLiga EA Sports 2026/27 match between Real Racing Club de Santander and Villarreal",
+          "credit": "Juan Manuel Serrano Arce/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0820/r1704450_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "4efc7807bad2c",
+          "id": 49499248,
+          "type": "header",
+          "name": "Hamza Abdelkarim Barca celeb [1296x729]",
+          "caption": "Hamza Abdelkarim celebrates scoring his second goal for Barcelona against Birmingham City.",
+          "alt": "Hazma Abdelkarim of FC Barcelona celebrates after scoring a goal to make it 1-2 during the pre-season friendly match between Birmingham City and FC Barcelona at St Andrewâs at Knighthead Park on July 31, 2026 in Birmingham, England.",
+          "credit": "Catherine Ivill - AMA/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0731/r1696107_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Moreno: Barcelona must have a plan B if Alvarez transfer fails",
+          "caption": "Moreno: Barcelona must have a plan B if Alvarez transfer fails",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0812/dm_260812_COM_SOC_Analysis_Moreno3A_Barcelona_must_have_a_plan_B_if_Alvarez_transfer_fails__GLOBAL_2026-08-12/dm_260812_COM_SOC_Analysis_Moreno3A_Barcelona_must_have_a_plan_B_if_Alvarez_transfer_fails__GLOBAL_2026-08-12.jpg"
+        }
+      ]
+    },
     {
       "id": 49674619,
       "headline": "Will Barcelona's lack of a number 9 affect their season?",
@@ -65735,309 +66435,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0806/dm_260806_Burley_Diomande_has_a_lot_of_pressure_on_him_at_Real_Madrid/dm_260806_Burley_Diomande_has_a_lot_of_pressure_on_him_at_Real_Madrid.jpg"
-        }
-      ]
-    },
-    {
-      "id": 48990955,
-      "headline": "Summer transfer window: Grading big signings in men's soccer",
-      "description": "The 2026 summer transfer window is open. Here is how we rated the biggest deals.",
-      "published": "2026-08-20T14:11:11Z",
-      "link": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
-      "images": [
-        {
-          "dataSourceIdentifier": "504f2c61270d0",
-          "id": 49649824,
-          "type": "header",
-          "name": "Rodri [1296x729]",
-          "credit": "(Photo by Eric Alonso/Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0818/r1703455_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Moreno questions Barcelona for signing Rodri before a striker",
-          "caption": "Moreno questions Barcelona for signing Rodri before a striker",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0818/dm_260818_COM_SOC_Analysis_Moreno_questions_Barcelona_for_signing_Rodri_before_a_striker_20260818_GLOBAL/dm_260818_COM_SOC_Analysis_Moreno_questions_Barcelona_for_signing_Rodri_before_a_striker_20260818_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49663664,
-      "headline": "Lee Kang-In and Alex Baena score in Atlético's opening win",
-      "description": "Lee Kang-In and Alex Baena score in Atlético's opening win.",
-      "published": "2026-08-19T22:12:40Z",
-      "link": "https://www.espn.com/video/clip/_/id/49663664/lee-kang-alex-baena-score-atletico-opening-win",
-      "images": [
-        {
-          "name": "Lee Kang-In and Alex Baena score in Atlético's opening win",
-          "caption": "Lee Kang-In and Alex Baena score in Atlético's opening win.",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0819/dm_260819_Lee_Kang-In_and_Alex_Baena_score_in_Atleticos_opening_win/dm_260819_Lee_Kang-In_and_Alex_Baena_score_in_Atleticos_opening_win.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49663461,
-      "headline": "Has Barcelona already found the solution to their number 9 dilemma?",
-      "description": "Has Barcelona already found the solution to their number 9 dilemma?",
-      "published": "2026-08-19T21:47:32Z",
-      "link": "https://www.espn.com/video/clip/_/id/49663461/has-barcelona-already-found-solution-their-number-9-dilemma",
-      "images": [
-        {
-          "name": "Has Barcelona already found the solution to their number 9 dilemma?",
-          "caption": "Has Barcelona already found the solution to their number 9 dilemma?",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0819/dm_260819_Has_Barcelona_already_found_the_solution_to_their_number_9_dilemma/dm_260819_Has_Barcelona_already_found_the_solution_to_their_number_9_dilemma.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49659175,
-      "headline": "Barcelona end Julián Álvarez pursuit, seek alternative - source",
-      "description": "Barcelona have parked attempts to sign Julián Álvarez and are exploring other striker options before the transfer window closes, a source has told ESPN.",
-      "published": "2026-08-19T21:46:23Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49659175/barcelona-move-julian-alvarez-pursuit-looking-other-options-source",
-      "images": [
-        {
-          "dataSourceIdentifier": "67b7161c66220",
-          "id": 48433586,
-          "type": "header",
-          "name": "Julian Alvarez [1296x729]",
-          "caption": "Julian Alvarez",
-          "alt": "Julian Alvarez",
-          "credit": "Pablo Rodriguez/Quality Sport Images/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0408/r1640668_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "c5337ccddc883",
-          "id": 48762051,
-          "type": "header",
-          "name": "Lautaro Coppa Italia final celeb [1296x729]",
-          "caption": "Lautaro Martínez's goal secured victory for Inter Milan in the Coppa Italia final.",
-          "alt": "Lautaro Martinez of FC Internazionale celebrates his goal  during the Coppa Italia Final match between SS Lazio and FC Internazionale at Stadio Olimpico on May 13, 2026 in Rome, Italy",
-          "credit": "Image Photo Agency/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0513/r1657780_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Moreno questions Barcelona for signing Rodri before a striker",
-          "caption": "Moreno questions Barcelona for signing Rodri before a striker",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0818/dm_260818_COM_SOC_Analysis_Moreno_questions_Barcelona_for_signing_Rodri_before_a_striker_20260818_GLOBAL/dm_260818_COM_SOC_Analysis_Moreno_questions_Barcelona_for_signing_Rodri_before_a_striker_20260818_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49612768,
-      "headline": "Lee Kang-In scores in debut as Atlético win season opener",
-      "description": "Lee Kang-In scored a superb debut goal as Atlético Madrid opened their LaLiga campaign with a 2-0 win over Málaga.",
-      "published": "2026-08-19T22:38:00Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882925",
-      "images": [
-        {
-          "dataSourceIdentifier": "ed3010b1ed862",
-          "id": 49663112,
-          "type": "header",
-          "name": "Atleti celeb Malaga_260819 [1296x729]",
-          "caption": "Atleti players celebrate after scoring a goal against Malaga in their LaLiga opener on Wednesday.",
-          "alt": "Atleti players celebrate after scoring a goal against Malaga in their LaLiga opener on Wednesday.",
-          "credit": "Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0819/r1704060_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Lee Kang-In and Alex Baena score in Atlético's opening win",
-          "caption": "Lee Kang-In and Alex Baena score in Atlético's opening win.",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0819/dm_260819_Lee_Kang-In_and_Alex_Baena_score_in_Atleticos_opening_win/dm_260819_Lee_Kang-In_and_Alex_Baena_score_in_Atleticos_opening_win.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49663163,
-      "headline": "Atlético Madrid opens up their LaLiga season with a win over Málaga",
-      "description": "Atlético Madrid opens up their LaLiga season with a win over Málaga",
-      "published": "2026-08-19T21:16:37Z",
-      "link": "https://www.espn.com/video/clip/_/id/49663163/atletico-madrid-opens-their-laliga-season-win-malaga",
-      "images": [
-        {
-          "name": "Atlético Madrid opens up their LaLiga season with a win over Málaga",
-          "caption": "Atlético Madrid opens up their LaLiga season with a win over Málaga",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0819/310f118fbb1e471abdc9fe3fbb3e93831035/310f118fbb1e471abdc9fe3fbb3e93831035.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49662561,
-      "headline": "Barcelona win Joan Gamper Trophy as Gordon misses penalty",
-      "description": "Barcelona rounded off preseason with a 2-1 victory over Al Ahly in the Joan Gamper Trophy as Anthony Gordon missed a penalty on his Spotify Camp Nou debut on Wednesday.",
-      "published": "2026-08-19T21:45:57Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49662561/barcelona-joan-gamper-trophy-anthony-gordon-penalty-al-ahly",
-      "images": [
-        {
-          "dataSourceIdentifier": "e6f105e6da00e",
-          "id": 49662600,
-          "type": "header",
-          "name": "Gordon Barcelona [1296x729]",
-          "caption": "Anthony Gordon missed a penalty in Barcelona's win over Al Ahly in the Joan Gamper Trophy.",
-          "alt": "Anthony Gordon of FC Barcelona saludates to fans during the Joan Gamper Trophy, football match played between FC Barcelona and Al-Ahly FC at Spotify Camp Nou stadium on August 19, 2026 in Barcelona, Spain.",
-          "credit": "Javier Borrego/Europa Press via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0819/r1704036_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Rodri: Barcelona are creating a culture to win everything",
-          "caption": "Rodri: Barcelona are creating a culture to win everything",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0818/dm_260818_COM_SOC_Presser_Rodri_Barcelona_are_creating_a_culture_to_win_everything_20260818_GLOBAL/dm_260818_COM_SOC_Presser_Rodri_Barcelona_are_creating_a_culture_to_win_everything_20260818_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49659966,
-      "headline": "Simeone: Alvarez is one of the best players Atlético have, if not the best",
-      "description": "Simeone: Alvarez is one of the best players Atlético have, if not the best",
-      "published": "2026-08-19T15:58:30Z",
-      "link": "https://www.espn.com/video/clip/_/id/49659966/alvarez-one-best-players-atletico-not-best",
-      "images": [
-        {
-          "name": "Simeone: Alvarez is one of the best players Atlético have, if not the best",
-          "caption": "Simeone: Alvarez is one of the best players Atlético have, if not the best",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0819/dm_260819_Simeone_Alvarez_is_one_of_the_best_players_Atletico_have_if_not_the_best/dm_260819_Simeone_Alvarez_is_one_of_the_best_players_Atletico_have_if_not_the_best.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49651381,
-      "headline": "A decade of elite men's soccer as seen through the FC 100",
-      "description": "We've been tracking the FC 100 since 2016 and a lot has changed in the game -- though Lionel Messi has been ever-present. Gab Marcotti reflects on the list, its growth and what it shows you about men's soccer.",
-      "published": "2026-08-19T15:52:54Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49651381/a-decade-elite-men-soccer-seen-fc-100",
-      "images": [
-        {
-          "dataSourceIdentifier": "a214fc73105cc",
-          "id": 49659445,
-          "type": "header",
-          "name": "Messi kisses World Cup 260819 [1296x729]",
-          "credit": "David Ramos - FIFA/FIFA via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0819/r1703878_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Gab & Juls disagree over the No. 1 center forward in the FC 100",
-          "caption": "Gab & Juls disagree over the No. 1 center forward in the FC 100",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0817/dm_260817_COM_SOC_Analysis_Gab_Juls_disagree_over_the_No_1_center_forward_in_the_FC_100_20260817_GLOBAL/dm_260817_COM_SOC_Analysis_Gab_Juls_disagree_over_the_No_1_center_forward_in_the_FC_100_20260817_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49658153,
-      "headline": "José Mourinho told Vinícius Juníor amid Arsenal link: 'Don't leave' Real Madrid",
-      "description": "José Mourinho has said that he did speak to Vinícius Juníor about remaining at Real Madrid but insisted he did not need to do much persuading as the Brazilian has 'fallen in love' with the Spanish giants.",
-      "published": "2026-08-19T12:05:03Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49658153/jose-mourinho-spoke-vinicius-junior-fallen-love-real-madrid",
-      "images": [
-        {
-          "dataSourceIdentifier": "caf92bc7d616c",
-          "id": 49453445,
-          "type": "header",
-          "name": "Vini. Jr Real Madrid future [1296x729]",
-          "caption": "Vinícius Júnior has just one year remaining on his contract at Real Madrid.",
-          "credit": "Florencia Tan Jun/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0325/r1633697_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Kirkland: Mourinho 'will have a plan' for Vinícius Júnior",
-          "caption": "Kirkland: Mourinho 'will have a plan' for Vinícius Júnior",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0806/dm_260806_Kirkland_Mourinho_will_have_a_plan_for_Vinicius_Junior/dm_260806_Kirkland_Mourinho_will_have_a_plan_for_Vinicius_Junior.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49648232,
-      "headline": "Why Rodri is key to Barcelona's quest for LaLiga three-peat, Champions League glory",
-      "description": "Barcelona are signing Rodri, one of football's best midfielders. Does that make them LaLiga favorites once again? And can they win the Champions League, too?",
-      "published": "2026-08-19T06:54:44Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49648232/why-rodri-key-barcelona-quest-laliga-threepeat-champions-league-glory",
-      "images": [
-        {
-          "dataSourceIdentifier": "aa91ec10c495f",
-          "id": 49648204,
-          "type": "header",
-          "name": "Rodri [1296x729]",
-          "credit": "Eric Alonso/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0818/r1703366_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Rodri: Playing for Barcelona is a dream come true",
-          "caption": "Rodri: Playing for Barcelona is a dream come true",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0818/dm_260818_COM_SOC_Analysis_Rodri3A_Playing_for_Barcelona_is_a_dream_come_true__GLOBAL_2026-08-18/dm_260818_COM_SOC_Analysis_Rodri3A_Playing_for_Barcelona_is_a_dream_come_true__GLOBAL_2026-08-18.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49653403,
-      "headline": "Mourinho reveals Rodri's doubts led to Barcelona move over Real Madrid",
-      "description": "José Mourinho revealed that he spoke to Rodri about joining Real Madrid, but seeing 'doubts' in the 2026 World Cup's best player led to the midfielder signing with Barcelona instead.",
-      "published": "2026-08-19T10:05:59Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49653403/mourinho-reveals-rodri-doubts-barcelona-move-real-madrid",
-      "images": [
-        {
-          "dataSourceIdentifier": "03089cef34f0b",
-          "id": 49653315,
-          "type": "header",
-          "name": "Mourinho [1296x729]",
-          "credit": "EPA/Boglarka Bodnar",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0819/r1703659_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Rodri: Barcelona are creating a culture to win everything",
-          "caption": "Rodri: Barcelona are creating a culture to win everything",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0818/dm_260818_COM_SOC_Presser_Rodri_Barcelona_are_creating_a_culture_to_win_everything_20260818_GLOBAL/dm_260818_COM_SOC_Presser_Rodri_Barcelona_are_creating_a_culture_to_win_everything_20260818_GLOBAL.jpg"
         }
       ]
     }
