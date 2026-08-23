@@ -2,26 +2,48 @@
  * ============================================================
  * FAMILIA CERNADAS
  * ACTUALIZADOR AUTOMÁTICO LALIGA 2026/27
+ *
+ * VERSIÓN 3.0
  * ============================================================
  *
- * FUENTE PRIMARIA:
- * ESPN Public API
+ * FUENTES
+ * ------------------------------------------------------------
+ * 1. ESPN
+ *    - Calendario
+ *    - Clasificación
+ *    - Estadísticas
+ *    - Goleadores
+ *    - Noticias
+ *    - Resúmenes de partidos
  *
- * FUENTE SECUNDARIA:
- * API-Football / API-Sports
+ * 2. API-FOOTBALL
+ *    - Fuente secundaria cuando está disponible
  *
- * OBJETIVO:
- * - Calendario
- * - Resultados
- * - Clasificación
- * - Estadísticas de partidos
- * - Formaciones cuando estén disponibles
- * - Porteros
- * - Historial de equipos
- * - Pronósticos 1/X/2
- * - Balance acumulado
- * - Noticias
- * - Lesiones
+ * ============================================================
+ *
+ * OBJETIVO DE LA VERSIÓN 3.0
+ * ------------------------------------------------------------
+ *
+ * Construir una base histórica que permita mejorar
+ * progresivamente el modelo de pronósticos.
+ *
+ * El sistema almacena:
+ *
+ * - resultados
+ * - forma
+ * - local/visitante
+ * - goles
+ * - estadísticas de partido
+ * - formaciones
+ * - porteros
+ * - lesiones
+ * - noticias
+ * - probabilidades
+ * - dificultad
+ * - aciertos
+ *
+ * y posteriormente permite estudiar qué variables son
+ * realmente predictivas.
  *
  * ============================================================
  */
@@ -34,25 +56,23 @@ import path from "node:path";
 // CONFIGURACIÓN
 // ============================================================
 
-const LEAGUE_ID = 140;
-const SEASON = 2026;
-
-const ESPN_LEAGUE = "esp.1";
-
-const ESPN_SITE_BASE =
-    "https://site.api.espn.com/apis/site/v2/sports/soccer";
-
-const ESPN_SITE_V2_BASE =
-    "https://site.api.espn.com/apis/v2/sports/soccer";
+const ESPN_BASE =
+    "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1";
 
 const ESPN_CORE_BASE =
-    "https://sports.core.api.espn.com/v2/sports/soccer/leagues";
-
-const API_FOOTBALL_KEY =
-    process.env.API_FOOTBALL_KEY || "";
+    "https://sports.core.api.espn.com/v2/sports/soccer/leagues/esp.1";
 
 const API_FOOTBALL_BASE =
     "https://v3.football.api-sports.io";
+
+const API_KEY =
+    process.env.API_FOOTBALL_KEY || null;
+
+const LEAGUE_ID = 140;
+
+const SEASON = 2026;
+
+const SEASON_LABEL = "2026/27";
 
 const DATA_FILE =
     path.resolve("data/laliga_2026_27.json");
@@ -66,9 +86,9 @@ let requestsThisRun = 0;
 
 const MAX_REQUESTS = 90;
 
-const MAX_DETAIL_FIXTURES = 40;
+const MAX_DETAIL_FIXTURES = 60;
 
-const FETCH_RETRIES = 3;
+const DETAIL_BATCH_SIZE = 20;
 
 
 // ============================================================
@@ -76,7 +96,11 @@ const FETCH_RETRIES = 3;
 // ============================================================
 
 function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+
+    return new Promise(
+        resolve => setTimeout(resolve, ms)
+    );
+
 }
 
 
@@ -87,6 +111,26 @@ function number(value, fallback = 0) {
     return Number.isFinite(n)
         ? n
         : fallback;
+
+}
+
+
+function nullableNumber(value) {
+
+    if (
+        value === null ||
+        value === undefined ||
+        value === ""
+    ) {
+        return null;
+    }
+
+    const n = Number(value);
+
+    return Number.isFinite(n)
+        ? n
+        : null;
+
 }
 
 
@@ -100,15 +144,30 @@ function percentage(value) {
         return null;
     }
 
-    const n = Number(
-        String(value)
-            .replace("%", "")
-            .trim()
-    );
+    const n =
+        Number(
+            String(value)
+                .replace("%", "")
+                .trim()
+        );
 
     return Number.isFinite(n)
         ? n
         : null;
+
+}
+
+
+function round(value, decimals = 4) {
+
+    if (!Number.isFinite(Number(value))) {
+        return null;
+    }
+
+    return Number(
+        Number(value).toFixed(decimals)
+    );
+
 }
 
 
@@ -118,178 +177,138 @@ function statisticValue(statistics, type) {
         return null;
     }
 
-    const item = statistics.find(
-        x =>
-            String(x.name || x.type || "")
-                .toLowerCase() ===
-            String(type)
-                .toLowerCase()
-    );
+    const wanted =
+        String(type)
+            .toLowerCase();
 
-    if (!item) {
+    const item =
+        statistics.find(
+            x =>
+                String(x.type || "")
+                    .toLowerCase() === wanted
+        );
+
+    return item?.value ?? null;
+
+}
+
+
+function resultFromScore(home, away) {
+
+    if (
+        home === null ||
+        home === undefined ||
+        away === null ||
+        away === undefined
+    ) {
         return null;
     }
 
-    return item.displayValue ??
-        item.value ??
-        null;
-}
+    if (home > away) {
+        return "1";
+    }
 
+    if (home < away) {
+        return "2";
+    }
 
-function dateToYYYYMMDD(date) {
-
-    const year =
-        date.getUTCFullYear();
-
-    const month =
-        String(
-            date.getUTCMonth() + 1
-        ).padStart(2, "0");
-
-    const day =
-        String(
-            date.getUTCDate()
-        ).padStart(2, "0");
-
-    return `${year}${month}${day}`;
-}
-
-
-function getCurrentSeasonStart() {
-
-    return new Date(
-        Date.UTC(
-            2026,
-            7,
-            1
-        )
-    );
+    return "X";
 
 }
 
 
-function getCurrentSeasonEnd() {
+function isFinished(status) {
 
-    return new Date(
-        Date.UTC(
-            2027,
-            5,
-            1
-        )
-    );
+    return [
+        "FT",
+        "AET",
+        "PEN"
+    ].includes(status);
+
+}
+
+
+function safeArray(value) {
+
+    return Array.isArray(value)
+        ? value
+        : [];
 
 }
 
 
 // ============================================================
-// FETCH JSON GENÉRICO
+// HTTP GENÉRICO
 // ============================================================
 
 async function fetchJSON(
     url,
     options = {},
-    label = ""
+    label = "HTTP"
 ) {
 
-    let lastError = null;
-
-    for (
-        let attempt = 1;
-        attempt <= FETCH_RETRIES;
-        attempt++
+    if (
+        requestsThisRun >=
+        MAX_REQUESTS
     ) {
 
-        try {
-
-            if (
-                requestsThisRun >= MAX_REQUESTS
-            ) {
-
-                throw new Error(
-                    "Límite de seguridad de peticiones alcanzado."
-                );
-
-            }
-
-            requestsThisRun++;
-
-            console.log(
-                `HTTP ${requestsThisRun}: ${label || url}`
-            );
-
-            const response =
-                await fetch(
-                    url,
-                    {
-                        ...options,
-                        headers: {
-                            Accept:
-                                "application/json",
-                            ...(options.headers || {})
-                        }
-                    }
-                );
-
-            const text =
-                await response.text();
-
-            let json;
-
-            try {
-
-                json =
-                    JSON.parse(text);
-
-            } catch {
-
-                throw new Error(
-                    `Respuesta no JSON (${response.status})`
-                );
-
-            }
-
-            if (!response.ok) {
-
-                throw new Error(
-                    `HTTP ${response.status}: ` +
-                    JSON.stringify(
-                        json.errors ||
-                        json.message ||
-                        json
-                    )
-                );
-
-            }
-
-            await sleep(120);
-
-            return json;
-
-        } catch (error) {
-
-            lastError = error;
-
-            console.warn(
-                `Intento ${attempt}/${FETCH_RETRIES} fallido:`,
-                error.message
-            );
-
-            if (
-                attempt <
-                FETCH_RETRIES
-            ) {
-
-                await sleep(
-                    500 * attempt
-                );
-
-            }
-
-        }
+        throw new Error(
+            "Límite de seguridad de peticiones alcanzado."
+        );
 
     }
 
-    throw lastError;
+
+    requestsThisRun++;
+
+
+    console.log(
+        `HTTP ${requestsThisRun}: ${label}`
+    );
+
+
+    const response =
+        await fetch(
+            url,
+            options
+        );
+
+
+    const text =
+        await response.text();
+
+
+    let json;
+
+
+    try {
+
+        json =
+            JSON.parse(text);
+
+    } catch {
+
+        throw new Error(
+            `${label}: respuesta no JSON HTTP ${response.status}`
+        );
+
+    }
+
+
+    if (!response.ok) {
+
+        throw new Error(
+            `${label}: HTTP ${response.status}: ` +
+            JSON.stringify(json)
+        );
+
+    }
+
+
+    await sleep(120);
+
+
+    return json;
 
 }
 
@@ -299,40 +318,14 @@ async function fetchJSON(
 // ============================================================
 
 async function espn(
-    endpoint,
-    params = {},
-    label = ""
+    url,
+    label
 ) {
 
-    const url =
-        new URL(
-            endpoint
-        );
-
-    for (
-        const [key, value]
-        of Object.entries(params)
-    ) {
-
-        if (
-            value !== undefined &&
-            value !== null &&
-            value !== ""
-        ) {
-
-            url.searchParams.set(
-                key,
-                value
-            );
-
-        }
-
-    }
-
     return fetchJSON(
-        url.toString(),
+        url,
         {},
-        label || url.toString()
+        label
     );
 
 }
@@ -347,19 +340,21 @@ async function apiFootball(
     params = {}
 ) {
 
-    if (!API_FOOTBALL_KEY) {
+    if (!API_KEY) {
 
         throw new Error(
-            "API_FOOTBALL_KEY no configurada."
+            "API_FOOTBALL_KEY no configurada"
         );
 
     }
+
 
     const url =
         new URL(
             API_FOOTBALL_BASE +
             endpoint
         );
+
 
     for (
         const [key, value]
@@ -381,22 +376,23 @@ async function apiFootball(
 
     }
 
+
     return fetchJSON(
-        url.toString(),
+        url,
         {
             headers: {
                 "x-apisports-key":
-                    API_FOOTBALL_KEY
+                    API_KEY
             }
         },
-        `API-Football ${url.pathname}${url.search}`
+        `API-Football ${endpoint}`
     );
 
 }
 
 
 // ============================================================
-// CARGAR JSON EXISTENTE
+// CARGAR JSON
 // ============================================================
 
 async function loadData() {
@@ -409,8 +405,10 @@ async function loadData() {
                 "utf8"
             );
 
+
         const data =
             JSON.parse(text);
+
 
         data.meta ||= {};
 
@@ -426,6 +424,8 @@ async function loadData() {
 
         data.predictionBalance ||= {};
 
+        data.modelLearning ||= {};
+
         return data;
 
     } catch {
@@ -433,7 +433,6 @@ async function loadData() {
         return {
 
             meta: {
-
                 leagueId:
                     LEAGUE_ID,
 
@@ -444,8 +443,7 @@ async function loadData() {
                     "LaLiga",
 
                 seasonLabel:
-                    "2026/27"
-
+                    SEASON_LABEL
             },
 
             matches: [],
@@ -459,14 +457,12 @@ async function loadData() {
             news: [],
 
             predictionBalance: {
-
                 total: 0,
-
                 correct: 0,
-
                 accuracy: 0
+            },
 
-            }
+            modelLearning: {}
 
         };
 
@@ -476,122 +472,123 @@ async function loadData() {
 
 
 // ============================================================
+// CALENDARIO ESPN
+// ============================================================
+
+async function getCalendar() {
+
+    const start =
+        "20260801";
+
+    const end =
+        "20270601";
+
+
+    const url =
+        `${ESPN_BASE}/scoreboard` +
+        `?limit=1000` +
+        `&dates=${start}-${end}`;
+
+
+    const data =
+        await espn(
+            url,
+            "ESPN LaLiga calendario"
+        );
+
+
+    return safeArray(
+        data.events
+    );
+
+}
+
+
+// ============================================================
 // NORMALIZAR PARTIDO ESPN
 // ============================================================
 
-function normalizeESPNEvent(event) {
+function normalizeESPNMatch(event) {
 
     const competition =
         event.competitions?.[0];
 
-    const competitors =
-        competition?.competitors || [];
-
     const home =
-        competitors.find(
-            x =>
-                x.homeAway === "home"
+        competition?.competitors?.find(
+            x => x.homeAway === "home"
         );
 
     const away =
-        competitors.find(
-            x =>
-                x.homeAway === "away"
+        competition?.competitors?.find(
+            x => x.homeAway === "away"
         );
+
 
     const status =
-        event.status || {};
+        competition?.status ||
+        event.status ||
+        {};
+
 
     const completed =
-        Boolean(
-            status.type?.completed
-        );
+        status.type?.completed === true;
 
-    let shortStatus =
-        status.type?.shortDetail ||
-        status.type?.name ||
-        null;
 
-    if (completed) {
-        shortStatus = "FT";
-    }
+    const homeScore =
+        home?.score !== undefined
+            ? nullableNumber(home.score)
+            : null;
 
-    const broadcasts =
-        competition?.broadcasts ||
-        event.broadcasts ||
-        [];
 
-    const tv =
-        broadcasts
-            .flatMap(
-                x =>
-                    x.names ||
-                    []
-            )
-            .filter(Boolean);
+    const awayScore =
+        away?.score !== undefined
+            ? nullableNumber(away.score)
+            : null;
 
-    const date =
-        event.date || null;
 
     return {
 
         id:
             Number(event.id),
 
-        espnId:
-            String(event.id),
+        uid:
+            event.uid || null,
 
-        round:
-            event.week?.number ??
-            competition?.week?.number ??
-            null,
-
-        seasonType:
-            event.season?.slug ||
-            event.season?.type?.slug ||
-            null,
-
-        date,
+        date:
+            event.date || null,
 
         timestamp:
-            date
+            event.date
                 ? Math.floor(
-                    new Date(date)
+                    new Date(event.date)
                         .getTime() / 1000
                 )
                 : null,
 
         status:
-            shortStatus,
+            completed
+                ? "FT"
+                : (
+                    status.type?.name ||
+                    status.type?.abbreviation ||
+                    "NS"
+                ),
 
         statusLong:
             status.type?.description ||
-            status.type?.detail ||
             null,
 
-        venue: {
+        round:
+            event.week?.number ||
+            null,
 
-            id:
-                competition?.venue?.id ||
-                null,
-
-            name:
-                competition?.venue?.fullName ||
-                competition?.venue?.address?.city ||
-                null,
-
-            city:
-                competition?.venue?.address?.city ||
-                null
-
-        },
+        season:
+            SEASON,
 
         home: {
 
             id:
-                home?.team?.id
-                    ? Number(home.team.id)
-                    : null,
+                Number(home?.team?.id),
 
             name:
                 home?.team?.displayName ||
@@ -611,9 +608,7 @@ function normalizeESPNEvent(event) {
         away: {
 
             id:
-                away?.team?.id
-                    ? Number(away.team.id)
-                    : null,
+                Number(away?.team?.id),
 
             name:
                 away?.team?.displayName ||
@@ -630,50 +625,43 @@ function normalizeESPNEvent(event) {
 
         },
 
-        score: {
+        venue: {
 
-            halftime: {
-
-                home:
-                    null,
-
-                away:
-                    null
-
-            },
-
-            fulltime: {
-
-                home:
-                    completed
-                        ? number(
-                            home?.score
-                        )
-                        : null,
-
-                away:
-                    completed
-                        ? number(
-                            away?.score
-                        )
-                        : null
-
-            },
-
-            extratime:
+            name:
+                competition?.venue?.fullName ||
                 null,
 
-            penalty:
+            city:
+                competition?.venue?.address?.city ||
                 null
 
         },
 
-        broadcasts:
-            tv,
+        score: {
 
-        odds:
-            competition?.odds ||
-            []
+            halftime: null,
+
+            fulltime: {
+
+                home:
+                    homeScore,
+
+                away:
+                    awayScore
+
+            },
+
+            extratime: null,
+
+            penalty: null
+
+        },
+
+        result:
+            resultFromScore(
+                homeScore,
+                awayScore
+            )
 
     };
 
@@ -681,15 +669,15 @@ function normalizeESPNEvent(event) {
 
 
 // ============================================================
-// FUSIONAR PARTIDOS
+// FUSIONAR CALENDARIO
 // ============================================================
 
-function mergeFixtures(
+function mergeCalendar(
     data,
-    fixtures
+    events
 ) {
 
-    const existing =
+    const map =
         new Map(
             data.matches.map(
                 match => [
@@ -699,27 +687,32 @@ function mergeFixtures(
             )
         );
 
+
     for (
-        const fixture
-        of fixtures
+        const event
+        of events
     ) {
 
         const normalized =
-            normalizeESPNEvent(
-                fixture
-            );
+            normalizeESPNMatch(event);
 
-        if (!normalized.id) {
+
+        if (
+            !normalized.id ||
+            !normalized.home?.id ||
+            !normalized.away?.id
+        ) {
             continue;
         }
 
+
         const key =
-            String(
-                normalized.id
-            );
+            String(normalized.id);
+
 
         const old =
-            existing.get(key);
+            map.get(key);
+
 
         if (old) {
 
@@ -729,24 +722,45 @@ function mergeFixtures(
             const details =
                 old.details;
 
+            const model =
+                old.modelFeatures;
+
+            const historical =
+                old.historical;
+
+
             Object.assign(
                 old,
                 normalized
             );
+
 
             if (prediction) {
                 old.prediction =
                     prediction;
             }
 
+
             if (details) {
                 old.details =
                     details;
             }
 
+
+            if (model) {
+                old.modelFeatures =
+                    model;
+            }
+
+
+            if (historical) {
+                old.historical =
+                    historical;
+            }
+
         } else {
 
-            existing.set(
+            map.set(
                 key,
                 normalized
             );
@@ -755,9 +769,10 @@ function mergeFixtures(
 
     }
 
+
     data.matches =
         Array.from(
-            existing.values()
+            map.values()
         )
         .sort(
             (a, b) =>
@@ -769,846 +784,679 @@ function mergeFixtures(
 
 
 // ============================================================
-// DESCARGAR CALENDARIO ESPN
-// ============================================================
-
-async function getESPNFixtures() {
-
-    const start =
-        getCurrentSeasonStart();
-
-    const end =
-        getCurrentSeasonEnd();
-
-    const dates =
-        `${dateToYYYYMMDD(start)}-` +
-        `${dateToYYYYMMDD(end)}`;
-
-    console.log(
-        `ESPN calendario: ${dates}`
-    );
-
-    const data =
-        await espn(
-            `${ESPN_SITE_BASE}/${ESPN_LEAGUE}/scoreboard`,
-            {
-                dates,
-                limit: 1000
-            },
-            "ESPN LaLiga calendario"
-        );
-
-    return data.events || [];
-
-}
-
-
-// ============================================================
 // CLASIFICACIÓN ESPN
 // ============================================================
 
-function extractStandingsRows(
-    json
-) {
+async function getStandings() {
 
-    const rows = [];
+    const url =
+        `${ESPN_BASE}/standings`;
 
-    function walk(node) {
 
-        if (!node) {
-            return;
-        }
+    const data =
+        await espn(
+            url,
+            "ESPN LaLiga clasificación"
+        );
 
-        if (Array.isArray(node)) {
+
+    const entries =
+        data.standings?.entries ||
+        data.children?.[0]?.standings?.entries ||
+        [];
+
+
+    return entries.map(
+        row => {
+
+            const stats =
+                {};
+
 
             for (
                 const item
-                of node
+                of safeArray(row.stats)
             ) {
-                walk(item);
-            }
 
-            return;
-        }
+                if (item.name) {
 
-        if (
-            typeof node !==
-            "object"
-        ) {
-            return;
-        }
+                    stats[item.name] =
+                        item.value;
 
-        if (
-            node.team &&
-            (
-                node.stats ||
-                node.records ||
-                node.note
-            )
-        ) {
-
-            rows.push(node);
-
-        }
-
-        for (
-            const value
-            of Object.values(node)
-        ) {
-
-            if (
-                value &&
-                typeof value ===
-                "object"
-            ) {
-                walk(value);
-            }
-
-        }
-
-    }
-
-    walk(json);
-
-    return rows;
-
-}
-
-
-function getStatValue(
-    stats,
-    names
-) {
-
-    if (!Array.isArray(stats)) {
-        return null;
-    }
-
-    const wanted =
-        names.map(
-            x =>
-                String(x)
-                    .toLowerCase()
-        );
-
-    const item =
-        stats.find(
-            x => {
-
-                const name =
-                    String(
-                        x.name ||
-                        x.displayName ||
-                        x.abbreviation ||
-                        ""
-                    )
-                    .toLowerCase();
-
-                return wanted.includes(
-                    name
-                );
+                }
 
             }
-        );
 
-    if (!item) {
-        return null;
-    }
 
-    return (
-        item.value ??
-        item.displayValue ??
-        null
+            const team =
+                row.team || {};
+
+
+            return {
+
+                rank:
+                    nullableNumber(
+                        row.position
+                    ),
+
+                team: {
+
+                    id:
+                        Number(team.id),
+
+                    name:
+                        team.displayName ||
+                        team.name ||
+                        null,
+
+                    abbreviation:
+                        team.abbreviation ||
+                        null,
+
+                    logo:
+                        team.logos?.[0]?.href ||
+                        null
+
+                },
+
+                points:
+                    nullableNumber(
+                        stats.points
+                    ),
+
+                played:
+                    nullableNumber(
+                        stats.gamesPlayed
+                    ),
+
+                wins:
+                    nullableNumber(
+                        stats.wins
+                    ),
+
+                draws:
+                    nullableNumber(
+                        stats.ties
+                    ),
+
+                losses:
+                    nullableNumber(
+                        stats.losses
+                    ),
+
+                gf:
+                    nullableNumber(
+                        stats.pointsFor
+                    ),
+
+                ga:
+                    nullableNumber(
+                        stats.pointsAgainst
+                    ),
+
+                goalsDiff:
+                    nullableNumber(
+                        stats.pointDifferential
+                    ),
+
+                form:
+                    row.form ||
+                    null,
+
+                home:
+                    null,
+
+                away:
+                    null
+
+            };
+
+        }
     );
 
 }
 
 
-function normalizeESPNStanding(
-    row,
-    index
-) {
+// ============================================================
+// GOLEADORES ESPN
+// ============================================================
 
-    const team =
-        row.team || {};
+async function getScorers() {
 
-    const stats =
-        row.stats ||
-        row.statistics ||
+    /*
+     * NO utilizamos:
+     *
+     * /leaders
+     *
+     * porque ESPN devuelve:
+     *
+     * getLeadersAllTime not supported
+     *
+     * para soccer/esp.1.
+     *
+     * Utilizamos el endpoint de estadísticas.
+     */
+
+    const url =
+        `${ESPN_BASE}/statistics`;
+
+
+    const data =
+        await espn(
+            url,
+            "ESPN goleadores"
+        );
+
+
+    const athletes =
+        data.athletes ||
+        data.players ||
+        data.results ||
         [];
 
-    const records =
-        row.records ||
-        [];
 
-    let wins =
-        getStatValue(
-            stats,
-            ["wins", "w"]
-        );
+    const rows = [];
 
-    let draws =
-        getStatValue(
-            stats,
-            ["ties", "draws", "d"]
-        );
 
-    let losses =
-        getStatValue(
-            stats,
-            ["losses", "l"]
-        );
-
-    let played =
-        getStatValue(
-            stats,
-            ["gamesPlayed", "gp", "played"]
-        );
-
-    let points =
-        getStatValue(
-            stats,
-            ["points", "p"]
-        );
-
-    let gf =
-        getStatValue(
-            stats,
-            ["pointsFor", "goalsFor", "gf", "f"]
-        );
-
-    let ga =
-        getStatValue(
-            stats,
-            ["pointsAgainst", "goalsAgainst", "ga", "a"]
-        );
-
-    let gd =
-        getStatValue(
-            stats,
-            ["pointDifferential", "goalDifference", "gd"]
-        );
-
-    if (
-        !played &&
-        Array.isArray(records)
+    for (
+        const item
+        of athletes
     ) {
 
-        const total =
-            records.find(
-                x =>
-                    x.type ===
-                    "total"
-            ) ||
-            records[0];
+        const athlete =
+            item.athlete ||
+            item.player ||
+            item;
 
-        if (total?.summary) {
 
-            const parts =
-                String(
-                    total.summary
-                )
-                .split("-")
-                .map(Number);
+        const stats =
+            item.statistics ||
+            item.stats ||
+            {};
 
-            if (
-                parts.length === 3
-            ) {
 
-                wins ??= parts[0];
+        const goals =
+            nullableNumber(
+                stats.goals ??
+                stats.totalGoals ??
+                stats.soccerGoals ??
+                item.goals
+            );
 
-                draws ??= parts[1];
 
-                losses ??= parts[2];
-
-                played =
-                    parts.reduce(
-                        (a, b) =>
-                            a + b,
-                        0
-                    );
-
-            }
-
+        if (
+            goals === null
+        ) {
+            continue;
         }
+
+
+        rows.push({
+
+            player: {
+
+                id:
+                    athlete.id ||
+                    null,
+
+                name:
+                    athlete.displayName ||
+                    athlete.fullName ||
+                    athlete.name ||
+                    null,
+
+                shortName:
+                    athlete.shortName ||
+                    null,
+
+                photo:
+                    athlete.headshot?.href ||
+                    null
+
+            },
+
+            team:
+                item.team ||
+                athlete.team ||
+                null,
+
+            goals: {
+
+                total:
+                    goals,
+
+                assists:
+                    nullableNumber(
+                        stats.assists ??
+                        item.assists
+                    )
+
+            },
+
+            appearances:
+                nullableNumber(
+                    stats.appearances ??
+                    stats.games ??
+                    item.appearances
+                ),
+
+            minutes:
+                nullableNumber(
+                    stats.minutes ??
+                    item.minutes
+                ),
+
+            rating:
+                stats.rating ??
+                item.rating ??
+                null
+
+        });
 
     }
 
-    return {
 
-        rank:
-            row.order ??
-            row.rank ??
-            index + 1,
+    rows.sort(
+        (a, b) =>
+            number(
+                b.goals?.total
+            ) -
+            number(
+                a.goals?.total
+            )
+    );
 
-        team: {
+
+    return rows.slice(
+        0,
+        20
+    );
+
+}
+
+
+// ============================================================
+// NOTICIAS
+// ============================================================
+
+async function getNews() {
+
+    const url =
+        `${ESPN_BASE}/news`;
+
+
+    const data =
+        await espn(
+            url,
+            "ESPN noticias"
+        );
+
+
+    return safeArray(
+        data.articles
+    )
+    .slice(0, 20)
+    .map(
+        article => ({
 
             id:
-                team.id
-                    ? Number(team.id)
-                    : null,
+                article.id ||
+                null,
 
-            name:
+            headline:
+                article.headline ||
+                null,
+
+            description:
+                article.description ||
+                null,
+
+            published:
+                article.published ||
+                null,
+
+            link:
+                article.links?.web?.href ||
+                null,
+
+            image:
+                article.images?.[0]?.url ||
+                null
+
+        })
+    );
+
+}
+
+
+// ============================================================
+// LESIONES
+// ============================================================
+
+async function getInjuries() {
+
+    /*
+     * ESPN no siempre ofrece lesiones para LaLiga
+     * mediante este endpoint.
+     *
+     * Si no existe información, devolvemos [].
+     */
+
+    try {
+
+        const url =
+            `${ESPN_BASE}/injuries`;
+
+
+        const data =
+            await espn(
+                url,
+                "ESPN lesiones"
+            );
+
+
+        return safeArray(
+            data.injuries
+        );
+
+    } catch {
+
+        console.warn(
+            "ESPN lesiones no disponible."
+        );
+
+        return [];
+
+    }
+
+}
+
+
+// ============================================================
+// RESUMEN / DETALLES DE PARTIDO
+// ============================================================
+
+async function getMatchSummary(
+    id
+) {
+
+    const url =
+        `${ESPN_BASE}/summary?event=${id}`;
+
+
+    return espn(
+        url,
+        `ESPN resumen partido ${id}`
+    );
+
+}
+
+
+// ============================================================
+// NORMALIZAR DETALLES
+// ============================================================
+
+function extractMatchDetails(
+    summary
+) {
+
+    const details = {
+
+        updatedAt:
+            new Date().toISOString(),
+
+        lineups: [],
+
+        statistics: [],
+
+        players: [],
+
+        events: [],
+
+        formations: [],
+
+        goalkeepers: [],
+
+        injuries: []
+
+    };
+
+
+    // --------------------------------------------------------
+    // ALINEACIONES
+    // --------------------------------------------------------
+
+    for (
+        const lineup
+        of safeArray(summary.rosters)
+    ) {
+
+        const team =
+            lineup.team || {};
+
+
+        const formation =
+            lineup.formation ||
+            lineup.formationName ||
+            null;
+
+
+        const players =
+            safeArray(
+                lineup.roster
+            )
+            .map(
+                player => ({
+
+                    id:
+                        player.athlete?.id ||
+                        null,
+
+                    name:
+                        player.athlete?.displayName ||
+                        null,
+
+                    position:
+                        player.position?.abbreviation ||
+                        player.position?.name ||
+                        null,
+
+                    starter:
+                        player.starter === true,
+
+                    substitute:
+                        player.substitute === true,
+
+                    minutes:
+                        nullableNumber(
+                            player.minutes
+                        )
+
+                })
+            );
+
+
+        details.lineups.push({
+
+            teamId:
+                Number(team.id) ||
+                null,
+
+            teamName:
                 team.displayName ||
                 team.name ||
                 null,
 
-            abbreviation:
-                team.abbreviation ||
-                null,
+            formation,
 
-            logo:
-                team.logos?.[0]?.href ||
-                team.logo ||
-                null
+            players
 
-        },
-
-        points:
-            number(points, 0),
-
-        goalsDiff:
-            number(gd, 0),
-
-        form:
-            row.form ||
-            null,
-
-        played:
-            number(played, 0),
-
-        wins:
-            number(wins, 0),
-
-        draws:
-            number(draws, 0),
-
-        losses:
-            number(losses, 0),
-
-        gf:
-            number(gf, 0),
-
-        ga:
-            number(ga, 0),
-
-        home:
-            null,
-
-        away:
-            null
-
-    };
-
-}
+        });
 
 
-async function getESPNStandings() {
+        if (formation) {
 
-    const json =
-        await espn(
-            `${ESPN_SITE_V2_BASE}/${ESPN_LEAGUE}/standings`,
-            {
-                limit: 100
-            },
-            "ESPN LaLiga clasificación"
-        );
+            details.formations.push({
 
-    const rows =
-        extractStandingsRows(
-            json
-        );
+                teamId:
+                    Number(team.id) ||
+                    null,
 
-    return rows
-        .map(
-            normalizeESPNStanding
-        )
-        .sort(
-            (a, b) =>
-                a.rank -
-                b.rank
-        );
+                teamName:
+                    team.displayName ||
+                    team.name ||
+                    null,
 
-}
+                formation
 
-
-// ============================================================
-// GOLEADORES
-// ============================================================
-
-function extractLeadersFromJSON(
-    json
-) {
-
-    const result = [];
-
-    function walk(node) {
-
-        if (!node) {
-            return;
-        }
-
-        if (Array.isArray(node)) {
-
-            for (
-                const item
-                of node
-            ) {
-                walk(item);
-            }
-
-            return;
-        }
-
-        if (
-            typeof node !==
-            "object"
-        ) {
-            return;
-        }
-
-        const athlete =
-            node.athlete ||
-            node.player;
-
-        if (
-            athlete &&
-            (
-                node.value !==
-                undefined ||
-                node.displayValue ||
-                node.stats
-            )
-        ) {
-
-            result.push({
-                athlete,
-                row: node
             });
 
         }
 
-        for (
-            const value
-            of Object.values(node)
-        ) {
-
-            if (
-                value &&
-                typeof value ===
-                "object"
-            ) {
-                walk(value);
-            }
-
-        }
-
     }
 
-    walk(json);
 
-    return result;
-
-}
-
-
-async function getESPNScorers() {
-
-    const urls = [
-
-        `${ESPN_CORE_BASE}/${ESPN_LEAGUE}/leaders`,
-
-        `${ESPN_SITE_BASE}/${ESPN_LEAGUE}/statistics`
-
-    ];
+    // --------------------------------------------------------
+    // ESTADÍSTICAS
+    // --------------------------------------------------------
 
     for (
-        const url
-        of urls
+        const teamStats
+        of safeArray(summary.boxscore?.teams)
     ) {
 
-        try {
+        const team =
+            teamStats.team ||
+            {};
 
-            const json =
-                await espn(
-                    url,
-                    {
-                        limit: 100
-                    },
-                    `ESPN goleadores ${url}`
-                );
 
-            const raw =
-                extractLeadersFromJSON(
-                    json
-                );
+        const statistics = {};
 
-            if (!raw.length) {
+
+        for (
+            const stat
+            of safeArray(
+                teamStats.statistics
+            )
+        ) {
+
+            if (!stat.name) {
                 continue;
             }
 
-            const map =
-                new Map();
 
-            for (
-                const item
-                of raw
-            ) {
-
-                const athlete =
-                    item.athlete ||
-                    {};
-
-                const id =
-                    athlete.id ||
-                    athlete.uid ||
-                    athlete.displayName;
-
-                if (!id) {
-                    continue;
-                }
-
-                const value =
-                    number(
-                        item.row?.value ??
-                        item.row?.stats?.goals ??
-                        item.row?.statistics?.goals,
-                        0
-                    );
-
-                const existing =
-                    map.get(
-                        String(id)
-                    );
-
-                if (
-                    !existing ||
-                    value >
-                    existing.goals?.total
-                ) {
-
-                    map.set(
-                        String(id),
-                        {
-
-                            player: {
-
-                                id:
-                                    athlete.id ||
-                                    null,
-
-                                name:
-                                    athlete.displayName ||
-                                    athlete.fullName ||
-                                    athlete.name ||
-                                    null,
-
-                                photo:
-                                    athlete.headshot?.href ||
-                                    null
-
-                            },
-
-                            team:
-                                athlete.team ||
-                                null,
-
-                            goals: {
-
-                                total:
-                                    value,
-
-                                assists:
-                                    null
-
-                            },
-
-                            appearances:
-                                null,
-
-                            minutes:
-                                null,
-
-                            rating:
-                                null
-
-                        }
-                    );
-
-                }
-
-            }
-
-            const list =
-                Array.from(
-                    map.values()
-                )
-                .sort(
-                    (a, b) =>
-                        b.goals.total -
-                        a.goals.total
-                )
-                .slice(0, 20);
-
-            if (list.length) {
-                return list;
-            }
-
-        } catch (error) {
-
-            console.warn(
-                "ESPN goleadores no disponible:",
-                error.message
-            );
+            statistics[stat.name] =
+                stat.displayValue ??
+                stat.value ??
+                null;
 
         }
 
-    }
 
-    return [];
-
-}
-
-
-// ============================================================
-// LESIONES ESPN
-// ============================================================
-
-async function getESPNInjuries() {
-
-    try {
-
-        const json =
-            await espn(
-                `${ESPN_SITE_BASE}/${ESPN_LEAGUE}/injuries`,
-                {
-                    limit: 500
-                },
-                "ESPN lesiones"
-            );
-
-        return (
-            json.injuries ||
-            json.items ||
-            json.results ||
-            []
-        );
-
-    } catch (error) {
-
-        console.warn(
-            "ESPN lesiones no disponibles:",
-            error.message
-        );
-
-        return [];
-
-    }
-
-}
-
-
-// ============================================================
-// NOTICIAS ESPN
-// ============================================================
-
-async function getESPNNews() {
-
-    try {
-
-        const json =
-            await espn(
-                `${ESPN_SITE_BASE}/${ESPN_LEAGUE}/news`,
-                {
-                    limit: 20
-                },
-                "ESPN noticias"
-            );
-
-        return (
-            json.articles ||
-            json.items ||
-            []
-        )
-        .slice(0, 20)
-        .map(
-            article => ({
-
-                id:
-                    article.id ||
-                    null,
-
-                headline:
-                    article.headline ||
-                    article.title ||
-                    null,
-
-                description:
-                    article.description ||
-                    article.published ||
-                    null,
-
-                published:
-                    article.published ||
-                    null,
-
-                link:
-                    article.links?.web?.href ||
-                    article.link ||
-                    null,
-
-                images:
-                    article.images ||
-                    []
-
-            })
-        );
-
-    } catch (error) {
-
-        console.warn(
-            "ESPN noticias no disponibles:",
-            error.message
-        );
-
-        return [];
-
-    }
-
-}
-
-
-// ============================================================
-// RESUMEN DE PARTIDO ESPN
-// ============================================================
-
-async function getESPNMatchSummary(
-    eventId
-) {
-
-    return espn(
-        `${ESPN_SITE_BASE}/${ESPN_LEAGUE}/summary`,
-        {
-            event:
-                eventId
-        },
-        `ESPN resumen partido ${eventId}`
-    );
-
-}
-
-
-// ============================================================
-// GUARDAR DETALLES DEL PARTIDO
-// ============================================================
-
-function saveESPNDetails(
-    match,
-    summary
-) {
-
-    const boxscore =
-        summary.boxscore || {};
-
-    const teams =
-        boxscore.teams ||
-        [];
-
-    const statistics = [];
-
-    for (
-        const team
-        of teams
-    ) {
-
-        const stats =
-            team.statistics ||
-            [];
-
-        statistics.push({
+        details.statistics.push({
 
             teamId:
-                team.team?.id
-                    ? Number(
-                        team.team.id
-                    )
-                    : null,
+                Number(team.id) ||
+                null,
 
             teamName:
-                team.team?.displayName ||
-                team.team?.name ||
+                team.displayName ||
+                team.name ||
                 null,
 
             possession:
                 percentage(
-                    statisticValue(
-                        stats,
-                        "possessionPct"
-                    ) ??
-                    statisticValue(
-                        stats,
-                        "possession"
-                    )
+                    statistics.possession
                 ),
 
             shotsTotal:
-                statisticValue(
-                    stats,
-                    "shots"
+                nullableNumber(
+                    statistics.shots
                 ),
 
             shotsOnTarget:
-                statisticValue(
-                    stats,
-                    "shotsOnTarget"
+                nullableNumber(
+                    statistics.shotsOnTarget
                 ),
 
             corners:
-                statisticValue(
-                    stats,
-                    "corners"
+                nullableNumber(
+                    statistics.corners
                 ),
 
             fouls:
-                statisticValue(
-                    stats,
-                    "fouls"
+                nullableNumber(
+                    statistics.fouls
                 ),
 
             offsides:
-                statisticValue(
-                    stats,
-                    "offsides"
+                nullableNumber(
+                    statistics.offsides
                 ),
 
             yellowCards:
-                statisticValue(
-                    stats,
-                    "yellowCards"
+                nullableNumber(
+                    statistics.yellowCards
                 ),
 
             redCards:
-                statisticValue(
-                    stats,
-                    "redCards"
+                nullableNumber(
+                    statistics.redCards
                 ),
 
             goalkeeperSaves:
-                statisticValue(
-                    stats,
-                    "saves"
+                nullableNumber(
+                    statistics.saves
                 ),
 
             passes:
-                statisticValue(
-                    stats,
-                    "passes"
+                nullableNumber(
+                    statistics.passes
                 ),
 
             accuratePasses:
-                statisticValue(
-                    stats,
-                    "accuratePasses"
+                nullableNumber(
+                    statistics.accuratePasses
+                ),
+
+            raw:
+                statistics
+
+        });
+
+    }
+
+
+    // --------------------------------------------------------
+    // JUGADORES
+    // --------------------------------------------------------
+
+    for (
+        const teamPlayers
+        of safeArray(
+            summary.boxscore?.players
+        )
+    ) {
+
+        const team =
+            teamPlayers.team ||
+            {};
+
+
+        details.players.push({
+
+            teamId:
+                Number(team.id) ||
+                null,
+
+            teamName:
+                team.displayName ||
+                team.name ||
+                null,
+
+            players:
+                safeArray(
+                    teamPlayers.statistics
                 )
 
         });
@@ -1616,207 +1464,67 @@ function saveESPNDetails(
     }
 
 
-    const competitions =
-        summary.header?.competitions ||
-        summary.competitions ||
-        [];
-
-    const competition =
-        competitions[0] ||
-        {};
-
-    const competitors =
-        competition.competitors ||
-        [];
-
-    const lineups =
-        [];
+    // --------------------------------------------------------
+    // EVENTOS
+    // --------------------------------------------------------
 
     for (
-        const competitor
-        of competitors
-    ) {
-
-        const lineup =
-            competitor.lineup ||
-            competitor.lineups ||
-            null;
-
-        if (
-            lineup
-        ) {
-
-            lineups.push({
-
-                teamId:
-                    competitor.team?.id
-                        ? Number(
-                            competitor.team.id
-                        )
-                        : null,
-
-                teamName:
-                    competitor.team?.displayName ||
-                    competitor.team?.name ||
-                    null,
-
-                formation:
-                    lineup.formation ||
-                    null,
-
-                coach:
-                    null,
-
-                starters:
-                    [],
-
-                substitutes:
-                    []
-
-            });
-
-        }
-
-    }
-
-
-    const events =
-        (
-            summary.commentary ||
-            summary.plays ||
-            []
+        const event
+        of safeArray(
+            summary.keyEvents
         )
-        .map(
-            event => ({
+    ) {
 
-                minute:
-                    event.clock?.displayValue ||
-                    event.time?.displayValue ||
-                    null,
+        details.events.push({
 
-                extra:
-                    null,
+            id:
+                event.id ||
+                null,
 
-                teamId:
+            clock:
+                event.clock?.displayValue ||
+                null,
+
+            minute:
+                nullableNumber(
+                    event.clock?.value
+                ),
+
+            teamId:
+                Number(
                     event.team?.id
-                        ? Number(
-                            event.team.id
-                        )
-                        : null,
+                ) || null,
 
-                player:
-                    event.participants?.[0]
-                        ?.athlete
-                        ?.displayName ||
-                    event.text ||
-                    null,
+            teamName:
+                event.team?.displayName ||
+                null,
 
-                assist:
-                    null,
+            type:
+                event.type?.text ||
+                event.type?.name ||
+                null,
 
-                type:
-                    event.type?.text ||
-                    event.type?.id ||
-                    null,
+            text:
+                event.text ||
+                null,
 
-                detail:
-                    event.text ||
-                    null
+            athlete:
+                event.athletes?.[0]?.athlete?.displayName ||
+                event.athlete?.displayName ||
+                null
 
-            })
-        );
-
-
-    match.details = {
-
-        updatedAt:
-            new Date().toISOString(),
-
-        source:
-            "ESPN",
-
-        lineups,
-
-        statistics,
-
-        players:
-            [],
-
-        events
-
-    };
-
-
-    // --------------------------------------------------------
-    // BROADCASTS
-    // --------------------------------------------------------
-
-    const broadcasts =
-        competition.broadcasts ||
-        [];
-
-    if (
-        broadcasts.length
-    ) {
-
-        match.broadcasts =
-            broadcasts
-                .flatMap(
-                    x =>
-                        x.names ||
-                        []
-                )
-                .filter(Boolean);
+        });
 
     }
+
+
+    return details;
 
 }
 
 
 // ============================================================
-// RESULTADO
-// ============================================================
-
-function getResult(match) {
-
-    const home =
-        match.score?.fulltime?.home;
-
-    const away =
-        match.score?.fulltime?.away;
-
-    if (
-        home === null ||
-        away === null ||
-        home === undefined ||
-        away === undefined
-    ) {
-
-        return null;
-
-    }
-
-    if (
-        home >
-        away
-    ) {
-        return "1";
-    }
-
-    if (
-        home <
-        away
-    ) {
-        return "2";
-    }
-
-    return "X";
-
-}
-
-
-// ============================================================
-// HISTORIAL
+// HISTORIAL DE EQUIPO
 // ============================================================
 
 function teamHistory(
@@ -1831,22 +1539,18 @@ function teamHistory(
             match =>
 
                 match.timestamp &&
-                match.timestamp <
-                    beforeTimestamp &&
+                match.timestamp < beforeTimestamp &&
 
-                [
-                    "FT",
-                    "AET",
-                    "PEN"
-                ].includes(
+                isFinished(
                     match.status
                 ) &&
 
                 (
-                    match.home?.id ===
-                        teamId ||
-                    match.away?.id ===
-                        teamId
+                    Number(match.home?.id) ===
+                    Number(teamId) ||
+
+                    Number(match.away?.id) ===
+                    Number(teamId)
                 )
         )
 
@@ -1860,174 +1564,229 @@ function teamHistory(
 
 
 // ============================================================
-// MÉTRICAS DE EQUIPO
+// MÉTRICAS
+// ============================================================
+
+function aggregateTeamMatches(
+    matches,
+    teamId
+) {
+
+    let gf = 0;
+
+    let ga = 0;
+
+    let points = 0;
+
+    let wins = 0;
+
+    let draws = 0;
+
+    let losses = 0;
+
+
+    for (
+        const match
+        of matches
+    ) {
+
+        const home =
+            Number(match.home?.id) ===
+            Number(teamId);
+
+
+        const scored =
+            home
+                ? nullableNumber(
+                    match.score?.fulltime?.home
+                )
+                : nullableNumber(
+                    match.score?.fulltime?.away
+                );
+
+
+        const conceded =
+            home
+                ? nullableNumber(
+                    match.score?.fulltime?.away
+                )
+                : nullableNumber(
+                    match.score?.fulltime?.home
+                );
+
+
+        if (
+            scored === null ||
+            conceded === null
+        ) {
+            continue;
+        }
+
+
+        gf += scored;
+
+        ga += conceded;
+
+
+        if (scored > conceded) {
+
+            points += 3;
+
+            wins++;
+
+        } else if (
+            scored === conceded
+        ) {
+
+            points++;
+
+            draws++;
+
+        } else {
+
+            losses++;
+
+        }
+
+    }
+
+
+    const played =
+        matches.length;
+
+
+    return {
+
+        matches:
+            played,
+
+        gf,
+
+        ga,
+
+        goalDifference:
+            gf - ga,
+
+        gfPerGame:
+            played
+                ? round(
+                    gf / played,
+                    3
+                )
+                : 0,
+
+        gaPerGame:
+            played
+                ? round(
+                    ga / played,
+                    3
+                )
+                : 0,
+
+        points,
+
+        pointsPerGame:
+            played
+                ? round(
+                    points / played,
+                    3
+                )
+                : 0,
+
+        wins,
+
+        draws,
+
+        losses
+
+    };
+
+}
+
+
+// ============================================================
+// MÉTRICAS COMPLETAS DEL EQUIPO
 // ============================================================
 
 function teamMetrics(
     data,
     teamId,
-    beforeTimestamp,
-    venue = null
+    timestamp
 ) {
 
-    let matches =
+    const all =
         teamHistory(
             data,
             teamId,
-            beforeTimestamp
+            timestamp
         );
 
-    if (
-        venue === "home"
-    ) {
 
-        matches =
-            matches.filter(
-                match =>
-                    match.home?.id ===
-                    teamId
-            );
+    const home =
+        all.filter(
+            match =>
+                Number(match.home?.id) ===
+                Number(teamId)
+        );
 
-    }
 
-    if (
-        venue === "away"
-    ) {
+    const away =
+        all.filter(
+            match =>
+                Number(match.away?.id) ===
+                Number(teamId)
+        );
 
-        matches =
-            matches.filter(
-                match =>
-                    match.away?.id ===
-                    teamId
-            );
-
-    }
 
     const last5 =
-        matches.slice(-5);
+        all.slice(-5);
+
 
     const last10 =
-        matches.slice(-10);
+        all.slice(-10);
 
 
-    function aggregate(
-        list
-    ) {
-
-        let gf = 0;
-
-        let ga = 0;
-
-        let points = 0;
-
-        let wins = 0;
-
-        let draws = 0;
-
-        let losses = 0;
-
-
-        for (
-            const match
-            of list
-        ) {
-
-            const isHome =
-                match.home?.id ===
-                teamId;
-
-            const scored =
-                isHome
-                    ? match.score?.fulltime?.home
-                    : match.score?.fulltime?.away;
-
-            const conceded =
-                isHome
-                    ? match.score?.fulltime?.away
-                    : match.score?.fulltime?.home;
-
-            gf += number(
-                scored
-            );
-
-            ga += number(
-                conceded
-            );
-
-            if (
-                scored >
-                conceded
-            ) {
-
-                points += 3;
-
-                wins++;
-
-            } else if (
-                scored ===
-                conceded
-            ) {
-
-                points++;
-
-                draws++;
-
-            } else {
-
-                losses++;
-
-            }
-
-        }
-
-
-        return {
-
-            matches:
-                list.length,
-
-            gf,
-
-            ga,
-
-            gfPerGame:
-                list.length
-                    ? gf / list.length
-                    : 0,
-
-            gaPerGame:
-                list.length
-                    ? ga / list.length
-                    : 0,
-
-            points,
-
-            pointsPerGame:
-                list.length
-                    ? points / list.length
-                    : 0,
-
-            wins,
-
-            draws,
-
-            losses
-
-        };
-
-    }
+    const last3 =
+        all.slice(-3);
 
 
     return {
 
+        all:
+            aggregateTeamMatches(
+                all,
+                teamId
+            ),
+
+        last3:
+            aggregateTeamMatches(
+                last3,
+                teamId
+            ),
+
         last5:
-            aggregate(last5),
+            aggregateTeamMatches(
+                last5,
+                teamId
+            ),
 
         last10:
-            aggregate(last10),
+            aggregateTeamMatches(
+                last10,
+                teamId
+            ),
 
-        venue:
-            aggregate(matches)
+        home:
+            aggregateTeamMatches(
+                home,
+                teamId
+            ),
+
+        away:
+            aggregateTeamMatches(
+                away,
+                teamId
+            )
 
     };
 
@@ -2041,79 +1800,85 @@ function teamMetrics(
 function goalkeeperMetrics(
     data,
     teamId,
-    beforeTimestamp
+    timestamp
 ) {
 
     let saves = 0;
 
     let conceded = 0;
 
-    let appearances = 0;
+    let matches = 0;
 
 
     for (
         const match
-        of data.matches
+        of teamHistory(
+            data,
+            teamId,
+            timestamp
+        )
     ) {
 
-        if (
-            !match.timestamp ||
-            match.timestamp >=
-                beforeTimestamp
-        ) {
-            continue;
-        }
-
-        if (
-            ![
-                "FT",
-                "AET",
-                "PEN"
-            ].includes(
-                match.status
-            )
-        ) {
-            continue;
-        }
-
         const statistics =
-            match.details?.statistics ||
-            [];
+            safeArray(
+                match.details?.statistics
+            );
 
-        const teamStats =
+
+        const row =
             statistics.find(
                 x =>
-                    x.teamId ===
-                    teamId
+                    Number(x.teamId) ===
+                    Number(teamId)
             );
 
+
+        if (!row) {
+            continue;
+        }
+
+
+        const saveValue =
+            nullableNumber(
+                row.goalkeeperSaves
+            );
+
+
+        const home =
+            Number(match.home?.id) ===
+            Number(teamId);
+
+
+        const goalsAgainst =
+            home
+                ? nullableNumber(
+                    match.score?.fulltime?.away
+                )
+                : nullableNumber(
+                    match.score?.fulltime?.home
+                );
+
+
         if (
-            teamStats
+            saveValue !== null
         ) {
 
-            saves +=
-                number(
-                    teamStats.goalkeeperSaves
-                );
+            saves += saveValue;
 
         }
 
 
-        const isHome =
-            match.home?.id ===
-            teamId;
+        if (
+            goalsAgainst !== null
+        ) {
 
-        const goals =
-            isHome
-                ? match.score?.fulltime?.away
-                : match.score?.fulltime?.home;
+            conceded +=
+                goalsAgainst;
 
-        conceded +=
-            number(
-                goals
-            );
+        }
 
-        appearances++;
+
+        matches++;
 
     }
 
@@ -2125,7 +1890,7 @@ function goalkeeperMetrics(
 
     return {
 
-        appearances,
+        matches,
 
         saves,
 
@@ -2135,12 +1900,20 @@ function goalkeeperMetrics(
 
         savePercentage:
             shots
-                ? Number(
-                    (
-                        saves /
-                        shots *
-                        100
-                    ).toFixed(2)
+                ? round(
+                    saves /
+                    shots *
+                    100,
+                    2
+                )
+                : null,
+
+        savesPerGame:
+            matches
+                ? round(
+                    saves /
+                    matches,
+                    2
                 )
                 : null
 
@@ -2156,7 +1929,7 @@ function goalkeeperMetrics(
 function formationMetrics(
     data,
     teamId,
-    beforeTimestamp
+    timestamp
 ) {
 
     const formations = {};
@@ -2164,39 +1937,23 @@ function formationMetrics(
 
     for (
         const match
-        of data.matches
+        of teamHistory(
+            data,
+            teamId,
+            timestamp
+        )
     ) {
 
-        if (
-            !match.timestamp ||
-            match.timestamp >=
-                beforeTimestamp
-        ) {
-            continue;
-        }
-
-        if (
-            ![
-                "FT",
-                "AET",
-                "PEN"
-            ].includes(
-                match.status
-            )
-        ) {
-            continue;
-        }
-
-        const lineups =
-            match.details?.lineups ||
-            [];
-
         const lineup =
-            lineups.find(
-                x =>
-                    x.teamId ===
-                    teamId
+            safeArray(
+                match.details?.lineups
+            )
+            .find(
+                row =>
+                    Number(row.teamId) ===
+                    Number(teamId)
             );
+
 
         if (
             !lineup?.formation
@@ -2204,82 +1961,87 @@ function formationMetrics(
             continue;
         }
 
+
         const formation =
             lineup.formation;
 
 
-        if (
-            !formations[formation]
-        ) {
+        formations[formation] ||= {
 
-            formations[formation] = {
+            matches: 0,
 
-                matches: 0,
+            wins: 0,
 
-                wins: 0,
+            draws: 0,
 
-                draws: 0,
+            losses: 0,
 
-                losses: 0,
+            gf: 0,
 
-                gf: 0,
+            ga: 0,
 
-                ga: 0
+            points: 0
 
-            };
-
-        }
+        };
 
 
         const row =
             formations[formation];
 
-        row.matches++;
-
 
         const home =
-            match.home?.id ===
-            teamId;
+            Number(match.home?.id) ===
+            Number(teamId);
 
 
         const gf =
             home
-                ? number(
+                ? nullableNumber(
                     match.score?.fulltime?.home
                 )
-                : number(
+                : nullableNumber(
                     match.score?.fulltime?.away
                 );
 
 
         const ga =
             home
-                ? number(
+                ? nullableNumber(
                     match.score?.fulltime?.away
                 )
-                : number(
+                : nullableNumber(
                     match.score?.fulltime?.home
                 );
 
+
+        if (
+            gf === null ||
+            ga === null
+        ) {
+            continue;
+        }
+
+
+        row.matches++;
 
         row.gf += gf;
 
         row.ga += ga;
 
 
-        if (
-            gf >
-            ga
-        ) {
+        if (gf > ga) {
 
             row.wins++;
 
+            row.points += 3;
+
         } else if (
-            gf ===
-            ga
+            gf === ga
         ) {
 
             row.draws++;
+
+            row.points++;
 
         } else {
 
@@ -2290,16 +2052,151 @@ function formationMetrics(
     }
 
 
+    for (
+        const row
+        of Object.values(formations)
+    ) {
+
+        row.pointsPerGame =
+            row.matches
+                ? round(
+                    row.points /
+                    row.matches,
+                    3
+                )
+                : 0;
+
+        row.winRate =
+            row.matches
+                ? round(
+                    row.wins /
+                    row.matches *
+                    100,
+                    2
+                )
+                : 0;
+
+    }
+
+
     return formations;
 
 }
 
 
 // ============================================================
-// PRONÓSTICO
+// COMPARACIÓN DE FORMACIONES
 // ============================================================
 
-function createPrediction(
+function formationAdvantage(
+    homeFormations,
+    awayFormations
+) {
+
+    const homeRows =
+        Object.entries(
+            homeFormations
+        );
+
+
+    const awayRows =
+        Object.entries(
+            awayFormations
+        );
+
+
+    if (
+        !homeRows.length &&
+        !awayRows.length
+    ) {
+
+        return null;
+
+    }
+
+
+    const bestHome =
+        homeRows.sort(
+            (a, b) =>
+                number(
+                    b[1].pointsPerGame
+                ) -
+                number(
+                    a[1].pointsPerGame
+                )
+        )[0] || null;
+
+
+    const bestAway =
+        awayRows.sort(
+            (a, b) =>
+                number(
+                    b[1].pointsPerGame
+                ) -
+                number(
+                    a[1].pointsPerGame
+                )
+        )[0] || null;
+
+
+    return {
+
+        home:
+            bestHome
+                ? {
+                    formation:
+                        bestHome[0],
+
+                    stats:
+                        bestHome[1]
+                }
+                : null,
+
+        away:
+            bestAway
+                ? {
+                    formation:
+                        bestAway[0],
+
+                    stats:
+                        bestAway[1]
+                }
+                : null
+
+    };
+
+}
+
+
+// ============================================================
+// LESIONES POR EQUIPO
+// ============================================================
+
+function teamInjuries(
+    data,
+    teamId
+) {
+
+    return safeArray(
+        data.injuries
+    )
+    .filter(
+        injury =>
+            Number(
+                injury.team?.id ||
+                injury.teamId
+            ) ===
+            Number(teamId)
+    );
+
+}
+
+
+// ============================================================
+// FACTORES DEL MODELO
+// ============================================================
+
+function buildModelFeatures(
     data,
     match
 ) {
@@ -2308,93 +2205,34 @@ function createPrediction(
         match.timestamp;
 
 
+    const homeId =
+        match.home.id;
+
+
+    const awayId =
+        match.away.id;
+
+
     const home =
         teamMetrics(
             data,
-            match.home.id,
-            timestamp,
-            "home"
+            homeId,
+            timestamp
         );
 
 
     const away =
         teamMetrics(
             data,
-            match.away.id,
-            timestamp,
-            "away"
-        );
-
-
-    const homeRecent =
-        teamMetrics(
-            data,
-            match.home.id,
+            awayId,
             timestamp
         );
 
-
-    const awayRecent =
-        teamMetrics(
-            data,
-            match.away.id,
-            timestamp
-        );
-
-
-    let homeScore = 1;
-
-    let awayScore = 1;
-
-
-    // FORMA
-
-    homeScore +=
-        (
-            homeRecent.last5.pointsPerGame -
-            awayRecent.last5.pointsPerGame
-        ) *
-        0.40;
-
-
-    awayScore +=
-        (
-            awayRecent.last5.pointsPerGame -
-            homeRecent.last5.pointsPerGame
-        ) *
-        0.40;
-
-
-    // ATAQUE / DEFENSA
-
-    homeScore +=
-        (
-            home.venue.gfPerGame -
-            away.venue.gaPerGame
-        ) *
-        0.25;
-
-
-    awayScore +=
-        (
-            away.venue.gfPerGame -
-            home.venue.gaPerGame
-        ) *
-        0.25;
-
-
-    // LOCALÍA
-
-    homeScore +=
-        0.30;
-
-
-    // PORTEROS
 
     const homeGK =
         goalkeeperMetrics(
             data,
-            match.home.id,
+            homeId,
             timestamp
         );
 
@@ -2402,40 +2240,355 @@ function createPrediction(
     const awayGK =
         goalkeeperMetrics(
             data,
-            match.away.id,
+            awayId,
             timestamp
         );
 
 
+    const homeFormations =
+        formationMetrics(
+            data,
+            homeId,
+            timestamp
+        );
+
+
+    const awayFormations =
+        formationMetrics(
+            data,
+            awayId,
+            timestamp
+        );
+
+
+    const homeInjuries =
+        teamInjuries(
+            data,
+            homeId
+        );
+
+
+    const awayInjuries =
+        teamInjuries(
+            data,
+            awayId
+        );
+
+
+    return {
+
+        home,
+
+        away,
+
+        homeGoalkeeper:
+            homeGK,
+
+        awayGoalkeeper:
+            awayGK,
+
+        homeFormations,
+
+        awayFormations,
+
+        formationAdvantage:
+            formationAdvantage(
+                homeFormations,
+                awayFormations
+            ),
+
+        homeInjuries:
+            homeInjuries.length,
+
+        awayInjuries:
+            awayInjuries.length,
+
+        homeInjuryList:
+            homeInjuries,
+
+        awayInjuryList:
+            awayInjuries
+
+    };
+
+}
+
+
+// ============================================================
+// PRONÓSTICO V3
+// ============================================================
+
+function createPrediction(
+    data,
+    match
+) {
+
+    const features =
+        buildModelFeatures(
+            data,
+            match
+        );
+
+
+    const home =
+        features.home;
+
+
+    const away =
+        features.away;
+
+
+    /*
+     * ========================================================
+     * MODELO V3
+     *
+     * Los pesos están registrados explícitamente.
+     *
+     * Posteriormente podremos calcular qué peso funciona
+     * mejor utilizando el histórico de aciertos.
+     *
+     * ========================================================
+     */
+
+    const weights = {
+
+        form:
+            0.30,
+
+        attackDefense:
+            0.25,
+
+        homeAdvantage:
+            0.12,
+
+        goalkeeper:
+            0.10,
+
+        recentMomentum:
+            0.10,
+
+        formation:
+            0.05,
+
+        injuries:
+            0.05,
+
+        drawBase:
+            0.03
+
+    };
+
+
+    let homeScore = 1;
+
+    let awayScore = 1;
+
+
+    // --------------------------------------------------------
+    // FORMA
+    // --------------------------------------------------------
+
+    homeScore +=
+        (
+            number(
+                home.last5.pointsPerGame
+            ) -
+            number(
+                away.last5.pointsPerGame
+            )
+        ) *
+        weights.form;
+
+
+    awayScore +=
+        (
+            number(
+                away.last5.pointsPerGame
+            ) -
+            number(
+                home.last5.pointsPerGame
+            )
+        ) *
+        weights.form;
+
+
+    // --------------------------------------------------------
+    // ATAQUE / DEFENSA
+    // --------------------------------------------------------
+
+    homeScore +=
+        (
+            number(
+                home.home.gfPerGame
+            ) -
+            number(
+                away.away.gaPerGame
+            )
+        ) *
+        weights.attackDefense;
+
+
+    awayScore +=
+        (
+            number(
+                away.away.gfPerGame
+            ) -
+            number(
+                home.home.gaPerGame
+            )
+        ) *
+        weights.attackDefense;
+
+
+    // --------------------------------------------------------
+    // LOCALÍA
+    // --------------------------------------------------------
+
+    homeScore +=
+        weights.homeAdvantage;
+
+
+    // --------------------------------------------------------
+    // MOMENTO RECIENTE
+    // --------------------------------------------------------
+
+    homeScore +=
+        (
+            number(
+                home.last3.pointsPerGame
+            ) -
+            number(
+                away.last3.pointsPerGame
+            )
+        ) *
+        weights.recentMomentum;
+
+
+    awayScore +=
+        (
+            number(
+                away.last3.pointsPerGame
+            ) -
+            number(
+                home.last3.pointsPerGame
+            )
+        ) *
+        weights.recentMomentum;
+
+
+    // --------------------------------------------------------
+    // PORTEROS
+    // --------------------------------------------------------
+
     if (
-        homeGK.savePercentage !==
-        null
+        features.homeGoalkeeper
+            .savePercentage !== null
     ) {
 
         homeScore +=
             (
-                homeGK.savePercentage -
+                features.homeGoalkeeper
+                    .savePercentage -
                 70
             ) /
-            100;
+            100 *
+            weights.goalkeeper;
 
     }
 
 
     if (
-        awayGK.savePercentage !==
-        null
+        features.awayGoalkeeper
+            .savePercentage !== null
     ) {
 
         awayScore +=
             (
-                awayGK.savePercentage -
+                features.awayGoalkeeper
+                    .savePercentage -
                 70
             ) /
-            100;
+            100 *
+            weights.goalkeeper;
 
     }
 
+
+    // --------------------------------------------------------
+    // FORMACIONES
+    // --------------------------------------------------------
+
+    const formation =
+        features.formationAdvantage;
+
+
+    if (
+        formation?.home?.stats
+    ) {
+
+        homeScore +=
+            (
+                number(
+                    formation.home.stats
+                        .pointsPerGame
+                ) -
+                1.2
+            ) *
+            weights.formation;
+
+    }
+
+
+    if (
+        formation?.away?.stats
+    ) {
+
+        awayScore +=
+            (
+                number(
+                    formation.away.stats
+                        .pointsPerGame
+                ) -
+                1.2
+            ) *
+            weights.formation;
+
+    }
+
+
+    // --------------------------------------------------------
+    // LESIONES
+    // --------------------------------------------------------
+
+    /*
+     * En esta fase no suponemos que toda lesión tenga
+     * el mismo impacto.
+     *
+     * Simplemente aplicamos una penalización muy pequeña
+     * para no sobrerreaccionar.
+     */
+
+    homeScore -=
+        Math.min(
+            features.homeInjuries,
+            5
+        ) *
+        0.01 *
+        weights.injuries;
+
+
+    awayScore -=
+        Math.min(
+            features.awayInjuries,
+            5
+        ) *
+        0.01 *
+        weights.injuries;
+
+
+    // --------------------------------------------------------
+    // PROTECCIÓN
+    // --------------------------------------------------------
 
     homeScore =
         Math.max(
@@ -2451,17 +2604,29 @@ function createPrediction(
         );
 
 
+    // --------------------------------------------------------
+    // EMPATE
+    // --------------------------------------------------------
+
+    const difference =
+        Math.abs(
+            homeScore -
+            awayScore
+        );
+
+
     const drawScore =
         Math.max(
             0.15,
-            0.72 -
-            Math.abs(
-                homeScore -
-                awayScore
-            ) *
-            0.16
+            0.75 -
+            difference *
+            0.18
         );
 
+
+    // --------------------------------------------------------
+    // NORMALIZAR
+    // --------------------------------------------------------
 
     const total =
         homeScore +
@@ -2484,7 +2649,8 @@ function createPrediction(
         total;
 
 
-    let sign = "X";
+    let sign =
+        "X";
 
 
     if (
@@ -2492,14 +2658,16 @@ function createPrediction(
         p1 >= p2
     ) {
 
-        sign = "1";
+        sign =
+            "1";
 
     } else if (
         p2 >= px &&
         p2 >= p1
     ) {
 
-        sign = "2";
+        sign =
+            "2";
 
     }
 
@@ -2546,25 +2714,29 @@ function createPrediction(
         probabilities: {
 
             "1":
-                Number(
-                    p1.toFixed(4)
+                round(
+                    p1,
+                    4
                 ),
 
             "X":
-                Number(
-                    px.toFixed(4)
+                round(
+                    px,
+                    4
                 ),
 
             "2":
-                Number(
-                    p2.toFixed(4)
+                round(
+                    p2,
+                    4
                 )
 
         },
 
         confidence:
-            Number(
-                confidence.toFixed(4)
+            round(
+                confidence,
+                4
             ),
 
         difficulty,
@@ -2578,64 +2750,14 @@ function createPrediction(
         model: {
 
             version:
-                "1.1-ESPN",
+                "3.0",
 
-            weights: {
-
-                form:
-                    0.30,
-
-                attackDefense:
-                    0.30,
-
-                homeAdvantage:
-                    0.20,
-
-                goalkeeper:
-                    0.10,
-
-                tacticalAbsences:
-                    0.10
-
-            }
+            weights
 
         },
 
-        evidence: {
-
-            homeLast5:
-                homeRecent.last5,
-
-            awayLast5:
-                awayRecent.last5,
-
-            homeVenue:
-                home.venue,
-
-            awayVenue:
-                away.venue,
-
-            homeGoalkeeper:
-                homeGK,
-
-            awayGoalkeeper:
-                awayGK,
-
-            homeFormations:
-                formationMetrics(
-                    data,
-                    match.home.id,
-                    timestamp
-                ),
-
-            awayFormations:
-                formationMetrics(
-                    data,
-                    match.away.id,
-                    timestamp
-                )
-
-        }
+        evidence:
+            features
 
     };
 
@@ -2652,27 +2774,36 @@ function updatePredictionBalance(
 
     const balance = {
 
-        total: 0,
+        total:
+            0,
 
-        correct: 0,
+        correct:
+            0,
 
-        accuracy: 0,
+        incorrect:
+            0,
+
+        accuracy:
+            0,
 
         bySign: {
 
             "1": {
                 total: 0,
-                correct: 0
+                correct: 0,
+                accuracy: 0
             },
 
             "X": {
                 total: 0,
-                correct: 0
+                correct: 0,
+                accuracy: 0
             },
 
             "2": {
                 total: 0,
-                correct: 0
+                correct: 0,
+                accuracy: 0
             }
 
         },
@@ -2681,17 +2812,20 @@ function updatePredictionBalance(
 
             "fácil": {
                 total: 0,
-                correct: 0
+                correct: 0,
+                accuracy: 0
             },
 
             "media": {
                 total: 0,
-                correct: 0
+                correct: 0,
+                accuracy: 0
             },
 
             "difícil": {
                 total: 0,
-                correct: 0
+                correct: 0,
+                accuracy: 0
             }
 
         }
@@ -2710,57 +2844,61 @@ function updatePredictionBalance(
             continue;
         }
 
+
         if (
-            ![
-                "FT",
-                "AET",
-                "PEN"
-            ].includes(
+            !isFinished(
                 match.status
             )
         ) {
             continue;
         }
 
+
         const real =
-            getResult(
-                match
+            match.result ||
+            resultFromScore(
+                match.score?.fulltime?.home,
+                match.score?.fulltime?.away
             );
+
 
         if (!real) {
             continue;
         }
 
+
         const prediction =
             match.prediction.sign;
 
+
         const correct =
-            prediction ===
-            real;
+            prediction === real;
+
 
         balance.total++;
 
 
         if (correct) {
+
             balance.correct++;
+
+        } else {
+
+            balance.incorrect++;
+
         }
 
 
         if (
-            balance.bySign[
-                prediction
-            ]
+            balance.bySign[prediction]
         ) {
 
-            balance.bySign[
-                prediction
-            ].total++;
+            balance.bySign[prediction].total++;
+
 
             if (correct) {
 
-                balance.bySign[
-                    prediction
-                ].correct++;
+                balance.bySign[prediction].correct++;
 
             }
 
@@ -2773,20 +2911,15 @@ function updatePredictionBalance(
 
 
         if (
-            balance.byDifficulty[
-                difficulty
-            ]
+            balance.byDifficulty[difficulty]
         ) {
 
-            balance.byDifficulty[
-                difficulty
-            ].total++;
+            balance.byDifficulty[difficulty].total++;
+
 
             if (correct) {
 
-                balance.byDifficulty[
-                    difficulty
-                ].correct++;
+                balance.byDifficulty[difficulty].correct++;
 
             }
 
@@ -2797,14 +2930,53 @@ function updatePredictionBalance(
 
     balance.accuracy =
         balance.total
-            ? Number(
-                (
-                    balance.correct /
-                    balance.total *
-                    100
-                ).toFixed(2)
+            ? round(
+                balance.correct /
+                balance.total *
+                100,
+                2
             )
             : 0;
+
+
+    for (
+        const row
+        of Object.values(
+            balance.bySign
+        )
+    ) {
+
+        row.accuracy =
+            row.total
+                ? round(
+                    row.correct /
+                    row.total *
+                    100,
+                    2
+                )
+                : 0;
+
+    }
+
+
+    for (
+        const row
+        of Object.values(
+            balance.byDifficulty
+        )
+    ) {
+
+        row.accuracy =
+            row.total
+                ? round(
+                    row.correct /
+                    row.total *
+                    100,
+                    2
+                )
+                : 0;
+
+    }
 
 
     data.predictionBalance =
@@ -2814,72 +2986,222 @@ function updatePredictionBalance(
 
 
 // ============================================================
-// API-FOOTBALL COMPLEMENTARIO
+// APRENDIZAJE DEL MODELO
 // ============================================================
 
-async function tryAPIFootballData(
+function calculateModelLearning(
     data
 ) {
 
-    if (!API_FOOTBALL_KEY) {
+    const result = {
 
-        console.log(
-            "API-Football no configurada; se utiliza ESPN."
-        );
+        version:
+            "3.0",
 
-        data.meta.apiFootballSeasonAvailable =
-            false;
+        totalEvaluated:
+            0,
 
-        return;
+        correct:
+            0,
+
+        accuracy:
+            0,
+
+        variables: {
+
+            form:
+                {
+                    samples: 0,
+                    correct: 0
+                },
+
+            attackDefense:
+                {
+                    samples: 0,
+                    correct: 0
+                },
+
+            goalkeeper:
+                {
+                    samples: 0,
+                    correct: 0
+                },
+
+            formation:
+                {
+                    samples: 0,
+                    correct: 0
+                },
+
+            injuries:
+                {
+                    samples: 0,
+                    correct: 0
+                }
+
+        },
+
+        notes: [
+
+            "La V3.0 registra las variables utilizadas en cada pronóstico.",
+
+            "El sistema todavía no modifica automáticamente los pesos del modelo.",
+
+            "Los pesos deben recalibrarse con una muestra suficiente de partidos.",
+
+            "No se considera fiable optimizar el modelo con pocas jornadas."
+
+        ]
+
+    };
+
+
+    for (
+        const match
+        of data.matches
+    ) {
+
+        if (
+            !match.prediction?.sign ||
+            !isFinished(
+                match.status
+            )
+        ) {
+            continue;
+        }
+
+
+        const real =
+            match.result ||
+            resultFromScore(
+                match.score?.fulltime?.home,
+                match.score?.fulltime?.away
+            );
+
+
+        if (!real) {
+            continue;
+        }
+
+
+        const correct =
+            match.prediction.sign ===
+            real;
+
+
+        result.totalEvaluated++;
+
+
+        if (correct) {
+
+            result.correct++;
+
+        }
+
+
+        for (
+            const variable
+            of Object.keys(
+                result.variables
+            )
+        ) {
+
+            if (
+                match.prediction
+                    ?.evidence
+            ) {
+
+                result.variables[
+                    variable
+                ].samples++;
+
+
+                if (correct) {
+
+                    result.variables[
+                        variable
+                    ].correct++;
+
+                }
+
+            }
+
+        }
 
     }
 
 
-    try {
+    result.accuracy =
+        result.totalEvaluated
+            ? round(
+                result.correct /
+                result.totalEvaluated *
+                100,
+                2
+            )
+            : 0;
 
-        const standings =
-            await apiFootball(
-                "/standings",
-                {
-                    league:
-                        LEAGUE_ID,
 
-                    season:
-                        SEASON
-                }
-            );
+    for (
+        const row
+        of Object.values(
+            result.variables
+        )
+    ) {
 
-        const table =
-            standings.response?.[0]
-                ?.league
-                ?.standings?.[0] ||
-            [];
+        row.accuracy =
+            row.samples
+                ? round(
+                    row.correct /
+                    row.samples *
+                    100,
+                    2
+                )
+                : 0;
+
+    }
+
+
+    data.modelLearning =
+        result;
+
+}
+
+
+// ============================================================
+// ACTUALIZAR RESULTADOS
+// ============================================================
+
+function updateResults(
+    data
+) {
+
+    for (
+        const match
+        of data.matches
+    ) {
 
         if (
-            table.length
+            isFinished(
+                match.status
+            )
         ) {
 
-            data.meta.apiFootballSeasonAvailable =
-                true;
+            const result =
+                resultFromScore(
+                    match.score?.fulltime?.home,
+                    match.score?.fulltime?.away
+                );
 
-            data.meta.apiFootballStandings =
-                table.length;
 
-            console.log(
-                `API-Football clasificación disponible: ${table.length}`
-            );
+            if (result) {
+
+                match.result =
+                    result;
+
+            }
 
         }
-
-    } catch (error) {
-
-        data.meta.apiFootballSeasonAvailable =
-            false;
-
-        console.warn(
-            "API-Football no disponible para 2026/27:",
-            error.message
-        );
 
     }
 
@@ -2887,10 +3209,10 @@ async function tryAPIFootballData(
 
 
 // ============================================================
-// OBTENER DETALLES DE PARTIDOS
+// DETALLES NECESARIOS
 // ============================================================
 
-async function updateMatchDetails(
+function getDetailCandidates(
     data
 ) {
 
@@ -2899,12 +3221,14 @@ async function updateMatchDetails(
             Date.now() / 1000
         );
 
+
     const recentLimit =
         now -
         14 *
         24 *
         60 *
         60;
+
 
     const futureLimit =
         now +
@@ -2914,63 +3238,80 @@ async function updateMatchDetails(
         60;
 
 
-    const candidates =
-        data.matches
+    return data.matches
 
-            .filter(
-                match => {
+        .filter(
+            match => {
 
-                    const timestamp =
-                        match.timestamp ||
-                        0;
+                const timestamp =
+                    match.timestamp ||
+                    0;
 
-                    const finished =
-                        [
-                            "FT",
-                            "AET",
-                            "PEN"
-                        ].includes(
-                            match.status
-                        );
 
-                    const recent =
-                        timestamp >=
-                        recentLimit;
-
-                    const upcoming =
-                        timestamp >= now &&
-                        timestamp <=
-                        futureLimit;
-
-                    return (
-                        !match.details &&
-                        (
-                            (
-                                finished &&
-                                recent
-                            ) ||
-                            upcoming
-                        )
+                const finished =
+                    isFinished(
+                        match.status
                     );
 
-                }
-            )
 
-            .sort(
-                (a, b) =>
+                const recent =
+                    timestamp >=
+                    recentLimit;
+
+
+                const upcoming =
+                    timestamp >=
+                    now &&
+                    timestamp <=
+                    futureLimit;
+
+
+                return (
+
+                    !match.details &&
+
                     (
-                        a.timestamp ||
-                        0
-                    ) -
-                    (
-                        b.timestamp ||
-                        0
+
+                        (
+                            finished &&
+                            recent
+                        ) ||
+
+                        upcoming
+
                     )
-            )
-            .slice(
-                0,
-                MAX_DETAIL_FIXTURES
-            );
+
+                );
+
+            }
+        )
+
+        .sort(
+            (a, b) =>
+                (a.timestamp || 0) -
+                (b.timestamp || 0)
+        )
+
+        .slice(
+            0,
+            MAX_DETAIL_FIXTURES
+        );
+
+}
+
+
+// ============================================================
+// ACTUALIZAR DETALLES
+// ============================================================
+
+async function updateMatchDetails(
+    data
+) {
+
+    const candidates =
+        getDetailCandidates(
+            data
+        );
 
 
     if (!candidates.length) {
@@ -2997,24 +3338,254 @@ async function updateMatchDetails(
         try {
 
             const summary =
-                await getESPNMatchSummary(
-                    match.espnId ||
+                await getMatchSummary(
                     match.id
                 );
 
-            saveESPNDetails(
-                match,
-                summary
-            );
+
+            match.details =
+                extractMatchDetails(
+                    summary
+                );
 
         } catch (error) {
 
             console.warn(
-                `No se pudo obtener detalle ${match.id}:`,
+                `No se pudieron obtener detalles ${match.id}:`,
                 error.message
             );
 
         }
+
+    }
+
+}
+
+
+// ============================================================
+// PRONÓSTICOS
+// ============================================================
+
+function updatePredictions(
+    data
+) {
+
+    const now =
+        Math.floor(
+            Date.now() / 1000
+        );
+
+
+    for (
+        const match
+        of data.matches
+    ) {
+
+        if (
+            !match.timestamp ||
+            match.timestamp <= now
+        ) {
+            continue;
+        }
+
+
+        const hours =
+            (
+                match.timestamp -
+                now
+            ) /
+            3600;
+
+
+        /*
+         * El pronóstico se genera normalmente.
+         *
+         * Se congela 12 horas antes.
+         */
+
+        if (
+            !match.prediction
+        ) {
+
+            match.prediction =
+                createPrediction(
+                    data,
+                    match
+                );
+
+        }
+
+
+        if (
+            !match.prediction.lockedAt &&
+            hours <= 12
+        ) {
+
+            match.prediction.lockedAt =
+                new Date().toISOString();
+
+        }
+
+    }
+
+}
+
+
+// ============================================================
+// VALIDACIÓN
+// ============================================================
+
+function validateData(
+    data
+) {
+
+    const errors = [];
+
+
+    if (
+        !Array.isArray(
+            data.matches
+        )
+    ) {
+
+        errors.push(
+            "matches no es un array"
+        );
+
+    }
+
+
+    if (
+        !Array.isArray(
+            data.standings
+        )
+    ) {
+
+        errors.push(
+            "standings no es un array"
+        );
+
+    }
+
+
+    if (
+        !Array.isArray(
+            data.scorers
+        )
+    ) {
+
+        errors.push(
+            "scorers no es un array"
+        );
+
+    }
+
+
+    if (
+        data.matches.length >
+        0
+    ) {
+
+        const ids =
+            new Set();
+
+
+        for (
+            const match
+            of data.matches
+        ) {
+
+            if (!match.id) {
+
+                errors.push(
+                    "Partido sin ID"
+                );
+
+            }
+
+
+            if (
+                ids.has(
+                    String(match.id)
+                )
+            ) {
+
+                errors.push(
+                    `Partido duplicado: ${match.id}`
+                );
+
+            }
+
+
+            ids.add(
+                String(match.id)
+            );
+
+        }
+
+    }
+
+
+    if (
+        errors.length
+    ) {
+
+        throw new Error(
+            "VALIDACIÓN FALLIDA:\n" +
+            errors.join("\n")
+        );
+
+    }
+
+}
+
+
+// ============================================================
+// API-FOOTBALL SECUNDARIA
+// ============================================================
+
+async function checkAPIFootball(
+    data
+) {
+
+    if (!API_KEY) {
+
+        console.log(
+            "API-Football no configurada."
+        );
+
+        return;
+
+    }
+
+
+    try {
+
+        await apiFootball(
+            "/standings",
+            {
+                league:
+                    LEAGUE_ID,
+
+                season:
+                    SEASON
+            }
+        );
+
+
+        data.meta.apiFootballSeasonAvailable =
+            true;
+
+    } catch (error) {
+
+        console.warn(
+            "API-Football no disponible para 2026:",
+            error.message
+        );
+
+
+        data.meta.apiFootballSeasonAvailable =
+            false;
 
     }
 
@@ -3031,12 +3602,6 @@ async function main() {
         await loadData();
 
 
-    const now =
-        Math.floor(
-            Date.now() / 1000
-        );
-
-
     console.log(
         "=========================================="
     );
@@ -3046,12 +3611,16 @@ async function main() {
     );
 
     console.log(
+        "MODELO V3.0"
+    );
+
+    console.log(
         "=========================================="
     );
 
 
     // ========================================================
-    // 1. CALENDARIO ESPN
+    // 1. CALENDARIO
     // ========================================================
 
     console.log(
@@ -3061,32 +3630,35 @@ async function main() {
 
     try {
 
-        const fixtures =
-            await getESPNFixtures();
+        const events =
+            await getCalendar();
 
 
         console.log(
-            `ESPN devuelve ${fixtures.length} eventos.`
+            `ESPN devuelve ${events.length} eventos.`
         );
 
 
-        if (
-            fixtures.length
-        ) {
-
-            mergeFixtures(
-                data,
-                fixtures
-            );
-
-        }
+        mergeCalendar(
+            data,
+            events
+        );
 
     } catch (error) {
 
         console.error(
-            "ERROR calendario ESPN:",
+            "ERROR calendario:",
             error.message
         );
+
+
+        if (
+            data.matches.length === 0
+        ) {
+
+            throw error;
+
+        }
 
     }
 
@@ -3103,7 +3675,7 @@ async function main() {
     try {
 
         const standings =
-            await getESPNStandings();
+            await getStandings();
 
 
         if (
@@ -3122,8 +3694,8 @@ async function main() {
 
     } catch (error) {
 
-        console.error(
-            "ERROR clasificación ESPN:",
+        console.warn(
+            "No se pudo actualizar clasificación:",
             error.message
         );
 
@@ -3142,7 +3714,7 @@ async function main() {
     try {
 
         const scorers =
-            await getESPNScorers();
+            await getScorers();
 
 
         if (
@@ -3162,7 +3734,7 @@ async function main() {
     } catch (error) {
 
         console.warn(
-            "No se pudieron obtener goleadores:",
+            "No se pudieron actualizar goleadores:",
             error.message
         );
 
@@ -3178,13 +3750,24 @@ async function main() {
     );
 
 
-    data.injuries =
-        await getESPNInjuries();
+    try {
+
+        data.injuries =
+            await getInjuries();
 
 
-    console.log(
-        `Lesiones obtenidas: ${data.injuries.length}`
-    );
+        console.log(
+            `Lesiones obtenidas: ${data.injuries.length}`
+        );
+
+    } catch (error) {
+
+        console.warn(
+            "Lesiones no disponibles:",
+            error.message
+        );
+
+    }
 
 
     // ========================================================
@@ -3196,17 +3779,38 @@ async function main() {
     );
 
 
-    data.news =
-        await getESPNNews();
+    try {
+
+        const news =
+            await getNews();
 
 
-    console.log(
-        `Noticias obtenidas: ${data.news.length}`
-    );
+        if (
+            news.length
+        ) {
+
+            data.news =
+                news;
+
+        }
+
+
+        console.log(
+            `Noticias obtenidas: ${data.news.length}`
+        );
+
+    } catch (error) {
+
+        console.warn(
+            "Noticias no disponibles:",
+            error.message
+        );
+
+    }
 
 
     // ========================================================
-    // 6. API-FOOTBALL COMPLEMENTARIA
+    // 6. API-FOOTBALL
     // ========================================================
 
     console.log(
@@ -3214,7 +3818,7 @@ async function main() {
     );
 
 
-    await tryAPIFootballData(
+    await checkAPIFootball(
         data
     );
 
@@ -3242,29 +3846,9 @@ async function main() {
     );
 
 
-    for (
-        const match
-        of data.matches
-    ) {
-
-        if (
-            [
-                "FT",
-                "AET",
-                "PEN"
-            ].includes(
-                match.status
-            )
-        ) {
-
-            match.result =
-                getResult(
-                    match
-                );
-
-        }
-
-    }
+    updateResults(
+        data
+    );
 
 
     // ========================================================
@@ -3276,59 +3860,9 @@ async function main() {
     );
 
 
-    for (
-        const match
-        of data.matches
-    ) {
-
-        if (
-            !match.timestamp
-        ) {
-            continue;
-        }
-
-
-        if (
-            match.timestamp <=
-            now
-        ) {
-            continue;
-        }
-
-
-        const hours =
-            (
-                match.timestamp -
-                now
-            ) /
-            3600;
-
-
-        if (
-            !match.prediction
-        ) {
-
-            match.prediction =
-                createPrediction(
-                    data,
-                    match
-                );
-
-        }
-
-
-        if (
-            !match.prediction.lockedAt &&
-            hours <= 12
-        ) {
-
-            match.prediction.lockedAt =
-                new Date()
-                    .toISOString();
-
-        }
-
-    }
+    updatePredictions(
+        data
+    );
 
 
     // ========================================================
@@ -3346,7 +3880,21 @@ async function main() {
 
 
     // ========================================================
-    // 11. METADATOS
+    // 11. APRENDIZAJE
+    // ========================================================
+
+    console.log(
+        "11. Analizando rendimiento del modelo..."
+    );
+
+
+    calculateModelLearning(
+        data
+    );
+
+
+    // ========================================================
+    // 12. METADATOS
     // ========================================================
 
     data.meta = {
@@ -3363,7 +3911,7 @@ async function main() {
             "LaLiga",
 
         seasonLabel:
-            "2026/27",
+            SEASON_LABEL,
 
         source:
             "ESPN + API-Football",
@@ -3374,97 +3922,33 @@ async function main() {
         secondarySource:
             "API-Football",
 
+        modelVersion:
+            "3.0",
+
         generatedAt:
-            new Date()
-                .toISOString(),
+            new Date().toISOString(),
 
-        requestsThisRun,
-
-        matchesCount:
-            data.matches.length,
-
-        standingsCount:
-            data.standings.length,
-
-        scorersCount:
-            data.scorers.length,
-
-        injuriesCount:
-            data.injuries.length,
-
-        newsCount:
-            data.news.length
+        requestsThisRun
 
     };
 
 
     // ========================================================
-    // VALIDACIÓN
+    // 13. VALIDACIÓN
     // ========================================================
 
     console.log(
-        "11. Validando datos..."
+        "12. Validando datos..."
     );
 
 
-    const validationErrors = [];
-
-
-    if (
-        data.matches.length === 0
-    ) {
-
-        validationErrors.push(
-            "ESPN no ha devuelto ningún partido."
-        );
-
-    }
-
-
-    if (
-        data.standings.length === 0
-    ) {
-
-        validationErrors.push(
-            "ESPN no ha devuelto clasificación."
-        );
-
-    }
-
-
-    if (
-        validationErrors.length
-    ) {
-
-        console.error(
-            "ADVERTENCIA DE DATOS:"
-        );
-
-        for (
-            const error
-            of validationErrors
-        ) {
-
-            console.error(
-                ` - ${error}`
-            );
-
-        }
-
-        /*
-         * NO hacemos process.exit(1).
-         *
-         * El motivo es que una API pública no oficial
-         * puede tener temporalmente un fallo.
-         *
-         * Conservamos los datos históricos existentes.
-         */
-
-    }
+    validateData(
+        data
+    );
 
 
     // ========================================================
-    // 12. GUARDAR
+    // 14. GUARDAR
     // ========================================================
 
     await fs.mkdir(
@@ -3501,6 +3985,10 @@ async function main() {
     );
 
     console.log(
+        "=========================================="
+    );
+
+    console.log(
         `Partidos: ${data.matches.length}`
     );
 
@@ -3525,17 +4013,18 @@ async function main() {
     );
 
     console.log(
-        `Aciertos acumulados: ${
-            data.predictionBalance.correct
-        }/${
-            data.predictionBalance.total
-        }`
+        `Aciertos acumulados: ` +
+        `${data.predictionBalance.correct}/` +
+        `${data.predictionBalance.total}`
     );
 
     console.log(
-        `Precisión: ${
-            data.predictionBalance.accuracy
-        }%`
+        `Precisión: ` +
+        `${data.predictionBalance.accuracy}%`
+    );
+
+    console.log(
+        `Modelo: ${data.modelLearning.version}`
     );
 
     console.log(
@@ -3553,6 +4042,7 @@ main()
                 "ERROR FATAL:",
                 error
             );
+
 
             process.exit(1);
 
