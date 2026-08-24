@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-08-23T23:28:12.195Z",
+    "generatedAt": "2026-08-24T05:54:09.503Z",
     "requestsThisRun": 6,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -10441,7 +10441,7 @@
         "confidence": 0.5532,
         "difficulty": "media",
         "generatedAt": "2026-08-21T07:42:33.515Z",
-        "lockedAt": null,
+        "lockedAt": "2026-08-24T05:54:09.501Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -64846,12 +64846,28 @@
   },
   "news": [
     {
+      "id": 49706356,
+      "headline": "Moreno 'disappointed' by Lamine Yamal's reaction to Barcelona substitution",
+      "description": "Moreno 'disappointed' by Lamine Yamal's reaction to Barcelona substitution",
+      "published": "2026-08-23T23:33:15Z",
+      "link": "https://www.espn.com/video/clip/_/id/49706356/moreno-disappointed-lamine-yamal-reaction-barcelona-substitution",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0823/dm_260823_COM_SOC_Analysis_Moreno_disappointed_by_Lamine_Yamals_reaction_to_Barcelona_substitution_20260/dm_260823_COM_SOC_Analysis_Moreno_disappointed_by_Lamine_Yamals_reaction_to_Barcelona_substitution_20260.jpg"
+    },
+    {
       "id": 49706105,
       "headline": "Gordon confident in fulfilling Barcelona's number nine role",
       "description": "Gordon confident in fulfilling Barcelona's number nine role",
       "published": "2026-08-23T22:59:38Z",
       "link": "https://www.espn.com/video/clip/_/id/49706105/gordon-confident-fulfilling-barcelona-number-nine-role",
       "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0823/dm_260823_COM_SOC_Interview_Gordon_confident_in_fulfilling_Barcelonas_number_nine_role_20260823_GLOBAL/dm_260823_COM_SOC_Interview_Gordon_confident_in_fulfilling_Barcelonas_number_nine_role_20260823_GLOBAL.jpg"
+    },
+    {
+      "id": 49674184,
+      "headline": "Raphinha, Fermín López both score two each as Barcelona open campaign with 5-0 win",
+      "description": "Raphinha and Fermín López scored two goals each as Barcelona cruised to a 5-0 victory at Elche.",
+      "published": "2026-08-23T23:28:23Z",
+      "link": "http://www.espn.com/soccer/report/_/gameId/401882913",
+      "image": "https://a.espncdn.com/photo/2026/0823/r1706005_1296x729_16-9.jpg"
     },
     {
       "id": 49705660,
@@ -64876,22 +64892,6 @@
       "published": "2026-08-23T19:36:23Z",
       "link": "https://www.espn.com/video/clip/_/id/49704266/getafe-vs-racing-santander-game-highlights",
       "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0823/67ad4b7c-605a-4f7a-9f0f-11c27f6d54b0/67ad4b7c-605a-4f7a-9f0f-11c27f6d54b0.jpg"
-    },
-    {
-      "id": 49674169,
-      "headline": "Giuliano Simeone salvages a point for 10-man Atlético Madrid against Villareal ",
-      "description": "A chaotic second half saw Marc Pubill put Atlético ahead and Gerard Moreno quickly level from the spot before the hosts were reduced to 10 men.",
-      "published": "2026-08-23T17:41:19Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882915",
-      "image": "https://a.espncdn.com/photo/2026/0823/r1705833_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49702918,
-      "headline": "Atletico Madrid vs. Villarreal - Game Highlights",
-      "description": "Watch the Game Highlights from Atletico Madrid vs. Villarreal, 08/23/2026",
-      "published": "2026-08-23T17:12:59Z",
-      "link": "https://www.espn.com/video/clip/_/id/49702918/atletico-madrid-vs-villarreal-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0823/28d6f20d-1618-4046-afac-c70d1ae9dad9/28d6f20d-1618-4046-afac-c70d1ae9dad9.jpg"
     }
   ],
   "modelLearning": {
