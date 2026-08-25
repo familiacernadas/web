@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-08-24T05:54:09.503Z",
-    "requestsThisRun": 6,
+    "generatedAt": "2026-08-25T05:48:35.317Z",
+    "requestsThisRun": 7,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": true,
@@ -10119,8 +10119,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-24T17:30Z",
       "timestamp": 1787592600,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "El Sadar",
         "city": "Pamplona"
@@ -10530,8 +10530,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-24T19:30Z",
       "timestamp": 1787599800,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "La Rosaleda",
         "city": "Malaga"
@@ -10551,8 +10551,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         },
         "extratime": null,
         "penalty": null
@@ -14428,7 +14428,73 @@
       },
       "uid": "s:600~l:740~e:401882867",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-08-25T05:48:35.315Z",
+        "lineups": [
+          {
+            "teamId": 89,
+            "teamName": "Real Sociedad",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 85,
+            "teamName": "Celta Vigo",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 89,
+            "teamName": "Real Sociedad",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-1",
+              "totalGoals": "0",
+              "goalAssists": "0",
+              "goalsConceded": "1"
+            }
+          },
+          {
+            "teamId": 85,
+            "teamName": "Celta Vigo",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "0",
+              "totalGoals": "0",
+              "goalAssists": "0",
+              "goalsConceded": "0"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882894,
@@ -64805,10 +64871,10 @@
   ],
   "injuries": [],
   "predictionBalance": {
-    "total": 7,
-    "correct": 2,
-    "incorrect": 5,
-    "accuracy": 28.57,
+    "total": 9,
+    "correct": 3,
+    "incorrect": 6,
+    "accuracy": 33.33,
     "bySign": {
       "1": {
         "total": 3,
@@ -64816,14 +64882,14 @@
         "accuracy": 0
       },
       "2": {
-        "total": 2,
+        "total": 3,
         "correct": 1,
-        "accuracy": 50
+        "accuracy": 33.33
       },
       "X": {
-        "total": 2,
-        "correct": 1,
-        "accuracy": 50
+        "total": 3,
+        "correct": 2,
+        "accuracy": 66.67
       }
     },
     "byDifficulty": {
@@ -64833,97 +64899,97 @@
         "accuracy": 25
       },
       "media": {
-        "total": 0,
-        "correct": 0,
-        "accuracy": 0
+        "total": 1,
+        "correct": 1,
+        "accuracy": 100
       },
       "difícil": {
-        "total": 3,
+        "total": 4,
         "correct": 1,
-        "accuracy": 33.33
+        "accuracy": 25
       }
     }
   },
   "news": [
     {
-      "id": 49706356,
-      "headline": "Moreno 'disappointed' by Lamine Yamal's reaction to Barcelona substitution",
-      "description": "Moreno 'disappointed' by Lamine Yamal's reaction to Barcelona substitution",
-      "published": "2026-08-23T23:33:15Z",
-      "link": "https://www.espn.com/video/clip/_/id/49706356/moreno-disappointed-lamine-yamal-reaction-barcelona-substitution",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0823/dm_260823_COM_SOC_Analysis_Moreno_disappointed_by_Lamine_Yamals_reaction_to_Barcelona_substitution_20260/dm_260823_COM_SOC_Analysis_Moreno_disappointed_by_Lamine_Yamals_reaction_to_Barcelona_substitution_20260.jpg"
+      "id": 49716116,
+      "headline": "Burley: Flick is 'looking down the line' with Lamine Yamal",
+      "description": "Burley: Flick is 'looking down the line' with Lamine Yamal",
+      "published": "2026-08-24T23:00:30Z",
+      "link": "https://www.espn.com/video/clip/_/id/49716116/flick-looking-line-lamine-yamal",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0824/dm_260824_Burley_Flick_is_looking_down_the_line_with_Lamine_Yamal/dm_260824_Burley_Flick_is_looking_down_the_line_with_Lamine_Yamal.jpg"
     },
     {
-      "id": 49706105,
-      "headline": "Gordon confident in fulfilling Barcelona's number nine role",
-      "description": "Gordon confident in fulfilling Barcelona's number nine role",
-      "published": "2026-08-23T22:59:38Z",
-      "link": "https://www.espn.com/video/clip/_/id/49706105/gordon-confident-fulfilling-barcelona-number-nine-role",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0823/dm_260823_COM_SOC_Interview_Gordon_confident_in_fulfilling_Barcelonas_number_nine_role_20260823_GLOBAL/dm_260823_COM_SOC_Interview_Gordon_confident_in_fulfilling_Barcelonas_number_nine_role_20260823_GLOBAL.jpg"
+      "id": 49716004,
+      "headline": "Nicol: Atlético need to stop hiding Julián Alvarez",
+      "description": "Nicol: Atlético need to stop hiding Julián Alvarez",
+      "published": "2026-08-24T23:00:23Z",
+      "link": "https://www.espn.com/video/clip/_/id/49716004/atletico-need-stop-hiding-julian-alvarez",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0824/dm_260824_Nicol_Atletico_need_to_stop_hiding_Julian_Alvarez/dm_260824_Nicol_Atletico_need_to_stop_hiding_Julian_Alvarez.jpg"
     },
     {
-      "id": 49674184,
-      "headline": "Raphinha, Fermín López both score two each as Barcelona open campaign with 5-0 win",
-      "description": "Raphinha and Fermín López scored two goals each as Barcelona cruised to a 5-0 victory at Elche.",
-      "published": "2026-08-23T23:28:23Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882913",
-      "image": "https://a.espncdn.com/photo/2026/0823/r1706005_1296x729_16-9.jpg"
+      "id": 49715641,
+      "headline": "Málaga vs. Deportivo La Coruña - Game Highlights",
+      "description": "Watch the Game Highlights from Málaga vs. Deportivo La Coruña, 08/24/2026",
+      "published": "2026-08-24T21:34:13Z",
+      "link": "https://www.espn.com/video/clip/_/id/49715641/malaga-vs-deportivo-la-coruna-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0824/b8d1d159-647c-4ad0-9fef-923a37dce529/b8d1d159-647c-4ad0-9fef-923a37dce529.jpg"
     },
     {
-      "id": 49705660,
-      "headline": "Raphinha stars as Barcelona thump Elche to begin LaLiga title defence",
-      "description": "Barcelona began the defence of their LaLiga title with a thumping 5-0 win away against Elche at the Estadio Manuel Martinez Valero.",
-      "published": "2026-08-23T22:07:33Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49705660/raphinha-barcelona-elche-laliga-title-defence",
-      "image": "https://a.espncdn.com/photo/2026/0823/r1705962_1296x729_16-9.jpg"
+      "id": 49714549,
+      "headline": "Osasuna vs. Levante - Game Highlights",
+      "description": "Watch the Game Highlights from Osasuna vs. Levante, 08/24/2026",
+      "published": "2026-08-24T19:30:19Z",
+      "link": "https://www.espn.com/video/clip/_/id/49714549/osasuna-vs-levante-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0824/a7498d25-361b-4314-9d55-01b2dda1b540/a7498d25-361b-4314-9d55-01b2dda1b540.jpg"
     },
     {
-      "id": 49705551,
-      "headline": "Elche vs. Barcelona - Game Highlights",
-      "description": "Watch the Game Highlights from Elche vs. Barcelona, 08/23/2026",
-      "published": "2026-08-23T21:49:01Z",
-      "link": "https://www.espn.com/video/clip/_/id/49705551/elche-vs-barcelona-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0823/e0c6c700-777f-46ae-9802-64934450f201/e0c6c700-777f-46ae-9802-64934450f201.jpg"
+      "id": 49712119,
+      "headline": "Marcotti: I have no sympathy for Julián Alvarez",
+      "description": "Marcotti: I have no sympathy for Julián Alvarez",
+      "published": "2026-08-24T14:52:31Z",
+      "link": "https://www.espn.com/video/clip/_/id/49712119/no-sympathy-julian-alvarez",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0824/dm_260824_Marcotti_I_have_no_sympathy_for_Julian_Alvarez/dm_260824_Marcotti_I_have_no_sympathy_for_Julian_Alvarez.jpg"
     },
     {
-      "id": 49704266,
-      "headline": "Getafe vs. Racing Santander - Game Highlights",
-      "description": "Watch the Game Highlights from Getafe vs. Racing Santander, 08/23/2026",
-      "published": "2026-08-23T19:36:23Z",
-      "link": "https://www.espn.com/video/clip/_/id/49704266/getafe-vs-racing-santander-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0823/67ad4b7c-605a-4f7a-9f0f-11c27f6d54b0/67ad4b7c-605a-4f7a-9f0f-11c27f6d54b0.jpg"
+      "id": 49711374,
+      "headline": "Barcelona condemn police use of force against fans vs. Elche",
+      "description": "Barcelona have criticised the \"disproportionate use of force\" used against the club's supporters by the Spanish police before Sunday's LaLiga opener against Elche.",
+      "published": "2026-08-24T13:41:53Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49711374/barcelona-condemn-police-use-force-fans-elche",
+      "image": "https://a.espncdn.com/photo/2026/0823/r1705924_1296x729_16-9.jpg"
     }
   ],
   "modelLearning": {
     "version": "3.0",
-    "totalEvaluated": 7,
-    "correct": 2,
-    "accuracy": 28.57,
+    "totalEvaluated": 9,
+    "correct": 3,
+    "accuracy": 33.33,
     "variables": {
       "form": {
-        "samples": 7,
-        "correct": 2,
-        "accuracy": 28.57
+        "samples": 9,
+        "correct": 3,
+        "accuracy": 33.33
       },
       "attackDefense": {
-        "samples": 7,
-        "correct": 2,
-        "accuracy": 28.57
+        "samples": 9,
+        "correct": 3,
+        "accuracy": 33.33
       },
       "goalkeeper": {
-        "samples": 7,
-        "correct": 2,
-        "accuracy": 28.57
+        "samples": 9,
+        "correct": 3,
+        "accuracy": 33.33
       },
       "formation": {
-        "samples": 7,
-        "correct": 2,
-        "accuracy": 28.57
+        "samples": 9,
+        "correct": 3,
+        "accuracy": 33.33
       },
       "injuries": {
-        "samples": 7,
-        "correct": 2,
-        "accuracy": 28.57
+        "samples": 9,
+        "correct": 3,
+        "accuracy": 33.33
       }
     },
     "notes": [
