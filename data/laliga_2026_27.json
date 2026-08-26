@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-08-25T05:48:35.317Z",
+    "generatedAt": "2026-08-26T05:51:00.571Z",
     "requestsThisRun": 7,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -10941,8 +10941,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-25T19:00Z",
       "timestamp": 1787684400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Mestalla Stadium",
         "city": "Manises"
@@ -10963,7 +10963,7 @@
         "halftime": null,
         "fulltime": {
           "home": 0,
-          "away": 0
+          "away": 1
         },
         "extratime": null,
         "penalty": null
@@ -11343,7 +11343,7 @@
       },
       "uid": "s:600~l:740~e:401882917",
       "season": 2026,
-      "result": "X"
+      "result": "2"
     },
     {
       "id": 401882919,
@@ -14626,7 +14626,73 @@
       },
       "uid": "s:600~l:740~e:401882894",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-08-26T05:51:00.569Z",
+        "lineups": [
+          {
+            "teamId": 244,
+            "teamName": "Real Betis",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 86,
+            "teamName": "Real Madrid",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 244,
+            "teamName": "Real Betis",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "1",
+              "totalGoals": "1",
+              "goalAssists": "1",
+              "goalsConceded": "0"
+            }
+          },
+          {
+            "teamId": 86,
+            "teamName": "Real Madrid",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "1",
+              "totalGoals": "2",
+              "goalAssists": "1",
+              "goalsConceded": "1"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882895,
@@ -64871,10 +64937,10 @@
   ],
   "injuries": [],
   "predictionBalance": {
-    "total": 9,
+    "total": 10,
     "correct": 3,
-    "incorrect": 6,
-    "accuracy": 33.33,
+    "incorrect": 7,
+    "accuracy": 30,
     "bySign": {
       "1": {
         "total": 3,
@@ -64887,9 +64953,9 @@
         "accuracy": 33.33
       },
       "X": {
-        "total": 3,
+        "total": 4,
         "correct": 2,
-        "accuracy": 66.67
+        "accuracy": 50
       }
     },
     "byDifficulty": {
@@ -64904,13 +64970,45 @@
         "accuracy": 100
       },
       "difícil": {
-        "total": 4,
+        "total": 5,
         "correct": 1,
-        "accuracy": 25
+        "accuracy": 20
       }
     }
   },
   "news": [
+    {
+      "id": 49725240,
+      "headline": "Valencia vs. Real Betis - Game Highlights",
+      "description": "Watch the Game Highlights from Valencia vs. Real Betis, 08/25/2026",
+      "published": "2026-08-25T21:07:12Z",
+      "link": "https://www.espn.com/video/clip/_/id/49725240/valencia-vs-real-betis-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0825/cd9c1986-d597-464e-9099-3e9b7b4550ca/cd9c1986-d597-464e-9099-3e9b7b4550ca.jpg"
+    },
+    {
+      "id": 48990955,
+      "headline": "Summer transfer window: Grading big signings in men's soccer",
+      "description": "The 2026 summer transfer window is open. Here is how we rated the biggest deals.",
+      "published": "2026-08-25T17:57:42Z",
+      "link": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
+      "image": "https://a.espncdn.com/photo/2026/0825/r1706746_2_1296x729_16-9.jpg"
+    },
+    {
+      "id": 49721055,
+      "headline": "José Mourinho hopes to 'start from scratch' with Real Madrid fans",
+      "description": "José Mourinho hopes to 'start from scratch' with Real Madrid fans",
+      "published": "2026-08-25T11:34:10Z",
+      "link": "https://www.espn.com/video/clip/_/id/49721055/jose-mourinho-hopes-start-scratch-real-madrid-fans",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0825/dm_260825_COM_SOC_Presser_Jose_Mourinho_hopes_to_start_from_scratch_with_Real_Madrid_fans_20260825_GLOBA/dm_260825_COM_SOC_Presser_Jose_Mourinho_hopes_to_start_from_scratch_with_Real_Madrid_fans_20260825_GLOBA.jpg"
+    },
+    {
+      "id": 49719699,
+      "headline": "Julián Álvarez transfer saga: Join Barcelona, Arsenal? Stay at Atlético?",
+      "description": "Julián Álvarez, wanted by the champions of Spain and England, has faced a backlash from Atlético Madrid fans over his desire to leave. Will he get his summer move?",
+      "published": "2026-08-25T12:26:22Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49719699/julian-alvarez-transfer-saga-barcelona-arsenal-atletico-madrid",
+      "image": "https://a.espncdn.com/photo/2026/0825/r1706630_1296x729_16-9.jpg"
+    },
     {
       "id": 49716116,
       "headline": "Burley: Flick is 'looking down the line' with Lamine Yamal",
@@ -64926,70 +65024,38 @@
       "published": "2026-08-24T23:00:23Z",
       "link": "https://www.espn.com/video/clip/_/id/49716004/atletico-need-stop-hiding-julian-alvarez",
       "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0824/dm_260824_Nicol_Atletico_need_to_stop_hiding_Julian_Alvarez/dm_260824_Nicol_Atletico_need_to_stop_hiding_Julian_Alvarez.jpg"
-    },
-    {
-      "id": 49715641,
-      "headline": "Málaga vs. Deportivo La Coruña - Game Highlights",
-      "description": "Watch the Game Highlights from Málaga vs. Deportivo La Coruña, 08/24/2026",
-      "published": "2026-08-24T21:34:13Z",
-      "link": "https://www.espn.com/video/clip/_/id/49715641/malaga-vs-deportivo-la-coruna-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0824/b8d1d159-647c-4ad0-9fef-923a37dce529/b8d1d159-647c-4ad0-9fef-923a37dce529.jpg"
-    },
-    {
-      "id": 49714549,
-      "headline": "Osasuna vs. Levante - Game Highlights",
-      "description": "Watch the Game Highlights from Osasuna vs. Levante, 08/24/2026",
-      "published": "2026-08-24T19:30:19Z",
-      "link": "https://www.espn.com/video/clip/_/id/49714549/osasuna-vs-levante-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0824/a7498d25-361b-4314-9d55-01b2dda1b540/a7498d25-361b-4314-9d55-01b2dda1b540.jpg"
-    },
-    {
-      "id": 49712119,
-      "headline": "Marcotti: I have no sympathy for Julián Alvarez",
-      "description": "Marcotti: I have no sympathy for Julián Alvarez",
-      "published": "2026-08-24T14:52:31Z",
-      "link": "https://www.espn.com/video/clip/_/id/49712119/no-sympathy-julian-alvarez",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0824/dm_260824_Marcotti_I_have_no_sympathy_for_Julian_Alvarez/dm_260824_Marcotti_I_have_no_sympathy_for_Julian_Alvarez.jpg"
-    },
-    {
-      "id": 49711374,
-      "headline": "Barcelona condemn police use of force against fans vs. Elche",
-      "description": "Barcelona have criticised the \"disproportionate use of force\" used against the club's supporters by the Spanish police before Sunday's LaLiga opener against Elche.",
-      "published": "2026-08-24T13:41:53Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49711374/barcelona-condemn-police-use-force-fans-elche",
-      "image": "https://a.espncdn.com/photo/2026/0823/r1705924_1296x729_16-9.jpg"
     }
   ],
   "modelLearning": {
     "version": "3.0",
-    "totalEvaluated": 9,
+    "totalEvaluated": 10,
     "correct": 3,
-    "accuracy": 33.33,
+    "accuracy": 30,
     "variables": {
       "form": {
-        "samples": 9,
+        "samples": 10,
         "correct": 3,
-        "accuracy": 33.33
+        "accuracy": 30
       },
       "attackDefense": {
-        "samples": 9,
+        "samples": 10,
         "correct": 3,
-        "accuracy": 33.33
+        "accuracy": 30
       },
       "goalkeeper": {
-        "samples": 9,
+        "samples": 10,
         "correct": 3,
-        "accuracy": 33.33
+        "accuracy": 30
       },
       "formation": {
-        "samples": 9,
+        "samples": 10,
         "correct": 3,
-        "accuracy": 33.33
+        "accuracy": 30
       },
       "injuries": {
-        "samples": 9,
+        "samples": 10,
         "correct": 3,
-        "accuracy": 33.33
+        "accuracy": 30
       }
     },
     "notes": [
