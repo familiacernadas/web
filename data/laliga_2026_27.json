@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-08-27T16:32:13.483Z",
-    "requestsThisRun": 12,
+    "generatedAt": "2026-08-28T17:27:14.981Z",
+    "requestsThisRun": 8,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": true,
@@ -11763,8 +11763,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-27T18:30Z",
       "timestamp": 1787855400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Balaidos",
         "city": "Vigo"
@@ -11784,8 +11784,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 2
         },
         "extratime": null,
         "penalty": null
@@ -12165,7 +12165,7 @@
       },
       "uid": "s:600~l:740~e:401882924",
       "season": 2026,
-      "result": "X"
+      "result": "2"
     },
     {
       "id": 401882921,
@@ -12174,8 +12174,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-27T19:00Z",
       "timestamp": 1787857200,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Spotify Camp Nou",
         "city": "Barcelona"
@@ -12195,7 +12195,7 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
+          "home": 2,
           "away": 0
         },
         "extratime": null,
@@ -12576,7 +12576,7 @@
       },
       "uid": "s:600~l:740~e:401882921",
       "season": 2026,
-      "result": "X"
+      "result": "1"
     },
     {
       "id": 401882900,
@@ -12585,8 +12585,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-28T17:00Z",
       "timestamp": 1787936400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "STATUS_FIRST_HALF",
+      "statusLong": "First Half",
       "venue": {
         "name": "El Sardineros",
         "city": "Santander"
@@ -12606,7 +12606,7 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
+          "home": 2,
           "away": 0
         },
         "extratime": null,
@@ -12748,7 +12748,7 @@
       },
       "uid": "s:600~l:740~e:401882900",
       "season": 2026,
-      "result": "X"
+      "result": "1"
     },
     {
       "id": 401882906,
@@ -12840,7 +12840,7 @@
         "confidence": 0.5696,
         "difficulty": "media",
         "generatedAt": "2026-08-21T07:42:33.516Z",
-        "lockedAt": null,
+        "lockedAt": "2026-08-28T17:27:14.980Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -16012,7 +16012,73 @@
       },
       "uid": "s:600~l:740~e:401882892",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-08-28T17:27:14.783Z",
+        "lineups": [
+          {
+            "teamId": 88,
+            "teamName": "Espanyol",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 243,
+            "teamName": "Sevilla",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 88,
+            "teamName": "Espanyol",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "2",
+              "totalGoals": "4",
+              "goalAssists": "3",
+              "goalsConceded": "2"
+            }
+          },
+          {
+            "teamId": 243,
+            "teamName": "Sevilla",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "3",
+              "totalGoals": "5",
+              "goalAssists": "2",
+              "goalsConceded": "2"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882891,
@@ -16144,7 +16210,73 @@
       },
       "uid": "s:600~l:740~e:401882891",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-08-28T17:27:14.979Z",
+        "lineups": [
+          {
+            "teamId": 2922,
+            "teamName": "Getafe",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 85,
+            "teamName": "Celta Vigo",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 2922,
+            "teamName": "Getafe",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-2",
+              "totalGoals": "1",
+              "goalAssists": "0",
+              "goalsConceded": "3"
+            }
+          },
+          {
+            "teamId": 85,
+            "teamName": "Celta Vigo",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-1",
+              "totalGoals": "1",
+              "goalAssists": "1",
+              "goalsConceded": "2"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882893,
@@ -65333,10 +65465,10 @@
   ],
   "injuries": [],
   "predictionBalance": {
-    "total": 11,
+    "total": 13,
     "correct": 3,
-    "incorrect": 8,
-    "accuracy": 27.27,
+    "incorrect": 10,
+    "accuracy": 23.08,
     "bySign": {
       "1": {
         "total": 3,
@@ -65349,9 +65481,9 @@
         "accuracy": 33.33
       },
       "X": {
-        "total": 5,
+        "total": 7,
         "correct": 2,
-        "accuracy": 40
+        "accuracy": 28.57
       }
     },
     "byDifficulty": {
@@ -65366,92 +65498,92 @@
         "accuracy": 100
       },
       "difícil": {
-        "total": 6,
+        "total": 8,
         "correct": 1,
-        "accuracy": 16.67
+        "accuracy": 12.5
       }
     }
   },
   "news": [
     {
-      "id": 48990955,
-      "headline": "Summer transfer window: Grading big signings in men's soccer",
-      "description": "The 2026 summer transfer window is open. Here is how we rated the biggest deals.",
-      "published": "2026-08-27T15:30:10Z",
-      "link": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
-      "image": "https://a.espncdn.com/photo/2026/0731/r1695938_1296x729_16-9.jpg"
+      "id": 49750272,
+      "headline": "Transfer rumors, news: Arsenal turn to Real Madrid's Endrick in left winger chase",
+      "description": "Arsenal have renewed interest in signing Real Madrid forward Endrick. Transfer Talk has the latest.",
+      "published": "2026-08-28T14:43:33Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49750272/transfer-rumors-news-liverpool-eyeing-sarr-barcola-deal-agreed",
+      "image": "https://a.espncdn.com/photo/2026/0427/r1650071_1296x729_16-9.jpg"
     },
     {
-      "id": 49741962,
-      "headline": "Mikel Arteta to Arsenal squad amid Julián Álvarez transfer talk: 'Knock on my door'",
-      "description": "Mikel Arteta has told any Arsenal players unsettled by ongoing speculation over Julián Álvarez's possible arrival to \"knock on his door\" and find out the truth.",
-      "published": "2026-08-27T14:12:06Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49741962/mikel-arteta-arsenal-squad-amid-julian-alvarez-transfer-talk-knock-my-door",
-      "image": "https://a.espncdn.com/photo/2026/0429/r1651109_1296x729_16-9.jpg"
+      "id": 49752634,
+      "headline": "Simeone stands firm on keeping 'important' Alvarez at Atletico",
+      "description": "Simeone stands firm on keeping 'important' Alvarez at Atletico",
+      "published": "2026-08-28T13:27:47Z",
+      "link": "https://www.espn.com/video/clip/_/id/49752634/simeone-stands-firm-keeping-important-alvarez-atletico",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0828/dm_260828_Simeone_stands_firm_on_keeping_important_Alvarez_at_Atletico/dm_260828_Simeone_stands_firm_on_keeping_important_Alvarez_at_Atletico.jpg"
     },
     {
-      "id": 49741915,
-      "headline": "Laurens tells Atletico Madrid to accept Alvarez's exit",
-      "description": "Laurens tells Atletico Madrid to accept Alvarez's exit",
-      "published": "2026-08-27T13:55:38Z",
-      "link": "https://www.espn.com/video/clip/_/id/49741915/laurens-tells-atletico-madrid-accept-alvarez-exit",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0827/dm_260827_Laurens_tells_Atletico_Madrid_to_accept_Alvarezs_exit/dm_260827_Laurens_tells_Atletico_Madrid_to_accept_Alvarezs_exit.jpg"
+      "id": 49751229,
+      "headline": "Rafael Leão free to leave AC Milan amid Galatasaray, Aston Villa links - Ruben Amorim",
+      "description": "AC Milan coach Ruben Amorim believes it will be better for Rafael Leão \"to move on\" and leave the club in this transfer window.",
+      "published": "2026-08-28T10:46:20Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49751229/rafael-leao-free-leave-ac-milan-amid-galatasaray-aston-villa-links-ruben-amorim",
+      "image": "https://a.espncdn.com/photo/2026/0828/r1708030_1296x729_16-9.jpg"
     },
     {
-      "id": 49741017,
-      "headline": "Atlético Madrid won't negotiate Julián Álvarez transfer with Barcelona",
-      "description": "Atlético Madrid insist they will not negotiate the transfer of Julián Álvarez to Barcelona before Monday's deadline despite the player's desire to move to the Spanish champions.",
-      "published": "2026-08-27T11:58:42Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49741017/atletico-madrid-julian-alvarez-transfer-barcelona",
-      "image": "https://a.espncdn.com/photo/2026/0823/r1705827_1296x729_16-9.jpg"
+      "id": 49742377,
+      "headline": "10 Best: Ranking the top soccer players in the world right now",
+      "description": "Who is the best soccer player in the world right now? ESPN's new ranking can tell you -- and some names might surprise you.",
+      "published": "2026-08-28T09:50:56Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49742377/10-best-ranking-top-soccer-players-world-right-now",
+      "image": "https://a.espncdn.com/photo/2026/0827/r1707816_1296x729_16-9.png"
     },
     {
-      "id": 49740625,
-      "headline": "Barcelona confirm signing of Croatia goalkeeper Dominik Livakovic",
-      "description": "Barcelona have confirmed the signing of Croatia goalkeeper Dominik Livakovic from Turkish club Fenerbahçe",
-      "published": "2026-08-27T11:19:49Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49740625/barcelona-confirm-signing-croatia-goalkeeper-dominik-livakovic",
-      "image": "https://a.espncdn.com/photo/2026/0827/r1707539_1296x729_16-9.jpg"
+      "id": 49733346,
+      "headline": "Weekend predictions: Pressure on Man United, Carrick already? Wrexham to beat Birmingham?",
+      "description": "Late August is no time to hit the panic button, but another loss against a promotion side may well send Manchester United into crisis. PLUS: We head to Germany for the start of the Bundesliga, and Wrexham vs. Birmingham face-off.",
+      "published": "2026-08-28T09:50:24Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49733346/weekend-predictions-preview-analysis-pressure-manchester-united-carrick-already-wrexham-vs-birmingham-city",
+      "image": "https://a.espncdn.com/photo/2026/0827/r1707508_1296x729_16-9.jpg"
     },
     {
-      "id": 49740170,
-      "headline": "Mourinho sets Mbappé challenge after hat-trick",
-      "description": "Mourinho sets Mbappé challenge after hat-trick",
-      "published": "2026-08-27T09:40:30Z",
-      "link": "https://www.espn.com/video/clip/_/id/49740170/mourinho-sets-mbappe-challenge-hat-trick",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0827/dm_260827_COM_SOC_PRESSER_Mourinho_sets_Mbappe_challenge_after_hat-trick_2026_8_27/dm_260827_COM_SOC_PRESSER_Mourinho_sets_Mbappe_challenge_after_hat-trick_2026_8_27.jpg"
+      "id": 49750822,
+      "headline": "Atlético Madrid's Julián Álvarez won't play vs. Sevilla amid transfer links",
+      "description": "Diego Simeone confirmed Barcelona target Julián Álvarez will not feature in Saturday's LaLiga game at Sevilla but he is counting on the forward to play an important role in his Atlético Madrid team this season.",
+      "published": "2026-08-28T13:28:21Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49750822/julian-alvarez-sits-latest-atletico-madrid-training-session-amid-transfer-links",
+      "image": "https://a.espncdn.com/photo/2026/0825/r1706630_1296x729_16-9.jpg"
     }
   ],
   "modelLearning": {
     "version": "3.0",
-    "totalEvaluated": 11,
+    "totalEvaluated": 13,
     "correct": 3,
-    "accuracy": 27.27,
+    "accuracy": 23.08,
     "variables": {
       "form": {
-        "samples": 11,
+        "samples": 13,
         "correct": 3,
-        "accuracy": 27.27
+        "accuracy": 23.08
       },
       "attackDefense": {
-        "samples": 11,
+        "samples": 13,
         "correct": 3,
-        "accuracy": 27.27
+        "accuracy": 23.08
       },
       "goalkeeper": {
-        "samples": 11,
+        "samples": 13,
         "correct": 3,
-        "accuracy": 27.27
+        "accuracy": 23.08
       },
       "formation": {
-        "samples": 11,
+        "samples": 13,
         "correct": 3,
-        "accuracy": 27.27
+        "accuracy": 23.08
       },
       "injuries": {
-        "samples": 11,
+        "samples": 13,
         "correct": 3,
-        "accuracy": 27.27
+        "accuracy": 23.08
       }
     },
     "notes": [
