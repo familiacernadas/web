@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-08-28T17:27:14.981Z",
-    "requestsThisRun": 8,
+    "generatedAt": "2026-08-29T11:40:23.831Z",
+    "requestsThisRun": 7,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": true,
@@ -12585,8 +12585,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-28T17:00Z",
       "timestamp": 1787936400,
-      "status": "STATUS_FIRST_HALF",
-      "statusLong": "First Half",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "El Sardineros",
         "city": "Santander"
@@ -12606,8 +12606,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 2,
-          "away": 0
+          "home": 3,
+          "away": 2
         },
         "extratime": null,
         "penalty": null
@@ -12757,8 +12757,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-28T19:30Z",
       "timestamp": 1787945400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Mendizorrotza",
         "city": "Vitoria-Gasteiz"
@@ -12778,7 +12778,7 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         },
         "extratime": null,
@@ -12920,7 +12920,7 @@
       },
       "uid": "s:600~l:740~e:401882906",
       "season": 2026,
-      "result": "X"
+      "result": "1"
     },
     {
       "id": 401882902,
@@ -13012,7 +13012,7 @@
         "confidence": 0.4514,
         "difficulty": "difícil",
         "generatedAt": "2026-08-21T07:42:33.516Z",
-        "lockedAt": null,
+        "lockedAt": "2026-08-29T11:40:23.830Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -13184,7 +13184,7 @@
         "confidence": 0.736,
         "difficulty": "fácil",
         "generatedAt": "2026-08-21T07:42:33.516Z",
-        "lockedAt": null,
+        "lockedAt": "2026-08-29T11:40:23.830Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -13356,7 +13356,7 @@
         "confidence": 0.648,
         "difficulty": "fácil",
         "generatedAt": "2026-08-21T07:42:33.516Z",
-        "lockedAt": null,
+        "lockedAt": "2026-08-29T11:40:23.830Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -16408,7 +16408,73 @@
       },
       "uid": "s:600~l:740~e:401882893",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-08-29T11:40:23.829Z",
+        "lineups": [
+          {
+            "teamId": 3751,
+            "teamName": "Elche",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 89,
+            "teamName": "Real Sociedad",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 3751,
+            "teamName": "Elche",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-6",
+              "totalGoals": "3",
+              "goalAssists": "3",
+              "goalsConceded": "9"
+            }
+          },
+          {
+            "teamId": 89,
+            "teamName": "Real Sociedad",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-4",
+              "totalGoals": "1",
+              "goalAssists": "0",
+              "goalsConceded": "5"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882886,
@@ -65465,15 +65531,15 @@
   ],
   "injuries": [],
   "predictionBalance": {
-    "total": 13,
-    "correct": 3,
+    "total": 15,
+    "correct": 5,
     "incorrect": 10,
-    "accuracy": 23.08,
+    "accuracy": 33.33,
     "bySign": {
       "1": {
-        "total": 3,
-        "correct": 0,
-        "accuracy": 0
+        "total": 5,
+        "correct": 2,
+        "accuracy": 40
       },
       "2": {
         "total": 3,
@@ -65488,13 +65554,13 @@
     },
     "byDifficulty": {
       "fácil": {
-        "total": 4,
-        "correct": 1,
-        "accuracy": 25
+        "total": 5,
+        "correct": 2,
+        "accuracy": 40
       },
       "media": {
-        "total": 1,
-        "correct": 1,
+        "total": 2,
+        "correct": 2,
         "accuracy": 100
       },
       "difícil": {
@@ -65506,12 +65572,44 @@
   },
   "news": [
     {
+      "id": 49759947,
+      "headline": "Transfer rumors, news: Could Julián Álvarez rejoin Man City?",
+      "description": "Barcelona and Arsenal target Julián Álvarez is being lined up for a return to Manchester City. Transfer Talk has the latest.",
+      "published": "2026-08-29T08:44:40Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49759947/transfer-rumors-news-julian-alvarez-atletico-madrid-arsenal-barcelona-manchester-city",
+      "image": "https://a.espncdn.com/photo/2026/0827/r1707853_1296x729_16-9.jpg"
+    },
+    {
+      "id": 49756045,
+      "headline": "Alavés vs. Villarreal - Game Highlights",
+      "description": "Watch the Game Highlights from Alavés vs. Villarreal, 08/28/2026",
+      "published": "2026-08-28T21:30:26Z",
+      "link": "https://www.espn.com/video/clip/_/id/49756045/alaves-vs-villarreal-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0828/b3574ba0-e072-4a41-ba4c-82bfbee4f326/b3574ba0-e072-4a41-ba4c-82bfbee4f326.jpg"
+    },
+    {
       "id": 49750272,
-      "headline": "Transfer rumors, news: Arsenal turn to Real Madrid's Endrick in left winger chase",
-      "description": "Arsenal have renewed interest in signing Real Madrid forward Endrick. Transfer Talk has the latest.",
-      "published": "2026-08-28T14:43:33Z",
+      "headline": "Transfer rumors, news: Real Madrid eye move for Roma's Koné",
+      "description": "Real Madrid are reportedly interested in signing AS Roma midfielder Manu Koné. Transfer Talk has the latest.",
+      "published": "2026-08-28T21:16:00Z",
       "link": "https://www.espn.com/soccer/story/_/id/49750272/transfer-rumors-news-liverpool-eyeing-sarr-barcola-deal-agreed",
-      "image": "https://a.espncdn.com/photo/2026/0427/r1650071_1296x729_16-9.jpg"
+      "image": "https://a.espncdn.com/photo/2026/0828/r1708284_1296x729_16-9.jpg"
+    },
+    {
+      "id": 49754783,
+      "headline": "Racing Santander vs. Elche - Game Highlights",
+      "description": "Watch the Game Highlights from Racing Santander vs. Elche, 08/28/2026",
+      "published": "2026-08-28T19:04:15Z",
+      "link": "https://www.espn.com/video/clip/_/id/49754783/racing-santander-vs-elche-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0828/f5c43bbb-e40c-45b3-b320-7977014062b6/f5c43bbb-e40c-45b3-b320-7977014062b6.jpg"
+    },
+    {
+      "id": 48990955,
+      "headline": "Summer transfer window: Grading big signings in men's soccer",
+      "description": "The 2026 summer transfer window is open. Here is how we rated the biggest deals.",
+      "published": "2026-08-28T18:50:48Z",
+      "link": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
+      "image": "https://a.espncdn.com/photo/2026/0731/r1695938_1296x729_16-9.jpg"
     },
     {
       "id": 49752634,
@@ -65520,70 +65618,38 @@
       "published": "2026-08-28T13:27:47Z",
       "link": "https://www.espn.com/video/clip/_/id/49752634/simeone-stands-firm-keeping-important-alvarez-atletico",
       "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0828/dm_260828_Simeone_stands_firm_on_keeping_important_Alvarez_at_Atletico/dm_260828_Simeone_stands_firm_on_keeping_important_Alvarez_at_Atletico.jpg"
-    },
-    {
-      "id": 49751229,
-      "headline": "Rafael Leão free to leave AC Milan amid Galatasaray, Aston Villa links - Ruben Amorim",
-      "description": "AC Milan coach Ruben Amorim believes it will be better for Rafael Leão \"to move on\" and leave the club in this transfer window.",
-      "published": "2026-08-28T10:46:20Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49751229/rafael-leao-free-leave-ac-milan-amid-galatasaray-aston-villa-links-ruben-amorim",
-      "image": "https://a.espncdn.com/photo/2026/0828/r1708030_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49742377,
-      "headline": "10 Best: Ranking the top soccer players in the world right now",
-      "description": "Who is the best soccer player in the world right now? ESPN's new ranking can tell you -- and some names might surprise you.",
-      "published": "2026-08-28T09:50:56Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49742377/10-best-ranking-top-soccer-players-world-right-now",
-      "image": "https://a.espncdn.com/photo/2026/0827/r1707816_1296x729_16-9.png"
-    },
-    {
-      "id": 49733346,
-      "headline": "Weekend predictions: Pressure on Man United, Carrick already? Wrexham to beat Birmingham?",
-      "description": "Late August is no time to hit the panic button, but another loss against a promotion side may well send Manchester United into crisis. PLUS: We head to Germany for the start of the Bundesliga, and Wrexham vs. Birmingham face-off.",
-      "published": "2026-08-28T09:50:24Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49733346/weekend-predictions-preview-analysis-pressure-manchester-united-carrick-already-wrexham-vs-birmingham-city",
-      "image": "https://a.espncdn.com/photo/2026/0827/r1707508_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49750822,
-      "headline": "Atlético Madrid's Julián Álvarez won't play vs. Sevilla amid transfer links",
-      "description": "Diego Simeone confirmed Barcelona target Julián Álvarez will not feature in Saturday's LaLiga game at Sevilla but he is counting on the forward to play an important role in his Atlético Madrid team this season.",
-      "published": "2026-08-28T13:28:21Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49750822/julian-alvarez-sits-latest-atletico-madrid-training-session-amid-transfer-links",
-      "image": "https://a.espncdn.com/photo/2026/0825/r1706630_1296x729_16-9.jpg"
     }
   ],
   "modelLearning": {
     "version": "3.0",
-    "totalEvaluated": 13,
-    "correct": 3,
-    "accuracy": 23.08,
+    "totalEvaluated": 15,
+    "correct": 5,
+    "accuracy": 33.33,
     "variables": {
       "form": {
-        "samples": 13,
-        "correct": 3,
-        "accuracy": 23.08
+        "samples": 15,
+        "correct": 5,
+        "accuracy": 33.33
       },
       "attackDefense": {
-        "samples": 13,
-        "correct": 3,
-        "accuracy": 23.08
+        "samples": 15,
+        "correct": 5,
+        "accuracy": 33.33
       },
       "goalkeeper": {
-        "samples": 13,
-        "correct": 3,
-        "accuracy": 23.08
+        "samples": 15,
+        "correct": 5,
+        "accuracy": 33.33
       },
       "formation": {
-        "samples": 13,
-        "correct": 3,
-        "accuracy": 23.08
+        "samples": 15,
+        "correct": 5,
+        "accuracy": 33.33
       },
       "injuries": {
-        "samples": 13,
-        "correct": 3,
-        "accuracy": 23.08
+        "samples": 15,
+        "correct": 5,
+        "accuracy": 33.33
       }
     },
     "notes": [
