@@ -1,0 +1,6 @@
+{
+  "meta": {"season": 2026, "seasonLabel": "2026/27", "source": "PrecioFantasy / fuentes Fantasy disponibles", "sourceShort": "PrecioFantasy", "generatedAt": null, "status": "Base preparada; pendiente de primera sincronización automática.", "schemaVersion": "1.0"},
+  "players": [],
+  "marketHistory": [],
+  "notes": ["No se inventan jugadores ni precios si la fuente no devuelve datos válidos.", "El histórico se conservará para futuras métricas de tendencia.", "La integración con el modelo LaLiga V3 se añadirá en una fase posterior."]
+}
