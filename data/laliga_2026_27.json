@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-08-29T11:40:23.831Z",
-    "requestsThisRun": 7,
+    "generatedAt": "2026-08-30T10:29:27.017Z",
+    "requestsThisRun": 6,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": true,
@@ -12929,8 +12929,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-29T15:00Z",
       "timestamp": 1788015600,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Estadi Ciutat de València",
         "city": "Manises"
@@ -12950,8 +12950,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
-          "away": 0
+          "home": 5,
+          "away": 2
         },
         "extratime": null,
         "penalty": null
@@ -13092,7 +13092,7 @@
       },
       "uid": "s:600~l:740~e:401882902",
       "season": 2026,
-      "result": "X"
+      "result": "1"
     },
     {
       "id": 401882898,
@@ -13101,8 +13101,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-29T17:00Z",
       "timestamp": 1788022800,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Reale Arena",
         "city": "San Sebastian"
@@ -13122,8 +13122,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
-          "away": 0
+          "home": 2,
+          "away": 1
         },
         "extratime": null,
         "penalty": null
@@ -13264,7 +13264,7 @@
       },
       "uid": "s:600~l:740~e:401882898",
       "season": 2026,
-      "result": "X"
+      "result": "1"
     },
     {
       "id": 401882897,
@@ -13273,8 +13273,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-29T19:30Z",
       "timestamp": 1788031800,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Ramón Sánchez Pizjuán Stadium",
         "city": "Sevilla"
@@ -13294,8 +13294,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 3
         },
         "extratime": null,
         "penalty": null
@@ -13436,7 +13436,7 @@
       },
       "uid": "s:600~l:740~e:401882897",
       "season": 2026,
-      "result": "X"
+      "result": "2"
     },
     {
       "id": 401882899,
@@ -13528,7 +13528,7 @@
         "confidence": 0.5119,
         "difficulty": "media",
         "generatedAt": "2026-08-21T07:42:33.516Z",
-        "lockedAt": null,
+        "lockedAt": "2026-08-30T10:29:27.016Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -13700,7 +13700,7 @@
         "confidence": 0.7385,
         "difficulty": "fácil",
         "generatedAt": "2026-08-21T07:42:33.516Z",
-        "lockedAt": null,
+        "lockedAt": "2026-08-30T10:29:27.016Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -13872,7 +13872,7 @@
         "confidence": 0.4275,
         "difficulty": "difícil",
         "generatedAt": "2026-08-21T07:42:33.517Z",
-        "lockedAt": null,
+        "lockedAt": "2026-08-30T10:29:27.016Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -65531,20 +65531,20 @@
   ],
   "injuries": [],
   "predictionBalance": {
-    "total": 15,
-    "correct": 5,
-    "incorrect": 10,
+    "total": 18,
+    "correct": 6,
+    "incorrect": 12,
     "accuracy": 33.33,
     "bySign": {
       "1": {
-        "total": 5,
-        "correct": 2,
-        "accuracy": 40
+        "total": 7,
+        "correct": 3,
+        "accuracy": 42.86
       },
       "2": {
-        "total": 3,
+        "total": 4,
         "correct": 1,
-        "accuracy": 33.33
+        "accuracy": 25
       },
       "X": {
         "total": 7,
@@ -65554,9 +65554,9 @@
     },
     "byDifficulty": {
       "fácil": {
-        "total": 5,
+        "total": 7,
         "correct": 2,
-        "accuracy": 40
+        "accuracy": 28.57
       },
       "media": {
         "total": 2,
@@ -65564,91 +65564,91 @@
         "accuracy": 100
       },
       "difícil": {
-        "total": 8,
-        "correct": 1,
-        "accuracy": 12.5
+        "total": 9,
+        "correct": 2,
+        "accuracy": 22.22
       }
     }
   },
   "news": [
     {
-      "id": 49759947,
-      "headline": "Transfer rumors, news: Could Julián Álvarez rejoin Man City?",
-      "description": "Barcelona and Arsenal target Julián Álvarez is being lined up for a return to Manchester City. Transfer Talk has the latest.",
-      "published": "2026-08-29T08:44:40Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49759947/transfer-rumors-news-julian-alvarez-atletico-madrid-arsenal-barcelona-manchester-city",
-      "image": "https://a.espncdn.com/photo/2026/0827/r1707853_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49756045,
-      "headline": "Alavés vs. Villarreal - Game Highlights",
-      "description": "Watch the Game Highlights from Alavés vs. Villarreal, 08/28/2026",
-      "published": "2026-08-28T21:30:26Z",
-      "link": "https://www.espn.com/video/clip/_/id/49756045/alaves-vs-villarreal-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0828/b3574ba0-e072-4a41-ba4c-82bfbee4f326/b3574ba0-e072-4a41-ba4c-82bfbee4f326.jpg"
-    },
-    {
-      "id": 49750272,
-      "headline": "Transfer rumors, news: Real Madrid eye move for Roma's Koné",
-      "description": "Real Madrid are reportedly interested in signing AS Roma midfielder Manu Koné. Transfer Talk has the latest.",
-      "published": "2026-08-28T21:16:00Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49750272/transfer-rumors-news-liverpool-eyeing-sarr-barcola-deal-agreed",
-      "image": "https://a.espncdn.com/photo/2026/0828/r1708284_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49754783,
-      "headline": "Racing Santander vs. Elche - Game Highlights",
-      "description": "Watch the Game Highlights from Racing Santander vs. Elche, 08/28/2026",
-      "published": "2026-08-28T19:04:15Z",
-      "link": "https://www.espn.com/video/clip/_/id/49754783/racing-santander-vs-elche-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0828/f5c43bbb-e40c-45b3-b320-7977014062b6/f5c43bbb-e40c-45b3-b320-7977014062b6.jpg"
-    },
-    {
       "id": 48990955,
       "headline": "Summer transfer window: Grading big signings in men's soccer",
       "description": "The 2026 summer transfer window is open. Here is how we rated the biggest deals.",
-      "published": "2026-08-28T18:50:48Z",
+      "published": "2026-08-30T10:12:44Z",
       "link": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
       "image": "https://a.espncdn.com/photo/2026/0731/r1695938_1296x729_16-9.jpg"
     },
     {
-      "id": 49752634,
-      "headline": "Simeone stands firm on keeping 'important' Alvarez at Atletico",
-      "description": "Simeone stands firm on keeping 'important' Alvarez at Atletico",
-      "published": "2026-08-28T13:27:47Z",
-      "link": "https://www.espn.com/video/clip/_/id/49752634/simeone-stands-firm-keeping-important-alvarez-atletico",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0828/dm_260828_Simeone_stands_firm_on_keeping_important_Alvarez_at_Atletico/dm_260828_Simeone_stands_firm_on_keeping_important_Alvarez_at_Atletico.jpg"
+      "id": 49768137,
+      "headline": "Lionel Messi's 4-goal performance leads Inter Miami to big win",
+      "description": "Lionel Messi's 4-goal performance leads Inter Miami to big win",
+      "published": "2026-08-30T02:32:28Z",
+      "link": "https://www.espn.com/video/clip/_/id/49768137/lionel-messi-4-goal-performance-leads-inter-miami-big-win",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0829/ss_20260829_214626533_3641024/ss_20260829_214626533_3641024.jpg"
+    },
+    {
+      "id": 49747293,
+      "headline": "Álvarez-less Atlético cruise to win over Sevilla ",
+      "description": "Julián Álvarez was not even on the bench as Atlético Madrid strolled to victory in Seville.",
+      "published": "2026-08-29T22:19:55Z",
+      "link": "http://www.espn.com/soccer/report/_/gameId/401882897",
+      "image": "https://a.espncdn.com/photo/2026/0829/r1708710_1296x729_16-9.jpg"
+    },
+    {
+      "id": 49766079,
+      "headline": "Baena and Lookman fire Atlético Madrid to 3-1 win over Sevilla",
+      "description": "Baena and Lookman fire Atlético Madrid to 3-1 win over Sevilla",
+      "published": "2026-08-29T22:11:53Z",
+      "link": "https://www.espn.com/video/clip/_/id/49766079/baena-lookman-fire-atletico-madrid-3-1-win-sevilla",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0829/dm_260829_COM_SOC_Final_Game_Highlight_Baena_and_Lookman_fire_Atlico_Madrid_to_3-1_win_over_Sevilla_29_8_26/dm_260829_COM_SOC_Final_Game_Highlight_Baena_and_Lookman_fire_Atlico_Madrid_to_3-1_win_over_Sevilla_29_8_26.jpg"
+    },
+    {
+      "id": 49765801,
+      "headline": "Sevilla vs. Atletico Madrid - Game Highlights",
+      "description": "Watch the Game Highlights from Sevilla vs. Atletico Madrid, 08/29/2026",
+      "published": "2026-08-29T21:37:01Z",
+      "link": "https://www.espn.com/video/clip/_/id/49765801/sevilla-vs-atletico-madrid-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0829/163881f2-445e-4de4-b2bb-bde064c862a7/163881f2-445e-4de4-b2bb-bde064c862a7.jpg"
+    },
+    {
+      "id": 49759947,
+      "headline": "Transfer rumors, news: Man United offered Atleti striker Sørloth",
+      "description": "Manchester United have been offered the chance to sign Atlético Madrid striker Alexander Sørloth. Transfer Talk has the latest.",
+      "published": "2026-08-30T02:21:57Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49759947/transfer-rumors-news-julian-alvarez-atletico-madrid-arsenal-barcelona-manchester-city",
+      "image": "https://a.espncdn.com/photo/2026/0221/r1618266_1296x729_16-9.jpg"
     }
   ],
   "modelLearning": {
     "version": "3.0",
-    "totalEvaluated": 15,
-    "correct": 5,
+    "totalEvaluated": 18,
+    "correct": 6,
     "accuracy": 33.33,
     "variables": {
       "form": {
-        "samples": 15,
-        "correct": 5,
+        "samples": 18,
+        "correct": 6,
         "accuracy": 33.33
       },
       "attackDefense": {
-        "samples": 15,
-        "correct": 5,
+        "samples": 18,
+        "correct": 6,
         "accuracy": 33.33
       },
       "goalkeeper": {
-        "samples": 15,
-        "correct": 5,
+        "samples": 18,
+        "correct": 6,
         "accuracy": 33.33
       },
       "formation": {
-        "samples": 15,
-        "correct": 5,
+        "samples": 18,
+        "correct": 6,
         "accuracy": 33.33
       },
       "injuries": {
-        "samples": 15,
-        "correct": 5,
+        "samples": 18,
+        "correct": 6,
         "accuracy": 33.33
       }
     },
