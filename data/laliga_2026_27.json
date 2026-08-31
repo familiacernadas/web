@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-08-30T10:29:27.017Z",
+    "generatedAt": "2026-08-31T11:36:51.184Z",
     "requestsThisRun": 6,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -13445,8 +13445,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-30T15:00Z",
       "timestamp": 1788102000,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Santiago Bernabéu",
         "city": "Madrid"
@@ -13466,7 +13466,7 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
+          "home": 4,
           "away": 0
         },
         "extratime": null,
@@ -13608,7 +13608,7 @@
       },
       "uid": "s:600~l:740~e:401882899",
       "season": 2026,
-      "result": "X"
+      "result": "1"
     },
     {
       "id": 401882904,
@@ -13617,8 +13617,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-30T17:30Z",
       "timestamp": 1788111000,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Riazor",
         "city": "La Coruña"
@@ -13638,8 +13638,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
-          "away": 0
+          "home": 3,
+          "away": 1
         },
         "extratime": null,
         "penalty": null
@@ -13780,7 +13780,7 @@
       },
       "uid": "s:600~l:740~e:401882904",
       "season": 2026,
-      "result": "X"
+      "result": "1"
     },
     {
       "id": 401882905,
@@ -13789,8 +13789,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-30T19:30Z",
       "timestamp": 1788118200,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Balaidos",
         "city": "Vigo"
@@ -13811,7 +13811,7 @@
         "halftime": null,
         "fulltime": {
           "home": 0,
-          "away": 0
+          "away": 2
         },
         "extratime": null,
         "penalty": null
@@ -13952,7 +13952,7 @@
       },
       "uid": "s:600~l:740~e:401882905",
       "season": 2026,
-      "result": "X"
+      "result": "2"
     },
     {
       "id": 401882901,
@@ -14005,7 +14005,7 @@
         "confidence": 0.5099,
         "difficulty": "media",
         "generatedAt": "2026-08-21T07:42:33.517Z",
-        "lockedAt": null,
+        "lockedAt": "2026-08-31T11:36:51.182Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -14177,7 +14177,7 @@
         "confidence": 0.6097,
         "difficulty": "fácil",
         "generatedAt": "2026-08-21T07:42:33.517Z",
-        "lockedAt": null,
+        "lockedAt": "2026-08-31T11:36:51.182Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -16477,1068 +16477,12 @@
       }
     },
     {
-      "id": 401882886,
-      "espnId": "401882886",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-13T18:00Z",
-      "timestamp": 1789322400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "San Mamés",
-        "city": "Bilbao"
-      },
-      "home": {
-        "id": 93,
-        "name": "Athletic Club",
-        "abbreviation": "ATH",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
-      },
-      "away": {
-        "id": 3751,
-        "name": "Elche",
-        "abbreviation": "ELC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "2",
-        "probabilities": {
-          "1": 0.0297,
-          "2": 0.6395,
-          "X": 0.3308
-        },
-        "confidence": 0.6395,
-        "difficulty": "fácil",
-        "generatedAt": "2026-08-21T07:42:33.518Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 1,
-            "gf": 1,
-            "ga": 1,
-            "gfPerGame": 1,
-            "gaPerGame": 1,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 1,
-            "gf": 1,
-            "ga": 1,
-            "gfPerGame": 1,
-            "gaPerGame": 1,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 2,
-            "conceded": 14,
-            "shots": 16,
-            "savePercentage": 12.5
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882886",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882885,
-      "espnId": "401882885",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-13T18:00Z",
-      "timestamp": 1789322400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Balaidos",
-        "city": "Vigo"
-      },
-      "home": {
-        "id": 85,
-        "name": "Celta Vigo",
-        "abbreviation": "CEL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
-      },
-      "away": {
-        "id": 99,
-        "name": "Málaga",
-        "abbreviation": "MCF",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "X",
-        "probabilities": {
-          "1": 0.0785,
-          "2": 0.4097,
-          "X": 0.5119
-        },
-        "confidence": 0.5119,
-        "difficulty": "media",
-        "generatedAt": "2026-08-21T07:42:33.518Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 1,
-            "gf": 0,
-            "ga": 2,
-            "gfPerGame": 0,
-            "gaPerGame": 2,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 1
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 1,
-            "gf": 0,
-            "ga": 2,
-            "gfPerGame": 0,
-            "gaPerGame": 2,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 1
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 4,
-            "conceded": 14,
-            "shots": 18,
-            "savePercentage": 22.22
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882885",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882884,
-      "espnId": "401882884",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-13T18:00Z",
-      "timestamp": 1789322400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Estadio Coliseum",
-        "city": "Getafe"
-      },
-      "home": {
-        "id": 2922,
-        "name": "Getafe",
-        "abbreviation": "GET",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
-      },
-      "away": {
-        "id": 90,
-        "name": "Deportivo",
-        "abbreviation": "DEP",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "2",
-        "probabilities": {
-          "1": 0.2242,
-          "2": 0.4661,
-          "X": 0.3097
-        },
-        "confidence": 0.4661,
-        "difficulty": "difícil",
-        "generatedAt": "2026-08-21T07:42:33.518Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 1,
-            "gf": 0,
-            "ga": 3,
-            "gfPerGame": 0,
-            "gaPerGame": 3,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 1
-          },
-          "awayLast5": {
-            "matches": 1,
-            "gf": 1,
-            "ga": 1,
-            "gfPerGame": 1,
-            "gaPerGame": 1,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 5,
-            "conceded": 14,
-            "shots": 19,
-            "savePercentage": 26.32
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 5,
-            "conceded": 14,
-            "shots": 19,
-            "savePercentage": 26.32
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882884",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882883,
-      "espnId": "401882883",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-13T18:00Z",
-      "timestamp": 1789322400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Estadi Ciutat de València",
-        "city": "Manises"
-      },
-      "home": {
-        "id": 1538,
-        "name": "Levante",
-        "abbreviation": "LEV",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
-      },
-      "away": {
-        "id": 83,
-        "name": "Barcelona",
-        "abbreviation": "BAR",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "1",
-        "probabilities": {
-          "1": 0.4514,
-          "2": 0.1744,
-          "X": 0.3742
-        },
-        "confidence": 0.4514,
-        "difficulty": "difícil",
-        "generatedAt": "2026-08-21T07:42:33.518Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 1,
-            "gf": 0,
-            "ga": 3,
-            "gfPerGame": 0,
-            "gaPerGame": 3,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 1
-          },
-          "awayLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 3,
-            "conceded": 14,
-            "shots": 17,
-            "savePercentage": 17.65
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882883",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882882,
-      "espnId": "401882882",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-13T18:00Z",
-      "timestamp": 1789322400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "El Sadar",
-        "city": "Pamplona"
-      },
-      "home": {
-        "id": 97,
-        "name": "Osasuna",
-        "abbreviation": "OSA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
-      },
-      "away": {
-        "id": 88,
-        "name": "Espanyol",
-        "abbreviation": "ESP",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "2",
-        "probabilities": {
-          "1": 0.0245,
-          "2": 0.736,
-          "X": 0.2395
-        },
-        "confidence": 0.736,
-        "difficulty": "fácil",
-        "generatedAt": "2026-08-21T07:42:33.518Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 1,
-            "gf": 3,
-            "ga": 0,
-            "gfPerGame": 3,
-            "gaPerGame": 0,
-            "points": 3,
-            "pointsPerGame": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 11,
-            "shots": 11,
-            "savePercentage": 0
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882882",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882881,
-      "espnId": "401882881",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-13T18:00Z",
-      "timestamp": 1789322400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "El Sardineros",
-        "city": "Santander"
-      },
-      "home": {
-        "id": 87,
-        "name": "Racing Santander",
-        "abbreviation": "RAC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
-      },
-      "away": {
-        "id": 96,
-        "name": "Alavés",
-        "abbreviation": "ALA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "X",
-        "probabilities": {
-          "1": 0.3318,
-          "2": 0.3335,
-          "X": 0.3347
-        },
-        "confidence": 0.3347,
-        "difficulty": "difícil",
-        "generatedAt": "2026-08-21T07:42:33.518Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 1,
-            "gf": 2,
-            "ga": 2,
-            "gfPerGame": 2,
-            "gaPerGame": 2,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 2,
-            "gf": 4,
-            "ga": 1,
-            "gfPerGame": 2,
-            "gaPerGame": 0.5,
-            "points": 4,
-            "pointsPerGame": 2,
-            "wins": 1,
-            "draws": 1,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 1,
-            "gf": 2,
-            "ga": 2,
-            "gfPerGame": 2,
-            "gaPerGame": 2,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 1,
-            "gf": 1,
-            "ga": 1,
-            "gfPerGame": 1,
-            "gaPerGame": 1,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 5,
-            "conceded": 14,
-            "shots": 19,
-            "savePercentage": 26.32
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 4,
-            "conceded": 11,
-            "shots": 15,
-            "savePercentage": 26.67
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882881",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882880,
-      "espnId": "401882880",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-13T18:00Z",
-      "timestamp": 1789322400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Santiago Bernabéu",
-        "city": "Madrid"
-      },
-      "home": {
-        "id": 86,
-        "name": "Real Madrid",
-        "abbreviation": "RMA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
-      },
-      "away": {
-        "id": 101,
-        "name": "Rayo Vallecano",
-        "abbreviation": "RAY",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "2",
-        "probabilities": {
-          "1": 0.0314,
-          "2": 0.6097,
-          "X": 0.359
-        },
-        "confidence": 0.6097,
-        "difficulty": "fácil",
-        "generatedAt": "2026-08-21T07:42:33.518Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 2,
-            "gf": 2,
-            "ga": 3,
-            "gfPerGame": 1,
-            "gaPerGame": 1.5,
-            "points": 1,
-            "pointsPerGame": 0.5,
-            "wins": 0,
-            "draws": 1,
-            "losses": 1
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 1,
-            "gf": 1,
-            "ga": 2,
-            "gfPerGame": 1,
-            "gaPerGame": 2,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 1
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 4,
-            "conceded": 14,
-            "shots": 18,
-            "savePercentage": 22.22
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882880",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882879,
-      "espnId": "401882879",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-13T18:00Z",
-      "timestamp": 1789322400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Reale Arena",
-        "city": "San Sebastian"
-      },
-      "home": {
-        "id": 89,
-        "name": "Real Sociedad",
-        "abbreviation": "RSO",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
-      },
-      "away": {
-        "id": 1068,
-        "name": "Atlético Madrid",
-        "abbreviation": "ATM",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "2",
-        "probabilities": {
-          "1": 0.0238,
-          "2": 0.75,
-          "X": 0.2262
-        },
-        "confidence": 0.75,
-        "difficulty": "fácil",
-        "generatedAt": "2026-08-21T07:42:33.519Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 1,
-            "gf": 2,
-            "ga": 0,
-            "gfPerGame": 2,
-            "gaPerGame": 0,
-            "points": 3,
-            "pointsPerGame": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 1,
-            "conceded": 12,
-            "shots": 13,
-            "savePercentage": 7.69
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882879",
-      "season": 2026,
-      "result": "X"
-    },
-    {
       "id": 401882878,
       "espnId": "401882878",
       "round": null,
       "seasonType": "2026-27-laliga",
-      "date": "2026-09-13T18:00Z",
-      "timestamp": 1789322400,
+      "date": "2026-09-11T19:00Z",
+      "timestamp": 1789153200,
       "status": "STATUS_SCHEDULED",
       "statusLong": "Scheduled",
       "venue": {
@@ -17665,12 +16609,1068 @@
       "result": "X"
     },
     {
+      "id": 401882881,
+      "espnId": "401882881",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-12T12:00Z",
+      "timestamp": 1789214400,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "El Sardineros",
+        "city": "Santander"
+      },
+      "home": {
+        "id": 87,
+        "name": "Racing Santander",
+        "abbreviation": "RAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
+      },
+      "away": {
+        "id": 96,
+        "name": "Alavés",
+        "abbreviation": "ALA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "X",
+        "probabilities": {
+          "1": 0.3318,
+          "2": 0.3335,
+          "X": 0.3347
+        },
+        "confidence": 0.3347,
+        "difficulty": "difícil",
+        "generatedAt": "2026-08-21T07:42:33.518Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 1,
+            "gf": 2,
+            "ga": 2,
+            "gfPerGame": 2,
+            "gaPerGame": 2,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 2,
+            "gf": 4,
+            "ga": 1,
+            "gfPerGame": 2,
+            "gaPerGame": 0.5,
+            "points": 4,
+            "pointsPerGame": 2,
+            "wins": 1,
+            "draws": 1,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 1,
+            "gf": 2,
+            "ga": 2,
+            "gfPerGame": 2,
+            "gaPerGame": 2,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 1,
+            "gf": 1,
+            "ga": 1,
+            "gfPerGame": 1,
+            "gaPerGame": 1,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 5,
+            "conceded": 14,
+            "shots": 19,
+            "savePercentage": 26.32
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 4,
+            "conceded": 11,
+            "shots": 15,
+            "savePercentage": 26.67
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882881",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882882,
+      "espnId": "401882882",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-12T14:15Z",
+      "timestamp": 1789222500,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "El Sadar",
+        "city": "Pamplona"
+      },
+      "home": {
+        "id": 97,
+        "name": "Osasuna",
+        "abbreviation": "OSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
+      },
+      "away": {
+        "id": 88,
+        "name": "Espanyol",
+        "abbreviation": "ESP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "2",
+        "probabilities": {
+          "1": 0.0245,
+          "2": 0.736,
+          "X": 0.2395
+        },
+        "confidence": 0.736,
+        "difficulty": "fácil",
+        "generatedAt": "2026-08-21T07:42:33.518Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 1,
+            "gf": 3,
+            "ga": 0,
+            "gfPerGame": 3,
+            "gaPerGame": 0,
+            "points": 3,
+            "pointsPerGame": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 11,
+            "shots": 11,
+            "savePercentage": 0
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882882",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882886,
+      "espnId": "401882886",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-12T16:30Z",
+      "timestamp": 1789230600,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "San Mamés",
+        "city": "Bilbao"
+      },
+      "home": {
+        "id": 93,
+        "name": "Athletic Club",
+        "abbreviation": "ATH",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
+      },
+      "away": {
+        "id": 3751,
+        "name": "Elche",
+        "abbreviation": "ELC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "2",
+        "probabilities": {
+          "1": 0.0297,
+          "2": 0.6395,
+          "X": 0.3308
+        },
+        "confidence": 0.6395,
+        "difficulty": "fácil",
+        "generatedAt": "2026-08-21T07:42:33.518Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 1,
+            "gf": 1,
+            "ga": 1,
+            "gfPerGame": 1,
+            "gaPerGame": 1,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 1,
+            "gf": 1,
+            "ga": 1,
+            "gfPerGame": 1,
+            "gaPerGame": 1,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 2,
+            "conceded": 14,
+            "shots": 16,
+            "savePercentage": 12.5
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882886",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882880,
+      "espnId": "401882880",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-12T19:00Z",
+      "timestamp": 1789239600,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Santiago Bernabéu",
+        "city": "Madrid"
+      },
+      "home": {
+        "id": 86,
+        "name": "Real Madrid",
+        "abbreviation": "RMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+      },
+      "away": {
+        "id": 101,
+        "name": "Rayo Vallecano",
+        "abbreviation": "RAY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "2",
+        "probabilities": {
+          "1": 0.0314,
+          "2": 0.6097,
+          "X": 0.359
+        },
+        "confidence": 0.6097,
+        "difficulty": "fácil",
+        "generatedAt": "2026-08-21T07:42:33.518Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 2,
+            "gf": 2,
+            "ga": 3,
+            "gfPerGame": 1,
+            "gaPerGame": 1.5,
+            "points": 1,
+            "pointsPerGame": 0.5,
+            "wins": 0,
+            "draws": 1,
+            "losses": 1
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 1,
+            "gf": 1,
+            "ga": 2,
+            "gfPerGame": 1,
+            "gaPerGame": 2,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 1
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 4,
+            "conceded": 14,
+            "shots": 18,
+            "savePercentage": 22.22
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882880",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882885,
+      "espnId": "401882885",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-13T12:00Z",
+      "timestamp": 1789300800,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Balaidos",
+        "city": "Vigo"
+      },
+      "home": {
+        "id": 85,
+        "name": "Celta Vigo",
+        "abbreviation": "CEL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
+      },
+      "away": {
+        "id": 99,
+        "name": "Málaga",
+        "abbreviation": "MCF",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "X",
+        "probabilities": {
+          "1": 0.0785,
+          "2": 0.4097,
+          "X": 0.5119
+        },
+        "confidence": 0.5119,
+        "difficulty": "media",
+        "generatedAt": "2026-08-21T07:42:33.518Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 1,
+            "gf": 0,
+            "ga": 2,
+            "gfPerGame": 0,
+            "gaPerGame": 2,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 1
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 1,
+            "gf": 0,
+            "ga": 2,
+            "gfPerGame": 0,
+            "gaPerGame": 2,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 1
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 4,
+            "conceded": 14,
+            "shots": 18,
+            "savePercentage": 22.22
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882885",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882883,
+      "espnId": "401882883",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-13T14:15Z",
+      "timestamp": 1789308900,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Estadi Ciutat de València",
+        "city": "Manises"
+      },
+      "home": {
+        "id": 1538,
+        "name": "Levante",
+        "abbreviation": "LEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+      },
+      "away": {
+        "id": 83,
+        "name": "Barcelona",
+        "abbreviation": "BAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "1",
+        "probabilities": {
+          "1": 0.4514,
+          "2": 0.1744,
+          "X": 0.3742
+        },
+        "confidence": 0.4514,
+        "difficulty": "difícil",
+        "generatedAt": "2026-08-21T07:42:33.518Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 1,
+            "gf": 0,
+            "ga": 3,
+            "gfPerGame": 0,
+            "gaPerGame": 3,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 1
+          },
+          "awayLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 3,
+            "conceded": 14,
+            "shots": 17,
+            "savePercentage": 17.65
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882883",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882884,
+      "espnId": "401882884",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-13T16:30Z",
+      "timestamp": 1789317000,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Estadio Coliseum",
+        "city": "Getafe"
+      },
+      "home": {
+        "id": 2922,
+        "name": "Getafe",
+        "abbreviation": "GET",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
+      },
+      "away": {
+        "id": 90,
+        "name": "Deportivo",
+        "abbreviation": "DEP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "2",
+        "probabilities": {
+          "1": 0.2242,
+          "2": 0.4661,
+          "X": 0.3097
+        },
+        "confidence": 0.4661,
+        "difficulty": "difícil",
+        "generatedAt": "2026-08-21T07:42:33.518Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 1,
+            "gf": 0,
+            "ga": 3,
+            "gfPerGame": 0,
+            "gaPerGame": 3,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 1
+          },
+          "awayLast5": {
+            "matches": 1,
+            "gf": 1,
+            "ga": 1,
+            "gfPerGame": 1,
+            "gaPerGame": 1,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 5,
+            "conceded": 14,
+            "shots": 19,
+            "savePercentage": 26.32
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 5,
+            "conceded": 14,
+            "shots": 19,
+            "savePercentage": 26.32
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882884",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882879,
+      "espnId": "401882879",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-13T19:00Z",
+      "timestamp": 1789326000,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Reale Arena",
+        "city": "San Sebastian"
+      },
+      "home": {
+        "id": 89,
+        "name": "Real Sociedad",
+        "abbreviation": "RSO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+      },
+      "away": {
+        "id": 1068,
+        "name": "Atlético Madrid",
+        "abbreviation": "ATM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "2",
+        "probabilities": {
+          "1": 0.0238,
+          "2": 0.75,
+          "X": 0.2262
+        },
+        "confidence": 0.75,
+        "difficulty": "fácil",
+        "generatedAt": "2026-08-21T07:42:33.519Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 1,
+            "gf": 2,
+            "ga": 0,
+            "gfPerGame": 2,
+            "gaPerGame": 0,
+            "points": 3,
+            "pointsPerGame": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 1,
+            "conceded": 12,
+            "shots": 13,
+            "savePercentage": 7.69
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882879",
+      "season": 2026,
+      "result": "X"
+    },
+    {
       "id": 401882877,
       "espnId": "401882877",
       "round": null,
       "seasonType": "2026-27-laliga",
-      "date": "2026-09-13T18:00Z",
-      "timestamp": 1789322400,
+      "date": "2026-09-14T19:00Z",
+      "timestamp": 1789412400,
       "status": "STATUS_SCHEDULED",
       "statusLong": "Scheduled",
       "venue": {
@@ -17797,936 +17797,12 @@
       "result": "X"
     },
     {
-      "id": 401882876,
-      "espnId": "401882876",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-16T18:00Z",
-      "timestamp": 1789581600,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Mendizorrotza",
-        "city": "Vitoria-Gasteiz"
-      },
-      "home": {
-        "id": 96,
-        "name": "Alavés",
-        "abbreviation": "ALA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
-      },
-      "away": {
-        "id": 94,
-        "name": "Valencia",
-        "abbreviation": "VAL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "1",
-        "probabilities": {
-          "1": 0.8606,
-          "2": 0.0178,
-          "X": 0.1216
-        },
-        "confidence": 0.8606,
-        "difficulty": "fácil",
-        "generatedAt": "2026-08-21T07:42:33.519Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 2,
-            "gf": 4,
-            "ga": 1,
-            "gfPerGame": 2,
-            "gaPerGame": 0.5,
-            "points": 4,
-            "pointsPerGame": 2,
-            "wins": 1,
-            "draws": 1,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 1,
-            "gf": 3,
-            "ga": 0,
-            "gfPerGame": 3,
-            "gaPerGame": 0,
-            "points": 3,
-            "pointsPerGame": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 4,
-            "conceded": 11,
-            "shots": 15,
-            "savePercentage": 26.67
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882876",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882875,
-      "espnId": "401882875",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-16T18:00Z",
-      "timestamp": 1789581600,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Riyadh Air Metropolitano",
-        "city": "Madrid"
-      },
-      "home": {
-        "id": 1068,
-        "name": "Atlético Madrid",
-        "abbreviation": "ATM",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
-      },
-      "away": {
-        "id": 97,
-        "name": "Osasuna",
-        "abbreviation": "OSA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "1",
-        "probabilities": {
-          "1": 0.8567,
-          "2": 0.018,
-          "X": 0.1253
-        },
-        "confidence": 0.8567,
-        "difficulty": "fácil",
-        "generatedAt": "2026-08-21T07:42:33.519Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 1,
-            "gf": 2,
-            "ga": 0,
-            "gfPerGame": 2,
-            "gaPerGame": 0,
-            "points": 3,
-            "pointsPerGame": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 1,
-            "gf": 2,
-            "ga": 0,
-            "gfPerGame": 2,
-            "gaPerGame": 0,
-            "points": 3,
-            "pointsPerGame": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 1,
-            "conceded": 12,
-            "shots": 13,
-            "savePercentage": 7.69
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882875",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882871,
-      "espnId": "401882871",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-16T18:00Z",
-      "timestamp": 1789581600,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Spotify Camp Nou",
-        "city": "Barcelona"
-      },
-      "home": {
-        "id": 83,
-        "name": "Barcelona",
-        "abbreviation": "BAR",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
-      },
-      "away": {
-        "id": 87,
-        "name": "Racing Santander",
-        "abbreviation": "RAC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "2",
-        "probabilities": {
-          "1": 0.1136,
-          "2": 0.5469,
-          "X": 0.3395
-        },
-        "confidence": 0.5469,
-        "difficulty": "media",
-        "generatedAt": "2026-08-21T07:42:33.519Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 1,
-            "gf": 2,
-            "ga": 2,
-            "gfPerGame": 2,
-            "gaPerGame": 2,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 5,
-            "conceded": 14,
-            "shots": 19,
-            "savePercentage": 26.32
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882871",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882873,
-      "espnId": "401882873",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-16T18:00Z",
-      "timestamp": 1789581600,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Riazor",
-        "city": "La Coruña"
-      },
-      "home": {
-        "id": 90,
-        "name": "Deportivo",
-        "abbreviation": "DEP",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
-      },
-      "away": {
-        "id": 243,
-        "name": "Sevilla",
-        "abbreviation": "SEV",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "2",
-        "probabilities": {
-          "1": 0.164,
-          "2": 0.515,
-          "X": 0.3209
-        },
-        "confidence": 0.515,
-        "difficulty": "media",
-        "generatedAt": "2026-08-21T07:42:33.519Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 1,
-            "gf": 1,
-            "ga": 1,
-            "gfPerGame": 1,
-            "gaPerGame": 1,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 1,
-            "gf": 2,
-            "ga": 1,
-            "gfPerGame": 2,
-            "gaPerGame": 1,
-            "points": 3,
-            "pointsPerGame": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 1,
-            "gf": 1,
-            "ga": 1,
-            "gfPerGame": 1,
-            "gaPerGame": 1,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 5,
-            "conceded": 14,
-            "shots": 19,
-            "savePercentage": 26.32
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 2,
-            "conceded": 13,
-            "shots": 15,
-            "savePercentage": 13.33
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882873",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882872,
-      "espnId": "401882872",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-16T18:00Z",
-      "timestamp": 1789581600,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Estadio Martínez Valero",
-        "city": "Elche"
-      },
-      "home": {
-        "id": 3751,
-        "name": "Elche",
-        "abbreviation": "ELC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
-      },
-      "away": {
-        "id": 86,
-        "name": "Real Madrid",
-        "abbreviation": "RMA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "1",
-        "probabilities": {
-          "1": 0.6529,
-          "2": 0.029,
-          "X": 0.318
-        },
-        "confidence": 0.6529,
-        "difficulty": "fácil",
-        "generatedAt": "2026-08-21T07:42:33.519Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 1,
-            "gf": 1,
-            "ga": 1,
-            "gfPerGame": 1,
-            "gaPerGame": 1,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 2,
-            "conceded": 14,
-            "shots": 16,
-            "savePercentage": 12.5
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882872",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882870,
-      "espnId": "401882870",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-16T18:00Z",
-      "timestamp": 1789581600,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Estadi Ciutat de València",
-        "city": "Manises"
-      },
-      "home": {
-        "id": 1538,
-        "name": "Levante",
-        "abbreviation": "LEV",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
-      },
-      "away": {
-        "id": 93,
-        "name": "Athletic Club",
-        "abbreviation": "ATH",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "1",
-        "probabilities": {
-          "1": 0.4514,
-          "2": 0.1744,
-          "X": 0.3742
-        },
-        "confidence": 0.4514,
-        "difficulty": "difícil",
-        "generatedAt": "2026-08-21T07:42:33.519Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 1,
-            "gf": 0,
-            "ga": 3,
-            "gfPerGame": 0,
-            "gaPerGame": 3,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 1
-          },
-          "awayLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 3,
-            "conceded": 14,
-            "shots": 17,
-            "savePercentage": 17.65
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882870",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882869,
-      "espnId": "401882869",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-16T18:00Z",
-      "timestamp": 1789581600,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "La Rosaleda",
-        "city": "Malaga"
-      },
-      "home": {
-        "id": 99,
-        "name": "Málaga",
-        "abbreviation": "MCF",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png"
-      },
-      "away": {
-        "id": 102,
-        "name": "Villarreal",
-        "abbreviation": "VIL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "2",
-        "probabilities": {
-          "1": 0.0258,
-          "2": 0.7116,
-          "X": 0.2625
-        },
-        "confidence": 0.7116,
-        "difficulty": "fácil",
-        "generatedAt": "2026-08-21T07:42:33.519Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 1,
-            "gf": 0,
-            "ga": 2,
-            "gfPerGame": 0,
-            "gaPerGame": 2,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 1
-          },
-          "awayLast5": {
-            "matches": 1,
-            "gf": 2,
-            "ga": 2,
-            "gfPerGame": 2,
-            "gaPerGame": 2,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 1,
-            "gf": 2,
-            "ga": 2,
-            "gfPerGame": 2,
-            "gaPerGame": 2,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 4,
-            "conceded": 14,
-            "shots": 18,
-            "savePercentage": 22.22
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 3,
-            "conceded": 14,
-            "shots": 17,
-            "savePercentage": 17.65
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882869",
-      "season": 2026,
-      "result": "X"
-    },
-    {
       "id": 401882868,
       "espnId": "401882868",
       "round": null,
       "seasonType": "2026-27-laliga",
-      "date": "2026-09-16T18:00Z",
-      "timestamp": 1789581600,
+      "date": "2026-09-15T17:00Z",
+      "timestamp": 1789491600,
       "status": "STATUS_SCHEDULED",
       "statusLong": "Scheduled",
       "venue": {
@@ -18853,12 +17929,804 @@
       "result": "X"
     },
     {
+      "id": 401882876,
+      "espnId": "401882876",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-15T18:00Z",
+      "timestamp": 1789495200,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Mendizorrotza",
+        "city": "Vitoria-Gasteiz"
+      },
+      "home": {
+        "id": 96,
+        "name": "Alavés",
+        "abbreviation": "ALA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
+      },
+      "away": {
+        "id": 94,
+        "name": "Valencia",
+        "abbreviation": "VAL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "1",
+        "probabilities": {
+          "1": 0.8606,
+          "2": 0.0178,
+          "X": 0.1216
+        },
+        "confidence": 0.8606,
+        "difficulty": "fácil",
+        "generatedAt": "2026-08-21T07:42:33.519Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 2,
+            "gf": 4,
+            "ga": 1,
+            "gfPerGame": 2,
+            "gaPerGame": 0.5,
+            "points": 4,
+            "pointsPerGame": 2,
+            "wins": 1,
+            "draws": 1,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 1,
+            "gf": 3,
+            "ga": 0,
+            "gfPerGame": 3,
+            "gaPerGame": 0,
+            "points": 3,
+            "pointsPerGame": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 4,
+            "conceded": 11,
+            "shots": 15,
+            "savePercentage": 26.67
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882876",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882872,
+      "espnId": "401882872",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-15T19:30Z",
+      "timestamp": 1789500600,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Estadio Martínez Valero",
+        "city": "Elche"
+      },
+      "home": {
+        "id": 3751,
+        "name": "Elche",
+        "abbreviation": "ELC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid",
+        "abbreviation": "RMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "1",
+        "probabilities": {
+          "1": 0.6529,
+          "2": 0.029,
+          "X": 0.318
+        },
+        "confidence": 0.6529,
+        "difficulty": "fácil",
+        "generatedAt": "2026-08-21T07:42:33.519Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 1,
+            "gf": 1,
+            "ga": 1,
+            "gfPerGame": 1,
+            "gaPerGame": 1,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 2,
+            "conceded": 14,
+            "shots": 16,
+            "savePercentage": 12.5
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882872",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882875,
+      "espnId": "401882875",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-16T17:00Z",
+      "timestamp": 1789578000,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Riyadh Air Metropolitano",
+        "city": "Madrid"
+      },
+      "home": {
+        "id": 1068,
+        "name": "Atlético Madrid",
+        "abbreviation": "ATM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+      },
+      "away": {
+        "id": 97,
+        "name": "Osasuna",
+        "abbreviation": "OSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "1",
+        "probabilities": {
+          "1": 0.8567,
+          "2": 0.018,
+          "X": 0.1253
+        },
+        "confidence": 0.8567,
+        "difficulty": "fácil",
+        "generatedAt": "2026-08-21T07:42:33.519Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 1,
+            "gf": 2,
+            "ga": 0,
+            "gfPerGame": 2,
+            "gaPerGame": 0,
+            "points": 3,
+            "pointsPerGame": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 1,
+            "gf": 2,
+            "ga": 0,
+            "gfPerGame": 2,
+            "gaPerGame": 0,
+            "points": 3,
+            "pointsPerGame": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 1,
+            "conceded": 12,
+            "shots": 13,
+            "savePercentage": 7.69
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882875",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882873,
+      "espnId": "401882873",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-16T17:00Z",
+      "timestamp": 1789578000,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Riazor",
+        "city": "La Coruña"
+      },
+      "home": {
+        "id": 90,
+        "name": "Deportivo",
+        "abbreviation": "DEP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
+      },
+      "away": {
+        "id": 243,
+        "name": "Sevilla",
+        "abbreviation": "SEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "2",
+        "probabilities": {
+          "1": 0.164,
+          "2": 0.515,
+          "X": 0.3209
+        },
+        "confidence": 0.515,
+        "difficulty": "media",
+        "generatedAt": "2026-08-21T07:42:33.519Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 1,
+            "gf": 1,
+            "ga": 1,
+            "gfPerGame": 1,
+            "gaPerGame": 1,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 1,
+            "gf": 2,
+            "ga": 1,
+            "gfPerGame": 2,
+            "gaPerGame": 1,
+            "points": 3,
+            "pointsPerGame": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 1,
+            "gf": 1,
+            "ga": 1,
+            "gfPerGame": 1,
+            "gaPerGame": 1,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 5,
+            "conceded": 14,
+            "shots": 19,
+            "savePercentage": 26.32
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 2,
+            "conceded": 13,
+            "shots": 15,
+            "savePercentage": 13.33
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882873",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882871,
+      "espnId": "401882871",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-16T19:30Z",
+      "timestamp": 1789587000,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Spotify Camp Nou",
+        "city": "Barcelona"
+      },
+      "home": {
+        "id": 83,
+        "name": "Barcelona",
+        "abbreviation": "BAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
+      },
+      "away": {
+        "id": 87,
+        "name": "Racing Santander",
+        "abbreviation": "RAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "2",
+        "probabilities": {
+          "1": 0.1136,
+          "2": 0.5469,
+          "X": 0.3395
+        },
+        "confidence": 0.5469,
+        "difficulty": "media",
+        "generatedAt": "2026-08-21T07:42:33.519Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 1,
+            "gf": 2,
+            "ga": 2,
+            "gfPerGame": 2,
+            "gaPerGame": 2,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 5,
+            "conceded": 14,
+            "shots": 19,
+            "savePercentage": 26.32
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882871",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882870,
+      "espnId": "401882870",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-16T19:30Z",
+      "timestamp": 1789587000,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Estadi Ciutat de València",
+        "city": "Manises"
+      },
+      "home": {
+        "id": 1538,
+        "name": "Levante",
+        "abbreviation": "LEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+      },
+      "away": {
+        "id": 93,
+        "name": "Athletic Club",
+        "abbreviation": "ATH",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "1",
+        "probabilities": {
+          "1": 0.4514,
+          "2": 0.1744,
+          "X": 0.3742
+        },
+        "confidence": 0.4514,
+        "difficulty": "difícil",
+        "generatedAt": "2026-08-21T07:42:33.519Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 1,
+            "gf": 0,
+            "ga": 3,
+            "gfPerGame": 0,
+            "gaPerGame": 3,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 1
+          },
+          "awayLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 3,
+            "conceded": 14,
+            "shots": 17,
+            "savePercentage": 17.65
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882870",
+      "season": 2026,
+      "result": "X"
+    },
+    {
       "id": 401882874,
       "espnId": "401882874",
       "round": null,
       "seasonType": "2026-27-laliga",
-      "date": "2026-09-16T18:00Z",
-      "timestamp": 1789581600,
+      "date": "2026-09-17T17:00Z",
+      "timestamp": 1789664400,
       "status": "STATUS_SCHEDULED",
       "statusLong": "Scheduled",
       "venue": {
@@ -18985,29 +18853,29 @@
       "result": "X"
     },
     {
-      "id": 401882866,
-      "espnId": "401882866",
+      "id": 401882869,
+      "espnId": "401882869",
       "round": null,
       "seasonType": "2026-27-laliga",
-      "date": "2026-09-20T18:00Z",
-      "timestamp": 1789927200,
+      "date": "2026-09-17T19:30Z",
+      "timestamp": 1789673400,
       "status": "STATUS_SCHEDULED",
       "statusLong": "Scheduled",
       "venue": {
-        "name": "San Mamés",
-        "city": "Bilbao"
+        "name": "La Rosaleda",
+        "city": "Malaga"
       },
       "home": {
-        "id": 93,
-        "name": "Athletic Club",
-        "abbreviation": "ATH",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
+        "id": 99,
+        "name": "Málaga",
+        "abbreviation": "MCF",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png"
       },
       "away": {
-        "id": 96,
-        "name": "Alavés",
-        "abbreviation": "ALA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
+        "id": 102,
+        "name": "Villarreal",
+        "abbreviation": "VIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
       },
       "score": {
         "halftime": null,
@@ -19027,11 +18895,11 @@
       "prediction": {
         "sign": "2",
         "probabilities": {
-          "1": 0.0234,
-          "2": 0.7569,
-          "X": 0.2197
+          "1": 0.0258,
+          "2": 0.7116,
+          "X": 0.2625
         },
-        "confidence": 0.7569,
+        "confidence": 0.7116,
         "difficulty": "fácil",
         "generatedAt": "2026-08-21T07:42:33.519Z",
         "lockedAt": null,
@@ -19047,280 +18915,16 @@
         },
         "evidence": {
           "homeLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 2,
-            "gf": 4,
-            "ga": 1,
-            "gfPerGame": 2,
-            "gaPerGame": 0.5,
-            "points": 4,
-            "pointsPerGame": 2,
-            "wins": 1,
-            "draws": 1,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
             "matches": 1,
-            "gf": 1,
-            "ga": 1,
-            "gfPerGame": 1,
-            "gaPerGame": 1,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 4,
-            "conceded": 11,
-            "shots": 15,
-            "savePercentage": 26.67
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882866",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882865,
-      "espnId": "401882865",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-20T18:00Z",
-      "timestamp": 1789927200,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Riyadh Air Metropolitano",
-        "city": "Madrid"
-      },
-      "home": {
-        "id": 1068,
-        "name": "Atlético Madrid",
-        "abbreviation": "ATM",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
-      },
-      "away": {
-        "id": 86,
-        "name": "Real Madrid",
-        "abbreviation": "RMA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "1",
-        "probabilities": {
-          "1": 0.8567,
-          "2": 0.018,
-          "X": 0.1253
-        },
-        "confidence": 0.8567,
-        "difficulty": "fácil",
-        "generatedAt": "2026-08-21T07:42:33.520Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 1,
-            "gf": 2,
-            "ga": 0,
-            "gfPerGame": 2,
-            "gaPerGame": 0,
-            "points": 3,
-            "pointsPerGame": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 0,
             "gf": 0,
-            "ga": 0,
+            "ga": 2,
             "gfPerGame": 0,
-            "gaPerGame": 0,
+            "gaPerGame": 2,
             "points": 0,
             "pointsPerGame": 0,
             "wins": 0,
             "draws": 0,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 1,
-            "gf": 2,
-            "ga": 0,
-            "gfPerGame": 2,
-            "gaPerGame": 0,
-            "points": 3,
-            "pointsPerGame": 3,
-            "wins": 1,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 1,
-            "conceded": 12,
-            "shots": 13,
-            "savePercentage": 7.69
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882865",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882864,
-      "espnId": "401882864",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-20T18:00Z",
-      "timestamp": 1789927200,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Balaidos",
-        "city": "Vigo"
-      },
-      "home": {
-        "id": 85,
-        "name": "Celta Vigo",
-        "abbreviation": "CEL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
-      },
-      "away": {
-        "id": 87,
-        "name": "Racing Santander",
-        "abbreviation": "RAC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "2",
-        "probabilities": {
-          "1": 0.1136,
-          "2": 0.5469,
-          "X": 0.3395
-        },
-        "confidence": 0.5469,
-        "difficulty": "media",
-        "generatedAt": "2026-08-21T07:42:33.520Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
+            "losses": 1
           },
           "awayLast5": {
             "matches": 1,
@@ -19347,168 +18951,36 @@
             "losses": 0
           },
           "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 5,
-            "conceded": 14,
-            "shots": 19,
-            "savePercentage": 26.32
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882864",
-      "season": 2026,
-      "result": "X"
-    },
-    {
-      "id": 401882863,
-      "espnId": "401882863",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-20T18:00Z",
-      "timestamp": 1789927200,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Riazor",
-        "city": "La Coruña"
-      },
-      "home": {
-        "id": 90,
-        "name": "Deportivo",
-        "abbreviation": "DEP",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
-      },
-      "away": {
-        "id": 244,
-        "name": "Real Betis",
-        "abbreviation": "BET",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "1",
-        "probabilities": {
-          "1": 0.7385,
-          "2": 0.0244,
-          "X": 0.2371
-        },
-        "confidence": 0.7385,
-        "difficulty": "fácil",
-        "generatedAt": "2026-08-21T07:42:33.520Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
             "matches": 1,
-            "gf": 1,
-            "ga": 1,
-            "gfPerGame": 1,
-            "gaPerGame": 1,
+            "gf": 2,
+            "ga": 2,
+            "gfPerGame": 2,
+            "gaPerGame": 2,
             "points": 1,
             "pointsPerGame": 1,
             "wins": 0,
             "draws": 1,
             "losses": 0
           },
-          "awayLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 1,
-            "gf": 1,
-            "ga": 1,
-            "gfPerGame": 1,
-            "gaPerGame": 1,
-            "points": 1,
-            "pointsPerGame": 1,
-            "wins": 0,
-            "draws": 1,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
           "homeGoalkeeper": {
             "appearances": 7,
-            "saves": 5,
+            "saves": 4,
             "conceded": 14,
-            "shots": 19,
-            "savePercentage": 26.32
+            "shots": 18,
+            "savePercentage": 22.22
           },
           "awayGoalkeeper": {
             "appearances": 7,
-            "saves": 0,
+            "saves": 3,
             "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
+            "shots": 17,
+            "savePercentage": 17.65
           },
           "homeFormations": {},
           "awayFormations": {}
         }
       },
-      "uid": "s:600~l:740~e:401882863",
+      "uid": "s:600~l:740~e:401882869",
       "season": 2026,
       "result": "X"
     },
@@ -19517,8 +18989,8 @@
       "espnId": "401882862",
       "round": null,
       "seasonType": "2026-27-laliga",
-      "date": "2026-09-20T18:00Z",
-      "timestamp": 1789927200,
+      "date": "2026-09-18T19:00Z",
+      "timestamp": 1789758000,
       "status": "STATUS_SCHEDULED",
       "statusLong": "Scheduled",
       "venue": {
@@ -19645,144 +19117,12 @@
       "result": "X"
     },
     {
-      "id": 401882861,
-      "espnId": "401882861",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-20T18:00Z",
-      "timestamp": 1789927200,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Estadio Coliseum",
-        "city": "Getafe"
-      },
-      "home": {
-        "id": 2922,
-        "name": "Getafe",
-        "abbreviation": "GET",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
-      },
-      "away": {
-        "id": 99,
-        "name": "Málaga",
-        "abbreviation": "MCF",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "X",
-        "probabilities": {
-          "1": 0.2299,
-          "2": 0.3305,
-          "X": 0.4396
-        },
-        "confidence": 0.4396,
-        "difficulty": "difícil",
-        "generatedAt": "2026-08-21T07:42:33.520Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 1,
-            "gf": 0,
-            "ga": 3,
-            "gfPerGame": 0,
-            "gaPerGame": 3,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 1
-          },
-          "awayLast5": {
-            "matches": 1,
-            "gf": 0,
-            "ga": 2,
-            "gfPerGame": 0,
-            "gaPerGame": 2,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 1
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 1,
-            "gf": 0,
-            "ga": 2,
-            "gfPerGame": 0,
-            "gaPerGame": 2,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 1
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 5,
-            "conceded": 14,
-            "shots": 19,
-            "savePercentage": 26.32
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 4,
-            "conceded": 14,
-            "shots": 18,
-            "savePercentage": 22.22
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882861",
-      "season": 2026,
-      "result": "X"
-    },
-    {
       "id": 401882860,
       "espnId": "401882860",
       "round": null,
       "seasonType": "2026-27-laliga",
-      "date": "2026-09-20T18:00Z",
-      "timestamp": 1789927200,
+      "date": "2026-09-19T12:00Z",
+      "timestamp": 1789819200,
       "status": "STATUS_SCHEDULED",
       "statusLong": "Scheduled",
       "venue": {
@@ -19909,12 +19249,276 @@
       "result": "X"
     },
     {
+      "id": 401882866,
+      "espnId": "401882866",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-19T14:15Z",
+      "timestamp": 1789827300,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "San Mamés",
+        "city": "Bilbao"
+      },
+      "home": {
+        "id": 93,
+        "name": "Athletic Club",
+        "abbreviation": "ATH",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
+      },
+      "away": {
+        "id": 96,
+        "name": "Alavés",
+        "abbreviation": "ALA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "2",
+        "probabilities": {
+          "1": 0.0234,
+          "2": 0.7569,
+          "X": 0.2197
+        },
+        "confidence": 0.7569,
+        "difficulty": "fácil",
+        "generatedAt": "2026-08-21T07:42:33.519Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 2,
+            "gf": 4,
+            "ga": 1,
+            "gfPerGame": 2,
+            "gaPerGame": 0.5,
+            "points": 4,
+            "pointsPerGame": 2,
+            "wins": 1,
+            "draws": 1,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 1,
+            "gf": 1,
+            "ga": 1,
+            "gfPerGame": 1,
+            "gaPerGame": 1,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 4,
+            "conceded": 11,
+            "shots": 15,
+            "savePercentage": 26.67
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882866",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882864,
+      "espnId": "401882864",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-19T16:30Z",
+      "timestamp": 1789835400,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Balaidos",
+        "city": "Vigo"
+      },
+      "home": {
+        "id": 85,
+        "name": "Celta Vigo",
+        "abbreviation": "CEL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
+      },
+      "away": {
+        "id": 87,
+        "name": "Racing Santander",
+        "abbreviation": "RAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "2",
+        "probabilities": {
+          "1": 0.1136,
+          "2": 0.5469,
+          "X": 0.3395
+        },
+        "confidence": 0.5469,
+        "difficulty": "media",
+        "generatedAt": "2026-08-21T07:42:33.520Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 1,
+            "gf": 2,
+            "ga": 2,
+            "gfPerGame": 2,
+            "gaPerGame": 2,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 5,
+            "conceded": 14,
+            "shots": 19,
+            "savePercentage": 26.32
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882864",
+      "season": 2026,
+      "result": "X"
+    },
+    {
       "id": 401882859,
       "espnId": "401882859",
       "round": null,
       "seasonType": "2026-27-laliga",
-      "date": "2026-09-20T18:00Z",
-      "timestamp": 1789927200,
+      "date": "2026-09-19T19:00Z",
+      "timestamp": 1789844400,
       "status": "STATUS_SCHEDULED",
       "statusLong": "Scheduled",
       "venue": {
@@ -20037,6 +19641,402 @@
         }
       },
       "uid": "s:600~l:740~e:401882859",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882861,
+      "espnId": "401882861",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-20T12:00Z",
+      "timestamp": 1789905600,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Estadio Coliseum",
+        "city": "Getafe"
+      },
+      "home": {
+        "id": 2922,
+        "name": "Getafe",
+        "abbreviation": "GET",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
+      },
+      "away": {
+        "id": 99,
+        "name": "Málaga",
+        "abbreviation": "MCF",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "X",
+        "probabilities": {
+          "1": 0.2299,
+          "2": 0.3305,
+          "X": 0.4396
+        },
+        "confidence": 0.4396,
+        "difficulty": "difícil",
+        "generatedAt": "2026-08-21T07:42:33.520Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 1,
+            "gf": 0,
+            "ga": 3,
+            "gfPerGame": 0,
+            "gaPerGame": 3,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 1
+          },
+          "awayLast5": {
+            "matches": 1,
+            "gf": 0,
+            "ga": 2,
+            "gfPerGame": 0,
+            "gaPerGame": 2,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 1
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 1,
+            "gf": 0,
+            "ga": 2,
+            "gfPerGame": 0,
+            "gaPerGame": 2,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 1
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 5,
+            "conceded": 14,
+            "shots": 19,
+            "savePercentage": 26.32
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 4,
+            "conceded": 14,
+            "shots": 18,
+            "savePercentage": 22.22
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882861",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882865,
+      "espnId": "401882865",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-20T14:15Z",
+      "timestamp": 1789913700,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Riyadh Air Metropolitano",
+        "city": "Madrid"
+      },
+      "home": {
+        "id": 1068,
+        "name": "Atlético Madrid",
+        "abbreviation": "ATM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid",
+        "abbreviation": "RMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "1",
+        "probabilities": {
+          "1": 0.8567,
+          "2": 0.018,
+          "X": 0.1253
+        },
+        "confidence": 0.8567,
+        "difficulty": "fácil",
+        "generatedAt": "2026-08-21T07:42:33.520Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 1,
+            "gf": 2,
+            "ga": 0,
+            "gfPerGame": 2,
+            "gaPerGame": 0,
+            "points": 3,
+            "pointsPerGame": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 1,
+            "gf": 2,
+            "ga": 0,
+            "gfPerGame": 2,
+            "gaPerGame": 0,
+            "points": 3,
+            "pointsPerGame": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 1,
+            "conceded": 12,
+            "shots": 13,
+            "savePercentage": 7.69
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882865",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882863,
+      "espnId": "401882863",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-20T16:30Z",
+      "timestamp": 1789921800,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Riazor",
+        "city": "La Coruña"
+      },
+      "home": {
+        "id": 90,
+        "name": "Deportivo",
+        "abbreviation": "DEP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
+      },
+      "away": {
+        "id": 244,
+        "name": "Real Betis",
+        "abbreviation": "BET",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "1",
+        "probabilities": {
+          "1": 0.7385,
+          "2": 0.0244,
+          "X": 0.2371
+        },
+        "confidence": 0.7385,
+        "difficulty": "fácil",
+        "generatedAt": "2026-08-21T07:42:33.520Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 1,
+            "gf": 1,
+            "ga": 1,
+            "gfPerGame": 1,
+            "gaPerGame": 1,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 1,
+            "gf": 1,
+            "ga": 1,
+            "gfPerGame": 1,
+            "gaPerGame": 1,
+            "points": 1,
+            "pointsPerGame": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 5,
+            "conceded": 14,
+            "shots": 19,
+            "savePercentage": 26.32
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882863",
       "season": 2026,
       "result": "X"
     },
@@ -65531,15 +65531,15 @@
   ],
   "injuries": [],
   "predictionBalance": {
-    "total": 18,
-    "correct": 6,
-    "incorrect": 12,
+    "total": 21,
+    "correct": 7,
+    "incorrect": 14,
     "accuracy": 33.33,
     "bySign": {
       "1": {
-        "total": 7,
-        "correct": 3,
-        "accuracy": 42.86
+        "total": 8,
+        "correct": 4,
+        "accuracy": 50
       },
       "2": {
         "total": 4,
@@ -65547,108 +65547,108 @@
         "accuracy": 25
       },
       "X": {
-        "total": 7,
+        "total": 9,
         "correct": 2,
-        "accuracy": 28.57
+        "accuracy": 22.22
       }
     },
     "byDifficulty": {
       "fácil": {
-        "total": 7,
-        "correct": 2,
-        "accuracy": 28.57
+        "total": 8,
+        "correct": 3,
+        "accuracy": 37.5
       },
       "media": {
-        "total": 2,
+        "total": 3,
         "correct": 2,
-        "accuracy": 100
+        "accuracy": 66.67
       },
       "difícil": {
-        "total": 9,
+        "total": 10,
         "correct": 2,
-        "accuracy": 22.22
+        "accuracy": 20
       }
     }
   },
   "news": [
     {
+      "id": 49780927,
+      "headline": "What can we expect on transfer deadline day? Balogun, Enzo, Álvarez updates?",
+      "description": "The summer transfer deadline closes on Sept. 1 at 6 p.m. ET for the Premier League, so here's a few things that could still happen.",
+      "published": "2026-08-31T11:29:46Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49780927/what-expect-transfer-deadline-day-balogun-enzo-alvarez-premier-league-laliga-europe",
+      "image": "https://a.espncdn.com/photo/2026/0831/r1709375_1296x729_16-9.jpg"
+    },
+    {
       "id": 48990955,
       "headline": "Summer transfer window: Grading big signings in men's soccer",
       "description": "The 2026 summer transfer window is open. Here is how we rated the biggest deals.",
-      "published": "2026-08-30T10:12:44Z",
+      "published": "2026-08-31T09:21:33Z",
       "link": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
-      "image": "https://a.espncdn.com/photo/2026/0731/r1695938_1296x729_16-9.jpg"
+      "image": "https://a.espncdn.com/photo/2026/0830/r1708900_1296x729_16-9.jpg"
     },
     {
-      "id": 49768137,
-      "headline": "Lionel Messi's 4-goal performance leads Inter Miami to big win",
-      "description": "Lionel Messi's 4-goal performance leads Inter Miami to big win",
-      "published": "2026-08-30T02:32:28Z",
-      "link": "https://www.espn.com/video/clip/_/id/49768137/lionel-messi-4-goal-performance-leads-inter-miami-big-win",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0829/ss_20260829_214626533_3641024/ss_20260829_214626533_3641024.jpg"
+      "id": 48991120,
+      "headline": "Transfer big board: Best players in each position who could move this summer",
+      "description": "The transfer window is open in Premier League and will be soon in Europe, so who is available? It's our big board!",
+      "published": "2026-08-31T10:08:05Z",
+      "link": "https://www.espn.com/soccer/story/_/id/48991120/transfer-big-board-best-players-position-move-summer",
+      "image": "https://a.espncdn.com/photo/2026/0613/r1672603_1296x729_16-9.jpg"
     },
     {
-      "id": 49747293,
-      "headline": "Álvarez-less Atlético cruise to win over Sevilla ",
-      "description": "Julián Álvarez was not even on the bench as Atlético Madrid strolled to victory in Seville.",
-      "published": "2026-08-29T22:19:55Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882897",
-      "image": "https://a.espncdn.com/photo/2026/0829/r1708710_1296x729_16-9.jpg"
+      "id": 49776308,
+      "headline": "Celta Vigo vs. Athletic Club - Game Highlights",
+      "description": "Watch the Game Highlights from Celta Vigo vs. Athletic Club, 08/30/2026",
+      "published": "2026-08-30T21:29:30Z",
+      "link": "https://www.espn.com/video/clip/_/id/49776308/celta-vigo-vs-athletic-club-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0830/e1e6834e-af9f-4d82-b852-6f34c9f2019b/e1e6834e-af9f-4d82-b852-6f34c9f2019b.jpg"
     },
     {
-      "id": 49766079,
-      "headline": "Baena and Lookman fire Atlético Madrid to 3-1 win over Sevilla",
-      "description": "Baena and Lookman fire Atlético Madrid to 3-1 win over Sevilla",
-      "published": "2026-08-29T22:11:53Z",
-      "link": "https://www.espn.com/video/clip/_/id/49766079/baena-lookman-fire-atletico-madrid-3-1-win-sevilla",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0829/dm_260829_COM_SOC_Final_Game_Highlight_Baena_and_Lookman_fire_Atlico_Madrid_to_3-1_win_over_Sevilla_29_8_26/dm_260829_COM_SOC_Final_Game_Highlight_Baena_and_Lookman_fire_Atlico_Madrid_to_3-1_win_over_Sevilla_29_8_26.jpg"
+      "id": 49775123,
+      "headline": "Deportivo La Coruña vs. Valencia - Game Highlights",
+      "description": "Watch the Game Highlights from Deportivo La Coruña vs. Valencia, 08/30/2026",
+      "published": "2026-08-30T19:37:46Z",
+      "link": "https://www.espn.com/video/clip/_/id/49775123/deportivo-la-coruna-vs-valencia-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0830/ae3eac0c-505f-4623-90b6-852f2333a18a/ae3eac0c-505f-4623-90b6-852f2333a18a.jpg"
     },
     {
-      "id": 49765801,
-      "headline": "Sevilla vs. Atletico Madrid - Game Highlights",
-      "description": "Watch the Game Highlights from Sevilla vs. Atletico Madrid, 08/29/2026",
-      "published": "2026-08-29T21:37:01Z",
-      "link": "https://www.espn.com/video/clip/_/id/49765801/sevilla-vs-atletico-madrid-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0829/163881f2-445e-4de4-b2bb-bde064c862a7/163881f2-445e-4de4-b2bb-bde064c862a7.jpg"
-    },
-    {
-      "id": 49759947,
-      "headline": "Transfer rumors, news: Man United offered Atleti striker Sørloth",
-      "description": "Manchester United have been offered the chance to sign Atlético Madrid striker Alexander Sørloth. Transfer Talk has the latest.",
-      "published": "2026-08-30T02:21:57Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49759947/transfer-rumors-news-julian-alvarez-atletico-madrid-arsenal-barcelona-manchester-city",
-      "image": "https://a.espncdn.com/photo/2026/0221/r1618266_1296x729_16-9.jpg"
+      "id": 49774583,
+      "headline": "Can Gabriel Jesus be Barcelona's alternative for Julián Álvarez?",
+      "description": "Can Gabriel Jesus be Barcelona's alternative for Julián Álvarez?",
+      "published": "2026-08-30T18:51:30Z",
+      "link": "https://www.espn.com/video/clip/_/id/49774583/can-gabriel-jesus-barcelona-alternative-julian-alvarez",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0830/dm_260830_COM_SOC_Analysis_Can_Gabriel_Jesus_be_Barcelonas_alternative_for_Julian_Alvarez_20260830_GLOBA/dm_260830_COM_SOC_Analysis_Can_Gabriel_Jesus_be_Barcelonas_alternative_for_Julian_Alvarez_20260830_GLOBA.jpg"
     }
   ],
   "modelLearning": {
     "version": "3.0",
-    "totalEvaluated": 18,
-    "correct": 6,
+    "totalEvaluated": 21,
+    "correct": 7,
     "accuracy": 33.33,
     "variables": {
       "form": {
-        "samples": 18,
-        "correct": 6,
+        "samples": 21,
+        "correct": 7,
         "accuracy": 33.33
       },
       "attackDefense": {
-        "samples": 18,
-        "correct": 6,
+        "samples": 21,
+        "correct": 7,
         "accuracy": 33.33
       },
       "goalkeeper": {
-        "samples": 18,
-        "correct": 6,
+        "samples": 21,
+        "correct": 7,
         "accuracy": 33.33
       },
       "formation": {
-        "samples": 18,
-        "correct": 6,
+        "samples": 21,
+        "correct": 7,
         "accuracy": 33.33
       },
       "injuries": {
-        "samples": 18,
-        "correct": 6,
+        "samples": 21,
+        "correct": 7,
         "accuracy": 33.33
       }
     },
