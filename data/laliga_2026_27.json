@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-08-31T11:36:51.184Z",
+    "generatedAt": "2026-09-01T10:08:37.192Z",
     "requestsThisRun": 6,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -13961,8 +13961,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-31T17:30Z",
       "timestamp": 1788197400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "El Sadar",
         "city": "Pamplona"
@@ -13982,7 +13982,7 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         },
         "extratime": null,
@@ -14124,7 +14124,7 @@
       },
       "uid": "s:600~l:740~e:401882901",
       "season": 2026,
-      "result": "X"
+      "result": "1"
     },
     {
       "id": 401882903,
@@ -14133,8 +14133,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-08-31T19:30Z",
       "timestamp": 1788204600,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Spotify Camp Nou",
         "city": "Barcelona"
@@ -14154,8 +14154,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
-          "away": 0
+          "home": 5,
+          "away": 2
         },
         "extratime": null,
         "penalty": null
@@ -14296,7 +14296,7 @@
       },
       "uid": "s:600~l:740~e:401882903",
       "season": 2026,
-      "result": "X"
+      "result": "1"
     },
     {
       "id": 401882867,
@@ -14902,8 +14902,8 @@
       "status": "STATUS_SCHEDULED",
       "statusLong": "Scheduled",
       "venue": {
-        "name": "Estadio de Vallecas",
-        "city": "Madrid"
+        "name": "Estadio Municipal de Butarque",
+        "city": "Leganés, Madrid"
       },
       "home": {
         "id": 101,
@@ -20041,144 +20041,12 @@
       "result": "X"
     },
     {
-      "id": 401882858,
-      "espnId": "401882858",
-      "round": null,
-      "seasonType": "2026-27-laliga",
-      "date": "2026-09-20T18:00Z",
-      "timestamp": 1789927200,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
-      "venue": {
-        "name": "Mestalla Stadium",
-        "city": "Manises"
-      },
-      "home": {
-        "id": 94,
-        "name": "Valencia",
-        "abbreviation": "VAL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
-      },
-      "away": {
-        "id": 89,
-        "name": "Real Sociedad",
-        "abbreviation": "RSO",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
-      },
-      "score": {
-        "halftime": null,
-        "fulltime": {
-          "home": 0,
-          "away": 0
-        },
-        "extratime": null,
-        "penalty": null
-      },
-      "broadcasts": [
-        "ESPN+"
-      ],
-      "odds": [
-        null
-      ],
-      "prediction": {
-        "sign": "X",
-        "probabilities": {
-          "1": 0.3817,
-          "2": 0.1908,
-          "X": 0.4275
-        },
-        "confidence": 0.4275,
-        "difficulty": "difícil",
-        "generatedAt": "2026-08-21T07:42:33.520Z",
-        "lockedAt": null,
-        "model": {
-          "version": "1.1-ESPN",
-          "weights": {
-            "form": 0.3,
-            "attackDefense": 0.3,
-            "homeAdvantage": 0.2,
-            "goalkeeper": 0.1,
-            "tacticalAbsences": 0.1
-          }
-        },
-        "evidence": {
-          "homeLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayLast5": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "awayVenue": {
-            "matches": 0,
-            "gf": 0,
-            "ga": 0,
-            "gfPerGame": 0,
-            "gaPerGame": 0,
-            "points": 0,
-            "pointsPerGame": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0
-          },
-          "homeGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "awayGoalkeeper": {
-            "appearances": 7,
-            "saves": 0,
-            "conceded": 14,
-            "shots": 14,
-            "savePercentage": 0
-          },
-          "homeFormations": {},
-          "awayFormations": {}
-        }
-      },
-      "uid": "s:600~l:740~e:401882858",
-      "season": 2026,
-      "result": "X"
-    },
-    {
       "id": 401882857,
       "espnId": "401882857",
       "round": null,
       "seasonType": "2026-27-laliga",
-      "date": "2026-09-20T18:00Z",
-      "timestamp": 1789927200,
+      "date": "2026-09-20T16:30Z",
+      "timestamp": 1789921800,
       "status": "STATUS_SCHEDULED",
       "statusLong": "Scheduled",
       "venue": {
@@ -20301,6 +20169,138 @@
         }
       },
       "uid": "s:600~l:740~e:401882857",
+      "season": 2026,
+      "result": "X"
+    },
+    {
+      "id": 401882858,
+      "espnId": "401882858",
+      "round": null,
+      "seasonType": "2026-27-laliga",
+      "date": "2026-09-20T19:00Z",
+      "timestamp": 1789930800,
+      "status": "STATUS_SCHEDULED",
+      "statusLong": "Scheduled",
+      "venue": {
+        "name": "Mestalla Stadium",
+        "city": "Manises"
+      },
+      "home": {
+        "id": 94,
+        "name": "Valencia",
+        "abbreviation": "VAL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
+      },
+      "away": {
+        "id": 89,
+        "name": "Real Sociedad",
+        "abbreviation": "RSO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+      },
+      "score": {
+        "halftime": null,
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": null,
+        "penalty": null
+      },
+      "broadcasts": [
+        "ESPN+"
+      ],
+      "odds": [
+        null
+      ],
+      "prediction": {
+        "sign": "X",
+        "probabilities": {
+          "1": 0.3817,
+          "2": 0.1908,
+          "X": 0.4275
+        },
+        "confidence": 0.4275,
+        "difficulty": "difícil",
+        "generatedAt": "2026-08-21T07:42:33.520Z",
+        "lockedAt": null,
+        "model": {
+          "version": "1.1-ESPN",
+          "weights": {
+            "form": 0.3,
+            "attackDefense": 0.3,
+            "homeAdvantage": 0.2,
+            "goalkeeper": 0.1,
+            "tacticalAbsences": 0.1
+          }
+        },
+        "evidence": {
+          "homeLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayLast5": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "awayVenue": {
+            "matches": 0,
+            "gf": 0,
+            "ga": 0,
+            "gfPerGame": 0,
+            "gaPerGame": 0,
+            "points": 0,
+            "pointsPerGame": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0
+          },
+          "homeGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "awayGoalkeeper": {
+            "appearances": 7,
+            "saves": 0,
+            "conceded": 14,
+            "shots": 14,
+            "savePercentage": 0
+          },
+          "homeFormations": {},
+          "awayFormations": {}
+        }
+      },
+      "uid": "s:600~l:740~e:401882858",
       "season": 2026,
       "result": "X"
     },
@@ -65531,10 +65531,10 @@
   ],
   "injuries": [],
   "predictionBalance": {
-    "total": 21,
+    "total": 23,
     "correct": 7,
-    "incorrect": 14,
-    "accuracy": 33.33,
+    "incorrect": 16,
+    "accuracy": 30.43,
     "bySign": {
       "1": {
         "total": 8,
@@ -65542,26 +65542,26 @@
         "accuracy": 50
       },
       "2": {
-        "total": 4,
+        "total": 5,
         "correct": 1,
-        "accuracy": 25
+        "accuracy": 20
       },
       "X": {
-        "total": 9,
+        "total": 10,
         "correct": 2,
-        "accuracy": 22.22
+        "accuracy": 20
       }
     },
     "byDifficulty": {
       "fácil": {
-        "total": 8,
+        "total": 9,
         "correct": 3,
-        "accuracy": 37.5
+        "accuracy": 33.33
       },
       "media": {
-        "total": 3,
+        "total": 4,
         "correct": 2,
-        "accuracy": 66.67
+        "accuracy": 50
       },
       "difícil": {
         "total": 10,
@@ -65572,84 +65572,84 @@
   },
   "news": [
     {
-      "id": 49780927,
-      "headline": "What can we expect on transfer deadline day? Balogun, Enzo, Álvarez updates?",
-      "description": "The summer transfer deadline closes on Sept. 1 at 6 p.m. ET for the Premier League, so here's a few things that could still happen.",
-      "published": "2026-08-31T11:29:46Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49780927/what-expect-transfer-deadline-day-balogun-enzo-alvarez-premier-league-laliga-europe",
-      "image": "https://a.espncdn.com/photo/2026/0831/r1709375_1296x729_16-9.jpg"
+      "id": 49746632,
+      "headline": "Live transfer rumors, news, updates on deadline day",
+      "description": "We bring you the latest news, rumors, done deals and reaction throughout Europe's transfer deadline day, up to the Premier League window closing at 6 p.m. ET.",
+      "published": "2026-09-01T09:59:16Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49746632/live-transfer-window-rumors-news-updates-deadline-day-premier-league-laliga-bundesliga-serie-ligue-1",
+      "image": "https://a.espncdn.com/photo/2026/0831/r1709704_1296x729_16-9.jpg"
     },
     {
-      "id": 48990955,
-      "headline": "Summer transfer window: Grading big signings in men's soccer",
-      "description": "The 2026 summer transfer window is open. Here is how we rated the biggest deals.",
-      "published": "2026-08-31T09:21:33Z",
-      "link": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
-      "image": "https://a.espncdn.com/photo/2026/0830/r1708900_1296x729_16-9.jpg"
+      "id": 49790853,
+      "headline": "Africa's transfer deadline day - Ndiaye to Man City, Mbaye incoming, Osimhen to Man United?",
+      "description": "Tuesday is the final day of the window, but which African players could get their move over the line before business concludes on Sept. 1?",
+      "published": "2026-09-01T08:43:38Z",
+      "link": "https://www.espn.com/espn/story/_/id/49790853/africa-transfer-deadline-day-ndiaye-man-city-mbaye-incoming-osimhen-man-united",
+      "image": "https://a.espncdn.com/photo/2026/0830/r1708897_1296x729_16-9.jpg"
     },
     {
-      "id": 48991120,
-      "headline": "Transfer big board: Best players in each position who could move this summer",
-      "description": "The transfer window is open in Premier League and will be soon in Europe, so who is available? It's our big board!",
-      "published": "2026-08-31T10:08:05Z",
-      "link": "https://www.espn.com/soccer/story/_/id/48991120/transfer-big-board-best-players-position-move-summer",
-      "image": "https://a.espncdn.com/photo/2026/0613/r1672603_1296x729_16-9.jpg"
+      "id": 49787774,
+      "headline": "Flick 'surprised' perfect-fit Jesus set to join Barcelona",
+      "description": "Barcelona coach Hansi Flick said he was surprised to be able to sign Gabriel Jesus after the Spanish champions struck a deal with Arsenal worth an initial €10 million for the striker.",
+      "published": "2026-08-31T23:27:57Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49787774/flick-surprised-jesus-join-barcelona",
+      "image": "https://a.espncdn.com/photo/2026/0831/r1709734_1296x729_16-9.jpg"
     },
     {
-      "id": 49776308,
-      "headline": "Celta Vigo vs. Athletic Club - Game Highlights",
-      "description": "Watch the Game Highlights from Celta Vigo vs. Athletic Club, 08/30/2026",
-      "published": "2026-08-30T21:29:30Z",
-      "link": "https://www.espn.com/video/clip/_/id/49776308/celta-vigo-vs-athletic-club-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0830/e1e6834e-af9f-4d82-b852-6f34c9f2019b/e1e6834e-af9f-4d82-b852-6f34c9f2019b.jpg"
+      "id": 49787430,
+      "headline": "Was Anthony Gordon the correct choice for Barcelona over Marcus Rashford?",
+      "description": "Was Anthony Gordon the correct choice for Barcelona over Marcus Rashford?",
+      "published": "2026-08-31T22:15:49Z",
+      "link": "https://www.espn.com/video/clip/_/id/49787430/was-anthony-gordon-correct-choice-barcelona-marcus-rashford",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0831/dm_260831_COM_SOC_Analysis_Was_Anthony_Gordon_the_correct_choice_for_Barcelona_over_Marcus_Rashford_2026/dm_260831_COM_SOC_Analysis_Was_Anthony_Gordon_the_correct_choice_for_Barcelona_over_Marcus_Rashford_2026.jpg"
     },
     {
-      "id": 49775123,
-      "headline": "Deportivo La Coruña vs. Valencia - Game Highlights",
-      "description": "Watch the Game Highlights from Deportivo La Coruña vs. Valencia, 08/30/2026",
-      "published": "2026-08-30T19:37:46Z",
-      "link": "https://www.espn.com/video/clip/_/id/49775123/deportivo-la-coruna-vs-valencia-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0830/ae3eac0c-505f-4623-90b6-852f2333a18a/ae3eac0c-505f-4623-90b6-852f2333a18a.jpg"
+      "id": 49747302,
+      "headline": "Raphinha, Yamal doubles see Barcelona continue hot start",
+      "description": "Raphinha and Lamine Yamal both scored twice as Barcelona breezed back to the top of LaLiga with a 5-2 win over Rayo Vallecano at the Nou Camp.",
+      "published": "2026-08-31T22:56:59Z",
+      "link": "http://www.espn.com/soccer/report/_/gameId/401882903",
+      "image": "https://a.espncdn.com/photo/2026/0831/r1709703_1296x729_16-9.jpg"
     },
     {
-      "id": 49774583,
-      "headline": "Can Gabriel Jesus be Barcelona's alternative for Julián Álvarez?",
-      "description": "Can Gabriel Jesus be Barcelona's alternative for Julián Álvarez?",
-      "published": "2026-08-30T18:51:30Z",
-      "link": "https://www.espn.com/video/clip/_/id/49774583/can-gabriel-jesus-barcelona-alternative-julian-alvarez",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0830/dm_260830_COM_SOC_Analysis_Can_Gabriel_Jesus_be_Barcelonas_alternative_for_Julian_Alvarez_20260830_GLOBA/dm_260830_COM_SOC_Analysis_Can_Gabriel_Jesus_be_Barcelonas_alternative_for_Julian_Alvarez_20260830_GLOBA.jpg"
+      "id": 49786997,
+      "headline": "Barcelona vs. Rayo Vallecano - Game Highlights",
+      "description": "Watch the Game Highlights from Barcelona vs. Rayo Vallecano, 08/31/2026",
+      "published": "2026-08-31T22:16:38Z",
+      "link": "https://www.espn.com/video/clip/_/id/49786997/barcelona-vs-rayo-vallecano-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0831/37bb06ac5444419cba925c9f495d0b4c1095/37bb06ac5444419cba925c9f495d0b4c1095.jpg"
     }
   ],
   "modelLearning": {
     "version": "3.0",
-    "totalEvaluated": 21,
+    "totalEvaluated": 23,
     "correct": 7,
-    "accuracy": 33.33,
+    "accuracy": 30.43,
     "variables": {
       "form": {
-        "samples": 21,
+        "samples": 23,
         "correct": 7,
-        "accuracy": 33.33
+        "accuracy": 30.43
       },
       "attackDefense": {
-        "samples": 21,
+        "samples": 23,
         "correct": 7,
-        "accuracy": 33.33
+        "accuracy": 30.43
       },
       "goalkeeper": {
-        "samples": 21,
+        "samples": 23,
         "correct": 7,
-        "accuracy": 33.33
+        "accuracy": 30.43
       },
       "formation": {
-        "samples": 21,
+        "samples": 23,
         "correct": 7,
-        "accuracy": 33.33
+        "accuracy": 30.43
       },
       "injuries": {
-        "samples": 21,
+        "samples": 23,
         "correct": 7,
-        "accuracy": 33.33
+        "accuracy": 30.43
       }
     },
     "notes": [
