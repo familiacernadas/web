@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-01T10:08:37.192Z",
-    "requestsThisRun": 6,
+    "generatedAt": "2026-09-02T09:39:25.129Z",
+    "requestsThisRun": 7,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": true,
@@ -16606,7 +16606,73 @@
       },
       "uid": "s:600~l:740~e:401882878",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-02T09:39:25.127Z",
+        "lineups": [
+          {
+            "teamId": 243,
+            "teamName": "Sevilla",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 94,
+            "teamName": "Valencia",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 243,
+            "teamName": "Sevilla",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "1",
+              "totalGoals": "6",
+              "goalAssists": "3",
+              "goalsConceded": "5"
+            }
+          },
+          {
+            "teamId": 94,
+            "teamName": "Valencia",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-3",
+              "totalGoals": "1",
+              "goalAssists": "0",
+              "goalsConceded": "4"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882881,
@@ -65572,52 +65638,52 @@
   },
   "news": [
     {
+      "id": 49801518,
+      "headline": "Marc Casadó becomes latest academy player to depart Barcelona",
+      "description": "Midfielder Marc Casadó led an exodus of academy players on Tuesday as Barcelona trimmed their first team squad following six summer signings, including the deadline day arrival of Gabriel Jesus.",
+      "published": "2026-09-02T09:21:45Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49801518/marc-casado-becomes-latest-academy-player-depart-barcelona",
+      "image": "https://a.espncdn.com/photo/2026/0902/r1710308_1296x729_16-9.jpg"
+    },
+    {
+      "id": 48990955,
+      "headline": "Summer transfer window: Grading big signings in men's soccer",
+      "description": "The 2026 summer transfer window has closed. Here is how we rated the biggest deals.",
+      "published": "2026-09-02T08:12:11Z",
+      "link": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
+      "image": "https://a.espncdn.com/photo/2026/0902/r1710301_1296x729_16-9.jpg"
+    },
+    {
+      "id": 49781199,
+      "headline": "Summer transfer window bargains: Karetsas, Yohanna, Mora and more",
+      "description": "Some clubs around Europe have spent hundreds of millions to bring in new players, but what about the bargain deals?",
+      "published": "2026-09-02T07:19:40Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49781199/summer-transfer-window-bargains-karetsas-yohanna-mora-more",
+      "image": "https://a.espncdn.com/photo/2026/0831/r1709390_1296x729_16-9.jpg"
+    },
+    {
       "id": 49746632,
-      "headline": "Live transfer rumors, news, updates on deadline day",
-      "description": "We bring you the latest news, rumors, done deals and reaction throughout Europe's transfer deadline day, up to the Premier League window closing at 6 p.m. ET.",
-      "published": "2026-09-01T09:59:16Z",
+      "headline": "Transfer deadline day recap: Everton fail with Balogun deal, Enzo signs for Man City",
+      "description": "We recap the latest news, rumors, done deals and reaction throughout Europe's transfer deadline day, up to the Premier League window closing at 6 p.m. ET.",
+      "published": "2026-09-02T07:54:35Z",
       "link": "https://www.espn.com/soccer/story/_/id/49746632/live-transfer-window-rumors-news-updates-deadline-day-premier-league-laliga-bundesliga-serie-ligue-1",
-      "image": "https://a.espncdn.com/photo/2026/0831/r1709704_1296x729_16-9.jpg"
+      "image": "https://a.espncdn.com/photo/2026/0901/r1710167_1296x729_16-9.jpg"
     },
     {
-      "id": 49790853,
-      "headline": "Africa's transfer deadline day - Ndiaye to Man City, Mbaye incoming, Osimhen to Man United?",
-      "description": "Tuesday is the final day of the window, but which African players could get their move over the line before business concludes on Sept. 1?",
-      "published": "2026-09-01T08:43:38Z",
-      "link": "https://www.espn.com/espn/story/_/id/49790853/africa-transfer-deadline-day-ndiaye-man-city-mbaye-incoming-osimhen-man-united",
-      "image": "https://a.espncdn.com/photo/2026/0830/r1708897_1296x729_16-9.jpg"
+      "id": 49781683,
+      "headline": "Chelsea, Real Madrid win transfer window; Liverpool biggest losers",
+      "description": "Once again, the summer transfer window was full of huge moves as the World Cup did little to stop the momentum. Here are our winners and losers.",
+      "published": "2026-09-02T00:41:04Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49781683/chelsea-real-madrid-win-transfer-window-liverpool-biggest-losers",
+      "image": "https://a.espncdn.com/photo/2026/0901/r1710148_1296x729_16-9.jpg"
     },
     {
-      "id": 49787774,
-      "headline": "Flick 'surprised' perfect-fit Jesus set to join Barcelona",
-      "description": "Barcelona coach Hansi Flick said he was surprised to be able to sign Gabriel Jesus after the Spanish champions struck a deal with Arsenal worth an initial €10 million for the striker.",
-      "published": "2026-08-31T23:27:57Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49787774/flick-surprised-jesus-join-barcelona",
-      "image": "https://a.espncdn.com/photo/2026/0831/r1709734_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49787430,
-      "headline": "Was Anthony Gordon the correct choice for Barcelona over Marcus Rashford?",
-      "description": "Was Anthony Gordon the correct choice for Barcelona over Marcus Rashford?",
-      "published": "2026-08-31T22:15:49Z",
-      "link": "https://www.espn.com/video/clip/_/id/49787430/was-anthony-gordon-correct-choice-barcelona-marcus-rashford",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0831/dm_260831_COM_SOC_Analysis_Was_Anthony_Gordon_the_correct_choice_for_Barcelona_over_Marcus_Rashford_2026/dm_260831_COM_SOC_Analysis_Was_Anthony_Gordon_the_correct_choice_for_Barcelona_over_Marcus_Rashford_2026.jpg"
-    },
-    {
-      "id": 49747302,
-      "headline": "Raphinha, Yamal doubles see Barcelona continue hot start",
-      "description": "Raphinha and Lamine Yamal both scored twice as Barcelona breezed back to the top of LaLiga with a 5-2 win over Rayo Vallecano at the Nou Camp.",
-      "published": "2026-08-31T22:56:59Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882903",
-      "image": "https://a.espncdn.com/photo/2026/0831/r1709703_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49786997,
-      "headline": "Barcelona vs. Rayo Vallecano - Game Highlights",
-      "description": "Watch the Game Highlights from Barcelona vs. Rayo Vallecano, 08/31/2026",
-      "published": "2026-08-31T22:16:38Z",
-      "link": "https://www.espn.com/video/clip/_/id/49786997/barcelona-vs-rayo-vallecano-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0831/37bb06ac5444419cba925c9f495d0b4c1095/37bb06ac5444419cba925c9f495d0b4c1095.jpg"
+      "id": 49795654,
+      "headline": "Will Atletico Madrid fans forgive Julian Alvarez?",
+      "description": "Will Atletico Madrid fans forgive Julian Alvarez?",
+      "published": "2026-09-01T18:51:20Z",
+      "link": "https://www.espn.com/video/clip/_/id/49795654/will-atletico-madrid-fans-forgive-julian-alvarez",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0901/dm_260901_COM_SOC_ANALYSIS_Will_Atletico_Madrid_fans_forgive_Julian_Alvarez_2026_9_1/dm_260901_COM_SOC_ANALYSIS_Will_Atletico_Madrid_fans_forgive_Julian_Alvarez_2026_9_1.jpg"
     }
   ],
   "modelLearning": {
