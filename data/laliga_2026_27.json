@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-02T09:39:25.129Z",
-    "requestsThisRun": 7,
+    "generatedAt": "2026-09-03T09:52:39.772Z",
+    "requestsThisRun": 10,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": true,
@@ -14348,7 +14348,7 @@
         "confidence": 0.4275,
         "difficulty": "difícil",
         "generatedAt": "2026-08-21T07:42:33.517Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-03T09:52:39.771Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -16804,7 +16804,73 @@
       },
       "uid": "s:600~l:740~e:401882881",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-03T09:52:38.908Z",
+        "lineups": [
+          {
+            "teamId": 87,
+            "teamName": "Racing Santander",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 96,
+            "teamName": "Alavés",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 87,
+            "teamName": "Racing Santander",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "0",
+              "totalGoals": "5",
+              "goalAssists": "1",
+              "goalsConceded": "5"
+            }
+          },
+          {
+            "teamId": 96,
+            "teamName": "Alavés",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "4",
+              "totalGoals": "5",
+              "goalAssists": "3",
+              "goalsConceded": "1"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882882,
@@ -16936,7 +17002,73 @@
       },
       "uid": "s:600~l:740~e:401882882",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-03T09:52:39.250Z",
+        "lineups": [
+          {
+            "teamId": 97,
+            "teamName": "Osasuna",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 88,
+            "teamName": "Espanyol",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 97,
+            "teamName": "Osasuna",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "2",
+              "totalGoals": "3",
+              "goalAssists": "1",
+              "goalsConceded": "1"
+            }
+          },
+          {
+            "teamId": 88,
+            "teamName": "Espanyol",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "1",
+              "totalGoals": "5",
+              "goalAssists": "4",
+              "goalsConceded": "4"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882886,
@@ -17068,7 +17200,73 @@
       },
       "uid": "s:600~l:740~e:401882886",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-03T09:52:39.563Z",
+        "lineups": [
+          {
+            "teamId": 93,
+            "teamName": "Athletic Club",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 3751,
+            "teamName": "Elche",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 93,
+            "teamName": "Athletic Club",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-2",
+              "totalGoals": "3",
+              "goalAssists": "3",
+              "goalsConceded": "5"
+            }
+          },
+          {
+            "teamId": 3751,
+            "teamName": "Elche",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-6",
+              "totalGoals": "3",
+              "goalAssists": "3",
+              "goalsConceded": "9"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882880,
@@ -17200,7 +17398,73 @@
       },
       "uid": "s:600~l:740~e:401882880",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-03T09:52:39.771Z",
+        "lineups": [
+          {
+            "teamId": 86,
+            "teamName": "Real Madrid",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 101,
+            "teamName": "Rayo Vallecano",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 86,
+            "teamName": "Real Madrid",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "8",
+              "totalGoals": "10",
+              "goalAssists": "7",
+              "goalsConceded": "2"
+            }
+          },
+          {
+            "teamId": 101,
+            "teamName": "Rayo Vallecano",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-4",
+              "totalGoals": "4",
+              "goalAssists": "3",
+              "goalsConceded": "8"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882885,
@@ -65638,52 +65902,52 @@
   },
   "news": [
     {
+      "id": 49812024,
+      "headline": "Inter Milan striker Lautaro Martínez confirms Barcelona were interested in summer move",
+      "description": "Lautaro Martínez has confirmed reports that Barcelona were interested in his services this summer but has indicated that he could end up staying the rest of his career at Inter Milan.",
+      "published": "2026-09-03T09:30:44Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49812024/inter-milan-barcelona-lautaro-martinez-transfers",
+      "image": "https://a.espncdn.com/photo/2026/0903/r1710793_1296x729_16-9.jpg"
+    },
+    {
+      "id": 49811947,
+      "headline": "Real Madrid's José Mourinho pays tribute to Lionel Messi: 'A player we'll miss'",
+      "description": "José Mourinho admitted he'll miss watching Lionel Messi after the Argentina star announced his international retirement this week.",
+      "published": "2026-09-03T09:28:00Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49811947/real-madrid-jose-mourinho-pays-tribute-lionel-messi-player-well-miss",
+      "image": "https://a.espncdn.com/photo/2026/0903/r1710788_1296x729_16-9.jpg"
+    },
+    {
+      "id": 49811531,
+      "headline": "Alternative transfer awards: Left on the shelf, best bargain hunters, top data pick, more",
+      "description": "Welcome to our transfer alternative awards, where we hand out eight off-beat trophies to those who didn't quite make the spotlight.",
+      "published": "2026-09-03T09:05:17Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49811531/alternative-summer-transfer-awards-left-shelf-best-bargain-hunters-top-data-pick-more",
+      "image": "https://a.espncdn.com/photo/2026/0826/r1707119_1296x729_16-9.jpg"
+    },
+    {
+      "id": 49810859,
+      "headline": "Sancho, Pogba, Wijnaldum among top free agents in 2026",
+      "description": "These players have contracts that expired this summer, and there are some big names involved.",
+      "published": "2026-09-03T08:28:48Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49810859/sancho-pogba-wijnaldum-top-free-agents-2026",
+      "image": "https://a.espncdn.com/photo/2024/0114/r1277141_1296x729_16-9.jpg"
+    },
+    {
+      "id": 49805134,
+      "headline": "Barcelona's Olmo: Don't understand Atlético stance on Álvarez",
+      "description": "Barcelona's Dani Olmo says he doesn't understand Atlético Madrid's refusal to negotiate a deal for Julián Álvarez with the Spanish champions.",
+      "published": "2026-09-02T17:42:00Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49805134/barcelona-julian-alvarez-transfer-atletico-madrid-dani-olmo",
+      "image": "https://a.espncdn.com/photo/2026/0902/r1710494_1296x729_16-9.jpg"
+    },
+    {
       "id": 49801518,
       "headline": "Marc Casadó becomes latest academy player to depart Barcelona",
       "description": "Midfielder Marc Casadó led an exodus of academy players on Tuesday as Barcelona trimmed their first team squad following six summer signings, including the deadline day arrival of Gabriel Jesus.",
-      "published": "2026-09-02T09:21:45Z",
+      "published": "2026-09-02T11:54:23Z",
       "link": "https://www.espn.com/soccer/story/_/id/49801518/marc-casado-becomes-latest-academy-player-depart-barcelona",
       "image": "https://a.espncdn.com/photo/2026/0902/r1710308_1296x729_16-9.jpg"
-    },
-    {
-      "id": 48990955,
-      "headline": "Summer transfer window: Grading big signings in men's soccer",
-      "description": "The 2026 summer transfer window has closed. Here is how we rated the biggest deals.",
-      "published": "2026-09-02T08:12:11Z",
-      "link": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
-      "image": "https://a.espncdn.com/photo/2026/0902/r1710301_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49781199,
-      "headline": "Summer transfer window bargains: Karetsas, Yohanna, Mora and more",
-      "description": "Some clubs around Europe have spent hundreds of millions to bring in new players, but what about the bargain deals?",
-      "published": "2026-09-02T07:19:40Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49781199/summer-transfer-window-bargains-karetsas-yohanna-mora-more",
-      "image": "https://a.espncdn.com/photo/2026/0831/r1709390_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49746632,
-      "headline": "Transfer deadline day recap: Everton fail with Balogun deal, Enzo signs for Man City",
-      "description": "We recap the latest news, rumors, done deals and reaction throughout Europe's transfer deadline day, up to the Premier League window closing at 6 p.m. ET.",
-      "published": "2026-09-02T07:54:35Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49746632/live-transfer-window-rumors-news-updates-deadline-day-premier-league-laliga-bundesliga-serie-ligue-1",
-      "image": "https://a.espncdn.com/photo/2026/0901/r1710167_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49781683,
-      "headline": "Chelsea, Real Madrid win transfer window; Liverpool biggest losers",
-      "description": "Once again, the summer transfer window was full of huge moves as the World Cup did little to stop the momentum. Here are our winners and losers.",
-      "published": "2026-09-02T00:41:04Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49781683/chelsea-real-madrid-win-transfer-window-liverpool-biggest-losers",
-      "image": "https://a.espncdn.com/photo/2026/0901/r1710148_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49795654,
-      "headline": "Will Atletico Madrid fans forgive Julian Alvarez?",
-      "description": "Will Atletico Madrid fans forgive Julian Alvarez?",
-      "published": "2026-09-01T18:51:20Z",
-      "link": "https://www.espn.com/video/clip/_/id/49795654/will-atletico-madrid-fans-forgive-julian-alvarez",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0901/dm_260901_COM_SOC_ANALYSIS_Will_Atletico_Madrid_fans_forgive_Julian_Alvarez_2026_9_1/dm_260901_COM_SOC_ANALYSIS_Will_Atletico_Madrid_fans_forgive_Julian_Alvarez_2026_9_1.jpg"
     }
   ],
   "modelLearning": {
