@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-03T09:52:39.772Z",
+    "generatedAt": "2026-09-04T09:41:15.361Z",
     "requestsThisRun": 10,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -14305,8 +14305,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-09-03T19:00Z",
       "timestamp": 1788462000,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Reale Arena",
         "city": "San Sebastian"
@@ -14546,7 +14546,7 @@
         "confidence": 0.4275,
         "difficulty": "difícil",
         "generatedAt": "2026-08-21T07:42:33.517Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-04T09:41:15.360Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -17596,7 +17596,73 @@
       },
       "uid": "s:600~l:740~e:401882885",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-04T09:41:14.267Z",
+        "lineups": [
+          {
+            "teamId": 85,
+            "teamName": "Celta Vigo",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 99,
+            "teamName": "Málaga",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 85,
+            "teamName": "Celta Vigo",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-3",
+              "totalGoals": "1",
+              "goalAssists": "1",
+              "goalsConceded": "4"
+            }
+          },
+          {
+            "teamId": 99,
+            "teamName": "Málaga",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-6",
+              "totalGoals": "1",
+              "goalAssists": "0",
+              "goalsConceded": "7"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882883,
@@ -17728,7 +17794,73 @@
       },
       "uid": "s:600~l:740~e:401882883",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-04T09:41:14.582Z",
+        "lineups": [
+          {
+            "teamId": 1538,
+            "teamName": "Levante",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 83,
+            "teamName": "Barcelona",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 1538,
+            "teamName": "Levante",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "0",
+              "totalGoals": "5",
+              "goalAssists": "3",
+              "goalsConceded": "5"
+            }
+          },
+          {
+            "teamId": 83,
+            "teamName": "Barcelona",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "10",
+              "totalGoals": "12",
+              "goalAssists": "9",
+              "goalsConceded": "2"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882884,
@@ -17860,7 +17992,73 @@
       },
       "uid": "s:600~l:740~e:401882884",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-04T09:41:14.911Z",
+        "lineups": [
+          {
+            "teamId": 2922,
+            "teamName": "Getafe",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 90,
+            "teamName": "Deportivo",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 2922,
+            "teamName": "Getafe",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-3",
+              "totalGoals": "1",
+              "goalAssists": "0",
+              "goalsConceded": "4"
+            }
+          },
+          {
+            "teamId": 90,
+            "teamName": "Deportivo",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "2",
+              "totalGoals": "5",
+              "goalAssists": "3",
+              "goalsConceded": "3"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882879,
@@ -17992,7 +18190,73 @@
       },
       "uid": "s:600~l:740~e:401882879",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-04T09:41:15.360Z",
+        "lineups": [
+          {
+            "teamId": 89,
+            "teamName": "Real Sociedad",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 1068,
+            "teamName": "Atlético Madrid",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 89,
+            "teamName": "Real Sociedad",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-3",
+              "totalGoals": "3",
+              "goalAssists": "2",
+              "goalsConceded": "6"
+            }
+          },
+          {
+            "teamId": 1068,
+            "teamName": "Atlético Madrid",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "4",
+              "totalGoals": "7",
+              "goalAssists": "6",
+              "goalsConceded": "3"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882877,
@@ -65861,10 +66125,10 @@
   ],
   "injuries": [],
   "predictionBalance": {
-    "total": 23,
-    "correct": 7,
+    "total": 24,
+    "correct": 8,
     "incorrect": 16,
-    "accuracy": 30.43,
+    "accuracy": 33.33,
     "bySign": {
       "1": {
         "total": 8,
@@ -65877,9 +66141,9 @@
         "accuracy": 20
       },
       "X": {
-        "total": 10,
-        "correct": 2,
-        "accuracy": 20
+        "total": 11,
+        "correct": 3,
+        "accuracy": 27.27
       }
     },
     "byDifficulty": {
@@ -65894,92 +66158,92 @@
         "accuracy": 50
       },
       "difícil": {
-        "total": 10,
-        "correct": 2,
-        "accuracy": 20
+        "total": 11,
+        "correct": 3,
+        "accuracy": 27.27
       }
     }
   },
   "news": [
     {
+      "id": 49818109,
+      "headline": "Real Sociedad vs. Celta Vigo - Game Highlights",
+      "description": "Watch the Game Highlights from Real Sociedad vs. Celta Vigo, 09/03/2026",
+      "published": "2026-09-03T21:09:46Z",
+      "link": "https://www.espn.com/video/clip/_/id/49818109/real-sociedad-vs-celta-vigo-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0903/58a5eeff-1066-468a-b6ca-b2a549c6cba5/58a5eeff-1066-468a-b6ca-b2a549c6cba5.jpg"
+    },
+    {
+      "id": 49816199,
+      "headline": "Weekend predictions: Arsenal take on Chelsea in a London derby, can PSG bounce back?",
+      "description": "Arsenal host Chelsea in a heavyweight clash this early in the Premier League, while teams such as PSG and Napoli are on the ropes in their respective title races.",
+      "published": "2026-09-04T01:11:57Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49816199/weekend-predictions-arsenal-take-chelsea-london-derby-paris-saint-germain-bounce-back",
+      "image": "https://a.espncdn.com/photo/2026/0903/r1710963_1296x729_16-9.jpg"
+    },
+    {
+      "id": 48990955,
+      "headline": "Summer transfer window: Grading big signings in men's soccer",
+      "description": "The 2026 summer transfer window has closed. Here is how we rated the biggest deals.",
+      "published": "2026-09-03T16:51:47Z",
+      "link": "https://www.espn.com/soccer/story/_/id/48990955/summer-transfer-window-grading-big-signings-mens-soccer",
+      "image": "https://a.espncdn.com/photo/2026/0902/r1710301_1296x729_16-9.jpg"
+    },
+    {
+      "id": 49813236,
+      "headline": "Bold predictions, 2026-27: Ballon d'Or for Olise, Brentford in Champions League",
+      "description": "Early in every season, Bill Connelly makes some bold predictions ... and he's often right. This year: expect Michael Olise to become the best player in the world, and Brentford to qualify for the Champions League.",
+      "published": "2026-09-03T16:55:02Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49813236/bill-connelly-bold-soccer-predictions-michael-olise-ballon-dor-brentford-champions-league-tottenham",
+      "image": "https://a.espncdn.com/photo/2026/0903/r1710892_1296x729_16-9.jpg"
+    },
+    {
+      "id": 49814539,
+      "headline": "Mourinho: There are no words to describe Messi's quality",
+      "description": "Mourinho: There are no words to describe Messi's quality",
+      "published": "2026-09-03T14:53:42Z",
+      "link": "https://www.espn.com/video/clip/_/id/49814539/there-no-words-describe-messi-quality",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0903/dm_260903_Mourinho_There_are_no_words_to_describe_Messis_quality/dm_260903_Mourinho_There_are_no_words_to_describe_Messis_quality.jpg"
+    },
+    {
       "id": 49812024,
-      "headline": "Inter Milan striker Lautaro Martínez confirms Barcelona were interested in summer move",
+      "headline": "Inter Milan striker Lautaro Martínez confirms Barcelona interest",
       "description": "Lautaro Martínez has confirmed reports that Barcelona were interested in his services this summer but has indicated that he could end up staying the rest of his career at Inter Milan.",
-      "published": "2026-09-03T09:30:44Z",
+      "published": "2026-09-03T16:28:24Z",
       "link": "https://www.espn.com/soccer/story/_/id/49812024/inter-milan-barcelona-lautaro-martinez-transfers",
       "image": "https://a.espncdn.com/photo/2026/0903/r1710793_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49811947,
-      "headline": "Real Madrid's José Mourinho pays tribute to Lionel Messi: 'A player we'll miss'",
-      "description": "José Mourinho admitted he'll miss watching Lionel Messi after the Argentina star announced his international retirement this week.",
-      "published": "2026-09-03T09:28:00Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49811947/real-madrid-jose-mourinho-pays-tribute-lionel-messi-player-well-miss",
-      "image": "https://a.espncdn.com/photo/2026/0903/r1710788_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49811531,
-      "headline": "Alternative transfer awards: Left on the shelf, best bargain hunters, top data pick, more",
-      "description": "Welcome to our transfer alternative awards, where we hand out eight off-beat trophies to those who didn't quite make the spotlight.",
-      "published": "2026-09-03T09:05:17Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49811531/alternative-summer-transfer-awards-left-shelf-best-bargain-hunters-top-data-pick-more",
-      "image": "https://a.espncdn.com/photo/2026/0826/r1707119_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49810859,
-      "headline": "Sancho, Pogba, Wijnaldum among top free agents in 2026",
-      "description": "These players have contracts that expired this summer, and there are some big names involved.",
-      "published": "2026-09-03T08:28:48Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49810859/sancho-pogba-wijnaldum-top-free-agents-2026",
-      "image": "https://a.espncdn.com/photo/2024/0114/r1277141_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49805134,
-      "headline": "Barcelona's Olmo: Don't understand Atlético stance on Álvarez",
-      "description": "Barcelona's Dani Olmo says he doesn't understand Atlético Madrid's refusal to negotiate a deal for Julián Álvarez with the Spanish champions.",
-      "published": "2026-09-02T17:42:00Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49805134/barcelona-julian-alvarez-transfer-atletico-madrid-dani-olmo",
-      "image": "https://a.espncdn.com/photo/2026/0902/r1710494_1296x729_16-9.jpg"
-    },
-    {
-      "id": 49801518,
-      "headline": "Marc Casadó becomes latest academy player to depart Barcelona",
-      "description": "Midfielder Marc Casadó led an exodus of academy players on Tuesday as Barcelona trimmed their first team squad following six summer signings, including the deadline day arrival of Gabriel Jesus.",
-      "published": "2026-09-02T11:54:23Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49801518/marc-casado-becomes-latest-academy-player-depart-barcelona",
-      "image": "https://a.espncdn.com/photo/2026/0902/r1710308_1296x729_16-9.jpg"
     }
   ],
   "modelLearning": {
     "version": "3.0",
-    "totalEvaluated": 23,
-    "correct": 7,
-    "accuracy": 30.43,
+    "totalEvaluated": 24,
+    "correct": 8,
+    "accuracy": 33.33,
     "variables": {
       "form": {
-        "samples": 23,
-        "correct": 7,
-        "accuracy": 30.43
+        "samples": 24,
+        "correct": 8,
+        "accuracy": 33.33
       },
       "attackDefense": {
-        "samples": 23,
-        "correct": 7,
-        "accuracy": 30.43
+        "samples": 24,
+        "correct": 8,
+        "accuracy": 33.33
       },
       "goalkeeper": {
-        "samples": 23,
-        "correct": 7,
-        "accuracy": 30.43
+        "samples": 24,
+        "correct": 8,
+        "accuracy": 33.33
       },
       "formation": {
-        "samples": 23,
-        "correct": 7,
-        "accuracy": 30.43
+        "samples": 24,
+        "correct": 8,
+        "accuracy": 33.33
       },
       "injuries": {
-        "samples": 23,
-        "correct": 7,
-        "accuracy": 30.43
+        "samples": 24,
+        "correct": 8,
+        "accuracy": 33.33
       }
     },
     "notes": [
