@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-05T09:06:51.078Z",
-    "requestsThisRun": 7,
+    "generatedAt": "2026-09-06T09:27:28.419Z",
+    "requestsThisRun": 9,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": true,
@@ -14701,8 +14701,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-09-05T14:15Z",
       "timestamp": 1788617700,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "San Mamés",
         "city": "Bilbao"
@@ -14722,7 +14722,7 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
+          "home": 3,
           "away": 0
         },
         "extratime": null,
@@ -14824,7 +14824,7 @@
       },
       "uid": "s:600~l:740~e:401882895",
       "season": 2026,
-      "result": "X",
+      "result": "1",
       "details": {
         "updatedAt": "2026-08-27T16:32:12.350Z",
         "lineups": [
@@ -14899,8 +14899,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-09-05T16:30Z",
       "timestamp": 1788625800,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Estadio Municipal de Butarque",
         "city": "Leganés, Madrid"
@@ -14920,8 +14920,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
-          "away": 0
+          "home": 3,
+          "away": 2
         },
         "extratime": null,
         "penalty": null
@@ -15022,7 +15022,7 @@
       },
       "uid": "s:600~l:740~e:401882889",
       "season": 2026,
-      "result": "X",
+      "result": "1",
       "details": {
         "updatedAt": "2026-08-27T16:32:12.644Z",
         "lineups": [
@@ -15097,8 +15097,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-09-05T19:00Z",
       "timestamp": 1788634800,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Estadio de la Cerámica",
         "city": "Villarreal"
@@ -15118,8 +15118,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
-          "away": 0
+          "home": 2,
+          "away": 3
         },
         "extratime": null,
         "penalty": null
@@ -15220,7 +15220,7 @@
       },
       "uid": "s:600~l:740~e:401882887",
       "season": 2026,
-      "result": "X",
+      "result": "2",
       "details": {
         "updatedAt": "2026-08-27T16:32:12.830Z",
         "lineups": [
@@ -15338,7 +15338,7 @@
         "confidence": 0.4275,
         "difficulty": "difícil",
         "generatedAt": "2026-08-21T07:42:33.517Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-06T09:27:28.418Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -15536,7 +15536,7 @@
         "confidence": 0.8606,
         "difficulty": "fácil",
         "generatedAt": "2026-08-21T07:42:33.517Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-06T09:27:28.418Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -15734,7 +15734,7 @@
         "confidence": 0.5443,
         "difficulty": "media",
         "generatedAt": "2026-08-21T07:42:33.518Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-06T09:27:28.418Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -15932,7 +15932,7 @@
         "confidence": 0.5729,
         "difficulty": "media",
         "generatedAt": "2026-08-21T07:42:33.518Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-06T09:27:28.418Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -18586,7 +18586,73 @@
       },
       "uid": "s:600~l:740~e:401882868",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-06T09:27:27.983Z",
+        "lineups": [
+          {
+            "teamId": 101,
+            "teamName": "Rayo Vallecano",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 88,
+            "teamName": "Espanyol",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 101,
+            "teamName": "Rayo Vallecano",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-3",
+              "totalGoals": "7",
+              "goalAssists": "6",
+              "goalsConceded": "10"
+            }
+          },
+          {
+            "teamId": 88,
+            "teamName": "Espanyol",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "1",
+              "totalGoals": "5",
+              "goalAssists": "4",
+              "goalsConceded": "4"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882876,
@@ -18718,7 +18784,73 @@
       },
       "uid": "s:600~l:740~e:401882876",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-06T09:27:28.204Z",
+        "lineups": [
+          {
+            "teamId": 96,
+            "teamName": "Alavés",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 94,
+            "teamName": "Valencia",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 96,
+            "teamName": "Alavés",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "4",
+              "totalGoals": "5",
+              "goalAssists": "3",
+              "goalsConceded": "1"
+            }
+          },
+          {
+            "teamId": 94,
+            "teamName": "Valencia",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-3",
+              "totalGoals": "1",
+              "goalAssists": "0",
+              "goalsConceded": "4"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882872,
@@ -18850,7 +18982,73 @@
       },
       "uid": "s:600~l:740~e:401882872",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-06T09:27:28.418Z",
+        "lineups": [
+          {
+            "teamId": 3751,
+            "teamName": "Elche",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 86,
+            "teamName": "Real Madrid",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 3751,
+            "teamName": "Elche",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-6",
+              "totalGoals": "3",
+              "goalAssists": "3",
+              "goalsConceded": "9"
+            }
+          },
+          {
+            "teamId": 86,
+            "teamName": "Real Madrid",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "7",
+              "totalGoals": "10",
+              "goalAssists": "7",
+              "goalsConceded": "3"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882875,
@@ -66191,20 +66389,20 @@
   ],
   "injuries": [],
   "predictionBalance": {
-    "total": 25,
-    "correct": 8,
-    "incorrect": 17,
-    "accuracy": 32,
+    "total": 28,
+    "correct": 9,
+    "incorrect": 19,
+    "accuracy": 32.14,
     "bySign": {
       "1": {
-        "total": 8,
-        "correct": 4,
+        "total": 10,
+        "correct": 5,
         "accuracy": 50
       },
       "2": {
-        "total": 5,
+        "total": 6,
         "correct": 1,
-        "accuracy": 20
+        "accuracy": 16.67
       },
       "X": {
         "total": 12,
@@ -66214,9 +66412,9 @@
     },
     "byDifficulty": {
       "fácil": {
-        "total": 9,
+        "total": 10,
         "correct": 3,
-        "accuracy": 33.33
+        "accuracy": 30
       },
       "media": {
         "total": 4,
@@ -66224,92 +66422,92 @@
         "accuracy": 50
       },
       "difícil": {
-        "total": 12,
-        "correct": 3,
-        "accuracy": 25
+        "total": 14,
+        "correct": 4,
+        "accuracy": 28.57
       }
     }
   },
   "news": [
     {
-      "id": 49823973,
-      "headline": "Barcelona's Yamal hits 50 goals! When did Messi, Ronaldo, Mbappé, Haaland reach half-centuries?",
-      "description": "Yamal scored his 50th club goal this week at 19 years and 49 days old. How does that compare to other prodigies who became greats of the modern game?",
-      "published": "2026-09-05T08:44:46Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49823973/lamine-yamal-50-career-goals-barcelonalionel-messi-cristiano-ronaldo-kylian-mbappe-erling-haaland",
-      "image": "https://a.espncdn.com/photo/2026/0904/r1711266_1296x729_16-9.jpg"
+      "id": 49840233,
+      "headline": "BACK-TO-BACK GOALS 🤩 Athletic Club vs. Atletico Madrid",
+      "description": "BACK-TO-BACK GOALS 🤩 Athletic Club vs. Atletico Madrid ",
+      "published": "2026-09-05T22:31:11Z",
+      "link": "https://www.espn.com/video/clip/_/id/49840233/back-back-goals-athletic-club-vs-atletico-madrid",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0905/ss_20260905_181214461_36486991107/ss_20260905_181214461_36486991107.jpg"
     },
     {
-      "id": 49829960,
-      "headline": "Real Betis vs. Real Madrid - Game Highlights",
-      "description": "Real Betis vs. Real Madrid - Game Highlights",
-      "published": "2026-09-05T01:14:44Z",
-      "link": "https://www.espn.com/video/clip/_/id/49829960/real-betis-vs-real-madrid-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0904/ss_20260904_204059701_36470181267/ss_20260904_204059701_36470181267.jpg"
+      "id": 49839412,
+      "headline": "Adama Traore scores ridiculous own goal in Deportivo's win over Villarreal",
+      "description": "Adama Traore scores ridiculous own goal in Deportivo's win over Villarreal",
+      "published": "2026-09-05T21:07:23Z",
+      "link": "https://www.espn.com/video/clip/_/id/49839412/adama-traore-scores-ridiculous-own-goal-deportivo-win-villarreal",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0905/dm_260905_COM_SOC_Highlight_Adama_Traore_scores_ridiculous_own_goal_in_Deportivos_win_over_Villarreal_2026/dm_260905_COM_SOC_Highlight_Adama_Traore_scores_ridiculous_own_goal_in_Deportivos_win_over_Villarreal_2026.jpg"
     },
     {
-      "id": 49828781,
-      "headline": "José Mourinho can't explain shock Real Madrid loss at Betis",
-      "description": "José Mourinho said he couldn't explain Real Madrid's 1-0 defeat at Real Betis on Friday, in the coach's first loss since returning to LaLiga.",
-      "published": "2026-09-04T22:53:47Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49828781/jose-mourinho-real-madrid-betis-kylian-mbappe-penalty",
-      "image": "https://a.espncdn.com/photo/2026/0904/r1711535_1296x729_16-9.jpg"
+      "id": 49839400,
+      "headline": "Villarreal vs. Deportivo La Coruña - Game Highlights",
+      "description": "Watch the Game Highlights from Villarreal vs. Deportivo La Coruña, 09/05/2026",
+      "published": "2026-09-05T21:06:24Z",
+      "link": "https://www.espn.com/video/clip/_/id/49839400/villarreal-vs-deportivo-la-coruna-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0905/28cbcaa0-f1a2-45b7-85fd-b0e80ada14c4/28cbcaa0-f1a2-45b7-85fd-b0e80ada14c4.jpg"
     },
     {
-      "id": 49828463,
-      "headline": "‘BIGGEST GAME OF THE SEASON’ - Arsenal vs. Chelsea PREDICTIONS",
-      "description": "‘BIGGEST GAME OF THE SEASON’ - Arsenal vs. Chelsea PREDICTIONS ",
-      "published": "2026-09-04T22:57:23Z",
-      "link": "https://www.espn.com/video/clip/_/id/49828463/biggest-game-season-arsenal-vs-chelsea-predictions",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0904/ss_20260904_175459035_36468381133/ss_20260904_175459035_36468381133.jpg"
+      "id": 49838222,
+      "headline": "Atlético Madrid 'need' Julián Álvarez's goals - Marcos Llorente",
+      "description": "Marcos Llorente told ESPN that Atletico Madrid need Julián Álvarez to start scoring after the team suffered a shock 3-0 defeat at Athletic Club in LaLiga on Saturday.",
+      "published": "2026-09-05T19:35:44Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49838222/julian-alvarez-atletico-madrid-marcos-llorente-spanish-la-liga",
+      "image": "https://a.espncdn.com/photo/2026/0905/r1711896_2_1296x729_16-9.jpg"
     },
     {
-      "id": 49828449,
-      "headline": "Why wasn't Kylian Mbappé's penalty retaken for Real Madrid?",
-      "description": "Why wasn't Kylian Mbappé's penalty retaken for Real Madrid?",
-      "published": "2026-09-04T21:52:01Z",
-      "link": "https://www.espn.com/video/clip/_/id/49828449/why-kylian-mbappe-penalty-retaken-real-madrid",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0904/dm_260904_COM_SOC_Analysis_Why_wasnt_Kylian_Mbappes_penalty_retaken_for_Real_Madrid_20260904_GLOBAL/dm_260904_COM_SOC_Analysis_Why_wasnt_Kylian_Mbappes_penalty_retaken_for_Real_Madrid_20260904_GLOBAL.jpg"
+      "id": 49838123,
+      "headline": "Rayo Vallecano vs. Racing Santander - Game Highlights",
+      "description": "Watch the Game Highlights from Rayo Vallecano vs. Racing Santander, 09/05/2026",
+      "published": "2026-09-05T18:39:51Z",
+      "link": "https://www.espn.com/video/clip/_/id/49838123/rayo-vallecano-vs-racing-santander-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0905/0af2621f-bc14-452d-a480-a4da30a441e1/0af2621f-bc14-452d-a480-a4da30a441e1.jpg"
     },
     {
-      "id": 49828417,
-      "headline": "Alexander Isak's brace + Bradley Barcola’s debut, Ipswich Town vs. Liverpool REACTION",
-      "description": "Alexander Isak's brace + Bradley Barcola’s debut, Ipswich Town vs. Liverpool REACTION",
-      "published": "2026-09-04T22:49:39Z",
-      "link": "https://www.espn.com/video/clip/_/id/49828417/alexander-isak-brace-bradley-barcolas-debut-ipswich-town-vs-liverpool-reaction",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0904/ss_20260904_174924783_36468291127/ss_20260904_174924783_36468291127.jpg"
+      "id": 49818823,
+      "headline": "Nico Williams helps Athletic Club to resounding win over Atlético Madrid",
+      "description": "Nico Williams scored his first goal of the season to help Athletic Bilbao consign Atlético Madrid to a 3-0 defeat in LaLiga.",
+      "published": "2026-09-05T17:22:23Z",
+      "link": "http://www.espn.com/soccer/report/_/gameId/401882895",
+      "image": "https://a.espncdn.com/photo/2026/0905/r1711846_1296x729_16-9.jpg"
     }
   ],
   "modelLearning": {
     "version": "3.0",
-    "totalEvaluated": 25,
-    "correct": 8,
-    "accuracy": 32,
+    "totalEvaluated": 28,
+    "correct": 9,
+    "accuracy": 32.14,
     "variables": {
       "form": {
-        "samples": 25,
-        "correct": 8,
-        "accuracy": 32
+        "samples": 28,
+        "correct": 9,
+        "accuracy": 32.14
       },
       "attackDefense": {
-        "samples": 25,
-        "correct": 8,
-        "accuracy": 32
+        "samples": 28,
+        "correct": 9,
+        "accuracy": 32.14
       },
       "goalkeeper": {
-        "samples": 25,
-        "correct": 8,
-        "accuracy": 32
+        "samples": 28,
+        "correct": 9,
+        "accuracy": 32.14
       },
       "formation": {
-        "samples": 25,
-        "correct": 8,
-        "accuracy": 32
+        "samples": 28,
+        "correct": 9,
+        "accuracy": 32.14
       },
       "injuries": {
-        "samples": 25,
-        "correct": 8,
-        "accuracy": 32
+        "samples": 28,
+        "correct": 9,
+        "accuracy": 32.14
       }
     },
     "notes": [
