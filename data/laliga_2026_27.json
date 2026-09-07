@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-06T09:27:28.419Z",
-    "requestsThisRun": 9,
+    "generatedAt": "2026-09-07T10:20:54.895Z",
+    "requestsThisRun": 10,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": true,
@@ -15295,8 +15295,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-09-06T14:15Z",
       "timestamp": 1788704100,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Mestalla Stadium",
         "city": "Manises"
@@ -15317,7 +15317,7 @@
         "halftime": null,
         "fulltime": {
           "home": 0,
-          "away": 0
+          "away": 5
         },
         "extratime": null,
         "penalty": null
@@ -15418,7 +15418,7 @@
       },
       "uid": "s:600~l:740~e:401882888",
       "season": 2026,
-      "result": "X",
+      "result": "2",
       "details": {
         "updatedAt": "2026-08-27T16:32:13.024Z",
         "lineups": [
@@ -15493,8 +15493,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-09-06T16:30Z",
       "timestamp": 1788712200,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Mendizorrotza",
         "city": "Vitoria-Gasteiz"
@@ -15514,8 +15514,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
-          "away": 0
+          "home": 5,
+          "away": 2
         },
         "extratime": null,
         "penalty": null
@@ -15616,7 +15616,7 @@
       },
       "uid": "s:600~l:740~e:401882896",
       "season": 2026,
-      "result": "X",
+      "result": "1",
       "details": {
         "updatedAt": "2026-08-27T16:32:13.230Z",
         "lineups": [
@@ -15691,8 +15691,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-09-06T16:30Z",
       "timestamp": 1788712200,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "La Rosaleda",
         "city": "Malaga"
@@ -15889,8 +15889,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-09-06T19:00Z",
       "timestamp": 1788721200,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "RCDE Stadium",
         "city": "Barcelona"
@@ -15910,8 +15910,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         },
         "extratime": null,
         "penalty": null
@@ -16130,7 +16130,7 @@
         "confidence": 0.4814,
         "difficulty": "media",
         "generatedAt": "2026-08-21T07:42:33.518Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-07T10:20:54.894Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -16328,7 +16328,7 @@
         "confidence": 0.6529,
         "difficulty": "fácil",
         "generatedAt": "2026-08-21T07:42:33.518Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-07T10:20:54.894Z",
         "model": {
           "version": "1.1-ESPN",
           "weights": {
@@ -19180,7 +19180,73 @@
       },
       "uid": "s:600~l:740~e:401882875",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-07T10:20:54.380Z",
+        "lineups": [
+          {
+            "teamId": 1068,
+            "teamName": "Atlético Madrid",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 97,
+            "teamName": "Osasuna",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 1068,
+            "teamName": "Atlético Madrid",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "1",
+              "totalGoals": "7",
+              "goalAssists": "6",
+              "goalsConceded": "6"
+            }
+          },
+          {
+            "teamId": 97,
+            "teamName": "Osasuna",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-1",
+              "totalGoals": "5",
+              "goalAssists": "2",
+              "goalsConceded": "6"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882873,
@@ -19312,7 +19378,73 @@
       },
       "uid": "s:600~l:740~e:401882873",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-07T10:20:54.549Z",
+        "lineups": [
+          {
+            "teamId": 90,
+            "teamName": "Deportivo",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 243,
+            "teamName": "Sevilla",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 90,
+            "teamName": "Deportivo",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "3",
+              "totalGoals": "8",
+              "goalAssists": "5",
+              "goalsConceded": "5"
+            }
+          },
+          {
+            "teamId": 243,
+            "teamName": "Sevilla",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "1",
+              "totalGoals": "7",
+              "goalAssists": "3",
+              "goalsConceded": "6"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882871,
@@ -19444,7 +19576,73 @@
       },
       "uid": "s:600~l:740~e:401882871",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-07T10:20:54.734Z",
+        "lineups": [
+          {
+            "teamId": 83,
+            "teamName": "Barcelona",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 87,
+            "teamName": "Racing Santander",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 83,
+            "teamName": "Barcelona",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "15",
+              "totalGoals": "17",
+              "goalAssists": "14",
+              "goalsConceded": "2"
+            }
+          },
+          {
+            "teamId": 87,
+            "teamName": "Racing Santander",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-1",
+              "totalGoals": "7",
+              "goalAssists": "1",
+              "goalsConceded": "8"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882870,
@@ -19576,7 +19774,73 @@
       },
       "uid": "s:600~l:740~e:401882870",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-07T10:20:54.893Z",
+        "lineups": [
+          {
+            "teamId": 1538,
+            "teamName": "Levante",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 93,
+            "teamName": "Athletic Club",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 1538,
+            "teamName": "Levante",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "0",
+              "totalGoals": "5",
+              "goalAssists": "3",
+              "goalsConceded": "5"
+            }
+          },
+          {
+            "teamId": 93,
+            "teamName": "Athletic Club",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "1",
+              "totalGoals": "6",
+              "goalAssists": "4",
+              "goalsConceded": "5"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882874,
@@ -66389,14 +66653,14 @@
   ],
   "injuries": [],
   "predictionBalance": {
-    "total": 28,
-    "correct": 9,
-    "incorrect": 19,
-    "accuracy": 32.14,
+    "total": 32,
+    "correct": 11,
+    "incorrect": 21,
+    "accuracy": 34.38,
     "bySign": {
       "1": {
-        "total": 10,
-        "correct": 5,
+        "total": 12,
+        "correct": 6,
         "accuracy": 50
       },
       "2": {
@@ -66405,109 +66669,109 @@
         "accuracy": 16.67
       },
       "X": {
-        "total": 12,
-        "correct": 3,
-        "accuracy": 25
+        "total": 14,
+        "correct": 4,
+        "accuracy": 28.57
       }
     },
     "byDifficulty": {
       "fácil": {
-        "total": 10,
-        "correct": 3,
-        "accuracy": 30
+        "total": 11,
+        "correct": 4,
+        "accuracy": 36.36
       },
       "media": {
-        "total": 4,
-        "correct": 2,
+        "total": 6,
+        "correct": 3,
         "accuracy": 50
       },
       "difícil": {
-        "total": 14,
+        "total": 15,
         "correct": 4,
-        "accuracy": 28.57
+        "accuracy": 26.67
       }
     }
   },
   "news": [
     {
-      "id": 49840233,
-      "headline": "BACK-TO-BACK GOALS 🤩 Athletic Club vs. Atletico Madrid",
-      "description": "BACK-TO-BACK GOALS 🤩 Athletic Club vs. Atletico Madrid ",
-      "published": "2026-09-05T22:31:11Z",
-      "link": "https://www.espn.com/video/clip/_/id/49840233/back-back-goals-athletic-club-vs-atletico-madrid",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0905/ss_20260905_181214461_36486991107/ss_20260905_181214461_36486991107.jpg"
+      "id": 49854032,
+      "headline": "Valencia fans slam owner Peter Lim, club 'mercenaries'",
+      "description": "Valencia fans protested Sunday against club officials and players after a demoralizing 5-0 home loss to Barcelona in LaLiga.",
+      "published": "2026-09-07T02:18:15Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49854032/valencia-fans-slam-owner-peter-lim-club-mercenaries",
+      "image": "https://a.espncdn.com/photo/2026/0907/r1712569_1296x729_16-9.jpg"
     },
     {
-      "id": 49839412,
-      "headline": "Adama Traore scores ridiculous own goal in Deportivo's win over Villarreal",
-      "description": "Adama Traore scores ridiculous own goal in Deportivo's win over Villarreal",
-      "published": "2026-09-05T21:07:23Z",
-      "link": "https://www.espn.com/video/clip/_/id/49839412/adama-traore-scores-ridiculous-own-goal-deportivo-win-villarreal",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0905/dm_260905_COM_SOC_Highlight_Adama_Traore_scores_ridiculous_own_goal_in_Deportivos_win_over_Villarreal_2026/dm_260905_COM_SOC_Highlight_Adama_Traore_scores_ridiculous_own_goal_in_Deportivos_win_over_Villarreal_2026.jpg"
+      "id": 49852515,
+      "headline": "Espanyol vs. Sevilla - Game Highlights",
+      "description": "Watch the Game Highlights from Espanyol vs. Sevilla, 09/06/2026",
+      "published": "2026-09-06T21:12:48Z",
+      "link": "https://www.espn.com/video/clip/_/id/49852515/espanyol-vs-sevilla-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0906/5401bf21-c8d8-4237-9def-18b0e8eac803/5401bf21-c8d8-4237-9def-18b0e8eac803.jpg"
     },
     {
-      "id": 49839400,
-      "headline": "Villarreal vs. Deportivo La Coruña - Game Highlights",
-      "description": "Watch the Game Highlights from Villarreal vs. Deportivo La Coruña, 09/05/2026",
-      "published": "2026-09-05T21:06:24Z",
-      "link": "https://www.espn.com/video/clip/_/id/49839400/villarreal-vs-deportivo-la-coruna-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0905/28cbcaa0-f1a2-45b7-85fd-b0e80ada14c4/28cbcaa0-f1a2-45b7-85fd-b0e80ada14c4.jpg"
+      "id": 49851058,
+      "headline": "Málaga vs. Levante - Game Highlights",
+      "description": "Watch the Game Highlights from Málaga vs. Levante, 09/06/2026",
+      "published": "2026-09-06T18:42:54Z",
+      "link": "https://www.espn.com/video/clip/_/id/49851058/malaga-vs-levante-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0906/93bec655-ad32-44e0-abb7-efd22556e4ee/93bec655-ad32-44e0-abb7-efd22556e4ee.jpg"
     },
     {
-      "id": 49838222,
-      "headline": "Atlético Madrid 'need' Julián Álvarez's goals - Marcos Llorente",
-      "description": "Marcos Llorente told ESPN that Atletico Madrid need Julián Álvarez to start scoring after the team suffered a shock 3-0 defeat at Athletic Club in LaLiga on Saturday.",
-      "published": "2026-09-05T19:35:44Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49838222/julian-alvarez-atletico-madrid-marcos-llorente-spanish-la-liga",
-      "image": "https://a.espncdn.com/photo/2026/0905/r1711896_2_1296x729_16-9.jpg"
+      "id": 49851035,
+      "headline": "Alavés vs. Osasuna - Game Highlights",
+      "description": "Watch the Game Highlights from Alavés vs. Osasuna, 09/06/2026",
+      "published": "2026-09-06T18:38:11Z",
+      "link": "https://www.espn.com/video/clip/_/id/49851035/alaves-vs-osasuna-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0906/ce9890a3-e8e8-4293-8998-5ec7b0acfab2/ce9890a3-e8e8-4293-8998-5ec7b0acfab2.jpg"
     },
     {
-      "id": 49838123,
-      "headline": "Rayo Vallecano vs. Racing Santander - Game Highlights",
-      "description": "Watch the Game Highlights from Rayo Vallecano vs. Racing Santander, 09/05/2026",
-      "published": "2026-09-05T18:39:51Z",
-      "link": "https://www.espn.com/video/clip/_/id/49838123/rayo-vallecano-vs-racing-santander-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0905/0af2621f-bc14-452d-a480-a4da30a441e1/0af2621f-bc14-452d-a480-a4da30a441e1.jpg"
+      "id": 49850666,
+      "headline": "Hansi Flick after Barcelona 5-0 win: 'Nearly perfect' but can be 'better'",
+      "description": "Barcelona coach Hansi Flick lauded a \"nearly perfect\" performance but warned the Spanish champions can still get better after thrashing Valencia 5-0 at Mestalla on Sunday.",
+      "published": "2026-09-06T18:11:51Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49850666/hansi-flick-barcelona-5-0-win-nearly-perfect-better",
+      "image": "https://a.espncdn.com/photo/2026/0906/r1712385_594x334_16-9.jpg"
     },
     {
-      "id": 49818823,
-      "headline": "Nico Williams helps Athletic Club to resounding win over Atlético Madrid",
-      "description": "Nico Williams scored his first goal of the season to help Athletic Bilbao consign Atlético Madrid to a 3-0 defeat in LaLiga.",
-      "published": "2026-09-05T17:22:23Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882895",
-      "image": "https://a.espncdn.com/photo/2026/0905/r1711846_1296x729_16-9.jpg"
+      "id": 49849938,
+      "headline": "Garcia expects Lamine Yamal to win Ballon d'Or 'very soon'",
+      "description": "Garcia expects Lamine Yamal to win Ballon d'Or 'very soon'",
+      "published": "2026-09-06T16:52:33Z",
+      "link": "https://www.espn.com/video/clip/_/id/49849938/garcia-expects-lamine-yamal-win-ballon-dor-very-soon",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0906/dm_260906_COM_SOC_Analysis_Garcia_expects_Lamine_Yamal_to_win_Ballon_dOr_very_soon_20260906_GLOBAL/dm_260906_COM_SOC_Analysis_Garcia_expects_Lamine_Yamal_to_win_Ballon_dOr_very_soon_20260906_GLOBAL.jpg"
     }
   ],
   "modelLearning": {
     "version": "3.0",
-    "totalEvaluated": 28,
-    "correct": 9,
-    "accuracy": 32.14,
+    "totalEvaluated": 32,
+    "correct": 11,
+    "accuracy": 34.38,
     "variables": {
       "form": {
-        "samples": 28,
-        "correct": 9,
-        "accuracy": 32.14
+        "samples": 32,
+        "correct": 11,
+        "accuracy": 34.38
       },
       "attackDefense": {
-        "samples": 28,
-        "correct": 9,
-        "accuracy": 32.14
+        "samples": 32,
+        "correct": 11,
+        "accuracy": 34.38
       },
       "goalkeeper": {
-        "samples": 28,
-        "correct": 9,
-        "accuracy": 32.14
+        "samples": 32,
+        "correct": 11,
+        "accuracy": 34.38
       },
       "formation": {
-        "samples": 28,
-        "correct": 9,
-        "accuracy": 32.14
+        "samples": 32,
+        "correct": 11,
+        "accuracy": 34.38
       },
       "injuries": {
-        "samples": 28,
-        "correct": 9,
-        "accuracy": 32.14
+        "samples": 32,
+        "correct": 11,
+        "accuracy": 34.38
       }
     },
     "notes": [
