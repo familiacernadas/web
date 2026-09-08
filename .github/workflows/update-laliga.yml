@@ -2,8 +2,8 @@ name: Actualizar LaLiga 2026-27
 
 on:
   workflow_dispatch:
-
   schedule:
+    # 05:17 UTC ≈ 07:17 en España peninsular durante horario de verano.
     - cron: "17 5 * * *"
 
 permissions:
@@ -14,45 +14,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Descargar repositorio
       - name: Descargar repositorio
         uses: actions/checkout@v5
 
-      # 2. Configurar Node.js
       - name: Configurar Node.js
         uses: actions/setup-node@v5
         with:
           node-version: 24
 
-      # 3. Actualizar datos
       - name: Actualizar datos LaLiga
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-        run: |
-          node scripts/update_laliga.mjs
+        run: node scripts/update_laliga.mjs
 
-      # 4. Comprobar que existe el JSON
-      - name: Comprobar datos generados
-        run: |
-          if [ ! -f data/laliga_2026_27.json ]; then
-            echo "ERROR: No se ha generado data/laliga_2026_27.json"
-            exit 1
-          fi
-
-          echo "JSON encontrado correctamente:"
-          ls -lh data/laliga_2026_27.json
-
-      # 5. Publicar cambios
       - name: Publicar JSON actualizado
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add data/laliga_2026_27.json
-
-          if git diff --cached --quiet; then
-            echo "No hay cambios en los datos de LaLiga."
-          else
-            git commit -m "Actualizar datos LaLiga 2026/27"
-            git push
-          fi
+          git diff --cached --quiet || git commit -m "Actualizar datos LaLiga 2026/27"
+          git push
