@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-07T10:20:54.895Z",
-    "requestsThisRun": 10,
+    "generatedAt": "2026-09-08T09:43:01.616Z",
+    "requestsThisRun": 8,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": true,
@@ -16087,8 +16087,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-09-07T17:00Z",
       "timestamp": 1788800400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Estadio Coliseum",
         "city": "Getafe"
@@ -16108,8 +16108,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         },
         "extratime": null,
         "penalty": null
@@ -16285,8 +16285,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-09-07T19:30Z",
       "timestamp": 1788809400,
-      "status": "STATUS_SCHEDULED",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "name": "Estadio Martínez Valero",
         "city": "Elche"
@@ -16306,8 +16306,8 @@
       "score": {
         "halftime": null,
         "fulltime": {
-          "home": 0,
-          "away": 0
+          "home": 2,
+          "away": 3
         },
         "extratime": null,
         "penalty": null
@@ -16408,7 +16408,7 @@
       },
       "uid": "s:600~l:740~e:401882893",
       "season": 2026,
-      "result": "X",
+      "result": "2",
       "details": {
         "updatedAt": "2026-08-29T11:40:23.829Z",
         "lineups": [
@@ -19972,7 +19972,73 @@
       },
       "uid": "s:600~l:740~e:401882874",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-08T09:43:01.442Z",
+        "lineups": [
+          {
+            "teamId": 244,
+            "teamName": "Real Betis",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 2922,
+            "teamName": "Getafe",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 244,
+            "teamName": "Real Betis",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "0",
+              "totalGoals": "5",
+              "goalAssists": "3",
+              "goalsConceded": "5"
+            }
+          },
+          {
+            "teamId": 2922,
+            "teamName": "Getafe",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-3",
+              "totalGoals": "2",
+              "goalAssists": "0",
+              "goalsConceded": "5"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882869,
@@ -20104,7 +20170,73 @@
       },
       "uid": "s:600~l:740~e:401882869",
       "season": 2026,
-      "result": "X"
+      "result": "X",
+      "details": {
+        "updatedAt": "2026-09-08T09:43:01.614Z",
+        "lineups": [
+          {
+            "teamId": 99,
+            "teamName": "Málaga",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 102,
+            "teamName": "Villarreal",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 99,
+            "teamName": "Málaga",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-6",
+              "totalGoals": "1",
+              "goalAssists": "0",
+              "goalsConceded": "7"
+            }
+          },
+          {
+            "teamId": 102,
+            "teamName": "Villarreal",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null,
+            "raw": {
+              "goalDifference": "-2",
+              "totalGoals": "6",
+              "goalAssists": "3",
+              "goalsConceded": "8"
+            }
+          }
+        ],
+        "players": [],
+        "events": [],
+        "formations": [],
+        "goalkeepers": [],
+        "injuries": []
+      }
     },
     {
       "id": 401882862,
@@ -66653,15 +66785,15 @@
   ],
   "injuries": [],
   "predictionBalance": {
-    "total": 32,
+    "total": 34,
     "correct": 11,
-    "incorrect": 21,
-    "accuracy": 34.38,
+    "incorrect": 23,
+    "accuracy": 32.35,
     "bySign": {
       "1": {
-        "total": 12,
+        "total": 14,
         "correct": 6,
-        "accuracy": 50
+        "accuracy": 42.86
       },
       "2": {
         "total": 6,
@@ -66676,14 +66808,14 @@
     },
     "byDifficulty": {
       "fácil": {
-        "total": 11,
+        "total": 12,
         "correct": 4,
-        "accuracy": 36.36
+        "accuracy": 33.33
       },
       "media": {
-        "total": 6,
+        "total": 7,
         "correct": 3,
-        "accuracy": 50
+        "accuracy": 42.86
       },
       "difícil": {
         "total": 15,
@@ -66694,84 +66826,84 @@
   },
   "news": [
     {
-      "id": 49854032,
-      "headline": "Valencia fans slam owner Peter Lim, club 'mercenaries'",
-      "description": "Valencia fans protested Sunday against club officials and players after a demoralizing 5-0 home loss to Barcelona in LaLiga.",
-      "published": "2026-09-07T02:18:15Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49854032/valencia-fans-slam-owner-peter-lim-club-mercenaries",
-      "image": "https://a.espncdn.com/photo/2026/0907/r1712569_1296x729_16-9.jpg"
+      "id": 49866936,
+      "headline": "José Mourinho backs Endrick for Real Madrid breakthrough after summer transfer block",
+      "description": "Brazilian forward Endrick will get his time to shine at Real Madrid, according to his coach Jose Mourinho.",
+      "published": "2026-09-08T09:21:20Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49866936/jose-mourinho-backs-endrick-real-madrid-breakthrough-summer-transfer-block",
+      "image": "https://a.espncdn.com/photo/2026/0908/r1713127_1296x729_16-9.jpg"
     },
     {
-      "id": 49852515,
-      "headline": "Espanyol vs. Sevilla - Game Highlights",
-      "description": "Watch the Game Highlights from Espanyol vs. Sevilla, 09/06/2026",
-      "published": "2026-09-06T21:12:48Z",
-      "link": "https://www.espn.com/video/clip/_/id/49852515/espanyol-vs-sevilla-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0906/5401bf21-c8d8-4237-9def-18b0e8eac803/5401bf21-c8d8-4237-9def-18b0e8eac803.jpg"
+      "id": 49866443,
+      "headline": "Transfer rumors, news: Arsenal set for Rice talks to ward off Real Madrid interest",
+      "description": "Real Madrid are eyeing up Declan Rice, but Arsenal are making moves to keep him. Transfer Talk has the latest.",
+      "published": "2026-09-08T07:35:04Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49866443/transfer-rumors-news-arsenal-set-declan-rice-talks-real-madrid-interest",
+      "image": "https://a.espncdn.com/photo/2026/0908/r1713118_1296x729_16-9.jpg"
     },
     {
-      "id": 49851058,
-      "headline": "Málaga vs. Levante - Game Highlights",
-      "description": "Watch the Game Highlights from Málaga vs. Levante, 09/06/2026",
-      "published": "2026-09-06T18:42:54Z",
-      "link": "https://www.espn.com/video/clip/_/id/49851058/malaga-vs-levante-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0906/93bec655-ad32-44e0-abb7-efd22556e4ee/93bec655-ad32-44e0-abb7-efd22556e4ee.jpg"
+      "id": 49862804,
+      "headline": "Serie A Weekend Reaction: Can Roma challenge Inter for the title?",
+      "description": "Serie A Weekend Reaction: Can Roma challenge Inter for the title?",
+      "published": "2026-09-07T22:42:26Z",
+      "link": "https://www.espn.com/video/clip/_/id/49862804/roma-challenge-inter-title",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0907/ss_20260907_175109503_36520361120/ss_20260907_175109503_36520361120.jpg"
     },
     {
-      "id": 49851035,
-      "headline": "Alavés vs. Osasuna - Game Highlights",
-      "description": "Watch the Game Highlights from Alavés vs. Osasuna, 09/06/2026",
-      "published": "2026-09-06T18:38:11Z",
-      "link": "https://www.espn.com/video/clip/_/id/49851035/alaves-vs-osasuna-game-highlights",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0906/ce9890a3-e8e8-4293-8998-5ec7b0acfab2/ce9890a3-e8e8-4293-8998-5ec7b0acfab2.jpg"
+      "id": 49862682,
+      "headline": "Elche vs. Real Sociedad - Game Highlights",
+      "description": "Watch the Game Highlights from Elche vs. Real Sociedad, 09/07/2026",
+      "published": "2026-09-07T21:33:54Z",
+      "link": "https://www.espn.com/video/clip/_/id/49862682/elche-vs-real-sociedad-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0907/637d7635-1646-4908-acd0-d94cdc77245b/637d7635-1646-4908-acd0-d94cdc77245b.jpg"
     },
     {
-      "id": 49850666,
-      "headline": "Hansi Flick after Barcelona 5-0 win: 'Nearly perfect' but can be 'better'",
-      "description": "Barcelona coach Hansi Flick lauded a \"nearly perfect\" performance but warned the Spanish champions can still get better after thrashing Valencia 5-0 at Mestalla on Sunday.",
-      "published": "2026-09-06T18:11:51Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49850666/hansi-flick-barcelona-5-0-win-nearly-perfect-better",
-      "image": "https://a.espncdn.com/photo/2026/0906/r1712385_594x334_16-9.jpg"
+      "id": 49861576,
+      "headline": "Getafe vs. Celta Vigo - Game Highlights",
+      "description": "Watch the Game Highlights from Getafe vs. Celta Vigo, 09/07/2026",
+      "published": "2026-09-07T19:16:36Z",
+      "link": "https://www.espn.com/video/clip/_/id/49861576/getafe-vs-celta-vigo-game-highlights",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0907/f88e803d-3c9a-4023-beae-c08d141bc8ef/f88e803d-3c9a-4023-beae-c08d141bc8ef.jpg"
     },
     {
-      "id": 49849938,
-      "headline": "Garcia expects Lamine Yamal to win Ballon d'Or 'very soon'",
-      "description": "Garcia expects Lamine Yamal to win Ballon d'Or 'very soon'",
-      "published": "2026-09-06T16:52:33Z",
-      "link": "https://www.espn.com/video/clip/_/id/49849938/garcia-expects-lamine-yamal-win-ballon-dor-very-soon",
-      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0906/dm_260906_COM_SOC_Analysis_Garcia_expects_Lamine_Yamal_to_win_Ballon_dOr_very_soon_20260906_GLOBAL/dm_260906_COM_SOC_Analysis_Garcia_expects_Lamine_Yamal_to_win_Ballon_dOr_very_soon_20260906_GLOBAL.jpg"
+      "id": 49859683,
+      "headline": "Mbappe backs himself as the best in the world",
+      "description": "Mbappe backs himself as the best in the world",
+      "published": "2026-09-07T14:29:01Z",
+      "link": "https://www.espn.com/video/clip/_/id/49859683/mbappe-backs-best-world",
+      "image": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0907/dm_260907_Mbappe_backs_himself_as_the_best_in_the_world/dm_260907_Mbappe_backs_himself_as_the_best_in_the_world.jpg"
     }
   ],
   "modelLearning": {
     "version": "3.0",
-    "totalEvaluated": 32,
+    "totalEvaluated": 34,
     "correct": 11,
-    "accuracy": 34.38,
+    "accuracy": 32.35,
     "variables": {
       "form": {
-        "samples": 32,
+        "samples": 34,
         "correct": 11,
-        "accuracy": 34.38
+        "accuracy": 32.35
       },
       "attackDefense": {
-        "samples": 32,
+        "samples": 34,
         "correct": 11,
-        "accuracy": 34.38
+        "accuracy": 32.35
       },
       "goalkeeper": {
-        "samples": 32,
+        "samples": 34,
         "correct": 11,
-        "accuracy": 34.38
+        "accuracy": 32.35
       },
       "formation": {
-        "samples": 32,
+        "samples": 34,
         "correct": 11,
-        "accuracy": 34.38
+        "accuracy": 32.35
       },
       "injuries": {
-        "samples": 32,
+        "samples": 34,
         "correct": 11,
-        "accuracy": 34.38
+        "accuracy": 32.35
       }
     },
     "notes": [
