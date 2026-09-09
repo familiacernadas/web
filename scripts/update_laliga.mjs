@@ -4915,7 +4915,20 @@ function updatePredictions(
         }
 
         /*
-         * No pronosticamos partidos ya iniciados.
+         * ========================================================
+         * PARTIDOS YA INICIADOS / TERMINADOS
+         * ========================================================
+         *
+         * Si el partido ya comenzó:
+         *
+         * - NO recalculamos el pronóstico.
+         * - Si ya existía, lo conservamos.
+         * - Esto permite utilizar posteriormente el pronóstico
+         *   histórico para calcular el balance.
+         *
+         * Si por alguna razón un partido antiguo no tiene
+         * pronóstico, NO lo generamos ahora, porque eso introduciría
+         * información posterior al inicio del partido en el modelo.
          */
 
         if (
@@ -4933,15 +4946,19 @@ function updatePredictions(
             ) / 3600;
 
         /*
-         * El pronóstico se congela 12 horas antes.
+         * ========================================================
+         * PARTIDOS FUTUROS
+         * ========================================================
+         *
+         * Generamos el pronóstico únicamente con información
+         * disponible antes del partido.
+         *
+         * Una vez creado, el pronóstico queda congelado 12 horas
+         * antes del comienzo.
          */
 
         if (
-            !match.prediction ||
-            (
-                !match.prediction.lockedAt &&
-                hours > 12
-            )
+            !match.prediction
         ) {
 
             const prediction =
@@ -4957,17 +4974,19 @@ function updatePredictions(
 
             }
 
-            if (
-                match.prediction &&
-                hours <= 12
-            ) {
+        }
 
-                match.prediction.lockedAt =
-                    new Date().toISOString();
+        /*
+         * --------------------------------------------------------
+         * BLOQUEO DEL PRONÓSTICO
+         * --------------------------------------------------------
+         *
+         * A partir de 12 horas antes del partido no se vuelve
+         * a modificar el pronóstico.
+         */
 
-            }
-
-        } else if (
+        if (
+            match.prediction &&
             !match.prediction.lockedAt &&
             hours <= 12
         ) {
