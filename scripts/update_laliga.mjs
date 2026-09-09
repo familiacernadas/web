@@ -3937,27 +3937,21 @@ function updatePredictionBalance(data) {
         bySign: {
 
             "1": {
-
                 total: 0,
-
-                correct: 0
-
+                correct: 0,
+                accuracy: 0
             },
 
             "X": {
-
                 total: 0,
-
-                correct: 0
-
+                correct: 0,
+                accuracy: 0
             },
 
             "2": {
-
                 total: 0,
-
-                correct: 0
-
+                correct: 0,
+                accuracy: 0
             }
 
         },
@@ -3965,47 +3959,45 @@ function updatePredictionBalance(data) {
         byDifficulty: {
 
             "fácil": {
-
                 total: 0,
-
-                correct: 0
-
+                correct: 0,
+                accuracy: 0
             },
 
             "media": {
-
                 total: 0,
-
-                correct: 0
-
+                correct: 0,
+                accuracy: 0
             },
 
             "difícil": {
-
                 total: 0,
-
-                correct: 0
-
+                correct: 0,
+                accuracy: 0
             }
 
-        }
+        },
+
+        byRound: {}
 
     };
+
 
     for (
         const match
         of data.matches
     ) {
 
+        /*
+         * Solo evaluamos partidos que:
+         *
+         * 1. Tengan pronóstico.
+         * 2. Hayan terminado.
+         * 3. Tengan resultado real.
+         */
+
         if (
-            !match.prediction?.sign
-        ) {
-
-            continue;
-
-        }
-
-        if (
+            !match.prediction?.sign ||
             !isFinishedMatch(match)
         ) {
 
@@ -4013,9 +4005,11 @@ function updatePredictionBalance(data) {
 
         }
 
+
         const real =
             match.result ||
             getResult(match);
+
 
         if (!real) {
 
@@ -4023,13 +4017,17 @@ function updatePredictionBalance(data) {
 
         }
 
+
         const prediction =
-            match.prediction.sign;
+            match.prediction;
+
 
         const correct =
-            prediction === real;
+            prediction.sign === real;
+
 
         balance.total++;
+
 
         if (correct) {
 
@@ -4037,39 +4035,101 @@ function updatePredictionBalance(data) {
 
         }
 
+
+        // ----------------------------------------------------
+        // POR SIGNO
+        // ----------------------------------------------------
+
         if (
-            balance.bySign[prediction]
+            balance.bySign[prediction.sign]
         ) {
 
-            balance.bySign[prediction].total++;
+            balance.bySign[
+                prediction.sign
+            ].total++;
+
 
             if (correct) {
 
-                balance.bySign[prediction].correct++;
+                balance.bySign[
+                    prediction.sign
+                ].correct++;
 
             }
 
         }
 
+
+        // ----------------------------------------------------
+        // POR DIFICULTAD
+        // ----------------------------------------------------
+
         const difficulty =
-            match.prediction.difficulty ||
+            prediction.difficulty ||
             "media";
+
 
         if (
             balance.byDifficulty[difficulty]
         ) {
 
-            balance.byDifficulty[difficulty].total++;
+            balance.byDifficulty[
+                difficulty
+            ].total++;
+
 
             if (correct) {
 
-                balance.byDifficulty[difficulty].correct++;
+                balance.byDifficulty[
+                    difficulty
+                ].correct++;
 
             }
 
         }
 
+
+        // ----------------------------------------------------
+        // POR JORNADA
+        // ----------------------------------------------------
+
+        const round =
+            match.round ||
+            "Sin jornada";
+
+
+        if (
+            !balance.byRound[round]
+        ) {
+
+            balance.byRound[round] = {
+
+                total: 0,
+
+                correct: 0,
+
+                accuracy: 0
+
+            };
+
+        }
+
+
+        balance.byRound[round].total++;
+
+
+        if (correct) {
+
+            balance.byRound[round].correct++;
+
+        }
+
     }
+
+
+    // --------------------------------------------------------
+    // PRECISIÓN GENERAL
+    // --------------------------------------------------------
 
     balance.accuracy =
         balance.total
@@ -4081,6 +4141,76 @@ function updatePredictionBalance(data) {
                 ).toFixed(2)
             )
             : 0;
+
+
+    // --------------------------------------------------------
+    // PRECISIÓN POR SIGNO
+    // --------------------------------------------------------
+
+    for (
+        const group
+        of Object.values(balance.bySign)
+    ) {
+
+        group.accuracy =
+            group.total
+                ? Number(
+                    (
+                        group.correct /
+                        group.total *
+                        100
+                    ).toFixed(2)
+                )
+                : 0;
+
+    }
+
+
+    // --------------------------------------------------------
+    // PRECISIÓN POR DIFICULTAD
+    // --------------------------------------------------------
+
+    for (
+        const group
+        of Object.values(balance.byDifficulty)
+    ) {
+
+        group.accuracy =
+            group.total
+                ? Number(
+                    (
+                        group.correct /
+                        group.total *
+                        100
+                    ).toFixed(2)
+                )
+                : 0;
+
+    }
+
+
+    // --------------------------------------------------------
+    // PRECISIÓN POR JORNADA
+    // --------------------------------------------------------
+
+    for (
+        const group
+        of Object.values(balance.byRound)
+    ) {
+
+        group.accuracy =
+            group.total
+                ? Number(
+                    (
+                        group.correct /
+                        group.total *
+                        100
+                    ).toFixed(2)
+                )
+                : 0;
+
+    }
+
 
     data.predictionBalance =
         balance;
