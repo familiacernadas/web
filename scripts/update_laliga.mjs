@@ -604,10 +604,10 @@ function normalizeESPNEvent(event) {
                 : event.id,
 
         round:
-            event?.season?.slug ||
-            event?.week?.text ||
-            event?.league?.round ||
-            null,
+    event?.week?.text ||
+    event?.league?.round ||
+    event?.season?.slug ||
+    null,
 
         date:
             event.date || null,
