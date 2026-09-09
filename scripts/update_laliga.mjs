@@ -1634,12 +1634,17 @@ function teamMetrics(
             beforeTimestamp
         );
 
+    // --------------------------------------------------------
+    // FILTRO LOCAL / VISITANTE
+    // --------------------------------------------------------
+
     if (venue === "home") {
 
         matches =
             matches.filter(
                 match =>
-                    match.home?.id === teamId
+                    Number(match.home?.id) ===
+                    Number(teamId)
             );
 
     }
@@ -1649,16 +1654,26 @@ function teamMetrics(
         matches =
             matches.filter(
                 match =>
-                    match.away?.id === teamId
+                    Number(match.away?.id) ===
+                    Number(teamId)
             );
 
     }
+
+    // --------------------------------------------------------
+    // ÚLTIMOS PARTIDOS
+    // --------------------------------------------------------
 
     const last5 =
         matches.slice(-5);
 
     const last10 =
         matches.slice(-10);
+
+
+    // ========================================================
+    // AGREGACIÓN ESTADÍSTICA
+    // ========================================================
 
     function aggregate(list) {
 
@@ -1674,23 +1689,34 @@ function teamMetrics(
 
         let losses = 0;
 
+        let cleanSheets = 0;
+
+        let scoredMatches = 0;
+
+        let concededMatches = 0;
+
+
         for (
             const match
             of list
         ) {
 
             const isHome =
-                match.home?.id === teamId;
+                Number(match.home?.id) ===
+                Number(teamId);
+
 
             const scored =
                 isHome
                     ? match.score?.fulltime?.home
                     : match.score?.fulltime?.away;
 
+
             const conceded =
                 isHome
                     ? match.score?.fulltime?.away
                     : match.score?.fulltime?.home;
+
 
             if (
                 scored === null ||
@@ -1703,18 +1729,33 @@ function teamMetrics(
 
             }
 
-            gf += number(scored);
 
-            ga += number(conceded);
+            const goalsFor =
+                number(scored);
 
-            if (scored > conceded) {
+            const goalsAgainst =
+                number(conceded);
+
+
+            gf += goalsFor;
+
+            ga += goalsAgainst;
+
+
+            // ------------------------------------------------
+            // RESULTADO
+            // ------------------------------------------------
+
+            if (
+                goalsFor > goalsAgainst
+            ) {
 
                 points += 3;
 
                 wins++;
 
             } else if (
-                scored === conceded
+                goalsFor === goalsAgainst
             ) {
 
                 points++;
@@ -1727,58 +1768,445 @@ function teamMetrics(
 
             }
 
+
+            // ------------------------------------------------
+            // PORTERÍA A CERO
+            // ------------------------------------------------
+
+            if (
+                goalsAgainst === 0
+            ) {
+
+                cleanSheets++;
+
+            }
+
+
+            // ------------------------------------------------
+            // MARCÓ AL MENOS UN GOL
+            // ------------------------------------------------
+
+            if (
+                goalsFor > 0
+            ) {
+
+                scoredMatches++;
+
+            }
+
+
+            // ------------------------------------------------
+            // RECIBIÓ AL MENOS UN GOL
+            // ------------------------------------------------
+
+            if (
+                goalsAgainst > 0
+            ) {
+
+                concededMatches++;
+
+            }
+
         }
+
+
+        const played =
+            list.length;
+
 
         return {
 
             matches:
-                list.length,
+                played,
 
             gf,
 
             ga,
 
             gfPerGame:
-                list.length
-                    ? gf / list.length
+                played
+                    ? Number(
+                        (
+                            gf /
+                            played
+                        ).toFixed(3)
+                    )
                     : 0,
 
             gaPerGame:
-                list.length
-                    ? ga / list.length
+                played
+                    ? Number(
+                        (
+                            ga /
+                            played
+                        ).toFixed(3)
+                    )
                     : 0,
+
+            goalDifference:
+                gf - ga,
 
             points,
 
             pointsPerGame:
-                list.length
-                    ? points / list.length
+                played
+                    ? Number(
+                        (
+                            points /
+                            played
+                        ).toFixed(3)
+                    )
                     : 0,
 
             wins,
 
             draws,
 
-            losses
+            losses,
+
+            winPercentage:
+                played
+                    ? Number(
+                        (
+                            wins /
+                            played *
+                            100
+                        ).toFixed(2)
+                    )
+                    : 0,
+
+            drawPercentage:
+                played
+                    ? Number(
+                        (
+                            draws /
+                            played *
+                            100
+                        ).toFixed(2)
+                    )
+                    : 0,
+
+            lossPercentage:
+                played
+                    ? Number(
+                        (
+                            losses /
+                            played *
+                            100
+                        ).toFixed(2)
+                    )
+                    : 0,
+
+            cleanSheets,
+
+            cleanSheetPercentage:
+                played
+                    ? Number(
+                        (
+                            cleanSheets /
+                            played *
+                            100
+                        ).toFixed(2)
+                    )
+                    : 0,
+
+            scoredMatches,
+
+            scoredPercentage:
+                played
+                    ? Number(
+                        (
+                            scoredMatches /
+                            played *
+                            100
+                        ).toFixed(2)
+                    )
+                    : 0,
+
+            concededMatches,
+
+            concededPercentage:
+                played
+                    ? Number(
+                        (
+                            concededMatches /
+                            played *
+                            100
+                        ).toFixed(2)
+                    )
+                    : 0
 
         };
 
     }
 
+
+    // ========================================================
+    // PONDERACIÓN POR RECENCIA
+    // ========================================================
+
+    /*
+     * Los partidos recientes tienen más valor para el modelo.
+     *
+     * Peso:
+     *
+     * Partido más reciente  -> 1.00
+     * Anteriores            -> progresivamente menor
+     *
+     * Esto permite que una racha reciente de un equipo tenga
+     * más influencia que resultados de hace varios meses.
+     */
+
+    function recentForm(list) {
+
+        if (!list.length) {
+
+            return {
+
+                weightedPoints: 0,
+
+                weightedGoalsFor: 0,
+
+                weightedGoalsAgainst: 0,
+
+                weightedGoalDifference: 0,
+
+                sample: 0
+
+            };
+
+        }
+
+
+        let weightedPoints = 0;
+
+        let weightedGoalsFor = 0;
+
+        let weightedGoalsAgainst = 0;
+
+        let totalWeight = 0;
+
+
+        list.forEach(
+            (match, index) => {
+
+                const isHome =
+                    Number(match.home?.id) ===
+                    Number(teamId);
+
+
+                const scored =
+                    isHome
+                        ? match.score?.fulltime?.home
+                        : match.score?.fulltime?.away;
+
+
+                const conceded =
+                    isHome
+                        ? match.score?.fulltime?.away
+                        : match.score?.fulltime?.home;
+
+
+                if (
+                    scored === null ||
+                    conceded === null ||
+                    scored === undefined ||
+                    conceded === undefined
+                ) {
+
+                    return;
+
+                }
+
+
+                /*
+                 * El índice mayor corresponde al partido
+                 * más reciente.
+                 *
+                 * Los pesos van de 0.60 a 1.00.
+                 */
+
+                const weight =
+                    0.60 +
+                    (
+                        0.40 *
+                        (
+                            (index + 1) /
+                            list.length
+                        )
+                    );
+
+
+                const gf =
+                    number(scored);
+
+                const ga =
+                    number(conceded);
+
+
+                let pts = 0;
+
+
+                if (gf > ga) {
+
+                    pts = 3;
+
+                } else if (
+                    gf === ga
+                ) {
+
+                    pts = 1;
+
+                }
+
+
+                weightedPoints +=
+                    pts * weight;
+
+                weightedGoalsFor +=
+                    gf * weight;
+
+                weightedGoalsAgainst +=
+                    ga * weight;
+
+                totalWeight +=
+                    weight;
+
+            }
+        );
+
+
+        if (!totalWeight) {
+
+            return {
+
+                weightedPoints: 0,
+
+                weightedGoalsFor: 0,
+
+                weightedGoalsAgainst: 0,
+
+                weightedGoalDifference: 0,
+
+                sample: 0
+
+            };
+
+        }
+
+
+        const goalsFor =
+            weightedGoalsFor /
+            totalWeight;
+
+        const goalsAgainst =
+            weightedGoalsAgainst /
+            totalWeight;
+
+
+        return {
+
+            weightedPoints:
+                Number(
+                    (
+                        weightedPoints /
+                        totalWeight
+                    ).toFixed(3)
+                ),
+
+            weightedGoalsFor:
+                Number(
+                    goalsFor.toFixed(3)
+                ),
+
+            weightedGoalsAgainst:
+                Number(
+                    goalsAgainst.toFixed(3)
+                ),
+
+            weightedGoalDifference:
+                Number(
+                    (
+                        goalsFor -
+                        goalsAgainst
+                    ).toFixed(3)
+                ),
+
+            sample:
+                list.length
+
+        };
+
+    }
+
+
+    // ========================================================
+    // RESULTADOS AGREGADOS
+    // ========================================================
+
+    const last5Stats =
+        aggregate(last5);
+
+    const last10Stats =
+        aggregate(last10);
+
+    const venueStats =
+        aggregate(matches);
+
+
+    // ========================================================
+    // FORMA PONDERADA
+    // ========================================================
+
+    const last5Weighted =
+        recentForm(last5);
+
+    const last10Weighted =
+        recentForm(last10);
+
+
+    // ========================================================
+    // DEVOLVER PERFIL COMPLETO
+    // ========================================================
+
     return {
 
         last5:
-            aggregate(last5),
+            last5Stats,
 
         last10:
-            aggregate(last10),
+            last10Stats,
 
         venue:
-            aggregate(matches)
+            venueStats,
+
+        recentWeighted: {
+
+            last5:
+                last5Weighted,
+
+            last10:
+                last10Weighted
+
+        },
+
+        sample: {
+
+            totalMatches:
+                matches.length,
+
+            last5:
+                last5.length,
+
+            last10:
+                last10.length
+
+        }
 
     };
 
 }
+
 
 // ============================================================
 // PORTEROS
@@ -1796,6 +2224,9 @@ function goalkeeperMetrics(
 
     let appearances = 0;
 
+    let cleanSheets = 0;
+
+
     for (
         const match
         of data.matches
@@ -1811,6 +2242,7 @@ function goalkeeperMetrics(
 
         }
 
+
         if (
             !isFinishedMatch(match)
         ) {
@@ -1819,14 +2251,17 @@ function goalkeeperMetrics(
 
         }
 
+
         const players =
             match.details?.players;
+
 
         if (!players) {
 
             continue;
 
         }
+
 
         for (
             const team
@@ -1842,6 +2277,7 @@ function goalkeeperMetrics(
 
             }
 
+
             for (
                 const player
                 of team.players || []
@@ -1850,11 +2286,13 @@ function goalkeeperMetrics(
                 const stat =
                     player.statistics?.[0];
 
+
                 if (!stat) {
 
                     continue;
 
                 }
+
 
                 const position =
                     String(
@@ -1862,6 +2300,7 @@ function goalkeeperMetrics(
                         ""
                     )
                     .toLowerCase();
+
 
                 if (
                     ![
@@ -1874,17 +2313,37 @@ function goalkeeperMetrics(
 
                 }
 
+
                 appearances++;
 
-                saves +=
+
+                const playerSaves =
                     number(
                         stat.goals?.saves
                     );
 
-                conceded +=
+
+                const playerConceded =
                     number(
                         stat.goals?.conceded
                     );
+
+
+                saves +=
+                    playerSaves;
+
+
+                conceded +=
+                    playerConceded;
+
+
+                if (
+                    playerConceded === 0
+                ) {
+
+                    cleanSheets++;
+
+                }
 
             }
 
@@ -1892,8 +2351,43 @@ function goalkeeperMetrics(
 
     }
 
+
+    // ========================================================
+    // PORCENTAJE DE PARADAS
+    // ========================================================
+
     const shots =
-        saves + conceded;
+        saves +
+        conceded;
+
+
+    const savePercentage =
+        shots
+            ? Number(
+                (
+                    saves /
+                    shots *
+                    100
+                ).toFixed(2)
+            )
+            : null;
+
+
+    // ========================================================
+    // PORCENTAJE DE PORTERÍAS A CERO
+    // ========================================================
+
+    const cleanSheetPercentage =
+        appearances
+            ? Number(
+                (
+                    cleanSheets /
+                    appearances *
+                    100
+                ).toFixed(2)
+            )
+            : null;
+
 
     return {
 
@@ -1905,20 +2399,16 @@ function goalkeeperMetrics(
 
         shots,
 
-        savePercentage:
-            shots
-                ? Number(
-                    (
-                        saves /
-                        shots *
-                        100
-                    ).toFixed(2)
-                )
-                : null
+        savePercentage,
+
+        cleanSheets,
+
+        cleanSheetPercentage
 
     };
 
 }
+
 
 // ============================================================
 // FORMACIONES
@@ -1931,6 +2421,11 @@ function formationMetrics(
 ) {
 
     const formations = {};
+
+
+    // --------------------------------------------------------
+    // RECORRER PARTIDOS ANTERIORES
+    // --------------------------------------------------------
 
     for (
         const match
@@ -1947,6 +2442,7 @@ function formationMetrics(
 
         }
 
+
         if (
             !isFinishedMatch(match)
         ) {
@@ -1955,8 +2451,10 @@ function formationMetrics(
 
         }
 
+
         const lineups =
             match.details?.lineups;
+
 
         if (!Array.isArray(lineups)) {
 
@@ -1964,12 +2462,14 @@ function formationMetrics(
 
         }
 
+
         const lineup =
             lineups.find(
                 x =>
                     Number(x.teamId) ===
                     Number(teamId)
             );
+
 
         if (
             !lineup?.formation
@@ -1979,8 +2479,23 @@ function formationMetrics(
 
         }
 
+
         const formation =
-            lineup.formation;
+            String(
+                lineup.formation
+            ).trim();
+
+
+        if (!formation) {
+
+            continue;
+
+        }
+
+
+        // ----------------------------------------------------
+        // CREAR REGISTRO DE FORMACIÓN
+        // ----------------------------------------------------
 
         if (!formations[formation]) {
 
@@ -1998,21 +2513,33 @@ function formationMetrics(
 
                 ga: 0,
 
-                points: 0
+                points: 0,
+
+                cleanSheets: 0,
+
+                scoredMatches: 0,
+
+                lastMatches: []
 
             };
 
         }
 
+
         const row =
             formations[formation];
 
-        row.matches++;
+
+        // ----------------------------------------------------
+        // LOCAL / VISITANTE
+        // ----------------------------------------------------
 
         const home =
             Number(
                 match.home?.id
-            ) === Number(teamId);
+            ) ===
+            Number(teamId);
+
 
         const gf =
             home
@@ -2027,6 +2554,7 @@ function formationMetrics(
                         ?.away
                 );
 
+
         const ga =
             home
                 ? number(
@@ -2040,11 +2568,30 @@ function formationMetrics(
                         ?.home
                 );
 
+
+        // ----------------------------------------------------
+        // ESTADÍSTICAS BÁSICAS
+        // ----------------------------------------------------
+
+        row.matches++;
+
         row.gf += gf;
 
         row.ga += ga;
 
-        if (gf > ga) {
+
+        // ----------------------------------------------------
+        // RESULTADO
+        // ----------------------------------------------------
+
+        let result = "X";
+
+
+        if (
+            gf > ga
+        ) {
+
+            result = "1";
 
             row.wins++;
 
@@ -2054,17 +2601,503 @@ function formationMetrics(
             gf === ga
         ) {
 
+            result = "X";
+
             row.draws++;
 
-            row.points++;
+            row.points += 1;
 
         } else {
+
+            result = "2";
 
             row.losses++;
 
         }
 
+
+        // ----------------------------------------------------
+        // PORTERÍA A CERO
+        // ----------------------------------------------------
+
+        if (
+            ga === 0
+        ) {
+
+            row.cleanSheets++;
+
+        }
+
+
+        // ----------------------------------------------------
+        // PARTIDO MARCANDO
+        // ----------------------------------------------------
+
+        if (
+            gf > 0
+        ) {
+
+            row.scoredMatches++;
+
+        }
+
+
+        // ----------------------------------------------------
+        // GUARDAR PARTIDO PARA ANALIZAR RECENCIA
+        // ----------------------------------------------------
+
+        row.lastMatches.push({
+
+            timestamp:
+                match.timestamp,
+
+            result,
+
+            gf,
+
+            ga,
+
+            points:
+                result === "1"
+                    ? 3
+                    : result === "X"
+                        ? 1
+                        : 0
+
+        });
+
     }
+
+
+    // ========================================================
+    // CALCULAR MÉTRICAS DE CADA FORMACIÓN
+    // ========================================================
+
+    for (
+        const formation
+        of Object.keys(formations)
+    ) {
+
+        const row =
+            formations[formation];
+
+
+        const matches =
+            row.matches;
+
+
+        // ----------------------------------------------------
+        // ÚLTIMOS 5 PARTIDOS CON ESTA FORMACIÓN
+        // ----------------------------------------------------
+
+        const recent =
+            row.lastMatches
+                .slice(-5);
+
+
+        let recentWins = 0;
+
+        let recentDraws = 0;
+
+        let recentLosses = 0;
+
+        let recentPoints = 0;
+
+        let recentGF = 0;
+
+        let recentGA = 0;
+
+
+        for (
+            const match
+            of recent
+        ) {
+
+            recentPoints +=
+                match.points;
+
+            recentGF +=
+                match.gf;
+
+            recentGA +=
+                match.ga;
+
+
+            if (
+                match.result === "1"
+            ) {
+
+                recentWins++;
+
+            } else if (
+                match.result === "X"
+            ) {
+
+                recentDraws++;
+
+            } else {
+
+                recentLosses++;
+
+            }
+
+        }
+
+
+        // ----------------------------------------------------
+        // PORCENTAJES GENERALES
+        // ----------------------------------------------------
+
+        row.winPercentage =
+            matches
+                ? Number(
+                    (
+                        row.wins /
+                        matches *
+                        100
+                    ).toFixed(2)
+                )
+                : 0;
+
+
+        row.drawPercentage =
+            matches
+                ? Number(
+                    (
+                        row.draws /
+                        matches *
+                        100
+                    ).toFixed(2)
+                )
+                : 0;
+
+
+        row.lossPercentage =
+            matches
+                ? Number(
+                    (
+                        row.losses /
+                        matches *
+                        100
+                    ).toFixed(2)
+                )
+                : 0;
+
+
+        // ----------------------------------------------------
+        // PUNTOS POR PARTIDO
+        // ----------------------------------------------------
+
+        row.pointsPerGame =
+            matches
+                ? Number(
+                    (
+                        row.points /
+                        matches
+                    ).toFixed(3)
+                )
+                : 0;
+
+
+        // ----------------------------------------------------
+        // GOLES POR PARTIDO
+        // ----------------------------------------------------
+
+        row.gfPerGame =
+            matches
+                ? Number(
+                    (
+                        row.gf /
+                        matches
+                    ).toFixed(3)
+                )
+                : 0;
+
+
+        row.gaPerGame =
+            matches
+                ? Number(
+                    (
+                        row.ga /
+                        matches
+                    ).toFixed(3)
+                )
+                : 0;
+
+
+        row.goalDifference =
+            row.gf -
+            row.ga;
+
+
+        row.goalDifferencePerGame =
+            matches
+                ? Number(
+                    (
+                        row.goalDifference /
+                        matches
+                    ).toFixed(3)
+                )
+                : 0;
+
+
+        // ----------------------------------------------------
+        // PORTERÍAS A CERO
+        // ----------------------------------------------------
+
+        row.cleanSheetPercentage =
+            matches
+                ? Number(
+                    (
+                        row.cleanSheets /
+                        matches *
+                        100
+                    ).toFixed(2)
+                )
+                : 0;
+
+
+        // ----------------------------------------------------
+        // PARTIDOS MARCANDO
+        // ----------------------------------------------------
+
+        row.scoredPercentage =
+            matches
+                ? Number(
+                    (
+                        row.scoredMatches /
+                        matches *
+                        100
+                    ).toFixed(2)
+                )
+                : 0;
+
+
+        // ----------------------------------------------------
+        // RENDIMIENTO ÚLTIMOS 5
+        // ----------------------------------------------------
+
+        row.recent5 = {
+
+            matches:
+                recent.length,
+
+            wins:
+                recentWins,
+
+            draws:
+                recentDraws,
+
+            losses:
+                recentLosses,
+
+            points:
+                recentPoints,
+
+            pointsPerGame:
+                recent.length
+                    ? Number(
+                        (
+                            recentPoints /
+                            recent.length
+                        ).toFixed(3)
+                    )
+                    : 0,
+
+            gf:
+                recentGF,
+
+            ga:
+                recentGA,
+
+            gfPerGame:
+                recent.length
+                    ? Number(
+                        (
+                            recentGF /
+                            recent.length
+                        ).toFixed(3)
+                    )
+                    : 0,
+
+            gaPerGame:
+                recent.length
+                    ? Number(
+                        (
+                            recentGA /
+                            recent.length
+                        ).toFixed(3)
+                    )
+                    : 0,
+
+            goalDifference:
+                recentGF -
+                recentGA,
+
+            winPercentage:
+                recent.length
+                    ? Number(
+                        (
+                            recentWins /
+                            recent.length *
+                            100
+                        ).toFixed(2)
+                    )
+                    : 0
+
+        };
+
+
+        // ----------------------------------------------------
+        // RENDIMIENTO PONDERADO POR RECENCIA
+        // ----------------------------------------------------
+
+        /*
+         * El partido más reciente tiene mayor peso.
+         *
+         * Primer partido:
+         * peso aproximado 0.60
+         *
+         * Último partido:
+         * peso 1.00
+         *
+         * Esto permite que una formación utilizada
+         * recientemente tenga mayor influencia.
+         */
+
+        let weightedPoints = 0;
+
+        let weightedGF = 0;
+
+        let weightedGA = 0;
+
+        let totalWeight = 0;
+
+
+        row.lastMatches.forEach(
+            (match, index) => {
+
+                const total =
+                    row.lastMatches.length;
+
+
+                if (!total) {
+
+                    return;
+
+                }
+
+
+                const weight =
+                    0.60 +
+                    (
+                        0.40 *
+                        (
+                            (index + 1) /
+                            total
+                        )
+                    );
+
+
+                weightedPoints +=
+                    match.points *
+                    weight;
+
+
+                weightedGF +=
+                    match.gf *
+                    weight;
+
+
+                weightedGA +=
+                    match.ga *
+                    weight;
+
+
+                totalWeight +=
+                    weight;
+
+            }
+        );
+
+
+        row.recentWeighted = {
+
+            pointsPerGame:
+                totalWeight
+                    ? Number(
+                        (
+                            weightedPoints /
+                            totalWeight
+                        ).toFixed(3)
+                    )
+                    : 0,
+
+            gfPerGame:
+                totalWeight
+                    ? Number(
+                        (
+                            weightedGF /
+                            totalWeight
+                        ).toFixed(3)
+                    )
+                    : 0,
+
+            gaPerGame:
+                totalWeight
+                    ? Number(
+                        (
+                            weightedGA /
+                            totalWeight
+                        ).toFixed(3)
+                    )
+                    : 0,
+
+            goalDifferencePerGame:
+                totalWeight
+                    ? Number(
+                        (
+                            (
+                                weightedGF -
+                                weightedGA
+                            ) /
+                            totalWeight
+                        ).toFixed(3)
+                    )
+                    : 0
+
+        };
+
+
+        // ----------------------------------------------------
+        // ELIMINAR HISTORIAL INTERNO
+        // ----------------------------------------------------
+
+        /*
+         * No necesitamos guardar todos los partidos dentro
+         * de cada formación porque los datos originales ya
+         * existen en data.matches.
+         *
+         * Esto evita hacer crecer innecesariamente el JSON.
+         */
+
+        delete row.lastMatches;
+
+    }
+
+
+    // ========================================================
+    // ORDENAR FORMACIONES POR RENDIMIENTO
+    // ========================================================
+
+    /*
+     * No cambiamos el objeto a un array porque el resto del
+     * programa puede estar utilizando formations[formation].
+     *
+     * Simplemente añadimos información que permitirá a
+     * createPrediction() identificar posteriormente cuál
+     * es la formación más eficaz.
+     */
 
     return formations;
 
