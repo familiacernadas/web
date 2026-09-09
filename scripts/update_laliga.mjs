@@ -4916,83 +4916,140 @@ function updatePredictions(
 
         /*
          * ========================================================
-         * PARTIDOS YA INICIADOS / TERMINADOS
+         * SI YA EXISTE UN PRONÓSTICO
          * ========================================================
          *
-         * Si el partido ya comenzó:
+         * No lo recalculamos.
          *
-         * - NO recalculamos el pronóstico.
-         * - Si ya existía, lo conservamos.
-         * - Esto permite utilizar posteriormente el pronóstico
-         *   histórico para calcular el balance.
-         *
-         * Si por alguna razón un partido antiguo no tiene
-         * pronóstico, NO lo generamos ahora, porque eso introduciría
-         * información posterior al inicio del partido en el modelo.
+         * Esto es especialmente importante para los partidos
+         * futuros, porque una vez creado el pronóstico queremos
+         * conservarlo y evitar que cambie continuamente con cada
+         * ejecución del workflow.
          */
 
         if (
-            match.timestamp <= now
+            match.prediction
+        ) {
+
+            const hours =
+                (
+                    match.timestamp -
+                    now
+                ) / 3600;
+
+            /*
+             * Los partidos futuros quedan bloqueados cuando faltan
+             * 12 horas o menos para su comienzo.
+             */
+
+            if (
+                match.timestamp > now &&
+                !match.prediction.lockedAt &&
+                hours <= 12
+            ) {
+
+                match.prediction.lockedAt =
+                    new Date().toISOString();
+
+            }
+
+            continue;
+
+        }
+
+        /*
+         * ========================================================
+         * CREAR PRONÓSTICO
+         * ========================================================
+         *
+         * Si el partido todavía no tiene pronóstico, lo calculamos
+         * siempre.
+         *
+         * IMPORTANTE:
+         *
+         * createPrediction() recibe el timestamp del partido y
+         * todas las métricas históricas utilizan:
+         *
+         *     antes de timestamp
+         *
+         * Por tanto, para un partido ya disputado NO utilizamos
+         * resultados posteriores al encuentro.
+         *
+         * Esto permite reconstruir los pronósticos históricos
+         * originales de forma retrospectiva sin contaminar el
+         * modelo con información futura.
+         */
+
+        const prediction =
+            createPrediction(
+                data,
+                match
+            );
+
+        if (
+            !prediction
         ) {
 
             continue;
 
         }
 
-        const hours =
-            (
-                match.timestamp -
-                now
-            ) / 3600;
+        match.prediction =
+            prediction;
 
         /*
          * ========================================================
-         * PARTIDOS FUTUROS
+         * PARTIDO YA DISPUTADO
          * ========================================================
          *
-         * Generamos el pronóstico únicamente con información
-         * disponible antes del partido.
+         * El pronóstico histórico se considera bloqueado en el
+         * momento del comienzo del partido.
          *
-         * Una vez creado, el pronóstico queda congelado 12 horas
-         * antes del comienzo.
+         * No utilizamos la fecha/hora actual como lockedAt porque
+         * queremos conservar la referencia temporal del modelo.
          */
 
         if (
-            !match.prediction
-        ) {
-
-            const prediction =
-                createPrediction(
-                    data,
-                    match
-                );
-
-            if (prediction) {
-
-                match.prediction =
-                    prediction;
-
-            }
-
-        }
-
-        /*
-         * --------------------------------------------------------
-         * BLOQUEO DEL PRONÓSTICO
-         * --------------------------------------------------------
-         *
-         * A partir de 12 horas antes del partido no se vuelve
-         * a modificar el pronóstico.
-         */
-
-        if (
-            match.prediction &&
-            !match.prediction.lockedAt &&
-            hours <= 12
+            match.timestamp <= now
         ) {
 
             match.prediction.lockedAt =
-                new Date().toISOString();
+                new Date(
+                    match.timestamp * 1000
+                ).toISOString();
+
+            /*
+             * Indicamos que se trata de un pronóstico reconstruido
+             * para evaluación histórica.
+             */
+
+            match.prediction.historical =
+                true;
+
+        } else {
+
+            /*
+             * ====================================================
+             * PARTIDO FUTURO
+             * ====================================================
+             *
+             * Si faltan 12 horas o menos, bloqueamos inmediatamente.
+             */
+
+            const hours =
+                (
+                    match.timestamp -
+                    now
+                ) / 3600;
+
+            if (
+                hours <= 12
+            ) {
+
+                match.prediction.lockedAt =
+                    new Date().toISOString();
+
+            }
 
         }
 
