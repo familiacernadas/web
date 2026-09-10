@@ -17,79 +17,96 @@ main{padding:28px 0 60px}.hero{display:grid;grid-template-columns:1.4fr .6fr;gap
 .table-wrap{overflow:auto}.table{width:100%;border-collapse:collapse;min-width:720px}.table th{background:#0b1729;color:#8fa0ba;font-size:11px;text-transform:uppercase;letter-spacing:.05em;padding:11px 8px;text-align:center}.table td{padding:10px 8px;border-top:1px solid rgba(36,51,74,.75);text-align:center;font-size:13px}.table td:nth-child(2),.table th:nth-child(2){text-align:left}.table tr:hover{background:#101f34}.pos{font-weight:900}.form{color:#7ea2ff;font-weight:800}.muted{color:var(--muted)}.zero{color:#8ea0b8}
 .notice{padding:12px 14px;border-radius:12px;background:#0a182b;border:1px solid var(--line);color:#aebbd0;font-size:12px;line-height:1.5;margin-top:12px}.error{color:#fecaca;border-color:#7f1d1d;background:#2a1117}.ok{color:#bbf7d0}.loading{padding:25px;text-align:center;color:var(--muted)}
 footer{border-top:1px solid var(--line);padding:20px 0;color:#71809a;font-size:11px}
-
 .section-tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.collapse-btn{border:1px solid var(--line);background:#101d31;color:#dce7ff;border-radius:9px;padding:7px 10px;font-weight:800;cursor:pointer}.collapse-btn:hover{background:#172844}.collapsible{overflow:hidden;transition:max-height .25s ease,opacity .2s ease}.collapsible.is-collapsed{max-height:0!important;opacity:0}.table-card{position:relative}.compact-note{margin:0 0 10px;color:var(--muted);font-size:12px}.match-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px}.badge{display:inline-flex;align-items:center;gap:4px;padding:5px 8px;border-radius:999px;font-size:10px;font-weight:900}.badge.ok{background:rgba(34,197,94,.12);color:#86efac;border:1px solid rgba(34,197,94,.25)}.badge.bad{background:rgba(239,68,68,.12);color:#fca5a5;border:1px solid rgba(239,68,68,.25)}.badge.pending{background:rgba(245,158,11,.12);color:#fcd34d;border:1px solid rgba(245,158,11,.25)}.tv{color:#c7d4ea;font-size:11px;margin-top:10px}.resultline{margin-top:8px;font-weight:800}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{padding:16px}.stat strong{display:block;font-size:28px;margin-top:5px}.matchday-selector{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:6px;background:#0a1627;border:1px solid var(--line);border-radius:12px}.matchday-btn{border:1px solid transparent;background:transparent;color:#9fb0c8;border-radius:8px;padding:8px 11px;font-weight:800;font-size:12px;cursor:pointer;transition:.18s}.matchday-btn:hover:not(:disabled){background:#162541;color:#fff}.matchday-btn.active{background:var(--accent);color:#fff;box-shadow:0 5px 14px rgba(79,124,255,.25)}.matchday-btn:disabled{opacity:.35;cursor:not-allowed}.matchday-info{margin-top:8px;display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.matchday-note{color:var(--muted);font-size:11px}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.news-card{padding:17px}.news-card a{color:#eaf1ff;text-decoration:none;font-weight:850;line-height:1.35}.news-card a:hover{color:#8eacff}.news-meta{color:var(--muted);font-size:10px;margin-bottom:8px}.euro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.euro-card{padding:15px}.euro-card h3{margin:0 0 7px;font-size:15px}.team-pill{display:inline-block;margin:4px 4px 0 0;padding:5px 8px;border-radius:999px;background:#0a1627;border:1px solid var(--line);font-size:11px}.legend{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.legend span{font-size:11px;color:var(--muted)}
 .balance-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:12px}.balance-card{padding:14px}.balance-card strong{display:block;font-size:24px;margin-top:4px}.balance-good{color:#86efac}.balance-warn{color:#fcd34d}.balance-bad{color:#fca5a5}.substats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}.substats .card{padding:15px}.mini-table{min-width:560px}.difficulty-high{background:rgba(239,68,68,.08)}.difficulty-mid{background:rgba(245,158,11,.07)}.difficulty-low{background:rgba(34,197,94,.06)}.difficulty-pill{display:inline-flex;padding:4px 7px;border-radius:999px;font-size:10px;font-weight:900}.difficulty-pill.high{background:rgba(239,68,68,.14);color:#fca5a5}.difficulty-pill.mid{background:rgba(245,158,11,.14);color:#fcd34d}.difficulty-pill.low{background:rgba(34,197,94,.14);color:#86efac}.quiniela-note{margin:0 0 12px;color:var(--muted);font-size:12px;line-height:1.5}.pick{font-weight:950;font-size:16px}.pick-1{color:#7ea2ff}.pick-x{color:#fcd34d}.pick-2{color:#c4b5fd}.real{font-weight:900}.real.pending{color:#91a0b8}.real.hit{color:#86efac}.real.miss{color:#fca5a5}.accuracy-bar{height:7px;background:#0a1627;border-radius:999px;overflow:hidden;margin-top:5px}.accuracy-fill{height:100%;border-radius:999px;background:var(--accent)}
+.model-simulator{margin-top:14px;padding:18px}.weight-row{display:grid;grid-template-columns:220px 1fr 58px;gap:12px;align-items:center;margin:13px 0}.weight-label{font-size:12px;font-weight:800;color:#dce7ff}.weight-value{text-align:right;font-size:12px;font-weight:900;color:#9db7ff}.weight-range{width:100%;accent-color:var(--accent);cursor:pointer}.sim-results{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}.sim-card{padding:13px;background:#0a1627;border:1px solid var(--line);border-radius:12px}.sim-card strong{display:block;font-size:22px;margin-top:4px}.sim-positive{color:#86efac}.sim-negative{color:#fca5a5}.sim-neutral{color:#fcd34d}.weight-warning{margin-top:10px}.model-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 @media(max-width:1100px){.balance-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:600px){.balance-grid{grid-template-columns:repeat(2,1fr)}.substats{grid-template-columns:1fr}}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.head{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}.hero .card{padding:19px}.wrap{padding:0 12px}}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.sim-results{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.balance-grid{grid-template-columns:repeat(2,1fr)}.substats{grid-template-columns:1fr}.weight-row{grid-template-columns:1fr 1fr 52px;gap:7px}.weight-row .weight-label{grid-column:1/-1}.sim-results{grid-template-columns:1fr}.head{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}.hero .card{padding:19px}.wrap{padding:0 12px}}
 </style>
 </head>
 <body>
 <header><div class="wrap head">
   <div class="brand"><div class="ball">⚽</div><div><div class="title">LaLiga EA Sports 2026/27</div><div class="sub">Pronósticos · clasificación · goleadores · actualización automática</div></div></div>
-
   <nav>
-    <a href="#jornada">Jornada</a>
-    <a href="#clasificacion">Clasificación</a>
-    <a href="#goleadores">Goleadores</a>
-    <a href="#estadisticas">Aciertos</a>
-    <a href="#europa">Europa</a>
-    <a href="#noticias">Noticias</a>
-
-    <!-- ACCESO A LIGAFANTASY -->
-    <a href="fantasy.html" target="_blank" rel="noopener" class="btn">
-      ⚽ LigaFantasy
-    </a>
-
+    <a href="#jornada">Jornada</a><a href="#clasificacion">Clasificación</a><a href="#goleadores">Goleadores</a><a href="#estadisticas">Aciertos</a><a href="#europa">Europa</a><a href="#noticias">Noticias</a>
+    <a href="fantasy.html" target="_blank" rel="noopener" class="btn">⚽ LigaFantasy</a>
     <button class="btn" id="refreshBtn">↻ Actualizar</button>
   </nav>
 </div></header>
 
 <main class="wrap">
 <section class="hero">
-  <div class="card"><div class="kicker">Temporada 2026/27</div><h2>LaLiga, jornada a jornada.</h2><p>Esta página consulta los datos disponibles en tiempo real al abrirse: resultados, clasificación y goleadores. Los pronósticos se recalculan usando los datos de la temporada cuando ya existen y una valoración inicial de pretemporada mientras la competición está a cero.</p><div class="notice">📡 <b>Actualización automática:</b> cada visita intenta descargar los datos nuevos. También puedes pulsar «Actualizar» para forzar una consulta.</div></div>
+  <div class="card"><div class="kicker">Temporada 2026/27</div><h2>LaLiga, jornada a jornada.</h2>
+  <p>Esta página consulta los datos disponibles en tiempo real al abrirse: resultados, clasificación y goleadores. Los pronósticos se recalculan usando los datos de la temporada cuando ya existen y una valoración inicial de pretemporada mientras la competición está a cero.</p>
+  <div class="notice">📡 <b>Actualización automática:</b> cada visita intenta descargar los datos nuevos. También puedes pulsar «Actualizar» para forzar una consulta. El balance de pronósticos se sincroniza automáticamente con <b>todas las jornadas disponibles</b>, sin necesidad de visitarlas una por una.</div></div>
   <div class="card status"><div><div class="kicker">Estado de datos</div><strong id="dataStatus">Cargando…</strong><div class="small" id="lastUpdate">—</div></div><div class="notice">Fuente principal de datos deportivos: ESPN. El calendario oficial de LALIGA se utiliza como referencia para la temporada.</div></div>
 </section>
 
-<section id="jornada" class="section"><div class="section-title"><h2>⚽ Partidos y pronósticos</h2><span class="small" id="roundLabel">Cargando…</span></div><div class="matchday-selector" aria-label="Selector de jornada"><button class="matchday-btn" id="prevRoundBtn" data-round-action="prev">‹ Jornada anterior</button><button class="matchday-btn active" id="currentRoundBtn" data-round-action="current">Jornada actual</button><button class="matchday-btn" id="nextRoundBtn" data-round-action="next">Próxima jornada ›</button></div><div class="matchday-info"><span class="matchday-note" id="roundInfo">Selecciona la jornada que quieras consultar.</span><span class="small" id="roundCount"></span></div><div id="matches" class="grid" style="margin-top:12px"><div class="card loading">Cargando partidos…</div></div></section>
+<section id="jornada" class="section"><div class="section-title"><h2>⚽ Partidos y pronósticos</h2><span class="small" id="roundLabel">Cargando…</span></div>
+<div class="matchday-selector"><button class="matchday-btn" id="prevRoundBtn" data-round-action="prev">‹ Jornada anterior</button><button class="matchday-btn active" id="currentRoundBtn" data-round-action="current">Jornada actual</button><button class="matchday-btn" id="nextRoundBtn" data-round-action="next">Próxima jornada ›</button></div>
+<div class="matchday-info"><span class="matchday-note" id="roundInfo">Selecciona la jornada que quieras consultar.</span><span class="small" id="roundCount"></span></div>
+<div id="matches" class="grid" style="margin-top:12px"><div class="card loading">Cargando partidos…</div></div></section>
 
-<section id="quiniela" class="section">
-  <div class="section-title"><h2>🎟️ Quiniela de la jornada</h2><span class="small" id="quinielaLabel">Jornada actual</span></div>
-  <div class="card" style="padding:16px">
-    <p class="quiniela-note">Aquí puedes comparar directamente nuestro 1X2 con la dificultad estadística del partido. <b>Prob. acierto</b> es la probabilidad que asigna el modelo al signo elegido; cuanto menor sea, más difícil es el partido para nuestro modelo. El resultado real se completa automáticamente cuando termina.</p>
-    <div class="table-wrap"><table class="table mini-table"><thead><tr><th>#</th><th>Partido</th><th>1</th><th>X</th><th>2</th><th>Pronóstico</th><th>Prob. acierto</th><th>Dificultad</th><th>Resultado real</th><th>Estado</th></tr></thead><tbody id="quiniela-body"><tr><td colspan="10" class="loading">Cargando jornada…</td></tr></tbody></table></div>
-  </div>
-</section>
+<section id="quiniela" class="section"><div class="section-title"><h2>🎟️ Quiniela de la jornada</h2><span class="small" id="quinielaLabel">Jornada actual</span></div>
+<div class="card" style="padding:16px"><p class="quiniela-note">Aquí puedes comparar directamente nuestro 1X2 con la dificultad estadística del partido. <b>Prob. acierto</b> es la probabilidad que asigna el modelo al signo elegido; cuanto menor sea, más difícil es el partido para nuestro modelo. El resultado real se completa automáticamente cuando termina.</p>
+<div class="table-wrap"><table class="table mini-table"><thead><tr><th>#</th><th>Partido</th><th>1</th><th>X</th><th>2</th><th>Pronóstico</th><th>Prob. acierto</th><th>Dificultad</th><th>Resultado real</th><th>Estado</th></tr></thead><tbody id="quiniela-body"><tr><td colspan="10" class="loading">Cargando jornada…</td></tr></tbody></table></div></div></section>
 
 <section id="clasificacion" class="section"><div class="section-title"><h2>📊 Clasificación 2026/27</h2><span class="small" id="standingsLabel">Actualizando…</span></div>
-<div class="card table-wrap"><table class="table"><thead><tr><th>#</th><th>Equipo</th><th>PTS</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DG</th></tr></thead><tbody id="table-body"><tr><td colspan="10" class="loading">Cargando…</td></tr></tbody></table></div></div></section>
+<div class="card table-wrap"><table class="table"><thead><tr><th>#</th><th>Equipo</th><th>PTS</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DG</th></tr></thead><tbody id="table-body"><tr><td colspan="10" class="loading">Cargando…</td></tr></tbody></table></div></section>
 
 <section id="goleadores" class="section"><div class="section-title"><h2>🥇 Máximos goleadores</h2><span class="small">Temporada 2026/27 · empieza en 0</span></div>
 <div class="card table-wrap"><table class="table"><thead><tr><th>#</th><th>Jugador</th><th>Equipo</th><th>Goles</th><th>Partidos</th></tr></thead><tbody id="scorers-body"><tr><td colspan="5" class="loading">Cargando…</td></tr></tbody></table></div>
 <div class="notice">La tabla pertenece exclusivamente a la temporada <b>2026/27</b>. No arrastra goles de 2025/26. Antes del primer gol oficial, todos permanecen en 0.</div></section>
 
 <section id="estadisticas" class="section">
-  <div class="section-title"><h2>🎯 Mi balance de pronósticos</h2><span class="small">Balance acumulado de toda la temporada 2026/27 en este navegador</span></div>
-  <div class="balance-grid">
-    <div class="card balance-card"><span class="small">Resueltos</span><strong id="statTotal">0</strong></div>
-    <div class="card balance-card"><span class="small">Aciertos</span><strong id="statHits" class="balance-good">0</strong></div>
-    <div class="card balance-card"><span class="small">Fallos</span><strong id="statMisses" class="balance-bad">0</strong></div>
-    <div class="card balance-card"><span class="small">% acierto</span><strong id="statPct">0%</strong></div>
-    <div class="card balance-card"><span class="small">Racha actual</span><strong id="statStreak">0</strong></div>
-    <div class="card balance-card"><span class="small">Mejor racha</span><strong id="statBestStreak">0</strong></div>
-  </div>
-  <div class="substats">
-    <div class="card"><div class="kicker">Por signo</div><table class="table mini-table"><thead><tr><th>Signo</th><th>Pron.</th><th>Aciertos</th><th>%</th></tr></thead><tbody id="signStats"><tr><td>1</td><td>0</td><td>0</td><td>0%</td></tr><tr><td>X</td><td>0</td><td>0</td><td>0%</td></tr><tr><td>2</td><td>0</td><td>0</td><td>0%</td></tr></tbody></table></div>
-    <div class="card"><div class="kicker">Según confianza</div><table class="table mini-table"><thead><tr><th>Confianza</th><th>Pron.</th><th>Aciertos</th><th>%</th></tr></thead><tbody id="confidenceStats"><tr><td>≥70%</td><td>0</td><td>0</td><td>0%</td></tr><tr><td>60–69%</td><td>0</td><td>0</td><td>0%</td></tr><tr><td>&lt;60%</td><td>0</td><td>0</td><td>0%</td></tr></tbody></table></div>
-    <div class="card"><div class="kicker">Lectura del modelo</div><p id="modelAdvice" class="small" style="line-height:1.65;margin-bottom:0">Todavía no hay suficientes resultados para ajustar criterios. La muestra se irá acumulando jornada a jornada.</p></div>
-  </div>
-  <div class="notice">⚠️ El objetivo es mejorar el modelo y medir su calibración; ningún sistema puede garantizar un 100% de aciertos. El balance se conserva en <b>localStorage</b>, por lo que permanece al cambiar de jornada mientras uses este navegador.</div>
+<div class="section-title"><h2>🎯 Mi balance de pronósticos</h2><span class="small">Balance acumulado de toda la temporada 2026/27 en este navegador</span></div>
+<div class="balance-grid">
+<div class="card balance-card"><span class="small">Resueltos</span><strong id="statTotal">0</strong></div>
+<div class="card balance-card"><span class="small">Aciertos</span><strong id="statHits" class="balance-good">0</strong></div>
+<div class="card balance-card"><span class="small">Fallos</span><strong id="statMisses" class="balance-bad">0</strong></div>
+<div class="card balance-card"><span class="small">% acierto</span><strong id="statPct">0%</strong></div>
+<div class="card balance-card"><span class="small">Racha actual</span><strong id="statStreak">0</strong></div>
+<div class="card balance-card"><span class="small">Mejor racha</span><strong id="statBestStreak">0</strong></div>
+</div>
+<div class="substats">
+<div class="card"><div class="kicker">Por signo</div><table class="table mini-table"><thead><tr><th>Signo</th><th>Pron.</th><th>Aciertos</th><th>%</th></tr></thead><tbody id="signStats"><tr><td>1</td><td>0</td><td>0</td><td>0%</td></tr><tr><td>X</td><td>0</td><td>0</td><td>0%</td></tr><tr><td>2</td><td>0</td><td>0</td><td>0%</td></tr></tbody></table></div>
+<div class="card"><div class="kicker">Según confianza</div><table class="table mini-table"><thead><tr><th>Confianza</th><th>Pron.</th><th>Aciertos</th><th>%</th></tr></thead><tbody id="confidenceStats"><tr><td>≥70%</td><td>0</td><td>0</td><td>0%</td></tr><tr><td>60–69%</td><td>0</td><td>0</td><td>0%</td></tr><tr><td>&lt;60%</td><td>0</td><td>0</td><td>0%</td></tr></tbody></table></div>
+<div class="card"><div class="kicker">Lectura del modelo</div><p id="modelAdvice" class="small" style="line-height:1.65;margin-bottom:0">Todavía no hay suficientes resultados para ajustar criterios. La muestra se irá acumulando jornada a jornada.</p></div>
+</div>
+
+<div class="card model-simulator">
+<div class="section-title"><h2>⚙️ Simulador de pesos del modelo</h2><span class="small">Prueba cambios sin modificar el histórico real</span></div>
+<p class="compact-note">Las barras recalculan retrospectivamente el 1X2 usando los datos disponibles antes de cada partido. El resultado real de cada encuentro se utiliza únicamente para medir si el pronóstico hipotético habría acertado.</p>
+
+<div class="weight-row"><span class="weight-label">Fuerza general</span><input id="wOverall" class="weight-range" type="range" min="0" max="100" value="40"><span id="wOverallValue" class="weight-value">40%</span></div>
+<div class="weight-row"><span class="weight-label">Rendimiento local/visitante</span><input id="wVenue" class="weight-range" type="range" min="0" max="100" value="25"><span id="wVenueValue" class="weight-value">25%</span></div>
+<div class="weight-row"><span class="weight-label">Goles a favor</span><input id="wAttack" class="weight-range" type="range" min="0" max="100" value="15"><span id="wAttackValue" class="weight-value">15%</span></div>
+<div class="weight-row"><span class="weight-label">Goles en contra</span><input id="wDefense" class="weight-range" type="range" min="0" max="100" value="10"><span id="wDefenseValue" class="weight-value">10%</span></div>
+<div class="weight-row"><span class="weight-label">Ventaja de campo</span><input id="wHome" class="weight-range" type="range" min="0" max="100" value="10"><span id="wHomeValue" class="weight-value">10%</span></div>
+
+<div class="notice weight-warning" id="weightWarning">Pesos actuales: 100%. La simulación está normalizada y no altera los pronósticos guardados.</div>
+<div class="sim-results">
+<div class="sim-card"><span class="small">Aciertos simulados</span><strong id="simHits">0 / 0</strong></div>
+<div class="sim-card"><span class="small">% acierto simulado</span><strong id="simPct">0%</strong></div>
+<div class="sim-card"><span class="small">Diferencia</span><strong id="simDelta" class="sim-neutral">0,0 pp</strong></div>
+<div class="sim-card"><span class="small">Partidos simulables</span><strong id="simMatches">0</strong></div>
+</div>
+<div class="model-actions"><button class="btn" id="resetWeightsBtn">↺ Restaurar modelo 3.0</button></div>
+</div>
+
+<div class="notice">⚠️ El objetivo es mejorar el modelo y medir su calibración; ningún sistema puede garantizar un 100% de aciertos. El balance real se conserva en <b>localStorage</b>, por lo que permanece al cambiar de jornada mientras uses este navegador. El simulador no sobrescribe ese balance.</div>
 </section>
 
-<section id="europa" class="section"><div class="section-title"><h2>🌍 LaLiga en Europa</h2><span class="small">Temporada 2026/27</span></div><div class="euro-grid"><div class="card euro-card"><h3>🏆 Champions League</h3><span class="team-pill">FC Barcelona</span><span class="team-pill">Real Madrid</span><span class="team-pill">Atlético de Madrid</span><span class="team-pill">Villarreal</span></div><div class="card euro-card"><h3>🏆 Europa League</h3><span class="team-pill">Real Betis</span><span class="team-pill">Celta</span><span class="team-pill">Real Sociedad</span></div><div class="card euro-card"><h3>🏆 Conference League</h3><span class="team-pill">Getafe CF</span><p class="small">El Getafe afronta además la fase previa.</p></div></div><div class="notice">España cuenta con ocho clubes en competiciones UEFA esta temporada. A continuación se intentan cargar también sus próximos partidos europeos desde ESPN. Si una competición no publica todavía el calendario en esa API, se mostrará un aviso en lugar de inventar encuentros.</div><div id="euroMatches" class="grid" style="margin-top:14px"><div class="card loading">Cargando calendario europeo…</div></div></section>
+<section id="europa" class="section"><div class="section-title"><h2>🌍 LaLiga en Europa</h2><span class="small">Temporada 2026/27</span></div>
+<div class="euro-grid"><div class="card euro-card"><h3>🏆 Champions League</h3><span class="team-pill">FC Barcelona</span><span class="team-pill">Real Madrid</span><span class="team-pill">Atlético de Madrid</span><span class="team-pill">Villarreal</span></div>
+<div class="card euro-card"><h3>🏆 Europa League</h3><span class="team-pill">Real Betis</span><span class="team-pill">Celta</span><span class="team-pill">Real Sociedad</span></div>
+<div class="card euro-card"><h3>🏆 Conference League</h3><span class="team-pill">Getafe CF</span><p class="small">El Getafe afronta además la fase previa.</p></div></div>
+<div class="notice">España cuenta con ocho clubes en competiciones UEFA esta temporada. A continuación se intentan cargar también sus próximos partidos europeos desde ESPN. Si una competición no publica todavía el calendario en esa API, se mostrará un aviso en lugar de inventar encuentros.</div>
+<div id="euroMatches" class="grid" style="margin-top:14px"><div class="card loading">Cargando calendario europeo…</div></div></section>
 
-<section id="noticias" class="section"><div class="section-title"><h2>📰 Noticias y rendimiento</h2><span class="small">Actualidad relacionada con LaLiga</span></div><div class="news-grid" id="newsGrid"></div><div class="notice">Las noticias son enlaces externos. Para una actualización continua, abre también la búsqueda de <a href="https://news.google.com/search?q=LaLiga%202026%202027&hl=es&gl=ES&ceid=ES:es" target="_blank" rel="noopener" style="color:#9db7ff">Google News · LaLiga 2026/27</a>.</div></section>
+<section id="noticias" class="section"><div class="section-title"><h2>📰 Noticias y rendimiento</h2><span class="small">Actualidad relacionada con LaLiga</span></div><div class="news-grid" id="newsGrid"></div>
+<div class="notice">Las noticias son enlaces externos. Para una actualización continua, abre también la búsqueda de <a href="https://news.google.com/search?q=LaLiga%202026%202027&hl=es&gl=ES&ceid=ES:es" target="_blank" rel="noopener" style="color:#9db7ff">Google News · LaLiga 2026/27</a>.</div></section>
 
 <section class="section"><div class="card" style="padding:18px"><div class="kicker">Cómo se calcula el pronóstico</div><p class="small" style="line-height:1.7;margin-bottom:0">Cuando existen partidos disputados, se ponderan rendimiento general, rendimiento local/visitante, goles a favor y en contra y ventaja de campo. Al inicio de temporada, cuando todos los equipos tienen 0 partidos, se utiliza una valoración inicial para evitar porcentajes artificialmente idénticos. Las lesiones y sanciones requieren una fuente específica de disponibilidad; no se inventan datos si la API no los proporciona.</p></div></section>
 </main>
@@ -102,11 +119,14 @@ const START='20260814';
 const END='20270524';
 const CACHE_KEY='cernadas_laliga_2627_v3';
 const PRED_CACHE_KEY='cernadas_laliga_2627_predictions_v1';
+
+const DEFAULT_WEIGHTS={overall:40,venue:25,attack:15,defense:10,home:10};
+
 const PRESEASON={
-  'Real Madrid':92,'FC Barcelona':91,'Atlético de Madrid':88,'Athletic Club':80,'Villarreal CF':78,
-  'Real Betis':77,'Real Sociedad':76,'Sevilla FC':74,'Celta':73,'Valencia CF':72,'CA Osasuna':70,
-  'Getafe CF':69,'Rayo Vallecano':68,'RCD Espanyol de Barcelona':67,'Deportivo Alavés':66,'Levante UD':65,
-  'Elche CF':64,'RC Deportivo':63,'R. Racing Club':61,'Málaga CF':60
+ 'Real Madrid':92,'FC Barcelona':91,'Atlético de Madrid':88,'Athletic Club':80,'Villarreal CF':78,
+ 'Real Betis':77,'Real Sociedad':76,'Sevilla FC':74,'Celta':73,'Valencia CF':72,'CA Osasuna':70,
+ 'Getafe CF':69,'Rayo Vallecano':68,'RCD Espanyol de Barcelona':67,'Deportivo Alavés':66,'Levante UD':65,
+ 'Elche CF':64,'RC Deportivo':63,'R. Racing Club':61,'Málaga CF':60
 };
 const fallbackScorers=[
  ['Kylian Mbappé','Real Madrid'],['Lamine Yamal','FC Barcelona'],['Vinícius Júnior','Real Madrid'],
@@ -117,444 +137,319 @@ const fallbackScorers=[
 ];
 
 function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
-async function getJSON(url){
-  const r=await fetch(url,{cache:'no-store'});
-  if(!r.ok) throw new Error('HTTP '+r.status);
-  return r.json();
-}
-function normalizeName(n){return String(n||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase();}
-function teamName(c){return c?.team?.displayName || c?.team?.name || c?.displayName || c?.name || 'Equipo';}
+async function getJSON(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}
+function normalizeName(n){return String(n||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();}
+function teamName(c){return c?.team?.displayName||c?.team?.name||c?.displayName||c?.name||'Equipo';}
 
 async function getStandings(){
-  const urls = [
-    API.replace('/apis/site/v2','/apis/v2') + '/standings?season='+SEASON+'&seasontype=2',
-    API.replace('/apis/site/v2','/apis/v2') + '/standings?season='+SEASON,
-    API + '/standings?season='+SEASON+'&seasontype=2'
-  ];
-  let data=null, lastError=null;
-  for(const url of urls){
-    try{
-      data=await getJSON(url);
-      if(data && (Array.isArray(data.children)||Array.isArray(data.standings?.entries)||Array.isArray(data.entries)||Array.isArray(data.items))) break;
-    }catch(e){ lastError=e; }
-  }
-  if(!data) throw lastError || new Error('No se pudo obtener la clasificación');
-  let entries=[];
-  for(const g of (data.children||[])){
-    if(g.standings?.entries) entries.push(...g.standings.entries);
-    if(g.entries) entries.push(...g.entries);
-  }
-  if(!entries.length && data.standings?.entries) entries=data.standings.entries;
-  if(!entries.length && Array.isArray(data.entries)) entries=data.entries;
-  if(!entries.length && Array.isArray(data.items)) entries=data.items;
-  if(!entries.length) throw new Error('La API respondió sin equipos');
-  return entries.map(e=>{
-    const s={};
-    for(const x of (e.stats||[])){
-      const key=x.name || x.abbreviation || x.displayName;
-      const value=Number(x.value ?? x.displayValue ?? 0);
-      if(key) s[key]=Number.isFinite(value)?value:0;
-    }
-    const getStat=(...names)=>{ for(const n of names) if(s[n]!==undefined) return s[n]; return 0; };
-    const gf=getStat('pointsFor','goalsFor','goalsForTotal','gf');
-    const gc=getStat('pointsAgainst','goalsAgainst','goalsAgainstTotal','gc');
-    return {
-      team:teamName(e), pts:getStat('points','puntos','pts'), pj:getStat('gamesPlayed','games','pj','played'),
-      w:getStat('wins','won','w'), d:getStat('ties','draws','drawn','d'), l:getStat('losses','lost','l'),
-      gf, gc, gd:getStat('pointDifferential','goalDifference','goalDiff','gd') || (gf-gc)
-    };
-  }).sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf||a.team.localeCompare(b.team,'es'));
+ const urls=[
+  API.replace('/apis/site/v2','/apis/v2')+'/standings?season='+SEASON+'&seasontype=2',
+  API.replace('/apis/site/v2','/apis/v2')+'/standings?season='+SEASON,
+  API+'/standings?season='+SEASON+'&seasontype=2'
+ ];
+ let data=null,lastError=null;
+ for(const url of urls){try{data=await getJSON(url);if(data&&(Array.isArray(data.children)||Array.isArray(data.standings?.entries)||Array.isArray(data.entries)||Array.isArray(data.items)))break;}catch(e){lastError=e;}}
+ if(!data)throw lastError||new Error('No se pudo obtener la clasificación');
+ let entries=[];
+ for(const g of(data.children||[])){if(g.standings?.entries)entries.push(...g.standings.entries);if(g.entries)entries.push(...g.entries);}
+ if(!entries.length&&data.standings?.entries)entries=data.standings.entries;
+ if(!entries.length&&Array.isArray(data.entries))entries=data.entries;
+ if(!entries.length&&Array.isArray(data.items))entries=data.items;
+ if(!entries.length)throw new Error('La API respondió sin equipos');
+ return entries.map(e=>{
+  const s={};for(const x of(e.stats||[])){const key=x.name||x.abbreviation||x.displayName;const value=Number(x.value??x.displayValue??0);if(key)s[key]=Number.isFinite(value)?value:0;}
+  const getStat=(...names)=>{for(const n of names)if(s[n]!==undefined)return s[n];return 0;};
+  const gf=getStat('pointsFor','goalsFor','goalsForTotal','gf'),gc=getStat('pointsAgainst','goalsAgainst','goalsAgainstTotal','gc');
+  return {team:teamName(e),pts:getStat('points','puntos','pts'),pj:getStat('gamesPlayed','games','pj','played'),w:getStat('wins','won','w'),d:getStat('ties','draws','drawn','d'),l:getStat('losses','lost','l'),gf,gc,gd:getStat('pointDifferential','goalDifference','goalDiff','gd')||(gf-gc)};
+ }).sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf||a.team.localeCompare(b.team,'es'));
 }
 
 async function getScorers(){
-  /*
-   * Goleadores 2026/27.
-   * No usamos los endpoints Core /leaders porque para LaLiga 2026/27
-   * están devolviendo 400/404. La página intenta únicamente el recurso
-   * público de estadísticas de ESPN y, si todavía no hay datos de esta
-   * temporada, muestra la tabla inicial a 0 sin generar errores de consola.
-   */
-  const endpoints = [
-    API + '/statistics?season=' + SEASON + '&seasontype=2',
-    API + '/statistics?season=' + SEASON
-  ];
-
-  for(const url of endpoints){
-    try{
-      const data=await getJSON(url);
-      const rows=extractGoalLeaders(data);
-      if(rows.length) return rows.slice(0,15);
-    }catch(e){
-      // ESPN puede no publicar todavía estadísticas de la temporada.
-      // Se ignora silenciosamente para mantener limpia la consola.
-    }
-  }
-
-  // Inicio de temporada: nunca arrastramos goles de 2025/26.
-  return fallbackScorers.map(x=>({
-    name:x[0], team:x[1], goals:0, played:0
-  }));
+ const endpoints=[API+'/statistics?season='+SEASON+'&seasontype=2',API+'/statistics?season='+SEASON];
+ for(const url of endpoints){try{const data=await getJSON(url);const rows=extractGoalLeaders(data);if(rows.length)return rows.slice(0,15);}catch(e){}}
+ return fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}));
 }
-
 function extractGoalLeaders(data){
-  const result=[];
-  const seen=new Set();
-
-  // Recorremos recursivamente la respuesta porque ESPN ha cambiado varias
-  // veces la envoltura de "statistics", "leaders" y "categories".
-  function walk(node, context=''){
-    if(!node || typeof node!=='object') return;
-
-    if(Array.isArray(node)){
-      node.forEach(x=>walk(x,context));
-      return;
-    }
-
-    const name=node.athlete?.displayName || node.athlete?.fullName ||
-               node.player?.displayName || node.player?.fullName ||
-               node.athlete?.name || node.player?.name;
-
-    const statName=String(
-      node.name || node.displayName || node.shortName ||
-      node.abbreviation || context || ''
-    ).toLowerCase();
-
-    const looksLikeGoals=
-      statName.includes('goal') || statName.includes('goles') ||
-      statName==='gls' || statName==='goals';
-
-    const valueCandidates=[
-      node.value,
-      node.statistics?.goals,
-      node.stats?.goals,
-      node.goals,
-      node.displayValue
-    ];
-
-    if(name && looksLikeGoals){
-      let goals=NaN;
-      for(const v of valueCandidates){
-        const n=Number(v);
-        if(Number.isFinite(n)){goals=n;break;}
-      }
-
-      if(Number.isFinite(goals)){
-        const team=node.athlete?.team?.displayName ||
-                    node.athlete?.team?.name ||
-                    node.player?.team?.displayName ||
-                    node.team?.displayName || node.team?.name ||
-                    node.teamName || '';
-        const played=Number(
-          node.statistics?.appearances ??
-          node.stats?.appearances ??
-          node.athlete?.statistics?.appearances ?? 0
-        );
-        const key=normalizeName(name)+'|'+normalizeName(team);
-        if(!seen.has(key)){
-          seen.add(key);
-          result.push({
-            name,
-            team,
-            goals,
-            played:Number.isFinite(played)?played:0
-          });
-        }
-      }
-    }
-
-    for(const [key,value] of Object.entries(node)){
-      if(key==='athlete'||key==='player') continue;
-      walk(value,key);
-    }
+ const result=[],seen=new Set();
+ function walk(node,context=''){
+  if(!node||typeof node!=='object')return;
+  if(Array.isArray(node)){node.forEach(x=>walk(x,context));return;}
+  const name=node.athlete?.displayName||node.athlete?.fullName||node.player?.displayName||node.player?.fullName||node.athlete?.name||node.player?.name;
+  const statName=String(node.name||node.displayName||node.shortName||node.abbreviation||context||'').toLowerCase();
+  const looksLikeGoals=statName.includes('goal')||statName.includes('goles')||statName==='gls'||statName==='goals';
+  const values=[node.value,node.statistics?.goals,node.stats?.goals,node.goals,node.displayValue];
+  if(name&&looksLikeGoals){
+   let goals=NaN;for(const v of values){const n=Number(v);if(Number.isFinite(n)){goals=n;break;}}
+   if(Number.isFinite(goals)){
+    const team=node.athlete?.team?.displayName||node.athlete?.team?.name||node.player?.team?.displayName||node.team?.displayName||node.team?.name||node.teamName||'';
+    const played=Number(node.statistics?.appearances??node.stats?.appearances??node.athlete?.statistics?.appearances??0);
+    const key=normalizeName(name)+'|'+normalizeName(team);
+    if(!seen.has(key)){seen.add(key);result.push({name,team,goals,played:Number.isFinite(played)?played:0});}
+   }
   }
-
-  walk(data);
-  return result.sort((a,b)=>b.goals-a.goals || a.name.localeCompare(b.name,'es'));
+  for(const [key,value] of Object.entries(node)){if(key==='athlete'||key==='player')continue;walk(value,key);}
+ }
+ walk(data);return result.sort((a,b)=>b.goals-a.goals||a.name.localeCompare(b.name,'es'));
 }
 
-function getDateRange(daysBefore=14,daysAfter=28){
-  const now=new Date();
-  const start=new Date(now); start.setDate(start.getDate()-daysBefore);
-  const end=new Date(now); end.setDate(end.getDate()+daysAfter);
-  const f=d=>d.toISOString().slice(0,10).replaceAll('-','');
-  return f(start)+'-'+f(end);
-}
+/* NUEVO 1: cargamos TODA la temporada, no solamente +/- 28 días. */
 async function getUpcomingMatches(){
-  // Ampliamos la ventana para disponer simultáneamente de jornada anterior,
-  // actual y próxima, incluso cuando hay partidos aplazados.
-  const data=await getJSON(API+'/scoreboard?limit=100&dates='+getDateRange(14,28));
-  return (data.events||[]).filter(e=>e.competitions?.[0]?.competitors?.length>=2).map(e=>{
-    const c=e.competitions[0].competitors;
-    const home=c.find(x=>x.homeAway==='home')||c[0], away=c.find(x=>x.homeAway==='away')||c[1];
-    const state=e.status?.type?.state||'pre';
-    return {id:e.id,week:e.week?.number||e.season?.slug||'—',date:e.date,home:teamName(home),away:teamName(away),homeScore:Number(home.score??0),awayScore:Number(away.score??0),state};
-  });
+ const data=await getJSON(API+'/scoreboard?limit=500&dates='+START+'-'+END);
+ return (data.events||[]).filter(e=>e.competitions?.[0]?.competitors?.length>=2).map(e=>{
+  const c=e.competitions[0].competitors,home=c.find(x=>x.homeAway==='home')||c[0],away=c.find(x=>x.homeAway==='away')||c[1];
+  const state=e.status?.type?.state||'pre';
+  return {id:String(e.id),week:e.week?.number||e.season?.slug||'—',date:e.date,home:teamName(home),away:teamName(away),homeScore:Number(home.score??0),awayScore:Number(away.score??0),state};
+ });
 }
+
 function rating(team,standings){
-  const s=standings.find(x=>normalizeName(x.team)===normalizeName(team));
-  if(s&&s.pj>0) return 60 + s.pts/s.pj*8 + (s.gf-s.gc)/s.pj*2;
-  return PRESEASON[team]||65;
+ const s=standings.find(x=>normalizeName(x.team)===normalizeName(team));
+ if(s&&s.pj>0)return 60+s.pts/s.pj*8+(s.gf-s.gc)/s.pj*2;
+ return PRESEASON[team]||65;
 }
+
+/* Modelo original conservado para los pronósticos oficiales. */
 function predict(home,away,standings){
-  const h=rating(home,standings)+4, a=rating(away,standings);
-  const diff=h-a;
-  let ph=50+diff*1.15, pd=27-Math.abs(diff)*.28, pa=100-ph-pd;
-  ph=Math.max(18,Math.min(78,ph)); pd=Math.max(15,Math.min(35,pd)); pa=100-ph-pd;
-  if(pa<10){pa=10;ph=100-pd-pa;}
-  const hs=Math.max(.2,1.45+diff*.025), as=Math.max(.15,1.05-diff*.02);
-  return {ph:Math.round(ph),pd:Math.round(pd),pa:Math.round(pa),score:Math.round(hs)+' - '+Math.round(as)};
+ const h=rating(home,standings)+4,a=rating(away,standings),diff=h-a;
+ let ph=50+diff*1.15,pd=27-Math.abs(diff)*.28,pa=100-ph-pd;
+ ph=Math.max(18,Math.min(78,ph));pd=Math.max(15,Math.min(35,pd));pa=100-ph-pd;
+ if(pa<10){pa=10;ph=100-pd-pa;}
+ const hs=Math.max(.2,1.45+diff*.025),as=Math.max(.15,1.05-diff*.02);
+ return {ph:Math.round(ph),pd:Math.round(pd),pa:Math.round(pa),score:Math.round(hs)+' - '+Math.round(as)};
 }
-function predictionStore(){try{return JSON.parse(localStorage.getItem(PRED_CACHE_KEY)||'{}')}catch(e){return {}}}
+
+function predictionStore(){try{return JSON.parse(localStorage.getItem(PRED_CACHE_KEY)||'{}')}catch(e){return {};}}
 function savePredictionStore(x){localStorage.setItem(PRED_CACHE_KEY,JSON.stringify(x));}
 function outcome(h,a){return h>a?'1':h<a?'2':'X';}
 function predictionResult(pred,m){
-  if(m.state==='pre') return {cls:'pending',text:'Pendiente'};
-  const actual=outcome(m.homeScore,m.awayScore), ok=pred.result===actual;
-  return {cls:ok?'ok':'bad',text:ok?'✅ Acierto 1X2':'❌ Fallo 1X2'};
+ if(m.state==='pre'||m.state==='in')return {cls:'pending',text:'Pendiente'};
+ const actual=outcome(m.homeScore,m.awayScore),ok=pred.result===actual;
+ return {cls:ok?'ok':'bad',text:ok?'✅ Acierto 1X2':'❌ Fallo 1X2'};
 }
 function tvInfo(){return '📺 Pago: Movistar Plus+ / DAZN · En abierto: no consta';}
 let matchdayState={rounds:[],currentIndex:0,selectedIndex:0,standings:[]};
 
 function buildMatchdays(matches){
-  const groups=new Map();
-  matches.forEach(m=>{
-    const numeric=Number(m.week);
-    const key=Number.isFinite(numeric)?String(numeric):'date-'+new Date(m.date).toISOString().slice(0,10);
-    if(!groups.has(key)) groups.set(key,{key,number:Number.isFinite(numeric)?numeric:null,matches:[]});
-    groups.get(key).matches.push(m);
-  });
-  const rounds=[...groups.values()].map(r=>{
-    r.matches.sort((a,b)=>new Date(a.date)-new Date(b.date));
-    r.start=new Date(r.matches[0].date);
-    r.end=new Date(r.matches[r.matches.length-1].date);
-    return r;
-  });
-  rounds.sort((a,b)=>a.start-b.start || ((a.number??999)-(b.number??999)));
-  return rounds;
+ const groups=new Map();
+ matches.forEach(m=>{const numeric=Number(m.week),key=Number.isFinite(numeric)?String(numeric):'date-'+new Date(m.date).toISOString().slice(0,10);if(!groups.has(key))groups.set(key,{key,number:Number.isFinite(numeric)?numeric:null,matches:[]});groups.get(key).matches.push(m);});
+ const rounds=[...groups.values()].map(r=>{r.matches.sort((a,b)=>new Date(a.date)-new Date(b.date));r.start=new Date(r.matches[0].date);r.end=new Date(r.matches[r.matches.length-1].date);return r;});
+ rounds.sort((a,b)=>a.start-b.start||((a.number??999)-(b.number??999)));return rounds;
 }
 function findCurrentRoundIndex(rounds){
-  if(!rounds.length) return 0;
-  const now=Date.now();
-  // Preferimos la jornada que esté desarrollándose en torno a hoy.
-  const active=[];
-  rounds.forEach((r,i)=>{
-    const hasLiveOrUpcoming=r.matches.some(m=>m.state==='pre'||m.state==='in');
-    const distance=Math.min(...r.matches.map(m=>Math.abs(new Date(m.date).getTime()-now)));
-    if(hasLiveOrUpcoming && distance<=7*86400000) active.push({i,distance});
-  });
-  if(active.length) return active.sort((a,b)=>a.distance-b.distance)[0].i;
-  // Si no hay una jornada activa, elegimos la más cercana a la fecha actual.
-  let best=0,bestDistance=Infinity;
-  rounds.forEach((r,i)=>{
-    const d=Math.min(...r.matches.map(m=>Math.abs(new Date(m.date).getTime()-now)));
-    if(d<bestDistance){best=i;bestDistance=d;}
-  });
-  return best;
+ if(!rounds.length)return 0;const now=Date.now(),active=[];
+ rounds.forEach((r,i)=>{const hasLiveOrUpcoming=r.matches.some(m=>m.state==='pre'||m.state==='in');const distance=Math.min(...r.matches.map(m=>Math.abs(new Date(m.date).getTime()-now)));if(hasLiveOrUpcoming&&distance<=7*86400000)active.push({i,distance});});
+ if(active.length)return active.sort((a,b)=>a.distance-b.distance)[0].i;
+ let best=0,bestDistance=Infinity;rounds.forEach((r,i)=>{const d=Math.min(...r.matches.map(m=>Math.abs(new Date(m.date).getTime()-now)));if(d<bestDistance){best=i;bestDistance=d;}});return best;
 }
-function roundTitle(round){
-  return round && round.number!=null ? 'Jornada '+round.number : 'Jornada seleccionada';
-}
+function roundTitle(round){return round&&round.number!=null?'Jornada '+round.number:'Jornada seleccionada';}
 function setRoundButtonState(){
-  const prev=document.getElementById('prevRoundBtn'), cur=document.getElementById('currentRoundBtn'), next=document.getElementById('nextRoundBtn');
-  if(!prev||!cur||!next) return;
-  prev.disabled=matchdayState.selectedIndex<=0;
-  next.disabled=matchdayState.selectedIndex>=matchdayState.rounds.length-1;
-  cur.classList.toggle('active',matchdayState.selectedIndex===matchdayState.currentIndex);
-  prev.textContent=matchdayState.selectedIndex>0 ? '‹ '+roundTitle(matchdayState.rounds[matchdayState.selectedIndex-1]) : '‹ Jornada anterior';
-  next.textContent=matchdayState.selectedIndex<matchdayState.rounds.length-1 ? roundTitle(matchdayState.rounds[matchdayState.selectedIndex+1])+' ›' : 'Próxima jornada ›';
+ const prev=document.getElementById('prevRoundBtn'),cur=document.getElementById('currentRoundBtn'),next=document.getElementById('nextRoundBtn');if(!prev||!cur||!next)return;
+ prev.disabled=matchdayState.selectedIndex<=0;next.disabled=matchdayState.selectedIndex>=matchdayState.rounds.length-1;cur.classList.toggle('active',matchdayState.selectedIndex===matchdayState.currentIndex);
+ prev.textContent=matchdayState.selectedIndex>0?'‹ '+roundTitle(matchdayState.rounds[matchdayState.selectedIndex-1]):'‹ Jornada anterior';
+ next.textContent=matchdayState.selectedIndex<matchdayState.rounds.length-1?roundTitle(matchdayState.rounds[matchdayState.selectedIndex+1])+' ›':'Próxima jornada ›';
 }
 function selectRound(mode){
-  if(!matchdayState.rounds.length) return;
-  if(mode==='current') matchdayState.selectedIndex=matchdayState.currentIndex;
-  if(mode==='prev') matchdayState.selectedIndex=Math.max(0,matchdayState.selectedIndex-1);
-  if(mode==='next') matchdayState.selectedIndex=Math.min(matchdayState.rounds.length-1,matchdayState.selectedIndex+1);
-  renderSelectedRound();
+ if(!matchdayState.rounds.length)return;
+ if(mode==='current')matchdayState.selectedIndex=matchdayState.currentIndex;
+ if(mode==='prev')matchdayState.selectedIndex=Math.max(0,matchdayState.selectedIndex-1);
+ if(mode==='next')matchdayState.selectedIndex=Math.min(matchdayState.rounds.length-1,matchdayState.selectedIndex+1);
+ renderSelectedRound();
 }
-function renderSelectedRound(){
-  const rounds=matchdayState.rounds;
-  const el=document.getElementById('matches');
-  if(!rounds.length){el.innerHTML='<div class="card loading">No se han encontrado jornadas en la fuente de datos.</div>';return;}
-  const round=rounds[matchdayState.selectedIndex];
-  const matches=round.matches;
-  document.getElementById('roundLabel').textContent=roundTitle(round)+(matchdayState.selectedIndex===matchdayState.currentIndex?' · actual':'');
-  document.getElementById('roundCount').textContent=matches.length+' partido'+(matches.length===1?'':'s');
-  document.getElementById('roundInfo').textContent=matchdayState.selectedIndex<matchdayState.currentIndex?'Jornada anterior':matchdayState.selectedIndex>matchdayState.currentIndex?'Próxima jornada':'Jornada que se está disputando o más cercana a la fecha actual';
-  setRoundButtonState();
-  const store=predictionStore(); let changed=false;
-  el.innerHTML=matches.map(m=>{
-    const p=predict(m.home,m.away,matchdayState.standings);
-    if(!store[m.id] && m.state==='pre') { store[m.id]={result:p.ph>p.pa&&p.ph>p.pd?'1':p.pa>p.ph&&p.pa>p.pd?'2':'X',score:p.score,ph:p.ph,pd:p.pd,pa:p.pa,createdAt:Date.now(),home:m.home,away:m.away,week:m.week}; changed=true; }
-    const saved=store[m.id]||{result:p.ph>p.pa&&p.ph>p.pd?'1':p.pa>p.ph&&p.pa>p.pd?'2':'X',score:p.score,ph:p.ph,pd:p.pd,pa:p.pa};
-    if(m.state==='post'||m.state==='final'){
-      store[m.id]={...store[m.id],...saved,actual:m.homeScore+' - '+m.awayScore,actualResult:outcome(m.homeScore,m.awayScore),resolvedAt:Date.now()};
-      changed=true;
-    }
-    const dt=new Date(m.date).toLocaleString('es-ES',{weekday:'short',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
-    const finished=m.state==='post'||m.state==='final';
-    const status=predictionResult(saved,m);
-    const actual=finished?m.homeScore+' - '+m.awayScore:'Pendiente';
-    return '<article class="card match"><div class="match-top"><span>Jornada '+esc(m.week)+'</span><span>'+esc(dt)+'</span></div><div class="teams">'+esc(m.home)+'<div class="score">'+(finished?esc(actual):esc(saved.score))+'</div>'+esc(m.away)+'</div><div class="pred"><span>Local <b>'+saved.ph+'%</b></span><span>Empate <b>'+saved.pd+'%</b></span><span>Visitante <b>'+saved.pa+'%</b></span></div><div class="resultline">Pronóstico: <b>'+esc(saved.result)+'</b> · '+(finished?'Resultado: <b>'+esc(actual)+'</b>':'Resultado: pendiente')+'</div><div class="match-actions"><span class="badge '+status.cls+'">'+status.text+'</span></div><div class="tv">'+tvInfo()+'</div><div class="analysis"><span class="tag">'+(finished?'RESULTADO':'PRONÓSTICO')+'</span><br>Modelo basado en fuerza del equipo, rendimiento disponible y ventaja de campo. El pronóstico queda guardado antes del partido para que el resultado posterior no lo modifique.</div></article>';
-  }).join('');
-  if(changed) savePredictionStore(store);
-  renderQuiniela(matches);
-  updateStats(matches);
-}
-function renderMatches(matches,standings){
-  matchdayState.rounds=buildMatchdays(matches);
-  matchdayState.currentIndex=findCurrentRoundIndex(matchdayState.rounds);
-  matchdayState.selectedIndex=matchdayState.currentIndex;
-  matchdayState.standings=standings||[];
-  renderSelectedRound();
-}
-function updateStats(matches){
-  const store=predictionStore();
-  const currentById=new Map((matches||[]).map(m=>[String(m.id),m]));
-  let total=0,hits=0;
-  const signs={"1":{n:0,h:0},"X":{n:0,h:0},"2":{n:0,h:0}};
-  const conf={high:{n:0,h:0},mid:{n:0,h:0},low:{n:0,h:0}};
-  const resolved=[];
 
-  Object.keys(store).forEach(id=>{
-    const saved=store[id];
-    const live=currentById.get(String(id));
-    const actual=live && (live.state==='post'||live.state==='final')
-      ? outcome(live.homeScore,live.awayScore)
-      : saved.actualResult;
-    if(!actual || !['1','X','2'].includes(saved.result)) return;
-
-    const hit=saved.result===actual;
-    total++; if(hit) hits++;
-    if(signs[saved.result]){ signs[saved.result].n++; if(hit) signs[saved.result].h++; }
-    const confidence=Math.max(Number(saved.ph||0),Number(saved.pd||0),Number(saved.pa||0));
-    const bucket=confidence>=70?'high':confidence>=60?'mid':'low';
-    conf[bucket].n++; if(hit) conf[bucket].h++;
-    resolved.push({id:String(id),saved,actual,hit,finishedAt:saved.resolvedAt||0});
-  });
-
-  // Orden cronológico para calcular rachas acumuladas.
-  resolved.sort((a,b)=>(a.finishedAt||0)-(b.finishedAt||0));
-  let currentStreak=0,bestStreak=0;
-  resolved.forEach(r=>{
-    if(r.hit){ currentStreak++; bestStreak=Math.max(bestStreak,currentStreak); }
-    else currentStreak=0;
-  });
-
-  const pct=n=>n?Math.round(n*100):0;
-  document.getElementById('statTotal').textContent=total;
-  document.getElementById('statHits').textContent=hits;
-  document.getElementById('statMisses').textContent=Math.max(0,total-hits);
-  document.getElementById('statPct').textContent=total?Math.round(hits/total*100)+'%':'0%';
-  document.getElementById('statStreak').textContent=currentStreak;
-  document.getElementById('statBestStreak').textContent=bestStreak;
-
-  const signBody=document.getElementById('signStats');
-  if(signBody) signBody.innerHTML=['1','X','2'].map(k=>'<tr><td><b>'+k+'</b></td><td>'+signs[k].n+'</td><td>'+signs[k].h+'</td><td>'+pct(signs[k].h/(signs[k].n||1))+'%</td></tr>').join('');
-  const confBody=document.getElementById('confidenceStats');
-  if(confBody) confBody.innerHTML=[['high','≥70%'],['mid','60–69%'],['low','<60%']].map(([k,label])=>'<tr><td>'+label+'</td><td>'+conf[k].n+'</td><td>'+conf[k].h+'</td><td>'+pct(conf[k].h/(conf[k].n||1))+'%</td></tr>').join('');
-
-  const advice=document.getElementById('modelAdvice');
-  if(advice){
-    if(total<10) advice.textContent='Muestra todavía pequeña. No conviene cambiar los criterios del modelo por unos pocos resultados; acumula al menos 10–20 partidos antes de sacar conclusiones.';
-    else {
-      const rate=hits/total*100;
-      const highRate=conf.high.n?conf.high.h/conf.high.n*100:null;
-      const signRates=Object.entries(signs).filter(([,v])=>v.n>=3).sort((a,b)=>a[1].h/a[1].n-b[1].h/b[1].n);
-      const weakest=signRates[0];
-      let msg='Balance acumulado: '+rate.toFixed(1)+'% de acierto en '+total+' partidos. ';
-      if(highRate!==null) msg+='En pronósticos con ≥70% de confianza: '+highRate.toFixed(1)+'%. ';
-      if(weakest) msg+='El signo que peor está funcionando con al menos 3 casos es '+weakest[0]+' ('+(weakest[1].h/weakest[1].n*100).toFixed(1)+'%).';
-      advice.textContent=msg;
-    }
+/* NUEVO 2: crea y resuelve automáticamente todos los pronósticos disponibles. */
+function ensureAndResolveAllPredictions(matches,standings){
+ const store=predictionStore();let changed=false;
+ const ordered=[...(matches||[])].sort((a,b)=>new Date(a.date)-new Date(b.date));
+ ordered.forEach(m=>{
+  const existing=store[m.id];
+  const p=existing||predict(m.home,m.away,standings);
+  if(!existing){
+   store[m.id]={result:p.ph>p.pa&&p.ph>p.pd?'1':p.pa>p.ph&&p.pa>p.pd?'2':'X',score:p.score,ph:p.ph,pd:p.pd,pa:p.pa,createdAt:Date.now(),home:m.home,away:m.away,week:m.week};
+   changed=true;
   }
+  if(m.state==='post'||m.state==='final'){
+   const actual=m.homeScore+' - '+m.awayScore,actualResult=outcome(m.homeScore,m.awayScore);
+   if(store[m.id].actual!==actual||store[m.id].actualResult!==actualResult){
+    store[m.id]={...store[m.id],actual,actualResult,resolvedAt:store[m.id].resolvedAt||Date.now()};
+    changed=true;
+   }
+  }
+ });
+ if(changed)savePredictionStore(store);
+ return store;
 }
+
+function renderSelectedRound(){
+ const rounds=matchdayState.rounds,el=document.getElementById('matches');
+ if(!rounds.length){el.innerHTML='<div class="card loading">No se han encontrado jornadas en la fuente de datos.</div>';return;}
+ const round=rounds[matchdayState.selectedIndex],matches=round.matches;
+ document.getElementById('roundLabel').textContent=roundTitle(round)+(matchdayState.selectedIndex===matchdayState.currentIndex?' · actual':'');
+ document.getElementById('roundCount').textContent=matches.length+' partido'+(matches.length===1?'':'s');
+ document.getElementById('roundInfo').textContent=matchdayState.selectedIndex<matchdayState.currentIndex?'Jornada anterior':matchdayState.selectedIndex>matchdayState.currentIndex?'Próxima jornada':'Jornada que se está disputando o más cercana a la fecha actual';
+ setRoundButtonState();
+ const store=ensureAndResolveAllPredictions(matchdayState.allMatches||matches,matchdayState.standings);
+ el.innerHTML=matches.map(m=>{
+  const p=predict(m.home,m.away,matchdayState.standings),saved=store[m.id]||{result:p.ph>p.pa&&p.ph>p.pd?'1':p.pa>p.ph&&p.pa>p.pd?'2':'X',score:p.score,ph:p.ph,pd:p.pd,pa:p.pa};
+  const dt=new Date(m.date).toLocaleString('es-ES',{weekday:'short',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}),finished=m.state==='post'||m.state==='final',status=predictionResult(saved,m),actual=finished?m.homeScore+' - '+m.awayScore:'Pendiente';
+  return '<article class="card match"><div class="match-top"><span>Jornada '+esc(m.week)+'</span><span>'+esc(dt)+'</span></div><div class="teams">'+esc(m.home)+'<div class="score">'+(finished?esc(actual):esc(saved.score))+'</div>'+esc(m.away)+'</div><div class="pred"><span>Local <b>'+saved.ph+'%</b></span><span>Empate <b>'+saved.pd+'%</b></span><span>Visitante <b>'+saved.pa+'%</b></span></div><div class="resultline">Pronóstico: <b>'+esc(saved.result)+'</b> · '+(finished?'Resultado: <b>'+esc(actual)+'</b>':'Resultado: pendiente')+'</div><div class="match-actions"><span class="badge '+status.cls+'">'+status.text+'</span></div><div class="tv">'+tvInfo()+'</div><div class="analysis"><span class="tag">'+(finished?'RESULTADO':'PRONÓSTICO')+'</span><br>Modelo basado en fuerza del equipo, rendimiento disponible y ventaja de campo. El pronóstico oficial queda guardado para que la simulación posterior no lo modifique.</div></article>';
+ }).join('');
+ renderQuiniela(matches);updateStats(matchdayState.allMatches||matches);runSimulation();
+}
+
+function renderMatches(matches,standings){
+ matchdayState.allMatches=matches;matchdayState.rounds=buildMatchdays(matches);matchdayState.currentIndex=findCurrentRoundIndex(matchdayState.rounds);matchdayState.selectedIndex=matchdayState.currentIndex;matchdayState.standings=standings||[];renderSelectedRound();
+}
+
+function updateStats(matches){
+ const store=predictionStore();let total=0,hits=0;const signs={"1":{n:0,h:0},"X":{n:0,h:0},"2":{n:0,h:0}},conf={high:{n:0,h:0},mid:{n:0,h:0},low:{n:0,h:0}},resolved=[];
+ Object.keys(store).forEach(id=>{
+  const saved=store[id],live=(matches||[]).find(m=>String(m.id)===String(id)),actual=live&&(live.state==='post'||live.state==='final')?outcome(live.homeScore,live.awayScore):saved.actualResult;
+  if(!actual||!['1','X','2'].includes(saved.result))return;
+  const hit=saved.result===actual;total++;if(hit)hits++;
+  if(signs[saved.result]){signs[saved.result].n++;if(hit)signs[saved.result].h++;}
+  const confidence=Math.max(Number(saved.ph||0),Number(saved.pd||0),Number(saved.pa||0)),bucket=confidence>=70?'high':confidence>=60?'mid':'low';conf[bucket].n++;if(hit)conf[bucket].h++;
+  resolved.push({id:String(id),saved,actual,hit,finishedAt:saved.resolvedAt||saved.createdAt||0});
+ });
+ resolved.sort((a,b)=>(a.finishedAt||0)-(b.finishedAt||0));let currentStreak=0,bestStreak=0;resolved.forEach(r=>{if(r.hit){currentStreak++;bestStreak=Math.max(bestStreak,currentStreak);}else currentStreak=0;});
+ const pct=n=>n?Math.round(n*100):0;
+ document.getElementById('statTotal').textContent=total;document.getElementById('statHits').textContent=hits;document.getElementById('statMisses').textContent=Math.max(0,total-hits);document.getElementById('statPct').textContent=total?Math.round(hits/total*100)+'%':'0%';document.getElementById('statStreak').textContent=currentStreak;document.getElementById('statBestStreak').textContent=bestStreak;
+ const signBody=document.getElementById('signStats');if(signBody)signBody.innerHTML=['1','X','2'].map(k=>'<tr><td><b>'+k+'</b></td><td>'+signs[k].n+'</td><td>'+signs[k].h+'</td><td>'+pct(signs[k].h/(signs[k].n||1))+'%</td></tr>').join('');
+ const confBody=document.getElementById('confidenceStats');if(confBody)confBody.innerHTML=[['high','≥70%'],['mid','60–69%'],['low','<60%']].map(([k,label])=>'<tr><td>'+label+'</td><td>'+conf[k].n+'</td><td>'+conf[k].h+'</td><td>'+pct(conf[k].h/(conf[k].n||1))+'%</td></tr>').join('');
+ const advice=document.getElementById('modelAdvice');if(advice){if(total<10)advice.textContent='Muestra todavía pequeña. No conviene cambiar los criterios del modelo por unos pocos resultados; acumula al menos 10–20 partidos antes de sacar conclusiones.';else{const rate=hits/total*100,highRate=conf.high.n?conf.high.h/conf.high.n*100:null,signRates=Object.entries(signs).filter(([,v])=>v.n>=3).sort((a,b)=>a[1].h/a[1].n-b[1].h/b[1].n),weakest=signRates[0];let msg='Balance acumulado: '+rate.toFixed(1)+'% de acierto en '+total+' partidos. ';if(highRate!==null)msg+='En pronósticos con ≥70% de confianza: '+highRate.toFixed(1)+'%. ';if(weakest)msg+='El signo que peor está funcionando con al menos 3 casos es '+weakest[0]+' ('+(weakest[1].h/weakest[1].n*100).toFixed(1)+'%).';advice.textContent=msg;}}
+}
+
+/* --- SIMULADOR DE PESOS --- */
+function getWeights(){
+ return {overall:Number(document.getElementById('wOverall').value),venue:Number(document.getElementById('wVenue').value),attack:Number(document.getElementById('wAttack').value),defense:Number(document.getElementById('wDefense').value),home:Number(document.getElementById('wHome').value)};
+}
+function getHistoricalProfiles(matches){
+ const stats=new Map();
+ function blank(){return {games:0,wins:0,pts:0,gf:0,gc:0,homeGames:0,homePts:0,homeGF:0,homeGC:0,awayGames:0,awayPts:0,awayGF:0,awayGC:0};}
+ function get(t){if(!stats.has(normalizeName(t)))stats.set(normalizeName(t),blank());return stats.get(normalizeName(t));}
+ const snapshots=new Map(),ordered=[...(matches||[])].sort((a,b)=>new Date(a.date)-new Date(b.date));
+ ordered.forEach(m=>{
+  const h=get(m.home),a=get(m.away);
+  snapshots.set(String(m.id),{
+   home:{...h},away:{...a}
+  });
+  if(m.state==='post'||m.state==='final'){
+   const hs=Number(m.homeScore||0),as=Number(m.awayScore||0);
+   h.games++;a.games++;h.gf+=hs;h.gc+=as;a.gf+=as;a.gc+=hs;
+   h.homeGames++;a.awayGames++;h.homeGF+=hs;h.homeGC+=as;a.awayGF+=as;a.awayGC+=hs;
+   if(hs>as){h.wins++;h.pts+=3;h.homePts+=3;}else if(hs<as){a.wins++;a.pts+=3;a.awayPts+=3;}else{h.pts++;a.pts++;h.homePts++;a.awayPts++;}
+  }
+ });
+ return snapshots;
+}
+function profileValues(p,team){
+ const games=p.games||0,venueGames=team.homeGames||team.awayGames||0;
+ const overall=games?60+(team.pts/games)*8+((team.gf-team.gc)/games)*2:(PRESEASON[team.name]||65);
+ const venue=venueGames?(team.homeGames===venueGames?60+(team.homePts/venueGames)*8+((team.homeGF-team.homeGC)/venueGames)*2:60+(team.awayPts/venueGames)*8+((team.awayGF-team.awayGC)/venueGames)*2):overall;
+ const attack=games?50+(team.gf/games)*10:50;
+ const defense=games?50+(2.5-team.gc/games)*10:50;
+ return {overall,venue,attack,defense};
+}
+function teamProfileFor(teamName,raw){
+ const name=teamName;const t={...raw,name};return profileValues(null,t);
+}
+function simulationPrediction(home,away,snap,weights){
+ const h=snap.home,a=snap.away;
+ const hName=home,aName=away;
+ const hp={overall:60,venue:60,attack:50,defense:50},ap={overall:60,venue:60,attack:50,defense:50};
+ const hg=h.games||0,ag=a.games||0;
+ hp.overall=hg?60+(h.pts/hg)*8+((h.gf-h.gc)/hg)*2:(PRESEASON[hName]||65);
+ ap.overall=ag?60+(a.pts/ag)*8+((a.gf-a.gc)/ag)*2:(PRESEASON[aName]||65);
+ hp.venue=h.homeGames?(60+(h.homePts/h.homeGames)*8+((h.homeGF-h.homeGC)/h.homeGames)*2):hp.overall;
+ ap.venue=a.awayGames?(60+(a.awayPts/a.awayGames)*8+((a.awayGF-a.awayGC)/a.awayGames)*2):ap.overall;
+ hp.attack=hg?50+(h.gf/hg)*10:50;ap.attack=ag?50+(a.gf/ag)*10:50;
+ hp.defense=hg?50+(2.5-h.gc/hg)*10:50;ap.defense=ag?50+(2.5-a.gc/ag)*10:50;
+ const sum=Math.max(1,weights.overall+weights.venue+weights.attack+weights.defense+weights.home);
+ const diff=((hp.overall-ap.overall)*weights.overall+(hp.venue-ap.venue)*weights.venue+(hp.attack-ap.attack)*weights.attack+(hp.defense-ap.defense)*weights.defense+4*weights.home)/sum;
+ let ph=50+diff*1.15,pd=27-Math.abs(diff)*.28,pa=100-ph-pd;
+ ph=Math.max(18,Math.min(78,ph));pd=Math.max(15,Math.min(35,pd));pa=100-ph-pd;if(pa<10){pa=10;ph=100-pd-pa;}
+ return {result:ph>pa&&ph>pd?'1':pa>ph&&pa>pd?'2':'X',ph,pd,pa};
+}
+function runSimulation(){
+ const matches=matchdayState.allMatches||[];const store=predictionStore();const weights=getWeights();const sum=Object.values(weights).reduce((a,b)=>a+b,0);
+ const warning=document.getElementById('weightWarning');if(warning)warning.textContent='Pesos actuales: '+sum+'%. La simulación los normaliza automáticamente y no altera los pronósticos guardados.';
+ const snaps=getHistoricalProfiles(matches);let total=0,hits=0;
+ matches.forEach(m=>{
+  if(!(m.state==='post'||m.state==='final'))return;
+  const saved=store[m.id];if(!saved)return;
+  const snap=snaps.get(String(m.id));if(!snap)return;
+  const sim=simulationPrediction(m.home,m.away,snap,weights),actual=outcome(m.homeScore,m.awayScore);
+  total++;if(sim.result===actual)hits++;
+ });
+ const realTotal=Number(document.getElementById('statTotal').textContent)||0,realHits=Number(document.getElementById('statHits').textContent)||0;
+ const pct=total?hits/total*100:0,realPct=realTotal?realHits/realTotal*100:0,delta=pct-realPct;
+ document.getElementById('simHits').textContent=hits+' / '+total;document.getElementById('simPct').textContent=pct.toFixed(1)+'%';document.getElementById('simMatches').textContent=total;
+ const d=document.getElementById('simDelta');d.textContent=(delta>=0?'+':'')+delta.toFixed(1)+' pp';d.className='sim-'+(delta>0.05?'positive':delta<-0.05?'negative':'neutral');
+}
+function updateWeightLabels(){
+ const ids=[['wOverall','wOverallValue'],['wVenue','wVenueValue'],['wAttack','wAttackValue'],['wDefense','wDefenseValue'],['wHome','wHomeValue']];
+ ids.forEach(([a,b])=>document.getElementById(b).textContent=document.getElementById(a).value+'%');runSimulation();
+}
+function resetWeights(){[['wOverall',40],['wVenue',25],['wAttack',15],['wDefense',10],['wHome',10]].forEach(([id,v])=>document.getElementById(id).value=v);updateWeightLabels();}
 
 function renderQuiniela(matches){
-  const body=document.getElementById('quiniela-body');
-  const label=document.getElementById('quinielaLabel');
-  if(!body) return;
-  if(!matches||!matches.length){
-    body.innerHTML='<tr><td colspan="10" class="loading">No hay partidos disponibles para esta jornada.</td></tr>';
-    return;
-  }
-  const store=predictionStore();
-  if(label) label.textContent=matches[0]?.week ? 'Jornada '+matches[0].week+' · '+matches.length+' partidos' : 'Jornada seleccionada';
-  body.innerHTML=matches.map((m,i)=>{
-    const p=store[m.id]||predict(m.home,m.away,matchdayState.standings);
-    const pick=p.result||'X';
-    const confidence=Math.max(Number(p.ph||0),Number(p.pd||0),Number(p.pa||0));
-    const difficulty=100-confidence;
-    const diffClass=difficulty>=40?'high':difficulty>=30?'mid':'low';
-    const diffText=difficulty>=40?'Difícil':difficulty>=30?'Media':'Favorable';
-    const done=m.state==='post'||m.state==='final';
-    const actual=done?outcome(m.homeScore,m.awayScore):null;
-    const resultText=done?m.homeScore+'-'+m.awayScore:'—';
-    const hit=done&&actual===pick;
-    const probs='<span>1 '+Number(p.ph||0)+'%</span><br><span>X '+Number(p.pd||0)+'%</span><br><span>2 '+Number(p.pa||0)+'%</span>';
-    return '<tr class="difficulty-'+diffClass+'"><td>'+(i+1)+'</td><td style="text-align:left"><b>'+esc(m.home)+'</b><br><span class="muted">'+esc(m.away)+'</span></td><td>'+Number(p.ph||0)+'%</td><td>'+Number(p.pd||0)+'%</td><td>'+Number(p.pa||0)+'%</td><td class="pick pick-'+pick.toLowerCase()+'">'+pick+'</td><td><b>'+confidence+'%</b><div class="accuracy-bar"><div class="accuracy-fill" style="width:'+confidence+'%"></div></div></td><td><span class="difficulty-pill '+diffClass+'">'+diffText+' · '+difficulty+'%</span></td><td class="real '+(done?(hit?'hit':'miss'):'pending')+'">'+resultText+(done?' · '+actual:'')+'</td><td>'+(done?(hit?'✅ Acierto':'❌ Fallo'):'⏳ Pendiente')+'</td></tr>';
-  }).join('');
+ const body=document.getElementById('quiniela-body'),label=document.getElementById('quinielaLabel');if(!body)return;
+ if(!matches||!matches.length){body.innerHTML='<tr><td colspan="10" class="loading">No hay partidos disponibles para esta jornada.</td></tr>';return;}
+ const store=predictionStore();if(label)label.textContent=matches[0]?.week?'Jornada '+matches[0].week+' · '+matches.length+' partidos':'Jornada seleccionada';
+ body.innerHTML=matches.map((m,i)=>{
+  const p=store[m.id]||predict(m.home,m.away,matchdayState.standings),pick=p.result||'X',confidence=Math.max(Number(p.ph||0),Number(p.pd||0),Number(p.pa||0)),difficulty=100-confidence,diffClass=difficulty>=40?'high':difficulty>=30?'mid':'low',diffText=difficulty>=40?'Difícil':difficulty>=30?'Media':'Favorable',done=m.state==='post'||m.state==='final',actual=done?outcome(m.homeScore,m.awayScore):null,resultText=done?m.homeScore+'-'+m.awayScore:'—',hit=done&&actual===pick;
+  return '<tr class="difficulty-'+diffClass+'"><td>'+(i+1)+'</td><td style="text-align:left"><b>'+esc(m.home)+'</b><br><span class="muted">'+esc(m.away)+'</span></td><td>'+Number(p.ph||0)+'%</td><td>'+Number(p.pd||0)+'%</td><td>'+Number(p.pa||0)+'%</td><td class="pick pick-'+pick.toLowerCase()+'">'+pick+'</td><td><b>'+confidence+'%</b><div class="accuracy-bar"><div class="accuracy-fill" style="width:'+confidence+'%"></div></div></td><td><span class="difficulty-pill '+diffClass+'">'+diffText+' · '+difficulty+'%</span></td><td class="real '+(done?(hit?'hit':'miss'):'pending')+'">'+resultText+(done?' · '+actual:'')+'</td><td>'+(done?(hit?'✅ Acierto':'❌ Fallo'):'⏳ Pendiente')+'</td></tr>';
+ }).join('');
 }
 
 async function getEuropeanMatches(){
- const leagues=[['Champions League','uefa.champions'],['Europa League','uefa.europa'],['Conference League','uefa.europa.conf']];
- const all=[];
- for(const [name,code] of leagues){
-   try{
-     const data=await getJSON('https://site.api.espn.com/apis/site/v2/sports/soccer/'+code+'/scoreboard?limit=100&dates='+getDateRange());
-     for(const e of (data.events||[])){
-       const c=e.competitions?.[0]?.competitors||[]; if(c.length<2) continue;
-       const home=c.find(x=>x.homeAway==='home')||c[0], away=c.find(x=>x.homeAway==='away')||c[1];
-       const names=[teamName(home),teamName(away)];
-       const spanish=['FC Barcelona','Real Madrid','Atlético de Madrid','Villarreal CF','Real Betis','Celta','Real Sociedad','Getafe CF'];
-       if(!names.some(n=>spanish.some(t=>normalizeName(n).includes(normalizeName(t))))) continue;
-       all.push({comp:name,date:e.date,home:teamName(home),away:teamName(away),state:e.status?.type?.state||'pre',homeScore:Number(home.score??0),awayScore:Number(away.score??0)});
-     }
-   }catch(err){console.warn('Europe API',name,err)}
- }
+ const leagues=[['Champions League','uefa.champions'],['Europa League','uefa.europa'],['Conference League','uefa.europa.conf']],all=[];
+ for(const [name,code] of leagues){try{
+  const data=await getJSON('https://site.api.espn.com/apis/site/v2/sports/soccer/'+code+'/scoreboard?limit=100&dates='+START+'-'+END);
+  for(const e of(data.events||[])){const c=e.competitions?.[0]?.competitors||[];if(c.length<2)continue;const home=c.find(x=>x.homeAway==='home')||c[0],away=c.find(x=>x.homeAway==='away')||c[1],names=[teamName(home),teamName(away)],spanish=['FC Barcelona','Real Madrid','Atlético de Madrid','Villarreal CF','Real Betis','Celta','Real Sociedad','Getafe CF'];if(!names.some(n=>spanish.some(t=>normalizeName(n).includes(normalizeName(t)))))continue;all.push({comp:name,date:e.date,home:teamName(home),away:teamName(away),state:e.status?.type?.state||'pre',homeScore:Number(home.score??0),awayScore:Number(away.score??0)});}
+ }catch(err){console.warn('Europe API',name,err)}}
  return all.sort((a,b)=>new Date(a.date)-new Date(b.date)).slice(0,12);
 }
 function renderEuropeanMatches(rows){
- const el=document.getElementById('euroMatches'); if(!el) return;
- if(!rows.length){el.innerHTML='<div class="card loading">Todavía no hay próximos partidos europeos disponibles en la fuente automática.</div>';return;}
- el.innerHTML=rows.map(m=>{const dt=new Date(m.date).toLocaleString('es-ES',{weekday:'short',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}); const done=m.state==='post'||m.state==='final'; return '<article class="card match"><div class="match-top"><span>'+esc(m.comp)+'</span><span>'+esc(dt)+'</span></div><div class="teams">'+esc(m.home)+'<div class="score">'+(done?esc(m.homeScore+' - '+m.awayScore):'VS')+'</div>'+esc(m.away)+'</div><div class="small">'+(done?'Resultado final':'Próximo partido')+'</div></article>';}).join('');
+ const el=document.getElementById('euroMatches');if(!el)return;if(!rows.length){el.innerHTML='<div class="card loading">Todavía no hay próximos partidos europeos disponibles en la fuente automática.</div>';return;}
+ el.innerHTML=rows.map(m=>{const dt=new Date(m.date).toLocaleString('es-ES',{weekday:'short',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}),done=m.state==='post'||m.state==='final';return '<article class="card match"><div class="match-top"><span>'+esc(m.comp)+'</span><span>'+esc(dt)+'</span></div><div class="teams">'+esc(m.home)+'<div class="score">'+(done?esc(m.homeScore+' - '+m.awayScore):'VS')+'</div>'+esc(m.away)+'</div><div class="small">'+(done?'Resultado final':'Próximo partido')+'</div></article>';}).join('');
 }
-
 function renderNews(){
  const items=[
-  ['17/08/2026','Espanyol 3-0 Levante: arranque contundente','https://cadenaser.com/nacional/2026/08/16/espanyol-3-0-levante-resumen-resultado-y-goles-del-partido-de-la-jornada-1-de-laliga-ea-sports-cadena-ser/'],
-  ['17/08/2026','Racing 2-2 Villarreal: regreso histórico a Primera','https://cadenaser.com/nacional/2026/08/16/racing-club-2-2-villarreal-resumen-resultado-y-goles-del-partido-de-la-jornada-1-de-laliga-ea-sports-cadena-ser/'],
-  ['17/08/2026','Espanyol, líder provisional tras la jornada 1','https://as.com/futbol/primera/el-nuevo-coliseum-abre-las-puertas-f202608-n/'],
-  ['17/08/2026','Celta: Europa League y última temporada de Aspas','https://as.com/futbol/primera/celta-de-vigo-en-laliga-ea-sports-202627-plantilla-fichajes-bajas-figuras-y-claves-de-la-temporada-f202608-n/'],
-  ['16/08/2026','Rodri, cerca de incorporarse al Barcelona','https://elpais.com/deportes/futbol/2026-08-16/el-barcelona-ata-a-rodri-hasta-2030.html'],
-  ['17/08/2026','Guía 2026/27: plantillas, fichajes y claves','https://as.com/futbol/primera/guia-de-laliga-ea-sports-202627-equipos-plantillas-fichajes-y-jugadores-a-seguir-f202608-n/']
+ ['17/08/2026','Espanyol 3-0 Levante: arranque contundente','https://cadenaser.com/nacional/2026/08/16/espanyol-3-0-levante-resumen-resultado-y-goles-del-partido-de-la-jornada-1-de-laliga-ea-sports-cadena-ser/'],
+ ['17/08/2026','Racing 2-2 Villarreal: regreso histórico a Primera','https://cadenaser.com/nacional/2026/08/16/racing-club-2-2-villarreal-resumen-resultado-y-goles-del-partido-de-la-jornada-1-de-laliga-ea-sports-cadena-ser/'],
+ ['17/08/2026','Espanyol, líder provisional tras la jornada 1','https://as.com/futbol/primera/el-nuevo-coliseum-abre-las-puertas-f202608-n/'],
+ ['17/08/2026','Celta: Europa League y última temporada de Aspas','https://as.com/futbol/primera/celta-de-vigo-en-laliga-ea-sports-202627-plantilla-fichajes-bajas-figuras-y-claves-de-la-temporada-f202608-n/'],
+ ['16/08/2026','Rodri, cerca de incorporarse al Barcelona','https://elpais.com/deportes/futbol/2026-08-16/el-barcelona-ata-a-rodri-hasta-2030.html'],
+ ['17/08/2026','Guía 2026/27: plantillas, fichajes y claves','https://as.com/futbol/primera/guia-de-laliga-ea-sports-202627-equipos-plantillas-fichajes-y-jugadores-a-seguir-f202608-n/']
  ];
  document.getElementById('newsGrid').innerHTML=items.map(x=>'<article class="card news-card"><div class="news-meta">'+x[0]+' · ACTUALIDAD</div><a href="'+x[2]+'" target="_blank" rel="noopener">'+esc(x[1])+' ↗</a></article>').join('');
 }
+function renderTable(rows){document.getElementById('table-body').innerHTML=rows.map((t,i)=>'<tr><td class="pos">'+(i+1)+'</td><td><b>'+esc(t.team)+'</b></td><td><b>'+t.pts+'</b></td><td>'+t.pj+'</td><td>'+t.w+'</td><td>'+t.d+'</td><td>'+t.l+'</td><td>'+t.gf+'</td><td>'+t.gc+'</td><td class="form">'+t.gd+'</td></tr>').join('');}
+function renderScorers(rows){document.getElementById('scorers-body').innerHTML=rows.map((s,i)=>'<tr><td class="pos">'+(i+1)+'</td><td><b>'+esc(s.name)+'</b></td><td class="muted">'+esc(s.team)+'</td><td class="zero"><b>'+Number(s.goals||0)+'</b></td><td class="muted">'+Number(s.played||0)+'</td></tr>').join('');}
 
-function renderTable(rows){
-  document.getElementById('table-body').innerHTML=rows.map((t,i)=>'<tr><td class="pos">'+(i+1)+'</td><td><b>'+esc(t.team)+'</b></td><td><b>'+t.pts+'</b></td><td>'+t.pj+'</td><td>'+t.w+'</td><td>'+t.d+'</td><td>'+t.l+'</td><td>'+t.gf+'</td><td>'+t.gc+'</td><td class="form">'+t.gd+'</td></tr>').join('');
-}
-function renderScorers(rows){
-  document.getElementById('scorers-body').innerHTML=rows.map((s,i)=>'<tr><td class="pos">'+(i+1)+'</td><td><b>'+esc(s.name)+'</b></td><td class="muted">'+esc(s.team)+'</td><td class="zero"><b>'+Number(s.goals||0)+'</b></td><td class="muted">'+Number(s.played||0)+'</td></tr>').join('');
-}
 async function load(){
-  document.getElementById('dataStatus').textContent='Actualizando…';
-  const results=await Promise.allSettled([getStandings(),getScorers(),getUpcomingMatches(),getEuropeanMatches()]);
-  const standings=results[0].status==='fulfilled'?results[0].value:loadCached()?.standings||[];
-  const scorers=results[1].status==='fulfilled'?results[1].value:loadCached()?.scorers||fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}));
-  const matches=results[2].status==='fulfilled'?results[2].value:loadCached()?.matches||[];
-  const euroMatches=results[3].status==='fulfilled'?results[3].value:[];
-  renderTable(standings); renderScorers(scorers); renderMatches(matches,standings); renderEuropeanMatches(euroMatches);
-  const fresh={standings,scorers,matches,savedAt:Date.now()}; localStorage.setItem(CACHE_KEY,JSON.stringify(fresh));
-  const ok=results.filter(x=>x.status==='fulfilled').length;
-  document.getElementById('dataStatus').textContent=ok===4?'Actualizado':(ok>0?'Actualización parcial':'Sin datos de API');
-  document.getElementById('lastUpdate').textContent='Última consulta: '+new Date().toLocaleString('es-ES');
-  document.getElementById('standingsLabel').textContent=standings.length?'Datos recibidos · '+standings.length+' equipos':'Sin datos de API';
-  document.querySelector('#goleadores .small').textContent=scorers.some(s=>Number(s.goals)>0)?'Temporada 2026/27 · datos ESPN':'Temporada 2026/27 · empieza en 0 / estadísticas aún no publicadas';
+ document.getElementById('dataStatus').textContent='Actualizando…';
+ const results=await Promise.allSettled([getStandings(),getScorers(),getUpcomingMatches(),getEuropeanMatches()]);
+ const cached=loadCached();
+ const standings=results[0].status==='fulfilled'?results[0].value:cached?.standings||[];
+ const scorers=results[1].status==='fulfilled'?results[1].value:cached?.scorers||fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}));
+ const matches=results[2].status==='fulfilled'?results[2].value:cached?.matches||[];
+ const euroMatches=results[3].status==='fulfilled'?results[3].value:[];
+ renderTable(standings);renderScorers(scorers);renderMatches(matches,standings);renderEuropeanMatches(euroMatches);
+ const fresh={standings,scorers,matches,savedAt:Date.now()};localStorage.setItem(CACHE_KEY,JSON.stringify(fresh));
+ const ok=results.filter(x=>x.status==='fulfilled').length;
+ document.getElementById('dataStatus').textContent=ok===4?'Actualizado':(ok>0?'Actualización parcial':'Sin datos de API');
+ document.getElementById('lastUpdate').textContent='Última consulta: '+new Date().toLocaleString('es-ES');
+ document.getElementById('standingsLabel').textContent=standings.length?'Datos recibidos · '+standings.length+' equipos':'Sin datos de API';
+ document.querySelector('#goleadores .small').textContent=scorers.some(s=>Number(s.goals)>0)?'Temporada 2026/27 · datos ESPN':'Temporada 2026/27 · empieza en 0 / estadísticas aún no publicadas';
+ runSimulation();
 }
 function loadCached(){try{return JSON.parse(localStorage.getItem(CACHE_KEY)||'null')}catch(e){return null}}
+
 document.getElementById('refreshBtn').addEventListener('click',load);
-document.querySelectorAll('.collapse-btn').forEach(btn=>btn.addEventListener('click',()=>{const p=document.getElementById(btn.dataset.target); p.classList.toggle('is-collapsed');}));
 document.querySelectorAll('.matchday-btn').forEach(btn=>btn.addEventListener('click',()=>selectRound(btn.dataset.roundAction)));
+document.querySelectorAll('.weight-range').forEach(input=>input.addEventListener('input',updateWeightLabels));
+document.getElementById('resetWeightsBtn').addEventListener('click',resetWeights);
 renderNews();
 load();
 </script>
