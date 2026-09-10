@@ -1186,102 +1186,84 @@ async function getStandings() {
 async function getScorers() {
 
     /*
-     * ESPN dispone de un endpoint de estadísticas
-     * que actualmente devuelve las categorías de
-     * líderes dentro de:
+     * ESPN no utiliza aquí el endpoint /leaders de forma
+     * compatible con LaLiga.
      *
-     * json.stats[].leaders[]
+     * El endpoint /statistics devuelve los líderes dentro de:
      *
-     *
-     * Ejemplo:
-     *
-     * stats
+     * stats[]
      *   └── goalsLeaders
-     *        └── leaders[]
-     *             ├── athlete
-     *             ├── team
-     *             ├── value
-     *             └── statistics[]
+     *         └── leaders[]
      *
-     * Esta estructura es la que utilizamos aquí.
+     * Cada líder contiene:
+     *
+     * athlete
+     * team
+     * value
+     * displayValue
+     * shortDisplayValue
      */
 
     const url =
         `${ESPN_BASE}/sports/soccer/esp.1/statistics`;
 
     const json =
-    await espnJSON(
-        url,
-        "ESPN goleadores"
-    );
-
-console.log(
-    "DEBUG GOLEADORES:",
-    JSON.stringify(json, null, 2).slice(0, 12000)
-);
-
-const athletes =
-    json?.athletes ||
-    json?.leaders ||
-    json?.results ||
-    [];
+        await espnJSON(
+            url,
+            "ESPN goleadores"
+        );
 
     const scorers = [];
 
     /*
-     * Localizar la categoría de goles.
+     * Buscar específicamente el bloque de goles.
      */
 
-    const statsCategories =
+    const stats =
         Array.isArray(json?.stats)
             ? json.stats
             : [];
 
-    let goalsCategory =
-        statsCategories.find(
-            category =>
-                [
-                    "goalsLeaders",
-                    "goals",
-                    "totalGoals"
-                ].includes(
-                    category?.name
-                )
+    const goalsStat =
+        stats.find(
+            stat =>
+                stat?.name === "goalsLeaders" ||
+                stat?.displayName === "Goals" ||
+                stat?.shortDisplayName === "Goals"
         );
-
-    /*
-     * Si ESPN cambia el nombre de la categoría,
-     * buscamos cualquier categoría que contenga
-     * "goal".
-     */
-
-    if (
-        !goalsCategory
-    ) {
-
-        goalsCategory =
-            statsCategories.find(
-                category =>
-                    String(
-                        category?.name ||
-                        ""
-                    )
-                    .toLowerCase()
-                    .includes("goal")
-            );
-
-    }
 
     const leaders =
         Array.isArray(
-            goalsCategory?.leaders
+            goalsStat?.leaders
         )
-            ? goalsCategory.leaders
+            ? goalsStat.leaders
             : [];
 
     /*
-     * Convertimos cada líder al formato utilizado
-     * actualmente por laliga_2026_27.json.
+     * Fallback por si ESPN cambia ligeramente
+     * la estructura en el futuro.
+     */
+
+    if (!leaders.length) {
+
+        const alternative =
+            Array.isArray(json?.leaders)
+                ? json.leaders
+                : [];
+
+        if (alternative.length) {
+
+            leaders.push(
+                ...alternative
+            );
+
+        }
+
+    }
+
+    /*
+     * Convertir cada jugador al formato que utiliza
+     * nuestro JSON de LaLiga.
      */
 
     for (
@@ -1292,76 +1274,70 @@ const athletes =
         const athlete =
             row?.athlete ||
             row?.player ||
-            {};
+            null;
 
-        if (
-            !athlete?.id
-        ) {
+        if (!athlete?.id) {
 
             continue;
 
         }
 
-        const playerStats =
-            Array.isArray(
-                row?.statistics
-            )
-                ? row.statistics
-                : [];
-
-        function playerStat(name) {
-
-            const item =
-                playerStats.find(
-                    x =>
-                        String(
-                            x?.name ||
-                            ""
-                        ).toLowerCase() ===
-                        String(
-                            name
-                        ).toLowerCase()
-                );
-
-            return (
-                item?.value ??
-                item?.displayValue ??
-                null
-            );
-
-        }
-
-        const goals =
-            Number(
-                row?.value ??
-                playerStat("totalGoals") ??
-                playerStat("goals") ??
-                0
-            );
-
-        const assists =
-            Number(
-                playerStat("goalAssists") ??
-                playerStat("assists") ??
-                0
-            );
-
-        const appearances =
-            Number(
-                playerStat("appearances") ??
-                playerStat("appearences") ??
-                0
-            );
-
-        /*
-         * ESPN devuelve la información del equipo
-         * dentro del propio leader.
-         */
-
         const team =
             row?.team ||
             athlete?.team ||
             null;
+
+        const goals =
+            Number(
+                row?.value ??
+                row?.goals ??
+                0
+            );
+
+        let assists = 0;
+
+        /*
+         * ESPN incluye normalmente las asistencias
+         * dentro de shortDisplayValue, por ejemplo:
+         *
+         * "M: 4, G: 6: A: 1"
+         *
+         * Si además existe un campo numérico directo,
+         * utilizamos ese valor.
+         */
+
+        if (
+            row?.assists !== undefined
+        ) {
+
+            assists =
+                number(
+                    row.assists
+                );
+
+        } else {
+
+            const shortDisplay =
+                String(
+                    row?.shortDisplayValue ||
+                    ""
+                );
+
+            const assistsMatch =
+                shortDisplay.match(
+                    /A:\s*(\d+)/i
+                );
+
+            if (assistsMatch) {
+
+                assists =
+                    number(
+                        assistsMatch[1]
+                    );
+
+            }
+
+        }
 
         scorers.push({
 
@@ -1400,127 +1376,73 @@ const athletes =
 
             },
 
-            team: team
-                ? {
+            team: {
 
-                    id:
-                        Number(
-                            team.id
-                        ),
+                id:
+                    team?.id
+                        ? Number(team.id)
+                        : null,
 
-                    name:
-                        team.displayName ||
-                        team.name ||
-                        null,
+                name:
+                    team?.displayName ||
+                    team?.name ||
+                    null,
 
-                    abbreviation:
-                        team.abbreviation ||
-                        null,
+                abbreviation:
+                    team?.abbreviation ||
+                    null,
 
-                    logo:
-                        team.logos?.[0]?.href ||
-                        null
+                logo:
+                    team?.logos?.[0]?.href ||
+                    team?.logo ||
+                    null
 
-                }
-                : null,
+            },
 
             goals: {
 
                 total:
-                    Number.isFinite(
-                        goals
-                    )
+                    Number.isFinite(goals)
                         ? goals
                         : 0,
 
-                assists:
-                    Number.isFinite(
-                        assists
-                    )
-                        ? assists
-                        : 0
+                assists
 
             },
 
             appearances:
-                Number.isFinite(
-                    appearances
-                )
-                    ? appearances
-                    : 0,
+                number(
+                    row?.appearances ??
+                    row?.games ??
+                    0
+                ),
 
             minutes:
-                Number(
-                    playerStat("minutes") ??
+                number(
+                    row?.minutes ??
                     0
                 ),
 
             rating:
-                playerStat("rating")
+                row?.rating ??
+                null
 
         });
 
     }
 
     /*
-     * Ordenar por:
-     *
-     * 1. Goles
-     * 2. Asistencias
-     * 3. Apariciones
-     *
-     * Así conseguimos una clasificación estable.
+     * Ordenar de mayor a menor número de goles.
      */
 
     scorers.sort(
-        (a, b) => {
-
-            const goalsDiff =
-                number(
-                    b.goals?.total
-                ) -
-                number(
-                    a.goals?.total
-                );
-
-            if (
-                goalsDiff !== 0
-            ) {
-
-                return goalsDiff;
-
-            }
-
-            const assistsDiff =
-                number(
-                    b.goals?.assists
-                ) -
-                number(
-                    a.goals?.assists
-                );
-
-            if (
-                assistsDiff !== 0
-            ) {
-
-                return assistsDiff;
-
-            }
-
-            return (
-                number(
-                    b.appearances
-                ) -
-                number(
-                    a.appearances
-                )
-            );
-
-        }
+        (a, b) =>
+            number(b.goals?.total) -
+            number(a.goals?.total)
     );
 
     /*
-     * Guardamos los 20 primeros.
+     * Mantener los 20 primeros.
      */
 
     const result =
@@ -1533,10 +1455,25 @@ const athletes =
         `Goleadores obtenidos: ${result.length}`
     );
 
+    /*
+     * Información de diagnóstico útil.
+     */
+
+    if (result.length) {
+
+        console.log(
+            `Máximo goleador: ${
+                result[0].player.name
+            } (${
+                result[0].goals.total
+            } goles)`
+        );
+
+    }
+
     return result;
 
 }
-
 
 // ============================================================
 // LESIONES
