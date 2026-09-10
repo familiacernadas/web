@@ -1210,10 +1210,21 @@ async function getScorers() {
         `${ESPN_BASE}/sports/soccer/esp.1/statistics`;
 
     const json =
-        await espnJSON(
-            url,
-            "ESPN goleadores"
-        );
+    await espnJSON(
+        url,
+        "ESPN goleadores"
+    );
+
+console.log(
+    "DEBUG GOLEADORES:",
+    JSON.stringify(json, null, 2).slice(0, 12000)
+);
+
+const athletes =
+    json?.athletes ||
+    json?.leaders ||
+    json?.results ||
+    [];
 
     const scorers = [];
 
