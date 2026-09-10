@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>LaLiga EA Sports 2026/27 · Pronósticos v3.6</title>
+<title>LaLiga EA Sports 2026/27 · Pronósticos v3.7</title>
 <style>
 :root{--bg:#07111f;--panel:#0f1b2d;--panel2:#111f34;--line:#24334a;--text:#eef4ff;--muted:#91a0b8;--accent:#4f7cff;--green:#22c55e;--yellow:#f59e0b;--red:#ef4444}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(135deg,#06101d,#0a1628 50%,#07111f);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
@@ -119,7 +119,7 @@ const START='20260814';
 const END='20270524';
 const DATA_URL='./data/laliga_2026_27.json';
 const ROUND_SOURCE_URL='https://raw.githubusercontent.com/openfootball/espana/master/2026-27/1-liga.txt';
-const CACHE_KEY='cernadas_laliga_2627_v8';
+const CACHE_KEY='cernadas_laliga_2627_v9';
 const PRED_CACHE_KEY='cernadas_laliga_2627_predictions_v1';
 
 const DEFAULT_WEIGHTS={overall:40,venue:25,attack:15,defense:10,home:10};
@@ -170,9 +170,15 @@ async function getStandings(){
 
 function normalizeScorerRow(s){
   const player=s?.player||s?.athlete||{};
-  const team=s?.team||{};
-  const goals=Number(s?.goals?.total ?? s?.goals ?? s?.value ?? 0);
-  const appearances=Number(s?.appearances ?? s?.matches ?? s?.played ?? NaN);
+  const team=s?.team||player?.team||{};
+  const statList=Array.isArray(s?.statistics)?s.statistics:[];
+  const findStat=(...names)=>{
+    const wanted=names.map(x=>String(x).toLowerCase());
+    const hit=statList.find(x=>wanted.includes(String(x?.name||x?.abbreviation||'').toLowerCase()));
+    return hit?.value??hit?.displayValue;
+  };
+  const goals=Number(s?.goals?.total ?? s?.goals ?? s?.value ?? findStat('totalGoals','goals') ?? 0);
+  const appearances=Number(s?.appearances ?? s?.matches ?? s?.played ?? findStat('appearances','apps') ?? NaN);
   return {
     name:player?.name||player?.displayName||player?.fullName||s?.name||'',
     team:team?.name||team?.displayName||s?.teamName||'',
@@ -398,7 +404,7 @@ function extractGoalLeaders(data){
 /* ============================================================
    CALENDARIO POR JORNADAS
    ============================================================ */
-const SCHEDULE_CACHE_KEY='cernadas_laliga_2627_schedule_v8';
+const SCHEDULE_CACHE_KEY='cernadas_laliga_2627_schedule_v9';
 function loadScheduleCache(){try{return JSON.parse(localStorage.getItem(SCHEDULE_CACHE_KEY)||'null');}catch(e){return null;}}
 function saveScheduleCache(x){try{localStorage.setItem(SCHEDULE_CACHE_KEY,JSON.stringify(x));}catch(e){}}
 
@@ -423,7 +429,9 @@ function fixtureKey(home,away){return canonicalTeam(home)+'|'+canonicalTeam(away
 
 async function getOfficialRoundMap(){
   try{
-    const text=await (await fetch(ROUND_SOURCE_URL,{cache:'no-store'})).text();
+    const response=await fetch(ROUND_SOURCE_URL,{cache:'no-store'});
+    if(!response.ok)throw new Error('HTTP '+response.status);
+    const text=await response.text();
     const map=new Map();
     let round=null;
     for(const raw of text.split(/\r?\n/)){
@@ -439,7 +447,7 @@ async function getOfficialRoundMap(){
     }
     return map;
   }catch(e){
-    console.warn('No se pudo cargar la referencia oficial de jornadas:',e.message);
+    console.warn('No se pudo cargar la referencia de jornadas:',e.message);
     return new Map();
   }
 }
@@ -448,11 +456,16 @@ function normalizeStoredMatch(m,roundMap){
   const home=m?.home?.name||m?.home?.displayName||m?.home||'';
   const away=m?.away?.name||m?.away?.displayName||m?.away||'';
   const full=m?.score?.fulltime||{};
-  const roundCandidates=[m?.round,m?.week,m?.matchday,m?.jornada];
-  let round=roundCandidates.map(Number).find(n=>Number.isFinite(n)&&n>=1&&n<=38);
-  if(!round)round=roundMap.get(fixtureKey(home,away))||null;
+  /* El campo round de ESPN no es fiable en todos los eventos 2026/27.
+     La pareja local/visitante es la referencia estable del calendario oficial. */
+  let round=roundMap.get(fixtureKey(home,away))||null;
+  if(!round){
+    const roundCandidates=[m?.round,m?.week,m?.matchday,m?.jornada];
+    round=roundCandidates.map(Number).find(n=>Number.isFinite(n)&&n>=1&&n<=38)||null;
+  }
   const status=String(m?.status||m?.state||'').toLowerCase();
-  const completed=Boolean(m?.score?.fulltime?.home!==null&&m?.score?.fulltime?.away!==null)||['ft','aet','pen','final','post'].includes(status);
+  const hasFinalScore=m?.score?.fulltime?.home!==null&&m?.score?.fulltime?.home!==undefined&&m?.score?.fulltime?.away!==null&&m?.score?.fulltime?.away!==undefined;
+  const completed=['ft','aet','pen','final','post'].includes(status)||hasFinalScore;
   return {
     id:String(m?.id??m?.espnId??''),
     week:round,
@@ -800,6 +813,32 @@ function renderNews(items=[]){
   }).join('');
 }
 
+function normalizeStandings(rows){
+  if(!Array.isArray(rows))return [];
+  return rows.map((row,i)=>{
+    const teamObj=row?.team;
+    const team=typeof teamObj==='string'
+      ? teamObj
+      : (teamObj?.displayName||teamObj?.name||row?.teamName||'Equipo');
+    const num=(...values)=>{
+      for(const v of values){const n=Number(v);if(Number.isFinite(n))return n;}
+      return 0;
+    };
+    return {
+      team,
+      teamId:teamObj?.id??row?.teamId??null,
+      pts:num(row?.pts,row?.points,row?.puntos),
+      pj:num(row?.pj,row?.played,row?.gamesPlayed),
+      w:num(row?.w,row?.wins,row?.won),
+      d:num(row?.d,row?.draws,row?.ties),
+      l:num(row?.l,row?.losses,row?.lost),
+      gf:num(row?.gf,row?.goalsFor,row?.pointsFor),
+      gc:num(row?.gc,row?.goalsAgainst,row?.pointsAgainst),
+      gd:num(row?.gd,row?.goalsDiff,row?.goalDifference,row?.differential)
+    };
+  }).filter(x=>x.team&&x.team!=='Equipo').sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf||a.team.localeCompare(b.team,'es'));
+}
+
 function renderTable(rows){document.getElementById('table-body').innerHTML=rows.map((t,i)=>'<tr><td class="pos">'+(i+1)+'</td><td><b>'+esc(t.team)+'</b></td><td><b>'+t.pts+'</b></td><td>'+t.pj+'</td><td>'+t.w+'</td><td>'+t.d+'</td><td>'+t.l+'</td><td>'+t.gf+'</td><td>'+t.gc+'</td><td class="form">'+t.gd+'</td></tr>').join('');}
 function renderScorers(rows){document.getElementById('scorers-body').innerHTML=rows.map((s,i)=>'<tr><td class="pos">'+(i+1)+'</td><td><b>'+esc(s.name)+'</b></td><td class="muted">'+esc(s.team)+'</td><td class="zero"><b>'+Number(s.goals||0)+'</b></td><td class="muted">'+(s.played===null||s.played===undefined?'—':Number(s.played))+'</td></tr>').join('');}
 
@@ -811,14 +850,17 @@ async function load(){
     const data=await response.json();
     window.__LALIGA_DATA__=data;
 
-    const standings=Array.isArray(data.standings)?data.standings:[];
+    const standings=normalizeStandings(data.standings);
     const matches=await getUpcomingMatches();
     const scorers=getScorersFromData(data);
     const news=Array.isArray(data.news)?data.news:[];
+    const spanishEuropeTeams=['FC Barcelona','Barcelona','Real Madrid','Real Madrid CF','Atlético de Madrid','Club Atlético de Madrid','Villarreal CF','Real Betis Balompié','Real Betis','Celta','RC Celta de Vigo','Real Sociedad de Fútbol','Real Sociedad','Getafe CF','Getafe'];
+    const isSpanishEuropeTeam=name=>spanishEuropeTeams.some(t=>normalizeName(name)===normalizeName(t)||normalizeName(name).includes(normalizeName(t))||normalizeName(t).includes(normalizeName(name)));
     const euroMatches=Array.isArray(data.europeanMatches)?data.europeanMatches.map(x=>({
       comp:x.competition||x.comp||'',date:x.date,home:x.home?.name||x.home||'',away:x.away?.name||x.away||'',
-      state:x.status==='FT'?'post':'pre',homeScore:Number(x.score?.home??x.homeScore??0),awayScore:Number(x.score?.away??x.awayScore??0)
-    })).filter(x=>x.home&&x.away):[];
+      state:(x.status==='FT'||x.status==='AET'||x.status==='PEN'||x.state==='post')?'post':(x.status==='LIVE'||x.state==='in'?'in':'pre'),
+      homeScore:Number(x.score?.home??x.homeScore??0),awayScore:Number(x.score?.away??x.awayScore??0)
+    })).filter(x=>x.home&&x.away&&(isSpanishEuropeTeam(x.home)||isSpanishEuropeTeam(x.away))).sort((a,b)=>new Date(a.date)-new Date(b.date)).slice(0,24):[];
 
     renderTable(standings);
     renderScorers(scorers);
@@ -826,7 +868,7 @@ async function load(){
     renderEuropeanMatches(euroMatches);
     renderNews(news);
 
-    const fresh={standings,scorers,matches,savedAt:Date.now()};
+    const fresh={standings,scorers,matches,news,europeanMatches:euroMatches,savedAt:Date.now()};
     localStorage.setItem(CACHE_KEY,JSON.stringify(fresh));
 
     document.getElementById('dataStatus').textContent='Actualizado';
@@ -838,8 +880,9 @@ async function load(){
     console.error('No se pudo cargar el JSON de LaLiga:',error);
     const cached=loadCached();
     if(cached){
-      window.__LALIGA_DATA__={standings:cached.standings||[],matches:cached.matches||[],scorers:cached.scorers||[],news:[]};
-      renderTable(cached.standings||[]);renderScorers(cached.scorers||[]);renderMatches(cached.matches||[],cached.standings||[]);
+      const cachedStandings=normalizeStandings(cached.standings||[]);
+      window.__LALIGA_DATA__={standings:cachedStandings,matches:cached.matches||[],scorers:cached.scorers||[],news:cached.news||[],europeanMatches:cached.europeanMatches||[]};
+      renderTable(cachedStandings);renderScorers(cached.scorers||[]);renderMatches(cached.matches||[],cachedStandings);renderEuropeanMatches(cached.europeanMatches||[]);renderNews(cached.news||[]);
       document.getElementById('dataStatus').textContent='Datos en caché';
       document.getElementById('lastUpdate').textContent='No se pudo renovar el JSON; mostrando la última copia local.';
     }else{
