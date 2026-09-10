@@ -418,100 +418,90 @@ function extractGoalLeaders(data){
 }
 
 /* ============================================================
-   CALENDARIO POR JORNADAS — SIN /teams (evita CORS)
+   CALENDARIO POR JORNADAS — ESPN SCOREBOARD POR WEEK
+   No usamos /calendar ni /teams: ambos han dado 404/CORS en el navegador.
+   ESPN permite consultar el scoreboard indicando season + seasontype + week.
+   Así cada partido queda asociado directamente a su Jornada 1..38.
    ============================================================ */
-const SCHEDULE_CACHE_KEY='cernadas_laliga_2627_schedule_v6';
+const SCHEDULE_CACHE_KEY='cernadas_laliga_2627_schedule_v7';
 function loadScheduleCache(){try{return JSON.parse(localStorage.getItem(SCHEDULE_CACHE_KEY)||'null');}catch(e){return null;}}
 function saveScheduleCache(x){try{localStorage.setItem(SCHEDULE_CACHE_KEY,JSON.stringify(x));}catch(e){}}
-function ymd(d){return new Date(d).toISOString().slice(0,10).replace(/-/g,'');}
 
-function extractCalendarWeeks(data){
-  const found=new Map();
-  function weekNumber(node){
-    const candidates=[node?.value,node?.number,node?.weekNumber,node?.week?.number,node?.week?.value,node?.id];
-    for(const v of candidates){
-      const n=Number(v);
-      if(Number.isFinite(n)&&n>=1&&n<=38)return n;
-    }
-    const text=String(node?.label||node?.name||node?.displayName||node?.description||'');
-    const m=text.match(/(?:week|jornada)\s*(\d{1,2})/i);
-    return m?Number(m[1]):null;
-  }
-  function walk(node){
-    if(!node||typeof node!=='object')return;
-    if(Array.isArray(node)){node.forEach(walk);return;}
-    const n=weekNumber(node);
-    const start=node.startDate||node.start||node.dateStart||node.from;
-    const end=node.endDate||node.end||node.dateEnd||node.to;
-    if(n&&start&&end){
-      const s=new Date(start),e=new Date(end);
-      if(!isNaN(s)&&!isNaN(e))found.set(n,{number:n,start:s,end:e});
-    }
-    Object.values(node).forEach(walk);
-  }
-  walk(data);
-  return [...found.values()].sort((a,b)=>a.number-b.number);
+function normalizeEvent(e, forcedWeek=null){
+  if(!e || !e.id) return null;
+  const c=e.competitions?.[0]?.competitors||[];
+  if(c.length<2) return null;
+  const home=c.find(x=>x.homeAway==='home')||c[0];
+  const away=c.find(x=>x.homeAway==='away')||c[1];
+  if(!home || !away) return null;
+
+  const eventWeek=forcedWeek ?? e.week?.number ?? e.week?.value ?? e.competitions?.[0]?.status?.week?.number ?? null;
+  const n=Number(eventWeek);
+  const week=Number.isFinite(n)&&n>=1&&n<=38?n:eventWeek;
+  if(!Number.isFinite(Number(week))) return null;
+
+  return {
+    id:String(e.id),
+    week:Number(week),
+    date:e.date,
+    home:teamName(home),
+    away:teamName(away),
+    homeScore:Number(home.score??0),
+    awayScore:Number(away.score??0),
+    state:e.status?.type?.state||'pre'
+  };
 }
 
 async function getUpcomingMatches(){
   const cached=loadScheduleCache();
   const cachedMatches=Array.isArray(cached?.matches)?cached.matches:[];
-  const cachedRounds=new Set(cachedMatches.map(m=>Number(m.week)).filter(Number.isFinite));
-  const cacheOK=cachedMatches.length>=300&&cachedRounds.size>=20;
-  const cacheFresh=cacheOK&&Date.now()-Number(cached.savedAt||0)<15*60*1000;
-  if(cacheFresh)return cachedMatches;
+  const cachedRounds=new Set(cachedMatches.map(m=>Number(m.week)).filter(n=>Number.isFinite(n)&&n>=1&&n<=38));
 
-  let weeks=[];
-  try{
-    const calendar=await getJSON(API+'/calendar/regular-season?season='+SEASON+'&seasontype=2');
-    weeks=extractCalendarWeeks(calendar);
-  }catch(e){
-    try{
-      const calendar=await getJSON(API+'/calendar?season='+SEASON+'&seasontype=2');
-      weeks=extractCalendarWeeks(calendar);
-    }catch(e2){
-      console.warn('No se pudo obtener el calendario de jornadas:',e2.message);
-    }
+  /* El caché anterior puede contener los 370 partidos mezclados. Solo lo
+     reutilizamos si ya tiene las 38 jornadas identificadas correctamente. */
+  const cacheOK=cachedMatches.length>=300 && cachedRounds.size>=30;
+  const cacheFresh=cacheOK && Date.now()-Number(cached.savedAt||0)<10*60*1000;
+  if(cacheFresh) return cachedMatches;
+
+  const all=[];
+  const weeks=Array.from({length:38},(_,i)=>i+1);
+
+  /* Consultamos las 38 jornadas en bloques para no lanzar 38 peticiones
+     simultáneas. Cada petición devuelve únicamente esa jornada. */
+  for(let i=0;i<weeks.length;i+=6){
+    const chunk=weeks.slice(i,i+6);
+    const results=await Promise.allSettled(chunk.map(week=>
+      getJSON(API+'/scoreboard?limit=100&season='+SEASON+'&seasontype=2&week='+week)
+        .then(data=>(data.events||[]).map(e=>normalizeEvent(e,week)).filter(Boolean))
+    ));
+    results.forEach(r=>{if(r.status==='fulfilled')all.push(...r.value);});
   }
 
-  if(weeks.length>=20){
-    const all=[];
-    /* Cada consulta está limitada a la ventana temporal de UNA jornada.
-       Así cada evento recibe el número real de su jornada y no mezclamos
-       los 370/380 partidos en un único grupo. */
-    for(let i=0;i<weeks.length;i+=4){
-      const chunk=weeks.slice(i,i+4);
-      const results=await Promise.allSettled(chunk.map(w=>
-        getJSON(API+'/scoreboard?limit=100&season='+SEASON+'&seasontype=2&dates='+ymd(w.start)+'-'+ymd(w.end))
-          .then(data=>(data.events||[]).map(e=>normalizeEvent(e,w.number)).filter(Boolean))
-      ));
-      results.forEach(r=>{if(r.status==='fulfilled')all.push(...r.value);});
-    }
-    const clean=[...new Map(all.map(m=>[String(m.id),m])).values()]
-      .filter(m=>Number.isFinite(Number(m.week))&&Number(m.week)>=1&&Number(m.week)<=38)
-      .sort((a,b)=>new Date(a.date)-new Date(b.date));
-    const roundCounts=new Map();clean.forEach(m=>roundCounts.set(Number(m.week),(roundCounts.get(Number(m.week))||0)+1));
-    if(clean.length>=300&&roundCounts.size>=20){
-      saveScheduleCache({matches:clean,savedAt:Date.now()});
-      return clean;
-    }
+  const clean=[...new Map(all.map(m=>[String(m.id),m])).values()]
+    .filter(m=>Number.isFinite(Number(m.week))&&Number(m.week)>=1&&Number(m.week)<=38)
+    .sort((a,b)=>new Date(a.date)-new Date(b.date));
+
+  const roundCounts=new Map();
+  clean.forEach(m=>roundCounts.set(Number(m.week),(roundCounts.get(Number(m.week))||0)+1));
+
+  /* LaLiga tiene 10 partidos por jornada. No exigimos exactamente 380 porque
+     puede haber partidos aún no publicados/aplazados, pero sí una estructura
+     de jornadas suficiente para que la web no vuelva a mostrar toda la liga. */
+  if(clean.length>=300 && roundCounts.size>=30){
+    saveScheduleCache({matches:clean,savedAt:Date.now()});
+    return clean;
   }
 
-  /* Respaldo: el scoreboard general se utiliza SOLO si los eventos ya traen
-     una jornada válida. Nunca inventamos la jornada a partir de 370 partidos. */
-  try{
-    const data=await getJSON(API+'/scoreboard?limit=1000&season='+SEASON+'&seasontype=2&dates='+START+'-'+END);
-    const direct=(data.events||[]).map(e=>normalizeEvent(e)).filter(m=>m&&Number.isFinite(Number(m.week))&&Number(m.week)>=1&&Number(m.week)<=38);
-    const directRounds=new Set(direct.map(m=>Number(m.week)));
-    if(direct.length>=300&&directRounds.size>=20){
-      const clean=[...new Map(direct.map(m=>[String(m.id),m])).values()].sort((a,b)=>new Date(a.date)-new Date(b.date));
-      saveScheduleCache({matches:clean,savedAt:Date.now()});
-      return clean;
-    }
-  }catch(e){}
+  /* Último respaldo: si el scoreboard por week falla parcialmente, usamos
+     el caché bueno anterior, nunca un conjunto de 370 partidos sin jornada. */
+  if(cacheOK) return cachedMatches;
 
-  if(cacheOK)return cachedMatches;
-  throw new Error('No se pudo obtener un calendario de LaLiga con jornadas identificables.');
+  if(clean.length){
+    saveScheduleCache({matches:clean,savedAt:Date.now()});
+    return clean;
+  }
+
+  throw new Error('No se pudo obtener el calendario de LaLiga por jornadas.');
 }
 
 function rating(team,standings){
