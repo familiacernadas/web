@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>LaLiga EA Sports 2026/27 · Pronósticos v3.2</title>
+<title>LaLiga EA Sports 2026/27 · Pronósticos v3.4</title>
 <style>
 :root{--bg:#07111f;--panel:#0f1b2d;--panel2:#111f34;--line:#24334a;--text:#eef4ff;--muted:#91a0b8;--accent:#4f7cff;--green:#22c55e;--yellow:#f59e0b;--red:#ef4444}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(135deg,#06101d,#0a1628 50%,#07111f);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
@@ -273,24 +273,29 @@ async function enrichScorerAppearances(rows,matches=[]){
     return {...rows[i],played:Number(rows[i].played||0)};
   });
 
-  /* Si ESPN no entrega PJ en esas estadísticas, lo calculamos de forma real
-     a partir de las plantillas de los partidos finalizados. */
+  /* Segundo nivel: contamos en los boxscores de todos los partidos finalizados.
+     La clave principal es el ID del jugador, no el nombre del equipo, porque
+     ESPN puede escribir el nombre del club de forma diferente entre endpoints. */
   const missing=enriched.filter(r=>Number(r.played||0)<=0);
   if(!missing.length)return enriched;
 
   const appearances=loadAppearanceCache();
+  if(!appearances.playersById)appearances.playersById={};
   const needMatches=(matches||[]).filter(m=>m.state==='post'||m.state==='final')
     .filter(m=>!appearances.processed[String(m.id)]);
 
   if(needMatches.length){
-    for(let i=0;i<needMatches.length;i+=8){
-      const chunk=needMatches.slice(i,i+8);
+    for(let i=0;i<needMatches.length;i+=6){
+      const chunk=needMatches.slice(i,i+6);
       const results=await Promise.allSettled(chunk.map(getMatchPlayers));
       results.forEach((r,j)=>{
         const id=String(chunk[j].id);
         appearances.processed[id]=true;
         if(r.status==='fulfilled'){
           r.value.forEach(pl=>{
+            if(pl.athleteId){
+              appearances.playersById[pl.athleteId]=(appearances.playersById[pl.athleteId]||0)+1;
+            }
             const key=normalizeName(pl.name)+'|'+normalizeName(pl.team);
             appearances.players[key]=(appearances.players[key]||0)+1;
           });
@@ -302,14 +307,15 @@ async function enrichScorerAppearances(rows,matches=[]){
 
   return enriched.map(r=>{
     if(Number(r.played||0)>0)return r;
+    const byId=r.athleteId?Number(appearances.playersById?.[r.athleteId]||0):0;
+    if(byId>0)return {...r,played:byId};
     const key=normalizeName(r.name)+'|'+normalizeName(r.team);
     return {...r,played:Number(appearances.players[key]||0)};
   });
 }
-
 function loadAppearanceCache(){
-  try{return JSON.parse(localStorage.getItem(APPEARANCE_CACHE_KEY)||'{"processed":{},"players":{}}')||{processed:{},players:{}};}
-  catch(e){return {processed:{},players:{}};}
+  try{return JSON.parse(localStorage.getItem(APPEARANCE_CACHE_KEY)||'{"processed":{},"players":{},"playersById":{}}')||{processed:{},players:{},playersById:{}};}
+  catch(e){return {processed:{},players:{},playersById:{}};}
 }
 function saveAppearanceCache(x){try{localStorage.setItem(APPEARANCE_CACHE_KEY,JSON.stringify(x));}catch(e){}}
 
@@ -323,16 +329,17 @@ async function getMatchPlayers(match){
       (group.athletes||[]).forEach(item=>{
         const athlete=item.athlete||{};
         const name=athlete.displayName||athlete.fullName||athlete.name||'';
-        if(name)result.push({name,team});
+        const athleteId=String(athlete.id||athlete.uid||'');
+        if(name)result.push({name,team,athleteId});
       });
     });
   });
-  /* Eliminamos duplicados por partido: un jugador puede aparecer en más de un
-     grupo estadístico del boxscore. */
   const seen=new Set();
-  return result.filter(pl=>{const k=normalizeName(pl.name)+'|'+normalizeName(pl.team);if(seen.has(k))return false;seen.add(k);return true;});
+  return result.filter(pl=>{
+    const k=pl.athleteId||normalizeName(pl.name)+'|'+normalizeName(pl.team);
+    if(seen.has(k))return false;seen.add(k);return true;
+  });
 }
-
 async function getMatchGoals(match){
   const data=await getJSON(API+'/summary?event='+encodeURIComponent(match.id));
   const events=Array.isArray(data.keyEvents)?data.keyEvents:[];
@@ -383,7 +390,8 @@ function normalizeEvent(e,forcedWeek=null){
 async function getWeekMatches(week){
   const urls=[
     API+'/scoreboard?limit=100&week='+week+'&season='+SEASON+'&seasontype=2',
-    API+'/scoreboard?limit=100&season='+SEASON+'&seasontype=2&week='+week
+    API+'/scoreboard?limit=100&season='+SEASON+'&seasontype=2&week='+week,
+    API+'/scoreboard?limit=100&week='+week+'&season='+SEASON
   ];
   for(const url of urls){
     try{
@@ -394,52 +402,75 @@ async function getWeekMatches(week){
   }
   return [];
 }
-
-const SCHEDULE_CACHE_KEY='cernadas_laliga_2627_schedule_v3';
+const SCHEDULE_CACHE_KEY='cernadas_laliga_2627_schedule_v4';
 function loadScheduleCache(){try{return JSON.parse(localStorage.getItem(SCHEDULE_CACHE_KEY)||'null');}catch(e){return null;}}
 function saveScheduleCache(x){try{localStorage.setItem(SCHEDULE_CACHE_KEY,JSON.stringify(x));}catch(e){}}
 
 async function getUpcomingMatches(){
-  /* IMPORTANTE: no hacemos 38 peticiones por semana. ESPN puede devolver 0
-     eventos cuando se combina week + season en determinadas fases de la
-     temporada. Descargamos el calendario completo de LaLiga una sola vez y
-     utilizamos el campo week de cada evento para formar las jornadas. */
+  /*
+   * CALENDARIO ROBUSTO POR JORNADAS
+   *
+   * El endpoint de ESPN que devuelve el calendario completo puede entregar
+   * todos los partidos de la temporada sin incluir el número de jornada.
+   * Si agrupamos ese resultado directamente, los 370 partidos terminan en
+   * una única jornada. Para evitarlo, consultamos cada week de la temporada
+   * y forzamos ese número en cada evento recibido.
+   *
+   * La caché solo se acepta si contiene jornadas reales (varios números de
+   * jornada distintos). Así nunca volvemos a utilizar la caché defectuosa
+   * que mezclaba los 370 partidos.
+   */
   const cached=loadScheduleCache();
-  const freshEnough=cached&&Array.isArray(cached.matches)&&cached.matches.length>=300&&Date.now()-Number(cached.savedAt||0)<15*60*1000;
-  if(freshEnough)return cached.matches;
+  const cachedMatches=Array.isArray(cached?.matches)?cached.matches:[];
+  const cachedRounds=new Set(cachedMatches.map(m=>Number(m.week)).filter(Number.isFinite));
+  const cacheOK=cachedMatches.length>=300 && cachedRounds.size>=20;
+  const cacheFresh=cacheOK && Date.now()-Number(cached.savedAt||0)<15*60*1000;
+  if(cacheFresh)return cachedMatches;
 
-  const urls=[
-    API+'/scoreboard?limit=1000&dates='+START+'-'+END,
-    API+'/scoreboard?limit=1000&season='+SEASON+'&seasontype=2&dates='+START+'-'+END
-  ];
-  let data=null,lastError=null;
-  for(const url of urls){
-    try{
-      const candidate=await getJSON(url);
-      if(Array.isArray(candidate?.events)&&candidate.events.length){data=candidate;break;}
-    }catch(e){lastError=e;}
-  }
-  if(!data){
-    if(cached?.matches?.length)return cached.matches;
-    throw lastError||new Error('No se pudo descargar el calendario completo de LaLiga');
-  }
-
-  const matches=(data.events||[]).map(e=>normalizeEvent(e)).filter(Boolean);
+  const all=[];
   const seen=new Set();
-  const unique=matches.filter(m=>{if(seen.has(m.id))return false;seen.add(m.id);return true;})
-    .sort((a,b)=>new Date(a.date)-new Date(b.date));
 
-  /* Si ESPN no expone week en algún evento, lo dejamos fuera de la agrupación
-     por jornada antes que mezclarlo artificialmente con otra jornada. */
-  const withRound=unique.filter(m=>Number.isFinite(Number(m.week)));
-  if(withRound.length>=300){
-    saveScheduleCache({matches:withRound,savedAt:Date.now()});
-    return withRound;
+  /* ESPN acepta el parámetro week para la temporada regular. Hacemos las
+     consultas en pequeños lotes para no lanzar 38 peticiones simultáneas. */
+  for(let first=1;first<=38;first+=6){
+    const batch=[];
+    for(let week=first;week<first+6&&week<=38;week++) batch.push(getWeekMatches(week));
+    const results=await Promise.allSettled(batch);
+    results.forEach(r=>{
+      if(r.status!=='fulfilled')return;
+      (r.value||[]).forEach(m=>{
+        if(!seen.has(String(m.id))){seen.add(String(m.id));all.push(m);}
+      });
+    });
   }
-  if(unique.length)saveScheduleCache({matches:unique,savedAt:Date.now()});
-  return unique;
-}
 
+  /* Si alguna consulta week no responde, intentamos recuperar el calendario
+     completo. Solo usamos los eventos que ya traigan un número de jornada. */
+  if(all.length<300){
+    try{
+      const data=await getJSON(API+'/scoreboard?limit=1000&season='+SEASON+'&seasontype=2&dates='+START+'-'+END);
+      (data.events||[]).forEach(e=>{
+        const m=normalizeEvent(e);
+        if(m&&Number.isFinite(Number(m.week))&&!seen.has(String(m.id))){
+          seen.add(String(m.id));all.push(m);
+        }
+      });
+    }catch(e){}
+  }
+
+  all.sort((a,b)=>new Date(a.date)-new Date(b.date));
+
+  const rounds=new Set(all.map(m=>Number(m.week)).filter(Number.isFinite));
+  if(all.length<300 || rounds.size<20){
+    /* Una caché antigua válida es preferible a mostrar una falsa jornada de
+       370 partidos. Si no existe, devolvemos lo obtenido y load() mostrará
+       el estado parcial. */
+    if(cacheOK)return cachedMatches;
+  }
+
+  if(all.length)saveScheduleCache({matches:all,savedAt:Date.now()});
+  return all;
+}
 function rating(team,standings){
  const s=standings.find(x=>normalizeName(x.team)===normalizeName(team));
  if(s&&s.pj>0)return 60+s.pts/s.pj*8+(s.gf-s.gc)/s.pj*2;
