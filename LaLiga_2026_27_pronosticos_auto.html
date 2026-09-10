@@ -44,7 +44,7 @@ footer{border-top:1px solid var(--line);padding:20px 0;color:#71809a;font-size:1
 </section>
 
 <section id="jornada" class="section"><div class="section-title"><h2>⚽ Partidos y pronósticos</h2><span class="small" id="roundLabel">Cargando…</span></div>
-<div class="matchday-selector"><button class="matchday-btn" id="prevRoundBtn" data-round-action="prev">Jornada 3</button><button class="matchday-btn current-round" id="currentRoundBtn" data-round-action="current">Jornada actual (4)</button><button class="matchday-btn" id="nextRoundBtn" data-round-action="next">Jornada 5</button></div>
+<div class="matchday-selector"><button class="matchday-btn" id="prevRoundBtn" data-round-action="prev">Jornada anterior</button><button class="matchday-btn current-round" id="currentRoundBtn" data-round-action="current">Jornada actual</button><button class="matchday-btn" id="nextRoundBtn" data-round-action="next">Próxima jornada</button></div>
 <div class="matchday-info"><span class="matchday-note" id="roundInfo">Selecciona la jornada que quieras consultar.</span><span class="small" id="roundCount"></span></div>
 <div id="matches" class="grid" style="margin-top:12px"><div class="card loading">Cargando partidos…</div></div></section>
 
@@ -121,6 +121,8 @@ const CACHE_KEY='cernadas_laliga_2627_v4';
 const PRED_CACHE_KEY='cernadas_laliga_2627_predictions_v1';
 
 const DEFAULT_WEIGHTS={overall:40,venue:25,attack:15,defense:10,home:10};
+const NEWS_CACHE_KEY='cernadas_laliga_2627_news_v1';
+const APPEARANCE_CACHE_KEY='cernadas_laliga_2627_appearances_v1';
 
 const PRESEASON={
  'Real Madrid':92,'FC Barcelona':91,'Atlético de Madrid':88,'Athletic Club':80,'Villarreal CF':78,
@@ -165,13 +167,9 @@ async function getStandings(){
 }
 
 async function getScorers(matches=[]){
-  /*
-   * ESPN publica los líderes de LaLiga en el endpoint de leaders (v3/core).
-   * El antiguo /statistics no siempre devuelve los datos de fútbol.
-   * Primero intentamos el leaderboard oficial de ESPN y, si no está disponible,
-   * reconstruimos los goleadores a partir de los keyEvents de los partidos ya
-   * finalizados. Así la tabla no se queda permanentemente a cero.
-   */
+  /* ESPN nos da goles y, según el formato de respuesta, no siempre incluye
+     directamente los partidos jugados. Conservamos el ID del jugador y
+     completamos PJ con sus estadísticas de temporada. */
   const endpoints=[
     'https://site.api.espn.com/apis/site/v3/sports/soccer/esp.1/leaders?season='+SEASON+'&seasontype=2',
     'https://sports.core.api.espn.com/v2/sports/soccer/leagues/esp.1/seasons/'+SEASON+'/types/2/leaders?limit=100'
@@ -181,9 +179,12 @@ async function getScorers(matches=[]){
     try{
       const data=await getJSON(url);
       const rows=extractGoalLeaders(data);
-      if(rows.length) return rows.slice(0,15);
+      if(rows.length){
+        const enriched=await enrichScorerAppearances(rows.slice(0,15));
+        return enriched;
+      }
     }catch(e){
-      // Se prueba la siguiente fuente.
+      // Probamos la siguiente fuente.
     }
   }
 
@@ -198,9 +199,7 @@ async function getScorers(matches=[]){
     for(const chunk of chunks){
       const results=await Promise.allSettled(chunk.map(m=>getMatchGoals(m)));
       results.forEach((r,i)=>{
-        if(r.status==='fulfilled'){
-          cached.matches[String(chunk[i].id)]=r.value;
-        }
+        if(r.status==='fulfilled') cached.matches[String(chunk[i].id)]=r.value;
       });
     }
     saveScorerCache(cached);
@@ -209,16 +208,15 @@ async function getScorers(matches=[]){
   const totals=new Map();
   Object.values(cached.matches).forEach(goals=>{
     (goals||[]).forEach(g=>{
-      if(!g.name || g.ownGoal || g.shootout) return;
+      if(!g.name||g.ownGoal||g.shootout)return;
       const key=normalizeName(g.name)+'|'+normalizeName(g.team);
-      if(!totals.has(key)) totals.set(key,{name:g.name,team:g.team,goals:0,played:0});
+      if(!totals.has(key))totals.set(key,{name:g.name,team:g.team,goals:0,played:0});
       totals.get(key).goals++;
     });
   });
 
   const rows=[...totals.values()].sort((a,b)=>b.goals-a.goals||a.name.localeCompare(b.name,'es'));
-  if(rows.length) return rows.slice(0,15);
-
+  if(rows.length)return rows.slice(0,15);
   return fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}));
 }
 
@@ -230,14 +228,117 @@ function loadScorerCache(){
 function saveScorerCache(x){
   try{localStorage.setItem(SCORER_CACHE_KEY,JSON.stringify(x));}catch(e){}
 }
+
+async function getPlayerSeasonStats(id){
+  if(!id)return null;
+  const urls=[
+    'https://sports.core.api.espn.com/v2/sports/soccer/leagues/esp.1/seasons/'+SEASON+'/types/2/athletes/'+encodeURIComponent(id)+'/statistics',
+    'https://sports.core.api.espn.com/v2/sports/soccer/leagues/esp.1/seasons/'+SEASON+'/athletes/'+encodeURIComponent(id)+'/statistics'
+  ];
+  for(const url of urls){
+    try{
+      const data=await getJSON(url);
+      const found=findStatNumber(data,['appearances','gamesPlayed','matchesPlayed','games']);
+      if(found!==null)return found;
+    }catch(e){}
+  }
+  return null;
+}
+
+function findStatNumber(data,names){
+  const wanted=new Set(names.map(x=>String(x).toLowerCase()));
+  let value=null;
+  function walk(node){
+    if(value!==null||node===null||node===undefined)return;
+    if(Array.isArray(node)){node.forEach(walk);return;}
+    if(typeof node!=='object')return;
+    for(const key of Object.keys(node)){
+      if(wanted.has(String(key).toLowerCase())){
+        const n=Number(node[key]?.value??node[key]?.displayValue??node[key]);
+        if(Number.isFinite(n)){value=n;return;}
+      }
+    }
+    for(const v of Object.values(node))walk(v);
+  }
+  walk(data);
+  return value;
+}
+
+async function enrichScorerAppearances(rows){
+  /* Primera opción: estadísticas de temporada del jugador. */
+  const first=await Promise.allSettled(rows.map(async r=>({row:r,played:await getPlayerSeasonStats(r.athleteId)})));
+  let enriched=first.map((r,i)=>{
+    if(r.status==='fulfilled'&&r.value.played!==null)return {...r.value.row,played:r.value.played};
+    return {...rows[i],played:Number(rows[i].played||0)};
+  });
+
+  /* Si ESPN no entrega PJ en esas estadísticas, lo calculamos de forma real
+     a partir de las plantillas de los partidos finalizados. */
+  const missing=enriched.filter(r=>Number(r.played||0)<=0);
+  if(!missing.length)return enriched;
+
+  const appearances=loadAppearanceCache();
+  const needMatches=(matchdayState.allMatches||[]).filter(m=>m.state==='post'||m.state==='final')
+    .filter(m=>!appearances.processed[String(m.id)]);
+
+  if(needMatches.length){
+    for(let i=0;i<needMatches.length;i+=8){
+      const chunk=needMatches.slice(i,i+8);
+      const results=await Promise.allSettled(chunk.map(getMatchPlayers));
+      results.forEach((r,j)=>{
+        const id=String(chunk[j].id);
+        appearances.processed[id]=true;
+        if(r.status==='fulfilled'){
+          r.value.forEach(pl=>{
+            const key=normalizeName(pl.name)+'|'+normalizeName(pl.team);
+            appearances.players[key]=(appearances.players[key]||0)+1;
+          });
+        }
+      });
+    }
+    saveAppearanceCache(appearances);
+  }
+
+  return enriched.map(r=>{
+    if(Number(r.played||0)>0)return r;
+    const key=normalizeName(r.name)+'|'+normalizeName(r.team);
+    return {...r,played:Number(appearances.players[key]||0)};
+  });
+}
+
+function loadAppearanceCache(){
+  try{return JSON.parse(localStorage.getItem(APPEARANCE_CACHE_KEY)||'{"processed":{},"players":{}}')||{processed:{},players:{}};}
+  catch(e){return {processed:{},players:{}};}
+}
+function saveAppearanceCache(x){try{localStorage.setItem(APPEARANCE_CACHE_KEY,JSON.stringify(x));}catch(e){}}
+
+async function getMatchPlayers(match){
+  const data=await getJSON(API+'/summary?event='+encodeURIComponent(match.id));
+  const boxes=Array.isArray(data.boxscore?.players)?data.boxscore.players:[];
+  const result=[];
+  boxes.forEach(box=>{
+    const team=box.team?.displayName||box.team?.name||'';
+    (box.statistics||[]).forEach(group=>{
+      (group.athletes||[]).forEach(item=>{
+        const athlete=item.athlete||{};
+        const name=athlete.displayName||athlete.fullName||athlete.name||'';
+        if(name)result.push({name,team});
+      });
+    });
+  });
+  /* Eliminamos duplicados por partido: un jugador puede aparecer en más de un
+     grupo estadístico del boxscore. */
+  const seen=new Set();
+  return result.filter(pl=>{const k=normalizeName(pl.name)+'|'+normalizeName(pl.team);if(seen.has(k))return false;seen.add(k);return true;});
+}
+
 async function getMatchGoals(match){
   const data=await getJSON(API+'/summary?event='+encodeURIComponent(match.id));
   const events=Array.isArray(data.keyEvents)?data.keyEvents:[];
-  return events.filter(e=>e.scoringPlay===true && !e.shootout).map(e=>({
+  return events.filter(e=>e.scoringPlay===true&&!e.shootout).map(e=>({
     name:e.participants?.[0]?.athlete?.displayName||e.participants?.[0]?.athlete?.fullName||'',
     team:e.team?.displayName||e.team?.name||'',
-    ownGoal:Boolean(e.ownGoal),
-    shootout:Boolean(e.shootout)
+    ownGoal:Boolean(e.ownGoal),shootout:Boolean(e.shootout)
   })).filter(g=>g.name);
 }
 
@@ -246,52 +347,74 @@ function extractGoalLeaders(data){
  function walk(node,context=''){
   if(!node||typeof node!=='object')return;
   if(Array.isArray(node)){node.forEach(x=>walk(x,context));return;}
-  const name=node.athlete?.displayName||node.athlete?.fullName||node.player?.displayName||node.player?.fullName||node.athlete?.name||node.player?.name;
+  const athlete=node.athlete||node.player||{};
+  const name=athlete.displayName||athlete.fullName||athlete.name;
   const statName=String(node.name||node.displayName||node.shortName||node.abbreviation||context||'').toLowerCase();
   const looksLikeGoals=statName.includes('goal')||statName.includes('goles')||statName==='gls'||statName==='goals';
   const values=[node.value,node.statistics?.goals,node.stats?.goals,node.goals,node.displayValue];
   if(name&&looksLikeGoals){
    let goals=NaN;for(const v of values){const n=Number(v);if(Number.isFinite(n)){goals=n;break;}}
    if(Number.isFinite(goals)){
-    const team=node.athlete?.team?.displayName||node.athlete?.team?.name||node.player?.team?.displayName||node.team?.displayName||node.team?.name||node.teamName||'';
-    const played=Number(node.statistics?.appearances??node.stats?.appearances??node.athlete?.statistics?.appearances??0);
+    const team=athlete.team?.displayName||athlete.team?.name||node.team?.displayName||node.team?.name||node.teamName||'';
+    const played=Number(node.statistics?.appearances??node.stats?.appearances??athlete.statistics?.appearances??0);
+    const athleteId=athlete.id||athlete.uid||node.athleteId||node.playerId||'';
     const key=normalizeName(name)+'|'+normalizeName(team);
-    if(!seen.has(key)){seen.add(key);result.push({name,team,goals,played:Number.isFinite(played)?played:0});}
+    if(!seen.has(key)){seen.add(key);result.push({name,team,goals,played:Number.isFinite(played)?played:0,athleteId:String(athleteId)});}
    }
   }
   for(const [key,value] of Object.entries(node)){if(key==='athlete'||key==='player')continue;walk(value,key);}
  }
- walk(data);return result.sort((a,b)=>b.goals-a.goals||a.name.localeCompare(b.name,'es'));
+ walk(data);
+ return result.sort((a,b)=>b.goals-a.goals||a.name.localeCompare(b.name,'es'));
 }
 
-/* NUEVO 1: cargamos TODA la temporada, no solamente +/- 28 días. */
+/* NUEVO 1: descargamos las jornadas por número de jornada. Esto evita que
+   ESPN agrupe o devuelva el calendario completo sin el campo week visible. */
+function normalizeEvent(e,forcedWeek=null){
+  const c=e.competitions?.[0]?.competitors||[];
+  if(c.length<2)return null;
+  const home=c.find(x=>x.homeAway==='home')||c[0],away=c.find(x=>x.homeAway==='away')||c[1];
+  const state=e.status?.type?.state||'pre';
+  const weekNumber=forcedWeek??e.week?.number??e.competitions?.[0]?.week?.number??e.season?.week?.number??e.season?.type?.week?.number??null;
+  return {id:String(e.id),week:weekNumber!=null?Number(weekNumber):null,date:e.date,home:teamName(home),away:teamName(away),homeScore:Number(home.score??0),awayScore:Number(away.score??0),state};
+}
+
+async function getWeekMatches(week){
+  const urls=[
+    API+'/scoreboard?limit=100&week='+week+'&season='+SEASON+'&seasontype=2',
+    API+'/scoreboard?limit=100&season='+SEASON+'&seasontype=2&week='+week
+  ];
+  for(const url of urls){
+    try{
+      const data=await getJSON(url);
+      const rows=(data.events||[]).map(e=>normalizeEvent(e,week)).filter(Boolean);
+      if(rows.length)return rows;
+    }catch(e){}
+  }
+  return [];
+}
+
+const SCHEDULE_CACHE_KEY='cernadas_laliga_2627_schedule_v2';
+function loadScheduleCache(){try{return JSON.parse(localStorage.getItem(SCHEDULE_CACHE_KEY)||'null');}catch(e){return null;}}
+function saveScheduleCache(x){try{localStorage.setItem(SCHEDULE_CACHE_KEY,JSON.stringify(x));}catch(e){}}
+
 async function getUpcomingMatches(){
-  /* Una sola descarga de toda la temporada. El número de jornada se toma
-     del propio evento en todas las ubicaciones donde ESPN puede publicarlo. */
-  const url=API+'/scoreboard?limit=1000&dates='+START+'-'+END+'&season='+SEASON+'&seasontype=2';
-  const data=await getJSON(url);
+  const cached=loadScheduleCache();
+  const freshEnough=cached&&Array.isArray(cached.matches)&&cached.matches.length>=370&&Date.now()-Number(cached.savedAt||0)<15*60*1000;
+  if(freshEnough)return cached.matches;
+
+  const weeks=Array.from({length:38},(_,i)=>i+1);
+  const all=[];
+  for(let i=0;i<weeks.length;i+=8){
+    const batch=weeks.slice(i,i+8);
+    const results=await Promise.allSettled(batch.map(getWeekMatches));
+    results.forEach(r=>{if(r.status==='fulfilled')all.push(...r.value);});
+  }
   const seen=new Set();
-  return (data.events||[]).filter(e=>{
-    if(seen.has(String(e.id))) return false;
-    if(!e.competitions?.[0]?.competitors || e.competitions[0].competitors.length<2) return false;
-    seen.add(String(e.id));
-    return true;
-  }).map(e=>{
-    const c=e.competitions[0].competitors;
-    const home=c.find(x=>x.homeAway==='home')||c[0],away=c.find(x=>x.homeAway==='away')||c[1];
-    const state=e.status?.type?.state||'pre';
-    const weekNumber=e.week?.number ?? e.competitions?.[0]?.week?.number ?? e.season?.week?.number ?? e.season?.type?.week?.number ?? null;
-    return {
-      id:String(e.id),
-      week:weekNumber!=null?Number(weekNumber):null,
-      date:e.date,
-      home:teamName(home),
-      away:teamName(away),
-      homeScore:Number(home.score??0),
-      awayScore:Number(away.score??0),
-      state
-    };
-  });
+  const matches=all.filter(m=>{if(seen.has(m.id))return false;seen.add(m.id);return true;})
+    .sort((a,b)=>new Date(a.date)-new Date(b.date));
+  if(matches.length)saveScheduleCache({matches,savedAt:Date.now()});
+  return matches.length?(matches):(cached?.matches||[]);
 }
 
 function rating(team,standings){
@@ -347,10 +470,27 @@ function buildMatchdays(matches){
 }
 
 function findCurrentRoundIndex(rounds){
- if(!rounds.length)return 0;const now=Date.now(),active=[];
- rounds.forEach((r,i)=>{const hasLiveOrUpcoming=r.matches.some(m=>m.state==='pre'||m.state==='in');const distance=Math.min(...r.matches.map(m=>Math.abs(new Date(m.date).getTime()-now)));if(hasLiveOrUpcoming&&distance<=7*86400000)active.push({i,distance});});
- if(active.length)return active.sort((a,b)=>a.distance-b.distance)[0].i;
- let best=0,bestDistance=Infinity;rounds.forEach((r,i)=>{const d=Math.min(...r.matches.map(m=>Math.abs(new Date(m.date).getTime()-now)));if(d<bestDistance){best=i;bestDistance=d;}});return best;
+ if(!rounds.length)return 0;
+ const now=Date.now();
+ // La jornada actual es la primera que todavía tiene algún partido pendiente
+ // o en directo y cuya fecha está más próxima. Así, al llegar al jueves 10/09,
+ // la web selecciona la Jornada 5 aunque empiece el viernes.
+ const upcoming=[];
+ rounds.forEach((r,i)=>{
+   const pending=r.matches.some(m=>m.state==='pre'||m.state==='in');
+   if(pending){
+     const firstUpcoming=Math.min(...r.matches.filter(m=>m.state==='pre'||m.state==='in').map(m=>new Date(m.date).getTime()));
+     upcoming.push({i,distance:Math.abs(firstUpcoming-now),first:firstUpcoming});
+   }
+ });
+ if(upcoming.length){
+   const future=upcoming.filter(x=>x.first>=now).sort((a,b)=>a.first-b.first);
+   if(future.length)return future[0].i;
+   return upcoming.sort((a,b)=>a.distance-b.distance)[0].i;
+ }
+ let best=0,bestDistance=Infinity;
+ rounds.forEach((r,i)=>{const d=Math.min(...r.matches.map(m=>Math.abs(new Date(m.date).getTime()-now)));if(d<bestDistance){best=i;bestDistance=d;}});
+ return best;
 }
 function roundTitle(round){return round&&round.number!=null?'Jornada '+round.number:'Jornada seleccionada';}
 function setRoundButtonState(){
@@ -545,33 +685,63 @@ function renderEuropeanMatches(rows){
  const el=document.getElementById('euroMatches');if(!el)return;if(!rows.length){el.innerHTML='<div class="card loading">Todavía no hay próximos partidos europeos disponibles en la fuente automática.</div>';return;}
  el.innerHTML=rows.map(m=>{const dt=new Date(m.date).toLocaleString('es-ES',{weekday:'short',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}),done=m.state==='post'||m.state==='final';return '<article class="card match"><div class="match-top"><span>'+esc(m.comp)+'</span><span>'+esc(dt)+'</span></div><div class="teams">'+esc(m.home)+'<div class="score">'+(done?esc(m.homeScore+' - '+m.awayScore):'VS')+'</div>'+esc(m.away)+'</div><div class="small">'+(done?'Resultado final':'Próximo partido')+'</div></article>';}).join('');
 }
-function renderNews(){
- const items=[
- ['17/08/2026','Espanyol 3-0 Levante: arranque contundente','https://cadenaser.com/nacional/2026/08/16/espanyol-3-0-levante-resumen-resultado-y-goles-del-partido-de-la-jornada-1-de-laliga-ea-sports-cadena-ser/'],
- ['17/08/2026','Racing 2-2 Villarreal: regreso histórico a Primera','https://cadenaser.com/nacional/2026/08/16/racing-club-2-2-villarreal-resumen-resultado-y-goles-del-partido-de-la-jornada-1-de-laliga-ea-sports-cadena-ser/'],
- ['17/08/2026','Espanyol, líder provisional tras la jornada 1','https://as.com/futbol/primera/el-nuevo-coliseum-abre-las-puertas-f202608-n/'],
- ['17/08/2026','Celta: Europa League y última temporada de Aspas','https://as.com/futbol/primera/celta-de-vigo-en-laliga-ea-sports-202627-plantilla-fichajes-bajas-figuras-y-claves-de-la-temporada-f202608-n/'],
- ['16/08/2026','Rodri, cerca de incorporarse al Barcelona','https://elpais.com/deportes/futbol/2026-08-16/el-barcelona-ata-a-rodri-hasta-2030.html'],
- ['17/08/2026','Guía 2026/27: plantillas, fichajes y claves','https://as.com/futbol/primera/guia-de-laliga-ea-sports-202627-equipos-plantillas-fichajes-y-jugadores-a-seguir-f202608-n/']
- ];
- document.getElementById('newsGrid').innerHTML=items.map(x=>'<article class="card news-card"><div class="news-meta">'+x[0]+' · ACTUALIDAD</div><a href="'+x[2]+'" target="_blank" rel="noopener">'+esc(x[1])+' ↗</a></article>').join('');
+async function getNews(){
+  const urls=[
+    API+'/news?limit=20',
+    'https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/news?limit=20'
+  ];
+  for(const url of urls){
+    try{
+      const data=await getJSON(url);
+      const articles=Array.isArray(data.articles)?data.articles:[];
+      const rows=articles.map(a=>{
+        const link=a.links?.web?.href||a.links?.mobile?.href||a.links?.href||'';
+        return {date:a.published||a.lastModified||'',title:a.headline||a.title||'',description:a.description||'',url:link};
+      }).filter(x=>x.title&&x.url);
+      if(rows.length)return rows.slice(0,9);
+    }catch(e){}
+  }
+  return [];
 }
+
+function renderNews(items=[]){
+  const el=document.getElementById('newsGrid');
+  if(!el)return;
+  if(!items.length){
+    el.innerHTML='<article class="card news-card"><div class="news-meta">ACTUALIDAD</div><div class="small">No se han podido actualizar las noticias automáticamente. Puedes consultar Google News.</div></article>';
+    return;
+  }
+  const current=matchdayState.rounds?.[matchdayState.currentIndex]?.matches||[];
+  const teams=current.flatMap(m=>[normalizeName(m.home),normalizeName(m.away)]);
+  el.innerHTML=items.map(x=>{
+    const text=normalizeName((x.title||'')+' '+(x.description||''));
+    const related=teams.some(t=>t&&text.includes(t));
+    const d=x.date?new Date(x.date).toLocaleString('es-ES',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}):'—';
+    const desc=x.description?'<div class="small" style="margin-top:8px;line-height:1.45">'+esc(x.description).slice(0,220)+(x.description.length>220?'…':'')+'</div>':'';
+    return '<article class="card news-card"><div class="news-meta">'+esc(d)+' · ESPN'+(related?' · 🔎 Jornada actual':'')+'</div><a href="'+esc(x.url)+'" target="_blank" rel="noopener">'+esc(x.title)+' ↗</a>'+desc+'</article>';
+  }).join('');
+}
+
 function renderTable(rows){document.getElementById('table-body').innerHTML=rows.map((t,i)=>'<tr><td class="pos">'+(i+1)+'</td><td><b>'+esc(t.team)+'</b></td><td><b>'+t.pts+'</b></td><td>'+t.pj+'</td><td>'+t.w+'</td><td>'+t.d+'</td><td>'+t.l+'</td><td>'+t.gf+'</td><td>'+t.gc+'</td><td class="form">'+t.gd+'</td></tr>').join('');}
 function renderScorers(rows){document.getElementById('scorers-body').innerHTML=rows.map((s,i)=>'<tr><td class="pos">'+(i+1)+'</td><td><b>'+esc(s.name)+'</b></td><td class="muted">'+esc(s.team)+'</td><td class="zero"><b>'+Number(s.goals||0)+'</b></td><td class="muted">'+Number(s.played||0)+'</td></tr>').join('');}
 
 async function load(){
   document.getElementById('dataStatus').textContent='Actualizando…';
 
-  /* Primero descargamos calendario + clasificación. Con el calendario completo
-     ya disponible podemos resolver automáticamente resultados, quiniela y
-     goleadores de TODAS las jornadas. */
-  const first=await Promise.allSettled([getStandings(),getUpcomingMatches(),getEuropeanMatches()]);
+  /* Calendario por jornadas + clasificación + Europa + noticias. */
+  const first=await Promise.allSettled([getStandings(),getUpcomingMatches(),getEuropeanMatches(),getNews()]);
   const cached=loadCached();
   const standings=first[0].status==='fulfilled'?first[0].value:cached?.standings||[];
   const matches=first[1].status==='fulfilled'?first[1].value:cached?.matches||[];
   const euroMatches=first[2].status==='fulfilled'?first[2].value:[];
+  const news=first[3].status==='fulfilled'?first[3].value:loadNewsCache();
 
+  if(news.length)saveNewsCache(news);
+
+  /* Los goleadores se consultan después del calendario para poder usarlo como
+     respaldo y, si es necesario, reconstruir goles y PJ. */
   const scorersResult=await Promise.allSettled([getScorers(matches)]);
+  const cachedScorers=cached?.scorers||[];
   const scorerCacheRows=(()=>{
     const totals=new Map();
     try{
@@ -585,27 +755,27 @@ async function load(){
     }catch(e){}
     return [...totals.values()].sort((a,b)=>b.goals-a.goals||a.name.localeCompare(b.name,'es')).slice(0,15);
   })();
-  const scorers=scorersResult[0].status==='fulfilled'
-    ?scorersResult[0].value
-    :(cached?.scorers?.some?.(s=>Number(s.goals)>0)?cached.scorers:(scorerCacheRows.length?scorerCacheRows:fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}))));
+  const scorers=scorersResult[0].status==='fulfilled'?scorersResult[0].value:(cachedScorers.some(s=>Number(s.goals)>0)?cachedScorers:(scorerCacheRows.length?scorerCacheRows:fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}))));
 
   renderTable(standings);
   renderScorers(scorers);
   renderMatches(matches,standings);
   renderEuropeanMatches(euroMatches);
+  renderNews(news);
 
   const fresh={standings,scorers,matches,savedAt:Date.now()};
   localStorage.setItem(CACHE_KEY,JSON.stringify(fresh));
 
   const ok=first.filter(x=>x.status==='fulfilled').length+(scorersResult[0].status==='fulfilled'?1:0);
-  document.getElementById('dataStatus').textContent=ok===4?'Actualizado':(ok>0?'Actualización parcial':'Sin datos de API');
+  document.getElementById('dataStatus').textContent=ok===5?'Actualizado':(ok>0?'Actualización parcial':'Sin datos de API');
   document.getElementById('lastUpdate').textContent='Última consulta: '+new Date().toLocaleString('es-ES');
   document.getElementById('standingsLabel').textContent=standings.length?'Datos recibidos · '+standings.length+' equipos':'Sin datos de API';
-  document.querySelector('#goleadores .small').textContent=scorers.some(s=>Number(s.goals)>0)
-    ?'Temporada 2026/27 · datos ESPN'
-    :'Temporada 2026/27 · todavía no hay goles publicados';
+  document.querySelector('#goleadores .small').textContent=scorers.some(s=>Number(s.goals)>0)?'Temporada 2026/27 · datos ESPN':'Temporada 2026/27 · todavía no hay goles publicados';
   runSimulation();
 }
+
+function loadNewsCache(){try{return JSON.parse(localStorage.getItem(NEWS_CACHE_KEY)||'[]')||[];}catch(e){return [];}}
+function saveNewsCache(x){try{localStorage.setItem(NEWS_CACHE_KEY,JSON.stringify(x));}catch(e){}}
 
 function loadCached(){try{return JSON.parse(localStorage.getItem(CACHE_KEY)||'null')}catch(e){return null}}
 
@@ -613,7 +783,7 @@ document.getElementById('refreshBtn').addEventListener('click',load);
 document.querySelectorAll('.matchday-btn').forEach(btn=>btn.addEventListener('click',()=>selectRound(btn.dataset.roundAction)));
 document.querySelectorAll('.weight-range').forEach(input=>input.addEventListener('input',updateWeightLabels));
 document.getElementById('resetWeightsBtn').addEventListener('click',resetWeights);
-renderNews();
+renderNews([]);
 load();
 </script>
 </body>
