@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>LaLiga EA Sports 2026/27 · Pronósticos</title>
+<title>LaLiga EA Sports 2026/27 · Pronósticos v3.2</title>
 <style>
 :root{--bg:#07111f;--panel:#0f1b2d;--panel2:#111f34;--line:#24334a;--text:#eef4ff;--muted:#91a0b8;--accent:#4f7cff;--green:#22c55e;--yellow:#f59e0b;--red:#ef4444}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(135deg,#06101d,#0a1628 50%,#07111f);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
@@ -44,7 +44,7 @@ footer{border-top:1px solid var(--line);padding:20px 0;color:#71809a;font-size:1
 </section>
 
 <section id="jornada" class="section"><div class="section-title"><h2>⚽ Partidos y pronósticos</h2><span class="small" id="roundLabel">Cargando…</span></div>
-<div class="matchday-selector"><button class="matchday-btn" id="prevRoundBtn" data-round-action="prev">‹ Jornada anterior</button><button class="matchday-btn active" id="currentRoundBtn" data-round-action="current">Jornada actual</button><button class="matchday-btn" id="nextRoundBtn" data-round-action="next">Próxima jornada ›</button></div>
+<div class="matchday-selector"><button class="matchday-btn" id="prevRoundBtn" data-round-action="prev">Jornada 3</button><button class="matchday-btn current-round" id="currentRoundBtn" data-round-action="current">Jornada actual (4)</button><button class="matchday-btn" id="nextRoundBtn" data-round-action="next">Jornada 5</button></div>
 <div class="matchday-info"><span class="matchday-note" id="roundInfo">Selecciona la jornada que quieras consultar.</span><span class="small" id="roundCount"></span></div>
 <div id="matches" class="grid" style="margin-top:12px"><div class="card loading">Cargando partidos…</div></div></section>
 
@@ -117,7 +117,7 @@ const API='https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1';
 const SEASON=2026;
 const START='20260814';
 const END='20270524';
-const CACHE_KEY='cernadas_laliga_2627_v3';
+const CACHE_KEY='cernadas_laliga_2627_v4';
 const PRED_CACHE_KEY='cernadas_laliga_2627_predictions_v1';
 
 const DEFAULT_WEIGHTS={overall:40,venue:25,attack:15,defense:10,home:10};
@@ -164,11 +164,83 @@ async function getStandings(){
  }).sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf||a.team.localeCompare(b.team,'es'));
 }
 
-async function getScorers(){
- const endpoints=[API+'/statistics?season='+SEASON+'&seasontype=2',API+'/statistics?season='+SEASON];
- for(const url of endpoints){try{const data=await getJSON(url);const rows=extractGoalLeaders(data);if(rows.length)return rows.slice(0,15);}catch(e){}}
- return fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}));
+async function getScorers(matches=[]){
+  /*
+   * ESPN publica los líderes de LaLiga en el endpoint de leaders (v3/core).
+   * El antiguo /statistics no siempre devuelve los datos de fútbol.
+   * Primero intentamos el leaderboard oficial de ESPN y, si no está disponible,
+   * reconstruimos los goleadores a partir de los keyEvents de los partidos ya
+   * finalizados. Así la tabla no se queda permanentemente a cero.
+   */
+  const endpoints=[
+    'https://site.api.espn.com/apis/site/v3/sports/soccer/esp.1/leaders?season='+SEASON+'&seasontype=2',
+    'https://sports.core.api.espn.com/v2/sports/soccer/leagues/esp.1/seasons/'+SEASON+'/types/2/leaders?limit=100'
+  ];
+
+  for(const url of endpoints){
+    try{
+      const data=await getJSON(url);
+      const rows=extractGoalLeaders(data);
+      if(rows.length) return rows.slice(0,15);
+    }catch(e){
+      // Se prueba la siguiente fuente.
+    }
+  }
+
+  /* Fallback real: sumar goles de los resúmenes de los partidos finalizados. */
+  const cached=loadScorerCache();
+  const finished=(matches||[]).filter(m=>m.state==='post'||m.state==='final');
+  const pending=finished.filter(m=>!cached.matches[String(m.id)]);
+
+  if(pending.length){
+    const chunks=[];
+    for(let i=0;i<pending.length;i+=8) chunks.push(pending.slice(i,i+8));
+    for(const chunk of chunks){
+      const results=await Promise.allSettled(chunk.map(m=>getMatchGoals(m)));
+      results.forEach((r,i)=>{
+        if(r.status==='fulfilled'){
+          cached.matches[String(chunk[i].id)]=r.value;
+        }
+      });
+    }
+    saveScorerCache(cached);
+  }
+
+  const totals=new Map();
+  Object.values(cached.matches).forEach(goals=>{
+    (goals||[]).forEach(g=>{
+      if(!g.name || g.ownGoal || g.shootout) return;
+      const key=normalizeName(g.name)+'|'+normalizeName(g.team);
+      if(!totals.has(key)) totals.set(key,{name:g.name,team:g.team,goals:0,played:0});
+      totals.get(key).goals++;
+    });
+  });
+
+  const rows=[...totals.values()].sort((a,b)=>b.goals-a.goals||a.name.localeCompare(b.name,'es'));
+  if(rows.length) return rows.slice(0,15);
+
+  return fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}));
 }
+
+const SCORER_CACHE_KEY='cernadas_laliga_2627_scorers_v1';
+function loadScorerCache(){
+  try{return JSON.parse(localStorage.getItem(SCORER_CACHE_KEY)||'{"matches":{}}')||{matches:{}};}
+  catch(e){return {matches:{}};}
+}
+function saveScorerCache(x){
+  try{localStorage.setItem(SCORER_CACHE_KEY,JSON.stringify(x));}catch(e){}
+}
+async function getMatchGoals(match){
+  const data=await getJSON(API+'/summary?event='+encodeURIComponent(match.id));
+  const events=Array.isArray(data.keyEvents)?data.keyEvents:[];
+  return events.filter(e=>e.scoringPlay===true && !e.shootout).map(e=>({
+    name:e.participants?.[0]?.athlete?.displayName||e.participants?.[0]?.athlete?.fullName||'',
+    team:e.team?.displayName||e.team?.name||'',
+    ownGoal:Boolean(e.ownGoal),
+    shootout:Boolean(e.shootout)
+  })).filter(g=>g.name);
+}
+
 function extractGoalLeaders(data){
  const result=[],seen=new Set();
  function walk(node,context=''){
@@ -194,12 +266,32 @@ function extractGoalLeaders(data){
 
 /* NUEVO 1: cargamos TODA la temporada, no solamente +/- 28 días. */
 async function getUpcomingMatches(){
- const data=await getJSON(API+'/scoreboard?limit=500&dates='+START+'-'+END);
- return (data.events||[]).filter(e=>e.competitions?.[0]?.competitors?.length>=2).map(e=>{
-  const c=e.competitions[0].competitors,home=c.find(x=>x.homeAway==='home')||c[0],away=c.find(x=>x.homeAway==='away')||c[1];
-  const state=e.status?.type?.state||'pre';
-  return {id:String(e.id),week:e.week?.number||e.season?.slug||'—',date:e.date,home:teamName(home),away:teamName(away),homeScore:Number(home.score??0),awayScore:Number(away.score??0),state};
- });
+  /* Una sola descarga de toda la temporada. El número de jornada se toma
+     del propio evento en todas las ubicaciones donde ESPN puede publicarlo. */
+  const url=API+'/scoreboard?limit=1000&dates='+START+'-'+END+'&season='+SEASON+'&seasontype=2';
+  const data=await getJSON(url);
+  const seen=new Set();
+  return (data.events||[]).filter(e=>{
+    if(seen.has(String(e.id))) return false;
+    if(!e.competitions?.[0]?.competitors || e.competitions[0].competitors.length<2) return false;
+    seen.add(String(e.id));
+    return true;
+  }).map(e=>{
+    const c=e.competitions[0].competitors;
+    const home=c.find(x=>x.homeAway==='home')||c[0],away=c.find(x=>x.homeAway==='away')||c[1];
+    const state=e.status?.type?.state||'pre';
+    const weekNumber=e.week?.number ?? e.competitions?.[0]?.week?.number ?? e.season?.week?.number ?? e.season?.type?.week?.number ?? null;
+    return {
+      id:String(e.id),
+      week:weekNumber!=null?Number(weekNumber):null,
+      date:e.date,
+      home:teamName(home),
+      away:teamName(away),
+      homeScore:Number(home.score??0),
+      awayScore:Number(away.score??0),
+      state
+    };
+  });
 }
 
 function rating(team,standings){
@@ -230,11 +322,30 @@ function tvInfo(){return '📺 Pago: Movistar Plus+ / DAZN · En abierto: no con
 let matchdayState={rounds:[],currentIndex:0,selectedIndex:0,standings:[]};
 
 function buildMatchdays(matches){
- const groups=new Map();
- matches.forEach(m=>{const numeric=Number(m.week),key=Number.isFinite(numeric)?String(numeric):'date-'+new Date(m.date).toISOString().slice(0,10);if(!groups.has(key))groups.set(key,{key,number:Number.isFinite(numeric)?numeric:null,matches:[]});groups.get(key).matches.push(m);});
- const rounds=[...groups.values()].map(r=>{r.matches.sort((a,b)=>new Date(a.date)-new Date(b.date));r.start=new Date(r.matches[0].date);r.end=new Date(r.matches[r.matches.length-1].date);return r;});
- rounds.sort((a,b)=>a.start-b.start||((a.number??999)-(b.number??999)));return rounds;
+  const groups=new Map();
+  (matches||[]).forEach(m=>{
+    const n=Number(m.week);
+    const key=Number.isFinite(n)?'round-'+n:'unknown-'+new Date(m.date).toISOString().slice(0,10);
+    if(!groups.has(key)) groups.set(key,{key,number:Number.isFinite(n)?n:null,matches:[]});
+    groups.get(key).matches.push(m);
+  });
+
+  const rounds=[...groups.values()].map(r=>{
+    r.matches.sort((a,b)=>new Date(a.date)-new Date(b.date));
+    r.start=new Date(r.matches[0].date);
+    r.end=new Date(r.matches[r.matches.length-1].date);
+    return r;
+  });
+
+  rounds.sort((a,b)=>{
+    if(a.number!=null && b.number!=null) return a.number-b.number;
+    if(a.number!=null) return -1;
+    if(b.number!=null) return 1;
+    return a.start-b.start;
+  });
+  return rounds;
 }
+
 function findCurrentRoundIndex(rounds){
  if(!rounds.length)return 0;const now=Date.now(),active=[];
  rounds.forEach((r,i)=>{const hasLiveOrUpcoming=r.matches.some(m=>m.state==='pre'||m.state==='in');const distance=Math.min(...r.matches.map(m=>Math.abs(new Date(m.date).getTime()-now)));if(hasLiveOrUpcoming&&distance<=7*86400000)active.push({i,distance});});
@@ -243,17 +354,38 @@ function findCurrentRoundIndex(rounds){
 }
 function roundTitle(round){return round&&round.number!=null?'Jornada '+round.number:'Jornada seleccionada';}
 function setRoundButtonState(){
- const prev=document.getElementById('prevRoundBtn'),cur=document.getElementById('currentRoundBtn'),next=document.getElementById('nextRoundBtn');if(!prev||!cur||!next)return;
- prev.disabled=matchdayState.selectedIndex<=0;next.disabled=matchdayState.selectedIndex>=matchdayState.rounds.length-1;cur.classList.toggle('active',matchdayState.selectedIndex===matchdayState.currentIndex);
- prev.textContent=matchdayState.selectedIndex>0?'‹ '+roundTitle(matchdayState.rounds[matchdayState.selectedIndex-1]):'‹ Jornada anterior';
- next.textContent=matchdayState.selectedIndex<matchdayState.rounds.length-1?roundTitle(matchdayState.rounds[matchdayState.selectedIndex+1])+' ›':'Próxima jornada ›';
+  const prev=document.getElementById('prevRoundBtn'),cur=document.getElementById('currentRoundBtn'),next=document.getElementById('nextRoundBtn');
+  if(!prev||!cur||!next)return;
+  const rounds=matchdayState.rounds,i=matchdayState.selectedIndex,current=matchdayState.currentIndex;
+  const selected=rounds[i],previous=rounds[i-1],following=rounds[i+1];
+  prev.disabled=i<=0;
+  next.disabled=i>=rounds.length-1;
+
+  /* En la jornada actual se muestra exactamente el formato solicitado:
+     Jornada 3 | Jornada actual (4) | Jornada 5.
+     Al navegar, los tres botones pasan a representar las jornadas adyacentes
+     a la jornada que estamos consultando, manteniendo el acceso al botón
+     central para volver a la jornada actual. */
+  if(i===current){
+    prev.textContent=previous?'Jornada '+previous.number:'Jornada anterior';
+    cur.textContent='Jornada actual ('+(selected?.number??'—')+')';
+    next.textContent=following?'Jornada '+following.number:'Próxima jornada';
+  }else{
+    prev.textContent=previous?'Jornada '+previous.number:'Jornada anterior';
+    cur.textContent='Jornada '+(selected?.number??'—');
+    next.textContent=following?'Jornada '+following.number:'Próxima jornada';
+  }
+
+  prev.classList.toggle('active',i===current-1);
+  cur.classList.toggle('active',i===current);
+  next.classList.toggle('active',i===current+1);
 }
 function selectRound(mode){
- if(!matchdayState.rounds.length)return;
- if(mode==='current')matchdayState.selectedIndex=matchdayState.currentIndex;
- if(mode==='prev')matchdayState.selectedIndex=Math.max(0,matchdayState.selectedIndex-1);
- if(mode==='next')matchdayState.selectedIndex=Math.min(matchdayState.rounds.length-1,matchdayState.selectedIndex+1);
- renderSelectedRound();
+  if(!matchdayState.rounds.length)return;
+  if(mode==='current') matchdayState.selectedIndex=matchdayState.currentIndex;
+  if(mode==='prev') matchdayState.selectedIndex=Math.max(0,matchdayState.selectedIndex-1);
+  if(mode==='next') matchdayState.selectedIndex=Math.min(matchdayState.rounds.length-1,matchdayState.selectedIndex+1);
+  renderSelectedRound();
 }
 
 /* NUEVO 2: crea y resuelve automáticamente todos los pronósticos disponibles. */
@@ -394,7 +526,7 @@ function resetWeights(){[['wOverall',40],['wVenue',25],['wAttack',15],['wDefense
 function renderQuiniela(matches){
  const body=document.getElementById('quiniela-body'),label=document.getElementById('quinielaLabel');if(!body)return;
  if(!matches||!matches.length){body.innerHTML='<tr><td colspan="10" class="loading">No hay partidos disponibles para esta jornada.</td></tr>';return;}
- const store=predictionStore();if(label)label.textContent=matches[0]?.week?'Jornada '+matches[0].week+' · '+matches.length+' partidos':'Jornada seleccionada';
+ const store=predictionStore();if(label){const n=Number(matches[0]?.week);label.textContent=Number.isFinite(n)?'Jornada '+n+' · '+matches.length+' partidos':'Jornada seleccionada · '+matches.length+' partidos';}
  body.innerHTML=matches.map((m,i)=>{
   const p=store[m.id]||predict(m.home,m.away,matchdayState.standings),pick=p.result||'X',confidence=Math.max(Number(p.ph||0),Number(p.pd||0),Number(p.pa||0)),difficulty=100-confidence,diffClass=difficulty>=40?'high':difficulty>=30?'mid':'low',diffText=difficulty>=40?'Difícil':difficulty>=30?'Media':'Favorable',done=m.state==='post'||m.state==='final',actual=done?outcome(m.homeScore,m.awayScore):null,resultText=done?m.homeScore+'-'+m.awayScore:'—',hit=done&&actual===pick;
   return '<tr class="difficulty-'+diffClass+'"><td>'+(i+1)+'</td><td style="text-align:left"><b>'+esc(m.home)+'</b><br><span class="muted">'+esc(m.away)+'</span></td><td>'+Number(p.ph||0)+'%</td><td>'+Number(p.pd||0)+'%</td><td>'+Number(p.pa||0)+'%</td><td class="pick pick-'+pick.toLowerCase()+'">'+pick+'</td><td><b>'+confidence+'%</b><div class="accuracy-bar"><div class="accuracy-fill" style="width:'+confidence+'%"></div></div></td><td><span class="difficulty-pill '+diffClass+'">'+diffText+' · '+difficulty+'%</span></td><td class="real '+(done?(hit?'hit':'miss'):'pending')+'">'+resultText+(done?' · '+actual:'')+'</td><td>'+(done?(hit?'✅ Acierto':'❌ Fallo'):'⏳ Pendiente')+'</td></tr>';
@@ -428,22 +560,53 @@ function renderTable(rows){document.getElementById('table-body').innerHTML=rows.
 function renderScorers(rows){document.getElementById('scorers-body').innerHTML=rows.map((s,i)=>'<tr><td class="pos">'+(i+1)+'</td><td><b>'+esc(s.name)+'</b></td><td class="muted">'+esc(s.team)+'</td><td class="zero"><b>'+Number(s.goals||0)+'</b></td><td class="muted">'+Number(s.played||0)+'</td></tr>').join('');}
 
 async function load(){
- document.getElementById('dataStatus').textContent='Actualizando…';
- const results=await Promise.allSettled([getStandings(),getScorers(),getUpcomingMatches(),getEuropeanMatches()]);
- const cached=loadCached();
- const standings=results[0].status==='fulfilled'?results[0].value:cached?.standings||[];
- const scorers=results[1].status==='fulfilled'?results[1].value:cached?.scorers||fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}));
- const matches=results[2].status==='fulfilled'?results[2].value:cached?.matches||[];
- const euroMatches=results[3].status==='fulfilled'?results[3].value:[];
- renderTable(standings);renderScorers(scorers);renderMatches(matches,standings);renderEuropeanMatches(euroMatches);
- const fresh={standings,scorers,matches,savedAt:Date.now()};localStorage.setItem(CACHE_KEY,JSON.stringify(fresh));
- const ok=results.filter(x=>x.status==='fulfilled').length;
- document.getElementById('dataStatus').textContent=ok===4?'Actualizado':(ok>0?'Actualización parcial':'Sin datos de API');
- document.getElementById('lastUpdate').textContent='Última consulta: '+new Date().toLocaleString('es-ES');
- document.getElementById('standingsLabel').textContent=standings.length?'Datos recibidos · '+standings.length+' equipos':'Sin datos de API';
- document.querySelector('#goleadores .small').textContent=scorers.some(s=>Number(s.goals)>0)?'Temporada 2026/27 · datos ESPN':'Temporada 2026/27 · empieza en 0 / estadísticas aún no publicadas';
- runSimulation();
+  document.getElementById('dataStatus').textContent='Actualizando…';
+
+  /* Primero descargamos calendario + clasificación. Con el calendario completo
+     ya disponible podemos resolver automáticamente resultados, quiniela y
+     goleadores de TODAS las jornadas. */
+  const first=await Promise.allSettled([getStandings(),getUpcomingMatches(),getEuropeanMatches()]);
+  const cached=loadCached();
+  const standings=first[0].status==='fulfilled'?first[0].value:cached?.standings||[];
+  const matches=first[1].status==='fulfilled'?first[1].value:cached?.matches||[];
+  const euroMatches=first[2].status==='fulfilled'?first[2].value:[];
+
+  const scorersResult=await Promise.allSettled([getScorers(matches)]);
+  const scorerCacheRows=(()=>{
+    const totals=new Map();
+    try{
+      const sc=loadScorerCache();
+      Object.values(sc.matches||{}).flat().forEach(g=>{
+        if(!g?.name||g.ownGoal||g.shootout)return;
+        const key=normalizeName(g.name)+'|'+normalizeName(g.team);
+        if(!totals.has(key))totals.set(key,{name:g.name,team:g.team,goals:0,played:0});
+        totals.get(key).goals++;
+      });
+    }catch(e){}
+    return [...totals.values()].sort((a,b)=>b.goals-a.goals||a.name.localeCompare(b.name,'es')).slice(0,15);
+  })();
+  const scorers=scorersResult[0].status==='fulfilled'
+    ?scorersResult[0].value
+    :(cached?.scorers?.some?.(s=>Number(s.goals)>0)?cached.scorers:(scorerCacheRows.length?scorerCacheRows:fallbackScorers.map(x=>({name:x[0],team:x[1],goals:0,played:0}))));
+
+  renderTable(standings);
+  renderScorers(scorers);
+  renderMatches(matches,standings);
+  renderEuropeanMatches(euroMatches);
+
+  const fresh={standings,scorers,matches,savedAt:Date.now()};
+  localStorage.setItem(CACHE_KEY,JSON.stringify(fresh));
+
+  const ok=first.filter(x=>x.status==='fulfilled').length+(scorersResult[0].status==='fulfilled'?1:0);
+  document.getElementById('dataStatus').textContent=ok===4?'Actualizado':(ok>0?'Actualización parcial':'Sin datos de API');
+  document.getElementById('lastUpdate').textContent='Última consulta: '+new Date().toLocaleString('es-ES');
+  document.getElementById('standingsLabel').textContent=standings.length?'Datos recibidos · '+standings.length+' equipos':'Sin datos de API';
+  document.querySelector('#goleadores .small').textContent=scorers.some(s=>Number(s.goals)>0)
+    ?'Temporada 2026/27 · datos ESPN'
+    :'Temporada 2026/27 · todavía no hay goles publicados';
+  runSimulation();
 }
+
 function loadCached(){try{return JSON.parse(localStorage.getItem(CACHE_KEY)||'null')}catch(e){return null}}
 
 document.getElementById('refreshBtn').addEventListener('click',load);
