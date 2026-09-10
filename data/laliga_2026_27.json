@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-10T06:53:54.529Z",
+    "generatedAt": "2026-09-10T09:46:33.108Z",
     "requestsThisRun": 9,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -114102,6 +114102,62 @@
   },
   "news": [
     {
+      "id": 49890034,
+      "headline": "Barcelona midfielder Rodri apologises for Valencia 'weak' criticism",
+      "description": "Barcelona midfielder Rodri has apologised after television images showed him calling Valencia a \"really bad\" and \"weak\" team during last weekend's 5-0 win at Mestalla.",
+      "published": "2026-09-10T09:28:21Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49890034/barcelona-midfielder-rodri-apologises-valencia-weak-criticism",
+      "images": [
+        {
+          "dataSourceIdentifier": "e392f03bc6a71",
+          "id": 49889955,
+          "type": "header",
+          "name": "Rodri  [1296x729]",
+          "credit": "Photo by Jose Breton/Pics Action/NurPhoto via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0910/r1714239_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Garcia expects Lamine Yamal to win Ballon d'Or 'very soon'",
+          "caption": "Garcia expects Lamine Yamal to win Ballon d'Or 'very soon'",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0906/dm_260906_COM_SOC_Analysis_Garcia_expects_Lamine_Yamal_to_win_Ballon_dOr_very_soon_20260906_GLOBAL/dm_260906_COM_SOC_Analysis_Garcia_expects_Lamine_Yamal_to_win_Ballon_dOr_very_soon_20260906_GLOBAL.jpg"
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": 49889895,
+      "headline": "LaLiga president honoured Lionel Messi, Cristiano Ronaldo investing in Spanish clubs",
+      "description": "LaLiga president Javier Tebas considers it an honor that football greats Cristiano Ronaldo and Lionel Messi are investing in Spanish clubs.",
+      "published": "2026-09-10T09:03:48Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49889895/laliga-president-javier-tebas-honoured-lionel-messi-cristiano-ronaldo-investing-spanish-clubs",
+      "images": [
+        {
+          "dataSourceIdentifier": "2b635cfd9bb3d",
+          "id": 49889843,
+          "type": "header",
+          "name": "Messi Ronaldo [1296x729]",
+          "credit": "Photo by Pat Elmont and Karl Bridgeman - FIFA/FIFA via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0910/r1714237_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Mbappe backs himself as the best in the world",
+          "caption": "Mbappe backs himself as the best in the world",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0907/dm_260907_Mbappe_backs_himself_as_the_best_in_the_world/dm_260907_Mbappe_backs_himself_as_the_best_in_the_world.jpg"
+        }
+      ],
+      "related": []
+    },
+    {
       "id": 49878072,
       "headline": "Real Madrid's Thibaut Courtois to sit out Belgium's Nations League campaign",
       "description": "Real Madrid goalkeeper Thibaut Courtois will not play for Belgium in the Nations League campaign but has not retired from international football.",
@@ -114195,91 +114251,6 @@
           "height": 729,
           "width": 1296,
           "url": "https://a.espncdn.com/photo/2026/0908/r1713445_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Are Arsenal building a Premier League dynasty?",
-          "caption": "Are Arsenal building a Premier League dynasty?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0907/dm_260907_COM_SOC_ANALYSIS_Can_Havertz_lead_Arsenal_to_Champions_League_glory_2026_9_26/dm_260907_COM_SOC_ANALYSIS_Can_Havertz_lead_Arsenal_to_Champions_League_glory_2026_9_26.jpg"
-        }
-      ],
-      "related": []
-    },
-    {
-      "id": 49871058,
-      "headline": "Spanish refs stand by call not to retake Mbappé pen miss",
-      "description": "The decision not to allow Kylian Mbappé's missed penalty in Real Madrid's 1-0 defeat at Real Betis to be retaken was correct, the body in charge of Spain's referees said on Tuesday.",
-      "published": "2026-09-08T19:28:43Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49871058/spanish-refs-stand-call-not-retake-mbappe-pen-miss",
-      "images": [
-        {
-          "dataSourceIdentifier": "1048db1e594cb",
-          "id": 49871256,
-          "type": "header",
-          "name": "Mbappe woe missed pen vs Betis [1296x729]",
-          "caption": "Kylian Mbappe reacts after missing a penalty for Real Madrid against Real Betis in LaLiga.",
-          "alt": "Kylian Mbappe reacts after missing a penalty for Real Madrid against Real Betis in LaLiga.",
-          "credit": "Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0908/r1713360_1296x729_16-9.jpg"
-        }
-      ],
-      "related": []
-    },
-    {
-      "id": 49867974,
-      "headline": "2026 Ballon d'Or: Full men's, women's short lists, host city change, more",
-      "description": "The 2026 Ballon d'Or short lists are out. Here's who could win the biggest individual prizes in men's and women's soccer.",
-      "published": "2026-09-08T19:22:51Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49867974/2026-ballon-dor-full-mens-women-shortlists-host-city-change-vozinha-more",
-      "images": [
-        {
-          "dataSourceIdentifier": "f1cc3e0eee1a9",
-          "id": 49867397,
-          "type": "header",
-          "name": "Ballon d'Or shortlist [1296x729]",
-          "caption": "The shortlist for the men's and women's Ballon d'Or awards have been announced.",
-          "credit": "Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0908/r1713144_2_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "f21d1b7f52ae4",
-          "id": 46353500,
-          "type": "header",
-          "name": "Ousmane Dembele [1296x729]",
-          "caption": "Ousmane Dembélé won the 69th Ballon d'Or award ahead of Barcelona's Lamine Yamal.",
-          "alt": "Ousmane Dembele poses with the Menâs Ballon dâOr trophy during the 69th Ballon D'Or Ceremony at Theatre Du Chatelet on September 22, 2025 in Paris, France.",
-          "credit": "Kristy Sparow - UEFA/UEFA via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2025/0923/r1549760_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "448ec22d59537",
-          "id": 49869633,
-          "type": "header",
-          "name": "Aitana Bonmati [1296x729]",
-          "caption": "Aitana Bonmatí has won the past three Ballon d'Or Féminin awards, although she was not shortlisted this year after missing months through injury.",
-          "credit": "FRANCK FIFE/AFP via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2025/0922/r1549598_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "2befb07c994d3",
-          "id": 49868371,
-          "type": "header",
-          "name": "Spain, World Cup final trophies [1296x729]",
-          "caption": "Spain defender Pau Cubarsí (left) won the World Cup's young player award, while goalkeeper Unai Simón (right) won best goalkeeper.",
-          "credit": "ANP via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0908/r1713186_1296x729_16-9.jpg"
         },
         {
           "type": "Media",
@@ -120096,7 +120067,7 @@
   ],
   "modelPerformance": {
     "modelVersion": "3.0",
-    "updatedAt": "2026-09-10T06:53:54.528Z",
+    "updatedAt": "2026-09-10T09:46:33.108Z",
     "bySign": {
       "1": {
         "total": 0,
