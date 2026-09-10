@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-09T16:36:32.005Z",
-    "requestsThisRun": 9,
+    "generatedAt": "2026-09-10T06:46:18.731Z",
+    "requestsThisRun": 10,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": false,
@@ -33131,6 +33131,2041 @@
         "difficulty": "difícil",
         "confidence": 0.4374,
         "realResult": "X"
+      },
+      "details": {
+        "updatedAt": "2026-09-10T06:46:18.729Z",
+        "formations": [
+          {
+            "teamId": 243,
+            "teamName": "Sevilla",
+            "formation": null,
+            "players": []
+          },
+          {
+            "teamId": 83,
+            "teamName": "Barcelona",
+            "formation": null,
+            "players": []
+          }
+        ],
+        "statistics": [
+          {
+            "teamId": 243,
+            "teamName": "Sevilla",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "saves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 83,
+            "teamName": "Barcelona",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "saves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": [],
+        "leaders": [
+          {
+            "team": {
+              "id": "243",
+              "uid": "s:600~t:243",
+              "displayName": "Sevilla",
+              "abbreviation": "SEV",
+              "links": [
+                {
+                  "href": "https://www.espn.com/soccer/club/_/id/243/sevilla",
+                  "text": "Clubhouse"
+                },
+                {
+                  "href": "https://www.espn.com/soccer/team/fixtures/_/id/243/sevilla",
+                  "text": "Fixtures"
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
+              "logos": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2019-05-08T16:07Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/243.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2019-05-08T16:07Z"
+                }
+              ]
+            },
+            "leaders": [
+              {
+                "name": "goalsLeaders",
+                "displayName": "Goals",
+                "leaders": [
+                  {
+                    "displayValue": "Matches: 4, Goals: 1",
+                    "shortDisplayValue": "M: 4, G: 1: A: 0",
+                    "athlete": {
+                      "id": "375514",
+                      "uid": "s:600~a:375514",
+                      "guid": "10a7f735-5a42-3e55-813c-3fdb38bf616c",
+                      "lastName": "Sierra",
+                      "fullName": "Miguel Sierra",
+                      "displayName": "Miguel Sierra",
+                      "shortName": "M. Sierra",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/375514/miguel-sierra",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "30",
+                      "position": {
+                        "name": "Forward",
+                        "displayName": "Forward",
+                        "abbreviation": "F"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/375514/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/375514/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    },
+                    "statistics": [
+                      {
+                        "name": "totalGoals",
+                        "displayName": "Total Goals",
+                        "shortDisplayName": "G",
+                        "description": "The number of goals scored against the opposing team.",
+                        "abbreviation": "G",
+                        "value": 1,
+                        "displayValue": "1"
+                      },
+                      {
+                        "name": "appearances",
+                        "displayName": "Appearances",
+                        "shortDisplayName": "APP",
+                        "description": "The number of times a player has made an appearance in a match.",
+                        "abbreviation": "APP",
+                        "value": 4,
+                        "displayValue": "4"
+                      }
+                    ],
+                    "mainStat": {
+                      "value": "1",
+                      "label": "G"
+                    },
+                    "summary": "4 APP"
+                  },
+                  {
+                    "displayValue": "Matches: 4, Goals: 1",
+                    "shortDisplayValue": "M: 4, G: 1: A: 0",
+                    "athlete": {
+                      "id": "254320",
+                      "uid": "s:600~a:254320",
+                      "guid": "36f4cd58-ea46-b62b-322c-889dfe8bc224",
+                      "lastName": "Guridi",
+                      "fullName": "Jon Guridi",
+                      "displayName": "Jon Guridi",
+                      "shortName": "J. Guridi",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/254320/jon-guridi",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "18",
+                      "position": {
+                        "name": "Midfielder",
+                        "displayName": "Midfielder",
+                        "abbreviation": "M"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/254320/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/254320/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    },
+                    "statistics": [
+                      {
+                        "name": "totalGoals",
+                        "displayName": "Total Goals",
+                        "shortDisplayName": "G",
+                        "description": "The number of goals scored against the opposing team.",
+                        "abbreviation": "G",
+                        "value": 1,
+                        "displayValue": "1"
+                      },
+                      {
+                        "name": "appearances",
+                        "displayName": "Appearances",
+                        "shortDisplayName": "APP",
+                        "description": "The number of times a player has made an appearance in a match.",
+                        "abbreviation": "APP",
+                        "value": 4,
+                        "displayValue": "4"
+                      }
+                    ],
+                    "mainStat": {
+                      "value": "1",
+                      "label": "G"
+                    },
+                    "summary": "4 APP"
+                  },
+                  {
+                    "displayValue": "Matches: 4, Goals: 1",
+                    "shortDisplayValue": "M: 4, G: 1: A: 0",
+                    "athlete": {
+                      "id": "254270",
+                      "uid": "s:600~a:254270",
+                      "guid": "d7a6e0dc-9501-90d8-ee52-f73cff4c1bdf",
+                      "lastName": "Ejuke",
+                      "fullName": "Chidera Ejuke",
+                      "displayName": "Chidera Ejuke",
+                      "shortName": "C. Ejuke",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/254270/chidera-ejuke",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "21",
+                      "position": {
+                        "name": "Forward",
+                        "displayName": "Forward",
+                        "abbreviation": "F"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/254270/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/254270/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    },
+                    "statistics": [
+                      {
+                        "name": "totalGoals",
+                        "displayName": "Total Goals",
+                        "shortDisplayName": "G",
+                        "description": "The number of goals scored against the opposing team.",
+                        "abbreviation": "G",
+                        "value": 1,
+                        "displayValue": "1"
+                      },
+                      {
+                        "name": "appearances",
+                        "displayName": "Appearances",
+                        "shortDisplayName": "APP",
+                        "description": "The number of times a player has made an appearance in a match.",
+                        "abbreviation": "APP",
+                        "value": 4,
+                        "displayValue": "4"
+                      }
+                    ],
+                    "mainStat": {
+                      "value": "1",
+                      "label": "G"
+                    },
+                    "summary": "4 APP"
+                  }
+                ]
+              },
+              {
+                "name": "assistsLeaders",
+                "displayName": "Assists",
+                "leaders": [
+                  {
+                    "displayValue": "Matches: 4, Assists: 1",
+                    "shortDisplayValue": "M: 4, G: 0: A: 1",
+                    "athlete": {
+                      "id": "322993",
+                      "uid": "s:600~a:322993",
+                      "guid": "24453be1-d61b-38e5-bf72-39381e62cd26",
+                      "lastName": "Ure",
+                      "fullName": "Robbie Ure",
+                      "displayName": "Robbie Ure",
+                      "shortName": "R. Ure",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/322993/robbie-ure",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "9",
+                      "position": {
+                        "name": "Forward",
+                        "displayName": "Forward",
+                        "abbreviation": "F"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/322993/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/322993/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    },
+                    "statistics": [
+                      {
+                        "name": "goalAssists",
+                        "displayName": "Assists",
+                        "shortDisplayName": "A",
+                        "description": "The number of assists.",
+                        "abbreviation": "A",
+                        "value": 1,
+                        "displayValue": "1"
+                      },
+                      {
+                        "name": "appearances",
+                        "displayName": "Appearances",
+                        "shortDisplayName": "APP",
+                        "description": "The number of times a player has made an appearance in a match.",
+                        "abbreviation": "APP",
+                        "value": 4,
+                        "displayValue": "4"
+                      }
+                    ],
+                    "mainStat": {
+                      "value": "1",
+                      "label": "A"
+                    },
+                    "summary": "4 APP"
+                  },
+                  {
+                    "displayValue": "Matches: 3, Assists: 1",
+                    "shortDisplayValue": "M: 3, G: 1: A: 1",
+                    "athlete": {
+                      "id": "365821",
+                      "uid": "s:600~a:365821",
+                      "guid": "84eaf054-7ffd-35ed-a8c7-37313ff81301",
+                      "lastName": "Romero",
+                      "fullName": "Isaac Romero",
+                      "displayName": "Isaac Romero",
+                      "shortName": "I. Romero",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/365821/isaac-romero",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "16",
+                      "position": {
+                        "name": "Forward",
+                        "displayName": "Forward",
+                        "abbreviation": "F"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/365821/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/365821/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    },
+                    "statistics": [
+                      {
+                        "name": "goalAssists",
+                        "displayName": "Assists",
+                        "shortDisplayName": "A",
+                        "description": "The number of assists.",
+                        "abbreviation": "A",
+                        "value": 1,
+                        "displayValue": "1"
+                      },
+                      {
+                        "name": "appearances",
+                        "displayName": "Appearances",
+                        "shortDisplayName": "APP",
+                        "description": "The number of times a player has made an appearance in a match.",
+                        "abbreviation": "APP",
+                        "value": 3,
+                        "displayValue": "3"
+                      }
+                    ],
+                    "mainStat": {
+                      "value": "1",
+                      "label": "A"
+                    },
+                    "summary": "3 APP"
+                  },
+                  {
+                    "displayValue": "Matches: 2, Assists: 1",
+                    "shortDisplayValue": "M: 2, G: 1: A: 1",
+                    "athlete": {
+                      "id": "377782",
+                      "uid": "s:600~a:377782",
+                      "guid": "c8f2eb96-0944-3ecb-ae10-c8b9df56482b",
+                      "fullName": "Oso",
+                      "displayName": "Oso",
+                      "shortName": "Oso",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/377782/oso",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "19",
+                      "position": {
+                        "name": "Defender",
+                        "displayName": "Defender",
+                        "abbreviation": "D"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/377782/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/377782/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    },
+                    "statistics": [
+                      {
+                        "name": "goalAssists",
+                        "displayName": "Assists",
+                        "shortDisplayName": "A",
+                        "description": "The number of assists.",
+                        "abbreviation": "A",
+                        "value": 1,
+                        "displayValue": "1"
+                      },
+                      {
+                        "name": "appearances",
+                        "displayName": "Appearances",
+                        "shortDisplayName": "APP",
+                        "description": "The number of times a player has made an appearance in a match.",
+                        "abbreviation": "APP",
+                        "value": 2,
+                        "displayValue": "2"
+                      }
+                    ],
+                    "mainStat": {
+                      "value": "1",
+                      "label": "A"
+                    },
+                    "summary": "2 APP"
+                  }
+                ]
+              },
+              {
+                "name": "totalShots",
+                "displayName": "Total Shots",
+                "leaders": [
+                  {
+                    "displayValue": "7",
+                    "shortDisplayValue": "7",
+                    "athlete": {
+                      "id": "375514",
+                      "uid": "s:600~a:375514",
+                      "guid": "10a7f735-5a42-3e55-813c-3fdb38bf616c",
+                      "lastName": "Sierra",
+                      "fullName": "Miguel Sierra",
+                      "displayName": "Miguel Sierra",
+                      "shortName": "M. Sierra",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/375514/miguel-sierra",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "30",
+                      "position": {
+                        "name": "Forward",
+                        "displayName": "Forward",
+                        "abbreviation": "F"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/375514/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/375514/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "displayValue": "6",
+                    "shortDisplayValue": "6",
+                    "athlete": {
+                      "id": "347359",
+                      "uid": "s:600~a:347359",
+                      "guid": "9d4100b3-5992-3062-96be-5e13e12817ba",
+                      "lastName": "Fernández",
+                      "fullName": "Peque",
+                      "displayName": "Peque",
+                      "shortName": "Peque",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/347359/peque",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "10",
+                      "position": {
+                        "name": "Forward",
+                        "displayName": "Forward",
+                        "abbreviation": "F"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/347359/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/347359/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "displayValue": "4",
+                    "shortDisplayValue": "4",
+                    "athlete": {
+                      "id": "322993",
+                      "uid": "s:600~a:322993",
+                      "guid": "24453be1-d61b-38e5-bf72-39381e62cd26",
+                      "lastName": "Ure",
+                      "fullName": "Robbie Ure",
+                      "displayName": "Robbie Ure",
+                      "shortName": "R. Ure",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/322993/robbie-ure",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "9",
+                      "position": {
+                        "name": "Forward",
+                        "displayName": "Forward",
+                        "abbreviation": "F"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/322993/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/322993/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "accuratePasses",
+                "displayName": "Accurate Passes",
+                "leaders": [
+                  {
+                    "displayValue": "135",
+                    "shortDisplayValue": "135",
+                    "athlete": {
+                      "id": "222037",
+                      "uid": "s:600~a:222037",
+                      "guid": "850d4519-5e04-2404-a9cb-ecd309d4c79c",
+                      "lastName": "Suazo",
+                      "fullName": "Gabriel Suazo",
+                      "displayName": "Gabriel Suazo",
+                      "shortName": "G. Suazo",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/222037/gabriel-suazo",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "17",
+                      "position": {
+                        "name": "Defender",
+                        "displayName": "Defender",
+                        "abbreviation": "D"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/222037/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/222037/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "displayValue": "121",
+                    "shortDisplayValue": "121",
+                    "athlete": {
+                      "id": "282289",
+                      "uid": "s:600~a:282289",
+                      "guid": "0d0e2c90-31a7-4a46-012d-5a35d2d907da",
+                      "lastName": "Agoumé",
+                      "fullName": "Lucien Agoumé",
+                      "displayName": "Lucien Agoumé",
+                      "shortName": "L. Agoumé",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/282289/lucien-agoume",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "6",
+                      "position": {
+                        "name": "Midfielder",
+                        "displayName": "Midfielder",
+                        "abbreviation": "M"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/282289/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/282289/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "displayValue": "89",
+                    "shortDisplayValue": "89",
+                    "athlete": {
+                      "id": "334163",
+                      "uid": "s:600~a:334163",
+                      "guid": "22b97dc8-baa9-3ced-9154-e8f01f318268",
+                      "lastName": "Salas",
+                      "fullName": "Enrique Salas",
+                      "displayName": "Enrique Salas",
+                      "shortName": "E. Salas",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/334163/enrique-salas",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "4",
+                      "position": {
+                        "name": "Defender",
+                        "displayName": "Defender",
+                        "abbreviation": "D"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/334163/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/334163/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "saves",
+                "displayName": "Saves",
+                "leaders": [
+                  {
+                    "displayValue": "12",
+                    "shortDisplayValue": "12",
+                    "athlete": {
+                      "id": "159135",
+                      "uid": "s:600~a:159135",
+                      "guid": "c6069a83-e355-3243-ec98-687ebc847970",
+                      "lastName": "Vlachodimos",
+                      "fullName": "Odisseas Vlachodimos",
+                      "displayName": "Odisseas Vlachodimos",
+                      "shortName": "O. Vlachodimos",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/159135/odisseas-vlachodimos",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "1",
+                      "position": {
+                        "name": "Goalkeeper",
+                        "displayName": "Goalkeeper",
+                        "abbreviation": "G"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/159135/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/159135/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "advantage": true
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "83",
+              "uid": "s:600~t:83",
+              "displayName": "Barcelona",
+              "abbreviation": "BAR",
+              "links": [
+                {
+                  "href": "https://www.espn.com/soccer/club/_/id/83/barcelona",
+                  "text": "Clubhouse"
+                },
+                {
+                  "href": "https://www.espn.com/soccer/team/fixtures/_/id/83/barcelona",
+                  "text": "Fixtures"
+                }
+              ],
+              "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+              "logos": [
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "default"
+                  ],
+                  "lastUpdated": "2019-05-08T16:07Z"
+                },
+                {
+                  "href": "https://a.espncdn.com/i/teamlogos/soccer/500-dark/83.png",
+                  "width": 500,
+                  "height": 500,
+                  "alt": "",
+                  "rel": [
+                    "full",
+                    "dark"
+                  ],
+                  "lastUpdated": "2019-05-08T16:07Z"
+                }
+              ]
+            },
+            "leaders": [
+              {
+                "name": "goalsLeaders",
+                "displayName": "Goals",
+                "leaders": [
+                  {
+                    "displayValue": "Matches: 4, Goals: 6",
+                    "shortDisplayValue": "M: 4, G: 6: A: 1",
+                    "athlete": {
+                      "id": "231050",
+                      "uid": "s:600~a:231050",
+                      "guid": "3ab5000b-e423-c068-dd0a-a563ca5ddf90",
+                      "fullName": "Raphinha",
+                      "displayName": "Raphinha",
+                      "shortName": "Raphinha",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/231050/raphinha",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "11",
+                      "position": {
+                        "name": "Forward",
+                        "displayName": "Forward",
+                        "abbreviation": "F"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/231050/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/231050/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    },
+                    "statistics": [
+                      {
+                        "name": "totalGoals",
+                        "displayName": "Total Goals",
+                        "shortDisplayName": "G",
+                        "description": "The number of goals scored against the opposing team.",
+                        "abbreviation": "G",
+                        "value": 6,
+                        "displayValue": "6"
+                      },
+                      {
+                        "name": "appearances",
+                        "displayName": "Appearances",
+                        "shortDisplayName": "APP",
+                        "description": "The number of times a player has made an appearance in a match.",
+                        "abbreviation": "APP",
+                        "value": 4,
+                        "displayValue": "4"
+                      }
+                    ],
+                    "mainStat": {
+                      "value": "6",
+                      "label": "G"
+                    },
+                    "summary": "4 APP"
+                  },
+                  {
+                    "displayValue": "Matches: 4, Goals: 4",
+                    "shortDisplayValue": "M: 4, G: 4: A: 0",
+                    "athlete": {
+                      "id": "362150",
+                      "uid": "s:600~a:362150",
+                      "guid": "de67ce6f-0991-36b9-afb9-c008f21dc4b4",
+                      "lastName": "Yamal",
+                      "fullName": "Lamine Yamal",
+                      "displayName": "Lamine Yamal",
+                      "shortName": "L. Yamal",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/362150/lamine-yamal",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "10",
+                      "position": {
+                        "name": "Forward",
+                        "displayName": "Forward",
+                        "abbreviation": "F"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/362150/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/362150/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    },
+                    "statistics": [
+                      {
+                        "name": "totalGoals",
+                        "displayName": "Total Goals",
+                        "shortDisplayName": "G",
+                        "description": "The number of goals scored against the opposing team.",
+                        "abbreviation": "G",
+                        "value": 4,
+                        "displayValue": "4"
+                      },
+                      {
+                        "name": "appearances",
+                        "displayName": "Appearances",
+                        "shortDisplayName": "APP",
+                        "description": "The number of times a player has made an appearance in a match.",
+                        "abbreviation": "APP",
+                        "value": 4,
+                        "displayValue": "4"
+                      }
+                    ],
+                    "mainStat": {
+                      "value": "4",
+                      "label": "G"
+                    },
+                    "summary": "4 APP"
+                  },
+                  {
+                    "displayValue": "Matches: 4, Goals: 4",
+                    "shortDisplayValue": "M: 4, G: 4: A: 2",
+                    "athlete": {
+                      "id": "354334",
+                      "uid": "s:600~a:354334",
+                      "guid": "a0059260-6adc-3ed4-a987-9977fd6eb027",
+                      "lastName": "López",
+                      "fullName": "Fermín López",
+                      "displayName": "Fermín López",
+                      "shortName": "F. López",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/354334/fermin-lopez",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "7",
+                      "position": {
+                        "name": "Midfielder",
+                        "displayName": "Midfielder",
+                        "abbreviation": "M"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/354334/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/354334/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    },
+                    "statistics": [
+                      {
+                        "name": "totalGoals",
+                        "displayName": "Total Goals",
+                        "shortDisplayName": "G",
+                        "description": "The number of goals scored against the opposing team.",
+                        "abbreviation": "G",
+                        "value": 4,
+                        "displayValue": "4"
+                      },
+                      {
+                        "name": "appearances",
+                        "displayName": "Appearances",
+                        "shortDisplayName": "APP",
+                        "description": "The number of times a player has made an appearance in a match.",
+                        "abbreviation": "APP",
+                        "value": 4,
+                        "displayValue": "4"
+                      }
+                    ],
+                    "mainStat": {
+                      "value": "4",
+                      "label": "G"
+                    },
+                    "summary": "4 APP"
+                  }
+                ]
+              },
+              {
+                "name": "assistsLeaders",
+                "displayName": "Assists",
+                "leaders": [
+                  {
+                    "displayValue": "Matches: 4, Assists: 4",
+                    "shortDisplayValue": "M: 4, G: 0: A: 4",
+                    "athlete": {
+                      "id": "268782",
+                      "uid": "s:600~a:268782",
+                      "guid": "1c67a47d-7b8f-d560-6aaf-0f9e73b00f51",
+                      "lastName": "Gordon",
+                      "fullName": "Anthony Gordon",
+                      "displayName": "Anthony Gordon",
+                      "shortName": "A. Gordon",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/268782/anthony-gordon",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "17",
+                      "position": {
+                        "name": "Forward",
+                        "displayName": "Forward",
+                        "abbreviation": "F"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/268782/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/268782/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    },
+                    "statistics": [
+                      {
+                        "name": "goalAssists",
+                        "displayName": "Assists",
+                        "shortDisplayName": "A",
+                        "description": "The number of assists.",
+                        "abbreviation": "A",
+                        "value": 4,
+                        "displayValue": "4"
+                      },
+                      {
+                        "name": "appearances",
+                        "displayName": "Appearances",
+                        "shortDisplayName": "APP",
+                        "description": "The number of times a player has made an appearance in a match.",
+                        "abbreviation": "APP",
+                        "value": 4,
+                        "displayValue": "4"
+                      }
+                    ],
+                    "mainStat": {
+                      "value": "4",
+                      "label": "A"
+                    },
+                    "summary": "4 APP"
+                  },
+                  {
+                    "displayValue": "Matches: 4, Assists: 2",
+                    "shortDisplayValue": "M: 4, G: 0: A: 2",
+                    "athlete": {
+                      "id": "403582",
+                      "uid": "s:600~a:403582",
+                      "guid": "71e0ea17-9f8c-3a67-a99c-101bdcad38d4",
+                      "lastName": "Espart",
+                      "fullName": "Xavi Espart",
+                      "displayName": "Xavi Espart",
+                      "shortName": "X. Espart",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/403582/xavi-espart",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "12",
+                      "position": {
+                        "name": "Defender",
+                        "displayName": "Defender",
+                        "abbreviation": "D"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/403582/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/403582/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    },
+                    "statistics": [
+                      {
+                        "name": "goalAssists",
+                        "displayName": "Assists",
+                        "shortDisplayName": "A",
+                        "description": "The number of assists.",
+                        "abbreviation": "A",
+                        "value": 2,
+                        "displayValue": "2"
+                      },
+                      {
+                        "name": "appearances",
+                        "displayName": "Appearances",
+                        "shortDisplayName": "APP",
+                        "description": "The number of times a player has made an appearance in a match.",
+                        "abbreviation": "APP",
+                        "value": 4,
+                        "displayValue": "4"
+                      }
+                    ],
+                    "mainStat": {
+                      "value": "2",
+                      "label": "A"
+                    },
+                    "summary": "4 APP"
+                  },
+                  {
+                    "displayValue": "Matches: 4, Assists: 2",
+                    "shortDisplayValue": "M: 4, G: 4: A: 2",
+                    "athlete": {
+                      "id": "354334",
+                      "uid": "s:600~a:354334",
+                      "guid": "a0059260-6adc-3ed4-a987-9977fd6eb027",
+                      "lastName": "López",
+                      "fullName": "Fermín López",
+                      "displayName": "Fermín López",
+                      "shortName": "F. López",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/354334/fermin-lopez",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "7",
+                      "position": {
+                        "name": "Midfielder",
+                        "displayName": "Midfielder",
+                        "abbreviation": "M"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/354334/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/354334/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    },
+                    "statistics": [
+                      {
+                        "name": "goalAssists",
+                        "displayName": "Assists",
+                        "shortDisplayName": "A",
+                        "description": "The number of assists.",
+                        "abbreviation": "A",
+                        "value": 2,
+                        "displayValue": "2"
+                      },
+                      {
+                        "name": "appearances",
+                        "displayName": "Appearances",
+                        "shortDisplayName": "APP",
+                        "description": "The number of times a player has made an appearance in a match.",
+                        "abbreviation": "APP",
+                        "value": 4,
+                        "displayValue": "4"
+                      }
+                    ],
+                    "mainStat": {
+                      "value": "2",
+                      "label": "A"
+                    },
+                    "summary": "4 APP"
+                  }
+                ]
+              },
+              {
+                "name": "totalShots",
+                "displayName": "Total Shots",
+                "leaders": [
+                  {
+                    "displayValue": "23",
+                    "shortDisplayValue": "23",
+                    "athlete": {
+                      "id": "362150",
+                      "uid": "s:600~a:362150",
+                      "guid": "de67ce6f-0991-36b9-afb9-c008f21dc4b4",
+                      "lastName": "Yamal",
+                      "fullName": "Lamine Yamal",
+                      "displayName": "Lamine Yamal",
+                      "shortName": "L. Yamal",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/362150/lamine-yamal",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "10",
+                      "position": {
+                        "name": "Forward",
+                        "displayName": "Forward",
+                        "abbreviation": "F"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/362150/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/362150/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "displayValue": "13",
+                    "shortDisplayValue": "13",
+                    "athlete": {
+                      "id": "231050",
+                      "uid": "s:600~a:231050",
+                      "guid": "3ab5000b-e423-c068-dd0a-a563ca5ddf90",
+                      "fullName": "Raphinha",
+                      "displayName": "Raphinha",
+                      "shortName": "Raphinha",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/231050/raphinha",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "11",
+                      "position": {
+                        "name": "Forward",
+                        "displayName": "Forward",
+                        "abbreviation": "F"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/231050/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/231050/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "displayValue": "10",
+                    "shortDisplayValue": "10",
+                    "athlete": {
+                      "id": "354334",
+                      "uid": "s:600~a:354334",
+                      "guid": "a0059260-6adc-3ed4-a987-9977fd6eb027",
+                      "lastName": "López",
+                      "fullName": "Fermín López",
+                      "displayName": "Fermín López",
+                      "shortName": "F. López",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/354334/fermin-lopez",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "7",
+                      "position": {
+                        "name": "Midfielder",
+                        "displayName": "Midfielder",
+                        "abbreviation": "M"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/354334/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/354334/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "accuratePasses",
+                "displayName": "Accurate Passes",
+                "leaders": [
+                  {
+                    "displayValue": "256",
+                    "shortDisplayValue": "256",
+                    "athlete": {
+                      "id": "368992",
+                      "uid": "s:600~a:368992",
+                      "guid": "22e26eeb-527d-357c-ab14-848cfd322479",
+                      "lastName": "Cubarsí",
+                      "fullName": "Pau Cubarsí",
+                      "displayName": "Pau Cubarsí",
+                      "shortName": "P. Cubarsí",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/368992/pau-cubarsi",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "5",
+                      "position": {
+                        "name": "Defender",
+                        "displayName": "Defender",
+                        "abbreviation": "D"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/368992/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/368992/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "displayValue": "231",
+                    "shortDisplayValue": "231",
+                    "athlete": {
+                      "id": "250465",
+                      "uid": "s:600~a:250465",
+                      "guid": "3b2df297-82ac-bac8-4727-6551202a0e40",
+                      "fullName": "Pedri",
+                      "displayName": "Pedri",
+                      "shortName": "Pedri",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/250465/pedri",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "8",
+                      "position": {
+                        "name": "Midfielder",
+                        "displayName": "Midfielder",
+                        "abbreviation": "M"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/250465/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/250465/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "displayValue": "231",
+                    "shortDisplayValue": "231",
+                    "athlete": {
+                      "id": "312015",
+                      "uid": "s:600~a:312015",
+                      "guid": "4004c879-c149-3c51-a23d-75e6a66e664d",
+                      "lastName": "Martín",
+                      "fullName": "Gerard Martín",
+                      "displayName": "Gerard Martín",
+                      "shortName": "G. Martín",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/312015/gerard-martin",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "18",
+                      "position": {
+                        "name": "Defender",
+                        "displayName": "Defender",
+                        "abbreviation": "D"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/312015/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/312015/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "saves",
+                "displayName": "Saves",
+                "leaders": [
+                  {
+                    "displayValue": "7",
+                    "shortDisplayValue": "7",
+                    "athlete": {
+                      "id": "297362",
+                      "uid": "s:600~a:297362",
+                      "guid": "8a56e426-8050-a1d9-5af9-73d77648d188",
+                      "lastName": "García",
+                      "fullName": "Joan García",
+                      "displayName": "Joan García",
+                      "shortName": "J. García",
+                      "links": [
+                        {
+                          "rel": [
+                            "playercard",
+                            "desktop",
+                            "athlete"
+                          ],
+                          "href": "https://www.espn.com/soccer/player/_/id/297362/joan-garcia",
+                          "text": "Player Card"
+                        }
+                      ],
+                      "jersey": "1",
+                      "position": {
+                        "name": "Goalkeeper",
+                        "displayName": "Goalkeeper",
+                        "abbreviation": "G"
+                      },
+                      "status": {
+                        "id": "1",
+                        "name": "Active",
+                        "type": "active",
+                        "abbreviation": "Active"
+                      },
+                      "jerseyImage": [
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/297362/jersey.png?darkMode=false",
+                          "rel": [
+                            "full",
+                            "default"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        },
+                        {
+                          "href": "https://stitcher.espn.com/sports/soccer/leagues/esp.1/events/401882859/athletes/297362/jersey.png?darkMode=true",
+                          "rel": [
+                            "full",
+                            "dark"
+                          ],
+                          "width": 1440,
+                          "height": 1440
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "boxscore": {
+          "teams": [
+            {
+              "team": {
+                "id": "243",
+                "uid": "s:600~t:243",
+                "slug": "esp.fc_sevilla",
+                "location": "Sevilla",
+                "name": "Sevilla",
+                "abbreviation": "SEV",
+                "displayName": "Sevilla",
+                "shortDisplayName": "Sevilla",
+                "color": "ffffff",
+                "alternateColor": "d81022",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
+              },
+              "statistics": [
+                {
+                  "name": "goalDifference",
+                  "displayValue": "1",
+                  "label": "Goal Difference"
+                },
+                {
+                  "name": "totalGoals",
+                  "displayValue": "7",
+                  "label": "Total Goals"
+                },
+                {
+                  "name": "goalAssists",
+                  "displayValue": "3",
+                  "label": "Assists"
+                },
+                {
+                  "name": "goalsConceded",
+                  "displayValue": "6",
+                  "label": "Goals Against"
+                }
+              ],
+              "displayOrder": 1,
+              "homeAway": "home"
+            },
+            {
+              "team": {
+                "id": "83",
+                "uid": "s:600~t:83",
+                "slug": "esp.barcelona",
+                "location": "Barcelona",
+                "name": "Barcelona",
+                "abbreviation": "BAR",
+                "displayName": "Barcelona",
+                "shortDisplayName": "Barcelona",
+                "color": "990000",
+                "alternateColor": "FCE38A",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
+              },
+              "statistics": [
+                {
+                  "name": "goalDifference",
+                  "displayValue": "15",
+                  "label": "Goal Difference"
+                },
+                {
+                  "name": "totalGoals",
+                  "displayValue": "17",
+                  "label": "Total Goals"
+                },
+                {
+                  "name": "goalAssists",
+                  "displayValue": "14",
+                  "label": "Assists"
+                },
+                {
+                  "name": "goalsConceded",
+                  "displayValue": "2",
+                  "label": "Goals Against"
+                }
+              ],
+              "displayOrder": 2,
+              "homeAway": "away"
+            }
+          ]
+        },
+        "competitions": []
       }
     },
     {
@@ -112091,7 +114126,7 @@
       "id": 49877964,
       "headline": "Gabriel Jesus: I was made to train alone at Arsenal before Barcelona move",
       "description": "Gabriel Jesus has said he was made to train alone at Arsenal this summer as the club sought to move him on during the transfer window.",
-      "published": "2026-09-09T09:43:42Z",
+      "published": "2026-09-09T17:07:38Z",
       "link": "https://www.espn.com/soccer/story/_/id/49877964/gabriel-jesus-was-made-train-alone-arsenal-barcelona-move",
       "images": [
         {
@@ -112111,6 +114146,35 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0908/dm_260908_Gomez_This_is_Barcelona_playing_total_football/dm_260908_Gomez_This_is_Barcelona_playing_total_football.jpg"
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": 49877507,
+      "headline": "Kylian Mbappé: Want Champions League win 'more than anything,' more important than Ballon d'Or",
+      "description": "Kylian Mbappé said he wants to win the Champions League \"more than anything\" -- and that he'd prefer it to winning the Ballon d'Or -- after Real Madrid's 2-1 win over Inter on Tuesday.",
+      "published": "2026-09-09T17:14:12Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49877507/kylian-mbappe-champions-league-success-real-madrid-more-anything-ballon-dor",
+      "images": [
+        {
+          "dataSourceIdentifier": "48b9eeb22d3e1",
+          "id": 49877518,
+          "type": "header",
+          "name": "Kylian Mbappé [1296x729]",
+          "caption": "Kylian Mbappé struck first against Inter Milan in Real Madrid's Champions League opener on Tuesday night.",
+          "credit": "Photo By Dennis Agyeman/Europa Press via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0909/r1713659_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Burley: Kane should win the 2026 men's Ballon d'Or",
+          "caption": "Burley: Kane should win the 2026 men's Ballon d'Or",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0909/dm_260909_COM_SOC_Analysis_Burley_Kane_should_win_the_2026_mens_Ballon_dOr_20260909_GLOBAL/dm_260909_COM_SOC_Analysis_Burley_Kane_should_win_the_2026_mens_Ballon_dOr_20260909_GLOBAL.jpg"
         }
       ],
       "related": []
@@ -112224,35 +114288,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0907/dm_260907_COM_SOC_ANALYSIS_Can_Havertz_lead_Arsenal_to_Champions_League_glory_2026_9_26/dm_260907_COM_SOC_ANALYSIS_Can_Havertz_lead_Arsenal_to_Champions_League_glory_2026_9_26.jpg"
-        }
-      ],
-      "related": []
-    },
-    {
-      "id": 49867456,
-      "headline": "Lautaro Martínez reveals support for Julián Álvarez amid failed transfer from Atlético Madrid",
-      "description": "Lautaro Martínez hopes Argentina teammate Julián Álvarez can soon get over his failed attempt to leave Atlético Madrid this summer.",
-      "published": "2026-09-08T10:52:08Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49867456/lautaro-martinez-reveals-support-julian-alvarez-amid-failed-transfer-atletico-madrid",
-      "images": [
-        {
-          "dataSourceIdentifier": "6583db7c92c60",
-          "id": 49867354,
-          "type": "header",
-          "name": "Julián Álvarez [1296x729]",
-          "alt": "Julian Alvarez of Atletico de Madrid looks on during the LaLiga EA Sports match between Athletic Club and Atletico de Madrid at Estadio San Mames in Bilbao, Spain, on September 5, 2026.",
-          "credit": "Cesar Ortiz Gonzalez/NurPhoto via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0908/r1713143_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Can Gabriel Jesus be Barcelona's alternative for Julián Álvarez?",
-          "caption": "Can Gabriel Jesus be Barcelona's alternative for Julián Álvarez?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0830/dm_260830_COM_SOC_Analysis_Can_Gabriel_Jesus_be_Barcelonas_alternative_for_Julian_Alvarez_20260830_GLOBA/dm_260830_COM_SOC_Analysis_Can_Gabriel_Jesus_be_Barcelonas_alternative_for_Julian_Alvarez_20260830_GLOBA.jpg"
         }
       ],
       "related": []
@@ -112424,7 +114459,7 @@
       "competitionKey": "champions",
       "date": "2026-09-09T16:45Z",
       "timestamp": 1788972300,
-      "status": "STATUS_SCHEDULED",
+      "status": "STATUS_FULL_TIME",
       "home": {
         "id": 83,
         "name": "Barcelona"
@@ -112434,8 +114469,8 @@
         "name": "Feyenoord Rotterdam"
       },
       "score": {
-        "home": 0,
-        "away": 0
+        "home": 5,
+        "away": 1
       }
     },
     {
@@ -112444,7 +114479,7 @@
       "competitionKey": "champions",
       "date": "2026-09-09T16:45Z",
       "timestamp": 1788972300,
-      "status": "STATUS_SCHEDULED",
+      "status": "STATUS_FULL_TIME",
       "home": {
         "id": 134,
         "name": "VfB Stuttgart"
@@ -112454,8 +114489,8 @@
         "name": "Viking FK"
       },
       "score": {
-        "home": 0,
-        "away": 0
+        "home": 3,
+        "away": 1
       }
     },
     {
@@ -112464,7 +114499,7 @@
       "competitionKey": "champions",
       "date": "2026-09-09T19:00Z",
       "timestamp": 1788980400,
-      "status": "STATUS_SCHEDULED",
+      "status": "STATUS_FULL_TIME",
       "home": {
         "id": 364,
         "name": "Liverpool"
@@ -112474,8 +114509,8 @@
         "name": "Atlético Madrid"
       },
       "score": {
-        "home": 0,
-        "away": 0
+        "home": 2,
+        "away": 1
       }
     },
     {
@@ -112484,7 +114519,7 @@
       "competitionKey": "champions",
       "date": "2026-09-09T19:00Z",
       "timestamp": 1788980400,
-      "status": "STATUS_SCHEDULED",
+      "status": "STATUS_FULL_TIME",
       "home": {
         "id": 114,
         "name": "Napoli"
@@ -112495,7 +114530,7 @@
       },
       "score": {
         "home": 0,
-        "away": 0
+        "away": 1
       }
     },
     {
@@ -112504,7 +114539,7 @@
       "competitionKey": "champions",
       "date": "2026-09-09T19:00Z",
       "timestamp": 1788980400,
-      "status": "STATUS_SCHEDULED",
+      "status": "STATUS_FULL_TIME",
       "home": {
         "id": 160,
         "name": "Paris Saint-Germain"
@@ -112514,8 +114549,8 @@
         "name": "Slovan Bratislava"
       },
       "score": {
-        "home": 0,
-        "away": 0
+        "home": 6,
+        "away": 1
       }
     },
     {
@@ -112524,7 +114559,7 @@
       "competitionKey": "champions",
       "date": "2026-09-09T19:00Z",
       "timestamp": 1788980400,
-      "status": "STATUS_SCHEDULED",
+      "status": "STATUS_FULL_TIME",
       "home": {
         "id": 2250,
         "name": "Sporting CP"
@@ -112534,8 +114569,8 @@
         "name": "Galatasaray"
       },
       "score": {
-        "home": 0,
-        "away": 0
+        "home": 3,
+        "away": 1
       }
     },
     {
@@ -118061,7 +120096,7 @@
   ],
   "modelPerformance": {
     "modelVersion": "3.0",
-    "updatedAt": "2026-09-09T16:36:32.005Z",
+    "updatedAt": "2026-09-10T06:46:18.731Z",
     "bySign": {
       "1": {
         "total": 0,
