@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-10T06:46:18.731Z",
-    "requestsThisRun": 10,
+    "generatedAt": "2026-09-10T06:53:54.529Z",
+    "requestsThisRun": 9,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": false,
@@ -113615,7 +113615,7 @@
       },
       "goals": {
         "total": 6,
-        "assists": 0
+        "assists": 1
       },
       "appearances": 0,
       "minutes": 0,
@@ -113638,7 +113638,7 @@
       },
       "goals": {
         "total": 5,
-        "assists": 0
+        "assists": 1
       },
       "appearances": 0,
       "minutes": 0,
@@ -113684,7 +113684,7 @@
       },
       "goals": {
         "total": 4,
-        "assists": 0
+        "assists": 2
       },
       "appearances": 0,
       "minutes": 0,
@@ -113753,7 +113753,7 @@
       },
       "goals": {
         "total": 4,
-        "assists": 0
+        "assists": 2
       },
       "appearances": 0,
       "minutes": 0,
@@ -113822,7 +113822,7 @@
       },
       "goals": {
         "total": 3,
-        "assists": 0
+        "assists": 1
       },
       "appearances": 0,
       "minutes": 0,
@@ -113868,7 +113868,7 @@
       },
       "goals": {
         "total": 3,
-        "assists": 0
+        "assists": 3
       },
       "appearances": 0,
       "minutes": 0,
@@ -113937,7 +113937,7 @@
       },
       "goals": {
         "total": 2,
-        "assists": 0
+        "assists": 2
       },
       "appearances": 0,
       "minutes": 0,
@@ -120096,7 +120096,7 @@
   ],
   "modelPerformance": {
     "modelVersion": "3.0",
-    "updatedAt": "2026-09-10T06:46:18.731Z",
+    "updatedAt": "2026-09-10T06:53:54.528Z",
     "bySign": {
       "1": {
         "total": 0,
