@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-10T22:53:14.309Z",
-    "requestsThisRun": 20,
+    "generatedAt": "2026-09-11T09:43:18.572Z",
+    "requestsThisRun": 15,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": false,
@@ -16473,7 +16473,7 @@
             ]
           },
           "drawOdds": {
-            "moneyLine": 225,
+            "moneyLine": 230,
             "link": {
               "language": "en-US",
               "rel": [
@@ -16560,7 +16560,7 @@
               },
               "close": {
                 "line": "-0.5",
-                "odds": "+100",
+                "odds": "-110",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -16588,7 +16588,7 @@
               },
               "close": {
                 "line": "+0.5",
-                "odds": "-135",
+                "odds": "-125",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -16618,7 +16618,7 @@
                 "odds": "+135"
               },
               "close": {
-                "odds": "+110",
+                "odds": "+100",
                 "link": {
                   "rel": [
                     "home",
@@ -16643,7 +16643,7 @@
                 "odds": "+220"
               },
               "close": {
-                "odds": "+285",
+                "odds": "+320",
                 "link": {
                   "rel": [
                     "away",
@@ -16668,7 +16668,7 @@
                 "odds": "+205"
               },
               "close": {
-                "odds": "+225",
+                "odds": "+230",
                 "link": {
                   "rel": [
                     "draw",
@@ -16689,7 +16689,7 @@
               }
             }
           },
-          "details": "SEV +110"
+          "details": "SEV +100"
         }
       ],
       "prediction": {
@@ -16702,7 +16702,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.569Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-11T09:43:18.571Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -16975,7 +16975,7 @@
         "confidence": 0.5704,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.280Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-11T09:43:18.571Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -17805,7 +17805,7 @@
             "priority": 1
           },
           "drawOdds": {
-            "moneyLine": 230,
+            "moneyLine": 225,
             "link": {
               "language": "en-US",
               "rel": [
@@ -17920,7 +17920,7 @@
               },
               "close": {
                 "line": "+0.5",
-                "odds": "-145",
+                "odds": "-150",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -17950,7 +17950,7 @@
                 "odds": "+100"
               },
               "close": {
-                "odds": "+110",
+                "odds": "+120",
                 "link": {
                   "rel": [
                     "home",
@@ -17975,7 +17975,7 @@
                 "odds": "+270"
               },
               "close": {
-                "odds": "+265",
+                "odds": "+255",
                 "link": {
                   "rel": [
                     "away",
@@ -18000,7 +18000,7 @@
                 "odds": "+235"
               },
               "close": {
-                "odds": "+230",
+                "odds": "+225",
                 "link": {
                   "rel": [
                     "draw",
@@ -18021,7 +18021,7 @@
               }
             }
           },
-          "details": "OSA +110"
+          "details": "OSA +120"
         }
       ],
       "prediction": {
@@ -18498,7 +18498,7 @@
               },
               "close": {
                 "line": "o2.5",
-                "odds": "-145",
+                "odds": "-150",
                 "link": {
                   "rel": [
                     "over",
@@ -19163,7 +19163,7 @@
               },
               "close": {
                 "line": "o3.5",
-                "odds": "-140",
+                "odds": "-145",
                 "link": {
                   "rel": [
                     "over",
@@ -23864,7 +23864,7 @@
               },
               "close": {
                 "line": "o2.5",
-                "odds": "+125",
+                "odds": "+130",
                 "link": {
                   "rel": [
                     "over",
@@ -23924,7 +23924,7 @@
               },
               "close": {
                 "line": "-0.5",
-                "odds": "+105",
+                "odds": "+100",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -23952,7 +23952,7 @@
               },
               "close": {
                 "line": "+0.5",
-                "odds": "-155",
+                "odds": "-150",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -23982,7 +23982,7 @@
                 "odds": "+125"
               },
               "close": {
-                "odds": "+120",
+                "odds": "+115",
                 "link": {
                   "rel": [
                     "home",
@@ -24007,7 +24007,7 @@
                 "odds": "+265"
               },
               "close": {
-                "odds": "+280",
+                "odds": "+295",
                 "link": {
                   "rel": [
                     "away",
@@ -24053,7 +24053,7 @@
               }
             }
           },
-          "details": "ALA +120"
+          "details": "ALA +115"
         }
       ],
       "prediction": {
@@ -24559,7 +24559,7 @@
               },
               "close": {
                 "line": "u3.5",
-                "odds": "-125",
+                "odds": "-120",
                 "link": {
                   "rel": [
                     "under",
@@ -24649,7 +24649,7 @@
                 "odds": "+700"
               },
               "close": {
-                "odds": "+850",
+                "odds": "+900",
                 "link": {
                   "rel": [
                     "home",
@@ -24674,7 +24674,7 @@
                 "odds": "-295"
               },
               "close": {
-                "odds": "-330",
+                "odds": "-340",
                 "link": {
                   "rel": [
                     "away",
@@ -24720,7 +24720,7 @@
               }
             }
           },
-          "details": "RMA -330"
+          "details": "RMA -340"
         }
       ],
       "prediction": {
@@ -40639,7 +40639,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -41036,7 +41039,11 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN2",
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -41433,7 +41440,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -41830,7 +41840,9 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -42227,7 +42239,10 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [],
+      "broadcasts": [
+        "ESPN Deportes",
+        "ESPN+"
+      ],
       "odds": [
         null
       ],
@@ -155663,6 +155678,60 @@
   },
   "news": [
     {
+      "id": 49901452,
+      "headline": "Mayor of Madrid weighs in on Julián Álvarez saga: 'We need him back on track'",
+      "description": "José Luis Martínez-Almeida, the mayor of Madrid, has weighed in on Julián Álvarez's status at Atlético Madrid.",
+      "published": "2026-09-11T09:03:17Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49901452/mayor-madrid-weighs-julian-alvarez-saga-need-back-track",
+      "images": [
+        {
+          "dataSourceIdentifier": "9847e8a251c4e",
+          "id": 49901393,
+          "type": "header",
+          "name": "Julian Alvarez [1296x729]",
+          "credit": "Photo by Robbie Jay Barratt - AMA/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0911/r1714784_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Can Gabriel Jesus be Barcelona's alternative for Julián Álvarez?",
+          "caption": "Can Gabriel Jesus be Barcelona's alternative for Julián Álvarez?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0830/dm_260830_COM_SOC_Analysis_Can_Gabriel_Jesus_be_Barcelonas_alternative_for_Julian_Alvarez_20260830_GLOBA/dm_260830_COM_SOC_Analysis_Can_Gabriel_Jesus_be_Barcelonas_alternative_for_Julian_Alvarez_20260830_GLOBA.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49901364,
+      "headline": "Kylian Mbappé responds to defensive criticism: 'It's not something I take personally'",
+      "description": "Kylian Mbappé has responded to criticism regarding his defensive commitment at Real Madrid.",
+      "published": "2026-09-11T08:42:00Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49901364/kylian-mbappe-responds-defensive-criticism-not-take-personally",
+      "images": [
+        {
+          "dataSourceIdentifier": "e31c7a998c734",
+          "id": 49901365,
+          "type": "header",
+          "name": "Kylian Mbappe [1296x729]",
+          "credit": "Photo By Dennis Agyeman/Europa Press via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0911/r1714783_2_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Mbappe backs himself as the best in the world",
+          "caption": "Mbappe backs himself as the best in the world",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0907/dm_260907_Mbappe_backs_himself_as_the_best_in_the_world/dm_260907_Mbappe_backs_himself_as_the_best_in_the_world.jpg"
+        }
+      ]
+    },
+    {
       "id": 49891922,
       "headline": "Weekend predictions: Can Wrexham get a win? Who wins Manchester derby? Elversberg over Bayern?",
       "description": "Arsenal host Chelsea in a heavyweight clash this early in the Premier League, while teams such as PSG and Napoli are on the ropes in their respective title races.",
@@ -156134,40 +156203,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0906/5401bf21-c8d8-4237-9def-18b0e8eac803/5401bf21-c8d8-4237-9def-18b0e8eac803.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49851058,
-      "headline": "Málaga vs. Levante - Game Highlights",
-      "description": "Watch the Game Highlights from Málaga vs. Levante, 09/06/2026",
-      "published": "2026-09-06T18:42:54Z",
-      "link": "https://www.espn.com/video/clip/_/id/49851058/malaga-vs-levante-game-highlights",
-      "images": [
-        {
-          "name": "Málaga vs. Levante - Game Highlights",
-          "caption": "Watch the Game Highlights from Málaga vs. Levante, 09/06/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0906/93bec655-ad32-44e0-abb7-efd22556e4ee/93bec655-ad32-44e0-abb7-efd22556e4ee.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49851035,
-      "headline": "Alavés vs. Osasuna - Game Highlights",
-      "description": "Watch the Game Highlights from Alavés vs. Osasuna, 09/06/2026",
-      "published": "2026-09-06T18:38:11Z",
-      "link": "https://www.espn.com/video/clip/_/id/49851035/alaves-vs-osasuna-game-highlights",
-      "images": [
-        {
-          "name": "Alavés vs. Osasuna - Game Highlights",
-          "caption": "Watch the Game Highlights from Alavés vs. Osasuna, 09/06/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0906/ce9890a3-e8e8-4293-8998-5ec7b0acfab2/ce9890a3-e8e8-4293-8998-5ec7b0acfab2.jpg"
         }
       ]
     }
@@ -160817,7 +160852,7 @@
     "experimentalAccuracy": 0,
     "officialTotal": 41,
     "experimentalTotal": 0,
-    "updatedAt": "2026-09-10T22:53:14.309Z",
+    "updatedAt": "2026-09-11T09:43:18.572Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
