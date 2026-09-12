@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-11T09:43:18.572Z",
+    "generatedAt": "2026-09-12T09:23:06.707Z",
     "requestsThisRun": 15,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -18,13 +18,13 @@
     "modelVersion": "3.0-oficial + 3.1-experimental",
     "europeanMatchesCount": 3,
     "predictionBalanceV31": {
-      "total": 0,
-      "correct": 0,
-      "accuracy": 0,
+      "total": 1,
+      "correct": 1,
+      "accuracy": 100,
       "bySign": {
         "1": {
-          "total": 0,
-          "correct": 0
+          "total": 1,
+          "correct": 1
         },
         "2": {
           "total": 0,
@@ -41,8 +41,8 @@
           "correct": 0
         },
         "media": {
-          "total": 0,
-          "correct": 0
+          "total": 1,
+          "correct": 1
         },
         "difícil": {
           "total": 0,
@@ -16401,8 +16401,8 @@
       "seasonType": "2026-27-laliga",
       "date": "2026-09-11T19:00Z",
       "timestamp": 1789153200,
-      "status": "Scheduled",
-      "statusLong": "Scheduled",
+      "status": "FT",
+      "statusLong": "Full Time",
       "venue": {
         "id": "10628",
         "name": "Ramón Sánchez Pizjuán Stadium",
@@ -16426,8 +16426,8 @@
           "away": null
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "extratime": null,
         "penalty": null
@@ -16436,261 +16436,7 @@
         "ESPN+"
       ],
       "odds": [
-        {
-          "overUnder": 2.5,
-          "link": {
-            "language": "en-US",
-            "rel": [
-              "game",
-              "desktop",
-              "bets"
-            ],
-            "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602765",
-            "text": "Game",
-            "shortText": "Game",
-            "isExternal": true,
-            "isPremium": false,
-            "isHidden": false
-          },
-          "provider": {
-            "id": "100",
-            "name": "DraftKings",
-            "priority": 1,
-            "displayName": "DraftKings",
-            "logos": [
-              {
-                "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
-                "rel": [
-                  "light"
-                ]
-              },
-              {
-                "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
-                "rel": [
-                  "dark"
-                ]
-              }
-            ]
-          },
-          "drawOdds": {
-            "moneyLine": 230,
-            "link": {
-              "language": "en-US",
-              "rel": [
-                "draw",
-                "desktop",
-                "bets",
-                "draftkings"
-              ],
-              "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602765%3Foutcomes%3D0ML86109518_2",
-              "text": "Draw Bet",
-              "shortText": "Draw Bet",
-              "isExternal": true,
-              "isPremium": false,
-              "isHidden": false
-            }
-          },
-          "total": {
-            "displayName": "Total",
-            "shortDisplayName": "Total",
-            "over": {
-              "open": {
-                "line": "o2.5",
-                "odds": "+130"
-              },
-              "close": {
-                "line": "o2.5",
-                "odds": "+130",
-                "link": {
-                  "rel": [
-                    "over",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602765%3Foutcomes%3D0OU86109608O250_1",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882878,
-                      "betSide": "over",
-                      "betType": "straight",
-                      "betDetails": "Over:2.5"
-                    }
-                  }
-                }
-              }
-            },
-            "under": {
-              "open": {
-                "line": "u2.5",
-                "odds": "-175"
-              },
-              "close": {
-                "line": "u2.5",
-                "odds": "-160",
-                "link": {
-                  "rel": [
-                    "under",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602765%3Foutcomes%3D0OU86109608U250_3",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882878,
-                      "betSide": "under",
-                      "betType": "straight",
-                      "betDetails": "Under:2.5"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "pointSpread": {
-            "displayName": "Spread",
-            "shortDisplayName": "Spread",
-            "home": {
-              "open": {
-                "line": "-0.5",
-                "odds": "+120"
-              },
-              "close": {
-                "line": "-0.5",
-                "odds": "-110",
-                "link": {
-                  "rel": [
-                    "homeSpread",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602765%3Foutcomes%3D0HC86109613N50_1",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882878,
-                      "betSide": "home",
-                      "betType": "straight",
-                      "betDetails": "Spread:SEV-0.5"
-                    }
-                  }
-                }
-              }
-            },
-            "away": {
-              "open": {
-                "line": "+0.5",
-                "odds": "-185"
-              },
-              "close": {
-                "line": "+0.5",
-                "odds": "-125",
-                "link": {
-                  "rel": [
-                    "awaySpread",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602765%3Foutcomes%3D0HC86109613P50_3",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882878,
-                      "betSide": "away",
-                      "betType": "straight",
-                      "betDetails": "Spread:VAL+0.5"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "moneyline": {
-            "displayName": "Moneyline",
-            "shortDisplayName": "ML",
-            "home": {
-              "open": {
-                "odds": "+135"
-              },
-              "close": {
-                "odds": "+100",
-                "link": {
-                  "rel": [
-                    "home",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602765%3Foutcomes%3D0ML86109518_1",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882878,
-                      "betSide": "home",
-                      "betType": "straight"
-                    }
-                  }
-                }
-              }
-            },
-            "away": {
-              "open": {
-                "odds": "+220"
-              },
-              "close": {
-                "odds": "+320",
-                "link": {
-                  "rel": [
-                    "away",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602765%3Foutcomes%3D0ML86109518_3",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882878,
-                      "betSide": "away",
-                      "betType": "straight"
-                    }
-                  }
-                }
-              }
-            },
-            "draw": {
-              "open": {
-                "odds": "+205"
-              },
-              "close": {
-                "odds": "+230",
-                "link": {
-                  "rel": [
-                    "draw",
-                    "bets"
-                  ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602765%3Foutcomes%3D0ML86109518_2",
-                  "tracking": {
-                    "campaign": "betting-integrations",
-                    "tags": {
-                      "league": "esp.1",
-                      "sport": "soccer",
-                      "gameId": 401882878,
-                      "betSide": "draw",
-                      "betType": "straight"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "details": "SEV +100"
-        }
+        null
       ],
       "prediction": {
         "sign": "1",
@@ -16885,7 +16631,7 @@
       },
       "uid": "s:600~l:740~e:401882878",
       "season": 2026,
-      "result": "X",
+      "result": "1",
       "details": {
         "updatedAt": "2026-09-02T09:39:25.127Z",
         "lineups": [
@@ -17136,10 +16882,25 @@
           "provider": {
             "id": "100",
             "name": "DraftKings",
-            "priority": 1
+            "priority": 1,
+            "displayName": "DraftKings",
+            "logos": [
+              {
+                "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+                "rel": [
+                  "light"
+                ]
+              },
+              {
+                "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+                "rel": [
+                  "dark"
+                ]
+              }
+            ]
           },
           "drawOdds": {
-            "moneyLine": 255,
+            "moneyLine": 245,
             "link": {
               "language": "en-US",
               "rel": [
@@ -17166,7 +16927,7 @@
               },
               "close": {
                 "line": "o2.5",
-                "odds": "-140",
+                "odds": "-145",
                 "link": {
                   "rel": [
                     "over",
@@ -17194,7 +16955,7 @@
               },
               "close": {
                 "line": "u2.5",
-                "odds": "+110",
+                "odds": "+115",
                 "link": {
                   "rel": [
                     "under",
@@ -17226,7 +16987,7 @@
               },
               "close": {
                 "line": "-0.5",
-                "odds": "+130",
+                "odds": "+145",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -17254,7 +17015,7 @@
               },
               "close": {
                 "line": "+0.5",
-                "odds": "-180",
+                "odds": "-210",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -17284,7 +17045,7 @@
                 "odds": "+140"
               },
               "close": {
-                "odds": "+145",
+                "odds": "+165",
                 "link": {
                   "rel": [
                     "home",
@@ -17309,7 +17070,7 @@
                 "odds": "+180"
               },
               "close": {
-                "odds": "+180",
+                "odds": "+165",
                 "link": {
                   "rel": [
                     "away",
@@ -17334,7 +17095,7 @@
                 "odds": "+240"
               },
               "close": {
-                "odds": "+255",
+                "odds": "+245",
                 "link": {
                   "rel": [
                     "draw",
@@ -17355,7 +17116,7 @@
               }
             }
           },
-          "details": "RAC +145"
+          "details": "RAC +165"
         }
       ],
       "prediction": {
@@ -17368,7 +17129,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.569Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-12T09:23:06.706Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -17641,7 +17402,7 @@
         "confidence": 0.3878,
         "difficulty": "difícil",
         "generatedAt": "2026-09-10T22:53:14.280Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-12T09:23:06.706Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -17805,7 +17566,7 @@
             "priority": 1
           },
           "drawOdds": {
-            "moneyLine": 225,
+            "moneyLine": 215,
             "link": {
               "language": "en-US",
               "rel": [
@@ -17832,7 +17593,7 @@
               },
               "close": {
                 "line": "o2.5",
-                "odds": "+125",
+                "odds": "+120",
                 "link": {
                   "rel": [
                     "over",
@@ -17860,7 +17621,7 @@
               },
               "close": {
                 "line": "u2.5",
-                "odds": "-155",
+                "odds": "-150",
                 "link": {
                   "rel": [
                     "under",
@@ -17892,7 +17653,7 @@
               },
               "close": {
                 "line": "-0.5",
-                "odds": "+105",
+                "odds": "+115",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -17920,7 +17681,7 @@
               },
               "close": {
                 "line": "+0.5",
-                "odds": "-150",
+                "odds": "-160",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -17950,7 +17711,7 @@
                 "odds": "+100"
               },
               "close": {
-                "odds": "+120",
+                "odds": "+125",
                 "link": {
                   "rel": [
                     "home",
@@ -17975,7 +17736,7 @@
                 "odds": "+270"
               },
               "close": {
-                "odds": "+255",
+                "odds": "+245",
                 "link": {
                   "rel": [
                     "away",
@@ -18000,7 +17761,7 @@
                 "odds": "+235"
               },
               "close": {
-                "odds": "+225",
+                "odds": "+215",
                 "link": {
                   "rel": [
                     "draw",
@@ -18021,7 +17782,7 @@
               }
             }
           },
-          "details": "OSA +120"
+          "details": "OSA +125"
         }
       ],
       "prediction": {
@@ -18034,7 +17795,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.569Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-12T09:23:06.706Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -18307,7 +18068,7 @@
         "confidence": 0.4659,
         "difficulty": "difícil",
         "generatedAt": "2026-09-10T22:53:14.280Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-12T09:23:06.706Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -18471,7 +18232,7 @@
             "priority": 1
           },
           "drawOdds": {
-            "moneyLine": 400,
+            "moneyLine": 380,
             "link": {
               "language": "en-US",
               "rel": [
@@ -18498,7 +18259,7 @@
               },
               "close": {
                 "line": "o2.5",
-                "odds": "-150",
+                "odds": "-145",
                 "link": {
                   "rel": [
                     "over",
@@ -18558,7 +18319,7 @@
               },
               "close": {
                 "line": "-1.5",
-                "odds": "+105",
+                "odds": "+110",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -18616,7 +18377,7 @@
                 "odds": "-180"
               },
               "close": {
-                "odds": "-245",
+                "odds": "-240",
                 "link": {
                   "rel": [
                     "home",
@@ -18666,7 +18427,7 @@
                 "odds": "+300"
               },
               "close": {
-                "odds": "+400",
+                "odds": "+380",
                 "link": {
                   "rel": [
                     "draw",
@@ -18687,7 +18448,7 @@
               }
             }
           },
-          "details": "ATH -245"
+          "details": "ATH -240"
         }
       ],
       "prediction": {
@@ -18700,7 +18461,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.569Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-12T09:23:06.706Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -18973,7 +18734,7 @@
         "confidence": 0.6463,
         "difficulty": "fácil",
         "generatedAt": "2026-09-10T22:53:14.281Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-12T09:23:06.706Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -19223,7 +18984,7 @@
               },
               "close": {
                 "line": "-2.5",
-                "odds": "-115",
+                "odds": "-105",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -19251,7 +19012,7 @@
               },
               "close": {
                 "line": "+2.5",
-                "odds": "-120",
+                "odds": "-130",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -19365,7 +19126,7 @@
         "confidence": 0.4266,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.570Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-12T09:23:06.706Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -19644,7 +19405,7 @@
         "confidence": 0.6551,
         "difficulty": "fácil",
         "generatedAt": "2026-09-10T22:53:14.281Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-12T09:23:06.706Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -20507,7 +20268,7 @@
               },
               "close": {
                 "line": "o3.5",
-                "odds": "-145",
+                "odds": "-150",
                 "link": {
                   "rel": [
                     "over",
@@ -20567,7 +20328,7 @@
               },
               "close": {
                 "line": "+2.5",
-                "odds": "-140",
+                "odds": "-135",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -20595,7 +20356,7 @@
               },
               "close": {
                 "line": "-2.5",
-                "odds": "+100",
+                "odds": "-105",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -20625,7 +20386,7 @@
                 "odds": "+650"
               },
               "close": {
-                "odds": "+1200",
+                "odds": "+1300",
                 "link": {
                   "rel": [
                     "home",
@@ -20650,7 +20411,7 @@
                 "odds": "-300"
               },
               "close": {
-                "odds": "-600",
+                "odds": "-650",
                 "link": {
                   "rel": [
                     "away",
@@ -20696,7 +20457,7 @@
               }
             }
           },
-          "details": "BAR -600"
+          "details": "BAR -650"
         }
       ],
       "prediction": {
@@ -21206,7 +20967,7 @@
               },
               "close": {
                 "line": "u1.5",
-                "odds": "+115",
+                "odds": "+120",
                 "link": {
                   "rel": [
                     "under",
@@ -21238,7 +20999,7 @@
               },
               "close": {
                 "line": "-0.5",
-                "odds": "+135",
+                "odds": "+130",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -21321,7 +21082,7 @@
                 "odds": "+300"
               },
               "close": {
-                "odds": "+240",
+                "odds": "+250",
                 "link": {
                   "rel": [
                     "away",
@@ -21843,7 +21604,7 @@
               },
               "close": {
                 "line": "o2.5",
-                "odds": "-150",
+                "odds": "-155",
                 "link": {
                   "rel": [
                     "over",
@@ -21903,7 +21664,7 @@
               },
               "close": {
                 "line": "+0.5",
-                "odds": "-180",
+                "odds": "-175",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -21931,7 +21692,7 @@
               },
               "close": {
                 "line": "-0.5",
-                "odds": "+130",
+                "odds": "+125",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -21961,7 +21722,7 @@
                 "odds": "+210"
               },
               "close": {
-                "odds": "+185",
+                "odds": "+190",
                 "link": {
                   "rel": [
                     "home",
@@ -21986,7 +21747,7 @@
                 "odds": "+115"
               },
               "close": {
-                "odds": "+140",
+                "odds": "+135",
                 "link": {
                   "rel": [
                     "away",
@@ -22032,7 +21793,7 @@
               }
             }
           },
-          "details": "ATM +140"
+          "details": "ATM +135"
         }
       ],
       "prediction": {
@@ -22473,7 +22234,7 @@
       ],
       "odds": [
         {
-          "overUnder": 3.5,
+          "overUnder": 2.5,
           "link": {
             "language": "en-US",
             "rel": [
@@ -22494,7 +22255,7 @@
             "priority": 1
           },
           "drawOdds": {
-            "moneyLine": 285,
+            "moneyLine": 290,
             "link": {
               "language": "en-US",
               "rel": [
@@ -22520,14 +22281,14 @@
                 "odds": "-160"
               },
               "close": {
-                "line": "o3.5",
-                "odds": "+135",
+                "line": "o2.5",
+                "odds": "-175",
                 "link": {
                   "rel": [
                     "over",
                     "bets"
                   ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602772%3Foutcomes%3D0OU86109846O350_1",
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602772%3Foutcomes%3D0OU86109846O250_1",
                   "tracking": {
                     "campaign": "betting-integrations",
                     "tags": {
@@ -22536,7 +22297,7 @@
                       "gameId": 401882877,
                       "betSide": "over",
                       "betType": "straight",
-                      "betDetails": "Over:3.5"
+                      "betDetails": "Over:2.5"
                     }
                   }
                 }
@@ -22548,14 +22309,14 @@
                 "odds": "+125"
               },
               "close": {
-                "line": "u3.5",
-                "odds": "-180",
+                "line": "u2.5",
+                "odds": "+140",
                 "link": {
                   "rel": [
                     "under",
                     "bets"
                   ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602772%3Foutcomes%3D0OU86109846U350_3",
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34602772%3Foutcomes%3D0OU86109846U250_3",
                   "tracking": {
                     "campaign": "betting-integrations",
                     "tags": {
@@ -22564,7 +22325,7 @@
                       "gameId": 401882877,
                       "betSide": "under",
                       "betType": "straight",
-                      "betDetails": "Under:3.5"
+                      "betDetails": "Under:2.5"
                     }
                   }
                 }
@@ -22581,7 +22342,7 @@
               },
               "close": {
                 "line": "-0.5",
-                "odds": "-125",
+                "odds": "-120",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -22609,7 +22370,7 @@
               },
               "close": {
                 "line": "+0.5",
-                "odds": "-120",
+                "odds": "-115",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -22664,7 +22425,7 @@
                 "odds": "+255"
               },
               "close": {
-                "odds": "+270",
+                "odds": "+275",
                 "link": {
                   "rel": [
                     "away",
@@ -22689,7 +22450,7 @@
                 "odds": "+270"
               },
               "close": {
-                "odds": "+285",
+                "odds": "+290",
                 "link": {
                   "rel": [
                     "draw",
@@ -23837,7 +23598,7 @@
             "priority": 1
           },
           "drawOdds": {
-            "moneyLine": 200,
+            "moneyLine": 210,
             "link": {
               "language": "en-US",
               "rel": [
@@ -23864,7 +23625,7 @@
               },
               "close": {
                 "line": "o2.5",
-                "odds": "+130",
+                "odds": "+125",
                 "link": {
                   "rel": [
                     "over",
@@ -23892,7 +23653,7 @@
               },
               "close": {
                 "line": "u2.5",
-                "odds": "-165",
+                "odds": "-160",
                 "link": {
                   "rel": [
                     "under",
@@ -23924,7 +23685,7 @@
               },
               "close": {
                 "line": "-0.5",
-                "odds": "+100",
+                "odds": "-115",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -23952,7 +23713,7 @@
               },
               "close": {
                 "line": "+0.5",
-                "odds": "-150",
+                "odds": "-125",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -23982,7 +23743,7 @@
                 "odds": "+125"
               },
               "close": {
-                "odds": "+115",
+                "odds": "-105",
                 "link": {
                   "rel": [
                     "home",
@@ -24007,7 +23768,7 @@
                 "odds": "+265"
               },
               "close": {
-                "odds": "+295",
+                "odds": "+340",
                 "link": {
                   "rel": [
                     "away",
@@ -24032,7 +23793,7 @@
                 "odds": "+190"
               },
               "close": {
-                "odds": "+200",
+                "odds": "+210",
                 "link": {
                   "rel": [
                     "draw",
@@ -24053,7 +23814,7 @@
               }
             }
           },
-          "details": "ALA +115"
+          "details": "ALA -105"
         }
       ],
       "prediction": {
@@ -24531,7 +24292,7 @@
               },
               "close": {
                 "line": "o3.5",
-                "odds": "-105",
+                "odds": "-110",
                 "link": {
                   "rel": [
                     "over",
@@ -24559,7 +24320,7 @@
               },
               "close": {
                 "line": "u3.5",
-                "odds": "-120",
+                "odds": "-115",
                 "link": {
                   "rel": [
                     "under",
@@ -24619,7 +24380,7 @@
               },
               "close": {
                 "line": "-1.5",
-                "odds": "-130",
+                "odds": "-135",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -24649,7 +24410,7 @@
                 "odds": "+700"
               },
               "close": {
-                "odds": "+900",
+                "odds": "+850",
                 "link": {
                   "rel": [
                     "home",
@@ -24674,7 +24435,7 @@
                 "odds": "-295"
               },
               "close": {
-                "odds": "-340",
+                "odds": "-330",
                 "link": {
                   "rel": [
                     "away",
@@ -24720,7 +24481,7 @@
               }
             }
           },
-          "details": "RMA -340"
+          "details": "RMA -330"
         }
       ],
       "prediction": {
@@ -26507,7 +26268,7 @@
             "priority": 1
           },
           "drawOdds": {
-            "moneyLine": 1100,
+            "moneyLine": 1200,
             "link": {
               "language": "en-US",
               "rel": [
@@ -26534,7 +26295,7 @@
               },
               "close": {
                 "line": "o4.5",
-                "odds": "-110",
+                "odds": "-120",
                 "link": {
                   "rel": [
                     "over",
@@ -26562,7 +26323,7 @@
               },
               "close": {
                 "line": "u4.5",
-                "odds": "-115",
+                "odds": "-110",
                 "link": {
                   "rel": [
                     "under",
@@ -26593,14 +26354,14 @@
                 "odds": "-165"
               },
               "close": {
-                "line": "-2.5",
-                "odds": "-170",
+                "line": "-3.5",
+                "odds": "+110",
                 "link": {
                   "rel": [
                     "homeSpread",
                     "bets"
                   ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34648578%3Foutcomes%3D0HC86246158N250_1",
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34648578%3Foutcomes%3D0HC86246158N350_1",
                   "tracking": {
                     "campaign": "betting-integrations",
                     "tags": {
@@ -26609,7 +26370,7 @@
                       "gameId": 401882871,
                       "betSide": "home",
                       "betType": "straight",
-                      "betDetails": "Spread:BAR-2.5"
+                      "betDetails": "Spread:BAR-3.5"
                     }
                   }
                 }
@@ -26621,14 +26382,14 @@
                 "odds": "+115"
               },
               "close": {
-                "line": "+2.5",
-                "odds": "+115",
+                "line": "+3.5",
+                "odds": "-165",
                 "link": {
                   "rel": [
                     "awaySpread",
                     "bets"
                   ],
-                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34648578%3Foutcomes%3D0HC86246158P250_3",
+                  "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34648578%3Foutcomes%3D0HC86246158P350_3",
                   "tracking": {
                     "campaign": "betting-integrations",
                     "tags": {
@@ -26637,7 +26398,7 @@
                       "gameId": 401882871,
                       "betSide": "away",
                       "betType": "straight",
-                      "betDetails": "Spread:RAC+2.5"
+                      "betDetails": "Spread:RAC+3.5"
                     }
                   }
                 }
@@ -26652,7 +26413,7 @@
                 "odds": "-1200"
               },
               "close": {
-                "odds": "-1200",
+                "odds": "-1400",
                 "link": {
                   "rel": [
                     "home",
@@ -26677,7 +26438,7 @@
                 "odds": "+1800"
               },
               "close": {
-                "odds": "+1800",
+                "odds": "+1900",
                 "link": {
                   "rel": [
                     "away",
@@ -26702,7 +26463,7 @@
                 "odds": "+1100"
               },
               "close": {
-                "odds": "+1100",
+                "odds": "+1200",
                 "link": {
                   "rel": [
                     "draw",
@@ -26723,7 +26484,7 @@
               }
             }
           },
-          "details": "BAR -1200"
+          "details": "BAR -1400"
         }
       ],
       "prediction": {
@@ -28531,7 +28292,7 @@
               },
               "close": {
                 "line": "o2.5",
-                "odds": "-160",
+                "odds": "-165",
                 "link": {
                   "rel": [
                     "over",
@@ -28591,7 +28352,7 @@
               },
               "close": {
                 "line": "+0.5",
-                "odds": "-135",
+                "odds": "-130",
                 "link": {
                   "rel": [
                     "homeSpread",
@@ -28619,7 +28380,7 @@
               },
               "close": {
                 "line": "-0.5",
-                "odds": "-105",
+                "odds": "-110",
                 "link": {
                   "rel": [
                     "awaySpread",
@@ -28649,7 +28410,7 @@
                 "odds": "+230"
               },
               "close": {
-                "odds": "+230",
+                "odds": "+245",
                 "link": {
                   "rel": [
                     "home",
@@ -28674,7 +28435,7 @@
                 "odds": "+105"
               },
               "close": {
-                "odds": "+105",
+                "odds": "+100",
                 "link": {
                   "rel": [
                     "away",
@@ -28720,7 +28481,7 @@
               }
             }
           },
-          "details": "VIL +105"
+          "details": "VIL +100"
         }
       ],
       "prediction": {
@@ -154822,6 +154583,26 @@
     {
       "rank": 3,
       "team": {
+        "id": 243,
+        "name": "Sevilla",
+        "abbreviation": "SEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
+      },
+      "points": 10,
+      "goalsDiff": 2,
+      "form": null,
+      "played": 5,
+      "wins": 3,
+      "draws": 1,
+      "losses": 1,
+      "gf": 8,
+      "ga": 6,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 4,
+      "team": {
         "id": 86,
         "name": "Real Madrid",
         "abbreviation": "RMA",
@@ -154840,7 +154621,7 @@
       "away": null
     },
     {
-      "rank": 4,
+      "rank": 5,
       "team": {
         "id": 244,
         "name": "Real Betis",
@@ -154860,7 +154641,7 @@
       "away": null
     },
     {
-      "rank": 5,
+      "rank": 6,
       "team": {
         "id": 90,
         "name": "Deportivo",
@@ -154880,32 +154661,12 @@
       "away": null
     },
     {
-      "rank": 6,
+      "rank": 7,
       "team": {
         "id": 1068,
         "name": "Atlético Madrid",
         "abbreviation": "ATM",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
-      },
-      "points": 7,
-      "goalsDiff": 1,
-      "form": null,
-      "played": 4,
-      "wins": 2,
-      "draws": 1,
-      "losses": 1,
-      "gf": 7,
-      "ga": 6,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 7,
-      "team": {
-        "id": 243,
-        "name": "Sevilla",
-        "abbreviation": "SEV",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
       },
       "points": 7,
       "goalsDiff": 1,
@@ -155168,14 +154929,14 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
       },
       "points": 1,
-      "goalsDiff": -8,
+      "goalsDiff": -9,
       "form": null,
-      "played": 4,
+      "played": 5,
       "wins": 0,
       "draws": 1,
-      "losses": 3,
+      "losses": 4,
       "gf": 1,
-      "ga": 9,
+      "ga": 10,
       "home": null,
       "away": null
     }
@@ -155621,16 +155382,16 @@
     {
       "rank": 20,
       "player": {
-        "id": 236185,
-        "name": "Yangel Herrera",
-        "shortName": "Y. Herrera",
-        "photo": "https://a.espncdn.com/i/headshots/soccer/players/full/236185.png"
+        "id": 279738,
+        "name": "Juan Iglesias",
+        "shortName": "J. Iglesias",
+        "photo": null
       },
       "team": {
-        "id": 89,
-        "name": "Real Sociedad",
-        "abbreviation": "RSO",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+        "id": 243,
+        "name": "Sevilla",
+        "abbreviation": "SEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
       },
       "goals": {
         "total": 1,
@@ -155644,13 +155405,13 @@
   ],
   "injuries": [],
   "predictionBalance": {
-    "total": 41,
-    "correct": 15,
-    "accuracy": 36.59,
+    "total": 42,
+    "correct": 16,
+    "accuracy": 38.1,
     "bySign": {
       "1": {
-        "total": 21,
-        "correct": 10
+        "total": 22,
+        "correct": 11
       },
       "2": {
         "total": 6,
@@ -155671,12 +155432,118 @@
         "correct": 3
       },
       "difícil": {
-        "total": 22,
-        "correct": 8
+        "total": 23,
+        "correct": 9
       }
     }
   },
   "news": [
+    {
+      "id": 49907498,
+      "headline": "Hislop: Raphinha steps up every time for Barcelona",
+      "description": "Hislop: Raphinha steps up every time for Barcelona",
+      "published": "2026-09-11T22:21:07Z",
+      "link": "https://www.espn.com/video/clip/_/id/49907498/raphinha-steps-every-barcelona",
+      "images": [
+        {
+          "name": "Hislop: Raphinha steps up every time for Barcelona",
+          "caption": "Hislop: Raphinha steps up every time for Barcelona",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0911/dm_260911_Hislop_Raphinha_steps_up_every_time_for_Barcelona/dm_260911_Hislop_Raphinha_steps_up_every_time_for_Barcelona.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49901037,
+      "headline": "Transfer rumors, news: Güler to stay put at Real Madrid?",
+      "description": "Arda Güler could reportedly extend his contract with Real Madrid. Transfer Talk has the latest.",
+      "published": "2026-09-11T21:17:52Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49901037/transfer-rumors-news-brazil-vasco-da-gama-offer-richarlison-route-tottenham",
+      "images": [
+        {
+          "dataSourceIdentifier": "0ea80786084ba",
+          "id": 49907067,
+          "type": "header",
+          "name": "Guler [1296x729]",
+          "credit": "(Photo by Diego Souto/Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0911/r1715074_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Nicol praises Wirtz for best Liverpool performance so far",
+          "caption": "Nicol praises Wirtz for best Liverpool performance so far",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0909/dm_260909_COM_SOC_Analysis_Nicol_praises_Wirtz_for_best_Liverpool_performance_so_far_20260909_GLOBAL/dm_260909_COM_SOC_Analysis_Nicol_praises_Wirtz_for_best_Liverpool_performance_so_far_20260909_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49907054,
+      "headline": "Sevilla vs. Valencia - Game Highlights",
+      "description": "Watch the Game Highlights from Sevilla vs. Valencia, 09/11/2026",
+      "published": "2026-09-11T21:12:57Z",
+      "link": "https://www.espn.com/video/clip/_/id/49907054/sevilla-vs-valencia-game-highlights",
+      "images": [
+        {
+          "name": "Sevilla vs. Valencia - Game Highlights",
+          "caption": "Watch the Game Highlights from Sevilla vs. Valencia, 09/11/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0911/799baa6c-5eeb-4478-a70d-817fd30f79cb/799baa6c-5eeb-4478-a70d-817fd30f79cb.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49903953,
+      "headline": "Mbappé reacts to online memes portraying him as a dictator",
+      "description": "Mbappé reacts to online memes portraying him as a dictator",
+      "published": "2026-09-11T14:33:39Z",
+      "link": "https://www.espn.com/video/clip/_/id/49903953/mbappe-reacts-online-memes-portraying-dictator",
+      "images": [
+        {
+          "name": "Mbappé reacts to online memes portraying him as a dictator",
+          "caption": "Mbappé reacts to online memes portraying him as a dictator",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0911/dm_260911_Mbappe_reacts_to_online_memes_portraying_him_as_a_dictator/dm_260911_Mbappe_reacts_to_online_memes_portraying_him_as_a_dictator.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49903623,
+      "headline": "Kylian Mbappé says viral meme depicting him as dictator 'shows a lack of political awareness in people'",
+      "description": "Kylian Mbappé has criticised a viral meme depicting him as a dictator, saying that the trend \"shows a lack of political and human awareness in people.\"",
+      "published": "2026-09-11T13:53:01Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49903623/kylian-mbappe-dictator-meme-criticises-lack-political-awareness",
+      "images": [
+        {
+          "dataSourceIdentifier": "ae8c60f26a28c",
+          "id": 49903543,
+          "type": "header",
+          "name": "Kylian Mbappe [1296x729]",
+          "alt": "Kylian Mbappe looks on.",
+          "credit": "(Photo by Denis Doyle/Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0911/r1714861_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Mourinho: This is just the start of my work at Real Madrid",
+          "caption": "Mourinho: This is just the start of my work at Real Madrid",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0909/dm_260909_Mourinho_This_is_just_the_start_of_my_work_at_Real_Madrid/dm_260909_Mourinho_This_is_just_the_start_of_my_work_at_Real_Madrid.jpg"
+        }
+      ]
+    },
     {
       "id": 49901452,
       "headline": "Mayor of Madrid weighs in on Julián Álvarez saga: 'We need him back on track'",
@@ -156106,103 +155973,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0907/ss_20260907_175109503_36520361120/ss_20260907_175109503_36520361120.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49862682,
-      "headline": "Elche vs. Real Sociedad - Game Highlights",
-      "description": "Watch the Game Highlights from Elche vs. Real Sociedad, 09/07/2026",
-      "published": "2026-09-07T21:33:54Z",
-      "link": "https://www.espn.com/video/clip/_/id/49862682/elche-vs-real-sociedad-game-highlights",
-      "images": [
-        {
-          "name": "Elche vs. Real Sociedad - Game Highlights",
-          "caption": "Watch the Game Highlights from Elche vs. Real Sociedad, 09/07/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0907/637d7635-1646-4908-acd0-d94cdc77245b/637d7635-1646-4908-acd0-d94cdc77245b.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49861576,
-      "headline": "Getafe vs. Celta Vigo - Game Highlights",
-      "description": "Watch the Game Highlights from Getafe vs. Celta Vigo, 09/07/2026",
-      "published": "2026-09-07T19:16:36Z",
-      "link": "https://www.espn.com/video/clip/_/id/49861576/getafe-vs-celta-vigo-game-highlights",
-      "images": [
-        {
-          "name": "Getafe vs. Celta Vigo - Game Highlights",
-          "caption": "Watch the Game Highlights from Getafe vs. Celta Vigo, 09/07/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0907/f88e803d-3c9a-4023-beae-c08d141bc8ef/f88e803d-3c9a-4023-beae-c08d141bc8ef.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49859683,
-      "headline": "Mbappe backs himself as the best in the world",
-      "description": "Mbappe backs himself as the best in the world",
-      "published": "2026-09-07T14:29:01Z",
-      "link": "https://www.espn.com/video/clip/_/id/49859683/mbappe-backs-best-world",
-      "images": [
-        {
-          "name": "Mbappe backs himself as the best in the world",
-          "caption": "Mbappe backs himself as the best in the world",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0907/dm_260907_Mbappe_backs_himself_as_the_best_in_the_world/dm_260907_Mbappe_backs_himself_as_the_best_in_the_world.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49854032,
-      "headline": "Valencia fans slam owner Peter Lim, club 'mercenaries'",
-      "description": "Valencia fans protested Sunday against club officials and players after a demoralizing 5-0 home loss to Barcelona in LaLiga.",
-      "published": "2026-09-07T02:18:15Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49854032/valencia-fans-slam-owner-peter-lim-club-mercenaries",
-      "images": [
-        {
-          "dataSourceIdentifier": "518b6cec70415",
-          "id": 49854101,
-          "type": "header",
-          "name": "Valencia fans Lim_260906 [1296x729]",
-          "caption": "Valencia fans hold up signs in protest of team owner Peter Lim amid a horrid start to the 2026-27 LaLiga season.",
-          "alt": "Valencia fans hold up signs in protest of team owner Peter Lim amid a horrid start to the 2026-27 LaLiga season.",
-          "credit": "Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0907/r1712569_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Valencia vs. Barcelona - Game Highlights",
-          "caption": "Watch the Game Highlights from Valencia vs. Barcelona, 09/06/2026",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0906/bc4c5988-019a-4280-8503-9a75e15d5bd0/bc4c5988-019a-4280-8503-9a75e15d5bd0.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49852515,
-      "headline": "Espanyol vs. Sevilla - Game Highlights",
-      "description": "Watch the Game Highlights from Espanyol vs. Sevilla, 09/06/2026",
-      "published": "2026-09-06T21:12:48Z",
-      "link": "https://www.espn.com/video/clip/_/id/49852515/espanyol-vs-sevilla-game-highlights",
-      "images": [
-        {
-          "name": "Espanyol vs. Sevilla - Game Highlights",
-          "caption": "Watch the Game Highlights from Espanyol vs. Sevilla, 09/06/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0906/5401bf21-c8d8-4237-9def-18b0e8eac803/5401bf21-c8d8-4237-9def-18b0e8eac803.jpg"
         }
       ]
     }
@@ -158165,30 +157935,30 @@
       "lastEuropeanMatch": null,
       "nextEuropeanMatch": null,
       "lastDomesticMatch": {
-        "id": 401882888,
-        "espnId": "401882888",
+        "id": 401882878,
+        "espnId": "401882878",
         "round": null,
         "seasonType": "2026-27-laliga",
-        "date": "2026-09-06T14:15Z",
-        "timestamp": 1788704100,
+        "date": "2026-09-11T19:00Z",
+        "timestamp": 1789153200,
         "status": "FT",
         "statusLong": "Full Time",
         "venue": {
-          "id": "9659",
-          "name": "Mestalla Stadium",
-          "city": "Manises"
+          "id": "10628",
+          "name": "Ramón Sánchez Pizjuán Stadium",
+          "city": "Sevilla"
         },
         "home": {
+          "id": 243,
+          "name": "Sevilla",
+          "abbreviation": "SEV",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
+        },
+        "away": {
           "id": 94,
           "name": "Valencia",
           "abbreviation": "VAL",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
-        },
-        "away": {
-          "id": 83,
-          "name": "Barcelona",
-          "abbreviation": "BAR",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
         },
         "score": {
           "halftime": {
@@ -158196,38 +157966,38 @@
             "away": null
           },
           "fulltime": {
-            "home": 0,
-            "away": 5
+            "home": 1,
+            "away": 0
           },
           "extratime": null,
           "penalty": null
         },
         "broadcasts": [
-          "ESPN Deportes",
           "ESPN+"
         ],
         "odds": [
           null
         ],
         "prediction": {
-          "sign": "X",
+          "sign": "1",
           "probabilities": {
-            "1": 0.3817,
-            "2": 0.1908,
-            "X": 0.4275
+            "1": 0.4374,
+            "2": 0.3365,
+            "X": 0.2261
           },
-          "confidence": 0.4275,
+          "confidence": 0.4374,
           "difficulty": "difícil",
-          "generatedAt": "2026-08-21T07:42:33.517Z",
-          "lockedAt": "2026-09-06T09:27:28.418Z",
+          "generatedAt": "2026-09-09T11:21:21.569Z",
+          "lockedAt": "2026-09-11T09:43:18.571Z",
           "model": {
-            "version": "1.1-ESPN",
+            "version": "3.0",
             "weights": {
-              "form": 0.3,
-              "attackDefense": 0.3,
-              "homeAdvantage": 0.2,
+              "form": 0.35,
+              "attackDefense": 0.25,
+              "homeAdvantage": 0.15,
               "goalkeeper": 0.1,
-              "tacticalAbsences": 0.1
+              "europeanFatigue": 0.1,
+              "tactical": 0.05
             }
           },
           "evidence": {
@@ -158237,11 +158007,21 @@
               "ga": 0,
               "gfPerGame": 0,
               "gaPerGame": 0,
+              "goalDifference": 0,
               "points": 0,
               "pointsPerGame": 0,
               "wins": 0,
               "draws": 0,
-              "losses": 0
+              "losses": 0,
+              "winPercentage": 0,
+              "drawPercentage": 0,
+              "lossPercentage": 0,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": 0,
+              "scoredMatches": 0,
+              "scoredPercentage": 0,
+              "concededMatches": 0,
+              "concededPercentage": 0
             },
             "awayLast5": {
               "matches": 0,
@@ -158249,11 +158029,65 @@
               "ga": 0,
               "gfPerGame": 0,
               "gaPerGame": 0,
+              "goalDifference": 0,
               "points": 0,
               "pointsPerGame": 0,
               "wins": 0,
               "draws": 0,
-              "losses": 0
+              "losses": 0,
+              "winPercentage": 0,
+              "drawPercentage": 0,
+              "lossPercentage": 0,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": 0,
+              "scoredMatches": 0,
+              "scoredPercentage": 0,
+              "concededMatches": 0,
+              "concededPercentage": 0
+            },
+            "homeLast10": {
+              "matches": 0,
+              "gf": 0,
+              "ga": 0,
+              "gfPerGame": 0,
+              "gaPerGame": 0,
+              "goalDifference": 0,
+              "points": 0,
+              "pointsPerGame": 0,
+              "wins": 0,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 0,
+              "drawPercentage": 0,
+              "lossPercentage": 0,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": 0,
+              "scoredMatches": 0,
+              "scoredPercentage": 0,
+              "concededMatches": 0,
+              "concededPercentage": 0
+            },
+            "awayLast10": {
+              "matches": 0,
+              "gf": 0,
+              "ga": 0,
+              "gfPerGame": 0,
+              "gaPerGame": 0,
+              "goalDifference": 0,
+              "points": 0,
+              "pointsPerGame": 0,
+              "wins": 0,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 0,
+              "drawPercentage": 0,
+              "lossPercentage": 0,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": 0,
+              "scoredMatches": 0,
+              "scoredPercentage": 0,
+              "concededMatches": 0,
+              "concededPercentage": 0
             },
             "homeVenue": {
               "matches": 0,
@@ -158261,11 +158095,21 @@
               "ga": 0,
               "gfPerGame": 0,
               "gaPerGame": 0,
+              "goalDifference": 0,
               "points": 0,
               "pointsPerGame": 0,
               "wins": 0,
               "draws": 0,
-              "losses": 0
+              "losses": 0,
+              "winPercentage": 0,
+              "drawPercentage": 0,
+              "lossPercentage": 0,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": 0,
+              "scoredMatches": 0,
+              "scoredPercentage": 0,
+              "concededMatches": 0,
+              "concededPercentage": 0
             },
             "awayVenue": {
               "matches": 0,
@@ -158273,51 +158117,100 @@
               "ga": 0,
               "gfPerGame": 0,
               "gaPerGame": 0,
+              "goalDifference": 0,
               "points": 0,
               "pointsPerGame": 0,
               "wins": 0,
               "draws": 0,
-              "losses": 0
+              "losses": 0,
+              "winPercentage": 0,
+              "drawPercentage": 0,
+              "lossPercentage": 0,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": 0,
+              "scoredMatches": 0,
+              "scoredPercentage": 0,
+              "concededMatches": 0,
+              "concededPercentage": 0
             },
             "homeGoalkeeper": {
-              "appearances": 7,
+              "appearances": 0,
               "saves": 0,
-              "conceded": 14,
-              "shots": 14,
-              "savePercentage": 0
+              "conceded": 0,
+              "shots": 0,
+              "savePercentage": null,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": null
             },
             "awayGoalkeeper": {
-              "appearances": 7,
+              "appearances": 0,
               "saves": 0,
-              "conceded": 14,
-              "shots": 14,
-              "savePercentage": 0
+              "conceded": 0,
+              "shots": 0,
+              "savePercentage": null,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": null
             },
             "homeFormations": {},
-            "awayFormations": {}
+            "awayFormations": {},
+            "homeEuropeanImpact": {
+              "playedPrevious7Days": 0,
+              "scheduledNext4Days": 0,
+              "previousMatches": [],
+              "nextMatches": [],
+              "fatiguePenalty": 0
+            },
+            "awayEuropeanImpact": {
+              "playedPrevious7Days": 0,
+              "scheduledNext4Days": 0,
+              "previousMatches": [],
+              "nextMatches": [],
+              "fatiguePenalty": 0
+            }
           }
         },
-        "uid": "s:600~l:740~e:401882888",
+        "uid": "s:600~l:740~e:401882878",
         "season": 2026,
-        "result": "2",
+        "result": "1",
         "details": {
-          "updatedAt": "2026-08-27T16:32:13.024Z",
+          "updatedAt": "2026-09-02T09:39:25.127Z",
           "lineups": [
             {
-              "teamId": 94,
-              "teamName": "Valencia",
+              "teamId": 243,
+              "teamName": "Sevilla",
               "formation": null,
               "players": []
             },
             {
-              "teamId": 83,
-              "teamName": "Barcelona",
+              "teamId": 94,
+              "teamName": "Valencia",
               "formation": null,
               "players": []
             }
           ],
           "statistics": [
             {
+              "teamId": 243,
+              "teamName": "Sevilla",
+              "possession": null,
+              "shotsTotal": null,
+              "shotsOnTarget": null,
+              "corners": null,
+              "fouls": null,
+              "offsides": null,
+              "yellowCards": null,
+              "redCards": null,
+              "goalkeeperSaves": null,
+              "passes": null,
+              "accuratePasses": null,
+              "raw": {
+                "goalDifference": "1",
+                "totalGoals": "6",
+                "goalAssists": "3",
+                "goalsConceded": "5"
+              }
+            },
+            {
               "teamId": 94,
               "teamName": "Valencia",
               "possession": null,
@@ -158332,31 +158225,10 @@
               "passes": null,
               "accuratePasses": null,
               "raw": {
-                "goalDifference": "-1",
-                "totalGoals": "0",
+                "goalDifference": "-3",
+                "totalGoals": "1",
                 "goalAssists": "0",
-                "goalsConceded": "1"
-              }
-            },
-            {
-              "teamId": 83,
-              "teamName": "Barcelona",
-              "possession": null,
-              "shotsTotal": null,
-              "shotsOnTarget": null,
-              "corners": null,
-              "fouls": null,
-              "offsides": null,
-              "yellowCards": null,
-              "redCards": null,
-              "goalkeeperSaves": null,
-              "passes": null,
-              "accuratePasses": null,
-              "raw": {
-                "goalDifference": "5",
-                "totalGoals": "5",
-                "goalAssists": "4",
-                "goalsConceded": "0"
+                "goalsConceded": "4"
               }
             }
           ],
@@ -158371,13 +158243,121 @@
           "name": "LaLiga"
         },
         "quiniela": {
-          "prediction": "X",
-          "probability1": 0.3817,
-          "probabilityX": 0.4275,
-          "probability2": 0.1908,
+          "prediction": "1",
+          "probability1": 0.4374,
+          "probabilityX": 0.2261,
+          "probability2": 0.3365,
           "difficulty": "difícil",
-          "confidence": 0.4275,
-          "realResult": "2"
+          "confidence": 0.4374,
+          "realResult": "X"
+        },
+        "predictionV31": {
+          "sign": "1",
+          "probabilities": {
+            "1": 0.5704,
+            "2": 0.0335,
+            "X": 0.3961
+          },
+          "confidence": 0.5704,
+          "difficulty": "media",
+          "generatedAt": "2026-09-10T22:53:14.280Z",
+          "lockedAt": "2026-09-11T09:43:18.571Z",
+          "model": {
+            "version": "3.1-experimental",
+            "baseModel": "3.0-official",
+            "weights": {
+              "form": 0.3,
+              "attackDefense": 0.3,
+              "homeAdvantage": 0.2,
+              "goalkeeper": 0.1,
+              "tacticalAbsences": 0.1
+            },
+            "experimentalAdjustment": {
+              "europeanLoad": 0.05
+            }
+          },
+          "evidence": {
+            "homeLast5": {
+              "matches": 4,
+              "gf": 7,
+              "ga": 6,
+              "gfPerGame": 1.75,
+              "gaPerGame": 1.5,
+              "points": 7,
+              "pointsPerGame": 1.75,
+              "wins": 2,
+              "draws": 1,
+              "losses": 1
+            },
+            "awayLast5": {
+              "matches": 4,
+              "gf": 1,
+              "ga": 9,
+              "gfPerGame": 0.25,
+              "gaPerGame": 2.25,
+              "points": 1,
+              "pointsPerGame": 0.25,
+              "wins": 0,
+              "draws": 1,
+              "losses": 3
+            },
+            "homeVenue": {
+              "matches": 2,
+              "gf": 3,
+              "ga": 4,
+              "gfPerGame": 1.5,
+              "gaPerGame": 2,
+              "points": 3,
+              "pointsPerGame": 1.5,
+              "wins": 1,
+              "draws": 0,
+              "losses": 1
+            },
+            "awayVenue": {
+              "matches": 1,
+              "gf": 1,
+              "ga": 3,
+              "gfPerGame": 1,
+              "gaPerGame": 3,
+              "points": 0,
+              "pointsPerGame": 0,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1
+            },
+            "homeGoalkeeper": {
+              "appearances": 41,
+              "saves": 2,
+              "conceded": 72,
+              "shots": 74,
+              "savePercentage": 2.7
+            },
+            "awayGoalkeeper": {
+              "appearances": 41,
+              "saves": 0,
+              "conceded": 77,
+              "shots": 77,
+              "savePercentage": 0
+            },
+            "homeFormations": {},
+            "awayFormations": {},
+            "homeEuropean": {
+              "europeanMatchesLast7d": 0,
+              "previousEuropeanMatch": null,
+              "nextEuropeanMatches": [],
+              "hoursSincePreviousEuropean": null,
+              "fatigueScore": 0,
+              "fatigueLevel": "baja"
+            },
+            "awayEuropean": {
+              "europeanMatchesLast7d": 0,
+              "previousEuropeanMatch": null,
+              "nextEuropeanMatches": [],
+              "hoursSincePreviousEuropean": null,
+              "fatigueScore": 0,
+              "fatigueLevel": "baja"
+            }
+          }
         }
       },
       "hoursFromLastEuropeanToNextLeague": null
@@ -159509,30 +159489,30 @@
       "lastEuropeanMatch": null,
       "nextEuropeanMatch": null,
       "lastDomesticMatch": {
-        "id": 401882892,
-        "espnId": "401882892",
+        "id": 401882878,
+        "espnId": "401882878",
         "round": null,
         "seasonType": "2026-27-laliga",
-        "date": "2026-09-06T19:00Z",
-        "timestamp": 1788721200,
+        "date": "2026-09-11T19:00Z",
+        "timestamp": 1789153200,
         "status": "FT",
         "statusLong": "Full Time",
         "venue": {
-          "id": "4159",
-          "name": "RCDE Stadium",
-          "city": "Barcelona"
+          "id": "10628",
+          "name": "Ramón Sánchez Pizjuán Stadium",
+          "city": "Sevilla"
         },
         "home": {
-          "id": 88,
-          "name": "Espanyol",
-          "abbreviation": "ESP",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
-        },
-        "away": {
           "id": 243,
           "name": "Sevilla",
           "abbreviation": "SEV",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
+        },
+        "away": {
+          "id": 94,
+          "name": "Valencia",
+          "abbreviation": "VAL",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
         },
         "score": {
           "halftime": {
@@ -159541,13 +159521,12 @@
           },
           "fulltime": {
             "home": 1,
-            "away": 1
+            "away": 0
           },
           "extratime": null,
           "penalty": null
         },
         "broadcasts": [
-          "ESPN Deportes",
           "ESPN+"
         ],
         "odds": [
@@ -159556,60 +159535,135 @@
         "prediction": {
           "sign": "1",
           "probabilities": {
-            "1": 0.5729,
-            "2": 0.1839,
-            "X": 0.2433
+            "1": 0.4374,
+            "2": 0.3365,
+            "X": 0.2261
           },
-          "confidence": 0.5729,
-          "difficulty": "media",
-          "generatedAt": "2026-08-21T07:42:33.518Z",
-          "lockedAt": "2026-09-06T09:27:28.418Z",
+          "confidence": 0.4374,
+          "difficulty": "difícil",
+          "generatedAt": "2026-09-09T11:21:21.569Z",
+          "lockedAt": "2026-09-11T09:43:18.571Z",
           "model": {
-            "version": "1.1-ESPN",
+            "version": "3.0",
             "weights": {
-              "form": 0.3,
-              "attackDefense": 0.3,
-              "homeAdvantage": 0.2,
+              "form": 0.35,
+              "attackDefense": 0.25,
+              "homeAdvantage": 0.15,
               "goalkeeper": 0.1,
-              "tacticalAbsences": 0.1
+              "europeanFatigue": 0.1,
+              "tactical": 0.05
             }
           },
           "evidence": {
             "homeLast5": {
-              "matches": 1,
-              "gf": 3,
+              "matches": 0,
+              "gf": 0,
               "ga": 0,
-              "gfPerGame": 3,
+              "gfPerGame": 0,
               "gaPerGame": 0,
-              "points": 3,
-              "pointsPerGame": 3,
-              "wins": 1,
+              "goalDifference": 0,
+              "points": 0,
+              "pointsPerGame": 0,
+              "wins": 0,
               "draws": 0,
-              "losses": 0
+              "losses": 0,
+              "winPercentage": 0,
+              "drawPercentage": 0,
+              "lossPercentage": 0,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": 0,
+              "scoredMatches": 0,
+              "scoredPercentage": 0,
+              "concededMatches": 0,
+              "concededPercentage": 0
             },
             "awayLast5": {
-              "matches": 1,
-              "gf": 2,
-              "ga": 1,
-              "gfPerGame": 2,
-              "gaPerGame": 1,
-              "points": 3,
-              "pointsPerGame": 3,
-              "wins": 1,
+              "matches": 0,
+              "gf": 0,
+              "ga": 0,
+              "gfPerGame": 0,
+              "gaPerGame": 0,
+              "goalDifference": 0,
+              "points": 0,
+              "pointsPerGame": 0,
+              "wins": 0,
               "draws": 0,
-              "losses": 0
+              "losses": 0,
+              "winPercentage": 0,
+              "drawPercentage": 0,
+              "lossPercentage": 0,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": 0,
+              "scoredMatches": 0,
+              "scoredPercentage": 0,
+              "concededMatches": 0,
+              "concededPercentage": 0
+            },
+            "homeLast10": {
+              "matches": 0,
+              "gf": 0,
+              "ga": 0,
+              "gfPerGame": 0,
+              "gaPerGame": 0,
+              "goalDifference": 0,
+              "points": 0,
+              "pointsPerGame": 0,
+              "wins": 0,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 0,
+              "drawPercentage": 0,
+              "lossPercentage": 0,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": 0,
+              "scoredMatches": 0,
+              "scoredPercentage": 0,
+              "concededMatches": 0,
+              "concededPercentage": 0
+            },
+            "awayLast10": {
+              "matches": 0,
+              "gf": 0,
+              "ga": 0,
+              "gfPerGame": 0,
+              "gaPerGame": 0,
+              "goalDifference": 0,
+              "points": 0,
+              "pointsPerGame": 0,
+              "wins": 0,
+              "draws": 0,
+              "losses": 0,
+              "winPercentage": 0,
+              "drawPercentage": 0,
+              "lossPercentage": 0,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": 0,
+              "scoredMatches": 0,
+              "scoredPercentage": 0,
+              "concededMatches": 0,
+              "concededPercentage": 0
             },
             "homeVenue": {
-              "matches": 1,
-              "gf": 3,
+              "matches": 0,
+              "gf": 0,
               "ga": 0,
-              "gfPerGame": 3,
+              "gfPerGame": 0,
               "gaPerGame": 0,
-              "points": 3,
-              "pointsPerGame": 3,
-              "wins": 1,
+              "goalDifference": 0,
+              "points": 0,
+              "pointsPerGame": 0,
+              "wins": 0,
               "draws": 0,
-              "losses": 0
+              "losses": 0,
+              "winPercentage": 0,
+              "drawPercentage": 0,
+              "lossPercentage": 0,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": 0,
+              "scoredMatches": 0,
+              "scoredPercentage": 0,
+              "concededMatches": 0,
+              "concededPercentage": 0
             },
             "awayVenue": {
               "matches": 0,
@@ -159617,72 +159671,79 @@
               "ga": 0,
               "gfPerGame": 0,
               "gaPerGame": 0,
+              "goalDifference": 0,
               "points": 0,
               "pointsPerGame": 0,
               "wins": 0,
               "draws": 0,
-              "losses": 0
+              "losses": 0,
+              "winPercentage": 0,
+              "drawPercentage": 0,
+              "lossPercentage": 0,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": 0,
+              "scoredMatches": 0,
+              "scoredPercentage": 0,
+              "concededMatches": 0,
+              "concededPercentage": 0
             },
             "homeGoalkeeper": {
-              "appearances": 7,
+              "appearances": 0,
               "saves": 0,
-              "conceded": 11,
-              "shots": 11,
-              "savePercentage": 0
+              "conceded": 0,
+              "shots": 0,
+              "savePercentage": null,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": null
             },
             "awayGoalkeeper": {
-              "appearances": 7,
-              "saves": 2,
-              "conceded": 13,
-              "shots": 15,
-              "savePercentage": 13.33
+              "appearances": 0,
+              "saves": 0,
+              "conceded": 0,
+              "shots": 0,
+              "savePercentage": null,
+              "cleanSheets": 0,
+              "cleanSheetPercentage": null
             },
             "homeFormations": {},
-            "awayFormations": {}
+            "awayFormations": {},
+            "homeEuropeanImpact": {
+              "playedPrevious7Days": 0,
+              "scheduledNext4Days": 0,
+              "previousMatches": [],
+              "nextMatches": [],
+              "fatiguePenalty": 0
+            },
+            "awayEuropeanImpact": {
+              "playedPrevious7Days": 0,
+              "scheduledNext4Days": 0,
+              "previousMatches": [],
+              "nextMatches": [],
+              "fatiguePenalty": 0
+            }
           }
         },
-        "uid": "s:600~l:740~e:401882892",
+        "uid": "s:600~l:740~e:401882878",
         "season": 2026,
-        "result": "X",
+        "result": "1",
         "details": {
-          "updatedAt": "2026-08-28T17:27:14.783Z",
+          "updatedAt": "2026-09-02T09:39:25.127Z",
           "lineups": [
             {
-              "teamId": 88,
-              "teamName": "Espanyol",
+              "teamId": 243,
+              "teamName": "Sevilla",
               "formation": null,
               "players": []
             },
             {
-              "teamId": 243,
-              "teamName": "Sevilla",
+              "teamId": 94,
+              "teamName": "Valencia",
               "formation": null,
               "players": []
             }
           ],
           "statistics": [
             {
-              "teamId": 88,
-              "teamName": "Espanyol",
-              "possession": null,
-              "shotsTotal": null,
-              "shotsOnTarget": null,
-              "corners": null,
-              "fouls": null,
-              "offsides": null,
-              "yellowCards": null,
-              "redCards": null,
-              "goalkeeperSaves": null,
-              "passes": null,
-              "accuratePasses": null,
-              "raw": {
-                "goalDifference": "2",
-                "totalGoals": "4",
-                "goalAssists": "3",
-                "goalsConceded": "2"
-              }
-            },
-            {
               "teamId": 243,
               "teamName": "Sevilla",
               "possession": null,
@@ -159697,10 +159758,31 @@
               "passes": null,
               "accuratePasses": null,
               "raw": {
-                "goalDifference": "3",
-                "totalGoals": "5",
-                "goalAssists": "2",
-                "goalsConceded": "2"
+                "goalDifference": "1",
+                "totalGoals": "6",
+                "goalAssists": "3",
+                "goalsConceded": "5"
+              }
+            },
+            {
+              "teamId": 94,
+              "teamName": "Valencia",
+              "possession": null,
+              "shotsTotal": null,
+              "shotsOnTarget": null,
+              "corners": null,
+              "fouls": null,
+              "offsides": null,
+              "yellowCards": null,
+              "redCards": null,
+              "goalkeeperSaves": null,
+              "passes": null,
+              "accuratePasses": null,
+              "raw": {
+                "goalDifference": "-3",
+                "totalGoals": "1",
+                "goalAssists": "0",
+                "goalsConceded": "4"
               }
             }
           ],
@@ -159716,12 +159798,120 @@
         },
         "quiniela": {
           "prediction": "1",
-          "probability1": 0.5729,
-          "probabilityX": 0.2433,
-          "probability2": 0.1839,
-          "difficulty": "media",
-          "confidence": 0.5729,
+          "probability1": 0.4374,
+          "probabilityX": 0.2261,
+          "probability2": 0.3365,
+          "difficulty": "difícil",
+          "confidence": 0.4374,
           "realResult": "X"
+        },
+        "predictionV31": {
+          "sign": "1",
+          "probabilities": {
+            "1": 0.5704,
+            "2": 0.0335,
+            "X": 0.3961
+          },
+          "confidence": 0.5704,
+          "difficulty": "media",
+          "generatedAt": "2026-09-10T22:53:14.280Z",
+          "lockedAt": "2026-09-11T09:43:18.571Z",
+          "model": {
+            "version": "3.1-experimental",
+            "baseModel": "3.0-official",
+            "weights": {
+              "form": 0.3,
+              "attackDefense": 0.3,
+              "homeAdvantage": 0.2,
+              "goalkeeper": 0.1,
+              "tacticalAbsences": 0.1
+            },
+            "experimentalAdjustment": {
+              "europeanLoad": 0.05
+            }
+          },
+          "evidence": {
+            "homeLast5": {
+              "matches": 4,
+              "gf": 7,
+              "ga": 6,
+              "gfPerGame": 1.75,
+              "gaPerGame": 1.5,
+              "points": 7,
+              "pointsPerGame": 1.75,
+              "wins": 2,
+              "draws": 1,
+              "losses": 1
+            },
+            "awayLast5": {
+              "matches": 4,
+              "gf": 1,
+              "ga": 9,
+              "gfPerGame": 0.25,
+              "gaPerGame": 2.25,
+              "points": 1,
+              "pointsPerGame": 0.25,
+              "wins": 0,
+              "draws": 1,
+              "losses": 3
+            },
+            "homeVenue": {
+              "matches": 2,
+              "gf": 3,
+              "ga": 4,
+              "gfPerGame": 1.5,
+              "gaPerGame": 2,
+              "points": 3,
+              "pointsPerGame": 1.5,
+              "wins": 1,
+              "draws": 0,
+              "losses": 1
+            },
+            "awayVenue": {
+              "matches": 1,
+              "gf": 1,
+              "ga": 3,
+              "gfPerGame": 1,
+              "gaPerGame": 3,
+              "points": 0,
+              "pointsPerGame": 0,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1
+            },
+            "homeGoalkeeper": {
+              "appearances": 41,
+              "saves": 2,
+              "conceded": 72,
+              "shots": 74,
+              "savePercentage": 2.7
+            },
+            "awayGoalkeeper": {
+              "appearances": 41,
+              "saves": 0,
+              "conceded": 77,
+              "shots": 77,
+              "savePercentage": 0
+            },
+            "homeFormations": {},
+            "awayFormations": {},
+            "homeEuropean": {
+              "europeanMatchesLast7d": 0,
+              "previousEuropeanMatch": null,
+              "nextEuropeanMatches": [],
+              "hoursSincePreviousEuropean": null,
+              "fatigueScore": 0,
+              "fatigueLevel": "baja"
+            },
+            "awayEuropean": {
+              "europeanMatchesLast7d": 0,
+              "previousEuropeanMatch": null,
+              "nextEuropeanMatches": [],
+              "hoursSincePreviousEuropean": null,
+              "fatigueScore": 0,
+              "fatigueLevel": "baja"
+            }
+          }
         }
       },
       "hoursFromLastEuropeanToNextLeague": null
@@ -160848,21 +161038,21 @@
   "modelEvaluation": {
     "officialModel": "V3.0",
     "experimentalModel": "V3.1",
-    "officialAccuracy": 36.59,
-    "experimentalAccuracy": 0,
-    "officialTotal": 41,
-    "experimentalTotal": 0,
-    "updatedAt": "2026-09-11T09:43:18.572Z",
+    "officialAccuracy": 38.1,
+    "experimentalAccuracy": 100,
+    "officialTotal": 42,
+    "experimentalTotal": 1,
+    "updatedAt": "2026-09-12T09:23:06.707Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
-    "total": 0,
-    "correct": 0,
-    "accuracy": 0,
+    "total": 1,
+    "correct": 1,
+    "accuracy": 100,
     "bySign": {
       "1": {
-        "total": 0,
-        "correct": 0
+        "total": 1,
+        "correct": 1
       },
       "2": {
         "total": 0,
@@ -160879,8 +161069,8 @@
         "correct": 0
       },
       "media": {
-        "total": 0,
-        "correct": 0
+        "total": 1,
+        "correct": 1
       },
       "difícil": {
         "total": 0,
