@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-17T10:00:14.096Z",
+    "generatedAt": "2026-09-18T09:47:23.145Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -16,7 +16,7 @@
     "injuriesCount": 0,
     "newsCount": 20,
     "modelVersion": "3.0-oficial + 3.1-experimental",
-    "europeanMatchesCount": 4,
+    "europeanMatchesCount": 5,
     "predictionBalanceV31": {
       "total": 10,
       "correct": 5,
@@ -27009,7 +27009,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.571Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-18T09:47:23.144Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -29174,7 +29174,7 @@
         "confidence": 0.5168,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.283Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-18T09:47:23.145Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -154822,6 +154822,26 @@
     {
       "rank": 3,
       "team": {
+        "id": 244,
+        "name": "Real Betis",
+        "abbreviation": "BET",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
+      },
+      "points": 15,
+      "goalsDiff": 2,
+      "form": null,
+      "played": 6,
+      "wins": 5,
+      "draws": 0,
+      "losses": 1,
+      "gf": 8,
+      "ga": 6,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 4,
+      "team": {
         "id": 1068,
         "name": "Atlético Madrid",
         "abbreviation": "ATM",
@@ -154840,7 +154860,7 @@
       "away": null
     },
     {
-      "rank": 4,
+      "rank": 5,
       "team": {
         "id": 243,
         "name": "Sevilla",
@@ -154855,26 +154875,6 @@
       "draws": 1,
       "losses": 1,
       "gf": 9,
-      "ga": 6,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 5,
-      "team": {
-        "id": 244,
-        "name": "Real Betis",
-        "abbreviation": "BET",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
-      },
-      "points": 12,
-      "goalsDiff": 1,
-      "form": null,
-      "played": 5,
-      "wins": 4,
-      "draws": 0,
-      "losses": 1,
-      "gf": 7,
       "ga": 6,
       "home": null,
       "away": null
@@ -155042,6 +155042,26 @@
     {
       "rank": 14,
       "team": {
+        "id": 102,
+        "name": "Villarreal",
+        "abbreviation": "VIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+      },
+      "points": 5,
+      "goalsDiff": -1,
+      "form": null,
+      "played": 6,
+      "wins": 1,
+      "draws": 2,
+      "losses": 3,
+      "gf": 10,
+      "ga": 11,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 15,
+      "team": {
         "id": 1538,
         "name": "Levante",
         "abbreviation": "LEV",
@@ -155060,7 +155080,7 @@
       "away": null
     },
     {
-      "rank": 15,
+      "rank": 16,
       "team": {
         "id": 2922,
         "name": "Getafe",
@@ -155068,19 +155088,19 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
       },
       "points": 5,
-      "goalsDiff": -3,
+      "goalsDiff": -4,
       "form": null,
-      "played": 5,
+      "played": 6,
       "wins": 1,
       "draws": 2,
-      "losses": 2,
+      "losses": 3,
       "gf": 3,
-      "ga": 6,
+      "ga": 7,
       "home": null,
       "away": null
     },
     {
-      "rank": 16,
+      "rank": 17,
       "team": {
         "id": 85,
         "name": "Celta Vigo",
@@ -155100,7 +155120,7 @@
       "away": null
     },
     {
-      "rank": 17,
+      "rank": 18,
       "team": {
         "id": 94,
         "name": "Valencia",
@@ -155120,7 +155140,7 @@
       "away": null
     },
     {
-      "rank": 18,
+      "rank": 19,
       "team": {
         "id": 99,
         "name": "Málaga",
@@ -155128,34 +155148,14 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png"
       },
       "points": 3,
-      "goalsDiff": -6,
+      "goalsDiff": -8,
       "form": null,
-      "played": 5,
+      "played": 6,
       "wins": 0,
       "draws": 3,
-      "losses": 2,
-      "gf": 2,
-      "ga": 8,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 19,
-      "team": {
-        "id": 102,
-        "name": "Villarreal",
-        "abbreviation": "VIL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
-      },
-      "points": 2,
-      "goalsDiff": -3,
-      "form": null,
-      "played": 5,
-      "wins": 0,
-      "draws": 2,
       "losses": 3,
-      "gf": 7,
-      "ga": 10,
+      "gf": 3,
+      "ga": 11,
       "home": null,
       "away": null
     },
@@ -155460,6 +155460,29 @@
     {
       "rank": 13,
       "player": {
+        "id": 255889,
+        "name": "Pape Gueye",
+        "shortName": "P. Gueye",
+        "photo": null
+      },
+      "team": {
+        "id": 102,
+        "name": "Villarreal",
+        "abbreviation": "VIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+      },
+      "goals": {
+        "total": 3,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 14,
+      "player": {
         "id": 301684,
         "name": "Fer Niño",
         "shortName": "F. Niño",
@@ -155481,7 +155504,7 @@
       "rating": null
     },
     {
-      "rank": 14,
+      "rank": 15,
       "player": {
         "id": 198832,
         "name": "Mariano Díaz",
@@ -155504,7 +155527,7 @@
       "rating": null
     },
     {
-      "rank": 15,
+      "rank": 16,
       "player": {
         "id": 267591,
         "name": "Roger Brugué",
@@ -155527,7 +155550,7 @@
       "rating": null
     },
     {
-      "rank": 16,
+      "rank": 17,
       "player": {
         "id": 306263,
         "name": "Luka Sucic",
@@ -155550,7 +155573,7 @@
       "rating": null
     },
     {
-      "rank": 17,
+      "rank": 18,
       "player": {
         "id": 125200,
         "name": "Álvaro García",
@@ -155573,7 +155596,7 @@
       "rating": null
     },
     {
-      "rank": 18,
+      "rank": 19,
       "player": {
         "id": 375514,
         "name": "Miguel Sierra",
@@ -155596,34 +155619,11 @@
       "rating": null
     },
     {
-      "rank": 19,
+      "rank": 20,
       "player": {
         "id": 323838,
         "name": "Giuliano Simeone",
         "shortName": "G. Simeone",
-        "photo": null
-      },
-      "team": {
-        "id": 1068,
-        "name": "Atlético Madrid",
-        "abbreviation": "ATM",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
-      },
-      "goals": {
-        "total": 2,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 20,
-      "player": {
-        "id": 274197,
-        "name": "Lee Kang-In",
-        "shortName": "L. Kang-In",
         "photo": null
       },
       "team": {
@@ -155678,6 +155678,128 @@
   },
   "news": [
     {
+      "id": 49969083,
+      "headline": "Socceroos stalwart Ryan axed for Brazil series",
+      "description": "Maty Ryan has been axed from the Socceroos squad to take on Brazil in Queensland. ESPN's Joey Lynch reacts to the squad announcement.",
+      "published": "2026-09-18T01:31:41Z",
+      "link": "https://www.espn.com/video/clip/_/id/49969083/socceroos-stalwart-ryan-axed-brazil-series",
+      "images": [
+        {
+          "name": "Socceroos stalwart Ryan axed for Brazil series",
+          "caption": "Maty Ryan has been axed from the Socceroos squad to take on Brazil in Queensland. ESPN's Joey Lynch reacts to the squad announcement.",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0917/dm_260917_Soccer_Analysis_Socceroos_stalwart_Ryan_axed_for_Brazil_series_20260918/dm_260917_Soccer_Analysis_Socceroos_stalwart_Ryan_axed_for_Brazil_series_20260918.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49968056,
+      "headline": "Burley not sure Vinicius Jr. is ready to step up if Mbappe falters",
+      "description": "Burley not sure Vinicius Jr. is ready to step up if Mbappe falters",
+      "published": "2026-09-17T22:19:08Z",
+      "link": "https://www.espn.com/video/clip/_/id/49968056/burley-not-sure-vinicius-jr-ready-step-mbappe-falters",
+      "images": [
+        {
+          "name": "Burley not sure Vinicius Jr. is ready to step up if Mbappe falters",
+          "caption": "Burley not sure Vinicius Jr. is ready to step up if Mbappe falters",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0917/dm_260917_COM_SOC_analysis_Burley_not_sure_Vinicius_Jr_is_ready_to_step_up_if_Mbappe_falters_20260917_GLO/dm_260917_COM_SOC_analysis_Burley_not_sure_Vinicius_Jr_is_ready_to_step_up_if_Mbappe_falters_20260917_GLO.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49967855,
+      "headline": "Málaga vs. Villarreal - Game Highlights",
+      "description": "Watch the Game Highlights from Málaga vs. Villarreal, 09/17/2026",
+      "published": "2026-09-17T21:37:21Z",
+      "link": "https://www.espn.com/video/clip/_/id/49967855/malaga-vs-villarreal-game-highlights",
+      "images": [
+        {
+          "name": "Málaga vs. Villarreal - Game Highlights",
+          "caption": "Watch the Game Highlights from Málaga vs. Villarreal, 09/17/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0917/157396fd-14ca-4db1-947c-081ea6753579/157396fd-14ca-4db1-947c-081ea6753579.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49966527,
+      "headline": "Weekend predictions: Madrid derby heats up LaLiga, Brighton to stun Arsenal?",
+      "description": "It's another big weekend of matches in Europe which will include heated derbies, top-of-the-table matchups and other rivalries.",
+      "published": "2026-09-17T19:37:26Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49966527/weekend-predictions-madrid-derby-heats-laliga-brighton-stun-arsenal",
+      "images": [
+        {
+          "dataSourceIdentifier": "91160549a7dbd",
+          "id": 49966489,
+          "type": "header",
+          "name": "Mbappe [1296x729]",
+          "credit": "(Photo by JOSE JORDAN / AFP via Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0917/r1718195_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Burley: Real Madrid dug themselves out of a massive hole with Elche win",
+          "caption": "Burley: Real Madrid dug themselves out of a massive hole with Elche win",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0915/dm_260915_Burley_Real_Madrid_dug_themselves_out_of_a_massive_hole_with_Elche_win/dm_260915_Burley_Real_Madrid_dug_themselves_out_of_a_massive_hole_with_Elche_win.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49966841,
+      "headline": "Real Betis vs. Getafe - Game Highlights",
+      "description": "Watch the Game Highlights from Real Betis vs. Getafe, 09/17/2026",
+      "published": "2026-09-17T19:09:10Z",
+      "link": "https://www.espn.com/video/clip/_/id/49966841/real-betis-vs-getafe-game-highlights",
+      "images": [
+        {
+          "name": "Real Betis vs. Getafe - Game Highlights",
+          "caption": "Watch the Game Highlights from Real Betis vs. Getafe, 09/17/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0917/1740db3f-1059-4025-a1f4-a4fdcee4ea20/1740db3f-1059-4025-a1f4-a4fdcee4ea20.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49957535,
+      "headline": "World soccer's hottest men's teams right now: Can anyone stop Barcelona?",
+      "description": "Is there any team hotter in world soccer right now than Barcelona? Bill Connelly crunches the numbers to tell us the most in-form European teams heading into the international break.",
+      "published": "2026-09-17T12:29:29Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49957535/soccer-hottest-teams-form-analysis-barcelona-arsenal-psg",
+      "images": [
+        {
+          "dataSourceIdentifier": "2615fec695d95",
+          "id": 49958697,
+          "type": "header",
+          "name": "Raphinha and Barcelona celeb 260916 [1296x729]",
+          "credit": "David Ramirez/Soccrates/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717661_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Gomez: Raphinha is not the No. 9 Barcelona wanted, but the one they needed",
+          "caption": "Gomez: Raphinha is not the No. 9 Barcelona wanted, but the one they needed",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0915/dm_260915_Gomez_Raphinha_is_not_the_No_9_Barcelona_wanted_but_the_one_they_needed/dm_260915_Gomez_Raphinha_is_not_the_No_9_Barcelona_wanted_but_the_one_they_needed.jpg"
+        }
+      ]
+    },
+    {
       "id": 49962987,
       "headline": "Flick: Barcelona played really good football vs. Racing Santander",
       "description": "Flick: Barcelona played really good football vs. Racing Santander",
@@ -155691,34 +155813,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0917/dm_260917_COM_SOC_Analysis_Flick3A_Barcelona_played_really_good_football_vs_Racing_Santander_GLOBAL_2026-09-/dm_260917_COM_SOC_Analysis_Flick3A_Barcelona_played_really_good_football_vs_Racing_Santander_GLOBAL_2026-09-.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49962718,
-      "headline": "Transfer rumors, news: Arsenal still keen on Real Madrid winger Rodrygo",
-      "description": "Arsenal remain in contact with the camp of Real Madrid winger Rodrygo as a potential long-term target Transfer talk has the latest.",
-      "published": "2026-09-17T09:08:01Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49962718/transfer-rumors-news-arsenal-keen-real-madrid-winger-rodrygo",
-      "images": [
-        {
-          "dataSourceIdentifier": "db94d5807c0ac",
-          "id": 48608925,
-          "type": "header",
-          "name": "Rodrygo Goes [1296x729]",
-          "caption": "Rodrygo is out until late 2026 after suffering a torn ACL and right meniscus.",
-          "credit": "Photo by Alvaro Medranda/Quality Sport Images/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0427/r1649941_3_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Burley: Real Madrid dug themselves out of a massive hole with Elche win",
-          "caption": "Burley: Real Madrid dug themselves out of a massive hole with Elche win",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0915/dm_260915_Burley_Real_Madrid_dug_themselves_out_of_a_massive_hole_with_Elche_win/dm_260915_Burley_Real_Madrid_dug_themselves_out_of_a_massive_hole_with_Elche_win.jpg"
         }
       ]
     },
@@ -156024,113 +156118,6 @@
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0915/bddd322820b347649ce5f75254291e0a1057/bddd322820b347649ce5f75254291e0a1057.jpg"
         }
       ]
-    },
-    {
-      "id": 49952418,
-      "headline": "Burley: Real Madrid dug themselves out of a massive hole with Elche win",
-      "description": "Burley: Real Madrid dug themselves out of a massive hole with Elche win",
-      "published": "2026-09-15T22:19:47Z",
-      "link": "https://www.espn.com/video/clip/_/id/49952418/real-madrid-dug-massive-hole-elche-win",
-      "images": [
-        {
-          "name": "Burley: Real Madrid dug themselves out of a massive hole with Elche win",
-          "caption": "Burley: Real Madrid dug themselves out of a massive hole with Elche win",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0915/dm_260915_Burley_Real_Madrid_dug_themselves_out_of_a_massive_hole_with_Elche_win/dm_260915_Burley_Real_Madrid_dug_themselves_out_of_a_massive_hole_with_Elche_win.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49922700,
-      "headline": "Kylian Mbappé scores, sets up winner as Real Madrid top Elche",
-      "description": "Carlos Espí tapped in a stoppage-time winner -- from a Kylian Mbappé assist -- as Real Madrid won 3-2 at Elche after letting slip a two-goal lead to climb level on points with Barcelona at the top of LaLiga.",
-      "published": "2026-09-15T22:07:50Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882872",
-      "images": [
-        {
-          "dataSourceIdentifier": "01ee345b0d089",
-          "id": 49952173,
-          "type": "header",
-          "name": "Madrid celeb Mbappe_260915 [1296x729]",
-          "caption": "Real Madrid players celebrate after scoring the game-winning goal against Elche in LaLiga.",
-          "alt": "Real Madrid players celebrate after scoring the game-winning goal against Elche in LaLiga.",
-          "credit": "Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0915/r1717241_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Mourinho warns his Real Madrid side about failing to finish games strongly",
-          "caption": "Mourinho warns his Real Madrid side about failing to finish games strongly",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0916/dm_260916_COM_SOC_Analysis_Mourinho_warns_his_Real_Madrid_side_about_failing_to_finish_games_strongly_GLOBAL/dm_260916_COM_SOC_Analysis_Mourinho_warns_his_Real_Madrid_side_about_failing_to_finish_games_strongly_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49952222,
-      "headline": "Elche vs. Real Madrid - Game Highlights",
-      "description": "Watch the Game Highlights from Elche vs. Real Madrid, 09/15/2026",
-      "published": "2026-09-15T21:40:33Z",
-      "link": "https://www.espn.com/video/clip/_/id/49952222/elche-vs-real-madrid-game-highlights",
-      "images": [
-        {
-          "name": "Elche vs. Real Madrid - Game Highlights",
-          "caption": "Watch the Game Highlights from Elche vs. Real Madrid, 09/15/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0915/b8ffe4af-f2a2-446c-b858-dc3b1df8e2c5/b8ffe4af-f2a2-446c-b858-dc3b1df8e2c5.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49947329,
-      "headline": "Transfer rumors, news: Balde to leave Barcelona in January?",
-      "description": "Barcelona defender Alejandro Balde could depart the club during the the winter transfer window. Transfer Talk has the latest.",
-      "published": "2026-09-15T20:48:12Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49947329/transfer-rumors-news-man-united-bruno-fernandes-contract-talks-stall",
-      "images": [
-        {
-          "dataSourceIdentifier": "c5b8e72eee031",
-          "id": 49951796,
-          "type": "header",
-          "name": "Balde [1296x729]",
-          "credit": "(Photo by Jose Breton/Pics Action/NurPhoto via Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0915/r1717218_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Hislop: Arteta playing mind games with referees over Sunderland penalty",
-          "caption": "Hislop: Arteta playing mind games with referees over Sunderland penalty",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0914/dm_260914_COM_SOC_Analysis_Hislop_Arteta_playing_mind_games_with_referees_over_Sunderland_penalty_2026091/dm_260914_COM_SOC_Analysis_Hislop_Arteta_playing_mind_games_with_referees_over_Sunderland_penalty_2026091.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49951437,
-      "headline": "Alavés vs. Valencia - Game Highlights",
-      "description": "Watch the Game Highlights from Alavés vs. Valencia, 09/15/2026",
-      "published": "2026-09-15T20:09:05Z",
-      "link": "https://www.espn.com/video/clip/_/id/49951437/alaves-vs-valencia-game-highlights",
-      "images": [
-        {
-          "name": "Alavés vs. Valencia - Game Highlights",
-          "caption": "Watch the Game Highlights from Alavés vs. Valencia, 09/15/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0915/e76b23e1-bf50-4c3d-87d5-ddb2aa20e8bc/e76b23e1-bf50-4c3d-87d5-ddb2aa20e8bc.jpg"
-        }
-      ]
     }
   ],
   "modelLearning": {
@@ -156258,6 +156245,29 @@
       "away": {
         "id": 85,
         "name": "Celta Vigo",
+        "logo": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "401915583",
+      "date": "2026-09-17T19:00Z",
+      "timestamp": 1789671600,
+      "status": null,
+      "competition": "Europa League",
+      "competitionShort": "UEL",
+      "round": null,
+      "home": {
+        "id": 89,
+        "name": "Real Sociedad",
+        "logo": null
+      },
+      "away": {
+        "id": 349,
+        "name": "AFC Bournemouth",
         "logo": null
       },
       "score": {
@@ -165101,7 +165111,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-09-17T10:00:14.096Z",
+    "updatedAt": "2026-09-18T09:47:23.145Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
