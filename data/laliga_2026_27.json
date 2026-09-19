@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-18T09:47:23.145Z",
+    "generatedAt": "2026-09-19T09:33:24.666Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -29567,7 +29567,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.571Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-19T09:33:24.665Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -31713,7 +31713,7 @@
         "confidence": 0.5383,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.283Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-19T09:33:24.665Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -32106,7 +32106,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.572Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-19T09:33:24.665Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -34351,7 +34351,7 @@
         "confidence": 0.3892,
         "difficulty": "difícil",
         "generatedAt": "2026-09-10T22:53:14.283Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-19T09:33:24.665Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -34744,7 +34744,7 @@
         "confidence": 0.4266,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.572Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-19T09:33:24.665Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -36672,7 +36672,7 @@
         "confidence": 0.6676,
         "difficulty": "fácil",
         "generatedAt": "2026-09-10T22:53:14.283Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-19T09:33:24.665Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -37065,7 +37065,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.572Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-19T09:33:24.665Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -39307,7 +39307,7 @@
         "confidence": 0.5951,
         "difficulty": "fácil",
         "generatedAt": "2026-09-10T22:53:14.283Z",
-        "lockedAt": null,
+        "lockedAt": "2026-09-19T09:33:24.665Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -154922,26 +154922,6 @@
     {
       "rank": 8,
       "team": {
-        "id": 88,
-        "name": "Espanyol",
-        "abbreviation": "ESP",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
-      },
-      "points": 7,
-      "goalsDiff": 2,
-      "form": null,
-      "played": 6,
-      "wins": 2,
-      "draws": 1,
-      "losses": 3,
-      "gf": 9,
-      "ga": 7,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 9,
-      "team": {
         "id": 93,
         "name": "Athletic Club",
         "abbreviation": "ATH",
@@ -154956,6 +154936,26 @@
       "losses": 2,
       "gf": 7,
       "ga": 6,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 9,
+      "team": {
+        "id": 88,
+        "name": "Espanyol",
+        "abbreviation": "ESP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
+      },
+      "points": 7,
+      "goalsDiff": 0,
+      "form": null,
+      "played": 7,
+      "wins": 2,
+      "draws": 1,
+      "losses": 4,
+      "gf": 10,
+      "ga": 10,
       "home": null,
       "away": null
     },
@@ -155102,6 +155102,26 @@
     {
       "rank": 17,
       "team": {
+        "id": 3751,
+        "name": "Elche",
+        "abbreviation": "ELC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+      },
+      "points": 5,
+      "goalsDiff": -6,
+      "form": null,
+      "played": 7,
+      "wins": 1,
+      "draws": 2,
+      "losses": 4,
+      "gf": 11,
+      "ga": 17,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 18,
+      "team": {
         "id": 85,
         "name": "Celta Vigo",
         "abbreviation": "CEL",
@@ -155120,7 +155140,7 @@
       "away": null
     },
     {
-      "rank": 18,
+      "rank": 19,
       "team": {
         "id": 94,
         "name": "Valencia",
@@ -155140,7 +155160,7 @@
       "away": null
     },
     {
-      "rank": 19,
+      "rank": 20,
       "team": {
         "id": 99,
         "name": "Málaga",
@@ -155156,26 +155176,6 @@
       "losses": 3,
       "gf": 3,
       "ga": 11,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 20,
-      "team": {
-        "id": 3751,
-        "name": "Elche",
-        "abbreviation": "ELC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
-      },
-      "points": 2,
-      "goalsDiff": -8,
-      "form": null,
-      "played": 6,
-      "wins": 0,
-      "draws": 2,
-      "losses": 4,
-      "gf": 8,
-      "ga": 16,
       "home": null,
       "away": null
     }
@@ -155322,6 +155322,29 @@
     {
       "rank": 7,
       "player": {
+        "id": 301684,
+        "name": "Fer Niño",
+        "shortName": "F. Niño",
+        "photo": null
+      },
+      "team": {
+        "id": 3751,
+        "name": "Elche",
+        "abbreviation": "ELC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+      },
+      "goals": {
+        "total": 5,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 8,
+      "player": {
         "id": 122260,
         "name": "Pierre-Emerick Aubameyang",
         "shortName": "P. Aubameyang",
@@ -155343,7 +155366,7 @@
       "rating": null
     },
     {
-      "rank": 8,
+      "rank": 9,
       "player": {
         "id": 207288,
         "name": "Ante Budimir",
@@ -155366,7 +155389,7 @@
       "rating": null
     },
     {
-      "rank": 9,
+      "rank": 10,
       "player": {
         "id": 297373,
         "name": "Álex Baena",
@@ -155389,7 +155412,7 @@
       "rating": null
     },
     {
-      "rank": 10,
+      "rank": 11,
       "player": {
         "id": 207236,
         "name": "Lucas Boyé",
@@ -155412,7 +155435,7 @@
       "rating": null
     },
     {
-      "rank": 11,
+      "rank": 12,
       "player": {
         "id": 354334,
         "name": "Fermín López",
@@ -155435,7 +155458,7 @@
       "rating": null
     },
     {
-      "rank": 12,
+      "rank": 13,
       "player": {
         "id": 291281,
         "name": "Jude Bellingham",
@@ -155458,7 +155481,7 @@
       "rating": null
     },
     {
-      "rank": 13,
+      "rank": 14,
       "player": {
         "id": 255889,
         "name": "Pape Gueye",
@@ -155470,29 +155493,6 @@
         "name": "Villarreal",
         "abbreviation": "VIL",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
-      },
-      "goals": {
-        "total": 3,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 14,
-      "player": {
-        "id": 301684,
-        "name": "Fer Niño",
-        "shortName": "F. Niño",
-        "photo": null
-      },
-      "team": {
-        "id": 3751,
-        "name": "Elche",
-        "abbreviation": "ELC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
       },
       "goals": {
         "total": 3,
@@ -155677,6 +155677,176 @@
     }
   },
   "news": [
+    {
+      "id": 49975555,
+      "headline": "Source: Former Mexico boss Aguirre close to taking over struggling Valencia",
+      "description": "Former Mexico boss Javier Aguirre has emerged as the leading candidate to fill Valencia's coaching vacancy, a source told ESPN.",
+      "published": "2026-09-19T01:46:11Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49975555/source-valencia-advanced-talks-ex-mexico-boss-aguirre-coaching-job",
+      "images": [
+        {
+          "dataSourceIdentifier": "f921275b66891",
+          "id": 49975518,
+          "type": "header",
+          "name": "Javier Aguirre [1296x729]",
+          "caption": "Veteran coach Javier Aguirre is eyeing a return to Spanish football after stepping down as Mexico manager following the 2026 World Cup.",
+          "credit": "Photo by Ryan Pierse - FIFA/FIFA via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0918/r1718805_1296x729_16-9.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49975225,
+      "headline": "Garcia: Diomandé would make the difference in Madrid derby",
+      "description": "Garcia: Diomandé would make the difference in Madrid derby",
+      "published": "2026-09-18T21:57:54Z",
+      "link": "https://www.espn.com/video/clip/_/id/49975225/diomande-make-difference-madrid-derby",
+      "images": [
+        {
+          "name": "Garcia: Diomandé would make the difference in Madrid derby",
+          "caption": "Garcia: Diomandé would make the difference in Madrid derby",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/dm_260918_Garcia_Diomande_would_make_the_difference_in_Madrid_derby/dm_260918_Garcia_Diomande_would_make_the_difference_in_Madrid_derby.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49975036,
+      "headline": "Espanyol vs. Elche - Game Highlights",
+      "description": "Watch the Game Highlights from Espanyol vs. Elche, 09/18/2026",
+      "published": "2026-09-18T21:10:01Z",
+      "link": "https://www.espn.com/video/clip/_/id/49975036/espanyol-vs-elche-game-highlights",
+      "images": [
+        {
+          "name": "Espanyol vs. Elche - Game Highlights",
+          "caption": "Watch the Game Highlights from Espanyol vs. Elche, 09/18/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0918/8db12e66-afb4-4840-b691-3756c6c01c32/8db12e66-afb4-4840-b691-3756c6c01c32.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49974179,
+      "headline": "Lookman: Alvarez didn't break relationship with Atlético squad",
+      "description": "Lookman: Alvarez didn't break relationship with Atlético squad",
+      "published": "2026-09-18T17:41:03Z",
+      "link": "https://www.espn.com/video/clip/_/id/49974179/alvarez-break-relationship-atletico-squad",
+      "images": [
+        {
+          "name": "Lookman: Alvarez didn't break relationship with Atlético squad",
+          "caption": "Lookman: Alvarez didn't break relationship with Atlético squad",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/dm_260918_COM_SOC_Interview_Lookman_Alvarez_didnt_break_relationship_with_Atletico_squad_20260918_GLOBAL/dm_260918_COM_SOC_Interview_Lookman_Alvarez_didnt_break_relationship_with_Atletico_squad_20260918_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49972742,
+      "headline": "Lamine Yamal says he has experienced racism 'a thousand times'",
+      "description": "Barcelona star Lamine Yamal has revealed that he has experienced racism \"a thousand times.\"",
+      "published": "2026-09-18T19:01:35Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49972742/lamine-yamal-reveals-experienced-racism-thousand-s",
+      "images": [
+        {
+          "dataSourceIdentifier": "2004b1c5000e9",
+          "id": 49829913,
+          "type": "header",
+          "name": "Yamal [1296x729]",
+          "credit": "(Photo by Pedro Salado/Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0905/r1711587_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Garcia expects Lamine Yamal to win Ballon d'Or 'very soon'",
+          "caption": "Garcia expects Lamine Yamal to win Ballon d'Or 'very soon'",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0906/dm_260906_COM_SOC_Analysis_Garcia_expects_Lamine_Yamal_to_win_Ballon_dOr_very_soon_20260906_GLOBAL/dm_260906_COM_SOC_Analysis_Garcia_expects_Lamine_Yamal_to_win_Ballon_dOr_very_soon_20260906_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49972585,
+      "headline": "Kylian Mbappé: I want to bring Ballon d'Or to Bernabéu despite boos",
+      "description": "Kylian Mbappé has reiterated his desire to win the Ballon d'Or but has called for more support from Real Madrid fans after a trophyless two years at the club.",
+      "published": "2026-09-18T13:00:12Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49972585/kylian-mbappe-want-bring-ballon-dor-bernabeu-boos",
+      "images": [
+        {
+          "dataSourceIdentifier": "b7abfa536348e",
+          "id": 49972498,
+          "type": "header",
+          "name": "Kylian Mbappe [1296x729]",
+          "alt": "Kylian Mbappe looks on.",
+          "credit": "(Photo by Florencia Tan Jun - UEFA/UEFA via Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0918/r1718524_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Burley not sure Vinicius Jr. is ready to step up if Mbappe falters",
+          "caption": "Burley not sure Vinicius Jr. is ready to step up if Mbappe falters",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0917/dm_260917_COM_SOC_analysis_Burley_not_sure_Vinicius_Jr_is_ready_to_step_up_if_Mbappe_falters_20260917_GLO/dm_260917_COM_SOC_analysis_Burley_not_sure_Vinicius_Jr_is_ready_to_step_up_if_Mbappe_falters_20260917_GLO.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49972427,
+      "headline": "Kylian Mbappé leaves Nike and signs with sponsor On",
+      "description": "Kylian Mbappé has signed with sportswear brand On after leaving Nike.",
+      "published": "2026-09-18T12:53:34Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49972427/kylian-mbappe-leaves-nike-signs-sponsor-on",
+      "images": [
+        {
+          "dataSourceIdentifier": "e31c7a998c734",
+          "id": 49901365,
+          "type": "header",
+          "name": "Kylian Mbappe [1296x729]",
+          "credit": "Photo By Dennis Agyeman/Europa Press via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0911/r1714783_2_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Kirkland: Mbappé is in Ballon d'Or campaign mode amidst criticism",
+          "caption": "Kirkland: Mbappé is in Ballon d'Or campaign mode amidst criticism",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0911/dm_260911_Kirkland_Mbappe_is_in_Ballon_dOr_campaign_mode_amidst_criticism/dm_260911_Kirkland_Mbappe_is_in_Ballon_dOr_campaign_mode_amidst_criticism.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49971901,
+      "headline": "Should Real Madrid be 'clear' favourites to beat Atlético Madrid?",
+      "description": "Should Real Madrid be 'clear' favourites to beat Atlético Madrid?",
+      "published": "2026-09-18T11:33:22Z",
+      "link": "https://www.espn.com/video/clip/_/id/49971901/should-real-madrid-clear-favourites-beat-atletico-madrid",
+      "images": [
+        {
+          "name": "Should Real Madrid be 'clear' favourites to beat Atlético Madrid?",
+          "caption": "Should Real Madrid be 'clear' favourites to beat Atlético Madrid?",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/dm_260918_COM_SOC_Analysis_Should_Real_Madrid_be_E452/dm_260918_COM_SOC_Analysis_Should_Real_Madrid_be_E452.jpg"
+        }
+      ]
+    },
     {
       "id": 49969083,
       "headline": "Socceroos stalwart Ryan axed for Brazil series",
@@ -155932,190 +156102,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0914/dm_260914_COM_SOC_Analysis_Hislop_Arteta_playing_mind_games_with_referees_over_Sunderland_penalty_2026091/dm_260914_COM_SOC_Analysis_Hislop_Arteta_playing_mind_games_with_referees_over_Sunderland_penalty_2026091.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49959666,
-      "headline": "Kylian Mbappé explains obscuring Ceuta shirt amid backlash",
-      "description": "Kylian Mbappé has explained his refusal to wear a T-shirt in support of Ceuta, saying he doesn't \"want to prioritize one form of suffering over another.",
-      "published": "2026-09-16T21:10:02Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49959666/kylian-mbappe-real-madrid-ceuta-shirt-spain-vinicius-junior",
-      "images": [
-        {
-          "dataSourceIdentifier": "ed7317b9c52c4",
-          "id": 49959622,
-          "type": "header",
-          "name": "Mbappe Ceuta shirt [1296x729]",
-          "caption": "Kylian Mbappé and Vinícius Júnior cover up part of the message on a T-shirt in support for Ceuta ahead of Real Madrid's match with Elche.",
-          "alt": "Vinicius Junior and Kylian Mbappe wearing T-shirts with rolled-up sleeves in support of Ceuta during the LaLiga EA Sports 2026/27 match between Elche CF and Real Madrid at Estadio Manuel Martinez Valero on September 15, 2026 in Elche, Spain.",
-          "credit": "Jose Breton/Pics Action/NurPhoto via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717720_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Elche vs. Real Madrid - Game Highlights",
-          "caption": "Watch the Game Highlights from Elche vs. Real Madrid, 09/15/2026",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0915/b8ffe4af-f2a2-446c-b858-dc3b1df8e2c5/b8ffe4af-f2a2-446c-b858-dc3b1df8e2c5.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49922711,
-      "headline": "David strikes again as Atleti roll ahead of Madrid derby",
-      "description": "Atlético Madrid breezed to a 4-0 home win over Osasuna on Wednesday to move into third place in LaLiga.",
-      "published": "2026-09-16T19:22:00Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882875",
-      "images": [
-        {
-          "dataSourceIdentifier": "4fcb268ff3933",
-          "id": 49958896,
-          "type": "header",
-          "name": "Atleti celeb David_260916 [1296x729]",
-          "caption": "Atleti players celebrate after a Jonathan David goal against Osasuna in LaLiga.",
-          "alt": "Atleti players celebrate after a Jonathan David goal against Osasuna in LaLiga.",
-          "credit": "Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717676_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Atletico Madrid vs. Osasuna - Game Highlights",
-          "caption": "Watch the Game Highlights from Atletico Madrid vs. Osasuna, 09/16/2026",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0916/1c40fe91-1f36-4be6-aa6a-b4e3771d3496/1c40fe91-1f36-4be6-aa6a-b4e3771d3496.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49958960,
-      "headline": "Deportivo La Coruña vs. Sevilla - Game Highlights",
-      "description": "Watch the Game Highlights from Deportivo La Coruña vs. Sevilla, 09/16/2026",
-      "published": "2026-09-16T19:04:41Z",
-      "link": "https://www.espn.com/video/clip/_/id/49958960/deportivo-la-coruna-vs-sevilla-game-highlights",
-      "images": [
-        {
-          "name": "Deportivo La Coruña vs. Sevilla - Game Highlights",
-          "caption": "Watch the Game Highlights from Deportivo La Coruña vs. Sevilla, 09/16/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0916/a4407b93-eb1f-47ed-8f59-13ecc4f49d90/a4407b93-eb1f-47ed-8f59-13ecc4f49d90.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49958958,
-      "headline": "Atletico Madrid vs. Osasuna - Game Highlights",
-      "description": "Watch the Game Highlights from Atletico Madrid vs. Osasuna, 09/16/2026",
-      "published": "2026-09-16T19:04:21Z",
-      "link": "https://www.espn.com/video/clip/_/id/49958958/atletico-madrid-vs-osasuna-game-highlights",
-      "images": [
-        {
-          "name": "Atletico Madrid vs. Osasuna - Game Highlights",
-          "caption": "Watch the Game Highlights from Atletico Madrid vs. Osasuna, 09/16/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0916/1c40fe91-1f36-4be6-aa6a-b4e3771d3496/1c40fe91-1f36-4be6-aa6a-b4e3771d3496.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49956431,
-      "headline": "Abdelkarim praises Norwegian striker, accepts 'Haaland of the Nile' comparison",
-      "description": "Abdelkarim praises Norwegian striker, accepts 'Haaland of the Nile' comparison",
-      "published": "2026-09-16T13:03:36Z",
-      "link": "https://www.espn.com/video/clip/_/id/49956431/abdelkarim-praises-norwegian-striker-accepts-haaland-nile-comparison",
-      "images": [
-        {
-          "name": "Abdelkarim praises Norwegian striker, accepts 'Haaland of the Nile' comparison",
-          "caption": "Abdelkarim praises Norwegian striker, accepts 'Haaland of the Nile' comparison",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0916/dm_260916_Abdelkarim_praises_Norwegian_striker_accepts_Haaland_of_the_Nile_comparison/dm_260916_Abdelkarim_praises_Norwegian_striker_accepts_Haaland_of_the_Nile_comparison.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49956373,
-      "headline": "Mourinho warns his Real Madrid side about failing to finish games strongly",
-      "description": "Mourinho warns his Real Madrid side about failing to finish games strongly",
-      "published": "2026-09-16T12:42:57Z",
-      "link": "https://www.espn.com/video/clip/_/id/49956373/mourinho-warns-real-madrid-side-failing-finish-games-strongly",
-      "images": [
-        {
-          "name": "Mourinho warns his Real Madrid side about failing to finish games strongly",
-          "caption": "Mourinho warns his Real Madrid side about failing to finish games strongly",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0916/dm_260916_COM_SOC_Analysis_Mourinho_warns_his_Real_Madrid_side_about_failing_to_finish_games_strongly_GLOBAL/dm_260916_COM_SOC_Analysis_Mourinho_warns_his_Real_Madrid_side_about_failing_to_finish_games_strongly_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49952712,
-      "headline": "Barcelona re-sign Egypt striker Abdelkarim, 'Haaland of the Nile'",
-      "description": "Egypt striker Hamza Abdelkarim is relishing being nicknamed the \"Haaland of the Nile\" after signing a new contract with Barcelona on Tuesday.",
-      "published": "2026-09-16T13:06:29Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49952712/barcelona-re-sign-egypt-striker-abdelkarim",
-      "images": [
-        {
-          "dataSourceIdentifier": "fa4ba394d0c99",
-          "id": 49952893,
-          "type": "header",
-          "name": "Abdelkarim new Barca deal_260915 [1296x729]",
-          "caption": "Egypt striker Hamza Abdelkarim signed a new contract to stay with Barcelona until 2030.",
-          "alt": "Egypt striker Hamza Abdelkarim signed a new contract to stay with Barcelona until 2030.",
-          "credit": "Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0915/r1717290_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Abdelkarim praises Norwegian striker, accepts 'Haaland of the Nile' comparison",
-          "caption": "Abdelkarim praises Norwegian striker, accepts 'Haaland of the Nile' comparison",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0916/dm_260916_Abdelkarim_praises_Norwegian_striker_accepts_Haaland_of_the_Nile_comparison/dm_260916_Abdelkarim_praises_Norwegian_striker_accepts_Haaland_of_the_Nile_comparison.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49952550,
-      "headline": "Mourinho 'risked everything' with subs in Real Madrid win",
-      "description": "José Mourinho said Real Madrid \"risked everything\" after going all-out attack in a 3-2 LaLiga win at Elche on Tuesday, with substitute Carlos Espí scoring a 91st minute winner.",
-      "published": "2026-09-15T23:14:11Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49952550/mourinho-risked-everything-subs-real-madrid-win",
-      "images": [
-        {
-          "dataSourceIdentifier": "530b517098fd6",
-          "id": 49952590,
-          "type": "header",
-          "name": "Mourinho Madrid subs_260915 [1296x729]",
-          "caption": "Jose Mourinho substituted Vinicius Junior and Arda Guler as Madrid looked for a winning goal against Elche on Tuesday.",
-          "alt": "Jose Mourinho substituted Vinicius Junior and Arda Guler as Madrid looked for a winning goal against Elche on Tuesday.",
-          "credit": "Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0915/r1717266_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Carlos Espi rescues Real Madrid with stoppage-time winner",
-          "caption": "Carlos Espi rescues Real Madrid with stoppage-time winner",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0915/bddd322820b347649ce5f75254291e0a1057/bddd322820b347649ce5f75254291e0a1057.jpg"
         }
       ]
     }
@@ -165111,7 +165097,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-09-18T09:47:23.145Z",
+    "updatedAt": "2026-09-19T09:33:24.666Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
