@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-20T09:49:42.166Z",
+    "generatedAt": "2026-09-21T10:45:39.836Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -154802,20 +154802,20 @@
     {
       "rank": 2,
       "team": {
-        "id": 86,
-        "name": "Real Madrid",
-        "abbreviation": "RMA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+        "id": 1068,
+        "name": "Atlético Madrid",
+        "abbreviation": "ATM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
       },
-      "points": 15,
-      "goalsDiff": 11,
+      "points": 16,
+      "goalsDiff": 9,
       "form": null,
-      "played": 6,
+      "played": 7,
       "wins": 5,
-      "draws": 0,
+      "draws": 1,
       "losses": 1,
-      "gf": 17,
-      "ga": 6,
+      "gf": 16,
+      "ga": 7,
       "home": null,
       "away": null
     },
@@ -154827,35 +154827,35 @@
         "abbreviation": "BET",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
       },
-      "points": 15,
+      "points": 16,
       "goalsDiff": 2,
       "form": null,
-      "played": 6,
+      "played": 7,
       "wins": 5,
-      "draws": 0,
+      "draws": 1,
       "losses": 1,
-      "gf": 8,
-      "ga": 6,
+      "gf": 9,
+      "ga": 7,
       "home": null,
       "away": null
     },
     {
       "rank": 4,
       "team": {
-        "id": 1068,
-        "name": "Atlético Madrid",
-        "abbreviation": "ATM",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+        "id": 86,
+        "name": "Real Madrid",
+        "abbreviation": "RMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
       },
-      "points": 13,
-      "goalsDiff": 8,
+      "points": 15,
+      "goalsDiff": 10,
       "form": null,
-      "played": 6,
-      "wins": 4,
-      "draws": 1,
-      "losses": 1,
-      "gf": 14,
-      "ga": 6,
+      "played": 7,
+      "wins": 5,
+      "draws": 0,
+      "losses": 2,
+      "gf": 18,
+      "ga": 8,
       "home": null,
       "away": null
     },
@@ -154907,20 +154907,60 @@
         "abbreviation": "DEP",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
       },
-      "points": 9,
+      "points": 10,
       "goalsDiff": 2,
       "form": null,
-      "played": 6,
+      "played": 7,
       "wins": 2,
-      "draws": 3,
+      "draws": 4,
       "losses": 1,
-      "gf": 9,
-      "ga": 7,
+      "gf": 10,
+      "ga": 8,
       "home": null,
       "away": null
     },
     {
       "rank": 8,
+      "team": {
+        "id": 89,
+        "name": "Real Sociedad",
+        "abbreviation": "RSO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+      },
+      "points": 10,
+      "goalsDiff": -4,
+      "form": null,
+      "played": 7,
+      "wins": 3,
+      "draws": 1,
+      "losses": 3,
+      "gf": 9,
+      "ga": 13,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 9,
+      "team": {
+        "id": 102,
+        "name": "Villarreal",
+        "abbreviation": "VIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+      },
+      "points": 8,
+      "goalsDiff": 1,
+      "form": null,
+      "played": 7,
+      "wins": 2,
+      "draws": 2,
+      "losses": 3,
+      "gf": 13,
+      "ga": 12,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 10,
       "team": {
         "id": 93,
         "name": "Athletic Club",
@@ -154940,7 +154980,27 @@
       "away": null
     },
     {
-      "rank": 9,
+      "rank": 11,
+      "team": {
+        "id": 2922,
+        "name": "Getafe",
+        "abbreviation": "GET",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
+      },
+      "points": 8,
+      "goalsDiff": -3,
+      "form": null,
+      "played": 7,
+      "wins": 2,
+      "draws": 2,
+      "losses": 3,
+      "gf": 4,
+      "ga": 7,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 12,
       "team": {
         "id": 101,
         "name": "Rayo Vallecano",
@@ -154960,7 +155020,7 @@
       "away": null
     },
     {
-      "rank": 10,
+      "rank": 13,
       "team": {
         "id": 97,
         "name": "Osasuna",
@@ -154980,7 +155040,7 @@
       "away": null
     },
     {
-      "rank": 11,
+      "rank": 14,
       "team": {
         "id": 85,
         "name": "Celta Vigo",
@@ -155000,7 +155060,7 @@
       "away": null
     },
     {
-      "rank": 12,
+      "rank": 15,
       "team": {
         "id": 88,
         "name": "Espanyol",
@@ -155020,27 +155080,7 @@
       "away": null
     },
     {
-      "rank": 13,
-      "team": {
-        "id": 89,
-        "name": "Real Sociedad",
-        "abbreviation": "RSO",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
-      },
-      "points": 7,
-      "goalsDiff": -5,
-      "form": null,
-      "played": 6,
-      "wins": 2,
-      "draws": 1,
-      "losses": 3,
-      "gf": 6,
-      "ga": 11,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 14,
+      "rank": 16,
       "team": {
         "id": 87,
         "name": "Racing Santander",
@@ -155060,52 +155100,12 @@
       "away": null
     },
     {
-      "rank": 15,
-      "team": {
-        "id": 102,
-        "name": "Villarreal",
-        "abbreviation": "VIL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
-      },
-      "points": 5,
-      "goalsDiff": -1,
-      "form": null,
-      "played": 6,
-      "wins": 1,
-      "draws": 2,
-      "losses": 3,
-      "gf": 10,
-      "ga": 11,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 16,
+      "rank": 17,
       "team": {
         "id": 1538,
         "name": "Levante",
         "abbreviation": "LEV",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
-      },
-      "points": 5,
-      "goalsDiff": -2,
-      "form": null,
-      "played": 5,
-      "wins": 1,
-      "draws": 2,
-      "losses": 2,
-      "gf": 7,
-      "ga": 9,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 17,
-      "team": {
-        "id": 2922,
-        "name": "Getafe",
-        "abbreviation": "GET",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
       },
       "points": 5,
       "goalsDiff": -4,
@@ -155114,8 +155114,8 @@
       "wins": 1,
       "draws": 2,
       "losses": 3,
-      "gf": 3,
-      "ga": 7,
+      "gf": 8,
+      "ga": 12,
       "home": null,
       "away": null
     },
@@ -155148,14 +155148,14 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
       },
       "points": 4,
-      "goalsDiff": -8,
+      "goalsDiff": -9,
       "form": null,
-      "played": 6,
+      "played": 7,
       "wins": 1,
       "draws": 1,
-      "losses": 4,
-      "gf": 2,
-      "ga": 10,
+      "losses": 5,
+      "gf": 4,
+      "ga": 13,
       "home": null,
       "away": null
     },
@@ -155168,14 +155168,14 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png"
       },
       "points": 3,
-      "goalsDiff": -8,
+      "goalsDiff": -9,
       "form": null,
-      "played": 6,
+      "played": 7,
       "wins": 0,
       "draws": 3,
-      "losses": 3,
+      "losses": 4,
       "gf": 3,
-      "ga": 11,
+      "ga": 12,
       "home": null,
       "away": null
     }
@@ -155207,6 +155207,29 @@
     {
       "rank": 2,
       "player": {
+        "id": 231388,
+        "name": "Kylian Mbappé",
+        "shortName": "K. Mbappé",
+        "photo": null
+      },
+      "team": {
+        "id": 86,
+        "name": "Real Madrid",
+        "abbreviation": "RMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+      },
+      "goals": {
+        "total": 7,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 3,
+      "player": {
         "id": 362150,
         "name": "Lamine Yamal",
         "shortName": "L. Yamal",
@@ -155228,7 +155251,7 @@
       "rating": null
     },
     {
-      "rank": 3,
+      "rank": 4,
       "player": {
         "id": 276652,
         "name": "Sergio Camello",
@@ -155240,29 +155263,6 @@
         "name": "Rayo Vallecano",
         "abbreviation": "RAY",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
-      },
-      "goals": {
-        "total": 7,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 4,
-      "player": {
-        "id": 231388,
-        "name": "Kylian Mbappé",
-        "shortName": "K. Mbappé",
-        "photo": null
-      },
-      "team": {
-        "id": 86,
-        "name": "Real Madrid",
-        "abbreviation": "RMA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
       },
       "goals": {
         "total": 7,
@@ -155322,6 +155322,29 @@
     {
       "rank": 7,
       "player": {
+        "id": 122260,
+        "name": "Pierre-Emerick Aubameyang",
+        "shortName": "P. Aubameyang",
+        "photo": null
+      },
+      "team": {
+        "id": 90,
+        "name": "Deportivo",
+        "abbreviation": "DEP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
+      },
+      "goals": {
+        "total": 5,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 8,
+      "player": {
         "id": 207288,
         "name": "Ante Budimir",
         "shortName": "A. Budimir",
@@ -155343,7 +155366,7 @@
       "rating": null
     },
     {
-      "rank": 8,
+      "rank": 9,
       "player": {
         "id": 301684,
         "name": "Fer Niño",
@@ -155366,76 +155389,7 @@
       "rating": null
     },
     {
-      "rank": 9,
-      "player": {
-        "id": 122260,
-        "name": "Pierre-Emerick Aubameyang",
-        "shortName": "P. Aubameyang",
-        "photo": null
-      },
-      "team": {
-        "id": 90,
-        "name": "Deportivo",
-        "abbreviation": "DEP",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
-      },
-      "goals": {
-        "total": 5,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
       "rank": 10,
-      "player": {
-        "id": 207236,
-        "name": "Lucas Boyé",
-        "shortName": "L. Boyé",
-        "photo": null
-      },
-      "team": {
-        "id": 96,
-        "name": "Alavés",
-        "abbreviation": "ALA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
-      },
-      "goals": {
-        "total": 4,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 11,
-      "player": {
-        "id": 354334,
-        "name": "Fermín López",
-        "shortName": "F. López",
-        "photo": null
-      },
-      "team": {
-        "id": 83,
-        "name": "Barcelona",
-        "abbreviation": "BAR",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
-      },
-      "goals": {
-        "total": 4,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 12,
       "player": {
         "id": 297373,
         "name": "Álex Baena",
@@ -155458,11 +155412,11 @@
       "rating": null
     },
     {
-      "rank": 13,
+      "rank": 11,
       "player": {
-        "id": 198832,
-        "name": "Mariano Díaz",
-        "shortName": "M. Díaz",
+        "id": 207236,
+        "name": "Lucas Boyé",
+        "shortName": "L. Boyé",
         "photo": null
       },
       "team": {
@@ -155470,6 +155424,52 @@
         "name": "Alavés",
         "abbreviation": "ALA",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
+      },
+      "goals": {
+        "total": 4,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 12,
+      "player": {
+        "id": 354334,
+        "name": "Fermín López",
+        "shortName": "F. López",
+        "photo": null
+      },
+      "team": {
+        "id": 83,
+        "name": "Barcelona",
+        "abbreviation": "BAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
+      },
+      "goals": {
+        "total": 4,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 13,
+      "player": {
+        "id": 306263,
+        "name": "Luka Sucic",
+        "shortName": "L. Sucic",
+        "photo": null
+      },
+      "team": {
+        "id": 89,
+        "name": "Real Sociedad",
+        "abbreviation": "RSO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
       },
       "goals": {
         "total": 3,
@@ -155529,6 +155529,29 @@
     {
       "rank": 16,
       "player": {
+        "id": 198832,
+        "name": "Mariano Díaz",
+        "shortName": "M. Díaz",
+        "photo": null
+      },
+      "team": {
+        "id": 96,
+        "name": "Alavés",
+        "abbreviation": "ALA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
+      },
+      "goals": {
+        "total": 3,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 17,
+      "player": {
         "id": 267591,
         "name": "Roger Brugué",
         "shortName": "R. Brugué",
@@ -155550,7 +155573,30 @@
       "rating": null
     },
     {
-      "rank": 17,
+      "rank": 18,
+      "player": {
+        "id": 273499,
+        "name": "Jonathan David",
+        "shortName": "J. David",
+        "photo": null
+      },
+      "team": {
+        "id": 1068,
+        "name": "Atlético Madrid",
+        "abbreviation": "ATM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+      },
+      "goals": {
+        "total": 3,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 19,
       "player": {
         "id": 125200,
         "name": "Álvaro García",
@@ -155573,7 +155619,7 @@
       "rating": null
     },
     {
-      "rank": 18,
+      "rank": 20,
       "player": {
         "id": 375514,
         "name": "Miguel Sierra",
@@ -155585,52 +155631,6 @@
         "name": "Sevilla",
         "abbreviation": "SEV",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
-      },
-      "goals": {
-        "total": 2,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 19,
-      "player": {
-        "id": 274913,
-        "name": "Karim Adeyemi",
-        "shortName": "K. Adeyemi",
-        "photo": null
-      },
-      "team": {
-        "id": 83,
-        "name": "Barcelona",
-        "abbreviation": "BAR",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
-      },
-      "goals": {
-        "total": 2,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 20,
-      "player": {
-        "id": 306263,
-        "name": "Luka Sucic",
-        "shortName": "L. Sucic",
-        "photo": null
-      },
-      "team": {
-        "id": 89,
-        "name": "Real Sociedad",
-        "abbreviation": "RSO",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
       },
       "goals": {
         "total": 2,
@@ -155678,29 +155678,287 @@
   },
   "news": [
     {
-      "id": 49987466,
-      "headline": "Transfer rumors, news: Arsenal target Real Madrid's Endrick in January",
-      "description": "Real Madrid striker Endrick could be the subject of a January bid from Premier League champions Arsenal. Transfer Talk has the latest.",
-      "published": "2026-09-20T08:47:04Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49987466/transfer-rumors-news-arsenal-offer-endrick-way-real-madrid",
+      "id": 49940653,
+      "headline": "Why this 3-week international break is longest ever (and why that's a good thing)",
+      "description": "Fans have grown used to international games interrupting the club season, but this break will be a week longer than before. It's not as bad as it sounds.",
+      "published": "2026-09-21T07:52:39Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49940653/why-3-week-international-break-longest-ever-why-thats-good-thing",
       "images": [
         {
-          "dataSourceIdentifier": "387e18a3b9151",
-          "id": 49987489,
+          "dataSourceIdentifier": "7f070ed3e5d07",
+          "id": 49948781,
           "type": "header",
-          "name": "Real Madrid's Endrick [1296x729]",
-          "credit": "Mateo Villalba/Getty Images",
+          "name": "England v France Bukayo Saka goal celeb hat trick [1296x729]",
+          "credit": "Luke Hales/Getty Images",
           "height": 729,
           "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0920/r1719358_1296x729_16-9.jpg"
+          "url": "https://a.espncdn.com/photo/2026/0915/r1716998_1296x729_16-9.jpg"
         },
         {
           "type": "Media",
-          "name": "McManaman: Madrid derby puts huge pressure on Mourinho",
-          "caption": "McManaman: Madrid derby puts huge pressure on Mourinho",
+          "name": "Stephen A. lauds Spain after outclassing Argentina to win World Cup",
+          "caption": "Stephen A. lauds Spain after outclassing Argentina to win World Cup ",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0919/dm_260919_McManaman_Madrid_derby_puts_huge_pressure_on_Mourinho/dm_260919_McManaman_Madrid_derby_puts_huge_pressure_on_Mourinho.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0720/ss_20260720_102052756_3598280/ss_20260720_102052756_3598280.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49993383,
+      "headline": "Real Madrid loses 2-1 to Atlético",
+      "description": "Alex Kirkland recaps José Mourinho's response to Real Madrid's loss.",
+      "published": "2026-09-20T22:20:29Z",
+      "link": "https://www.espn.com/video/clip/_/id/49993383/real-madrid-loses-2-1-atletico",
+      "images": [
+        {
+          "name": "Real Madrid loses 2-1 to Atlético",
+          "caption": "Alex Kirkland recaps José Mourinho's response to Real Madrid's loss.",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_16x9_Real_Madrid_IA/dm_260920_16x9_Real_Madrid_IA.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49992539,
+      "headline": "Valencia vs. Real Sociedad - Game Highlights",
+      "description": "Watch the Game Highlights from Valencia vs. Real Sociedad, 09/20/2026",
+      "published": "2026-09-20T21:07:00Z",
+      "link": "https://www.espn.com/video/clip/_/id/49992539/valencia-vs-real-sociedad-game-highlights",
+      "images": [
+        {
+          "name": "Valencia vs. Real Sociedad - Game Highlights",
+          "caption": "Watch the Game Highlights from Valencia vs. Real Sociedad, 09/20/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0920/7befc590-1093-466c-b29b-1f3c83904125/7befc590-1093-466c-b29b-1f3c83904125.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49992204,
+      "headline": "Simeone: Mourinho crossed a line with referee rant after Madrid derby",
+      "description": "Simeone: Mourinho crossed a line with referee rant after Madrid derby",
+      "published": "2026-09-20T20:40:40Z",
+      "link": "https://www.espn.com/video/clip/_/id/49992204/mourinho-crossed-line-withreferee-rant-madrid-derby",
+      "images": [
+        {
+          "name": "Simeone: Mourinho crossed a line with referee rant after Madrid derby",
+          "caption": "Simeone: Mourinho crossed a line with referee rant after Madrid derby",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Presser_Simeone_Mourinho_crossed_a_line_withreferee_rant_after_Madrid_derby__20260920/dm_260920_COM_SOC_Presser_Simeone_Mourinho_crossed_a_line_withreferee_rant_after_Madrid_derby__20260920.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49991104,
+      "headline": "Villarreal vs. Levante - Game Highlights",
+      "description": "Watch the Game Highlights from Villarreal vs. Levante, 09/20/2026",
+      "published": "2026-09-20T18:55:31Z",
+      "link": "https://www.espn.com/video/clip/_/id/49991104/villarreal-vs-levante-game-highlights",
+      "images": [
+        {
+          "name": "Villarreal vs. Levante - Game Highlights",
+          "caption": "Watch the Game Highlights from Villarreal vs. Levante, 09/20/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0920/120da35a-93b7-409b-94d2-36db0656abba/120da35a-93b7-409b-94d2-36db0656abba.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49991080,
+      "headline": "Deportivo La Coruña vs. Real Betis - Game Highlights",
+      "description": "Watch the Game Highlights from Deportivo La Coruña vs. Real Betis, 09/20/2026",
+      "published": "2026-09-20T18:55:00Z",
+      "link": "https://www.espn.com/video/clip/_/id/49991080/deportivo-la-coruna-vs-real-betis-game-highlights",
+      "images": [
+        {
+          "name": "Deportivo La Coruña vs. Real Betis - Game Highlights",
+          "caption": "Watch the Game Highlights from Deportivo La Coruña vs. Real Betis, 09/20/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0920/f0152f4d-c859-4edd-8597-445e7bebdbb7/f0152f4d-c859-4edd-8597-445e7bebdbb7.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49990926,
+      "headline": "Mourinho brings pictures of fouls to press conference after Madrid derby",
+      "description": "Mourinho brings pictures of fouls to press conference after Madrid derby",
+      "published": "2026-09-20T18:40:53Z",
+      "link": "https://www.espn.com/video/clip/_/id/49990926/mourinho-brings-pictures-fouls-press-conference-madrid-derby",
+      "images": [
+        {
+          "name": "Mourinho brings pictures of fouls to press conference after Madrid derby",
+          "caption": "Mourinho brings pictures of fouls to press conference after Madrid derby",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Mourinho_brings_pictures_of_fouls_to_press_conference_after_Madrid_derby_GLOBAL_2/dm_260920_COM_SOC_Analysis_Mourinho_brings_pictures_of_fouls_to_press_conference_after_Madrid_derby_GLOBAL_2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49990609,
+      "headline": "José Mourinho blasts ref, VAR: 'Two clear red cards' for Atlético Madrid",
+      "description": "José Mourinho blasted the referee and the VAR after Real Madrid's 2-1 derby defeat to Atlético Madrid, saying Atlético should have received \"two clear red cards.\"",
+      "published": "2026-09-20T19:56:14Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49990609/jose-mourinho-blasts-ref-var-two-clear-red-cards-atletico-madrid",
+      "images": [
+        {
+          "dataSourceIdentifier": "a32b265efe01b",
+          "id": 49990704,
+          "type": "header",
+          "name": "Mourinho [1296x729]",
+          "credit": "Getty",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0920/r1719565_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "What went wrong for Real in the Madrid derby?",
+          "caption": "What went wrong for Real in the Madrid derby?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49990489,
+      "headline": "Atlético Madrid win drama-filled Madrid derby",
+      "description": "Atlético Madrid win drama-filled Madrid derby",
+      "published": "2026-09-20T17:30:57Z",
+      "link": "https://www.espn.com/video/clip/_/id/49990489/atletico-madrid-win-drama-filled-madrid-derby",
+      "images": [
+        {
+          "name": "Atlético Madrid win drama-filled Madrid derby",
+          "caption": "Atlético Madrid win drama-filled Madrid derby",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_Atletico_Madrid_win_drama_filled_Madrid_derby/dm_260920_Atletico_Madrid_win_drama_filled_Madrid_derby.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49990218,
+      "headline": "What went wrong for Real in the Madrid derby?",
+      "description": "What went wrong for Real in the Madrid derby?",
+      "published": "2026-09-20T16:59:24Z",
+      "link": "https://www.espn.com/video/clip/_/id/49990218/what-went-wrong-real-madrid-derby",
+      "images": [
+        {
+          "name": "What went wrong for Real in the Madrid derby?",
+          "caption": "What went wrong for Real in the Madrid derby?",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49990193,
+      "headline": "Garcia: Atlético managed the Madrid derby better than Real",
+      "description": "Garcia: Atlético managed the Madrid derby better than Real",
+      "published": "2026-09-20T16:58:36Z",
+      "link": "https://www.espn.com/video/clip/_/id/49990193/atletico-managed-madrid-derby-better-real",
+      "images": [
+        {
+          "name": "Garcia: Atlético managed the Madrid derby better than Real",
+          "caption": "Garcia: Atlético managed the Madrid derby better than Real",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Garcia3A_AtlC3A9tico_managed_the_Madrid_derby_better_than_Real__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_Garcia3A_AtlC3A9tico_managed_the_Madrid_derby_better_than_Real__GLOBAL_2026-09-20.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49990037,
+      "headline": "Atletico Madrid vs. Real Madrid - Game Highlights",
+      "description": "Watch the Game Highlights from Atletico Madrid vs. Real Madrid, 09/20/2026",
+      "published": "2026-09-20T16:24:32Z",
+      "link": "https://www.espn.com/video/clip/_/id/49990037/atletico-madrid-vs-real-madrid-game-highlights",
+      "images": [
+        {
+          "name": "Atletico Madrid vs. Real Madrid - Game Highlights",
+          "caption": "Watch the Game Highlights from Atletico Madrid vs. Real Madrid, 09/20/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0920/8c3300a4-f11e-4973-a9ff-d13ec85a0906/8c3300a4-f11e-4973-a9ff-d13ec85a0906.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49968544,
+      "headline": "Jonathan David steers Atlético Madrid past 10-man Real Madrid",
+      "description": "Second-half goals from Alejandro Grimaldo and Jonathan David gave Atlético Madrid a 2-1 victory over 10-man Real Madrid at the Riyadh Air Metropolitano.",
+      "published": "2026-09-20T16:42:18Z",
+      "link": "http://www.espn.com/soccer/report/_/gameId/401882865",
+      "images": [
+        {
+          "dataSourceIdentifier": "786806feaa52d",
+          "id": 49989963,
+          "type": "header",
+          "name": "Jonathan David [1296x729]",
+          "credit": "Getty",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0920/r1719506_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Simeone: Mourinho crossed a line with referee rant after Madrid derby",
+          "caption": "Simeone: Mourinho crossed a line with referee rant after Madrid derby",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Presser_Simeone_Mourinho_crossed_a_line_withreferee_rant_after_Madrid_derby__20260920/dm_260920_COM_SOC_Presser_Simeone_Mourinho_crossed_a_line_withreferee_rant_after_Madrid_derby__20260920.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49988980,
+      "headline": "Getafe vs. Málaga - Game Highlights",
+      "description": "Watch the Game Highlights from Getafe vs. Málaga, 09/20/2026",
+      "published": "2026-09-20T14:11:51Z",
+      "link": "https://www.espn.com/video/clip/_/id/49988980/getafe-vs-malaga-game-highlights",
+      "images": [
+        {
+          "name": "Getafe vs. Málaga - Game Highlights",
+          "caption": "Watch the Game Highlights from Getafe vs. Málaga, 09/20/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0920/e08c25a8-6efc-43e0-bc5d-7e5bc76207a9/e08c25a8-6efc-43e0-bc5d-7e5bc76207a9.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49988133,
+      "headline": "Flick: Raphinha is very happy to play as a nine for Barcelona",
+      "description": "Flick: Raphinha is very happy to play as a nine for Barcelona",
+      "published": "2026-09-20T11:56:52Z",
+      "link": "https://www.espn.com/video/clip/_/id/49988133/raphinha-very-happy-play-nine-barcelona",
+      "images": [
+        {
+          "name": "Flick: Raphinha is very happy to play as a nine for Barcelona",
+          "caption": "Flick: Raphinha is very happy to play as a nine for Barcelona",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20.jpg"
         }
       ]
     },
@@ -155797,309 +156055,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0919/4b09b030-77eb-461b-89cf-7be275aef0ce/4b09b030-77eb-461b-89cf-7be275aef0ce.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49981393,
-      "headline": "Celta Vigo vs. Racing Santander - Game Highlights",
-      "description": "Watch the Game Highlights from Celta Vigo vs. Racing Santander, 09/19/2026",
-      "published": "2026-09-19T18:36:53Z",
-      "link": "https://www.espn.com/video/clip/_/id/49981393/celta-vigo-vs-racing-santander-game-highlights",
-      "images": [
-        {
-          "name": "Celta Vigo vs. Racing Santander - Game Highlights",
-          "caption": "Watch the Game Highlights from Celta Vigo vs. Racing Santander, 09/19/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0919/6a7602fb-4a52-4545-bf5b-ed84eadc1091/6a7602fb-4a52-4545-bf5b-ed84eadc1091.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49980368,
-      "headline": "Athletic Club vs. Alavés - Game Highlights",
-      "description": "Watch the Game Highlights from Athletic Club vs. Alavés, 09/20/2026",
-      "published": "2026-09-19T16:15:04Z",
-      "link": "https://www.espn.com/video/clip/_/id/49980368/athletic-club-vs-alaves-game-highlights",
-      "images": [
-        {
-          "name": "Athletic Club vs. Alavés - Game Highlights",
-          "caption": "Watch the Game Highlights from Athletic Club vs. Alavés, 09/20/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0919/adedc56a-92bb-463a-bfd6-66cef3f290af/adedc56a-92bb-463a-bfd6-66cef3f290af.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49980022,
-      "headline": "Deco confirms Barcelona contract extensions for Raphinha, Marc Bernal and Xavi Espart",
-      "description": "Barcelona sporting director Deco has confirmed agreements to extend Raphinha, Marc Bernal and Xavi Espart's contracts.",
-      "published": "2026-09-19T15:53:25Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49980022/deco-confirms-barcelona-contract-extensions-raphinha-marc-bernal-xavi-espart",
-      "images": [
-        {
-          "dataSourceIdentifier": "13ad1157617c3",
-          "id": 49980030,
-          "type": "header",
-          "name": "Raphinha Diaz of FC Barcelona  [1296x729]",
-          "credit": "Gongora/NurPhoto via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0919/r1718986_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Is Raphinha currently the best No. 9 in the world?",
-          "caption": "Is Raphinha currently the best No. 9 in the world?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0917/dm_260917_COM_SOC_Analysis_Is_Raphinha_currently_the_best_No_9_in_the_world3F_GLOBAL_2026-09-17/dm_260917_COM_SOC_Analysis_Is_Raphinha_currently_the_best_No_9_in_the_world3F_GLOBAL_2026-09-17.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49979712,
-      "headline": "José Mourinho rejects Real Madrid, Barcelona comparisons: LaLiga 'a marathon'",
-      "description": "José Mourinho has rejected comparisons between his Real Madrid team and high-scoring Barcelona, saying the LaLiga season is \"a marathon\" ahead of Sunday's Madrid Derby.",
-      "published": "2026-09-19T14:54:39Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49979712/jose-mourinho-rejects-real-madrid-barcelona-comparisons-laliga-marathon",
-      "images": [
-        {
-          "dataSourceIdentifier": "a92860c30c5ed",
-          "id": 49678984,
-          "type": "header",
-          "name": "Mourinho [1296x729]",
-          "credit": "Getty",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0821/r1704746_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Garcia: Diomandé would make the difference in Madrid derby",
-          "caption": "Garcia: Diomandé would make the difference in Madrid derby",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/dm_260918_Garcia_Diomande_would_make_the_difference_in_Madrid_derby/dm_260918_Garcia_Diomande_would_make_the_difference_in_Madrid_derby.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49979509,
-      "headline": "Osasuna vs. Rayo Vallecano - Game Highlights",
-      "description": "Watch the Game Highlights from Osasuna vs. Rayo Vallecano, 09/19/2026",
-      "published": "2026-09-19T14:01:56Z",
-      "link": "https://www.espn.com/video/clip/_/id/49979509/osasuna-vs-rayo-vallecano-game-highlights",
-      "images": [
-        {
-          "name": "Osasuna vs. Rayo Vallecano - Game Highlights",
-          "caption": "Watch the Game Highlights from Osasuna vs. Rayo Vallecano, 09/19/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0919/289b7b01-acc3-4805-85f8-20bb44d7e900/289b7b01-acc3-4805-85f8-20bb44d7e900.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49978904,
-      "headline": "Diego Simeone has 'huge respect' for José Mourinho as Madrid Derby looms",
-      "description": "Diego Simeone said he has \"huge respect\" for José Mourinho has the two coaches prepare to face each other in Sunday's Madrid Derby in their first meeting since 2014.",
-      "published": "2026-09-19T12:34:30Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49978904/diego-simeone-huge-respec-jose-mourinho-real-madrid-atletico-derby-looms",
-      "images": [
-        {
-          "dataSourceIdentifier": "57d702cee76e5",
-          "id": 42570529,
-          "type": "header",
-          "name": "Diego Simeone Atletico [1296x729]",
-          "alt": "Diego Simeone, Head Coach of Atletico de Madrid, applauds the fans prior to the LaLiga match between Atletico de Madrid and Deportivo Alaves at Riyadh Air Metropolitano on November 23, 2024 in Madrid, Spain.",
-          "credit": "Gonzalo Arroyo Moreno/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2024/1124/r1418835_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Garcia: Diomandé would make the difference in Madrid derby",
-          "caption": "Garcia: Diomandé would make the difference in Madrid derby",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/dm_260918_Garcia_Diomande_would_make_the_difference_in_Madrid_derby/dm_260918_Garcia_Diomande_would_make_the_difference_in_Madrid_derby.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49975555,
-      "headline": "Source: Former Mexico boss Aguirre close to taking over struggling Valencia",
-      "description": "Former Mexico boss Javier Aguirre has emerged as the leading candidate to fill Valencia's coaching vacancy, a source told ESPN.",
-      "published": "2026-09-19T01:46:11Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49975555/source-valencia-advanced-talks-ex-mexico-boss-aguirre-coaching-job",
-      "images": [
-        {
-          "dataSourceIdentifier": "f921275b66891",
-          "id": 49975518,
-          "type": "header",
-          "name": "Javier Aguirre [1296x729]",
-          "caption": "Veteran coach Javier Aguirre is eyeing a return to Spanish football after stepping down as Mexico manager following the 2026 World Cup.",
-          "credit": "Photo by Ryan Pierse - FIFA/FIFA via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0918/r1718805_1296x729_16-9.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49975225,
-      "headline": "Garcia: Diomandé would make the difference in Madrid derby",
-      "description": "Garcia: Diomandé would make the difference in Madrid derby",
-      "published": "2026-09-18T21:57:54Z",
-      "link": "https://www.espn.com/video/clip/_/id/49975225/diomande-make-difference-madrid-derby",
-      "images": [
-        {
-          "name": "Garcia: Diomandé would make the difference in Madrid derby",
-          "caption": "Garcia: Diomandé would make the difference in Madrid derby",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/dm_260918_Garcia_Diomande_would_make_the_difference_in_Madrid_derby/dm_260918_Garcia_Diomande_would_make_the_difference_in_Madrid_derby.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49975036,
-      "headline": "Espanyol vs. Elche - Game Highlights",
-      "description": "Watch the Game Highlights from Espanyol vs. Elche, 09/18/2026",
-      "published": "2026-09-18T21:10:01Z",
-      "link": "https://www.espn.com/video/clip/_/id/49975036/espanyol-vs-elche-game-highlights",
-      "images": [
-        {
-          "name": "Espanyol vs. Elche - Game Highlights",
-          "caption": "Watch the Game Highlights from Espanyol vs. Elche, 09/18/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0918/8db12e66-afb4-4840-b691-3756c6c01c32/8db12e66-afb4-4840-b691-3756c6c01c32.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49974179,
-      "headline": "Lookman: Alvarez didn't break relationship with Atlético squad",
-      "description": "Lookman: Alvarez didn't break relationship with Atlético squad",
-      "published": "2026-09-18T17:41:03Z",
-      "link": "https://www.espn.com/video/clip/_/id/49974179/alvarez-break-relationship-atletico-squad",
-      "images": [
-        {
-          "name": "Lookman: Alvarez didn't break relationship with Atlético squad",
-          "caption": "Lookman: Alvarez didn't break relationship with Atlético squad",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/dm_260918_COM_SOC_Interview_Lookman_Alvarez_didnt_break_relationship_with_Atletico_squad_20260918_GLOBAL/dm_260918_COM_SOC_Interview_Lookman_Alvarez_didnt_break_relationship_with_Atletico_squad_20260918_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49972742,
-      "headline": "Lamine Yamal says he has experienced racism 'a thousand times'",
-      "description": "Barcelona star Lamine Yamal has revealed that he has experienced racism \"a thousand times.\"",
-      "published": "2026-09-18T19:01:35Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49972742/lamine-yamal-reveals-experienced-racism-thousand-s",
-      "images": [
-        {
-          "dataSourceIdentifier": "2004b1c5000e9",
-          "id": 49829913,
-          "type": "header",
-          "name": "Yamal [1296x729]",
-          "credit": "(Photo by Pedro Salado/Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0905/r1711587_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Garcia expects Lamine Yamal to win Ballon d'Or 'very soon'",
-          "caption": "Garcia expects Lamine Yamal to win Ballon d'Or 'very soon'",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0906/dm_260906_COM_SOC_Analysis_Garcia_expects_Lamine_Yamal_to_win_Ballon_dOr_very_soon_20260906_GLOBAL/dm_260906_COM_SOC_Analysis_Garcia_expects_Lamine_Yamal_to_win_Ballon_dOr_very_soon_20260906_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49972585,
-      "headline": "Kylian Mbappé: I want to bring Ballon d'Or to Bernabéu despite boos",
-      "description": "Kylian Mbappé has reiterated his desire to win the Ballon d'Or but has called for more support from Real Madrid fans after a trophyless two years at the club.",
-      "published": "2026-09-18T13:00:12Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49972585/kylian-mbappe-want-bring-ballon-dor-bernabeu-boos",
-      "images": [
-        {
-          "dataSourceIdentifier": "b7abfa536348e",
-          "id": 49972498,
-          "type": "header",
-          "name": "Kylian Mbappe [1296x729]",
-          "alt": "Kylian Mbappe looks on.",
-          "credit": "(Photo by Florencia Tan Jun - UEFA/UEFA via Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0918/r1718524_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Burley not sure Vinicius Jr. is ready to step up if Mbappe falters",
-          "caption": "Burley not sure Vinicius Jr. is ready to step up if Mbappe falters",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0917/dm_260917_COM_SOC_analysis_Burley_not_sure_Vinicius_Jr_is_ready_to_step_up_if_Mbappe_falters_20260917_GLO/dm_260917_COM_SOC_analysis_Burley_not_sure_Vinicius_Jr_is_ready_to_step_up_if_Mbappe_falters_20260917_GLO.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49972427,
-      "headline": "Kylian Mbappé leaves Nike and signs with sponsor On",
-      "description": "Kylian Mbappé has signed with sportswear brand On after leaving Nike.",
-      "published": "2026-09-18T12:53:34Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49972427/kylian-mbappe-leaves-nike-signs-sponsor-on",
-      "images": [
-        {
-          "dataSourceIdentifier": "e31c7a998c734",
-          "id": 49901365,
-          "type": "header",
-          "name": "Kylian Mbappe [1296x729]",
-          "credit": "Photo By Dennis Agyeman/Europa Press via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0911/r1714783_2_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Kirkland: Mbappé is in Ballon d'Or campaign mode amidst criticism",
-          "caption": "Kirkland: Mbappé is in Ballon d'Or campaign mode amidst criticism",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0911/dm_260911_Kirkland_Mbappe_is_in_Ballon_dOr_campaign_mode_amidst_criticism/dm_260911_Kirkland_Mbappe_is_in_Ballon_dOr_campaign_mode_amidst_criticism.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49971901,
-      "headline": "Should Real Madrid be 'clear' favourites to beat Atlético Madrid?",
-      "description": "Should Real Madrid be 'clear' favourites to beat Atlético Madrid?",
-      "published": "2026-09-18T11:33:22Z",
-      "link": "https://www.espn.com/video/clip/_/id/49971901/should-real-madrid-clear-favourites-beat-atletico-madrid",
-      "images": [
-        {
-          "name": "Should Real Madrid be 'clear' favourites to beat Atlético Madrid?",
-          "caption": "Should Real Madrid be 'clear' favourites to beat Atlético Madrid?",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/dm_260918_COM_SOC_Analysis_Should_Real_Madrid_be_E452/dm_260918_COM_SOC_Analysis_Should_Real_Madrid_be_E452.jpg"
         }
       ]
     }
@@ -165095,7 +165050,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-09-20T09:49:42.166Z",
+    "updatedAt": "2026-09-21T10:45:39.835Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
