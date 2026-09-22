@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-21T10:45:39.836Z",
+    "generatedAt": "2026-09-22T09:59:02.979Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -155678,6 +155678,364 @@
   },
   "news": [
     {
+      "id": 50004079,
+      "headline": "Gomez: Raphinha is the best player in the world",
+      "description": "Gomez: Raphinha is the best player in the world",
+      "published": "2026-09-22T09:44:51Z",
+      "link": "https://www.espn.com/video/clip/_/id/50004079/raphinha-best-player-world",
+      "images": [
+        {
+          "name": "Gomez: Raphinha is the best player in the world",
+          "caption": "Gomez: Raphinha is the best player in the world",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0922/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50003944,
+      "headline": "Barcelona to return to Olympic Stadium next season as Camp Nou costs rise to €2 billion",
+      "description": "Barcelona will return to the Olympic Stadium for several months next season after approving another €510 million ($585m) of financing to finish the Spotify Camp Nou redevelopment project.",
+      "published": "2026-09-22T09:29:20Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50003944/barcelona-return-olympic-stadium-next-season-camp-nou-costs-rise-2-billion",
+      "images": [
+        {
+          "dataSourceIdentifier": "7b3655b250f0a",
+          "id": 50004008,
+          "type": "header",
+          "name": "Barca Stadium [1296x729]",
+          "alt": "BARCELONA, SPAIN - MARCH 12: General view of the action during the UEFA Champions League 2023/24 round of 16 second leg match between FC Barcelona and SSC Napoli at Estadi Olimpic Lluis Companys on March 12, 2024 in Barcelona, Spain.",
+          "credit": "David Ramos - UEFA/UEFA via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0922/r1720325_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Flick: Raphinha is very happy to play as a nine for Barcelona",
+          "caption": "Flick: Raphinha is very happy to play as a nine for Barcelona",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49953407,
+      "headline": "Soccer's wildest warmup kits of 2026-27: The good, the bad and the ugly",
+      "description": "Forget home, away and third alternate jerseys -- the prematch warmup kit is where the real fun is to be had. Get a load of this season's best and worst.",
+      "published": "2026-09-22T08:01:17Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49953407/soccer-wildest-warmup-kits-2026-27-good-bad-ugly",
+      "images": [
+        {
+          "dataSourceIdentifier": "ebf804a417db6",
+          "id": 49955912,
+          "type": "header",
+          "name": "Warm-up kits lead image Yamal Bruno McGinn [1296x729]",
+          "credit": "David Ramos/Getty Images / Ivan Romano/Getty Images / Alex Livesey/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717453_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "e9e81b72d82e7",
+          "id": 49953753,
+          "type": "header",
+          "name": "Lamine Yamal [1296x729]",
+          "caption": "Lamine Yamal",
+          "alt": "Lamine Yamal",
+          "credit": "Jose Breton/Pics Action/NurPhoto",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717352_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "441f0e5e36b3f",
+          "id": 49953831,
+          "type": "header",
+          "name": "Gavi [1296x729]",
+          "caption": "Gavi",
+          "alt": "Gavi",
+          "credit": "Denis Doyle/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717356_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "e7bfc264f2f3c",
+          "id": 49955796,
+          "type": "header",
+          "name": "Bryan Mbeumo [1296x729]",
+          "credit": "Mark Cosgrove/News Images/NurPhoto via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717447_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "eefe7480af63f",
+          "id": 49953882,
+          "type": "header",
+          "name": "Virgil van Dijk [1296x729]",
+          "caption": "Virgil van Dijk",
+          "alt": "Virgil van Dijk",
+          "credit": "George Wood/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717362_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "30c2b1439ad1d",
+          "id": 49953914,
+          "type": "header",
+          "name": "Vinicius Junior [1296x729]",
+          "caption": "Vinicius Junior",
+          "alt": "Vinicius Junior",
+          "credit": "Federico Titone/SOPA Images/LightRocket",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717363_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "a1496431d5730",
+          "id": 49955642,
+          "type": "header",
+          "name": "Khvicha Kvaratskhelia [1296x729]",
+          "credit": "Sameer AL-DOUMY / AFP via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717441_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "93f7d322139a7",
+          "id": 49953972,
+          "type": "header",
+          "name": "Santiago Castro [1296x729]",
+          "caption": "Santiago Castro",
+          "alt": "Santiago Castro",
+          "credit": "Andrea Staccioli/Insidefoto/LightRocket",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717367_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "53129136a35f3",
+          "id": 49954019,
+          "type": "header",
+          "name": "Nicolo Barella [1296x729]",
+          "caption": "Nicolo Barella",
+          "alt": "Nicolo Barella",
+          "credit": "sportinfoto/DeFodi Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717369_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "560df58f2e607",
+          "id": 49954070,
+          "type": "header",
+          "name": "Luka Modric [1296x729]",
+          "caption": "Luka Modric",
+          "alt": "Luka Modric",
+          "credit": "sportinfoto/DeFodi Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717372_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "97447e6e67d1a",
+          "id": 49955616,
+          "type": "header",
+          "name": "Lewis O'Brien [1296x729]",
+          "credit": "Andrew Lewis/News Images/NurPhoto via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717439_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "96ecb7c566684",
+          "id": 49955688,
+          "type": "header",
+          "name": "Luis Diaz [1296x729]",
+          "credit": "S. Stingl/FC Bayern via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717442_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "4152589b26f85",
+          "id": 49954488,
+          "type": "header",
+          "name": "Julian Brandt [1296x729]",
+          "caption": "Julian Brandt",
+          "alt": "Julian Brandt",
+          "credit": "Rene Nijhuis/MB Media/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717394_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "7298a865c8b42",
+          "id": 49954527,
+          "type": "header",
+          "name": "Erling Haaland [1296x729]",
+          "caption": "Erling Haaland",
+          "alt": "Erling Haaland",
+          "credit": "James Gill - Danehouse",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717396_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "52a8fa3cc3dfc",
+          "id": 49954553,
+          "type": "header",
+          "name": "Conor Gallagher [1296x729]",
+          "caption": "Conor Gallagher",
+          "alt": "Conor Gallagher",
+          "credit": "Shaun Brooks - CameraSport",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717397_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "b5d240f077392",
+          "id": 49954678,
+          "type": "header",
+          "name": "Martin Odegaard [1296x729]",
+          "caption": "Martin Odegaard",
+          "alt": "Martin Odegaard",
+          "credit": "Henry NICHOLLS / AFP",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717404_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "1442d5680dcb0",
+          "id": 49954707,
+          "type": "header",
+          "name": "Julian Alvarez [1296x729]",
+          "caption": "Julian Alvarez",
+          "alt": "Julian Alvarez",
+          "credit": "Sheng Cheng/NurPhoto",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717405_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "6d0f74a7d3f4b",
+          "id": 49954736,
+          "type": "header",
+          "name": "Morgan Rogers [1296x729]",
+          "caption": "Morgan Rogers",
+          "alt": "Morgan Rogers",
+          "credit": "Vince Mignott/MB Media",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717406_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "478c82f6cb31f",
+          "id": 49955774,
+          "type": "header",
+          "name": "Alejandro Garnacho [1296x729]",
+          "credit": "Stewart Kendall/Sportsphoto/Allstar via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717446_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "25ba95947fa4f",
+          "id": 49955730,
+          "type": "header",
+          "name": "Ao Tanaka [1296x729]",
+          "credit": "Richard Martin-Roberts - CameraSport via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717444_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "f16db23e48ba5",
+          "id": 49954816,
+          "type": "header",
+          "name": "Kerim Alajbegović [1296x729]",
+          "caption": "Kerim Alajbegović",
+          "alt": "Kerim Alajbegović",
+          "credit": "Ivan Romano/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717409_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "3d883f750a7e2",
+          "id": 49955093,
+          "type": "header",
+          "name": "Zan Vipotnik [1296x729]",
+          "caption": "Zan Vipotnik",
+          "alt": "Zan Vipotnik",
+          "credit": "Andrew Lewis/News Images/NurPhoto",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717418_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "aafb9053678ec",
+          "id": 49955709,
+          "type": "header",
+          "name": "Jhon Duran [1296x729]",
+          "credit": "Luis Loureiro/Eurasia Sport Images/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0916/r1717443_1296x729_16-9.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50000710,
+      "headline": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+      "description": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+      "published": "2026-09-21T21:28:28Z",
+      "link": "https://www.espn.com/video/clip/_/id/50000710/real-madrid-working-mourinho",
+      "images": [
+        {
+          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49998075,
+      "headline": "Kylian Mbappé refuses to criticise referee despite Madrid derby 'mistakes'",
+      "description": "Kylian Mbappé has refused to criticise the referee in charge of Real Madrid's 2-1 derby defeat to Atlético Madrid, despite admitting that official Miguel Ángel Ortiz Arias made \"mistakes\" in his handling of the match.",
+      "published": "2026-09-21T18:47:32Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49998075/kylian-mbappe-real-madrid-atletico-madrid-derby-la-liga-referee-jose-mourinho",
+      "images": [
+        {
+          "dataSourceIdentifier": "c73c201a9acac",
+          "id": 49998044,
+          "type": "header",
+          "name": "Mbappe [1296x729]",
+          "credit": "Jose Breton/Pics Action/NurPhoto via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0921/r1719974_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "What went wrong for Real in the Madrid derby?",
+          "caption": "What went wrong for Real in the Madrid derby?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20.jpg"
+        }
+      ]
+    },
+    {
       "id": 49940653,
       "headline": "Why this 3-week international break is longest ever (and why that's a good thing)",
       "description": "Fans have grown used to international games interrupting the club season, but this break will be a week longer than before. It's not as bad as it sounds.",
@@ -155701,6 +156059,35 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0720/ss_20260720_102052756_3598280/ss_20260720_102052756_3598280.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49996528,
+      "headline": "Mourinho's ref rants overshadow Madrid derby defeat; can Arsenal shrug off heavy loss?",
+      "description": "Real Madrid lost the derby to Atletico this weekend, but Jose Mourinho's focus was on the refereeing postgame, not the result. Plus: Can Arsenal shake off a deservedly heavy defeat at Brighton?",
+      "published": "2026-09-21T13:36:43Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49996528/real-madrid-atletico-madrid-jose-mourinho-ref-complaint-arsenal-brighton-arteta-marcotti",
+      "images": [
+        {
+          "dataSourceIdentifier": "6dc159ca2c1cf",
+          "id": 49996866,
+          "type": "header",
+          "name": "Jose Mourinho [1296x729]",
+          "caption": "Jose Mourinho",
+          "alt": "Jose Mourinho",
+          "credit": "Dennis Agyeman/Europa Press",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0921/r1719918_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Mourinho brings pictures of fouls to press conference after Madrid derby",
+          "caption": "Mourinho brings pictures of fouls to press conference after Madrid derby",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Mourinho_brings_pictures_of_fouls_to_press_conference_after_Madrid_derby_GLOBAL_2/dm_260920_COM_SOC_Analysis_Mourinho_brings_pictures_of_fouls_to_press_conference_after_Madrid_derby_GLOBAL_2.jpg"
         }
       ]
     },
@@ -155920,11 +156307,11 @@
         },
         {
           "type": "Media",
-          "name": "Simeone: Mourinho crossed a line with referee rant after Madrid derby",
-          "caption": "Simeone: Mourinho crossed a line with referee rant after Madrid derby",
+          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Presser_Simeone_Mourinho_crossed_a_line_withreferee_rant_after_Madrid_derby__20260920/dm_260920_COM_SOC_Presser_Simeone_Mourinho_crossed_a_line_withreferee_rant_after_Madrid_derby__20260920.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
         }
       ]
     },
@@ -155942,119 +156329,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0920/e08c25a8-6efc-43e0-bc5d-7e5bc76207a9/e08c25a8-6efc-43e0-bc5d-7e5bc76207a9.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49988133,
-      "headline": "Flick: Raphinha is very happy to play as a nine for Barcelona",
-      "description": "Flick: Raphinha is very happy to play as a nine for Barcelona",
-      "published": "2026-09-20T11:56:52Z",
-      "link": "https://www.espn.com/video/clip/_/id/49988133/raphinha-very-happy-play-nine-barcelona",
-      "images": [
-        {
-          "name": "Flick: Raphinha is very happy to play as a nine for Barcelona",
-          "caption": "Flick: Raphinha is very happy to play as a nine for Barcelona",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49983111,
-      "headline": "Sevilla's Luis García: 'It's a joke' Raphinha not Ballon d'Or nominee after another Barcelona hat trick",
-      "description": "Sevilla coach Luis García said it is a joke Raphinha is not among the Ballon d'Or nominees after watching the Barcelona forward score a hat-trick in his side's 3-1 defeat on Saturday.",
-      "published": "2026-09-19T22:55:15Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49983111/raphinha-ballon-dor-sevilla-luis-garcia-joke-barcelona-hat-trick",
-      "images": [
-        {
-          "dataSourceIdentifier": "103fa43d7ecf7",
-          "id": 49983151,
-          "type": "header",
-          "name": "Raphinha [1296x729]",
-          "alt": "Raphinha celebrates.",
-          "credit": "(Photo by Fran Santiago/Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0919/r1719156_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Hislop: Right now Raphinha is the world's best player",
-          "caption": "Hislop: Right now Raphinha is the world's best player",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0919/dm_260919_Hislop_Right_now_Raphinha_is_the_worlds_best_player/dm_260919_Hislop_Right_now_Raphinha_is_the_worlds_best_player.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49982933,
-      "headline": "McManaman: Madrid derby puts huge pressure on Mourinho",
-      "description": "McManaman: Madrid derby puts huge pressure on Mourinho",
-      "published": "2026-09-19T22:25:26Z",
-      "link": "https://www.espn.com/video/clip/_/id/49982933/madrid-derby-puts-huge-pressure-mourinho",
-      "images": [
-        {
-          "name": "McManaman: Madrid derby puts huge pressure on Mourinho",
-          "caption": "McManaman: Madrid derby puts huge pressure on Mourinho",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0919/dm_260919_McManaman_Madrid_derby_puts_huge_pressure_on_Mourinho/dm_260919_McManaman_Madrid_derby_puts_huge_pressure_on_Mourinho.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49982791,
-      "headline": "Hislop: Right now Raphinha is the world's best player",
-      "description": "Hislop: Right now Raphinha is the world's best player",
-      "published": "2026-09-19T22:08:35Z",
-      "link": "https://www.espn.com/video/clip/_/id/49982791/right-now-raphinha-world-best-player",
-      "images": [
-        {
-          "name": "Hislop: Right now Raphinha is the world's best player",
-          "caption": "Hislop: Right now Raphinha is the world's best player",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0919/dm_260919_Hislop_Right_now_Raphinha_is_the_worlds_best_player/dm_260919_Hislop_Right_now_Raphinha_is_the_worlds_best_player.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49982524,
-      "headline": "Raphinha hat trick powers Barcelona past Sevilla",
-      "description": "Raphinha hat trick powers Barcelona past Sevilla",
-      "published": "2026-09-19T22:25:18Z",
-      "link": "https://www.espn.com/video/clip/_/id/49982524/raphinha-hat-trick-powers-barcelona-sevilla",
-      "images": [
-        {
-          "name": "Raphinha hat trick powers Barcelona past Sevilla",
-          "caption": "Raphinha hat trick powers Barcelona past Sevilla",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0919/dm_260919_Raphinha_hat_trick_powers_Barcelona_past_Sevilla_31/dm_260919_Raphinha_hat_trick_powers_Barcelona_past_Sevilla_31.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49982383,
-      "headline": "Sevilla vs. Barcelona - Game Highlights",
-      "description": "Watch the Game Highlights from Sevilla vs. Barcelona, 09/20/2026",
-      "published": "2026-09-19T21:06:55Z",
-      "link": "https://www.espn.com/video/clip/_/id/49982383/sevilla-vs-barcelona-game-highlights",
-      "images": [
-        {
-          "name": "Sevilla vs. Barcelona - Game Highlights",
-          "caption": "Watch the Game Highlights from Sevilla vs. Barcelona, 09/20/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0919/4b09b030-77eb-461b-89cf-7be275aef0ce/4b09b030-77eb-461b-89cf-7be275aef0ce.jpg"
         }
       ]
     }
@@ -165050,7 +165324,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-09-21T10:45:39.835Z",
+    "updatedAt": "2026-09-22T09:59:02.979Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
