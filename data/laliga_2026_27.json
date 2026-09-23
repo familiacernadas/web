@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-22T09:59:02.979Z",
+    "generatedAt": "2026-09-23T10:00:39.505Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -155678,6 +155678,108 @@
   },
   "news": [
     {
+      "id": 50007365,
+      "headline": "Spain refs back Real, say Lee deserved red for Valverde tackle",
+      "description": "Spain's Technical Committee of Referees said Lee Kang-In should have been sent off in Sunday's Madrid derby, while backing the decision not to show Cristian Romero a red card.",
+      "published": "2026-09-22T19:30:51Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50007365/spain-refs-back-real-lee-red-valverde-tackle",
+      "images": [
+        {
+          "dataSourceIdentifier": "cc73eacf5d691",
+          "id": 50007461,
+          "type": "header",
+          "name": "Lee challenge Valverde Madrid derby_260920 [1024x576]",
+          "caption": "Atletico Madrid's Lee Kang-In avoided a red card for his tackle on Real's Federico Valverde during the weekend's derby in LaLiga.",
+          "alt": "Atletico Madrid's Lee Kang-In avoided a red card for his tackle on Real's Federico Valverde during the weekend's derby in LaLiga.",
+          "credit": "Getty Images",
+          "height": 576,
+          "width": 1024,
+          "url": "https://a.espncdn.com/photo/2026/0922/r1720531_1024x576_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "What went wrong for Real in the Madrid derby?",
+          "caption": "What went wrong for Real in the Madrid derby?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50004516,
+      "headline": "Kylian Mbappé on past Liverpool transfer talks: 'Mum went to Anfield and fell in love'",
+      "description": "Kylian Mbappé has described how his mother \"fell in love\" with Anfield and was keen for him to sign for Liverpool before he decided to join PSG.",
+      "published": "2026-09-22T12:02:31Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50004516/kylian-mbappe-liverpool-transfer-talks-mum-went-anfield-fell-love",
+      "images": [
+        {
+          "dataSourceIdentifier": "ff3d84bc54069",
+          "id": 50004598,
+          "type": "header",
+          "name": "Kylian Mbappe #10 of France is congratulated by Jurgen Klopp after the team's 2-0 victory during the FIFA World Cup 2026 Quarter Final match between France and Morocco at Boston Stadium\n [1296x729]",
+          "alt": "Kylian Mbappe #10 of France is congratulated by Jurgen Klopp after the team's 2-0 victory during the FIFA World Cup 2026 Quarter Final match between France and Morocco at Boston Stadium",
+          "credit": "Michael Regan - FIFA/FIFA via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0922/r1720348_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50004142,
+      "headline": "Gomez: Jonathan David and Julian Alvarez should play side-by-side",
+      "description": "Gomez: Jonathan David and Julian Alvarez should play side-by-side",
+      "published": "2026-09-22T10:22:04Z",
+      "link": "https://www.espn.com/video/clip/_/id/50004142/jonathan-david-julian-alvarez-play-side-side",
+      "images": [
+        {
+          "name": "Gomez: Jonathan David and Julian Alvarez should play side-by-side",
+          "caption": "Gomez: Jonathan David and Julian Alvarez should play side-by-side",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0922/dm_260922_Gomez_Jonathan_David_and_Julian_Alvarez_should_play_sidebyside/dm_260922_Gomez_Jonathan_David_and_Julian_Alvarez_should_play_sidebyside.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50004139,
+      "headline": "Real Madrid conspiracy claims dismissed as a 'smokescreen' by LaLiga president",
+      "description": "LaLiga president Javier Tebas has called claims of a refereeing conspiracy against Real Madrid \"a smokescreen to hide other shortcomings\" after the team's defeat to Atletico Madrid in Sunday's derby.",
+      "published": "2026-09-22T15:42:19Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50004139/laliga-president-javier-tebas-dismisses-real-madrid-conspiracy-claims-smokescreen",
+      "images": [
+        {
+          "dataSourceIdentifier": "957625d057110",
+          "id": 50004117,
+          "type": "header",
+          "name": "Javier Tebas [1296x729]",
+          "alt": "MONACO, MONACO - OCTOBER 21: Javier Tebas during the SPORTEL Monaco 2025 - Global Sports Media & Technology Convention on October 21, 2025 in Monaco, Monaco.",
+          "credit": "Arnold Jerocki/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0922/r1720330_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
+        }
+      ]
+    },
+    {
       "id": 50004079,
       "headline": "Gomez: Raphinha is the best player in the world",
       "description": "Gomez: Raphinha is the best player in the world",
@@ -156251,84 +156353,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49990193,
-      "headline": "Garcia: Atlético managed the Madrid derby better than Real",
-      "description": "Garcia: Atlético managed the Madrid derby better than Real",
-      "published": "2026-09-20T16:58:36Z",
-      "link": "https://www.espn.com/video/clip/_/id/49990193/atletico-managed-madrid-derby-better-real",
-      "images": [
-        {
-          "name": "Garcia: Atlético managed the Madrid derby better than Real",
-          "caption": "Garcia: Atlético managed the Madrid derby better than Real",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Garcia3A_AtlC3A9tico_managed_the_Madrid_derby_better_than_Real__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_Garcia3A_AtlC3A9tico_managed_the_Madrid_derby_better_than_Real__GLOBAL_2026-09-20.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49990037,
-      "headline": "Atletico Madrid vs. Real Madrid - Game Highlights",
-      "description": "Watch the Game Highlights from Atletico Madrid vs. Real Madrid, 09/20/2026",
-      "published": "2026-09-20T16:24:32Z",
-      "link": "https://www.espn.com/video/clip/_/id/49990037/atletico-madrid-vs-real-madrid-game-highlights",
-      "images": [
-        {
-          "name": "Atletico Madrid vs. Real Madrid - Game Highlights",
-          "caption": "Watch the Game Highlights from Atletico Madrid vs. Real Madrid, 09/20/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0920/8c3300a4-f11e-4973-a9ff-d13ec85a0906/8c3300a4-f11e-4973-a9ff-d13ec85a0906.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49968544,
-      "headline": "Jonathan David steers Atlético Madrid past 10-man Real Madrid",
-      "description": "Second-half goals from Alejandro Grimaldo and Jonathan David gave Atlético Madrid a 2-1 victory over 10-man Real Madrid at the Riyadh Air Metropolitano.",
-      "published": "2026-09-20T16:42:18Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882865",
-      "images": [
-        {
-          "dataSourceIdentifier": "786806feaa52d",
-          "id": 49989963,
-          "type": "header",
-          "name": "Jonathan David [1296x729]",
-          "credit": "Getty",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0920/r1719506_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49988980,
-      "headline": "Getafe vs. Málaga - Game Highlights",
-      "description": "Watch the Game Highlights from Getafe vs. Málaga, 09/20/2026",
-      "published": "2026-09-20T14:11:51Z",
-      "link": "https://www.espn.com/video/clip/_/id/49988980/getafe-vs-malaga-game-highlights",
-      "images": [
-        {
-          "name": "Getafe vs. Málaga - Game Highlights",
-          "caption": "Watch the Game Highlights from Getafe vs. Málaga, 09/20/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0920/e08c25a8-6efc-43e0-bc5d-7e5bc76207a9/e08c25a8-6efc-43e0-bc5d-7e5bc76207a9.jpg"
         }
       ]
     }
@@ -165324,7 +165348,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-09-22T09:59:02.979Z",
+    "updatedAt": "2026-09-23T10:00:39.505Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
