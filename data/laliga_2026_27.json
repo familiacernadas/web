@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-23T10:00:39.505Z",
+    "generatedAt": "2026-09-24T10:03:00.171Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -155678,6 +155678,71 @@
   },
   "news": [
     {
+      "id": 50018095,
+      "headline": "Transfer rumors, news: Bayern's Karl to get 'dream' Real Madrid move?",
+      "description": "Bayern Munich attacking midfielder Lennart Karl could get his dream move to Real Madrid. Transfer Talk has the latest.",
+      "published": "2026-09-24T08:25:33Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50018095/transfer-rumors-news-bayern-munich-karl-get-dream-real-madrid-move",
+      "images": [
+        {
+          "dataSourceIdentifier": "6489a857d1559",
+          "id": 48977144,
+          "type": "header",
+          "name": "Lennart Karl [1296x729]",
+          "alt": "Lennart Karl looks on during a Germany training session.",
+          "credit": "(Photo by Alexander Hassenstein/Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0605/r1668673_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Nicol: I have sympathy for Mourinho after Madrid derby",
+          "caption": "Nicol: I have sympathy for Mourinho after Madrid derby",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0923/dm_260923_COM_SOC_Analysis_Nicol3A_I_have_sympathy_for_Mourinho_after_Madrid_derby__GLOBAL_2026-09-23/dm_260923_COM_SOC_Analysis_Nicol3A_I_have_sympathy_for_Mourinho_after_Madrid_derby__GLOBAL_2026-09-23.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50015995,
+      "headline": "Nicol: I have sympathy for Mourinho after Madrid derby",
+      "description": "Nicol: I have sympathy for Mourinho after Madrid derby",
+      "published": "2026-09-23T22:15:24Z",
+      "link": "https://www.espn.com/video/clip/_/id/50015995/sympathy-mourinho-madrid-derby",
+      "images": [
+        {
+          "name": "Nicol: I have sympathy for Mourinho after Madrid derby",
+          "caption": "Nicol: I have sympathy for Mourinho after Madrid derby",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0923/dm_260923_COM_SOC_Analysis_Nicol3A_I_have_sympathy_for_Mourinho_after_Madrid_derby__GLOBAL_2026-09-23/dm_260923_COM_SOC_Analysis_Nicol3A_I_have_sympathy_for_Mourinho_after_Madrid_derby__GLOBAL_2026-09-23.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50012135,
+      "headline": "Former Mexico coach Aguirre takes over at struggling Valencia",
+      "description": "LaLiga side Valencia have appointed former Mexico coach Javier Aguirre on an initial deal until the end of the season.",
+      "published": "2026-09-23T10:29:48Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50012135/former-mexico-coach-aguirre-takes-struggling-valencia",
+      "images": [
+        {
+          "dataSourceIdentifier": "f921275b66891",
+          "id": 49975518,
+          "type": "header",
+          "name": "Javier Aguirre [1296x729]",
+          "caption": "Veteran coach Javier Aguirre is eyeing a return to Spanish football after stepping down as Mexico manager following the 2026 World Cup.",
+          "credit": "Photo by Ryan Pierse - FIFA/FIFA via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0918/r1718805_1296x729_16-9.jpg"
+        }
+      ]
+    },
+    {
       "id": 50007365,
       "headline": "Spain refs back Real, say Lee deserved red for Valverde tackle",
       "description": "Spain's Technical Committee of Referees said Lee Kang-In should have been sent off in Sunday's Madrid derby, while backing the decision not to show Cristian Romero a red card.",
@@ -156194,23 +156259,6 @@
       ]
     },
     {
-      "id": 49993383,
-      "headline": "Real Madrid loses 2-1 to Atlético",
-      "description": "Alex Kirkland recaps José Mourinho's response to Real Madrid's loss.",
-      "published": "2026-09-20T22:20:29Z",
-      "link": "https://www.espn.com/video/clip/_/id/49993383/real-madrid-loses-2-1-atletico",
-      "images": [
-        {
-          "name": "Real Madrid loses 2-1 to Atlético",
-          "caption": "Alex Kirkland recaps José Mourinho's response to Real Madrid's loss.",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_16x9_Real_Madrid_IA/dm_260920_16x9_Real_Madrid_IA.jpg"
-        }
-      ]
-    },
-    {
       "id": 49992539,
       "headline": "Valencia vs. Real Sociedad - Game Highlights",
       "description": "Watch the Game Highlights from Valencia vs. Real Sociedad, 09/20/2026",
@@ -156316,40 +156364,6 @@
           "type": "Media",
           "name": "What went wrong for Real in the Madrid derby?",
           "caption": "What went wrong for Real in the Madrid derby?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49990489,
-      "headline": "Atlético Madrid win drama-filled Madrid derby",
-      "description": "Atlético Madrid win drama-filled Madrid derby",
-      "published": "2026-09-20T17:30:57Z",
-      "link": "https://www.espn.com/video/clip/_/id/49990489/atletico-madrid-win-drama-filled-madrid-derby",
-      "images": [
-        {
-          "name": "Atlético Madrid win drama-filled Madrid derby",
-          "caption": "Atlético Madrid win drama-filled Madrid derby",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_Atletico_Madrid_win_drama_filled_Madrid_derby/dm_260920_Atletico_Madrid_win_drama_filled_Madrid_derby.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49990218,
-      "headline": "What went wrong for Real in the Madrid derby?",
-      "description": "What went wrong for Real in the Madrid derby?",
-      "published": "2026-09-20T16:59:24Z",
-      "link": "https://www.espn.com/video/clip/_/id/49990218/what-went-wrong-real-madrid-derby",
-      "images": [
-        {
-          "name": "What went wrong for Real in the Madrid derby?",
-          "caption": "What went wrong for Real in the Madrid derby?",
-          "alt": "",
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20.jpg"
@@ -165348,7 +165362,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-09-23T10:00:39.505Z",
+    "updatedAt": "2026-09-24T10:03:00.171Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
