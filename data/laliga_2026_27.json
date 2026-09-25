@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-24T10:03:00.171Z",
+    "generatedAt": "2026-09-25T10:13:01.129Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -155678,30 +155678,137 @@
   },
   "news": [
     {
-      "id": 50018095,
-      "headline": "Transfer rumors, news: Bayern's Karl to get 'dream' Real Madrid move?",
-      "description": "Bayern Munich attacking midfielder Lennart Karl could get his dream move to Real Madrid. Transfer Talk has the latest.",
-      "published": "2026-09-24T08:25:33Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50018095/transfer-rumors-news-bayern-munich-karl-get-dream-real-madrid-move",
+      "id": 50025809,
+      "headline": "Premier League, LaLiga, Serie A, Bundesliga demand FIFA reform amid Gianni Infantino re-election bid",
+      "description": "The top leagues in England, Italy, Germany and Spain have issued a joint-statement demanding governance reform at FIFA, amid Gianni Infantino's bid to be re-elected as president in 2027.",
+      "published": "2026-09-25T09:09:30Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50025809/premier-league-bundesliga-la-liga-serie-gianni-infantino-fifa-reform-statement",
       "images": [
         {
-          "dataSourceIdentifier": "6489a857d1559",
-          "id": 48977144,
+          "dataSourceIdentifier": "fb5cd08351d28",
+          "id": 50025768,
           "type": "header",
-          "name": "Lennart Karl [1296x729]",
-          "alt": "Lennart Karl looks on during a Germany training session.",
-          "credit": "(Photo by Alexander Hassenstein/Getty Images)",
+          "name": "Infantino [1296x729]",
+          "credit": "RONALDO SCHEMIDT / AFP via Getty Images",
           "height": 729,
           "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0605/r1668673_1296x729_16-9.jpg"
+          "url": "https://a.espncdn.com/photo/2026/0925/r1721593_1296x729_16-9.jpg"
         },
         {
           "type": "Media",
-          "name": "Nicol: I have sympathy for Mourinho after Madrid derby",
-          "caption": "Nicol: I have sympathy for Mourinho after Madrid derby",
+          "name": "Does soccer need to vote against Infantino?",
+          "caption": "Does soccer need to vote against Infantino?",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0923/dm_260923_COM_SOC_Analysis_Nicol3A_I_have_sympathy_for_Mourinho_after_Madrid_derby__GLOBAL_2026-09-23/dm_260923_COM_SOC_Analysis_Nicol3A_I_have_sympathy_for_Mourinho_after_Madrid_derby__GLOBAL_2026-09-23.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0804/dm_260804_COM_SOC_Analysis_Does_football_need_to_vote_against_Infantino3F__GLOBAL_2026-08-04/dm_260804_COM_SOC_Analysis_Does_football_need_to_vote_against_Infantino3F__GLOBAL_2026-08-04.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50010819,
+      "headline": "European Golden Shoe: Who's leading Raphinha, Mbappé, Haaland in race for top goal award?",
+      "description": "Raphinha may have started the season on fire, but there's a little-known striker who is ahead of the Barça star in the race for the European Golden Shoe.",
+      "published": "2026-09-25T07:46:17Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50010819/european-golden-shoe-whos-leading-raphinha-mbappe-haaland",
+      "images": [
+        {
+          "dataSourceIdentifier": "0513a527fbf81",
+          "id": 50011165,
+          "type": "header",
+          "name": "Raphinha, Kylian Mbappe and Erling Haaland [1295x729]",
+          "caption": "Raphinha, Kylian Mbappe and Erling Haaland",
+          "alt": "Raphinha, Kylian Mbappe and Erling Haaland",
+          "credit": "ESPN",
+          "height": 729,
+          "width": 1295,
+          "url": "https://a.espncdn.com/photo/2026/0923/r1720737_1295x729_16-9.png"
+        },
+        {
+          "dataSourceIdentifier": "3a8a7032fda98",
+          "id": 50011093,
+          "type": "header",
+          "name": "Ede Oloko [1184x666]",
+          "caption": "Ede Oloko has been scoring goals for fun in the Latvian top flight.",
+          "alt": "Ede Oloko",
+          "credit": "FK Liepaja/Facebook",
+          "height": 666,
+          "width": 1184,
+          "url": "https://a.espncdn.com/photo/2026/0923/r1720733_1184x666_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "1ba1af554c30d",
+          "id": 49662354,
+          "type": "header",
+          "name": "Harry Kane Golden Shoe [1296x729]",
+          "caption": "Harry Kane won the 2025-26 European Golden Shoe award, the second of his career.",
+          "alt": "19 August 2026, Bavaria, Munich: Bayern Munich forward Harry Kane at the Golden Boot award ceremony for Europe's top scorer.",
+          "credit": "Christoph Lother/picture alliance via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0819/r1704026_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Raphinha hat trick powers Barcelona past Sevilla",
+          "caption": "Raphinha hat trick powers Barcelona past Sevilla",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0919/dm_260919_Raphinha_hat_trick_powers_Barcelona_past_Sevilla_31/dm_260919_Raphinha_hat_trick_powers_Barcelona_past_Sevilla_31.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50025646,
+      "headline": "Transfer rumors, news: Bayern eye Barcelona World Cup winner Olmo",
+      "description": "Barcelona attacking midfielder Dani Olmo is on the radar of Bayern Munich. Transfer Talk has the latest.",
+      "published": "2026-09-25T07:41:00Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50025646/bayern-eye-barcelona-world-cup-winner-olmo",
+      "images": [
+        {
+          "dataSourceIdentifier": "5fcaede9cf27b",
+          "id": 49456078,
+          "type": "header",
+          "name": "Dani Olmo [1296x729]",
+          "alt": "Dani Olmo appeals to the referee during the World Cup final.",
+          "credit": "(Photo by Erick W. Rasco/Sports Illustrated via Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0726/r1693970_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Gordon: Scar from England's World Cup exit will never heal",
+          "caption": "Gordon: Scar from England's World Cup exit will never heal",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0924/dm_260924_Gordon_Scar_from_Englands_World_Cup_exit_will_never_heal/dm_260924_Gordon_Scar_from_Englands_World_Cup_exit_will_never_heal.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50018795,
+      "headline": "Marc Cucurella 'sent a subtle message' to try to tempt Rodri into Real Madrid move",
+      "description": "Real Madrid's Marc Cucurella has said he \"sent a subtle message\" asking Rodri to join him at Real Madrid this summer, before the midfielder opted to sign for rivals Barcelona.",
+      "published": "2026-09-24T12:20:13Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50018795/real-madrid-marc-cucurella-rodri-barcelona-spain-el-clasico",
+      "images": [
+        {
+          "dataSourceIdentifier": "120ddbc25aa15",
+          "id": 50018797,
+          "type": "header",
+          "name": "Cucurella Rodri [1296x729]",
+          "credit": "JAVIER SORIANO/AFP via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0924/r1721200_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
         }
       ]
     },
@@ -155841,23 +155948,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50004079,
-      "headline": "Gomez: Raphinha is the best player in the world",
-      "description": "Gomez: Raphinha is the best player in the world",
-      "published": "2026-09-22T09:44:51Z",
-      "link": "https://www.espn.com/video/clip/_/id/50004079/raphinha-best-player-world",
-      "images": [
-        {
-          "name": "Gomez: Raphinha is the best player in the world",
-          "caption": "Gomez: Raphinha is the best player in the world",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0922/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world.jpg"
         }
       ]
     },
@@ -156323,50 +156413,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0920/f0152f4d-c859-4edd-8597-445e7bebdbb7/f0152f4d-c859-4edd-8597-445e7bebdbb7.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49990926,
-      "headline": "Mourinho brings pictures of fouls to press conference after Madrid derby",
-      "description": "Mourinho brings pictures of fouls to press conference after Madrid derby",
-      "published": "2026-09-20T18:40:53Z",
-      "link": "https://www.espn.com/video/clip/_/id/49990926/mourinho-brings-pictures-fouls-press-conference-madrid-derby",
-      "images": [
-        {
-          "name": "Mourinho brings pictures of fouls to press conference after Madrid derby",
-          "caption": "Mourinho brings pictures of fouls to press conference after Madrid derby",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Mourinho_brings_pictures_of_fouls_to_press_conference_after_Madrid_derby_GLOBAL_2/dm_260920_COM_SOC_Analysis_Mourinho_brings_pictures_of_fouls_to_press_conference_after_Madrid_derby_GLOBAL_2.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49990609,
-      "headline": "José Mourinho blasts ref, VAR: 'Two clear red cards' for Atlético Madrid",
-      "description": "José Mourinho blasted the referee and the VAR after Real Madrid's 2-1 derby defeat to Atlético Madrid, saying Atlético should have received \"two clear red cards.\"",
-      "published": "2026-09-20T19:56:14Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49990609/jose-mourinho-blasts-ref-var-two-clear-red-cards-atletico-madrid",
-      "images": [
-        {
-          "dataSourceIdentifier": "a32b265efe01b",
-          "id": 49990704,
-          "type": "header",
-          "name": "Mourinho [1296x729]",
-          "credit": "Getty",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0920/r1719565_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "What went wrong for Real in the Madrid derby?",
-          "caption": "What went wrong for Real in the Madrid derby?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20.jpg"
         }
       ]
     }
@@ -165362,7 +165408,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-09-24T10:03:00.171Z",
+    "updatedAt": "2026-09-25T10:13:01.129Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
