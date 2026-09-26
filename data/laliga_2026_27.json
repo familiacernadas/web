@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-25T10:13:01.129Z",
+    "generatedAt": "2026-09-26T09:53:03.820Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -155678,10 +155678,92 @@
   },
   "news": [
     {
+      "id": 50004145,
+      "headline": "Barcelona's start to season is best in Europe's top 5 leagues for almost 100 years",
+      "description": "Barcelona have begun the season on fire, scoring 36 goals in their first eight matches. How does that compare to the best starts for all time? (Spoiler: Very well.)",
+      "published": "2026-09-26T09:40:46Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50004145/why-barcelona-start-season-laliga-champions-league-best-europe-top-5-leagues-almost-100-years",
+      "images": [
+        {
+          "dataSourceIdentifier": "1ad9d90fc2c31",
+          "id": 50004437,
+          "type": "header",
+          "name": "Barcelona goal celebration [1296x729]",
+          "credit": "David Ramos/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0922/r1720341_2_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Gomez: Raphinha is the best player in the world",
+          "caption": "Gomez: Raphinha is the best player in the world",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0922/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50026378,
+      "headline": "José Mourinho on 'non-negotiable' rules for Real Madrid to follow: 'Don't betray me'",
+      "description": "José Mourinho has spoken about his managerial philosophy, warning of the importance of trust between players and coach -- and \"non-negotiable\" rules for his squad to follow -- as he looks to build a new winning team at Real Madrid.",
+      "published": "2026-09-25T11:13:03Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50026378/jose-mourinho-nonnegotiable-rules-real-madrid-follow-dont-betray-me",
+      "images": [
+        {
+          "dataSourceIdentifier": "c862ec2556a45",
+          "id": 50026343,
+          "type": "header",
+          "name": "Jude Bellingham [1296x729]",
+          "alt": "MADRID, SPAIN - SEPTEMBER 20: Jude Bellingham of Real Madrid CF talks to Jose Mourinho, head coach of Real Madrid CF, during the Spanish League, LaLiga EA Sports, football match played between Atletico de Madrid and Real Madrid CF at Riyadh Air Metropolit",
+          "credit": "Photo By Oscar J. Barroso/Europa Press via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0925/r1721617_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Nicol: I have sympathy for Mourinho after Madrid derby",
+          "caption": "Nicol: I have sympathy for Mourinho after Madrid derby",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0923/dm_260923_COM_SOC_Analysis_Nicol3A_I_have_sympathy_for_Mourinho_after_Madrid_derby__GLOBAL_2026-09-23/dm_260923_COM_SOC_Analysis_Nicol3A_I_have_sympathy_for_Mourinho_after_Madrid_derby__GLOBAL_2026-09-23.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50026251,
+      "headline": "Barcelona's pursuit of Julián Álvarez is 'in the past' - Deco",
+      "description": "Barcelona sporting director Deco says the club's pursuit of Julián Álvarez is \"in the past\" after it emerged the Spanish champions would have to raise money through player exits to be able to sign the Atlético Madrid striker in January.",
+      "published": "2026-09-25T10:32:08Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50026251/barcelona-julian-alvarez-atletico-madrid-argentina",
+      "images": [
+        {
+          "dataSourceIdentifier": "9c75206dd5ab4",
+          "id": 50026209,
+          "type": "header",
+          "name": "Alvarez [1296x729]",
+          "credit": "Alberto Gardin/NurPhoto via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0925/r1721614_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Flick: Raphinha is very happy to play as a nine for Barcelona",
+          "caption": "Flick: Raphinha is very happy to play as a nine for Barcelona",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20.jpg"
+        }
+      ]
+    },
+    {
       "id": 50025809,
       "headline": "Premier League, LaLiga, Serie A, Bundesliga demand FIFA reform amid Gianni Infantino re-election bid",
       "description": "The top leagues in England, Italy, Germany and Spain have issued a joint-statement demanding governance reform at FIFA, amid Gianni Infantino's bid to be re-elected as president in 2027.",
-      "published": "2026-09-25T09:09:30Z",
+      "published": "2026-09-25T10:12:42Z",
       "link": "https://www.espn.com/soccer/story/_/id/50025809/premier-league-bundesliga-la-liga-serie-gianni-infantino-fifa-reform-statement",
       "images": [
         {
@@ -155754,34 +155836,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0919/dm_260919_Raphinha_hat_trick_powers_Barcelona_past_Sevilla_31/dm_260919_Raphinha_hat_trick_powers_Barcelona_past_Sevilla_31.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50025646,
-      "headline": "Transfer rumors, news: Bayern eye Barcelona World Cup winner Olmo",
-      "description": "Barcelona attacking midfielder Dani Olmo is on the radar of Bayern Munich. Transfer Talk has the latest.",
-      "published": "2026-09-25T07:41:00Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50025646/bayern-eye-barcelona-world-cup-winner-olmo",
-      "images": [
-        {
-          "dataSourceIdentifier": "5fcaede9cf27b",
-          "id": 49456078,
-          "type": "header",
-          "name": "Dani Olmo [1296x729]",
-          "alt": "Dani Olmo appeals to the referee during the World Cup final.",
-          "credit": "(Photo by Erick W. Rasco/Sports Illustrated via Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0726/r1693970_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Gordon: Scar from England's World Cup exit will never heal",
-          "caption": "Gordon: Scar from England's World Cup exit will never heal",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0924/dm_260924_Gordon_Scar_from_Englands_World_Cup_exit_will_never_heal/dm_260924_Gordon_Scar_from_Englands_World_Cup_exit_will_never_heal.jpg"
         }
       ]
     },
@@ -156379,40 +156433,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Presser_Simeone_Mourinho_crossed_a_line_withreferee_rant_after_Madrid_derby__20260920/dm_260920_COM_SOC_Presser_Simeone_Mourinho_crossed_a_line_withreferee_rant_after_Madrid_derby__20260920.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49991104,
-      "headline": "Villarreal vs. Levante - Game Highlights",
-      "description": "Watch the Game Highlights from Villarreal vs. Levante, 09/20/2026",
-      "published": "2026-09-20T18:55:31Z",
-      "link": "https://www.espn.com/video/clip/_/id/49991104/villarreal-vs-levante-game-highlights",
-      "images": [
-        {
-          "name": "Villarreal vs. Levante - Game Highlights",
-          "caption": "Watch the Game Highlights from Villarreal vs. Levante, 09/20/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0920/120da35a-93b7-409b-94d2-36db0656abba/120da35a-93b7-409b-94d2-36db0656abba.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49991080,
-      "headline": "Deportivo La Coruña vs. Real Betis - Game Highlights",
-      "description": "Watch the Game Highlights from Deportivo La Coruña vs. Real Betis, 09/20/2026",
-      "published": "2026-09-20T18:55:00Z",
-      "link": "https://www.espn.com/video/clip/_/id/49991080/deportivo-la-coruna-vs-real-betis-game-highlights",
-      "images": [
-        {
-          "name": "Deportivo La Coruña vs. Real Betis - Game Highlights",
-          "caption": "Watch the Game Highlights from Deportivo La Coruña vs. Real Betis, 09/20/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0920/f0152f4d-c859-4edd-8597-445e7bebdbb7/f0152f4d-c859-4edd-8597-445e7bebdbb7.jpg"
         }
       ]
     }
@@ -165408,7 +165428,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-09-25T10:13:01.129Z",
+    "updatedAt": "2026-09-26T09:53:03.820Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
