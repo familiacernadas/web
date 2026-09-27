@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-26T09:53:03.820Z",
+    "generatedAt": "2026-09-27T10:34:52.534Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -155678,21 +155678,65 @@
   },
   "news": [
     {
+      "id": 50040914,
+      "headline": "Transfer rumors, news: Liverpool among clubs interested in Alexander-Arnold",
+      "description": "A group of Premier League clubs are keeping an eye on Trent Alexander-Arnold. Transfer Talk has the latest.",
+      "published": "2026-09-27T10:22:25Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50040914/transfer-rumors-news-liverpool-clubs-interested-alexander-arnold",
+      "images": [
+        {
+          "dataSourceIdentifier": "53d48fcb0a2b6",
+          "id": 50041010,
+          "type": "header",
+          "name": "Trent Alexander-Arnold [1296x729]",
+          "credit": "Florencia Tan Jun - UEFA/UEFA via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0927/r1722359_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "What sanctions should the Premier League enforce on Man City?",
+          "caption": "What sanctions should the Premier League enforce on Man City?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0925/dm_260925_COM_SOC_Analysis_What_sanctions_should_the_Premier_League_enforce_on_Man_City3F_GLOBAL_2026-09-25/dm_260925_COM_SOC_Analysis_What_sanctions_should_the_Premier_League_enforce_on_Man_City3F_GLOBAL_2026-09-25.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50033670,
+      "headline": "Zidane: Mbappe's injury is not good news",
+      "description": "Zidane: Mbappe's injury is not good news",
+      "published": "2026-09-26T15:36:00Z",
+      "link": "https://www.espn.com/video/clip/_/id/50033670/mbappe-injury-not-good-news",
+      "images": [
+        {
+          "name": "Zidane: Mbappe's injury is not good news",
+          "caption": "Zidane: Mbappe's injury is not good news",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0926/dm_260926_COM_SOC_Presser_Zidane_Mbappes_injury_is_not_good_news_20260926_GLOBAL/dm_260926_COM_SOC_Presser_Zidane_Mbappes_injury_is_not_good_news_20260926_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
       "id": 50004145,
       "headline": "Barcelona's start to season is best in Europe's top 5 leagues for almost 100 years",
       "description": "Barcelona have begun the season on fire, scoring 36 goals in their first eight matches. How does that compare to the best starts for all time? (Spoiler: Very well.)",
-      "published": "2026-09-26T09:40:46Z",
+      "published": "2026-09-26T10:36:01Z",
       "link": "https://www.espn.com/soccer/story/_/id/50004145/why-barcelona-start-season-laliga-champions-league-best-europe-top-5-leagues-almost-100-years",
       "images": [
         {
-          "dataSourceIdentifier": "1ad9d90fc2c31",
-          "id": 50004437,
+          "dataSourceIdentifier": "022f967b5e31c",
+          "id": 50032096,
           "type": "header",
-          "name": "Barcelona goal celebration [1296x729]",
-          "credit": "David Ramos/Getty Images",
+          "name": "Lamine Yamal, Dani Olmo [1296x729]",
+          "credit": "Jose Breton/Pics Action/NurPhoto via Getty Images",
           "height": 729,
           "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0922/r1720341_2_1296x729_16-9.jpg"
+          "url": "https://a.espncdn.com/photo/2026/0926/r1721963_1296x729_16-9.jpg"
         },
         {
           "type": "Media",
@@ -156399,40 +156443,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Mourinho_brings_pictures_of_fouls_to_press_conference_after_Madrid_derby_GLOBAL_2/dm_260920_COM_SOC_Analysis_Mourinho_brings_pictures_of_fouls_to_press_conference_after_Madrid_derby_GLOBAL_2.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49992539,
-      "headline": "Valencia vs. Real Sociedad - Game Highlights",
-      "description": "Watch the Game Highlights from Valencia vs. Real Sociedad, 09/20/2026",
-      "published": "2026-09-20T21:07:00Z",
-      "link": "https://www.espn.com/video/clip/_/id/49992539/valencia-vs-real-sociedad-game-highlights",
-      "images": [
-        {
-          "name": "Valencia vs. Real Sociedad - Game Highlights",
-          "caption": "Watch the Game Highlights from Valencia vs. Real Sociedad, 09/20/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0920/7befc590-1093-466c-b29b-1f3c83904125/7befc590-1093-466c-b29b-1f3c83904125.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49992204,
-      "headline": "Simeone: Mourinho crossed a line with referee rant after Madrid derby",
-      "description": "Simeone: Mourinho crossed a line with referee rant after Madrid derby",
-      "published": "2026-09-20T20:40:40Z",
-      "link": "https://www.espn.com/video/clip/_/id/49992204/mourinho-crossed-line-withreferee-rant-madrid-derby",
-      "images": [
-        {
-          "name": "Simeone: Mourinho crossed a line with referee rant after Madrid derby",
-          "caption": "Simeone: Mourinho crossed a line with referee rant after Madrid derby",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Presser_Simeone_Mourinho_crossed_a_line_withreferee_rant_after_Madrid_derby__20260920/dm_260920_COM_SOC_Presser_Simeone_Mourinho_crossed_a_line_withreferee_rant_after_Madrid_derby__20260920.jpg"
         }
       ]
     }
@@ -165428,7 +165438,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-09-26T09:53:03.820Z",
+    "updatedAt": "2026-09-27T10:34:52.534Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
