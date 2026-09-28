@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-27T10:34:52.534Z",
+    "generatedAt": "2026-09-28T11:42:50.519Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -155678,10 +155678,38 @@
   },
   "news": [
     {
+      "id": 50043662,
+      "headline": "LaLiga chief Javier Tebas criticises Man City's alleged rule breaches: 'Equal rules for all'",
+      "description": "LaLiga president Javier Tebas has said Manchester City legal battle against the Premier League shows why \"equal rules for all\" are essential.",
+      "published": "2026-09-27T17:54:25Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50043662/laliga-chief-javier-tebas-criticises-man-city-alleged-rule-breaches-equal-rules-all",
+      "images": [
+        {
+          "dataSourceIdentifier": "a4e551d8dff08",
+          "id": 50043575,
+          "type": "header",
+          "name": "The president of La Liga, Javier Tebas Medrano, is giving a lecture entitled ‘Diplomacy in sports relations\n [1296x729]",
+          "alt": "The president of La Liga, Javier Tebas Medrano, is giving a lecture entitled ‘Diplomacy in sports relations",
+          "credit": "Eduardo Parra/Europa Press via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0927/r1722495_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Gomez: Man City must face a historic punishment",
+          "caption": "Gomez: Man City must face a historic punishment",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0927/dm_260927_COM_SOC_ANALYSIS_Gomez_Man_City_must_face_a_historic_punishment_2026_9_27/dm_260927_COM_SOC_ANALYSIS_Gomez_Man_City_must_face_a_historic_punishment_2026_9_27.jpg"
+        }
+      ]
+    },
+    {
       "id": 50040914,
       "headline": "Transfer rumors, news: Liverpool among clubs interested in Alexander-Arnold",
       "description": "A group of Premier League clubs are keeping an eye on Trent Alexander-Arnold. Transfer Talk has the latest.",
-      "published": "2026-09-27T10:22:25Z",
+      "published": "2026-09-27T14:02:23Z",
       "link": "https://www.espn.com/soccer/story/_/id/50040914/transfer-rumors-news-liverpool-clubs-interested-alexander-arnold",
       "images": [
         {
@@ -156414,35 +156442,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0720/ss_20260720_102052756_3598280/ss_20260720_102052756_3598280.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49996528,
-      "headline": "Mourinho's ref rants overshadow Madrid derby defeat; can Arsenal shrug off heavy loss?",
-      "description": "Real Madrid lost the derby to Atletico this weekend, but Jose Mourinho's focus was on the refereeing postgame, not the result. Plus: Can Arsenal shake off a deservedly heavy defeat at Brighton?",
-      "published": "2026-09-21T13:36:43Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49996528/real-madrid-atletico-madrid-jose-mourinho-ref-complaint-arsenal-brighton-arteta-marcotti",
-      "images": [
-        {
-          "dataSourceIdentifier": "6dc159ca2c1cf",
-          "id": 49996866,
-          "type": "header",
-          "name": "Jose Mourinho [1296x729]",
-          "caption": "Jose Mourinho",
-          "alt": "Jose Mourinho",
-          "credit": "Dennis Agyeman/Europa Press",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0921/r1719918_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Mourinho brings pictures of fouls to press conference after Madrid derby",
-          "caption": "Mourinho brings pictures of fouls to press conference after Madrid derby",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Mourinho_brings_pictures_of_fouls_to_press_conference_after_Madrid_derby_GLOBAL_2/dm_260920_COM_SOC_Analysis_Mourinho_brings_pictures_of_fouls_to_press_conference_after_Madrid_derby_GLOBAL_2.jpg"
         }
       ]
     }
@@ -165438,7 +165437,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-09-27T10:34:52.534Z",
+    "updatedAt": "2026-09-28T11:42:50.519Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
