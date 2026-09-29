@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-28T11:42:50.519Z",
+    "generatedAt": "2026-09-29T11:23:12.228Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -155678,6 +155678,290 @@
   },
   "news": [
     {
+      "id": 50057471,
+      "headline": "Kylian Mbappé, Ibrahima Konaté, Fede Valverde expected to be available for El Clásico - source",
+      "description": "Injured stars Kylian Mbappé, Ibrahima Konaté and Federico Valverde are all expected to be available when Real Madrid face LaLiga title rivals Barcelona in El Clásico on Oct. 25, a source has told ESPN.",
+      "published": "2026-09-29T11:07:01Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50057471/real-madrid-mbappe-konate-valverde-el-clasico-barcelona-la-liga",
+      "images": [
+        {
+          "dataSourceIdentifier": "bb686cfbb694a",
+          "id": 50057543,
+          "type": "header",
+          "name": "Mbappe Konate Valverde [1296x729]",
+          "credit": "Alvaro Medranda/Quality Sport Images/Getty Images, Angel Martinez/Getty Images, Angel Martinez/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0929/r1723326_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50056942,
+      "headline": "Transfer rumors, news: Liverpool keen on Real Madrid midfielder Tchouaméni",
+      "description": "Liverpool have maintained contact with the representatives of Real Madrid midfielder Aurélien Tchouaméni. Transfer Talk has the latest.",
+      "published": "2026-09-29T09:34:24Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50056942/transfer-rumors-news-liverpool-keen-real-madrid-midfielder-tchouameni",
+      "images": [
+        {
+          "dataSourceIdentifier": "19386731f172f",
+          "id": 48956227,
+          "type": "header",
+          "name": "Aurelien Tchouameni of Real Madrid CF looks on  [1296x729]",
+          "caption": "Aurelien Tchouameni of Real Madrid CF looks on",
+          "credit": "Diego Souto/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0603/r1667626_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Leboeuf: Olise showed his talent vs. Belgium",
+          "caption": "Leboeuf: Olise showed his talent vs. Belgium",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0928/dm_260928_COM_SOC_Analysis_Leboeuf3A_Olise_showed_his_talent_vs_Belgium__GLOBAL_2026-09-28/dm_260928_COM_SOC_Analysis_Leboeuf3A_Olise_showed_his_talent_vs_Belgium__GLOBAL_2026-09-28.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49812807,
+      "headline": "Soccer's best 2025-26 kits: The most stylish jerseys you probably missed",
+      "description": "While the world's top clubs release their new kits on a wave of hype, there are many more who release absolutely banging jerseys that deserve to be seen.",
+      "published": "2026-09-29T07:38:13Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49812807/soccer-best-kits-2025-26-stylish-jerseys-probably-missed",
+      "images": [
+        {
+          "dataSourceIdentifier": "a6a94efae7741",
+          "id": 49822984,
+          "type": "header",
+          "name": "Best kits 2026-27 lead [1296x729]",
+          "credit": "RC Celta Vigo / Adidas / AS Monaco",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0904/r1711227_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "a202e7f67839f",
+          "id": 49732563,
+          "type": "header",
+          "name": "Ajax away kit 2026-27 [1296x729]",
+          "credit": "Adidas",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0826/r1707168_2_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "425ae36f1062d",
+          "id": 49804490,
+          "type": "header",
+          "name": "Angers away kit 2026-27 [1296x729]",
+          "credit": "Angers SCO",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0902/r1710457_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "8b2cb71e685a2",
+          "id": 49804536,
+          "type": "header",
+          "name": "Atalanta away kit 2026-27 [1296x729]",
+          "credit": "Atalanta BC",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0902/r1710458_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "038834204deab",
+          "id": 49804593,
+          "type": "header",
+          "name": "Celta Vigo third kit 2026-27 [1296x729]",
+          "credit": "Ivan Terron/Europa Press via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0902/r1710460_2_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "cd7030ac39a66",
+          "id": 49811794,
+          "type": "header",
+          "name": "FC Como home kit 2026-27 [1296x729]",
+          "credit": "FC Como",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710785_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "6d8737de2b348",
+          "id": 49811772,
+          "type": "header",
+          "name": "FC Basel third kit 2026-27 [1296x729]",
+          "credit": "FC Basel",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710784_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "8b4106dd0499c",
+          "id": 49811817,
+          "type": "header",
+          "name": "Flamengo third kit 2026-27 [1080x607]",
+          "credit": "CR Flamengo",
+          "height": 607,
+          "width": 1080,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710786_1080x607_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "3ea68ec5092ab",
+          "id": 49811842,
+          "type": "header",
+          "name": "Genoa away kit 2026-27 [1080x607]",
+          "credit": "Genoa CFC",
+          "height": 607,
+          "width": 1080,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710787_1080x607_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "34a34eaba7f9d",
+          "id": 49811895,
+          "type": "header",
+          "name": "Grimsby Town away kit 2026-27 [1296x729]",
+          "credit": "Grimsby Town",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710789_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "c33ef8f872aec",
+          "id": 49811920,
+          "type": "header",
+          "name": "Leicester City away kit 2026-27 [1080x608]",
+          "credit": "Leicester City",
+          "height": 608,
+          "width": 1080,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710790_1080x608_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "c91fcd4183dfb",
+          "id": 49811983,
+          "type": "header",
+          "name": "Lyon third kit 2026-27 [1296x729]",
+          "credit": "Olympique Lyonnais",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710794_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "433e58a5de15c",
+          "id": 49811962,
+          "type": "header",
+          "name": "Monaco third kit 2026-27 [1080x607]",
+          "credit": "AS Monaco",
+          "height": 607,
+          "width": 1080,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710792_1080x607_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "f7ea96dd81547",
+          "id": 49812055,
+          "type": "header",
+          "name": "Os Belenenses home kit 2026-27 [1080x607]",
+          "credit": "C.F. Os Belenenses",
+          "height": 607,
+          "width": 1080,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710795_2_1080x607_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "9bfa84daa2f7e",
+          "id": 49812165,
+          "type": "header",
+          "name": "Sheffield Wednesday away kit 2026-27 [1296x729]",
+          "credit": "Sheffield Wednesday",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710800_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "fa05b4a83c7cb",
+          "id": 49812114,
+          "type": "header",
+          "name": "Racing Club de Strasbourg away kit 2026-27 [1296x729]",
+          "credit": "Racing Club de Strasbourg",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710798_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "1b584975a5207",
+          "id": 49812186,
+          "type": "header",
+          "name": "SV Wehen Wiesbaden away kit 2026-27 [872x491]",
+          "credit": "SV Wehen Wiesbaden",
+          "height": 491,
+          "width": 872,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710801_872x491_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "d61b2ff1201cb",
+          "id": 49811746,
+          "type": "header",
+          "name": "Eintracht Braunschweig third kit 2026-27 [1248x702]",
+          "credit": "Eintracht Braunschweig",
+          "height": 702,
+          "width": 1248,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710783_1248x702_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "f918ca9321986",
+          "id": 49812231,
+          "type": "header",
+          "name": "Venezia home kit 2026-27 [1296x729]",
+          "credit": "Image Photo Agency/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710802_3_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "2504fbd45b172",
+          "id": 49812298,
+          "type": "header",
+          "name": "VfB Stuttgart away 2026-27 [1296x729]",
+          "credit": "Jako",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0903/r1710805_1296x729_16-9.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50054584,
+      "headline": "Javier Aguirre turned down four coaching offers until 'Valencia called'",
+      "description": "Former Mexico coach Javier Aguirre said he turned down four other jobs before accepting the challenge to return to LaLiga with Valencia.",
+      "published": "2026-09-28T21:50:35Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50054584/former-mexico-coach-javier-aguirre-turned-four-offers-valencia-called",
+      "images": [
+        {
+          "dataSourceIdentifier": "1f6f069ec78d0",
+          "id": 50054598,
+          "type": "header",
+          "name": "Aguirre Valencia [1296x729]",
+          "caption": "Javier Aguirre returns to LaLiga following his departure from the Mexico national team after the 2026 World Cup.",
+          "credit": "Photo by Manuel Queimadelos/Quality Sport Images/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0928/r1723176_1296x729_16-9.jpg"
+        }
+      ]
+    },
+    {
       "id": 50043662,
       "headline": "LaLiga chief Javier Tebas criticises Man City's alleged rule breaches: 'Equal rules for all'",
       "description": "LaLiga president Javier Tebas has said Manchester City legal battle against the Premier League shows why \"equal rules for all\" are essential.",
@@ -156102,346 +156386,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49953407,
-      "headline": "Soccer's wildest warmup kits of 2026-27: The good, the bad and the ugly",
-      "description": "Forget home, away and third alternate jerseys -- the prematch warmup kit is where the real fun is to be had. Get a load of this season's best and worst.",
-      "published": "2026-09-22T08:01:17Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49953407/soccer-wildest-warmup-kits-2026-27-good-bad-ugly",
-      "images": [
-        {
-          "dataSourceIdentifier": "ebf804a417db6",
-          "id": 49955912,
-          "type": "header",
-          "name": "Warm-up kits lead image Yamal Bruno McGinn [1296x729]",
-          "credit": "David Ramos/Getty Images / Ivan Romano/Getty Images / Alex Livesey/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717453_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "e9e81b72d82e7",
-          "id": 49953753,
-          "type": "header",
-          "name": "Lamine Yamal [1296x729]",
-          "caption": "Lamine Yamal",
-          "alt": "Lamine Yamal",
-          "credit": "Jose Breton/Pics Action/NurPhoto",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717352_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "441f0e5e36b3f",
-          "id": 49953831,
-          "type": "header",
-          "name": "Gavi [1296x729]",
-          "caption": "Gavi",
-          "alt": "Gavi",
-          "credit": "Denis Doyle/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717356_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "e7bfc264f2f3c",
-          "id": 49955796,
-          "type": "header",
-          "name": "Bryan Mbeumo [1296x729]",
-          "credit": "Mark Cosgrove/News Images/NurPhoto via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717447_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "eefe7480af63f",
-          "id": 49953882,
-          "type": "header",
-          "name": "Virgil van Dijk [1296x729]",
-          "caption": "Virgil van Dijk",
-          "alt": "Virgil van Dijk",
-          "credit": "George Wood/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717362_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "30c2b1439ad1d",
-          "id": 49953914,
-          "type": "header",
-          "name": "Vinicius Junior [1296x729]",
-          "caption": "Vinicius Junior",
-          "alt": "Vinicius Junior",
-          "credit": "Federico Titone/SOPA Images/LightRocket",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717363_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "a1496431d5730",
-          "id": 49955642,
-          "type": "header",
-          "name": "Khvicha Kvaratskhelia [1296x729]",
-          "credit": "Sameer AL-DOUMY / AFP via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717441_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "93f7d322139a7",
-          "id": 49953972,
-          "type": "header",
-          "name": "Santiago Castro [1296x729]",
-          "caption": "Santiago Castro",
-          "alt": "Santiago Castro",
-          "credit": "Andrea Staccioli/Insidefoto/LightRocket",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717367_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "53129136a35f3",
-          "id": 49954019,
-          "type": "header",
-          "name": "Nicolo Barella [1296x729]",
-          "caption": "Nicolo Barella",
-          "alt": "Nicolo Barella",
-          "credit": "sportinfoto/DeFodi Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717369_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "560df58f2e607",
-          "id": 49954070,
-          "type": "header",
-          "name": "Luka Modric [1296x729]",
-          "caption": "Luka Modric",
-          "alt": "Luka Modric",
-          "credit": "sportinfoto/DeFodi Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717372_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "97447e6e67d1a",
-          "id": 49955616,
-          "type": "header",
-          "name": "Lewis O'Brien [1296x729]",
-          "credit": "Andrew Lewis/News Images/NurPhoto via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717439_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "96ecb7c566684",
-          "id": 49955688,
-          "type": "header",
-          "name": "Luis Diaz [1296x729]",
-          "credit": "S. Stingl/FC Bayern via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717442_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "4152589b26f85",
-          "id": 49954488,
-          "type": "header",
-          "name": "Julian Brandt [1296x729]",
-          "caption": "Julian Brandt",
-          "alt": "Julian Brandt",
-          "credit": "Rene Nijhuis/MB Media/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717394_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "7298a865c8b42",
-          "id": 49954527,
-          "type": "header",
-          "name": "Erling Haaland [1296x729]",
-          "caption": "Erling Haaland",
-          "alt": "Erling Haaland",
-          "credit": "James Gill - Danehouse",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717396_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "52a8fa3cc3dfc",
-          "id": 49954553,
-          "type": "header",
-          "name": "Conor Gallagher [1296x729]",
-          "caption": "Conor Gallagher",
-          "alt": "Conor Gallagher",
-          "credit": "Shaun Brooks - CameraSport",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717397_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "b5d240f077392",
-          "id": 49954678,
-          "type": "header",
-          "name": "Martin Odegaard [1296x729]",
-          "caption": "Martin Odegaard",
-          "alt": "Martin Odegaard",
-          "credit": "Henry NICHOLLS / AFP",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717404_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "1442d5680dcb0",
-          "id": 49954707,
-          "type": "header",
-          "name": "Julian Alvarez [1296x729]",
-          "caption": "Julian Alvarez",
-          "alt": "Julian Alvarez",
-          "credit": "Sheng Cheng/NurPhoto",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717405_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "6d0f74a7d3f4b",
-          "id": 49954736,
-          "type": "header",
-          "name": "Morgan Rogers [1296x729]",
-          "caption": "Morgan Rogers",
-          "alt": "Morgan Rogers",
-          "credit": "Vince Mignott/MB Media",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717406_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "478c82f6cb31f",
-          "id": 49955774,
-          "type": "header",
-          "name": "Alejandro Garnacho [1296x729]",
-          "credit": "Stewart Kendall/Sportsphoto/Allstar via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717446_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "25ba95947fa4f",
-          "id": 49955730,
-          "type": "header",
-          "name": "Ao Tanaka [1296x729]",
-          "credit": "Richard Martin-Roberts - CameraSport via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717444_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "f16db23e48ba5",
-          "id": 49954816,
-          "type": "header",
-          "name": "Kerim Alajbegović [1296x729]",
-          "caption": "Kerim Alajbegović",
-          "alt": "Kerim Alajbegović",
-          "credit": "Ivan Romano/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717409_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "3d883f750a7e2",
-          "id": 49955093,
-          "type": "header",
-          "name": "Zan Vipotnik [1296x729]",
-          "caption": "Zan Vipotnik",
-          "alt": "Zan Vipotnik",
-          "credit": "Andrew Lewis/News Images/NurPhoto",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717418_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "aafb9053678ec",
-          "id": 49955709,
-          "type": "header",
-          "name": "Jhon Duran [1296x729]",
-          "credit": "Luis Loureiro/Eurasia Sport Images/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0916/r1717443_1296x729_16-9.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50000710,
-      "headline": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-      "description": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-      "published": "2026-09-21T21:28:28Z",
-      "link": "https://www.espn.com/video/clip/_/id/50000710/real-madrid-working-mourinho",
-      "images": [
-        {
-          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49998075,
-      "headline": "Kylian Mbappé refuses to criticise referee despite Madrid derby 'mistakes'",
-      "description": "Kylian Mbappé has refused to criticise the referee in charge of Real Madrid's 2-1 derby defeat to Atlético Madrid, despite admitting that official Miguel Ángel Ortiz Arias made \"mistakes\" in his handling of the match.",
-      "published": "2026-09-21T18:47:32Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49998075/kylian-mbappe-real-madrid-atletico-madrid-derby-la-liga-referee-jose-mourinho",
-      "images": [
-        {
-          "dataSourceIdentifier": "c73c201a9acac",
-          "id": 49998044,
-          "type": "header",
-          "name": "Mbappe [1296x729]",
-          "credit": "Jose Breton/Pics Action/NurPhoto via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0921/r1719974_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "What went wrong for Real in the Madrid derby?",
-          "caption": "What went wrong for Real in the Madrid derby?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20.jpg"
-        }
-      ]
-    },
-    {
-      "id": 49940653,
-      "headline": "Why this 3-week international break is longest ever (and why that's a good thing)",
-      "description": "Fans have grown used to international games interrupting the club season, but this break will be a week longer than before. It's not as bad as it sounds.",
-      "published": "2026-09-21T07:52:39Z",
-      "link": "https://www.espn.com/soccer/story/_/id/49940653/why-3-week-international-break-longest-ever-why-thats-good-thing",
-      "images": [
-        {
-          "dataSourceIdentifier": "7f070ed3e5d07",
-          "id": 49948781,
-          "type": "header",
-          "name": "England v France Bukayo Saka goal celeb hat trick [1296x729]",
-          "credit": "Luke Hales/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0915/r1716998_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Stephen A. lauds Spain after outclassing Argentina to win World Cup",
-          "caption": "Stephen A. lauds Spain after outclassing Argentina to win World Cup ",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0720/ss_20260720_102052756_3598280/ss_20260720_102052756_3598280.jpg"
         }
       ]
     }
@@ -165437,7 +165381,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-09-28T11:42:50.519Z",
+    "updatedAt": "2026-09-29T11:23:12.228Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
