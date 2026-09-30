@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-29T11:23:12.228Z",
-    "requestsThisRun": 17,
+    "generatedAt": "2026-09-30T11:10:59.465Z",
+    "requestsThisRun": 18,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": false,
@@ -42645,9 +42645,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -42965,6 +42963,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-09-30T11:10:59.463Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 99,
+            "teamName": "Málaga",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 88,
+            "teamName": "Espanyol",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -155678,10 +155715,93 @@
   },
   "news": [
     {
+      "id": 50066024,
+      "headline": "Raphinha returns to Barcelona after injury on Brazil duty",
+      "description": "Raphinha will return to Barcelona after suffering a thigh injury in Brazil's 4-2 friendly win over Australia on Tuesday.",
+      "published": "2026-09-30T10:42:43Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50066024/raphinha-returns-barcelona-injury-brazil-duty",
+      "images": [
+        {
+          "dataSourceIdentifier": "3f8eabaa79a33",
+          "id": 50066004,
+          "type": "header",
+          "name": "Raphinha [1296x729]",
+          "credit": "Getty",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0930/r1723833_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Gomez: Raphinha is the best player in the world",
+          "caption": "Gomez: Raphinha is the best player in the world",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0922/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50065853,
+      "headline": "Barcelona chief explains how Lautaro Martínez pursuit ended over a phone call",
+      "description": "Joan Laporta has confirmed Barcelona tried to sign Lautaro Martínez this summer but quickly gave up once it became apparent Inter Milan would not allow the striker to leave.",
+      "published": "2026-09-30T10:13:20Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50065853/barcelona-chief-explains-how-lautaro-martinez-pursuit-ended-phone-call",
+      "images": [
+        {
+          "dataSourceIdentifier": "c5337ccddc883",
+          "id": 48762051,
+          "type": "header",
+          "name": "Lautaro Coppa Italia final celeb [1296x729]",
+          "caption": "Lautaro Martínez's goal secured victory for Inter Milan in the Coppa Italia final.",
+          "alt": "Lautaro Martinez of FC Internazionale celebrates his goal  during the Coppa Italia Final match between SS Lazio and FC Internazionale at Stadio Olimpico on May 13, 2026 in Rome, Italy",
+          "credit": "Image Photo Agency/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0513/r1657780_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Flick: Raphinha is very happy to play as a nine for Barcelona",
+          "caption": "Flick: Raphinha is very happy to play as a nine for Barcelona",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50065113,
+      "headline": "Transfer rumors, news: Real Madrid eye Van Dijk on free transfer at end of season",
+      "description": "Real Madrid are hoping they can sign Virgil van Dijk when his Liverpool contract expires at the end of the season. Transfer Talk has the latest.",
+      "published": "2026-09-30T07:55:02Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50065113/transfer-rumors-news-real-madrid-eye-liverpool-van-dijk-free-transfer-end-season",
+      "images": [
+        {
+          "dataSourceIdentifier": "bdc0f69960215",
+          "id": 49709905,
+          "type": "header",
+          "name": "Virgil van Dijk [1296x729]",
+          "credit": "Getty",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0824/r1706130_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Could Man City face relegation or expulsion from the Premier League?",
+          "caption": "Could Man City face relegation or expulsion from the Premier League?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0929/dm_260929_COM_SOC_Analysis_Could_Man_City_face_relegation_or_expulsion_from_the_Premier_League_20260929_G/dm_260929_COM_SOC_Analysis_Could_Man_City_face_relegation_or_expulsion_from_the_Premier_League_20260929_G.jpg"
+        }
+      ]
+    },
+    {
       "id": 50057471,
       "headline": "Kylian Mbappé, Ibrahima Konaté, Fede Valverde expected to be available for El Clásico - source",
       "description": "Injured stars Kylian Mbappé, Ibrahima Konaté and Federico Valverde are all expected to be available when Real Madrid face LaLiga title rivals Barcelona in El Clásico on Oct. 25, a source has told ESPN.",
-      "published": "2026-09-29T11:07:01Z",
+      "published": "2026-09-29T12:00:00Z",
       "link": "https://www.espn.com/soccer/story/_/id/50057471/real-madrid-mbappe-konate-valverde-el-clasico-barcelona-la-liga",
       "images": [
         {
@@ -155701,34 +155821,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50056942,
-      "headline": "Transfer rumors, news: Liverpool keen on Real Madrid midfielder Tchouaméni",
-      "description": "Liverpool have maintained contact with the representatives of Real Madrid midfielder Aurélien Tchouaméni. Transfer Talk has the latest.",
-      "published": "2026-09-29T09:34:24Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50056942/transfer-rumors-news-liverpool-keen-real-madrid-midfielder-tchouameni",
-      "images": [
-        {
-          "dataSourceIdentifier": "19386731f172f",
-          "id": 48956227,
-          "type": "header",
-          "name": "Aurelien Tchouameni of Real Madrid CF looks on  [1296x729]",
-          "caption": "Aurelien Tchouameni of Real Madrid CF looks on",
-          "credit": "Diego Souto/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0603/r1667626_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Leboeuf: Olise showed his talent vs. Belgium",
-          "caption": "Leboeuf: Olise showed his talent vs. Belgium",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0928/dm_260928_COM_SOC_Analysis_Leboeuf3A_Olise_showed_his_talent_vs_Belgium__GLOBAL_2026-09-28/dm_260928_COM_SOC_Analysis_Leboeuf3A_Olise_showed_his_talent_vs_Belgium__GLOBAL_2026-09-28.jpg"
         }
       ]
     },
@@ -156330,62 +156422,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0922/dm_260922_Gomez_Jonathan_David_and_Julian_Alvarez_should_play_sidebyside/dm_260922_Gomez_Jonathan_David_and_Julian_Alvarez_should_play_sidebyside.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50004139,
-      "headline": "Real Madrid conspiracy claims dismissed as a 'smokescreen' by LaLiga president",
-      "description": "LaLiga president Javier Tebas has called claims of a refereeing conspiracy against Real Madrid \"a smokescreen to hide other shortcomings\" after the team's defeat to Atletico Madrid in Sunday's derby.",
-      "published": "2026-09-22T15:42:19Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50004139/laliga-president-javier-tebas-dismisses-real-madrid-conspiracy-claims-smokescreen",
-      "images": [
-        {
-          "dataSourceIdentifier": "957625d057110",
-          "id": 50004117,
-          "type": "header",
-          "name": "Javier Tebas [1296x729]",
-          "alt": "MONACO, MONACO - OCTOBER 21: Javier Tebas during the SPORTEL Monaco 2025 - Global Sports Media & Technology Convention on October 21, 2025 in Monaco, Monaco.",
-          "credit": "Arnold Jerocki/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0922/r1720330_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50003944,
-      "headline": "Barcelona to return to Olympic Stadium next season as Camp Nou costs rise to €2 billion",
-      "description": "Barcelona will return to the Olympic Stadium for several months next season after approving another €510 million ($585m) of financing to finish the Spotify Camp Nou redevelopment project.",
-      "published": "2026-09-22T09:29:20Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50003944/barcelona-return-olympic-stadium-next-season-camp-nou-costs-rise-2-billion",
-      "images": [
-        {
-          "dataSourceIdentifier": "7b3655b250f0a",
-          "id": 50004008,
-          "type": "header",
-          "name": "Barca Stadium [1296x729]",
-          "alt": "BARCELONA, SPAIN - MARCH 12: General view of the action during the UEFA Champions League 2023/24 round of 16 second leg match between FC Barcelona and SSC Napoli at Estadi Olimpic Lluis Companys on March 12, 2024 in Barcelona, Spain.",
-          "credit": "David Ramos - UEFA/UEFA via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0922/r1720325_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Flick: Raphinha is very happy to play as a nine for Barcelona",
-          "caption": "Flick: Raphinha is very happy to play as a nine for Barcelona",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20.jpg"
         }
       ]
     }
@@ -165381,7 +165417,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-09-29T11:23:12.228Z",
+    "updatedAt": "2026-09-30T11:10:59.465Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
