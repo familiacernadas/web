@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-09-30T11:10:59.465Z",
-    "requestsThisRun": 18,
+    "generatedAt": "2026-10-01T11:38:09.783Z",
+    "requestsThisRun": 21,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": false,
@@ -43042,9 +43042,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -43362,6 +43360,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-01T11:38:09.202Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 101,
+            "teamName": "Rayo Vallecano",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 93,
+            "teamName": "Athletic Club",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -43402,9 +43439,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -43728,6 +43763,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-01T11:38:09.378Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 96,
+            "teamName": "Alavés",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 1068,
+            "teamName": "Atlético Madrid",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -43768,9 +43842,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -44094,6 +44166,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-01T11:38:09.596Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 83,
+            "teamName": "Barcelona",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 2922,
+            "teamName": "Getafe",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -44134,9 +44245,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -44466,6 +44575,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-01T11:38:09.781Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 86,
+            "teamName": "Real Madrid",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 102,
+            "teamName": "Villarreal",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -155715,6 +155863,92 @@
   },
   "news": [
     {
+      "id": 50075485,
+      "headline": "Portugal, Man United, Real Madrid: Cristiano Ronaldo's long history of rows with coaches",
+      "description": "Cristiano Ronaldo walked out of the Portugal national team's camp after being benched. It is far from the first high-profile row of his two decades at the top.",
+      "published": "2026-10-01T11:14:02Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50075485/cristiano-ronaldo-long-history-rows-portugal-manchester-united-real-madrid-juventus-coaches",
+      "images": [
+        {
+          "dataSourceIdentifier": "84cec327400d0",
+          "id": 50075909,
+          "type": "header",
+          "name": "Norway v Portugal Cristiano Ronaldo in tunnel [1296x729]",
+          "credit": "Maciej Rogowski/Eurasia Sport Images/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1001/r1724373_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "4eb7b62802c8d",
+          "id": 35209753,
+          "type": "header",
+          "name": "Manchester United's Cristiano Ronaldo reacts to being substituted against Manchester City in 2009 [1296x729]",
+          "credit": "John Peters/Manchester United via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2022/1208/r1103824_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "63615b0033b03",
+          "id": 35209916,
+          "type": "header",
+          "name": "Real Madrid's Jose Mourinho and Cristiano Ronaldo [1296x729]",
+          "credit": "Jasper Juinen/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2022/1208/r1103827_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "9972fc7d0470a",
+          "id": 50075943,
+          "type": "header",
+          "name": "Cristiano Ronaldo's Portugal career [1280x720]",
+          "credit": "ESPN Global Soccer Research",
+          "height": 720,
+          "width": 1280,
+          "url": "https://a.espncdn.com/photo/2026/1001/r1724376_1280x720_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "e9b406b30c036",
+          "id": 35209796,
+          "type": "header",
+          "name": "Cristiano Ronaldo on Portugal bench against South Korea [1296x729]",
+          "credit": "Hector Vivas - FIFA/FIFA via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2022/1208/r1103826_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Is this the end of Cristiano Ronaldo's international career with Portugal?",
+          "caption": "Frank Leboeuf, Gab Marcotti and Shaka Hislop join Alexis Nunes on ESPN FC to react to Cristiano Ronaldo leaving Portugal's training camp. ",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0930/ss_20260930_175026201_36801661096/ss_20260930_175026201_36801661096.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50075555,
+      "headline": "Clásico match ball for Barcelona vs. Real Madrid LaLiga clashes unveiled",
+      "description": "Whenever LaLiga rivals Barcelona and Real Madrid clash, the world watches. So it's only fitting that El Clásico gets its own bespoke match ball.",
+      "published": "2026-10-01T09:59:43Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50075555/clasico-match-ball-barcelona-real-madrid-laliga-clashes-unveiled",
+      "images": [
+        {
+          "dataSourceIdentifier": "e2c83cd34a4b4",
+          "id": 50075402,
+          "type": "header",
+          "name": "LaLiga Clasico match ball [819x461]",
+          "credit": "LaLiga",
+          "height": 461,
+          "width": 819,
+          "url": "https://a.espncdn.com/photo/2026/1001/r1724348_819x461_16-9.jpg"
+        }
+      ]
+    },
+    {
       "id": 50066024,
       "headline": "Raphinha returns to Barcelona after injury on Brazil duty",
       "description": "Raphinha will return to Barcelona after suffering a thigh injury in Brazil's 4-2 friendly win over Australia on Tuesday.",
@@ -155771,29 +156005,29 @@
       ]
     },
     {
-      "id": 50065113,
-      "headline": "Transfer rumors, news: Real Madrid eye Van Dijk on free transfer at end of season",
-      "description": "Real Madrid are hoping they can sign Virgil van Dijk when his Liverpool contract expires at the end of the season. Transfer Talk has the latest.",
-      "published": "2026-09-30T07:55:02Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50065113/transfer-rumors-news-real-madrid-eye-liverpool-van-dijk-free-transfer-end-season",
+      "id": 50065805,
+      "headline": "Harry Kane on Anthony Gordon: 'Going to big club gives you confidence'",
+      "description": "Harry Kane hailed England's \"difference maker\" Anthony Gordon and returning star Trent Alexander-Arnold after the LaLiga pair impressed in the win against Czechia.",
+      "published": "2026-09-30T16:23:19Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50065805/harry-kane-anthony-gordon-going-big-club-gives-confidence",
       "images": [
         {
-          "dataSourceIdentifier": "bdc0f69960215",
-          "id": 49709905,
+          "dataSourceIdentifier": "303e27e7c0d92",
+          "id": 50065760,
           "type": "header",
-          "name": "Virgil van Dijk [1296x729]",
+          "name": "Anthony Gordon [1296x729]",
           "credit": "Getty",
           "height": 729,
           "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0824/r1706130_1296x729_16-9.jpg"
+          "url": "https://a.espncdn.com/photo/2026/0930/r1723825_1296x729_16-9.jpg"
         },
         {
           "type": "Media",
-          "name": "Could Man City face relegation or expulsion from the Premier League?",
-          "caption": "Could Man City face relegation or expulsion from the Premier League?",
+          "name": "Walcott backs England's Harry Kane to win Ballon d'Or",
+          "caption": "Walcott backs England's Harry Kane to win Ballon d'Or",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0929/dm_260929_COM_SOC_Analysis_Could_Man_City_face_relegation_or_expulsion_from_the_Premier_League_20260929_G/dm_260929_COM_SOC_Analysis_Could_Man_City_face_relegation_or_expulsion_from_the_Premier_League_20260929_G.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0929/dm_260929_COM_SOC_Analysis_Walcott_backs_Englands_Harry_Kane_to_win_Ballon_dOr_20260929_GLOBAL/dm_260929_COM_SOC_Analysis_Walcott_backs_Englands_Harry_Kane_to_win_Ballon_dOr_20260929_GLOBAL.jpg"
         }
       ]
     },
@@ -156377,51 +156611,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50004516,
-      "headline": "Kylian Mbappé on past Liverpool transfer talks: 'Mum went to Anfield and fell in love'",
-      "description": "Kylian Mbappé has described how his mother \"fell in love\" with Anfield and was keen for him to sign for Liverpool before he decided to join PSG.",
-      "published": "2026-09-22T12:02:31Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50004516/kylian-mbappe-liverpool-transfer-talks-mum-went-anfield-fell-love",
-      "images": [
-        {
-          "dataSourceIdentifier": "ff3d84bc54069",
-          "id": 50004598,
-          "type": "header",
-          "name": "Kylian Mbappe #10 of France is congratulated by Jurgen Klopp after the team's 2-0 victory during the FIFA World Cup 2026 Quarter Final match between France and Morocco at Boston Stadium\n [1296x729]",
-          "alt": "Kylian Mbappe #10 of France is congratulated by Jurgen Klopp after the team's 2-0 victory during the FIFA World Cup 2026 Quarter Final match between France and Morocco at Boston Stadium",
-          "credit": "Michael Regan - FIFA/FIFA via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0922/r1720348_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50004142,
-      "headline": "Gomez: Jonathan David and Julian Alvarez should play side-by-side",
-      "description": "Gomez: Jonathan David and Julian Alvarez should play side-by-side",
-      "published": "2026-09-22T10:22:04Z",
-      "link": "https://www.espn.com/video/clip/_/id/50004142/jonathan-david-julian-alvarez-play-side-side",
-      "images": [
-        {
-          "name": "Gomez: Jonathan David and Julian Alvarez should play side-by-side",
-          "caption": "Gomez: Jonathan David and Julian Alvarez should play side-by-side",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0922/dm_260922_Gomez_Jonathan_David_and_Julian_Alvarez_should_play_sidebyside/dm_260922_Gomez_Jonathan_David_and_Julian_Alvarez_should_play_sidebyside.jpg"
         }
       ]
     }
@@ -165417,7 +165606,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-09-30T11:10:59.465Z",
+    "updatedAt": "2026-10-01T11:38:09.783Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
