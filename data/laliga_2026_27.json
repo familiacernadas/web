@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-01T11:38:09.783Z",
+    "generatedAt": "2026-10-02T11:07:16.080Z",
     "requestsThisRun": 21,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -44654,9 +44654,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -44974,6 +44972,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-02T11:07:15.554Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 3751,
+            "teamName": "Elche",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 85,
+            "teamName": "Celta Vigo",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -45014,9 +45051,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -45340,6 +45375,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-02T11:07:15.719Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 89,
+            "teamName": "Real Sociedad",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 90,
+            "teamName": "Deportivo",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -45380,9 +45454,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -45706,6 +45778,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-02T11:07:15.883Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 244,
+            "teamName": "Real Betis",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 97,
+            "teamName": "Osasuna",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -45746,9 +45857,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -46066,6 +46175,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-02T11:07:16.078Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 87,
+            "teamName": "Racing Santander",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 94,
+            "teamName": "Valencia",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -155863,6 +156011,149 @@
   },
   "news": [
     {
+      "id": 49867974,
+      "headline": "2026 Ballon d'Or: Full men's, women's short lists, host city change, more",
+      "description": "The 2026 Ballon d'Or short lists are out. Here's who could win the biggest individual prizes in men's and women's soccer.",
+      "published": "2026-10-02T08:49:47Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49867974/2026-ballon-dor-full-mens-women-shortlists-host-city-change-vozinha-more",
+      "images": [
+        {
+          "dataSourceIdentifier": "f1cc3e0eee1a9",
+          "id": 49867397,
+          "type": "header",
+          "name": "Ballon d'Or shortlist [1296x729]",
+          "caption": "The shortlist for the men's and women's Ballon d'Or awards have been announced.",
+          "credit": "Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0908/r1713144_2_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "f21d1b7f52ae4",
+          "id": 46353500,
+          "type": "header",
+          "name": "Ousmane Dembele [1296x729]",
+          "caption": "Ousmane Dembélé won the 69th Ballon d'Or award ahead of Barcelona's Lamine Yamal.",
+          "alt": "Ousmane Dembele poses with the Menâs Ballon dâOr trophy during the 69th Ballon D'Or Ceremony at Theatre Du Chatelet on September 22, 2025 in Paris, France.",
+          "credit": "Kristy Sparow - UEFA/UEFA via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2025/0923/r1549760_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "448ec22d59537",
+          "id": 49869633,
+          "type": "header",
+          "name": "Aitana Bonmati [1296x729]",
+          "caption": "Aitana Bonmatí has won the past three Ballon d'Or Féminin awards, although she was not shortlisted this year after missing months through injury.",
+          "credit": "FRANCK FIFE/AFP via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2025/0922/r1549598_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "2befb07c994d3",
+          "id": 49868371,
+          "type": "header",
+          "name": "Spain, World Cup final trophies [1296x729]",
+          "caption": "Spain defender Pau Cubarsí (left) won the World Cup's young player award, while goalkeeper Unai Simón (right) won best goalkeeper.",
+          "credit": "ANP via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0908/r1713186_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Are Arsenal building a Premier League dynasty?",
+          "caption": "Are Arsenal building a Premier League dynasty?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0907/dm_260907_COM_SOC_ANALYSIS_Can_Havertz_lead_Arsenal_to_Champions_League_glory_2026_9_26/dm_260907_COM_SOC_ANALYSIS_Can_Havertz_lead_Arsenal_to_Champions_League_glory_2026_9_26.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50075140,
+      "headline": "Transfer rumors, news: Several Premier League clubs eye Koundé move",
+      "description": "Could Jules Koundé's next move be in the Premier League? Transfer Talk has the latest.",
+      "published": "2026-10-01T20:46:16Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50075140/transfer-rumors-news-real-madrid-eye-former-liverpool-defender-quansah",
+      "images": [
+        {
+          "dataSourceIdentifier": "a993fd9c85f4d",
+          "id": 50079070,
+          "type": "header",
+          "name": "Koundé [1296x729]",
+          "credit": "(Photo by Pedro Salado/Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1001/r1724622_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Nicol believes Klopp is wrong for backing Wirtz's Liverpool performances",
+          "caption": "Nicol believes Klopp is wrong for backing Wirtz's Liverpool performances",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0927/dm_260927_COM_SOC_Analysis_Nicol_believes_Klopp_is_wrong_for_backing_WritzE28099s_Liverpool_performances__GLOBAL/dm_260927_COM_SOC_Analysis_Nicol_believes_Klopp_is_wrong_for_backing_WritzE28099s_Liverpool_performances__GLOBAL.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50077749,
+      "headline": "UEFA receives Real Madrid dossier on Barcelona-Negreira case",
+      "description": "UEFA has received \"a substantial amount of documents\" from Real Madrid related to its ongoing inquiry into the Negreira case, European football's governing body said on Thursday.",
+      "published": "2026-10-01T17:09:17Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50077749/uefa-real-madrid-dossier-barcelona-referee-negreira-case",
+      "images": [
+        {
+          "dataSourceIdentifier": "22210ec48567c",
+          "id": 49094488,
+          "type": "header",
+          "name": "Real and Barca [1296x729]",
+          "credit": "Getty",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0617/r1674789_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Zidane: Mbappe's injury is not good news",
+          "caption": "Zidane: Mbappe's injury is not good news",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0926/dm_260926_COM_SOC_Presser_Zidane_Mbappes_injury_is_not_good_news_20260926_GLOBAL/dm_260926_COM_SOC_Presser_Zidane_Mbappes_injury_is_not_good_news_20260926_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50076437,
+      "headline": "Spain's Víctor Muñoz on Liverpool switch: Premier League more physical than LaLiga",
+      "description": "Liverpool winger Víctor Muñoz has praised the \"intensity\" at the Premier League club since making the switch from LaLiga this summer, saying the change is \"helping me grow\" as a player.",
+      "published": "2026-10-01T13:14:04Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50076437/spain-victor-munoz-liverpool-switch-premier-league-more-physical-laliga",
+      "images": [
+        {
+          "dataSourceIdentifier": "527893077603f",
+          "id": 49761972,
+          "type": "header",
+          "name": "Liverpool [1296x729]",
+          "credit": "Jan Kruger/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0829/r1708487_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Onuoha: Spain deserved to beat England",
+          "caption": "Onuoha: Spain deserved to beat England",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0927/dm_260927_COM_SOC_ANALYSIS_Onuoha_Spain_deserved_to_beat_England_2026_9_27/dm_260927_COM_SOC_ANALYSIS_Onuoha_Spain_deserved_to_beat_England_2026_9_27.jpg"
+        }
+      ]
+    },
+    {
       "id": 50075485,
       "headline": "Portugal, Man United, Real Madrid: Cristiano Ronaldo's long history of rows with coaches",
       "description": "Cristiano Ronaldo walked out of the Portugal national team's camp after being benched. It is far from the first high-profile row of his two decades at the top.",
@@ -155945,6 +156236,83 @@
           "height": 461,
           "width": 819,
           "url": "https://a.espncdn.com/photo/2026/1001/r1724348_819x461_16-9.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50076894,
+      "headline": "How Aston Villa boss Unai Emery rescued Real Unión, his 'family' club, from ruin",
+      "description": "Real Unión are one of LaLiga's founding clubs, but fell on hard times. Enter Unai Emery, one of the world's top coaches, whose family connection to the club spans four generations.",
+      "published": "2026-10-02T10:12:39Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50076894/how-aston-villa-manager-unai-emery-rescued-family-club-real-union-irun",
+      "images": [
+        {
+          "dataSourceIdentifier": "41162f8cb252f",
+          "id": 50083175,
+          "type": "header",
+          "name": "Igor, Unai and Antonio Emery [1296x729]",
+          "credit": "Real Unión",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1002/r1724844_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "2b7cce7db84b5",
+          "id": 50077175,
+          "type": "inline",
+          "name": "Antonio Emery and his two sons [100x150]",
+          "credit": "Real Unión",
+          "height": 150,
+          "width": 100,
+          "url": "https://a.espncdn.com/photo/2026/1001/r1724460_100x150_2-3.jpg"
+        },
+        {
+          "dataSourceIdentifier": "c22b7e4afeda4",
+          "id": 50083275,
+          "type": "inline",
+          "name": "Real Union [150x100]",
+          "credit": "Real Unión",
+          "height": 100,
+          "width": 150,
+          "url": "https://a.espncdn.com/photo/2026/1002/r1724849_150x100_3-2.jpg"
+        },
+        {
+          "dataSourceIdentifier": "9e81fdc71b48f",
+          "id": 50077122,
+          "type": "header",
+          "name": "Igor Emery [1296x729]",
+          "credit": "Real Unión",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1001/r1724457_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "b1979b9ce0ca9",
+          "id": 50077244,
+          "type": "header",
+          "name": "Real Unión team wearing kit in Aston Villa's colours [1296x729]",
+          "credit": "Luis de la Mata",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1001/r1724467_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "4fc7ae907471b",
+          "id": 50077070,
+          "type": "header",
+          "name": "Unai Emery with his brothers and mother [1296x729]",
+          "credit": "Real Unión",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1001/r1724456_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Leboeuf: Unai Emery is one of Aston Villa's best-ever coaches",
+          "caption": "Frank Leboeuf reflects on Unai Emery's impact following Aston Villa's Europa League victory, praising him for transforming the club's performances.",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0520/dm_260520_Leboeuf_Emery_is_one_of_Aston_Villas_best_ever_coaches/dm_260520_Leboeuf_Emery_is_one_of_Aston_Villas_best_ever_coaches.jpg"
         }
       ]
     },
@@ -156465,152 +156833,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0804/dm_260804_COM_SOC_Analysis_Does_football_need_to_vote_against_Infantino3F__GLOBAL_2026-08-04/dm_260804_COM_SOC_Analysis_Does_football_need_to_vote_against_Infantino3F__GLOBAL_2026-08-04.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50010819,
-      "headline": "European Golden Shoe: Who's leading Raphinha, Mbappé, Haaland in race for top goal award?",
-      "description": "Raphinha may have started the season on fire, but there's a little-known striker who is ahead of the Barça star in the race for the European Golden Shoe.",
-      "published": "2026-09-25T07:46:17Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50010819/european-golden-shoe-whos-leading-raphinha-mbappe-haaland",
-      "images": [
-        {
-          "dataSourceIdentifier": "0513a527fbf81",
-          "id": 50011165,
-          "type": "header",
-          "name": "Raphinha, Kylian Mbappe and Erling Haaland [1295x729]",
-          "caption": "Raphinha, Kylian Mbappe and Erling Haaland",
-          "alt": "Raphinha, Kylian Mbappe and Erling Haaland",
-          "credit": "ESPN",
-          "height": 729,
-          "width": 1295,
-          "url": "https://a.espncdn.com/photo/2026/0923/r1720737_1295x729_16-9.png"
-        },
-        {
-          "dataSourceIdentifier": "3a8a7032fda98",
-          "id": 50011093,
-          "type": "header",
-          "name": "Ede Oloko [1184x666]",
-          "caption": "Ede Oloko has been scoring goals for fun in the Latvian top flight.",
-          "alt": "Ede Oloko",
-          "credit": "FK Liepaja/Facebook",
-          "height": 666,
-          "width": 1184,
-          "url": "https://a.espncdn.com/photo/2026/0923/r1720733_1184x666_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "1ba1af554c30d",
-          "id": 49662354,
-          "type": "header",
-          "name": "Harry Kane Golden Shoe [1296x729]",
-          "caption": "Harry Kane won the 2025-26 European Golden Shoe award, the second of his career.",
-          "alt": "19 August 2026, Bavaria, Munich: Bayern Munich forward Harry Kane at the Golden Boot award ceremony for Europe's top scorer.",
-          "credit": "Christoph Lother/picture alliance via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0819/r1704026_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Raphinha hat trick powers Barcelona past Sevilla",
-          "caption": "Raphinha hat trick powers Barcelona past Sevilla",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0919/dm_260919_Raphinha_hat_trick_powers_Barcelona_past_Sevilla_31/dm_260919_Raphinha_hat_trick_powers_Barcelona_past_Sevilla_31.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50018795,
-      "headline": "Marc Cucurella 'sent a subtle message' to try to tempt Rodri into Real Madrid move",
-      "description": "Real Madrid's Marc Cucurella has said he \"sent a subtle message\" asking Rodri to join him at Real Madrid this summer, before the midfielder opted to sign for rivals Barcelona.",
-      "published": "2026-09-24T12:20:13Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50018795/real-madrid-marc-cucurella-rodri-barcelona-spain-el-clasico",
-      "images": [
-        {
-          "dataSourceIdentifier": "120ddbc25aa15",
-          "id": 50018797,
-          "type": "header",
-          "name": "Cucurella Rodri [1296x729]",
-          "credit": "JAVIER SORIANO/AFP via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0924/r1721200_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50015995,
-      "headline": "Nicol: I have sympathy for Mourinho after Madrid derby",
-      "description": "Nicol: I have sympathy for Mourinho after Madrid derby",
-      "published": "2026-09-23T22:15:24Z",
-      "link": "https://www.espn.com/video/clip/_/id/50015995/sympathy-mourinho-madrid-derby",
-      "images": [
-        {
-          "name": "Nicol: I have sympathy for Mourinho after Madrid derby",
-          "caption": "Nicol: I have sympathy for Mourinho after Madrid derby",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0923/dm_260923_COM_SOC_Analysis_Nicol3A_I_have_sympathy_for_Mourinho_after_Madrid_derby__GLOBAL_2026-09-23/dm_260923_COM_SOC_Analysis_Nicol3A_I_have_sympathy_for_Mourinho_after_Madrid_derby__GLOBAL_2026-09-23.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50012135,
-      "headline": "Former Mexico coach Aguirre takes over at struggling Valencia",
-      "description": "LaLiga side Valencia have appointed former Mexico coach Javier Aguirre on an initial deal until the end of the season.",
-      "published": "2026-09-23T10:29:48Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50012135/former-mexico-coach-aguirre-takes-struggling-valencia",
-      "images": [
-        {
-          "dataSourceIdentifier": "f921275b66891",
-          "id": 49975518,
-          "type": "header",
-          "name": "Javier Aguirre [1296x729]",
-          "caption": "Veteran coach Javier Aguirre is eyeing a return to Spanish football after stepping down as Mexico manager following the 2026 World Cup.",
-          "credit": "Photo by Ryan Pierse - FIFA/FIFA via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0918/r1718805_1296x729_16-9.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50007365,
-      "headline": "Spain refs back Real, say Lee deserved red for Valverde tackle",
-      "description": "Spain's Technical Committee of Referees said Lee Kang-In should have been sent off in Sunday's Madrid derby, while backing the decision not to show Cristian Romero a red card.",
-      "published": "2026-09-22T19:30:51Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50007365/spain-refs-back-real-lee-red-valverde-tackle",
-      "images": [
-        {
-          "dataSourceIdentifier": "cc73eacf5d691",
-          "id": 50007461,
-          "type": "header",
-          "name": "Lee challenge Valverde Madrid derby_260920 [1024x576]",
-          "caption": "Atletico Madrid's Lee Kang-In avoided a red card for his tackle on Real's Federico Valverde during the weekend's derby in LaLiga.",
-          "alt": "Atletico Madrid's Lee Kang-In avoided a red card for his tackle on Real's Federico Valverde during the weekend's derby in LaLiga.",
-          "credit": "Getty Images",
-          "height": 576,
-          "width": 1024,
-          "url": "https://a.espncdn.com/photo/2026/0922/r1720531_1024x576_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "What went wrong for Real in the Madrid derby?",
-          "caption": "What went wrong for Real in the Madrid derby?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20.jpg"
         }
       ]
     }
@@ -165606,7 +165828,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-01T11:38:09.783Z",
+    "updatedAt": "2026-10-02T11:07:16.080Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
