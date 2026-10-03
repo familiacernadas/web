@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-02T11:07:16.080Z",
-    "requestsThisRun": 21,
+    "generatedAt": "2026-10-03T10:25:39.711Z",
+    "requestsThisRun": 18,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": false,
@@ -46254,9 +46254,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -46574,6 +46572,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-03T10:25:39.710Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 1538,
+            "teamName": "Levante",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 243,
+            "teamName": "Sevilla",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -156011,6 +156048,89 @@
   },
   "news": [
     {
+      "id": 50089210,
+      "headline": "Transfer rumors, news: Haaland wants LaLiga move over Arsenal",
+      "description": "Manchester City striker Erling Haaland favors a move to Spain over Arsenal. Transfer Talk has the latest.",
+      "published": "2026-10-03T08:31:00Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50089210/transfer-rumors-news-man-city-erling-haaland-wants-laliga-move-arsenal",
+      "images": [
+        {
+          "dataSourceIdentifier": "5270020bb75e5",
+          "id": 49989681,
+          "type": "header",
+          "name": "Haaland [1296x729]",
+          "credit": "Getty",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0920/r1719479_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "What does the future hold for Manchester City's players?",
+          "caption": "What does the future hold for Manchester City's players?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0930/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50086086,
+      "headline": "Cucurella: Too soon to judge Mourinho's Madrid amid poor start",
+      "description": "Marc Cucurella has acknowledged Real Madrid have not started the season as they would have liked under new coach José Mourinho, but he says the team must be judged at the end of the campaign, not now.",
+      "published": "2026-10-02T19:46:20Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50086086/marc-cucurella-real-madrid-jose-mourinho-spain",
+      "images": [
+        {
+          "dataSourceIdentifier": "a14b7f9a3c92b",
+          "id": 50086038,
+          "type": "header",
+          "name": "Cucurella Spain [1296x729]",
+          "caption": "Real Madrid defender Marc Cucurella is currently with Spain for the UEFA Nations League.",
+          "alt": "Marc Cucurella of Spain  during the  UEFA Nations league match between Spain  v Croatia at the Estadio Ramon Sanchez Pizjuan on September 29, 2026 in Seville Spain",
+          "credit": "Maria Gracia Jimenez/Soccrates/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1002/r1725052_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Walcott hails 'incredible' Lamine Yamal after brace vs. Croatia",
+          "caption": "Walcott hails 'incredible' Lamine Yamal after brace vs. Croatia",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0929/dm_260929_COM_SOC_Analysis_Walcott_hails_incredible_Lamine_Yamal_after_brace_vs_Croatia_20260929_GLOBAL/dm_260929_COM_SOC_Analysis_Walcott_hails_incredible_Lamine_Yamal_after_brace_vs_Croatia_20260929_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50084533,
+      "headline": "Raphinha set to be fit for Barcelona clashes with PSG and Real Madrid - source",
+      "description": "Raphinha will be fit for Barcelona's double header against Paris Saint-Germain and Real Madrid later this month after tests revealed no major injury to his right thigh on Friday, a source told ESPN.",
+      "published": "2026-10-02T13:47:51Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50084533/raphinha-barcelona-psg-real-madrid-champions-league-el-clasico",
+      "images": [
+        {
+          "dataSourceIdentifier": "f69c579d3f55e",
+          "id": 50084499,
+          "type": "header",
+          "name": "Raphinha [1296x729]",
+          "credit": "Eric Verhoeven/Soccrates/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1002/r1724919_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Flick: Raphinha is very happy to play as a nine for Barcelona",
+          "caption": "Flick: Raphinha is very happy to play as a nine for Barcelona",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20.jpg"
+        }
+      ]
+    },
+    {
       "id": 49867974,
       "headline": "2026 Ballon d'Or: Full men's, women's short lists, host city change, more",
       "description": "The 2026 Ballon d'Or short lists are out. Here's who could win the biggest individual prizes in men's and women's soccer.",
@@ -156751,88 +156871,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0922/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50026378,
-      "headline": "José Mourinho on 'non-negotiable' rules for Real Madrid to follow: 'Don't betray me'",
-      "description": "José Mourinho has spoken about his managerial philosophy, warning of the importance of trust between players and coach -- and \"non-negotiable\" rules for his squad to follow -- as he looks to build a new winning team at Real Madrid.",
-      "published": "2026-09-25T11:13:03Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50026378/jose-mourinho-nonnegotiable-rules-real-madrid-follow-dont-betray-me",
-      "images": [
-        {
-          "dataSourceIdentifier": "c862ec2556a45",
-          "id": 50026343,
-          "type": "header",
-          "name": "Jude Bellingham [1296x729]",
-          "alt": "MADRID, SPAIN - SEPTEMBER 20: Jude Bellingham of Real Madrid CF talks to Jose Mourinho, head coach of Real Madrid CF, during the Spanish League, LaLiga EA Sports, football match played between Atletico de Madrid and Real Madrid CF at Riyadh Air Metropolit",
-          "credit": "Photo By Oscar J. Barroso/Europa Press via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0925/r1721617_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Nicol: I have sympathy for Mourinho after Madrid derby",
-          "caption": "Nicol: I have sympathy for Mourinho after Madrid derby",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0923/dm_260923_COM_SOC_Analysis_Nicol3A_I_have_sympathy_for_Mourinho_after_Madrid_derby__GLOBAL_2026-09-23/dm_260923_COM_SOC_Analysis_Nicol3A_I_have_sympathy_for_Mourinho_after_Madrid_derby__GLOBAL_2026-09-23.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50026251,
-      "headline": "Barcelona's pursuit of Julián Álvarez is 'in the past' - Deco",
-      "description": "Barcelona sporting director Deco says the club's pursuit of Julián Álvarez is \"in the past\" after it emerged the Spanish champions would have to raise money through player exits to be able to sign the Atlético Madrid striker in January.",
-      "published": "2026-09-25T10:32:08Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50026251/barcelona-julian-alvarez-atletico-madrid-argentina",
-      "images": [
-        {
-          "dataSourceIdentifier": "9c75206dd5ab4",
-          "id": 50026209,
-          "type": "header",
-          "name": "Alvarez [1296x729]",
-          "credit": "Alberto Gardin/NurPhoto via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0925/r1721614_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Flick: Raphinha is very happy to play as a nine for Barcelona",
-          "caption": "Flick: Raphinha is very happy to play as a nine for Barcelona",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50025809,
-      "headline": "Premier League, LaLiga, Serie A, Bundesliga demand FIFA reform amid Gianni Infantino re-election bid",
-      "description": "The top leagues in England, Italy, Germany and Spain have issued a joint-statement demanding governance reform at FIFA, amid Gianni Infantino's bid to be re-elected as president in 2027.",
-      "published": "2026-09-25T10:12:42Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50025809/premier-league-bundesliga-la-liga-serie-gianni-infantino-fifa-reform-statement",
-      "images": [
-        {
-          "dataSourceIdentifier": "fb5cd08351d28",
-          "id": 50025768,
-          "type": "header",
-          "name": "Infantino [1296x729]",
-          "credit": "RONALDO SCHEMIDT / AFP via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0925/r1721593_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Does soccer need to vote against Infantino?",
-          "caption": "Does soccer need to vote against Infantino?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0804/dm_260804_COM_SOC_Analysis_Does_football_need_to_vote_against_Infantino3F__GLOBAL_2026-08-04/dm_260804_COM_SOC_Analysis_Does_football_need_to_vote_against_Infantino3F__GLOBAL_2026-08-04.jpg"
         }
       ]
     }
@@ -165828,7 +165866,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-02T11:07:16.080Z",
+    "updatedAt": "2026-10-03T10:25:39.711Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
