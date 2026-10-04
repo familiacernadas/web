@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-03T10:25:39.711Z",
-    "requestsThisRun": 18,
+    "generatedAt": "2026-10-04T11:07:24.992Z",
+    "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": false,
@@ -156048,10 +156048,68 @@
   },
   "news": [
     {
+      "id": 50074316,
+      "headline": "Who most deserves the Ballon d'Or? Whittling down the 30-man short list",
+      "description": "Kylian Mbappé, Lamine Yamal and Harry Kane are the three favorites to win the 2026 Ballon d'Or, but who actually deserves to win it?",
+      "published": "2026-10-04T10:38:08Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50074316/who-most-deserves-ballon-dor-whittling-30-man-short-list",
+      "images": [
+        {
+          "dataSourceIdentifier": "ca0cfe84ff283",
+          "id": 46341500,
+          "type": "header",
+          "name": "Ballon d'Or [1296x729]",
+          "caption": "Ballon d'Or",
+          "alt": "Ballon d'Or",
+          "credit": "Shaun Brooks - CameraSport",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2025/0922/r1549234_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Does Harry Kane deserve to win the Ballon d'Or?",
+          "caption": "Does Harry Kane deserve to win the Ballon d'Or?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0910/dm_260910_COM_SOC_Analysis_Does_Harry_Kane_deserve_to_win_the_Ballon_dOr_20260910_GLOBAL/dm_260910_COM_SOC_Analysis_Does_Harry_Kane_deserve_to_win_the_Ballon_dOr_20260910_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50098759,
+      "headline": "Transfer rumors, news: Arsenal among clubs chasing winger Yildiz",
+      "description": "Arsenal, Real Madrid and Bayern Munich are all chasing Juventus winger Kenan Yildiz. Transfer Talk has the latest.",
+      "published": "2026-10-04T10:27:26Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50098759/transfer-rumors-news-arsenal-clubs-chasing-kenan-yildiz",
+      "images": [
+        {
+          "dataSourceIdentifier": "9c5a039b11bff",
+          "id": 49696082,
+          "type": "header",
+          "name": "Kenan Yildiz Juventus [1296x729]",
+          "caption": "Juventus appear intent on keeping Kenan Yildiz at the club.",
+          "alt": "Kenan Yildiz  of Juventus during the Pre-season Friendly match between Juventus and Juventus Next Gen at Allianz Stadium on August 17, 2026 in Turin, Italy.",
+          "credit": "Alberto Gandolfo - Juventus/Juventus FC via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0823/r1705543_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "What does the future hold for Manchester City's players?",
+          "caption": "What does the future hold for Manchester City's players?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0930/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
       "id": 50089210,
       "headline": "Transfer rumors, news: Haaland wants LaLiga move over Arsenal",
       "description": "Manchester City striker Erling Haaland favors a move to Spain over Arsenal. Transfer Talk has the latest.",
-      "published": "2026-10-03T08:31:00Z",
+      "published": "2026-10-03T15:30:54Z",
       "link": "https://www.espn.com/soccer/story/_/id/50089210/transfer-rumors-news-man-city-erling-haaland-wants-laliga-move-arsenal",
       "images": [
         {
@@ -156827,50 +156885,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0925/dm_260925_COM_SOC_Analysis_What_sanctions_should_the_Premier_League_enforce_on_Man_City3F_GLOBAL_2026-09-25/dm_260925_COM_SOC_Analysis_What_sanctions_should_the_Premier_League_enforce_on_Man_City3F_GLOBAL_2026-09-25.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50033670,
-      "headline": "Zidane: Mbappe's injury is not good news",
-      "description": "Zidane: Mbappe's injury is not good news",
-      "published": "2026-09-26T15:36:00Z",
-      "link": "https://www.espn.com/video/clip/_/id/50033670/mbappe-injury-not-good-news",
-      "images": [
-        {
-          "name": "Zidane: Mbappe's injury is not good news",
-          "caption": "Zidane: Mbappe's injury is not good news",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0926/dm_260926_COM_SOC_Presser_Zidane_Mbappes_injury_is_not_good_news_20260926_GLOBAL/dm_260926_COM_SOC_Presser_Zidane_Mbappes_injury_is_not_good_news_20260926_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50004145,
-      "headline": "Barcelona's start to season is best in Europe's top 5 leagues for almost 100 years",
-      "description": "Barcelona have begun the season on fire, scoring 36 goals in their first eight matches. How does that compare to the best starts for all time? (Spoiler: Very well.)",
-      "published": "2026-09-26T10:36:01Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50004145/why-barcelona-start-season-laliga-champions-league-best-europe-top-5-leagues-almost-100-years",
-      "images": [
-        {
-          "dataSourceIdentifier": "022f967b5e31c",
-          "id": 50032096,
-          "type": "header",
-          "name": "Lamine Yamal, Dani Olmo [1296x729]",
-          "credit": "Jose Breton/Pics Action/NurPhoto via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0926/r1721963_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Gomez: Raphinha is the best player in the world",
-          "caption": "Gomez: Raphinha is the best player in the world",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0922/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world.jpg"
         }
       ]
     }
@@ -165866,7 +165880,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-03T10:25:39.711Z",
+    "updatedAt": "2026-10-04T11:07:24.992Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
