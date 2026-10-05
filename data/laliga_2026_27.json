@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-04T11:07:24.992Z",
+    "generatedAt": "2026-10-05T12:18:07.942Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -156048,6 +156048,90 @@
   },
   "news": [
     {
+      "id": 50108439,
+      "headline": "Kylian Mbappé goes cycling despite José Mourinho warning",
+      "description": "Kylian Mbappé has shared a video of himself riding a bicycle on social media, just days after his Real Madrid manager, José Mourinho, said players couldn't go cycling because of the injury risks involved.",
+      "published": "2026-10-05T10:05:02Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50108439/mbappe-cycling-bike-jose-mourinho-real-madrid-france",
+      "images": [
+        {
+          "dataSourceIdentifier": "3844162fcf8b6",
+          "id": 50108449,
+          "type": "header",
+          "name": "Mbappe [1296x729]",
+          "credit": "Francisco Macia/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1005/r1726250_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50107972,
+      "headline": "Transfer rumors, news: Bayern brace for tough contract talks with Olise",
+      "description": "Bayern Munich could be facing an uphill battle to sign winger Michael Olise to a new contract. Transfer Talk has the latest.",
+      "published": "2026-10-05T08:39:19Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50107972/transfer-rumors-news-bayern-munich-tough-contract-talks-michael-olise",
+      "images": [
+        {
+          "dataSourceIdentifier": "43dd0aaa94d56",
+          "id": 49858058,
+          "type": "header",
+          "name": "Michael Olise [1296x729]",
+          "caption": "Michael Olise was not the subject of any offers in the last window, according to Bayern CEO Jan-Christian Dreesen.",
+          "credit": "Photo by Boris Streubel/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0907/r1712702_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "What does the future hold for Manchester City's players?",
+          "caption": "What does the future hold for Manchester City's players?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0930/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50098759,
+      "headline": "Transfer rumors, news: Arsenal among clubs chasing winger Yildiz",
+      "description": "Arsenal, Real Madrid and Bayern Munich are all chasing Juventus winger Kenan Yildiz. Transfer Talk has the latest.",
+      "published": "2026-10-04T18:14:16Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50098759/transfer-rumors-news-arsenal-clubs-chasing-kenan-yildiz",
+      "images": [
+        {
+          "dataSourceIdentifier": "9c5a039b11bff",
+          "id": 49696082,
+          "type": "header",
+          "name": "Kenan Yildiz Juventus [1296x729]",
+          "caption": "Juventus appear intent on keeping Kenan Yildiz at the club.",
+          "alt": "Kenan Yildiz  of Juventus during the Pre-season Friendly match between Juventus and Juventus Next Gen at Allianz Stadium on August 17, 2026 in Turin, Italy.",
+          "credit": "Alberto Gandolfo - Juventus/Juventus FC via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0823/r1705543_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "What does the future hold for Manchester City's players?",
+          "caption": "What does the future hold for Manchester City's players?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0930/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
       "id": 50074316,
       "headline": "Who most deserves the Ballon d'Or? Whittling down the 30-man short list",
       "description": "Kylian Mbappé, Lamine Yamal and Harry Kane are the three favorites to win the 2026 Ballon d'Or, but who actually deserves to win it?",
@@ -156073,35 +156157,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0910/dm_260910_COM_SOC_Analysis_Does_Harry_Kane_deserve_to_win_the_Ballon_dOr_20260910_GLOBAL/dm_260910_COM_SOC_Analysis_Does_Harry_Kane_deserve_to_win_the_Ballon_dOr_20260910_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50098759,
-      "headline": "Transfer rumors, news: Arsenal among clubs chasing winger Yildiz",
-      "description": "Arsenal, Real Madrid and Bayern Munich are all chasing Juventus winger Kenan Yildiz. Transfer Talk has the latest.",
-      "published": "2026-10-04T10:27:26Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50098759/transfer-rumors-news-arsenal-clubs-chasing-kenan-yildiz",
-      "images": [
-        {
-          "dataSourceIdentifier": "9c5a039b11bff",
-          "id": 49696082,
-          "type": "header",
-          "name": "Kenan Yildiz Juventus [1296x729]",
-          "caption": "Juventus appear intent on keeping Kenan Yildiz at the club.",
-          "alt": "Kenan Yildiz  of Juventus during the Pre-season Friendly match between Juventus and Juventus Next Gen at Allianz Stadium on August 17, 2026 in Turin, Italy.",
-          "credit": "Alberto Gandolfo - Juventus/Juventus FC via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0823/r1705543_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "What does the future hold for Manchester City's players?",
-          "caption": "What does the future hold for Manchester City's players?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0930/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL.jpg"
         }
       ]
     },
@@ -156830,61 +156885,6 @@
           "height": 729,
           "width": 1296,
           "url": "https://a.espncdn.com/photo/2026/0928/r1723176_1296x729_16-9.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50043662,
-      "headline": "LaLiga chief Javier Tebas criticises Man City's alleged rule breaches: 'Equal rules for all'",
-      "description": "LaLiga president Javier Tebas has said Manchester City legal battle against the Premier League shows why \"equal rules for all\" are essential.",
-      "published": "2026-09-27T17:54:25Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50043662/laliga-chief-javier-tebas-criticises-man-city-alleged-rule-breaches-equal-rules-all",
-      "images": [
-        {
-          "dataSourceIdentifier": "a4e551d8dff08",
-          "id": 50043575,
-          "type": "header",
-          "name": "The president of La Liga, Javier Tebas Medrano, is giving a lecture entitled ‘Diplomacy in sports relations\n [1296x729]",
-          "alt": "The president of La Liga, Javier Tebas Medrano, is giving a lecture entitled ‘Diplomacy in sports relations",
-          "credit": "Eduardo Parra/Europa Press via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0927/r1722495_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Gomez: Man City must face a historic punishment",
-          "caption": "Gomez: Man City must face a historic punishment",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0927/dm_260927_COM_SOC_ANALYSIS_Gomez_Man_City_must_face_a_historic_punishment_2026_9_27/dm_260927_COM_SOC_ANALYSIS_Gomez_Man_City_must_face_a_historic_punishment_2026_9_27.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50040914,
-      "headline": "Transfer rumors, news: Liverpool among clubs interested in Alexander-Arnold",
-      "description": "A group of Premier League clubs are keeping an eye on Trent Alexander-Arnold. Transfer Talk has the latest.",
-      "published": "2026-09-27T14:02:23Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50040914/transfer-rumors-news-liverpool-clubs-interested-alexander-arnold",
-      "images": [
-        {
-          "dataSourceIdentifier": "53d48fcb0a2b6",
-          "id": 50041010,
-          "type": "header",
-          "name": "Trent Alexander-Arnold [1296x729]",
-          "credit": "Florencia Tan Jun - UEFA/UEFA via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0927/r1722359_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "What sanctions should the Premier League enforce on Man City?",
-          "caption": "What sanctions should the Premier League enforce on Man City?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0925/dm_260925_COM_SOC_Analysis_What_sanctions_should_the_Premier_League_enforce_on_Man_City3F_GLOBAL_2026-09-25/dm_260925_COM_SOC_Analysis_What_sanctions_should_the_Premier_League_enforce_on_Man_City3F_GLOBAL_2026-09-25.jpg"
         }
       ]
     }
@@ -165880,7 +165880,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-04T11:07:24.992Z",
+    "updatedAt": "2026-10-05T12:18:07.942Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
