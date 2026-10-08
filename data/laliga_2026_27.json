@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-07T11:48:20.582Z",
+    "generatedAt": "2026-10-08T12:03:23.385Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -156048,6 +156048,61 @@
   },
   "news": [
     {
+      "id": 50131876,
+      "headline": "Raúl Asencio on drink driving conviction: 'I'm at Real Madrid, that can't happen again'",
+      "description": "Raúl Asencio has said he is only focused on winning at Real Madrid and \"turning the situation around\" following his recent conviction for drink driving.",
+      "published": "2026-10-08T10:36:19Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50131876/raul-asencio-real-madrid-drink-drinking-jose-mourinho",
+      "images": [
+        {
+          "dataSourceIdentifier": "705f17d9bac53",
+          "id": 50131856,
+          "type": "header",
+          "name": "Raul Asencio [1296x729]",
+          "credit": "Alvaro Medranda/Quality Sport Images/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1008/r1727758_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50131142,
+      "headline": "Transfer rumors, news: Mbappé future at Real Madrid in doubt?",
+      "description": "Mbappé has reportedly angered manager Jose Mourinho, but Madrid would not consider offers less than €200 million. Transfer Talk has the latest.",
+      "published": "2026-10-08T09:15:34Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50131142/transfer-rumors-news-kylian-mbappe-future-real-madrid-doubt",
+      "images": [
+        {
+          "dataSourceIdentifier": "b7abfa536348e",
+          "id": 49972498,
+          "type": "header",
+          "name": "Kylian Mbappe [1296x729]",
+          "alt": "Kylian Mbappe looks on.",
+          "credit": "(Photo by Florencia Tan Jun - UEFA/UEFA via Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0918/r1718524_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Hislop: Feud with Jorge Jesus won't damage Ronaldo's legacy",
+          "caption": "Hislop: Feud with Jorge Jesus won't damage Ronaldo's legacy",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1007/dm_261007_COM_SOC_ANALYSIS_Hislop_Feud_with_Jorge_Jesus_wont_damage_Ronaldos_legacy_2026_10_7/dm_261007_COM_SOC_ANALYSIS_Hislop_Feud_with_Jorge_Jesus_wont_damage_Ronaldos_legacy_2026_10_7.jpg"
+        }
+      ]
+    },
+    {
       "id": 50123519,
       "headline": "England teammates praise Kane, 'it's definitely possible' he could win the Ballon d'Or",
       "description": "England teammates praise Kane, 'it's definitely possible' he could win the Ballon d'Or",
@@ -156635,62 +156690,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0922/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50065853,
-      "headline": "Barcelona chief explains how Lautaro Martínez pursuit ended over a phone call",
-      "description": "Joan Laporta has confirmed Barcelona tried to sign Lautaro Martínez this summer but quickly gave up once it became apparent Inter Milan would not allow the striker to leave.",
-      "published": "2026-09-30T10:13:20Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50065853/barcelona-chief-explains-how-lautaro-martinez-pursuit-ended-phone-call",
-      "images": [
-        {
-          "dataSourceIdentifier": "c5337ccddc883",
-          "id": 48762051,
-          "type": "header",
-          "name": "Lautaro Coppa Italia final celeb [1296x729]",
-          "caption": "Lautaro Martínez's goal secured victory for Inter Milan in the Coppa Italia final.",
-          "alt": "Lautaro Martinez of FC Internazionale celebrates his goal  during the Coppa Italia Final match between SS Lazio and FC Internazionale at Stadio Olimpico on May 13, 2026 in Rome, Italy",
-          "credit": "Image Photo Agency/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0513/r1657780_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Flick: Raphinha is very happy to play as a nine for Barcelona",
-          "caption": "Flick: Raphinha is very happy to play as a nine for Barcelona",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_Flick3A_Raphinha_is_very_happy_to_play_as_a_nine_for_Barcelona_GLOBAL_2026-09-20.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50065805,
-      "headline": "Harry Kane on Anthony Gordon: 'Going to big club gives you confidence'",
-      "description": "Harry Kane hailed England's \"difference maker\" Anthony Gordon and returning star Trent Alexander-Arnold after the LaLiga pair impressed in the win against Czechia.",
-      "published": "2026-09-30T16:23:19Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50065805/harry-kane-anthony-gordon-going-big-club-gives-confidence",
-      "images": [
-        {
-          "dataSourceIdentifier": "303e27e7c0d92",
-          "id": 50065760,
-          "type": "header",
-          "name": "Anthony Gordon [1296x729]",
-          "credit": "Getty",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0930/r1723825_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Walcott backs England's Harry Kane to win Ballon d'Or",
-          "caption": "Walcott backs England's Harry Kane to win Ballon d'Or",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0929/dm_260929_COM_SOC_Analysis_Walcott_backs_Englands_Harry_Kane_to_win_Ballon_dOr_20260929_GLOBAL/dm_260929_COM_SOC_Analysis_Walcott_backs_Englands_Harry_Kane_to_win_Ballon_dOr_20260929_GLOBAL.jpg"
         }
       ]
     }
@@ -165686,7 +165685,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-07T11:48:20.582Z",
+    "updatedAt": "2026-10-08T12:03:23.385Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
