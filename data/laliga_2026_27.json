@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-08T12:03:23.385Z",
-    "requestsThisRun": 17,
+    "generatedAt": "2026-10-09T11:55:12.061Z",
+    "requestsThisRun": 27,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": false,
@@ -42659,7 +42659,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.573Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-09T11:55:11.874Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -42866,7 +42866,7 @@
         "confidence": 0.4735,
         "difficulty": "difícil",
         "generatedAt": "2026-09-10T22:53:14.284Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-09T11:55:11.874Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -46651,9 +46651,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -46977,6 +46975,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-09T11:55:10.290Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 85,
+            "teamName": "Celta Vigo",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 96,
+            "teamName": "Alavés",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -47017,9 +47054,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -47337,6 +47372,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-09T11:55:10.458Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 90,
+            "teamName": "Deportivo",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 1538,
+            "teamName": "Levante",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -47377,9 +47451,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -47709,6 +47781,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-09T11:55:10.650Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 88,
+            "teamName": "Espanyol",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 1068,
+            "teamName": "Atlético Madrid",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -47749,9 +47860,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -48069,6 +48178,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-09T11:55:10.816Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 2922,
+            "teamName": "Getafe",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 101,
+            "teamName": "Rayo Vallecano",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -48109,9 +48257,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -48435,6 +48581,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-09T11:55:11.032Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 99,
+            "teamName": "Málaga",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 89,
+            "teamName": "Real Sociedad",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -48475,9 +48660,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -48795,6 +48978,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-09T11:55:11.203Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 97,
+            "teamName": "Osasuna",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 87,
+            "teamName": "Racing Santander",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -48835,9 +49057,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -49179,6 +49399,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-09T11:55:11.366Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 244,
+            "teamName": "Real Betis",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 83,
+            "teamName": "Barcelona",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -49219,9 +49478,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -49551,6 +49808,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-09T11:55:11.534Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 86,
+            "teamName": "Real Madrid",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 243,
+            "teamName": "Sevilla",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -49591,9 +49887,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -49911,6 +50205,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-09T11:55:11.710Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 94,
+            "teamName": "Valencia",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 93,
+            "teamName": "Athletic Club",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -49951,9 +50284,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -50283,6 +50614,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-09T11:55:11.873Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 102,
+            "teamName": "Villarreal",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 3751,
+            "teamName": "Elche",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -156048,6 +156418,96 @@
   },
   "news": [
     {
+      "id": 50139426,
+      "headline": "Mourinho slams 'ridiculous' journalist who believes Mbappé has failed at Real Madrid",
+      "description": "Mourinho slams 'ridiculous' journalist who believes Mbappé has failed at Real Madrid",
+      "published": "2026-10-09T11:37:41Z",
+      "link": "https://www.espn.com/video/clip/_/id/50139426/mourinho-slams-ridiculous-journalist-believes-mbappe-failed-real-madrid",
+      "images": [
+        {
+          "name": "Mourinho slams 'ridiculous' journalist who believes Mbappé has failed at Real Madrid",
+          "caption": "Mourinho slams 'ridiculous' journalist who believes Mbappé has failed at Real Madrid",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1009/dm_261009_COM_SOC_Analysis_Mourinho_slams_E28098ri457/dm_261009_COM_SOC_Analysis_Mourinho_slams_E28098ri457.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50138657,
+      "headline": "Kylian Mbappé to start for Real Madrid, criticism 'ridiculous' - José Mourinho",
+      "description": "José Mourinho has called criticism of Kylian Mbappé \"ridiculous,\" defending the Real Madrid star's conduct during the international break.",
+      "published": "2026-10-09T09:04:08Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50138657/kylian-mbappe-start-real-madrid-criticism-ridiculous-jose-mourinho",
+      "images": [
+        {
+          "dataSourceIdentifier": "d9717c5d9ec00",
+          "id": 50138637,
+          "type": "header",
+          "name": "Kylian Mbappe [1296x729]",
+          "credit": "Getty",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1009/r1728145_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "What went wrong for Real in the Madrid derby?",
+          "caption": "What went wrong for Real in the Madrid derby?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50138310,
+      "headline": "Transfer rumors, news: Real Madrid eye McTominay as Napoli talks stall",
+      "description": "Scott McTominay's contract talks at Napoli have hit a hurdle, with Real Madrid reportedly interested in making a move. Transfer Talk has the latest.",
+      "published": "2026-10-09T08:45:10Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50138310/transfer-rumors-news-real-madrid-eye-mctominay-napoli-talks-stall",
+      "images": [
+        {
+          "dataSourceIdentifier": "1e3b9e08aee07",
+          "id": 49793163,
+          "type": "header",
+          "name": "McTominay [1296x729]",
+          "credit": "Photo by Andrea Staccioli/Insidefoto/LightRocket via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0901/r1709929_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Moreno: Man Utd vs. Spurs a 'must not lose' for both sides",
+          "caption": "Moreno: Man Utd vs. Spurs a 'must not lose' for both sides",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/dm_261008_Moreno_Man_Utd_vs_Spurs_a_must_not_lose_for_both_sides/dm_261008_Moreno_Man_Utd_vs_Spurs_a_must_not_lose_for_both_sides.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50134792,
+      "headline": "Thunder's Gilegous-Alexander buys stake in Atlético Madrid",
+      "description": "Two-time NBA MVP Shai Gilgeous-Alexander has become a shareholder in Atlético Madrid, the Spanish club announced on Thursday.",
+      "published": "2026-10-08T21:22:49Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50134792/thunder-gilegous-alexander-buys-stake-atletico-madrid",
+      "images": [
+        {
+          "dataSourceIdentifier": "14bd6e5ca93eb",
+          "id": 48802464,
+          "type": "header",
+          "name": "SGA mvp gift [1296x729]",
+          "credit": "(Photo by Joshua Gateley/Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0518/r1659754_1296x729_16-9.jpg"
+        }
+      ]
+    },
+    {
       "id": 50131876,
       "headline": "Raúl Asencio on drink driving conviction: 'I'm at Real Madrid, that can't happen again'",
       "description": "Raúl Asencio has said he is only focused on winning at Real Madrid and \"turning the situation around\" following his recent conviction for drink driving.",
@@ -156540,156 +157000,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0926/dm_260926_COM_SOC_Presser_Zidane_Mbappes_injury_is_not_good_news_20260926_GLOBAL/dm_260926_COM_SOC_Presser_Zidane_Mbappes_injury_is_not_good_news_20260926_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50076437,
-      "headline": "Spain's Víctor Muñoz on Liverpool switch: Premier League more physical than LaLiga",
-      "description": "Liverpool winger Víctor Muñoz has praised the \"intensity\" at the Premier League club since making the switch from LaLiga this summer, saying the change is \"helping me grow\" as a player.",
-      "published": "2026-10-01T13:14:04Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50076437/spain-victor-munoz-liverpool-switch-premier-league-more-physical-laliga",
-      "images": [
-        {
-          "dataSourceIdentifier": "527893077603f",
-          "id": 49761972,
-          "type": "header",
-          "name": "Liverpool [1296x729]",
-          "credit": "Jan Kruger/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0829/r1708487_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Onuoha: Spain deserved to beat England",
-          "caption": "Onuoha: Spain deserved to beat England",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0927/dm_260927_COM_SOC_ANALYSIS_Onuoha_Spain_deserved_to_beat_England_2026_9_27/dm_260927_COM_SOC_ANALYSIS_Onuoha_Spain_deserved_to_beat_England_2026_9_27.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50075555,
-      "headline": "Clásico match ball for Barcelona vs. Real Madrid LaLiga clashes unveiled",
-      "description": "Whenever LaLiga rivals Barcelona and Real Madrid clash, the world watches. So it's only fitting that El Clásico gets its own bespoke match ball.",
-      "published": "2026-10-01T09:59:43Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50075555/clasico-match-ball-barcelona-real-madrid-laliga-clashes-unveiled",
-      "images": [
-        {
-          "dataSourceIdentifier": "e2c83cd34a4b4",
-          "id": 50075402,
-          "type": "header",
-          "name": "LaLiga Clasico match ball [819x461]",
-          "credit": "LaLiga",
-          "height": 461,
-          "width": 819,
-          "url": "https://a.espncdn.com/photo/2026/1001/r1724348_819x461_16-9.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50076894,
-      "headline": "How Aston Villa boss Unai Emery rescued Real Unión, his 'family' club, from ruin",
-      "description": "Real Unión are one of LaLiga's founding clubs, but fell on hard times. Enter Unai Emery, one of the world's top coaches, whose family connection to the club spans four generations.",
-      "published": "2026-10-02T10:12:39Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50076894/how-aston-villa-manager-unai-emery-rescued-family-club-real-union-irun",
-      "images": [
-        {
-          "dataSourceIdentifier": "41162f8cb252f",
-          "id": 50083175,
-          "type": "header",
-          "name": "Igor, Unai and Antonio Emery [1296x729]",
-          "credit": "Real Unión",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1002/r1724844_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "2b7cce7db84b5",
-          "id": 50077175,
-          "type": "inline",
-          "name": "Antonio Emery and his two sons [100x150]",
-          "credit": "Real Unión",
-          "height": 150,
-          "width": 100,
-          "url": "https://a.espncdn.com/photo/2026/1001/r1724460_100x150_2-3.jpg"
-        },
-        {
-          "dataSourceIdentifier": "c22b7e4afeda4",
-          "id": 50083275,
-          "type": "inline",
-          "name": "Real Union [150x100]",
-          "credit": "Real Unión",
-          "height": 100,
-          "width": 150,
-          "url": "https://a.espncdn.com/photo/2026/1002/r1724849_150x100_3-2.jpg"
-        },
-        {
-          "dataSourceIdentifier": "9e81fdc71b48f",
-          "id": 50077122,
-          "type": "header",
-          "name": "Igor Emery [1296x729]",
-          "credit": "Real Unión",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1001/r1724457_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "b1979b9ce0ca9",
-          "id": 50077244,
-          "type": "header",
-          "name": "Real Unión team wearing kit in Aston Villa's colours [1296x729]",
-          "credit": "Luis de la Mata",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1001/r1724467_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "4fc7ae907471b",
-          "id": 50077070,
-          "type": "header",
-          "name": "Unai Emery with his brothers and mother [1296x729]",
-          "credit": "Real Unión",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1001/r1724456_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Leboeuf: Unai Emery is one of Aston Villa's best-ever coaches",
-          "caption": "Frank Leboeuf reflects on Unai Emery's impact following Aston Villa's Europa League victory, praising him for transforming the club's performances.",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0520/dm_260520_Leboeuf_Emery_is_one_of_Aston_Villas_best_ever_coaches/dm_260520_Leboeuf_Emery_is_one_of_Aston_Villas_best_ever_coaches.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50066024,
-      "headline": "Raphinha returns to Barcelona after injury on Brazil duty",
-      "description": "Raphinha will return to Barcelona after suffering a thigh injury in Brazil's 4-2 friendly win over Australia on Tuesday.",
-      "published": "2026-09-30T10:42:43Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50066024/raphinha-returns-barcelona-injury-brazil-duty",
-      "images": [
-        {
-          "dataSourceIdentifier": "3f8eabaa79a33",
-          "id": 50066004,
-          "type": "header",
-          "name": "Raphinha [1296x729]",
-          "credit": "Getty",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0930/r1723833_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Gomez: Raphinha is the best player in the world",
-          "caption": "Gomez: Raphinha is the best player in the world",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0922/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world/dm_260922_Gomez_Raphinha_is_the_best_player_in_the_world.jpg"
         }
       ]
     }
@@ -165685,7 +165995,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-08T12:03:23.385Z",
+    "updatedAt": "2026-10-09T11:55:12.061Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
