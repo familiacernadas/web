@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-10T11:11:48.903Z",
+    "generatedAt": "2026-10-11T11:25:15.246Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -44668,7 +44668,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.573Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-11T11:25:15.245Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -44875,7 +44875,7 @@
         "confidence": 0.4918,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.285Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-11T11:25:15.245Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -45065,7 +45065,7 @@
         "confidence": 0.434,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.574Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-11T11:25:15.245Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -45278,7 +45278,7 @@
         "confidence": 0.5405,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.285Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-11T11:25:15.245Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -45468,7 +45468,7 @@
         "confidence": 0.434,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.574Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-11T11:25:15.245Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -45681,7 +45681,7 @@
         "confidence": 0.4275,
         "difficulty": "difícil",
         "generatedAt": "2026-09-10T22:53:14.285Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-11T11:25:15.245Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -45871,7 +45871,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.573Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-11T11:25:15.245Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -46078,7 +46078,7 @@
         "confidence": 0.5668,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.285Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-11T11:25:15.245Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -155527,14 +155527,14 @@
         "abbreviation": "BAR",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
       },
-      "points": 21,
-      "goalsDiff": 24,
+      "points": 24,
+      "goalsDiff": 27,
       "form": null,
-      "played": 7,
-      "wins": 7,
+      "played": 8,
+      "wins": 8,
       "draws": 0,
       "losses": 0,
-      "gf": 31,
+      "gf": 34,
       "ga": 7,
       "home": null,
       "away": null
@@ -155547,20 +155547,40 @@
         "abbreviation": "ATM",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
       },
-      "points": 16,
-      "goalsDiff": 9,
+      "points": 19,
+      "goalsDiff": 10,
       "form": null,
-      "played": 7,
-      "wins": 5,
+      "played": 8,
+      "wins": 6,
       "draws": 1,
       "losses": 1,
-      "gf": 16,
-      "ga": 7,
+      "gf": 18,
+      "ga": 8,
       "home": null,
       "away": null
     },
     {
       "rank": 3,
+      "team": {
+        "id": 86,
+        "name": "Real Madrid",
+        "abbreviation": "RMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+      },
+      "points": 18,
+      "goalsDiff": 11,
+      "form": null,
+      "played": 8,
+      "wins": 6,
+      "draws": 0,
+      "losses": 2,
+      "gf": 19,
+      "ga": 8,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 4,
       "team": {
         "id": 244,
         "name": "Real Betis",
@@ -155576,26 +155596,6 @@
       "losses": 1,
       "gf": 9,
       "ga": 7,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 4,
-      "team": {
-        "id": 86,
-        "name": "Real Madrid",
-        "abbreviation": "RMA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
-      },
-      "points": 15,
-      "goalsDiff": 10,
-      "form": null,
-      "played": 7,
-      "wins": 5,
-      "draws": 0,
-      "losses": 2,
-      "gf": 18,
-      "ga": 8,
       "home": null,
       "away": null
     },
@@ -155628,14 +155628,14 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
       },
       "points": 11,
-      "goalsDiff": 5,
+      "goalsDiff": 4,
       "form": null,
-      "played": 7,
+      "played": 8,
       "wins": 3,
       "draws": 2,
-      "losses": 2,
-      "gf": 11,
-      "ga": 6,
+      "losses": 3,
+      "gf": 12,
+      "ga": 8,
       "home": null,
       "away": null
     },
@@ -155682,26 +155682,6 @@
     {
       "rank": 9,
       "team": {
-        "id": 102,
-        "name": "Villarreal",
-        "abbreviation": "VIL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
-      },
-      "points": 8,
-      "goalsDiff": 1,
-      "form": null,
-      "played": 7,
-      "wins": 2,
-      "draws": 2,
-      "losses": 3,
-      "gf": 13,
-      "ga": 12,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 10,
-      "team": {
         "id": 93,
         "name": "Athletic Club",
         "abbreviation": "ATH",
@@ -155716,6 +155696,26 @@
       "losses": 2,
       "gf": 7,
       "ga": 6,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 10,
+      "team": {
+        "id": 102,
+        "name": "Villarreal",
+        "abbreviation": "VIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+      },
+      "points": 8,
+      "goalsDiff": 0,
+      "form": null,
+      "played": 8,
+      "wins": 2,
+      "draws": 2,
+      "losses": 4,
+      "gf": 13,
+      "ga": 13,
       "home": null,
       "away": null
     },
@@ -155742,26 +155742,6 @@
     {
       "rank": 12,
       "team": {
-        "id": 2922,
-        "name": "Getafe",
-        "abbreviation": "GET",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
-      },
-      "points": 8,
-      "goalsDiff": -3,
-      "form": null,
-      "played": 7,
-      "wins": 2,
-      "draws": 2,
-      "losses": 3,
-      "gf": 4,
-      "ga": 7,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 13,
-      "team": {
         "id": 101,
         "name": "Rayo Vallecano",
         "abbreviation": "RAY",
@@ -155776,6 +155756,26 @@
       "losses": 3,
       "gf": 11,
       "ga": 16,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 13,
+      "team": {
+        "id": 2922,
+        "name": "Getafe",
+        "abbreviation": "GET",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
+      },
+      "points": 8,
+      "goalsDiff": -6,
+      "form": null,
+      "played": 8,
+      "wins": 2,
+      "draws": 2,
+      "losses": 4,
+      "gf": 4,
+      "ga": 10,
       "home": null,
       "away": null
     },
@@ -156085,6 +156085,29 @@
     {
       "rank": 8,
       "player": {
+        "id": 207236,
+        "name": "Lucas Boyé",
+        "shortName": "L. Boyé",
+        "photo": null
+      },
+      "team": {
+        "id": 96,
+        "name": "Alavés",
+        "abbreviation": "ALA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
+      },
+      "goals": {
+        "total": 5,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 9,
+      "player": {
         "id": 207288,
         "name": "Ante Budimir",
         "shortName": "A. Budimir",
@@ -156106,7 +156129,7 @@
       "rating": null
     },
     {
-      "rank": 9,
+      "rank": 10,
       "player": {
         "id": 301684,
         "name": "Fer Niño",
@@ -156129,7 +156152,7 @@
       "rating": null
     },
     {
-      "rank": 10,
+      "rank": 11,
       "player": {
         "id": 297373,
         "name": "Álex Baena",
@@ -156141,29 +156164,6 @@
         "name": "Atlético Madrid",
         "abbreviation": "ATM",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
-      },
-      "goals": {
-        "total": 4,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 11,
-      "player": {
-        "id": 207236,
-        "name": "Lucas Boyé",
-        "shortName": "L. Boyé",
-        "photo": null
-      },
-      "team": {
-        "id": 96,
-        "name": "Alavés",
-        "abbreviation": "ALA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
       },
       "goals": {
         "total": 4,
@@ -156200,29 +156200,6 @@
     {
       "rank": 13,
       "player": {
-        "id": 306263,
-        "name": "Luka Sucic",
-        "shortName": "L. Sucic",
-        "photo": null
-      },
-      "team": {
-        "id": 89,
-        "name": "Real Sociedad",
-        "abbreviation": "RSO",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
-      },
-      "goals": {
-        "total": 3,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 14,
-      "player": {
         "id": 291281,
         "name": "Jude Bellingham",
         "shortName": "J. Bellingham",
@@ -156244,7 +156221,7 @@
       "rating": null
     },
     {
-      "rank": 15,
+      "rank": 14,
       "player": {
         "id": 255889,
         "name": "Pape Gueye",
@@ -156267,7 +156244,7 @@
       "rating": null
     },
     {
-      "rank": 16,
+      "rank": 15,
       "player": {
         "id": 198832,
         "name": "Mariano Díaz",
@@ -156290,7 +156267,53 @@
       "rating": null
     },
     {
+      "rank": 16,
+      "player": {
+        "id": 166396,
+        "name": "Alejandro Grimaldo",
+        "shortName": "A. Grimaldo",
+        "photo": null
+      },
+      "team": {
+        "id": 1068,
+        "name": "Atlético Madrid",
+        "abbreviation": "ATM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+      },
+      "goals": {
+        "total": 3,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
       "rank": 17,
+      "player": {
+        "id": 306263,
+        "name": "Luka Sucic",
+        "shortName": "L. Sucic",
+        "photo": null
+      },
+      "team": {
+        "id": 89,
+        "name": "Real Sociedad",
+        "abbreviation": "RSO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+      },
+      "goals": {
+        "total": 3,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 18,
       "player": {
         "id": 267591,
         "name": "Roger Brugué",
@@ -156313,7 +156336,7 @@
       "rating": null
     },
     {
-      "rank": 18,
+      "rank": 19,
       "player": {
         "id": 273499,
         "name": "Jonathan David",
@@ -156336,7 +156359,7 @@
       "rating": null
     },
     {
-      "rank": 19,
+      "rank": 20,
       "player": {
         "id": 125200,
         "name": "Álvaro García",
@@ -156348,29 +156371,6 @@
         "name": "Rayo Vallecano",
         "abbreviation": "RAY",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
-      },
-      "goals": {
-        "total": 2,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 20,
-      "player": {
-        "id": 375514,
-        "name": "Miguel Sierra",
-        "shortName": "M. Sierra",
-        "photo": null
-      },
-      "team": {
-        "id": 243,
-        "name": "Sevilla",
-        "abbreviation": "SEV",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
       },
       "goals": {
         "total": 2,
@@ -156417,6 +156417,329 @@
     }
   },
   "news": [
+    {
+      "id": 50155123,
+      "headline": "Transfer rumors, news: Man City, Man Utd, Spurs eye Atlético's Simeone",
+      "description": "Man City, Man United and Tottenham are all looking at bringing Atlético Madrid's Giuliano Simeone to the Premier League. Transfer Talk has the latest.",
+      "published": "2026-10-11T09:05:45Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50155123/transfer-rumors-news-manchester-city-tottenham-hotspur-eye-atletico-madrid-giuliano-simeone",
+      "images": [
+        {
+          "dataSourceIdentifier": "51d6e9de27452",
+          "id": 50155230,
+          "type": "header",
+          "name": "Atletico Madrid's Giuliano Simeone [1296x729]",
+          "credit": "Alvaro Medranda/Quality Sport Images/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1011/r1729094_2_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Dawson: Manchester United board may act if results don't improve",
+          "caption": "Dawson: Manchester United board may act if results don't improve",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Dawson_Manchester_United_board_may_act_if_results_dont_improve/dm_261010_Dawson_Manchester_United_board_may_act_if_results_dont_improve.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50152014,
+      "headline": "Vinicius Junior's dramatic night headlines win vs. Villarreal",
+      "description": "Alex Kirkland breaks down the turn of events from Vinicius Junior's night in Real Madrid's 1-nil win against Villarreal.",
+      "published": "2026-10-10T23:53:14Z",
+      "link": "https://www.espn.com/video/clip/_/id/50152014/vinicius-junior-dramatic-night-headlines-win-vs-villarreal",
+      "images": [
+        {
+          "name": "Vinicius Junior's dramatic night headlines win vs. Villarreal",
+          "caption": "Alex Kirkland breaks down the turn of events from Vinicius Junior's night in Real Madrid's 1-nil win against Villarreal.",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Vinicius_Juniors_dramatic_night_headlines_win_vs_Villarreal/dm_261010_Vinicius_Juniors_dramatic_night_headlines_win_vs_Villarreal.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50151219,
+      "headline": "Garcia: Flick deserves credit for Barcelona's strong form",
+      "description": "Garcia: Flick deserves credit for Barcelona's strong form",
+      "published": "2026-10-10T22:43:05Z",
+      "link": "https://www.espn.com/video/clip/_/id/50151219/flick-deserves-credit-barcelona-strong-form",
+      "images": [
+        {
+          "name": "Garcia: Flick deserves credit for Barcelona's strong form",
+          "caption": "Garcia: Flick deserves credit for Barcelona's strong form",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Garcia_Flick_deserves_credit_for_Barcelonas_strong_form/dm_261010_Garcia_Flick_deserves_credit_for_Barcelonas_strong_form.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50150534,
+      "headline": "Vinícius Júnior 'sorry' after red card for hair pull; Mourinho skips Madrid presser",
+      "description": "Vinícius Júnior has apologized to his Real Madrid teammates and fans after being red-carded for pulling an opponent's hair in a dramatic, off-the-bench cameo during his team's LaLiga win over Villarreal on Saturday.",
+      "published": "2026-10-10T23:44:11Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50150534/vinicius-junior-red-card-real-madrid-villarreal",
+      "images": [
+        {
+          "dataSourceIdentifier": "05066eaf78584",
+          "id": 50150588,
+          "type": "header",
+          "name": "Vinicius Junior [1296x729]",
+          "alt": "Vinicius Junior argues with the referee.",
+          "credit": "(Photo by Angel Martinez/Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1010/r1728861_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Vinicius Júnior goal turns into a red card in Real Madrid win",
+          "caption": "Vinicius Júnior goal turns into a red card in Real Madrid win",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Vinicius_Junior_goal_turns_into_a_red_card_in_Real_Madrid_win/dm_261010_Vinicius_Junior_goal_turns_into_a_red_card_in_Real_Madrid_win.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50151065,
+      "headline": "Burley: Vinícius Jr. must learn actions have consequences",
+      "description": "Burley: Vinícius Jr. must learn actions have consequences",
+      "published": "2026-10-10T22:45:48Z",
+      "link": "https://www.espn.com/video/clip/_/id/50151065/vinicius-jr-learn-actions-consequences",
+      "images": [
+        {
+          "name": "Burley: Vinícius Jr. must learn actions have consequences",
+          "caption": "Burley: Vinícius Jr. must learn actions have consequences",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Burley_Vinicius_Jr_must_learn_actions_have_consequences/dm_261010_Burley_Vinicius_Jr_must_learn_actions_have_consequences.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50150970,
+      "headline": "Vinicius Júnior goal turns into a red card in Real Madrid win",
+      "description": "Vinicius Júnior goal turns into a red card in Real Madrid win",
+      "published": "2026-10-10T22:45:38Z",
+      "link": "https://www.espn.com/video/clip/_/id/50150970/vinicius-junior-goal-turns-red-card-real-madrid-win",
+      "images": [
+        {
+          "name": "Vinicius Júnior goal turns into a red card in Real Madrid win",
+          "caption": "Vinicius Júnior goal turns into a red card in Real Madrid win",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Vinicius_Junior_goal_turns_into_a_red_card_in_Real_Madrid_win/dm_261010_Vinicius_Junior_goal_turns_into_a_red_card_in_Real_Madrid_win.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50128027,
+      "headline": "Yan Diomande's first goal gives 10-man Real Madrid narrow win over Villarreal",
+      "description": "Real Madrid held on for a 1-0 win over Villarreal in a stormy LaLiga encounter on Saturday despite the late red card for Vinícius Júnior.",
+      "published": "2026-10-10T21:43:30Z",
+      "link": "http://www.espn.com/soccer/report/_/gameId/401882848",
+      "images": [
+        {
+          "dataSourceIdentifier": "a758b8497cfdc",
+          "id": 50150755,
+          "type": "header",
+          "name": "Yan Diomande [1296x729]",
+          "alt": "Yan Diomande celebrates.",
+          "credit": "(Photo by Denis Doyle/Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1010/r1728872_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Burley: Vinícius Jr. must learn actions have consequences",
+          "caption": "Burley: Vinícius Jr. must learn actions have consequences",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Burley_Vinicius_Jr_must_learn_actions_have_consequences/dm_261010_Burley_Vinicius_Jr_must_learn_actions_have_consequences.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50150816,
+      "headline": "Real Madrid vs. Villarreal - Game Highlights",
+      "description": "Watch the Game Highlights from Real Madrid vs. Villarreal, 10/10/2026",
+      "published": "2026-10-10T21:06:47Z",
+      "link": "https://www.espn.com/video/clip/_/id/50150816/real-madrid-vs-villarreal-game-highlights",
+      "images": [
+        {
+          "name": "Real Madrid vs. Villarreal - Game Highlights",
+          "caption": "Watch the Game Highlights from Real Madrid vs. Villarreal, 10/10/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1010/3251579c-38c7-4a0d-9cd3-3baeca01a942/3251579c-38c7-4a0d-9cd3-3baeca01a942.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50150044,
+      "headline": "Barcelona set record start as Gordon, Gabriel Jesus fill Raphinha void",
+      "description": "Hansi Flick praised the performances of Anthony Gordon and Gabriel Jesus after they stepped in for in-form Raphinha in Barcelona's 3-0 win over Getafe on Saturday.",
+      "published": "2026-10-10T20:13:14Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50150044/barcelona-record-start-anthony-gordon-gabriel-jesus",
+      "images": [
+        {
+          "dataSourceIdentifier": "a6a5ac1f296b7",
+          "id": 50150075,
+          "type": "header",
+          "name": "Gordon Barcelona celeb [1296x729]",
+          "caption": "Anthony Gordon celebrates his first goal for Barcelona.",
+          "alt": "Anthony Gordon of FC Barcelona celebrates their team's first goal during the LaLiga EA Sports 2026/27 match between FC Barcelona and Getafe CF at Spotify Camp Nou on October 10, 2026 in Barcelona, Spain.",
+          "credit": "David Ramos/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1010/r1728835_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Barcelona vs. Getafe - Game Highlights",
+          "caption": "Watch the Game Highlights from Barcelona vs. Getafe, 10/10/2026",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1010/fe86155b-f0e6-4181-8929-e460a75b0ec0/fe86155b-f0e6-4181-8929-e460a75b0ec0.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50149594,
+      "headline": "Hislop: Barcelona are playing the best football in Europe",
+      "description": "Hislop: Barcelona are playing the best football in Europe",
+      "published": "2026-10-10T19:07:35Z",
+      "link": "https://www.espn.com/video/clip/_/id/50149594/barcelona-playing-best-football-europe",
+      "images": [
+        {
+          "name": "Hislop: Barcelona are playing the best football in Europe",
+          "caption": "Hislop: Barcelona are playing the best football in Europe",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Hislop_Barcelona_are_playing_the_best_football_in_Europe/dm_261010_Hislop_Barcelona_are_playing_the_best_football_in_Europe.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50149441,
+      "headline": "Barcelona vs. Getafe - Game Highlights",
+      "description": "Watch the Game Highlights from Barcelona vs. Getafe, 10/10/2026",
+      "published": "2026-10-10T18:49:56Z",
+      "link": "https://www.espn.com/video/clip/_/id/50149441/barcelona-vs-getafe-game-highlights",
+      "images": [
+        {
+          "name": "Barcelona vs. Getafe - Game Highlights",
+          "caption": "Watch the Game Highlights from Barcelona vs. Getafe, 10/10/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1010/fe86155b-f0e6-4181-8929-e460a75b0ec0/fe86155b-f0e6-4181-8929-e460a75b0ec0.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50128026,
+      "headline": "Anthony Gordon opens Barcelona account in win against Getafe ",
+      "description": "Anthony Gordon's first Barcelona goal, scored in the second minute, set the LaLiga leaders on their way to a comfortable 3-0 win over Getafe at the Nou Camp.\n\n",
+      "published": "2026-10-10T19:24:34Z",
+      "link": "http://www.espn.com/soccer/report/_/gameId/401882853",
+      "images": [
+        {
+          "dataSourceIdentifier": "adb2145511d1e",
+          "id": 50149111,
+          "type": "header",
+          "name": "Barcelona's English forward #17 Anthony Gordon [1296x729]",
+          "alt": "Barcelona's English forward #17 Anthony Gordon (2R) celebrates with teammates after scoring his team's first goal during the Spanish league football match between FC Barcelona and Getafe CF at Camp Nou Stadium in Barcelona on October 10, 2026.",
+          "credit": "Lluis GENE / AFP via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1010/r1728779_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Garcia: Flick deserves credit for Barcelona's strong form",
+          "caption": "Garcia: Flick deserves credit for Barcelona's strong form",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Garcia_Flick_deserves_credit_for_Barcelonas_strong_form/dm_261010_Garcia_Flick_deserves_credit_for_Barcelonas_strong_form.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50148452,
+      "headline": "Alavés vs. Atletico Madrid - Game Highlights",
+      "description": "Watch the Game Highlights from Alavés vs. Atletico Madrid, 10/10/2026",
+      "published": "2026-10-10T16:23:19Z",
+      "link": "https://www.espn.com/video/clip/_/id/50148452/alaves-vs-atletico-madrid-game-highlights",
+      "images": [
+        {
+          "name": "Alavés vs. Atletico Madrid - Game Highlights",
+          "caption": "Watch the Game Highlights from Alavés vs. Atletico Madrid, 10/10/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1010/a9d11a0a-a064-46e3-8790-8d034534edfc/a9d11a0a-a064-46e3-8790-8d034534edfc.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50147672,
+      "headline": "Atlético Madrid mock Real Madrid on social media over Federico Valverde recovery",
+      "description": "Atlético Madrid poked fun at Real Madrid on social media after midfielder Federico Valverde recovered from injury to be included in Saturday's squad to face Villarreal in LaLiga.",
+      "published": "2026-10-10T14:36:49Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50147672/atletico-madrid-mock-real-madrid-social-media-federico-valverde-recovery",
+      "images": [
+        {
+          "dataSourceIdentifier": "299f3e520581c",
+          "id": 50147626,
+          "type": "header",
+          "name": "Federico Valverde [1296x729]",
+          "credit": "Photo by Ion Alcoba Beitia/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1010/r1728662_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Mourinho slams 'ridiculous' journalist who believes Mbappé has failed at Real Madrid",
+          "caption": "Mourinho slams 'ridiculous' journalist who believes Mbappé has failed at Real Madrid",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1009/dm_261009_COM_SOC_Analysis_Mourinho_slams_E28098ri457/dm_261009_COM_SOC_Analysis_Mourinho_slams_E28098ri457.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50147316,
+      "headline": "Rayo Vallecano vs. Athletic Club suspended after fans launch paper plane protest",
+      "description": "Rayo Vallecano's LaLiga game against Athletic Club was called off in the first half Saturday after fans launched paper airplanes onto the pitch in protest at president Raúl Martín Presa.",
+      "published": "2026-10-10T19:42:11Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50147316/rayo-vallecano-vs-athletic-club-suspended-fans-launch-paper-plane-protest",
+      "images": [
+        {
+          "dataSourceIdentifier": "8f33ccd113037",
+          "id": 50147273,
+          "type": "header",
+          "name": "Vallecano protest [1296x729]",
+          "alt": "Rayo Vallecano fans throw paper planes onto the pitch in protest of Raul Martin Presa, President of Rayo Vallecano during the LaLiga EA Sports 2026/27 match between Rayo Vallecano de Madrid and Athletic Club at Estadio de Vallecas on October 10, 2026 in M",
+          "credit": "Florencia Tan Jun/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1010/r1728643_1296x729_16-9.jpg"
+        }
+      ]
+    },
     {
       "id": 50142917,
       "headline": "Lowe: Mourinho wants to play Vinícius Jr. back into form",
@@ -156509,410 +156832,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1009/dm_261009_Mbappe_Real_IA/dm_261009_Mbappe_Real_IA.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50140523,
-      "headline": "Flick confirms Raphinha injury and hails 'unbelievable' Yamal",
-      "description": "Flick confirms Raphinha injury and hails 'unbelievable' Yamal",
-      "published": "2026-10-09T14:35:24Z",
-      "link": "https://www.espn.com/video/clip/_/id/50140523/flick-confirms-raphinha-injury-hails-unbelievable-yamal",
-      "images": [
-        {
-          "name": "Flick confirms Raphinha injury and hails 'unbelievable' Yamal",
-          "caption": "Flick confirms Raphinha injury and hails 'unbelievable' Yamal",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1009/dm_261009_Flick_confirms_Raphinha_injury_and_hails_unbelievable_Yamal/dm_261009_Flick_confirms_Raphinha_injury_and_hails_unbelievable_Yamal.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50139426,
-      "headline": "Mourinho slams 'ridiculous' journalist who believes Mbappé has failed at Real Madrid",
-      "description": "Mourinho slams 'ridiculous' journalist who believes Mbappé has failed at Real Madrid",
-      "published": "2026-10-09T11:37:41Z",
-      "link": "https://www.espn.com/video/clip/_/id/50139426/mourinho-slams-ridiculous-journalist-believes-mbappe-failed-real-madrid",
-      "images": [
-        {
-          "name": "Mourinho slams 'ridiculous' journalist who believes Mbappé has failed at Real Madrid",
-          "caption": "Mourinho slams 'ridiculous' journalist who believes Mbappé has failed at Real Madrid",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1009/dm_261009_COM_SOC_Analysis_Mourinho_slams_E28098ri457/dm_261009_COM_SOC_Analysis_Mourinho_slams_E28098ri457.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50138657,
-      "headline": "Kylian Mbappé to start for Real Madrid, criticism 'ridiculous' - José Mourinho",
-      "description": "José Mourinho has called criticism of Kylian Mbappé \"ridiculous,\" defending the Real Madrid star's conduct during the international break.",
-      "published": "2026-10-09T09:04:08Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50138657/kylian-mbappe-start-real-madrid-criticism-ridiculous-jose-mourinho",
-      "images": [
-        {
-          "dataSourceIdentifier": "d9717c5d9ec00",
-          "id": 50138637,
-          "type": "header",
-          "name": "Kylian Mbappe [1296x729]",
-          "credit": "Getty",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1009/r1728145_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "What went wrong for Real in the Madrid derby?",
-          "caption": "What went wrong for Real in the Madrid derby?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0920/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20/dm_260920_COM_SOC_Analysis_What_went_wrong_for_Real_in_the_Madrid_derby3F__GLOBAL_2026-09-20.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50134792,
-      "headline": "Thunder's Gilegous-Alexander buys stake in Atlético Madrid",
-      "description": "Two-time NBA MVP Shai Gilgeous-Alexander has become a shareholder in Atlético Madrid, the Spanish club announced on Thursday.",
-      "published": "2026-10-08T21:22:49Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50134792/thunder-gilegous-alexander-buys-stake-atletico-madrid",
-      "images": [
-        {
-          "dataSourceIdentifier": "14bd6e5ca93eb",
-          "id": 48802464,
-          "type": "header",
-          "name": "SGA mvp gift [1296x729]",
-          "credit": "(Photo by Joshua Gateley/Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0518/r1659754_1296x729_16-9.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50131876,
-      "headline": "Raúl Asencio on drink driving conviction: 'I'm at Real Madrid, that can't happen again'",
-      "description": "Raúl Asencio has said he is only focused on winning at Real Madrid and \"turning the situation around\" following his recent conviction for drink driving.",
-      "published": "2026-10-08T10:36:19Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50131876/raul-asencio-real-madrid-drink-drinking-jose-mourinho",
-      "images": [
-        {
-          "dataSourceIdentifier": "705f17d9bac53",
-          "id": 50131856,
-          "type": "header",
-          "name": "Raul Asencio [1296x729]",
-          "credit": "Alvaro Medranda/Quality Sport Images/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1008/r1727758_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50131142,
-      "headline": "Transfer rumors, news: Mbappé future at Real Madrid in doubt?",
-      "description": "Mbappé has reportedly angered manager Jose Mourinho, but Madrid would not consider offers less than €200 million. Transfer Talk has the latest.",
-      "published": "2026-10-08T09:15:34Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50131142/transfer-rumors-news-kylian-mbappe-future-real-madrid-doubt",
-      "images": [
-        {
-          "dataSourceIdentifier": "b7abfa536348e",
-          "id": 49972498,
-          "type": "header",
-          "name": "Kylian Mbappe [1296x729]",
-          "alt": "Kylian Mbappe looks on.",
-          "credit": "(Photo by Florencia Tan Jun - UEFA/UEFA via Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0918/r1718524_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Hislop: Feud with Jorge Jesus won't damage Ronaldo's legacy",
-          "caption": "Hislop: Feud with Jorge Jesus won't damage Ronaldo's legacy",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1007/dm_261007_COM_SOC_ANALYSIS_Hislop_Feud_with_Jorge_Jesus_wont_damage_Ronaldos_legacy_2026_10_7/dm_261007_COM_SOC_ANALYSIS_Hislop_Feud_with_Jorge_Jesus_wont_damage_Ronaldos_legacy_2026_10_7.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50123519,
-      "headline": "England teammates praise Kane, 'it's definitely possible' he could win the Ballon d'Or",
-      "description": "England teammates praise Kane, 'it's definitely possible' he could win the Ballon d'Or",
-      "published": "2026-10-07T08:48:11Z",
-      "link": "https://www.espn.com/video/clip/_/id/50123519/england-teammates-praise-kane-definitely-possible-win-ballon-dor",
-      "images": [
-        {
-          "name": "England teammates praise Kane, 'it's definitely possible' he could win the Ballon d'Or",
-          "caption": "England teammates praise Kane, 'it's definitely possible' he could win the Ballon d'Or",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1007/dm_261007_England_teammates_praise_Kane_its_definitely_possible_he_could_win_the_Ballon_dOr/dm_261007_England_teammates_praise_Kane_its_definitely_possible_he_could_win_the_Ballon_dOr.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50119999,
-      "headline": "Hislop: International break has been 'too much' for players",
-      "description": "Hislop: International break has been 'too much' for players",
-      "published": "2026-10-06T22:30:06Z",
-      "link": "https://www.espn.com/video/clip/_/id/50119999/international-break-too-much-players",
-      "images": [
-        {
-          "name": "Hislop: International break has been 'too much' for players",
-          "caption": "Hislop: International break has been 'too much' for players",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1006/dm_261006_Hislop_International_break_has_been_too_much_for_players/dm_261006_Hislop_International_break_has_been_too_much_for_players.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50115213,
-      "headline": "Transfer rumors, news: Atleti, Juve eye loan move for Arsenal's Madueke",
-      "description": "Could Noni Madueke depart Arsenal for a move to either Spain or Italy? Transfer Talk has the latest.",
-      "published": "2026-10-06T20:30:24Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50115213/transfer-rumors-news-man-united-arsenal-chelsea-battle-freiburg-striker",
-      "images": [
-        {
-          "dataSourceIdentifier": "175a3779f3bcd",
-          "id": 50119220,
-          "type": "header",
-          "name": "Noni Madueke [1296x729]",
-          "credit": "(Photo by Alex Pantling/Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1006/r1726964_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "What does the future hold for Manchester City's players?",
-          "caption": "What does the future hold for Manchester City's players?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0930/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50075485,
-      "headline": "Portugal, Man United, Real Madrid: Cristiano Ronaldo's long history of rows with coaches",
-      "description": "Cristiano Ronaldo walked out of the Portugal national team's camp after being benched. It is far from the first high-profile row of his two decades at the top.",
-      "published": "2026-10-06T20:21:46Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50075485/cristiano-ronaldo-long-history-rows-portugal-manchester-united-real-madrid-juventus-coaches",
-      "images": [
-        {
-          "dataSourceIdentifier": "84cec327400d0",
-          "id": 50075909,
-          "type": "header",
-          "name": "Norway v Portugal Cristiano Ronaldo in tunnel [1296x729]",
-          "credit": "Maciej Rogowski/Eurasia Sport Images/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1001/r1724373_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "4eb7b62802c8d",
-          "id": 35209753,
-          "type": "header",
-          "name": "Manchester United's Cristiano Ronaldo reacts to being substituted against Manchester City in 2009 [1296x729]",
-          "credit": "John Peters/Manchester United via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2022/1208/r1103824_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "63615b0033b03",
-          "id": 35209916,
-          "type": "header",
-          "name": "Real Madrid's Jose Mourinho and Cristiano Ronaldo [1296x729]",
-          "credit": "Jasper Juinen/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2022/1208/r1103827_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "9972fc7d0470a",
-          "id": 50075943,
-          "type": "header",
-          "name": "Cristiano Ronaldo's Portugal career [1280x720]",
-          "credit": "ESPN Global Soccer Research",
-          "height": 720,
-          "width": 1280,
-          "url": "https://a.espncdn.com/photo/2026/1001/r1724376_1280x720_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "e9b406b30c036",
-          "id": 35209796,
-          "type": "header",
-          "name": "Cristiano Ronaldo on Portugal bench against South Korea [1296x729]",
-          "credit": "Hector Vivas - FIFA/FIFA via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2022/1208/r1103826_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Is this the end of Cristiano Ronaldo's international career with Portugal?",
-          "caption": "Frank Leboeuf, Gab Marcotti and Shaka Hislop join Alexis Nunes on ESPN FC to react to Cristiano Ronaldo leaving Portugal's training camp. ",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0930/ss_20260930_175026201_36801661096/ss_20260930_175026201_36801661096.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50114862,
-      "headline": "Mourinho already has a lot to do to save Real Madrid's season",
-      "description": "It's only October, but Real Madrid already face a potentially season-defining run of five games that ends with El Clásico. What does José Mourinho need to get right?",
-      "published": "2026-10-06T12:17:37Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50114862/jose-mourinho-already-lot-do-save-real-madrids-season",
-      "images": [
-        {
-          "dataSourceIdentifier": "41e53ef25c461",
-          "id": 50114960,
-          "type": "header",
-          "name": "Vinicius Junior and Jose Mourinho [1296x729]",
-          "caption": "Vinicius Junior and Jose Mourinho",
-          "alt": "Vinicius Junior and Jose Mourinho",
-          "credit": "Alberto Gardin/NurPhoto",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1006/r1726712_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Zidane: Mbappe's injury is not good news",
-          "caption": "Zidane: Mbappe's injury is not good news",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0926/dm_260926_COM_SOC_Presser_Zidane_Mbappes_injury_is_not_good_news_20260926_GLOBAL/dm_260926_COM_SOC_Presser_Zidane_Mbappes_injury_is_not_good_news_20260926_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50108439,
-      "headline": "Kylian Mbappé goes cycling despite José Mourinho warning",
-      "description": "Kylian Mbappé has shared a video of himself riding a bicycle on social media, just days after his Real Madrid manager, José Mourinho, said players couldn't go cycling because of the injury risks involved.",
-      "published": "2026-10-05T10:05:02Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50108439/mbappe-cycling-bike-jose-mourinho-real-madrid-france",
-      "images": [
-        {
-          "dataSourceIdentifier": "3844162fcf8b6",
-          "id": 50108449,
-          "type": "header",
-          "name": "Mbappe [1296x729]",
-          "credit": "Francisco Macia/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1005/r1726250_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "caption": "Fjørtoft: Is Real Madrid working out for Mourinho?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0921/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho/dm_260921_Fjortoft_Is_Real_Madrid_working_out_for_Mourinho.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50098759,
-      "headline": "Transfer rumors, news: Arsenal among clubs chasing winger Yildiz",
-      "description": "Arsenal, Real Madrid and Bayern Munich are all chasing Juventus winger Kenan Yildiz. Transfer Talk has the latest.",
-      "published": "2026-10-04T18:14:16Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50098759/transfer-rumors-news-arsenal-clubs-chasing-kenan-yildiz",
-      "images": [
-        {
-          "dataSourceIdentifier": "9c5a039b11bff",
-          "id": 49696082,
-          "type": "header",
-          "name": "Kenan Yildiz Juventus [1296x729]",
-          "caption": "Juventus appear intent on keeping Kenan Yildiz at the club.",
-          "alt": "Kenan Yildiz  of Juventus during the Pre-season Friendly match between Juventus and Juventus Next Gen at Allianz Stadium on August 17, 2026 in Turin, Italy.",
-          "credit": "Alberto Gandolfo - Juventus/Juventus FC via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0823/r1705543_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "What does the future hold for Manchester City's players?",
-          "caption": "What does the future hold for Manchester City's players?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0930/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50074316,
-      "headline": "Who most deserves the Ballon d'Or? Whittling down the 30-man short list",
-      "description": "Kylian Mbappé, Lamine Yamal and Harry Kane are the three favorites to win the 2026 Ballon d'Or, but who actually deserves to win it?",
-      "published": "2026-10-04T10:38:08Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50074316/who-most-deserves-ballon-dor-whittling-30-man-short-list",
-      "images": [
-        {
-          "dataSourceIdentifier": "ca0cfe84ff283",
-          "id": 46341500,
-          "type": "header",
-          "name": "Ballon d'Or [1296x729]",
-          "caption": "Ballon d'Or",
-          "alt": "Ballon d'Or",
-          "credit": "Shaun Brooks - CameraSport",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2025/0922/r1549234_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Does Harry Kane deserve to win the Ballon d'Or?",
-          "caption": "Does Harry Kane deserve to win the Ballon d'Or?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0910/dm_260910_COM_SOC_Analysis_Does_Harry_Kane_deserve_to_win_the_Ballon_dOr_20260910_GLOBAL/dm_260910_COM_SOC_Analysis_Does_Harry_Kane_deserve_to_win_the_Ballon_dOr_20260910_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50089210,
-      "headline": "Transfer rumors, news: Haaland wants LaLiga move over Arsenal",
-      "description": "Manchester City striker Erling Haaland favors a move to Spain over Arsenal. Transfer Talk has the latest.",
-      "published": "2026-10-03T15:30:54Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50089210/transfer-rumors-news-man-city-erling-haaland-wants-laliga-move-arsenal",
-      "images": [
-        {
-          "dataSourceIdentifier": "5270020bb75e5",
-          "id": 49989681,
-          "type": "header",
-          "name": "Haaland [1296x729]",
-          "credit": "Getty",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0920/r1719479_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "What does the future hold for Manchester City's players?",
-          "caption": "What does the future hold for Manchester City's players?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0930/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL/dm_260930_COM_SOC_Analysis_What_does_the_future_hold_for_Manchester_Citys_players_20260930_GLOBAL.jpg"
         }
       ]
     }
@@ -165908,7 +165827,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-10T11:11:48.903Z",
+    "updatedAt": "2026-10-11T11:25:15.246Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
