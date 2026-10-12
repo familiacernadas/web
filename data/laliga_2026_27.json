@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-11T11:25:15.246Z",
+    "generatedAt": "2026-10-12T13:11:35.736Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -46268,7 +46268,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.573Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-12T13:11:35.735Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -46475,7 +46475,7 @@
         "confidence": 0.5672,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.285Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-12T13:11:35.736Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -155562,6 +155562,26 @@
     {
       "rank": 3,
       "team": {
+        "id": 244,
+        "name": "Real Betis",
+        "abbreviation": "BET",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
+      },
+      "points": 19,
+      "goalsDiff": 5,
+      "form": null,
+      "played": 8,
+      "wins": 6,
+      "draws": 1,
+      "losses": 1,
+      "gf": 14,
+      "ga": 9,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 4,
+      "team": {
         "id": 86,
         "name": "Real Madrid",
         "abbreviation": "RMA",
@@ -155576,26 +155596,6 @@
       "losses": 2,
       "gf": 19,
       "ga": 8,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 4,
-      "team": {
-        "id": 244,
-        "name": "Real Betis",
-        "abbreviation": "BET",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
-      },
-      "points": 16,
-      "goalsDiff": 2,
-      "form": null,
-      "played": 7,
-      "wins": 5,
-      "draws": 1,
-      "losses": 1,
-      "gf": 9,
-      "ga": 7,
       "home": null,
       "away": null
     },
@@ -155622,6 +155622,26 @@
     {
       "rank": 6,
       "team": {
+        "id": 89,
+        "name": "Real Sociedad",
+        "abbreviation": "RSO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+      },
+      "points": 13,
+      "goalsDiff": -3,
+      "form": null,
+      "played": 8,
+      "wins": 4,
+      "draws": 1,
+      "losses": 3,
+      "gf": 12,
+      "ga": 15,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 7,
+      "team": {
         "id": 96,
         "name": "Alavés",
         "abbreviation": "ALA",
@@ -155640,7 +155660,7 @@
       "away": null
     },
     {
-      "rank": 7,
+      "rank": 8,
       "team": {
         "id": 90,
         "name": "Deportivo",
@@ -155648,39 +155668,39 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
       },
       "points": 10,
-      "goalsDiff": 2,
+      "goalsDiff": 1,
       "form": null,
-      "played": 7,
+      "played": 8,
       "wins": 2,
       "draws": 4,
-      "losses": 1,
-      "gf": 10,
-      "ga": 8,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 8,
-      "team": {
-        "id": 89,
-        "name": "Real Sociedad",
-        "abbreviation": "RSO",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
-      },
-      "points": 10,
-      "goalsDiff": -4,
-      "form": null,
-      "played": 7,
-      "wins": 3,
-      "draws": 1,
-      "losses": 3,
-      "gf": 9,
-      "ga": 13,
+      "losses": 2,
+      "gf": 12,
+      "ga": 11,
       "home": null,
       "away": null
     },
     {
       "rank": 9,
+      "team": {
+        "id": 85,
+        "name": "Celta Vigo",
+        "abbreviation": "CEL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
+      },
+      "points": 8,
+      "goalsDiff": 2,
+      "form": null,
+      "played": 8,
+      "wins": 1,
+      "draws": 5,
+      "losses": 2,
+      "gf": 8,
+      "ga": 6,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 10,
       "team": {
         "id": 93,
         "name": "Athletic Club",
@@ -155700,7 +155720,7 @@
       "away": null
     },
     {
-      "rank": 10,
+      "rank": 11,
       "team": {
         "id": 102,
         "name": "Villarreal",
@@ -155720,7 +155740,7 @@
       "away": null
     },
     {
-      "rank": 11,
+      "rank": 12,
       "team": {
         "id": 88,
         "name": "Espanyol",
@@ -155740,7 +155760,7 @@
       "away": null
     },
     {
-      "rank": 12,
+      "rank": 13,
       "team": {
         "id": 101,
         "name": "Rayo Vallecano",
@@ -155760,7 +155780,7 @@
       "away": null
     },
     {
-      "rank": 13,
+      "rank": 14,
       "team": {
         "id": 2922,
         "name": "Getafe",
@@ -155780,7 +155800,27 @@
       "away": null
     },
     {
-      "rank": 14,
+      "rank": 15,
+      "team": {
+        "id": 87,
+        "name": "Racing Santander",
+        "abbreviation": "RAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
+      },
+      "points": 8,
+      "goalsDiff": -10,
+      "form": null,
+      "played": 8,
+      "wins": 2,
+      "draws": 2,
+      "losses": 4,
+      "gf": 13,
+      "ga": 23,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 16,
       "team": {
         "id": 97,
         "name": "Osasuna",
@@ -155788,59 +155828,39 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
       },
       "points": 8,
-      "goalsDiff": -7,
-      "form": null,
-      "played": 7,
-      "wins": 2,
-      "draws": 2,
-      "losses": 3,
-      "gf": 6,
-      "ga": 13,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 15,
-      "team": {
-        "id": 85,
-        "name": "Celta Vigo",
-        "abbreviation": "CEL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
-      },
-      "points": 7,
-      "goalsDiff": 2,
-      "form": null,
-      "played": 7,
-      "wins": 1,
-      "draws": 4,
-      "losses": 2,
-      "gf": 8,
-      "ga": 6,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 16,
-      "team": {
-        "id": 87,
-        "name": "Racing Santander",
-        "abbreviation": "RAC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
-      },
-      "points": 7,
       "goalsDiff": -10,
       "form": null,
-      "played": 7,
+      "played": 8,
       "wins": 2,
-      "draws": 1,
+      "draws": 2,
       "losses": 4,
-      "gf": 11,
-      "ga": 21,
+      "gf": 8,
+      "ga": 18,
       "home": null,
       "away": null
     },
     {
       "rank": 17,
+      "team": {
+        "id": 3751,
+        "name": "Elche",
+        "abbreviation": "ELC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+      },
+      "points": 6,
+      "goalsDiff": -6,
+      "form": null,
+      "played": 8,
+      "wins": 1,
+      "draws": 3,
+      "losses": 4,
+      "gf": 11,
+      "ga": 17,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 18,
       "team": {
         "id": 1538,
         "name": "Levante",
@@ -155860,26 +155880,6 @@
       "away": null
     },
     {
-      "rank": 18,
-      "team": {
-        "id": 3751,
-        "name": "Elche",
-        "abbreviation": "ELC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
-      },
-      "points": 5,
-      "goalsDiff": -6,
-      "form": null,
-      "played": 7,
-      "wins": 1,
-      "draws": 2,
-      "losses": 4,
-      "gf": 11,
-      "ga": 17,
-      "home": null,
-      "away": null
-    },
-    {
       "rank": 19,
       "team": {
         "id": 94,
@@ -155887,15 +155887,15 @@
         "abbreviation": "VAL",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
       },
-      "points": 4,
+      "points": 5,
       "goalsDiff": -9,
       "form": null,
-      "played": 7,
+      "played": 8,
       "wins": 1,
-      "draws": 1,
+      "draws": 2,
       "losses": 5,
-      "gf": 4,
-      "ga": 13,
+      "gf": 6,
+      "ga": 15,
       "home": null,
       "away": null
     },
@@ -156016,6 +156016,29 @@
     {
       "rank": 5,
       "player": {
+        "id": 390389,
+        "name": "Yassir Zabiri",
+        "shortName": "Y. Zabiri",
+        "photo": null
+      },
+      "team": {
+        "id": 87,
+        "name": "Racing Santander",
+        "abbreviation": "RAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
+      },
+      "goals": {
+        "total": 7,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 6,
+      "player": {
         "id": 318773,
         "name": "Roberto Fernández",
         "shortName": "R. Fernández",
@@ -156037,18 +156060,18 @@
       "rating": null
     },
     {
-      "rank": 6,
+      "rank": 7,
       "player": {
-        "id": 390389,
-        "name": "Yassir Zabiri",
-        "shortName": "Y. Zabiri",
+        "id": 207288,
+        "name": "Ante Budimir",
+        "shortName": "A. Budimir",
         "photo": null
       },
       "team": {
-        "id": 87,
-        "name": "Racing Santander",
-        "abbreviation": "RAC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
+        "id": 97,
+        "name": "Osasuna",
+        "abbreviation": "OSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
       },
       "goals": {
         "total": 6,
@@ -156060,7 +156083,30 @@
       "rating": null
     },
     {
-      "rank": 7,
+      "rank": 8,
+      "player": {
+        "id": 301684,
+        "name": "Fer Niño",
+        "shortName": "F. Niño",
+        "photo": null
+      },
+      "team": {
+        "id": 3751,
+        "name": "Elche",
+        "abbreviation": "ELC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+      },
+      "goals": {
+        "total": 5,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 9,
       "player": {
         "id": 122260,
         "name": "Pierre-Emerick Aubameyang",
@@ -156083,7 +156129,7 @@
       "rating": null
     },
     {
-      "rank": 8,
+      "rank": 10,
       "player": {
         "id": 207236,
         "name": "Lucas Boyé",
@@ -156095,52 +156141,6 @@
         "name": "Alavés",
         "abbreviation": "ALA",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
-      },
-      "goals": {
-        "total": 5,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 9,
-      "player": {
-        "id": 207288,
-        "name": "Ante Budimir",
-        "shortName": "A. Budimir",
-        "photo": null
-      },
-      "team": {
-        "id": 97,
-        "name": "Osasuna",
-        "abbreviation": "OSA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
-      },
-      "goals": {
-        "total": 5,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 10,
-      "player": {
-        "id": 301684,
-        "name": "Fer Niño",
-        "shortName": "F. Niño",
-        "photo": null
-      },
-      "team": {
-        "id": 3751,
-        "name": "Elche",
-        "abbreviation": "ELC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
       },
       "goals": {
         "total": 5,
@@ -156200,6 +156200,29 @@
     {
       "rank": 13,
       "player": {
+        "id": 306263,
+        "name": "Luka Sucic",
+        "shortName": "L. Sucic",
+        "photo": null
+      },
+      "team": {
+        "id": 89,
+        "name": "Real Sociedad",
+        "abbreviation": "RSO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+      },
+      "goals": {
+        "total": 3,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 14,
+      "player": {
         "id": 291281,
         "name": "Jude Bellingham",
         "shortName": "J. Bellingham",
@@ -156221,7 +156244,7 @@
       "rating": null
     },
     {
-      "rank": 14,
+      "rank": 15,
       "player": {
         "id": 255889,
         "name": "Pape Gueye",
@@ -156244,7 +156267,7 @@
       "rating": null
     },
     {
-      "rank": 15,
+      "rank": 16,
       "player": {
         "id": 198832,
         "name": "Mariano Díaz",
@@ -156267,7 +156290,7 @@
       "rating": null
     },
     {
-      "rank": 16,
+      "rank": 17,
       "player": {
         "id": 166396,
         "name": "Alejandro Grimaldo",
@@ -156279,29 +156302,6 @@
         "name": "Atlético Madrid",
         "abbreviation": "ATM",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
-      },
-      "goals": {
-        "total": 3,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 17,
-      "player": {
-        "id": 306263,
-        "name": "Luka Sucic",
-        "shortName": "L. Sucic",
-        "photo": null
-      },
-      "team": {
-        "id": 89,
-        "name": "Real Sociedad",
-        "abbreviation": "RSO",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
       },
       "goals": {
         "total": 3,
@@ -156418,29 +156418,70 @@
   },
   "news": [
     {
-      "id": 50155123,
-      "headline": "Transfer rumors, news: Man City, Man Utd, Spurs eye Atlético's Simeone",
-      "description": "Man City, Man United and Tottenham are all looking at bringing Atlético Madrid's Giuliano Simeone to the Premier League. Transfer Talk has the latest.",
-      "published": "2026-10-11T09:05:45Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50155123/transfer-rumors-news-manchester-city-tottenham-hotspur-eye-atletico-madrid-giuliano-simeone",
+      "id": 50160857,
+      "headline": "Racing Santander vs. Valencia - Game Highlights",
+      "description": "Watch the Game Highlights from Racing Santander vs. Valencia, 10/11/2026",
+      "published": "2026-10-11T21:05:42Z",
+      "link": "https://www.espn.com/video/clip/_/id/50160857/racing-santander-vs-valencia-game-highlights",
       "images": [
         {
-          "dataSourceIdentifier": "51d6e9de27452",
-          "id": 50155230,
-          "type": "header",
-          "name": "Atletico Madrid's Giuliano Simeone [1296x729]",
-          "credit": "Alvaro Medranda/Quality Sport Images/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1011/r1729094_2_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Dawson: Manchester United board may act if results don't improve",
-          "caption": "Dawson: Manchester United board may act if results don't improve",
+          "name": "Racing Santander vs. Valencia - Game Highlights",
+          "caption": "Watch the Game Highlights from Racing Santander vs. Valencia, 10/11/2026",
+          "alt": "",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Dawson_Manchester_United_board_may_act_if_results_dont_improve/dm_261010_Dawson_Manchester_United_board_may_act_if_results_dont_improve.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1011/8ba0a4db-142b-4144-a99d-0d41b5304c25/8ba0a4db-142b-4144-a99d-0d41b5304c25.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50159471,
+      "headline": "Real Betis vs. Osasuna - Game Highlights",
+      "description": "Watch the Game Highlights from Real Betis vs. Osasuna, 10/11/2026",
+      "published": "2026-10-11T18:40:07Z",
+      "link": "https://www.espn.com/video/clip/_/id/50159471/real-betis-vs-osasuna-game-highlights",
+      "images": [
+        {
+          "name": "Real Betis vs. Osasuna - Game Highlights",
+          "caption": "Watch the Game Highlights from Real Betis vs. Osasuna, 10/11/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1011/548be288-827a-49d8-86bd-0af298117be4/548be288-827a-49d8-86bd-0af298117be4.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50158262,
+      "headline": "Real Sociedad vs. Deportivo La Coruña - Game Highlights",
+      "description": "Watch the Game Highlights from Real Sociedad vs. Deportivo La Coruña, 10/11/2026",
+      "published": "2026-10-11T16:19:57Z",
+      "link": "https://www.espn.com/video/clip/_/id/50158262/real-sociedad-vs-deportivo-la-coruna-game-highlights",
+      "images": [
+        {
+          "name": "Real Sociedad vs. Deportivo La Coruña - Game Highlights",
+          "caption": "Watch the Game Highlights from Real Sociedad vs. Deportivo La Coruña, 10/11/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1011/936bcaa9-94bf-434c-824a-19a64e9870a5/936bcaa9-94bf-434c-824a-19a64e9870a5.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50156871,
+      "headline": "Elche vs. Celta Vigo - Game Highlights",
+      "description": "Watch the Game Highlights from Elche vs. Celta Vigo, 10/11/2026",
+      "published": "2026-10-11T13:59:57Z",
+      "link": "https://www.espn.com/video/clip/_/id/50156871/elche-vs-celta-vigo-game-highlights",
+      "images": [
+        {
+          "name": "Elche vs. Celta Vigo - Game Highlights",
+          "caption": "Watch the Game Highlights from Elche vs. Celta Vigo, 10/11/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1011/84fb38d2-2cbf-4b3c-ac25-0311dc6868dc/84fb38d2-2cbf-4b3c-ac25-0311dc6868dc.jpg"
         }
       ]
     },
@@ -156482,7 +156523,7 @@
       "id": 50150534,
       "headline": "Vinícius Júnior 'sorry' after red card for hair pull; Mourinho skips Madrid presser",
       "description": "Vinícius Júnior has apologized to his Real Madrid teammates and fans after being red-carded for pulling an opponent's hair in a dramatic, off-the-bench cameo during his team's LaLiga win over Villarreal on Saturday.",
-      "published": "2026-10-10T23:44:11Z",
+      "published": "2026-10-11T15:57:39Z",
       "link": "https://www.espn.com/soccer/story/_/id/50150534/vinicius-junior-red-card-real-madrid-villarreal",
       "images": [
         {
@@ -156781,57 +156822,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/dm_261008_Moreno_Man_Utd_vs_Spurs_a_must_not_lose_for_both_sides/dm_261008_Moreno_Man_Utd_vs_Spurs_a_must_not_lose_for_both_sides.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50142898,
-      "headline": "Nicol: Jesus is a 'no-brainer' to replace Raphinha",
-      "description": "Nicol: Jesus is a 'no-brainer' to replace Raphinha",
-      "published": "2026-10-09T22:13:20Z",
-      "link": "https://www.espn.com/video/clip/_/id/50142898/jesus-no-brainer-replace-raphinha",
-      "images": [
-        {
-          "name": "Nicol: Jesus is a 'no-brainer' to replace Raphinha",
-          "caption": "Nicol: Jesus is a 'no-brainer' to replace Raphinha",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1009/dm_261009_Nicol_Jesus_is_a_no_brainer_to_replace_Raphinha/dm_261009_Nicol_Jesus_is_a_no_brainer_to_replace_Raphinha.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50142731,
-      "headline": "Málaga vs. Espanyol - Game Highlights",
-      "description": "Watch the Game Highlights from Málaga vs. Espanyol, 10/09/2026",
-      "published": "2026-10-09T21:03:36Z",
-      "link": "https://www.espn.com/video/clip/_/id/50142731/malaga-vs-espanyol-game-highlights",
-      "images": [
-        {
-          "name": "Málaga vs. Espanyol - Game Highlights",
-          "caption": "Watch the Game Highlights from Málaga vs. Espanyol, 10/09/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1009/4c47a79c-3b94-48b1-a3a2-77c7ebbb8f43/4c47a79c-3b94-48b1-a3a2-77c7ebbb8f43.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50142727,
-      "headline": "Mourinho backs Mbappé amid fan backlash over France absence",
-      "description": "Alex Kirkland explains Mourinho's defense of Mbappé sitting out the international break, calling fan backlash \"ridiculous.\"",
-      "published": "2026-10-09T21:03:08Z",
-      "link": "https://www.espn.com/video/clip/_/id/50142727/mourinho-backs-mbappe-amid-fan-backlash-france-absence",
-      "images": [
-        {
-          "name": "Mourinho backs Mbappé amid fan backlash over France absence",
-          "caption": "Alex Kirkland explains Mourinho's defense of Mbappé sitting out the international break, calling fan backlash \"ridiculous.\"",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1009/dm_261009_Mbappe_Real_IA/dm_261009_Mbappe_Real_IA.jpg"
         }
       ]
     }
@@ -165827,7 +165817,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-11T11:25:15.246Z",
+    "updatedAt": "2026-10-12T13:11:35.736Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
