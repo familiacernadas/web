@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-12T13:11:35.736Z",
+    "generatedAt": "2026-10-13T12:43:40.040Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -155607,15 +155607,15 @@
         "abbreviation": "SEV",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
       },
-      "points": 13,
+      "points": 14,
       "goalsDiff": 1,
       "form": null,
-      "played": 7,
+      "played": 8,
       "wins": 4,
-      "draws": 1,
+      "draws": 2,
       "losses": 2,
-      "gf": 10,
-      "ga": 9,
+      "gf": 13,
+      "ga": 12,
       "home": null,
       "away": null
     },
@@ -155842,6 +155842,26 @@
     {
       "rank": 17,
       "team": {
+        "id": 1538,
+        "name": "Levante",
+        "abbreviation": "LEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+      },
+      "points": 6,
+      "goalsDiff": -4,
+      "form": null,
+      "played": 7,
+      "wins": 1,
+      "draws": 3,
+      "losses": 3,
+      "gf": 11,
+      "ga": 15,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 18,
+      "team": {
         "id": 3751,
         "name": "Elche",
         "abbreviation": "ELC",
@@ -155856,26 +155876,6 @@
       "losses": 4,
       "gf": 11,
       "ga": 17,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 18,
-      "team": {
-        "id": 1538,
-        "name": "Levante",
-        "abbreviation": "LEV",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
-      },
-      "points": 5,
-      "goalsDiff": -4,
-      "form": null,
-      "played": 6,
-      "wins": 1,
-      "draws": 2,
-      "losses": 3,
-      "gf": 8,
-      "ga": 12,
       "home": null,
       "away": null
     },
@@ -156269,6 +156269,29 @@
     {
       "rank": 16,
       "player": {
+        "id": 311054,
+        "name": "Iván Romero",
+        "shortName": "I. Romero",
+        "photo": null
+      },
+      "team": {
+        "id": 1538,
+        "name": "Levante",
+        "abbreviation": "LEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+      },
+      "goals": {
+        "total": 3,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 17,
+      "player": {
         "id": 198832,
         "name": "Mariano Díaz",
         "shortName": "M. Díaz",
@@ -156290,7 +156313,7 @@
       "rating": null
     },
     {
-      "rank": 17,
+      "rank": 18,
       "player": {
         "id": 166396,
         "name": "Alejandro Grimaldo",
@@ -156313,7 +156336,7 @@
       "rating": null
     },
     {
-      "rank": 18,
+      "rank": 19,
       "player": {
         "id": 267591,
         "name": "Roger Brugué",
@@ -156336,7 +156359,7 @@
       "rating": null
     },
     {
-      "rank": 19,
+      "rank": 20,
       "player": {
         "id": 273499,
         "name": "Jonathan David",
@@ -156351,29 +156374,6 @@
       },
       "goals": {
         "total": 3,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 20,
-      "player": {
-        "id": 125200,
-        "name": "Álvaro García",
-        "shortName": "Á. García",
-        "photo": null
-      },
-      "team": {
-        "id": 101,
-        "name": "Rayo Vallecano",
-        "abbreviation": "RAY",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
-      },
-      "goals": {
-        "total": 2,
         "assists": 0
       },
       "assists": 0,
@@ -156417,6 +156417,121 @@
     }
   },
   "news": [
+    {
+      "id": 50172116,
+      "headline": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
+      "description": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
+      "published": "2026-10-13T09:07:59Z",
+      "link": "https://www.espn.com/video/clip/_/id/50172116/i-hope-learn-flick-responds-question-real-madrid",
+      "images": [
+        {
+          "name": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
+          "caption": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1013/dm_261013_COM_SOC_Presser_I_hope_youll_learn_Flick_responds_to_question_about_Real_Madrid_20261013/dm_261013_COM_SOC_Presser_I_hope_youll_learn_Flick_responds_to_question_about_Real_Madrid_20261013.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50172084,
+      "headline": "Dani Carvajal joins Getafe after Real Madrid exit",
+      "description": "Dani Carvajal has joined Getafe on a free transfer, the LaLiga club announced on Tuesday.",
+      "published": "2026-10-13T08:56:19Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50172084/dani-carvajal-joins-getafe-real-madrid-exit",
+      "images": [
+        {
+          "dataSourceIdentifier": "850e79cad1fa4",
+          "id": 46749279,
+          "type": "header",
+          "name": "Carvajal vs Barcelona_251027 [1296x729]",
+          "credit": "Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2025/1027/r1567009_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Kirkland: Mourinho will get more time than most Real Madrid managers",
+          "caption": "Kirkland: Mourinho will get more time than most Real Madrid managers",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1011/dm_261011_Kirkland_Mourinho_will_get_more_time_than_most_Real_Madrid_managers/dm_261011_Kirkland_Mourinho_will_get_more_time_than_most_Real_Madrid_managers.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50171789,
+      "headline": "Transfer rumors, news: Barcelona, Real Madrid scout Erling Haaland at Anfield",
+      "description": "Barcelona and Real Madrid continue to keep tabs on Erling Haaland, while Chelsea growing confident of signing Bournemouth's Alex Scott. Transfer Talk has the latest.",
+      "published": "2026-10-13T08:50:01Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50171789/transfer-rumors-news-barcelona-real-madrid-scout-erling-haaland-anfield",
+      "images": [
+        {
+          "dataSourceIdentifier": "20e66bf534c2d",
+          "id": 50171832,
+          "type": "header",
+          "name": "Erling Haaland [1296x729]",
+          "credit": "Michael Regan/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1013/r1730042_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Ogden: Every team's fans will be against Man City after this win",
+          "caption": "Ogden: Every team's fans will be against Man City after this win",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1012/dm_261012_COM_SOC_ANALYSIS_Ogden_Every_teams_fans_will_be_against_Man_City_after_this_win_2026_10_12/dm_261012_COM_SOC_ANALYSIS_Ogden_Every_teams_fans_will_be_against_Man_City_after_this_win_2026_10_12.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50168756,
+      "headline": "Levante vs. Sevilla - Game Highlights",
+      "description": "Watch the Game Highlights from Levante vs. Sevilla, 10/12/2026",
+      "published": "2026-10-12T21:16:49Z",
+      "link": "https://www.espn.com/video/clip/_/id/50168756/levante-vs-sevilla-game-highlights",
+      "images": [
+        {
+          "name": "Levante vs. Sevilla - Game Highlights",
+          "caption": "Watch the Game Highlights from Levante vs. Sevilla, 10/12/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1012/ae4e816d-8212-45c5-a290-7fbc9df3b503/ae4e816d-8212-45c5-a290-7fbc9df3b503.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50163474,
+      "headline": "Man City win at angry Anfield; Mourinho overshadows ugly Madrid win",
+      "description": "Despite the pregame vitriol and ongoing scandal, it was no surprise that Man City won at Liverpool on Sunday. PLUS: Real Madrid won ugly and Mourinho got up to his old tricks after Vinicius' red card.",
+      "published": "2026-10-12T13:03:10Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50163474/manchester-city-liverpool-premier-league-charges-jose-mourinho-real-madrid-vinicius-junior-analysis",
+      "images": [
+        {
+          "dataSourceIdentifier": "f8dc41e5983b8",
+          "id": 50165196,
+          "type": "header",
+          "name": "Man City celebrate 261012 [1296x729]",
+          "credit": "Michael Regan/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1012/r1729618_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Nicol and Burley clash over Gravenberch's red card vs. Man City",
+          "caption": "Nicol and Burley clash over Gravenberch's red card vs. Man City",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1011/dm_261011_Nicol_and_Burley_clash_over_Gravenberchs_red_card_vs_Man_City/dm_261011_Nicol_and_Burley_clash_over_Gravenberchs_red_card_vs_Man_City.jpg"
+        }
+      ]
+    },
     {
       "id": 50160857,
       "headline": "Racing Santander vs. Valencia - Game Highlights",
@@ -156714,114 +156829,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Garcia_Flick_deserves_credit_for_Barcelonas_strong_form/dm_261010_Garcia_Flick_deserves_credit_for_Barcelonas_strong_form.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50148452,
-      "headline": "Alavés vs. Atletico Madrid - Game Highlights",
-      "description": "Watch the Game Highlights from Alavés vs. Atletico Madrid, 10/10/2026",
-      "published": "2026-10-10T16:23:19Z",
-      "link": "https://www.espn.com/video/clip/_/id/50148452/alaves-vs-atletico-madrid-game-highlights",
-      "images": [
-        {
-          "name": "Alavés vs. Atletico Madrid - Game Highlights",
-          "caption": "Watch the Game Highlights from Alavés vs. Atletico Madrid, 10/10/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1010/a9d11a0a-a064-46e3-8790-8d034534edfc/a9d11a0a-a064-46e3-8790-8d034534edfc.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50147672,
-      "headline": "Atlético Madrid mock Real Madrid on social media over Federico Valverde recovery",
-      "description": "Atlético Madrid poked fun at Real Madrid on social media after midfielder Federico Valverde recovered from injury to be included in Saturday's squad to face Villarreal in LaLiga.",
-      "published": "2026-10-10T14:36:49Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50147672/atletico-madrid-mock-real-madrid-social-media-federico-valverde-recovery",
-      "images": [
-        {
-          "dataSourceIdentifier": "299f3e520581c",
-          "id": 50147626,
-          "type": "header",
-          "name": "Federico Valverde [1296x729]",
-          "credit": "Photo by Ion Alcoba Beitia/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1010/r1728662_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Mourinho slams 'ridiculous' journalist who believes Mbappé has failed at Real Madrid",
-          "caption": "Mourinho slams 'ridiculous' journalist who believes Mbappé has failed at Real Madrid",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1009/dm_261009_COM_SOC_Analysis_Mourinho_slams_E28098ri457/dm_261009_COM_SOC_Analysis_Mourinho_slams_E28098ri457.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50147316,
-      "headline": "Rayo Vallecano vs. Athletic Club suspended after fans launch paper plane protest",
-      "description": "Rayo Vallecano's LaLiga game against Athletic Club was called off in the first half Saturday after fans launched paper airplanes onto the pitch in protest at president Raúl Martín Presa.",
-      "published": "2026-10-10T19:42:11Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50147316/rayo-vallecano-vs-athletic-club-suspended-fans-launch-paper-plane-protest",
-      "images": [
-        {
-          "dataSourceIdentifier": "8f33ccd113037",
-          "id": 50147273,
-          "type": "header",
-          "name": "Vallecano protest [1296x729]",
-          "alt": "Rayo Vallecano fans throw paper planes onto the pitch in protest of Raul Martin Presa, President of Rayo Vallecano during the LaLiga EA Sports 2026/27 match between Rayo Vallecano de Madrid and Athletic Club at Estadio de Vallecas on October 10, 2026 in M",
-          "credit": "Florencia Tan Jun/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1010/r1728643_1296x729_16-9.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50142917,
-      "headline": "Lowe: Mourinho wants to play Vinícius Jr. back into form",
-      "description": "Lowe: Mourinho wants to play Vinícius Jr. back into form",
-      "published": "2026-10-09T22:13:16Z",
-      "link": "https://www.espn.com/video/clip/_/id/50142917/mourinho-wants-play-vinicius-jr-back-form",
-      "images": [
-        {
-          "name": "Lowe: Mourinho wants to play Vinícius Jr. back into form",
-          "caption": "Lowe: Mourinho wants to play Vinícius Jr. back into form",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1009/dm_261009_Lowe_Mourinho_wants_to_play_Vinicius_Jr_back_into_form/dm_261009_Lowe_Mourinho_wants_to_play_Vinicius_Jr_back_into_form.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50138310,
-      "headline": "Transfer rumors, news: Chelsea eye move for Barcelona's De Jong",
-      "description": "Chelsea are reporting looking at signing Frenkie de Jong from Barcelona. Transfer Talk has the latest.",
-      "published": "2026-10-09T21:34:28Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50138310/transfer-rumors-news-real-madrid-eye-mctominay-napoli-talks-stall",
-      "images": [
-        {
-          "dataSourceIdentifier": "c2e7a16e05779",
-          "id": 50142871,
-          "type": "header",
-          "name": "De Jong [1296x729]",
-          "credit": "(Photo by Alex Caparros/Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1009/r1728422_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Moreno: Man Utd vs. Spurs a 'must not lose' for both sides",
-          "caption": "Moreno: Man Utd vs. Spurs a 'must not lose' for both sides",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1008/dm_261008_Moreno_Man_Utd_vs_Spurs_a_must_not_lose_for_both_sides/dm_261008_Moreno_Man_Utd_vs_Spurs_a_must_not_lose_for_both_sides.jpg"
         }
       ]
     }
@@ -165817,7 +165824,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-12T13:11:35.736Z",
+    "updatedAt": "2026-10-13T12:43:40.040Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
