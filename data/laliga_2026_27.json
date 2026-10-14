@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-13T12:43:40.040Z",
+    "generatedAt": "2026-10-14T10:15:00.024Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -16,7 +16,7 @@
     "injuriesCount": 0,
     "newsCount": 20,
     "modelVersion": "3.0-oficial + 3.1-experimental",
-    "europeanMatchesCount": 5,
+    "europeanMatchesCount": 7,
     "predictionBalanceV31": {
       "total": 10,
       "correct": 5,
@@ -156418,6 +156418,63 @@
   },
   "news": [
     {
+      "id": 50179920,
+      "headline": "Transfer rumors, news: Real Madrid, Barcelona chase Spurs defender Porro",
+      "description": "Tottenham defender Pedro Porro is being tracked by Real Madrid and Barcelona. Transfer Talk has the latest.",
+      "published": "2026-10-14T07:11:53Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50179920/transfer-rumors-news-real-madrid-barcelona-chase-spurs-defender-porro",
+      "images": [
+        {
+          "dataSourceIdentifier": "c03ae1634e446",
+          "id": 49978755,
+          "type": "header",
+          "name": " Pedro Porro of Tottenham Hotspur is embraced by Roberto De Zerbi [1296x729]",
+          "alt": "LONDON, ENGLAND - SEPTEMBER 19: Pedro Porro of Tottenham Hotspur is embraced by Roberto De Zerbi, Manager / Head Coach of Tottenham Hotspur as he  is substituted following an injury during the Premier League 2026/27 match between Tottenham Hotspur and Ast",
+          "credit": "Catherine Ivill - AMA/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0919/r1718914_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Kirkland: Mourinho will get more time than most Real Madrid managers",
+          "caption": "Kirkland: Mourinho will get more time than most Real Madrid managers",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1011/dm_261011_Kirkland_Mourinho_will_get_more_time_than_most_Real_Madrid_managers/dm_261011_Kirkland_Mourinho_will_get_more_time_than_most_Real_Madrid_managers.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50175667,
+      "headline": "Real Madrid's Mourinho on media snub post-Villarreal: 'Watch first minute of game'",
+      "description": "José Mourinho has refused to explain why he skipped his post-match news conference after Real Madrid's 1-0 win over Villarreal,",
+      "published": "2026-10-13T18:47:44Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50175667/real-madrid-jose-mourinho-media-snub-villarreal-say",
+      "images": [
+        {
+          "dataSourceIdentifier": "41e53ef25c461",
+          "id": 50114960,
+          "type": "header",
+          "name": "Vinicius Junior and Jose Mourinho [1296x729]",
+          "caption": "Vinicius Junior and Jose Mourinho",
+          "alt": "Vinicius Junior and Jose Mourinho",
+          "credit": "Alberto Gardin/NurPhoto",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1006/r1726712_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
+          "caption": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1013/dm_261013_COM_SOC_Presser_I_hope_youll_learn_Flick_responds_to_question_about_Real_Madrid_20261013/dm_261013_COM_SOC_Presser_I_hope_youll_learn_Flick_responds_to_question_about_Real_Madrid_20261013.jpg"
+        }
+      ]
+    },
+    {
       "id": 50172116,
       "headline": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
       "description": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
@@ -156458,33 +156515,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1011/dm_261011_Kirkland_Mourinho_will_get_more_time_than_most_Real_Madrid_managers/dm_261011_Kirkland_Mourinho_will_get_more_time_than_most_Real_Madrid_managers.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50171789,
-      "headline": "Transfer rumors, news: Barcelona, Real Madrid scout Erling Haaland at Anfield",
-      "description": "Barcelona and Real Madrid continue to keep tabs on Erling Haaland, while Chelsea growing confident of signing Bournemouth's Alex Scott. Transfer Talk has the latest.",
-      "published": "2026-10-13T08:50:01Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50171789/transfer-rumors-news-barcelona-real-madrid-scout-erling-haaland-anfield",
-      "images": [
-        {
-          "dataSourceIdentifier": "20e66bf534c2d",
-          "id": 50171832,
-          "type": "header",
-          "name": "Erling Haaland [1296x729]",
-          "credit": "Michael Regan/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1013/r1730042_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Ogden: Every team's fans will be against Man City after this win",
-          "caption": "Ogden: Every team's fans will be against Man City after this win",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1012/dm_261012_COM_SOC_ANALYSIS_Ogden_Every_teams_fans_will_be_against_Man_City_after_this_win_2026_10_12/dm_261012_COM_SOC_ANALYSIS_Ogden_Every_teams_fans_will_be_against_Man_City_after_this_win_2026_10_12.jpg"
         }
       ]
     },
@@ -156597,23 +156627,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1011/84fb38d2-2cbf-4b3c-ac25-0311dc6868dc/84fb38d2-2cbf-4b3c-ac25-0311dc6868dc.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50152014,
-      "headline": "Vinicius Junior's dramatic night headlines win vs. Villarreal",
-      "description": "Alex Kirkland breaks down the turn of events from Vinicius Junior's night in Real Madrid's 1-nil win against Villarreal.",
-      "published": "2026-10-10T23:53:14Z",
-      "link": "https://www.espn.com/video/clip/_/id/50152014/vinicius-junior-dramatic-night-headlines-win-vs-villarreal",
-      "images": [
-        {
-          "name": "Vinicius Junior's dramatic night headlines win vs. Villarreal",
-          "caption": "Alex Kirkland breaks down the turn of events from Vinicius Junior's night in Real Madrid's 1-nil win against Villarreal.",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Vinicius_Juniors_dramatic_night_headlines_win_vs_Villarreal/dm_261010_Vinicius_Juniors_dramatic_night_headlines_win_vs_Villarreal.jpg"
         }
       ]
     },
@@ -156981,6 +156994,52 @@
       "away": {
         "id": 349,
         "name": "AFC Bournemouth",
+        "logo": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "401915435",
+      "date": "2026-10-13T19:00Z",
+      "timestamp": 1791918000,
+      "status": null,
+      "competition": "Champions League",
+      "competitionShort": "UCL",
+      "round": null,
+      "home": {
+        "id": 432,
+        "name": "Galatasaray",
+        "logo": null
+      },
+      "away": {
+        "id": 83,
+        "name": "Barcelona",
+        "logo": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "401915410",
+      "date": "2026-10-13T19:00Z",
+      "timestamp": 1791918000,
+      "status": null,
+      "competition": "Champions League",
+      "competitionShort": "UCL",
+      "round": null,
+      "home": {
+        "id": 102,
+        "name": "Villarreal",
+        "logo": null
+      },
+      "away": {
+        "id": 114,
+        "name": "Napoli",
         "logo": null
       },
       "score": {
@@ -165824,7 +165883,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-13T12:43:40.040Z",
+    "updatedAt": "2026-10-14T10:15:00.023Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
