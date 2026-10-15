@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-14T10:15:00.024Z",
+    "generatedAt": "2026-10-15T09:57:04.439Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -16,7 +16,7 @@
     "injuriesCount": 0,
     "newsCount": 20,
     "modelVersion": "3.0-oficial + 3.1-experimental",
-    "europeanMatchesCount": 7,
+    "europeanMatchesCount": 8,
     "predictionBalanceV31": {
       "total": 10,
       "correct": 5,
@@ -156418,30 +156418,199 @@
   },
   "news": [
     {
-      "id": 50179920,
-      "headline": "Transfer rumors, news: Real Madrid, Barcelona chase Spurs defender Porro",
-      "description": "Tottenham defender Pedro Porro is being tracked by Real Madrid and Barcelona. Transfer Talk has the latest.",
-      "published": "2026-10-14T07:11:53Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50179920/transfer-rumors-news-real-madrid-barcelona-chase-spurs-defender-porro",
+      "id": 50180425,
+      "headline": "Tyler, The Creator joins stars to appear on Barcelona Clásico kit",
+      "description": "It's become a tradition in recent years for Barcelona to add the logo of top music stars to their jerseys when they face Real Madrid in El Clásico.",
+      "published": "2026-10-15T07:10:27Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50180425/tyler-creator-joins-stars-appear-barcelona-clasico-kit-coldplay-olivia-rodrigo-ed-sheeran",
       "images": [
         {
-          "dataSourceIdentifier": "c03ae1634e446",
-          "id": 49978755,
+          "dataSourceIdentifier": "308c05785f321",
+          "id": 50180679,
           "type": "header",
-          "name": " Pedro Porro of Tottenham Hotspur is embraced by Roberto De Zerbi [1296x729]",
-          "alt": "LONDON, ENGLAND - SEPTEMBER 19: Pedro Porro of Tottenham Hotspur is embraced by Roberto De Zerbi, Manager / Head Coach of Tottenham Hotspur as he  is substituted following an injury during the Premier League 2026/27 match between Tottenham Hotspur and Ast",
-          "credit": "Catherine Ivill - AMA/Getty Images",
+          "name": "Rodri wears Barcelona kit with Tyler, the Creator logo [1296x729]",
+          "credit": "FC Barcelona",
           "height": 729,
           "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0919/r1718914_1296x729_16-9.jpg"
+          "url": "https://a.espncdn.com/photo/2026/1014/r1730559_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "bd5eaa8a76b53",
+          "id": 34793096,
+          "type": "header",
+          "name": "Drake logo Barcelona [1296x729]",
+          "credit": "Barcelona FC/Spotify",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2022/1014/r1075499_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "ae6e7572476aa",
+          "id": 35863696,
+          "type": "header",
+          "name": "Barcelona Rosalia jersey [1296x729]",
+          "credit": "FC Barcelona",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2023/0315/r1144796_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "9001b42194846",
+          "id": 38693852,
+          "type": "header",
+          "name": "Rolling Stones with Barcelona jerseys [1296x729]",
+          "credit": "FC Barcelona",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2023/1019/r1240435_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "ce745411ac5fa",
+          "id": 45148668,
+          "type": "header",
+          "name": "karol g barca [608x342]",
+          "caption": "Karol G's signature barbed-wire heart logo was on the front of Barca's kit in early 2024.",
+          "credit": "(Photo by Mateo Villalba/Getty Images)",
+          "height": 342,
+          "width": 608,
+          "url": "https://a.espncdn.com/photo/2025/0514/r1492771_608x342_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "9f7c9ec4d48ec",
+          "id": 41842602,
+          "type": "header",
+          "name": "Barcelona Spotify shirt [1200x675]",
+          "caption": "Barcelona Spotify shirt",
+          "credit": "Barcelona FC",
+          "height": 675,
+          "width": 1200,
+          "url": "https://a.espncdn.com/photo/2024/1017/r1401721_1200x675_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "1f9ea9d698394",
+          "id": 45136762,
+          "type": "header",
+          "name": "travis scott barca [608x342]",
+          "caption": "Travis Scott also performed in Barcelona the night before the game when the club wore his logo.",
+          "credit": "(Photo by Joan Valls/Urbanandsport/NurPhoto via Getty Images)",
+          "height": 342,
+          "width": 608,
+          "url": "https://a.espncdn.com/photo/2025/0514/r1492405_608x342_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "f859ef31d16da",
+          "id": 50180588,
+          "type": "header",
+          "name": "Barcelona kit with Ed Sheeran logo [1296x729]",
+          "credit": "David Ramos/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1014/r1730552_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "8595d0d71ed91",
+          "id": 48637358,
+          "type": "header",
+          "name": "FC Barcelona Olivia Rodrigo [1079x607]",
+          "caption": "Barcelona have partnered with Olivia Rodrigo.",
+          "credit": "FC Barcelona",
+          "height": 607,
+          "width": 1079,
+          "url": "https://a.espncdn.com/photo/2026/0430/r1651416_1079x607_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "f9ee746381640",
+          "id": 50180665,
+          "type": "header",
+          "name": "Lamine Yamal wears Barcelona jersey with Tyler, the Creator logo [1296x864]",
+          "credit": "FC Barcelona",
+          "height": 864,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1014/r1730557_1296x864_3-2.jpg"
         },
         {
           "type": "Media",
-          "name": "Kirkland: Mourinho will get more time than most Real Madrid managers",
-          "caption": "Kirkland: Mourinho will get more time than most Real Madrid managers",
+          "name": "Hislop: Barcelona are playing the best football in Europe",
+          "caption": "Hislop: Barcelona are playing the best football in Europe",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1011/dm_261011_Kirkland_Mourinho_will_get_more_time_than_most_Real_Madrid_managers/dm_261011_Kirkland_Mourinho_will_get_more_time_than_most_Real_Madrid_managers.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Hislop_Barcelona_are_playing_the_best_football_in_Europe/dm_261010_Hislop_Barcelona_are_playing_the_best_football_in_Europe.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50180845,
+      "headline": "Tyler, The Creator to be the next star on Barcelona's shirt",
+      "description": "American rapper Tyler, The Creator will become the latest artist to feature on the front of Barcelona's jersey when they face Real Madrid in the upcoming Clásico.",
+      "published": "2026-10-15T08:11:42Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50180845/tyler-creator-barcelona-jersey-shirt-spotify",
+      "images": [
+        {
+          "dataSourceIdentifier": "b410b7a664713",
+          "id": 50180796,
+          "type": "header",
+          "name": "Tyler the Creator [1296x729]",
+          "credit": "Theo Wargo/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1014/r1730563_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Hislop: Barcelona are playing the best football in Europe",
+          "caption": "Hislop: Barcelona are playing the best football in Europe",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Hislop_Barcelona_are_playing_the_best_football_in_Europe/dm_261010_Hislop_Barcelona_are_playing_the_best_football_in_Europe.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50182804,
+      "headline": "Real Madrid's Vinícius Junior gets 4-game ban after red card; will miss Clásico",
+      "description": "Vinícius Junior has been handed a four-game ban for his sending-off in Real Madrid's LaLiga win over Villarreal and will miss this month's Clásico with Barcelona.",
+      "published": "2026-10-14T22:42:16Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50182804/real-madrid-vinicius-junior-suspension-red-card-clasico",
+      "images": [
+        {
+          "dataSourceIdentifier": "4637ae64e5bd9",
+          "id": 50183110,
+          "type": "header",
+          "name": "Vini Jr red card [1296x729]",
+          "caption": "Vinícius Júnior has been suspended four games after his red card against Villarreal.",
+          "alt": "Vinicius Junior of Real Madrid CF argue with referee Isidro Diaz Mero Escuderos red card during the LaLiga EA Sports 2026/27 match between Real Madrid and Villarreal CF at Estadio Santiago Bernabeu on October 10, 2026 in Madrid, Spain",
+          "credit": "Diego Souto/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1014/r1730741_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
+          "caption": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1013/dm_261013_COM_SOC_Presser_I_hope_youll_learn_Flick_responds_to_question_about_Real_Madrid_20261013/dm_261013_COM_SOC_Presser_I_hope_youll_learn_Flick_responds_to_question_about_Real_Madrid_20261013.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50180336,
+      "headline": "José Mourinho backs Vinícius Júnior to rediscover top form at Real Madrid",
+      "description": "Real Madrid coach José Mourinho believes it's only a question of time before Vinícius Júnior returns to top form.",
+      "published": "2026-10-14T17:07:43Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50180336/jose-mourinho-backs-vinicius-junior-rediscover-top-form-real-madrid",
+      "images": [
+        {
+          "dataSourceIdentifier": "e3e69c5cbd3d6",
+          "id": 50180314,
+          "type": "header",
+          "name": "Vinícius Júnior [1296x729]",
+          "alt": "MADRID, SPAIN - OCTOBER 10: Vinicius Junior of Real Madrid CF celebrates a goal that was later disallowed by VAR, after that he saw the red card for protest, during the Spanish League, LaLiga EA Sports, football match between Real Madrid and Villarreal CF",
+          "credit": "Oscar J. Barroso/Europa Press via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1014/r1730537_1296x729_16-9.jpg"
         }
       ]
     },
@@ -156782,68 +156951,6 @@
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1010/fe86155b-f0e6-4181-8929-e460a75b0ec0/fe86155b-f0e6-4181-8929-e460a75b0ec0.jpg"
         }
       ]
-    },
-    {
-      "id": 50149594,
-      "headline": "Hislop: Barcelona are playing the best football in Europe",
-      "description": "Hislop: Barcelona are playing the best football in Europe",
-      "published": "2026-10-10T19:07:35Z",
-      "link": "https://www.espn.com/video/clip/_/id/50149594/barcelona-playing-best-football-europe",
-      "images": [
-        {
-          "name": "Hislop: Barcelona are playing the best football in Europe",
-          "caption": "Hislop: Barcelona are playing the best football in Europe",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Hislop_Barcelona_are_playing_the_best_football_in_Europe/dm_261010_Hislop_Barcelona_are_playing_the_best_football_in_Europe.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50149441,
-      "headline": "Barcelona vs. Getafe - Game Highlights",
-      "description": "Watch the Game Highlights from Barcelona vs. Getafe, 10/10/2026",
-      "published": "2026-10-10T18:49:56Z",
-      "link": "https://www.espn.com/video/clip/_/id/50149441/barcelona-vs-getafe-game-highlights",
-      "images": [
-        {
-          "name": "Barcelona vs. Getafe - Game Highlights",
-          "caption": "Watch the Game Highlights from Barcelona vs. Getafe, 10/10/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1010/fe86155b-f0e6-4181-8929-e460a75b0ec0/fe86155b-f0e6-4181-8929-e460a75b0ec0.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50128026,
-      "headline": "Anthony Gordon opens Barcelona account in win against Getafe ",
-      "description": "Anthony Gordon's first Barcelona goal, scored in the second minute, set the LaLiga leaders on their way to a comfortable 3-0 win over Getafe at the Nou Camp.\n\n",
-      "published": "2026-10-10T19:24:34Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882853",
-      "images": [
-        {
-          "dataSourceIdentifier": "adb2145511d1e",
-          "id": 50149111,
-          "type": "header",
-          "name": "Barcelona's English forward #17 Anthony Gordon [1296x729]",
-          "alt": "Barcelona's English forward #17 Anthony Gordon (2R) celebrates with teammates after scoring his team's first goal during the Spanish league football match between FC Barcelona and Getafe CF at Camp Nou Stadium in Barcelona on October 10, 2026.",
-          "credit": "Lluis GENE / AFP via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1010/r1728779_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Garcia: Flick deserves credit for Barcelona's strong form",
-          "caption": "Garcia: Flick deserves credit for Barcelona's strong form",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Garcia_Flick_deserves_credit_for_Barcelonas_strong_form/dm_261010_Garcia_Flick_deserves_credit_for_Barcelonas_strong_form.jpg"
-        }
-      ]
     }
   ],
   "modelLearning": {
@@ -157040,6 +157147,29 @@
       "away": {
         "id": 114,
         "name": "Napoli",
+        "logo": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "401915414",
+      "date": "2026-10-14T19:00Z",
+      "timestamp": 1792004400,
+      "status": null,
+      "competition": "Champions League",
+      "competitionShort": "UCL",
+      "round": null,
+      "home": {
+        "id": 104,
+        "name": "AS Roma",
+        "logo": null
+      },
+      "away": {
+        "id": 86,
+        "name": "Real Madrid",
         "logo": null
       },
       "score": {
@@ -165883,7 +166013,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-14T10:15:00.023Z",
+    "updatedAt": "2026-10-15T09:57:04.439Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
