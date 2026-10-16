@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-15T09:57:04.439Z",
-    "requestsThisRun": 17,
+    "generatedAt": "2026-10-16T09:52:24.005Z",
+    "requestsThisRun": 27,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": false,
@@ -16,7 +16,7 @@
     "injuriesCount": 0,
     "newsCount": 20,
     "modelVersion": "3.0-oficial + 3.1-experimental",
-    "europeanMatchesCount": 8,
+    "europeanMatchesCount": 10,
     "predictionBalanceV31": {
       "total": 10,
       "correct": 5,
@@ -50693,9 +50693,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -51013,6 +51011,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-16T09:52:22.355Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 96,
+            "teamName": "Alavés",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 99,
+            "teamName": "Málaga",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -51053,9 +51090,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -51373,6 +51408,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-16T09:52:22.565Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 93,
+            "teamName": "Athletic Club",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 2922,
+            "teamName": "Getafe",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -51413,9 +51487,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -51739,6 +51811,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-16T09:52:22.743Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 1068,
+            "teamName": "Atlético Madrid",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 90,
+            "teamName": "Deportivo",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -51779,9 +51890,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -52111,6 +52220,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-16T09:52:22.923Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 83,
+            "teamName": "Barcelona",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 86,
+            "teamName": "Real Madrid",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -52151,9 +52299,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -52483,6 +52629,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-16T09:52:23.104Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 85,
+            "teamName": "Celta Vigo",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 244,
+            "teamName": "Real Betis",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -52523,9 +52708,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -52843,6 +53026,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-16T09:52:23.284Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 87,
+            "teamName": "Racing Santander",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 88,
+            "teamName": "Espanyol",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -52883,9 +53105,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -53203,6 +53423,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-16T09:52:23.465Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 101,
+            "teamName": "Rayo Vallecano",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 3751,
+            "teamName": "Elche",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -53243,9 +53502,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -53569,6 +53826,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-16T09:52:23.646Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 89,
+            "teamName": "Real Sociedad",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 1538,
+            "teamName": "Levante",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -53609,9 +53905,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -53929,6 +54223,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-16T09:52:23.826Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 243,
+            "teamName": "Sevilla",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 97,
+            "teamName": "Osasuna",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -53969,9 +54302,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -54295,6 +54626,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-16T09:52:24.003Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 94,
+            "teamName": "Valencia",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 102,
+            "teamName": "Villarreal",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -156418,10 +156788,64 @@
   },
   "news": [
     {
+      "id": 50194943,
+      "headline": "Brazil winger Antony's home burgled during Real Betis Champions League match",
+      "description": "Brazil winger Antony has revealed that his home in Seville was burgled during Real Betis' Champions League clash against Porto on Wednesday.",
+      "published": "2026-10-16T09:29:39Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50194943/brazil-winger-antony-home-burgled-real-betis-champions-league-match",
+      "images": [
+        {
+          "dataSourceIdentifier": "2000f09d9756a",
+          "id": 50194927,
+          "type": "header",
+          "name": "antony [594x334]",
+          "caption": "Antony's home was burgled during Real Betis' game against Porto.",
+          "credit": "Getty",
+          "height": 334,
+          "width": 594,
+          "url": "https://a.espncdn.com/photo/2026/1016/r1731517_594x334_16-9.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50194882,
+      "headline": "Hislop: Mourinho adopting 'victim mentality' following Vinícius Júnior suspension",
+      "description": "Hislop: Mourinho adopting 'victim mentality' following Vinícius Júnior suspension",
+      "published": "2026-10-16T08:59:30Z",
+      "link": "https://www.espn.com/video/clip/_/id/50194882/mourinho-adopting-victim-mentality-following-vinicius-junior-suspension",
+      "images": [
+        {
+          "name": "Hislop: Mourinho adopting 'victim mentality' following Vinícius Júnior suspension",
+          "caption": "Hislop: Mourinho adopting 'victim mentality' following Vinícius Júnior suspension",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1016/dm_261016_Hislop_Mourinho_adopting_victim_mentality_following_Vinicius_Junior_suspension/dm_261016_Hislop_Mourinho_adopting_victim_mentality_following_Vinicius_Junior_suspension.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50192030,
+      "headline": "How Vinícius Júnior's ban could be helpful for Real Madrid",
+      "description": "How Vinícius Júnior's ban could be helpful for Real Madrid",
+      "published": "2026-10-15T21:54:42Z",
+      "link": "https://www.espn.com/video/clip/_/id/50192030/how-vinicius-junior-ban-helpful-real-madrid",
+      "images": [
+        {
+          "name": "How Vinícius Júnior's ban could be helpful for Real Madrid",
+          "caption": "How Vinícius Júnior's ban could be helpful for Real Madrid",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1015/dm_261015_How_Vinicius_Juniors_ban_could_be_helpful_for_Real_Madrid/dm_261015_How_Vinicius_Juniors_ban_could_be_helpful_for_Real_Madrid.jpg"
+        }
+      ]
+    },
+    {
       "id": 50180425,
       "headline": "Tyler, The Creator joins stars to appear on Barcelona Clásico kit",
       "description": "It's become a tradition in recent years for Barcelona to add the logo of top music stars to their jerseys when they face Real Madrid in El Clásico.",
-      "published": "2026-10-15T07:10:27Z",
+      "published": "2026-10-15T13:39:06Z",
       "link": "https://www.espn.com/soccer/story/_/id/50180425/tyler-creator-joins-stars-appear-barcelona-clasico-kit-coldplay-olivia-rodrigo-ed-sheeran",
       "images": [
         {
@@ -156877,80 +157301,6 @@
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Vinicius_Junior_goal_turns_into_a_red_card_in_Real_Madrid_win/dm_261010_Vinicius_Junior_goal_turns_into_a_red_card_in_Real_Madrid_win.jpg"
         }
       ]
-    },
-    {
-      "id": 50128027,
-      "headline": "Yan Diomande's first goal gives 10-man Real Madrid narrow win over Villarreal",
-      "description": "Real Madrid held on for a 1-0 win over Villarreal in a stormy LaLiga encounter on Saturday despite the late red card for Vinícius Júnior.",
-      "published": "2026-10-10T21:43:30Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882848",
-      "images": [
-        {
-          "dataSourceIdentifier": "a758b8497cfdc",
-          "id": 50150755,
-          "type": "header",
-          "name": "Yan Diomande [1296x729]",
-          "alt": "Yan Diomande celebrates.",
-          "credit": "(Photo by Denis Doyle/Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1010/r1728872_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Burley: Vinícius Jr. must learn actions have consequences",
-          "caption": "Burley: Vinícius Jr. must learn actions have consequences",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Burley_Vinicius_Jr_must_learn_actions_have_consequences/dm_261010_Burley_Vinicius_Jr_must_learn_actions_have_consequences.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50150816,
-      "headline": "Real Madrid vs. Villarreal - Game Highlights",
-      "description": "Watch the Game Highlights from Real Madrid vs. Villarreal, 10/10/2026",
-      "published": "2026-10-10T21:06:47Z",
-      "link": "https://www.espn.com/video/clip/_/id/50150816/real-madrid-vs-villarreal-game-highlights",
-      "images": [
-        {
-          "name": "Real Madrid vs. Villarreal - Game Highlights",
-          "caption": "Watch the Game Highlights from Real Madrid vs. Villarreal, 10/10/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1010/3251579c-38c7-4a0d-9cd3-3baeca01a942/3251579c-38c7-4a0d-9cd3-3baeca01a942.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50150044,
-      "headline": "Barcelona set record start as Gordon, Gabriel Jesus fill Raphinha void",
-      "description": "Hansi Flick praised the performances of Anthony Gordon and Gabriel Jesus after they stepped in for in-form Raphinha in Barcelona's 3-0 win over Getafe on Saturday.",
-      "published": "2026-10-10T20:13:14Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50150044/barcelona-record-start-anthony-gordon-gabriel-jesus",
-      "images": [
-        {
-          "dataSourceIdentifier": "a6a5ac1f296b7",
-          "id": 50150075,
-          "type": "header",
-          "name": "Gordon Barcelona celeb [1296x729]",
-          "caption": "Anthony Gordon celebrates his first goal for Barcelona.",
-          "alt": "Anthony Gordon of FC Barcelona celebrates their team's first goal during the LaLiga EA Sports 2026/27 match between FC Barcelona and Getafe CF at Spotify Camp Nou on October 10, 2026 in Barcelona, Spain.",
-          "credit": "David Ramos/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1010/r1728835_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Barcelona vs. Getafe - Game Highlights",
-          "caption": "Watch the Game Highlights from Barcelona vs. Getafe, 10/10/2026",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1010/fe86155b-f0e6-4181-8929-e460a75b0ec0/fe86155b-f0e6-4181-8929-e460a75b0ec0.jpg"
-        }
-      ]
     }
   ],
   "modelLearning": {
@@ -157170,6 +157520,52 @@
       "away": {
         "id": 86,
         "name": "Real Madrid",
+        "logo": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "401915574",
+      "date": "2026-10-15T16:45Z",
+      "timestamp": 1792082700,
+      "status": null,
+      "competition": "Europa League",
+      "competitionShort": "UEL",
+      "round": null,
+      "home": {
+        "id": 5807,
+        "name": "Union St.-Gilloise",
+        "logo": null
+      },
+      "away": {
+        "id": 89,
+        "name": "Real Sociedad",
+        "logo": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "401915560",
+      "date": "2026-10-15T19:00Z",
+      "timestamp": 1792090800,
+      "status": null,
+      "competition": "Europa League",
+      "competitionShort": "UEL",
+      "round": null,
+      "home": {
+        "id": 85,
+        "name": "Celta Vigo",
+        "logo": null
+      },
+      "away": {
+        "id": 111,
+        "name": "Juventus",
         "logo": null
       },
       "score": {
@@ -166013,7 +166409,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-15T09:57:04.439Z",
+    "updatedAt": "2026-10-16T09:52:24.005Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
