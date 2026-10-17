@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-16T09:52:24.005Z",
-    "requestsThisRun": 27,
+    "generatedAt": "2026-10-17T09:23:30.914Z",
+    "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": false,
@@ -156037,15 +156037,15 @@
         "abbreviation": "DEP",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
       },
-      "points": 10,
+      "points": 11,
       "goalsDiff": 1,
       "form": null,
-      "played": 8,
+      "played": 9,
       "wins": 2,
-      "draws": 4,
+      "draws": 5,
       "losses": 2,
-      "gf": 12,
-      "ga": 11,
+      "gf": 13,
+      "ga": 12,
       "home": null,
       "away": null
     },
@@ -156217,15 +156217,15 @@
         "abbreviation": "LEV",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
       },
-      "points": 6,
+      "points": 7,
       "goalsDiff": -4,
       "form": null,
-      "played": 7,
+      "played": 8,
       "wins": 1,
-      "draws": 3,
+      "draws": 4,
       "losses": 3,
-      "gf": 11,
-      "ga": 15,
+      "gf": 12,
+      "ga": 16,
       "home": null,
       "away": null
     },
@@ -156570,6 +156570,29 @@
     {
       "rank": 13,
       "player": {
+        "id": 311054,
+        "name": "Iván Romero",
+        "shortName": "I. Romero",
+        "photo": null
+      },
+      "team": {
+        "id": 1538,
+        "name": "Levante",
+        "abbreviation": "LEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+      },
+      "goals": {
+        "total": 3,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 14,
+      "player": {
         "id": 306263,
         "name": "Luka Sucic",
         "shortName": "L. Sucic",
@@ -156591,7 +156614,7 @@
       "rating": null
     },
     {
-      "rank": 14,
+      "rank": 15,
       "player": {
         "id": 291281,
         "name": "Jude Bellingham",
@@ -156614,7 +156637,7 @@
       "rating": null
     },
     {
-      "rank": 15,
+      "rank": 16,
       "player": {
         "id": 255889,
         "name": "Pape Gueye",
@@ -156626,29 +156649,6 @@
         "name": "Villarreal",
         "abbreviation": "VIL",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
-      },
-      "goals": {
-        "total": 3,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 16,
-      "player": {
-        "id": 311054,
-        "name": "Iván Romero",
-        "shortName": "I. Romero",
-        "photo": null
-      },
-      "team": {
-        "id": 1538,
-        "name": "Levante",
-        "abbreviation": "LEV",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
       },
       "goals": {
         "total": 3,
@@ -156787,6 +156787,96 @@
     }
   },
   "news": [
+    {
+      "id": 50198191,
+      "headline": "Deportivo La Coruña vs. Levante - Game Highlights",
+      "description": "Watch the Game Highlights from Deportivo La Coruña vs. Levante, 10/16/2026",
+      "published": "2026-10-16T21:05:27Z",
+      "link": "https://www.espn.com/video/clip/_/id/50198191/deportivo-la-coruna-vs-levante-game-highlights",
+      "images": [
+        {
+          "name": "Deportivo La Coruña vs. Levante - Game Highlights",
+          "caption": "Watch the Game Highlights from Deportivo La Coruña vs. Levante, 10/16/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1016/ea96469c-19e5-4106-8dcd-330c2962e3a7/ea96469c-19e5-4106-8dcd-330c2962e3a7.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50197188,
+      "headline": "Flick confirms Raphinha and de Jong return for Barcelona",
+      "description": "Flick confirms Raphinha and de Jong return for Barcelona",
+      "published": "2026-10-16T17:17:45Z",
+      "link": "https://www.espn.com/video/clip/_/id/50197188/flick-confirms-raphinha-de-jong-return-barcelona",
+      "images": [
+        {
+          "name": "Flick confirms Raphinha and de Jong return for Barcelona",
+          "caption": "Flick confirms Raphinha and de Jong return for Barcelona",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1016/dm_261016_Flick_confirms_Raphinha_and_de_Jong_return_for_Barcelona/dm_261016_Flick_confirms_Raphinha_and_de_Jong_return_for_Barcelona.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50196433,
+      "headline": "Real Madrid want LaLiga chief out after he compared attacks on refs to Nazi propaganda",
+      "description": "Real Madrid want the LaLiga chief to resign after he compared the club's efforts to discredit referees with the propaganda techniques of the German Nazi regime.",
+      "published": "2026-10-16T15:11:09Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50196433/real-madrid-laliga-chief-resign-reference-nazi-propaganda",
+      "images": [
+        {
+          "dataSourceIdentifier": "27fc6c7d1c251",
+          "id": 40498657,
+          "type": "header",
+          "name": "Tebas [1296x729]",
+          "credit": "Oscar J. Barroso/Europa Press via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2024/0705/r1354706_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Hislop: Mourinho adopting 'victim mentality' following Vinícius Júnior suspension",
+          "caption": "Hislop: Mourinho adopting 'victim mentality' following Vinícius Júnior suspension",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1016/dm_261016_Hislop_Mourinho_adopting_victim_mentality_following_Vinicius_Junior_suspension/dm_261016_Hislop_Mourinho_adopting_victim_mentality_following_Vinicius_Junior_suspension.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50195063,
+      "headline": "Jadon Sancho interest from Getafe: 'We made a final offer' - club president",
+      "description": "Getafe president Ángel Torres has confirmed the club is interested in signing free agent Jadon Sancho.",
+      "published": "2026-10-16T10:49:47Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50195063/jadon-sancho-interest-getafe-made-final-offer-club-president",
+      "images": [
+        {
+          "dataSourceIdentifier": "bff629e7312a1",
+          "id": 49519527,
+          "type": "header",
+          "name": "Jadon Sancho [1296x729]",
+          "caption": "Jadon Sancho won the Europa League during his loan spell at Aston Villa.",
+          "alt": "Jadon Sancho of Aston Villa celebrates with the trophy at full-time following the UEFA Europa League Final 2026 match between SC Freiburg and Aston Villa FC at Besiktas Park on May 20, 2026 in Istanbul, Turkey.",
+          "credit": "Chris Brunskill/Fantasista/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0803/r1697026_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Garcia: Flick deserves credit for Barcelona's strong form",
+          "caption": "Garcia: Flick deserves credit for Barcelona's strong form",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Garcia_Flick_deserves_credit_for_Barcelonas_strong_form/dm_261010_Garcia_Flick_deserves_credit_for_Barcelonas_strong_form.jpg"
+        }
+      ]
+    },
     {
       "id": 50194943,
       "headline": "Brazil winger Antony's home burgled during Real Betis Champions League match",
@@ -157220,85 +157310,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1011/84fb38d2-2cbf-4b3c-ac25-0311dc6868dc/84fb38d2-2cbf-4b3c-ac25-0311dc6868dc.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50151219,
-      "headline": "Garcia: Flick deserves credit for Barcelona's strong form",
-      "description": "Garcia: Flick deserves credit for Barcelona's strong form",
-      "published": "2026-10-10T22:43:05Z",
-      "link": "https://www.espn.com/video/clip/_/id/50151219/flick-deserves-credit-barcelona-strong-form",
-      "images": [
-        {
-          "name": "Garcia: Flick deserves credit for Barcelona's strong form",
-          "caption": "Garcia: Flick deserves credit for Barcelona's strong form",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Garcia_Flick_deserves_credit_for_Barcelonas_strong_form/dm_261010_Garcia_Flick_deserves_credit_for_Barcelonas_strong_form.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50150534,
-      "headline": "Vinícius Júnior 'sorry' after red card for hair pull; Mourinho skips Madrid presser",
-      "description": "Vinícius Júnior has apologized to his Real Madrid teammates and fans after being red-carded for pulling an opponent's hair in a dramatic, off-the-bench cameo during his team's LaLiga win over Villarreal on Saturday.",
-      "published": "2026-10-11T15:57:39Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50150534/vinicius-junior-red-card-real-madrid-villarreal",
-      "images": [
-        {
-          "dataSourceIdentifier": "05066eaf78584",
-          "id": 50150588,
-          "type": "header",
-          "name": "Vinicius Junior [1296x729]",
-          "alt": "Vinicius Junior argues with the referee.",
-          "credit": "(Photo by Angel Martinez/Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1010/r1728861_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Vinicius Júnior goal turns into a red card in Real Madrid win",
-          "caption": "Vinicius Júnior goal turns into a red card in Real Madrid win",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Vinicius_Junior_goal_turns_into_a_red_card_in_Real_Madrid_win/dm_261010_Vinicius_Junior_goal_turns_into_a_red_card_in_Real_Madrid_win.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50151065,
-      "headline": "Burley: Vinícius Jr. must learn actions have consequences",
-      "description": "Burley: Vinícius Jr. must learn actions have consequences",
-      "published": "2026-10-10T22:45:48Z",
-      "link": "https://www.espn.com/video/clip/_/id/50151065/vinicius-jr-learn-actions-consequences",
-      "images": [
-        {
-          "name": "Burley: Vinícius Jr. must learn actions have consequences",
-          "caption": "Burley: Vinícius Jr. must learn actions have consequences",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Burley_Vinicius_Jr_must_learn_actions_have_consequences/dm_261010_Burley_Vinicius_Jr_must_learn_actions_have_consequences.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50150970,
-      "headline": "Vinicius Júnior goal turns into a red card in Real Madrid win",
-      "description": "Vinicius Júnior goal turns into a red card in Real Madrid win",
-      "published": "2026-10-10T22:45:38Z",
-      "link": "https://www.espn.com/video/clip/_/id/50150970/vinicius-junior-goal-turns-red-card-real-madrid-win",
-      "images": [
-        {
-          "name": "Vinicius Júnior goal turns into a red card in Real Madrid win",
-          "caption": "Vinicius Júnior goal turns into a red card in Real Madrid win",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Vinicius_Junior_goal_turns_into_a_red_card_in_Real_Madrid_win/dm_261010_Vinicius_Junior_goal_turns_into_a_red_card_in_Real_Madrid_win.jpg"
         }
       ]
     }
@@ -166409,7 +166420,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-16T09:52:24.005Z",
+    "updatedAt": "2026-10-17T09:23:30.914Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
