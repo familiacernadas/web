@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-17T09:23:30.914Z",
+    "generatedAt": "2026-10-18T09:39:11.731Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -46665,7 +46665,7 @@
         "confidence": 0.4266,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.574Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.729Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -46878,7 +46878,7 @@
         "confidence": 0.5762,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.285Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -47068,7 +47068,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.575Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -47275,7 +47275,7 @@
         "confidence": 0.6761,
         "difficulty": "fácil",
         "generatedAt": "2026-09-10T22:53:14.285Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -47465,7 +47465,7 @@
         "confidence": 0.4504,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.575Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -47684,7 +47684,7 @@
         "confidence": 0.4643,
         "difficulty": "difícil",
         "generatedAt": "2026-09-10T22:53:14.286Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -47874,7 +47874,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.575Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -48081,7 +48081,7 @@
         "confidence": 0.4911,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.286Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -48271,7 +48271,7 @@
         "confidence": 0.4461,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.575Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -48484,7 +48484,7 @@
         "confidence": 0.576,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.286Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -48674,7 +48674,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.575Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -48881,7 +48881,7 @@
         "confidence": 0.4493,
         "difficulty": "difícil",
         "generatedAt": "2026-09-10T22:53:14.286Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -49071,7 +49071,7 @@
         "confidence": 0.4361,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.575Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -49302,7 +49302,7 @@
         "confidence": 0.6353,
         "difficulty": "fácil",
         "generatedAt": "2026-09-10T22:53:14.286Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -49492,7 +49492,7 @@
         "confidence": 0.4233,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.576Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -49711,7 +49711,7 @@
         "confidence": 0.5951,
         "difficulty": "fácil",
         "generatedAt": "2026-09-10T22:53:14.286Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -49901,7 +49901,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.576Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -50108,7 +50108,7 @@
         "confidence": 0.5162,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.286Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -50298,7 +50298,7 @@
         "confidence": 0.4233,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.576Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -50517,7 +50517,7 @@
         "confidence": 0.5287,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.287Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-18T09:39:11.730Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -155897,15 +155897,15 @@
         "abbreviation": "BAR",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
       },
-      "points": 24,
-      "goalsDiff": 27,
+      "points": 27,
+      "goalsDiff": 30,
       "form": null,
-      "played": 8,
-      "wins": 8,
+      "played": 9,
+      "wins": 9,
       "draws": 0,
       "losses": 0,
-      "gf": 34,
-      "ga": 7,
+      "gf": 39,
+      "ga": 9,
       "home": null,
       "away": null
     },
@@ -155917,14 +155917,14 @@
         "abbreviation": "ATM",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
       },
-      "points": 19,
-      "goalsDiff": 10,
+      "points": 22,
+      "goalsDiff": 11,
       "form": null,
-      "played": 8,
-      "wins": 6,
+      "played": 9,
+      "wins": 7,
       "draws": 1,
       "losses": 1,
-      "gf": 18,
+      "gf": 19,
       "ga": 8,
       "home": null,
       "away": null
@@ -155938,14 +155938,14 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
       },
       "points": 19,
-      "goalsDiff": 5,
+      "goalsDiff": 2,
       "form": null,
-      "played": 8,
+      "played": 9,
       "wins": 6,
       "draws": 1,
-      "losses": 1,
-      "gf": 14,
-      "ga": 9,
+      "losses": 2,
+      "gf": 16,
+      "ga": 14,
       "home": null,
       "away": null
     },
@@ -156052,6 +156052,46 @@
     {
       "rank": 9,
       "team": {
+        "id": 93,
+        "name": "Athletic Club",
+        "abbreviation": "ATH",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
+      },
+      "points": 9,
+      "goalsDiff": 1,
+      "form": null,
+      "played": 7,
+      "wins": 2,
+      "draws": 3,
+      "losses": 2,
+      "gf": 7,
+      "ga": 6,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 10,
+      "team": {
+        "id": 102,
+        "name": "Villarreal",
+        "abbreviation": "VIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+      },
+      "points": 9,
+      "goalsDiff": 0,
+      "form": null,
+      "played": 9,
+      "wins": 2,
+      "draws": 3,
+      "losses": 4,
+      "gf": 13,
+      "ga": 13,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 11,
+      "team": {
         "id": 85,
         "name": "Celta Vigo",
         "abbreviation": "CEL",
@@ -156070,46 +156110,6 @@
       "away": null
     },
     {
-      "rank": 10,
-      "team": {
-        "id": 93,
-        "name": "Athletic Club",
-        "abbreviation": "ATH",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
-      },
-      "points": 8,
-      "goalsDiff": 1,
-      "form": null,
-      "played": 6,
-      "wins": 2,
-      "draws": 2,
-      "losses": 2,
-      "gf": 7,
-      "ga": 6,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 11,
-      "team": {
-        "id": 102,
-        "name": "Villarreal",
-        "abbreviation": "VIL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
-      },
-      "points": 8,
-      "goalsDiff": 0,
-      "form": null,
-      "played": 8,
-      "wins": 2,
-      "draws": 2,
-      "losses": 4,
-      "gf": 13,
-      "ga": 13,
-      "home": null,
-      "away": null
-    },
-    {
       "rank": 12,
       "team": {
         "id": 88,
@@ -156118,14 +156118,14 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
       },
       "points": 8,
-      "goalsDiff": 0,
+      "goalsDiff": -1,
       "form": null,
-      "played": 8,
+      "played": 9,
       "wins": 2,
       "draws": 2,
-      "losses": 4,
+      "losses": 5,
       "gf": 11,
-      "ga": 11,
+      "ga": 12,
       "home": null,
       "away": null
     },
@@ -156237,12 +156237,12 @@
         "abbreviation": "ELC",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
       },
-      "points": 6,
+      "points": 7,
       "goalsDiff": -6,
       "form": null,
-      "played": 8,
+      "played": 9,
       "wins": 1,
-      "draws": 3,
+      "draws": 4,
       "losses": 4,
       "gf": 11,
       "ga": 17,
@@ -156257,12 +156257,12 @@
         "abbreviation": "VAL",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
       },
-      "points": 5,
+      "points": 6,
       "goalsDiff": -9,
       "form": null,
-      "played": 8,
+      "played": 9,
       "wins": 1,
-      "draws": 2,
+      "draws": 3,
       "losses": 5,
       "gf": 6,
       "ga": 15,
@@ -156317,29 +156317,6 @@
     {
       "rank": 2,
       "player": {
-        "id": 231388,
-        "name": "Kylian Mbappé",
-        "shortName": "K. Mbappé",
-        "photo": null
-      },
-      "team": {
-        "id": 86,
-        "name": "Real Madrid",
-        "abbreviation": "RMA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
-      },
-      "goals": {
-        "total": 7,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 3,
-      "player": {
         "id": 362150,
         "name": "Lamine Yamal",
         "shortName": "L. Yamal",
@@ -156350,6 +156327,29 @@
         "name": "Barcelona",
         "abbreviation": "BAR",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
+      },
+      "goals": {
+        "total": 8,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 3,
+      "player": {
+        "id": 231388,
+        "name": "Kylian Mbappé",
+        "shortName": "K. Mbappé",
+        "photo": null
+      },
+      "team": {
+        "id": 86,
+        "name": "Real Madrid",
+        "abbreviation": "RMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
       },
       "goals": {
         "total": 7,
@@ -156478,6 +156478,29 @@
     {
       "rank": 9,
       "player": {
+        "id": 297373,
+        "name": "Álex Baena",
+        "shortName": "Á. Baena",
+        "photo": null
+      },
+      "team": {
+        "id": 1068,
+        "name": "Atlético Madrid",
+        "abbreviation": "ATM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+      },
+      "goals": {
+        "total": 5,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 10,
+      "player": {
         "id": 122260,
         "name": "Pierre-Emerick Aubameyang",
         "shortName": "P. Aubameyang",
@@ -156499,7 +156522,7 @@
       "rating": null
     },
     {
-      "rank": 10,
+      "rank": 11,
       "player": {
         "id": 207236,
         "name": "Lucas Boyé",
@@ -156514,29 +156537,6 @@
       },
       "goals": {
         "total": 5,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 11,
-      "player": {
-        "id": 297373,
-        "name": "Álex Baena",
-        "shortName": "Á. Baena",
-        "photo": null
-      },
-      "team": {
-        "id": 1068,
-        "name": "Atlético Madrid",
-        "abbreviation": "ATM",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
-      },
-      "goals": {
-        "total": 4,
         "assists": 0
       },
       "assists": 0,
@@ -156570,6 +156570,29 @@
     {
       "rank": 13,
       "player": {
+        "id": 255889,
+        "name": "Pape Gueye",
+        "shortName": "P. Gueye",
+        "photo": null
+      },
+      "team": {
+        "id": 102,
+        "name": "Villarreal",
+        "abbreviation": "VIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+      },
+      "goals": {
+        "total": 3,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 14,
+      "player": {
         "id": 311054,
         "name": "Iván Romero",
         "shortName": "I. Romero",
@@ -156591,7 +156614,30 @@
       "rating": null
     },
     {
-      "rank": 14,
+      "rank": 15,
+      "player": {
+        "id": 166396,
+        "name": "Alejandro Grimaldo",
+        "shortName": "A. Grimaldo",
+        "photo": null
+      },
+      "team": {
+        "id": 1068,
+        "name": "Atlético Madrid",
+        "abbreviation": "ATM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+      },
+      "goals": {
+        "total": 3,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 16,
       "player": {
         "id": 306263,
         "name": "Luka Sucic",
@@ -156614,7 +156660,7 @@
       "rating": null
     },
     {
-      "rank": 15,
+      "rank": 17,
       "player": {
         "id": 291281,
         "name": "Jude Bellingham",
@@ -156637,30 +156683,7 @@
       "rating": null
     },
     {
-      "rank": 16,
-      "player": {
-        "id": 255889,
-        "name": "Pape Gueye",
-        "shortName": "P. Gueye",
-        "photo": null
-      },
-      "team": {
-        "id": 102,
-        "name": "Villarreal",
-        "abbreviation": "VIL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
-      },
-      "goals": {
-        "total": 3,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 17,
+      "rank": 18,
       "player": {
         "id": 198832,
         "name": "Mariano Díaz",
@@ -156672,29 +156695,6 @@
         "name": "Alavés",
         "abbreviation": "ALA",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
-      },
-      "goals": {
-        "total": 3,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 18,
-      "player": {
-        "id": 166396,
-        "name": "Alejandro Grimaldo",
-        "shortName": "A. Grimaldo",
-        "photo": null
-      },
-      "team": {
-        "id": 1068,
-        "name": "Atlético Madrid",
-        "abbreviation": "ATM",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
       },
       "goals": {
         "total": 3,
@@ -156731,16 +156731,16 @@
     {
       "rank": 20,
       "player": {
-        "id": 273499,
-        "name": "Jonathan David",
-        "shortName": "J. David",
+        "id": 300912,
+        "name": "Abde Ezzalzouli",
+        "shortName": "A. Ezzalzouli",
         "photo": null
       },
       "team": {
-        "id": 1068,
-        "name": "Atlético Madrid",
-        "abbreviation": "ATM",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+        "id": 244,
+        "name": "Real Betis",
+        "abbreviation": "BET",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
       },
       "goals": {
         "total": 3,
@@ -156787,6 +156787,261 @@
     }
   },
   "news": [
+    {
+      "id": 50203956,
+      "headline": "Valencia vs. Athletic Club - Game Highlights",
+      "description": "Watch the Game Highlights from Valencia vs. Athletic Club, 10/17/2026",
+      "published": "2026-10-17T21:02:54Z",
+      "link": "https://www.espn.com/video/clip/_/id/50203956/valencia-vs-athletic-club-game-highlights",
+      "images": [
+        {
+          "name": "Valencia vs. Athletic Club - Game Highlights",
+          "caption": "Watch the Game Highlights from Valencia vs. Athletic Club, 10/17/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1017/4c48c8f2-1053-4193-b4a0-cb2aa6edb725/4c48c8f2-1053-4193-b4a0-cb2aa6edb725.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50203152,
+      "headline": "Manuel Pellegrini bemoans 'inexplicable decisions' as Real Betis lose to Barcelona",
+      "description": "Real Betis coach Manuel Pellegrini blamed \"incomprehensible and inexplicable decisions\" for his side's 5-2 loss at home to Barcelona on Saturday in LaLiga.",
+      "published": "2026-10-17T20:44:51Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50203152/manuel-pellegrini-inexplicable-decisions-real-betis-barcelona",
+      "images": [
+        {
+          "dataSourceIdentifier": "0bc9748b7b207",
+          "id": 50203128,
+          "type": "header",
+          "name": "Manuel Pellegrini [1296x729]",
+          "alt": "Manuel Pellegrini gestures on the touchline.",
+          "credit": "(Photo by JORGE GUERRERO / AFP via Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1017/r1732109_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Garcia: Red card helped Barcelona gain all three points vs. Real Betis",
+          "caption": "Garcia: Red card helped Barcelona gain all three points vs. Real Betis",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1017/dm_261017_COM_SOC_Analysis_Garcia3A_Red_card_helped_Barcelona_gain_all_three_points_vs_Real_Betis_GLOBAL_202/dm_261017_COM_SOC_Analysis_Garcia3A_Red_card_helped_Barcelona_gain_all_three_points_vs_Real_Betis_GLOBAL_202.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50203285,
+      "headline": "'Best in the world' Yamal propels Barcelona to record-equaling LaLiga start",
+      "description": "Barcelona coach Hansi Flick hailed Lamine Yamal as the best player in the world after his side thrashed Real Betis 5-2 to equal the best-ever start to a LaLiga season.",
+      "published": "2026-10-17T21:19:21Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50203285/lamine-yamal-barcelona-laliga-start-record-real-betis",
+      "images": [
+        {
+          "dataSourceIdentifier": "78e5c796ef3e7",
+          "id": 50203253,
+          "type": "header",
+          "name": "Lamine Yamal celeb [1296x729]",
+          "caption": "Lamine Yamal struck the opening goal in Barcelona's win over Real Betis.",
+          "alt": "Lamine Yamal right winger of Barcelona and Spain celebrates after scoring his sides first goal during the LaLiga EA Sports 2026/27 match between Real Betis Balompie and FC Barcelona at Estadio La Cartuja on October 18, 2026 in Seville, Spain.",
+          "credit": "Jose Breton/Pics Action/NurPhoto via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1017/r1732115_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Yamal scores sensational goal to make it 1-0 Barcelona",
+          "caption": "Yamal scores sensational goal to make it 1-0 Barcelona",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1017/8bac07199d944145b9001ff412a45312770/8bac07199d944145b9001ff412a45312770.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50203323,
+      "headline": "Garcia: Red card helped Barcelona gain all three points vs. Real Betis",
+      "description": "Garcia: Red card helped Barcelona gain all three points vs. Real Betis",
+      "published": "2026-10-17T19:49:24Z",
+      "link": "https://www.espn.com/video/clip/_/id/50203323/red-card-helped-barcelona-gain-all-three-points-vs-real-betis",
+      "images": [
+        {
+          "name": "Garcia: Red card helped Barcelona gain all three points vs. Real Betis",
+          "caption": "Garcia: Red card helped Barcelona gain all three points vs. Real Betis",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1017/dm_261017_COM_SOC_Analysis_Garcia3A_Red_card_helped_Barcelona_gain_all_three_points_vs_Real_Betis_GLOBAL_202/dm_261017_COM_SOC_Analysis_Garcia3A_Red_card_helped_Barcelona_gain_all_three_points_vs_Real_Betis_GLOBAL_202.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50202771,
+      "headline": "Real Betis vs. Barcelona - Game Highlights",
+      "description": "Watch the Game Highlights from Real Betis vs. Barcelona, 10/17/2026",
+      "published": "2026-10-17T18:42:58Z",
+      "link": "https://www.espn.com/video/clip/_/id/50202771/real-betis-vs-barcelona-game-highlights",
+      "images": [
+        {
+          "name": "Real Betis vs. Barcelona - Game Highlights",
+          "caption": "Watch the Game Highlights from Real Betis vs. Barcelona, 10/17/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1017/61b95dba-a2c4-4d67-935f-d6c3a603ad46/61b95dba-a2c4-4d67-935f-d6c3a603ad46.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50192146,
+      "headline": "Yamal helps Barcelona match best ever LaLiga start ahead of El Clásico ",
+      "description": "Barcelona equalled the best start to a LaLiga season in history by claiming a ninth successive win in a fiery 5-2 win over 10-man Real Betis.",
+      "published": "2026-10-17T19:13:48Z",
+      "link": "http://www.espn.com/soccer/report/_/gameId/401882846",
+      "images": [
+        {
+          "dataSourceIdentifier": "07c89c8c39b2d",
+          "id": 50202725,
+          "type": "header",
+          "name": "Yamal celeb Barcelona [1296x729]",
+          "caption": "Lamine Yamal celebrates after scoring Barcelona's opening goal against Real Betis.",
+          "alt": "Lamine Yamal of FC Barcelona celebrates after scoring their side's first goal during the LaLiga EA Sports 2026/27 match between Real Betis Balompie and FC Barcelona at Estadio La Cartuja on October 17, 2026 in Seville, Spain.",
+          "credit": "Jesus Ruiz/Quality Sport Images/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1017/r1732083_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Garcia: Red card helped Barcelona gain all three points vs. Real Betis",
+          "caption": "Garcia: Red card helped Barcelona gain all three points vs. Real Betis",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1017/dm_261017_COM_SOC_Analysis_Garcia3A_Red_card_helped_Barcelona_gain_all_three_points_vs_Real_Betis_GLOBAL_202/dm_261017_COM_SOC_Analysis_Garcia3A_Red_card_helped_Barcelona_gain_all_three_points_vs_Real_Betis_GLOBAL_202.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50201775,
+      "headline": "Villarreal vs. Elche - Game Highlights",
+      "description": "Watch the Game Highlights from Villarreal vs. Elche, 10/17/2026",
+      "published": "2026-10-17T16:25:20Z",
+      "link": "https://www.espn.com/video/clip/_/id/50201775/villarreal-vs-elche-game-highlights",
+      "images": [
+        {
+          "name": "Villarreal vs. Elche - Game Highlights",
+          "caption": "Watch the Game Highlights from Villarreal vs. Elche, 10/17/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1017/e99640a9-396d-43a6-a6a4-341a9b54e67b/e99640a9-396d-43a6-a6a4-341a9b54e67b.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50200287,
+      "headline": "Transfer rumors, news: JJ Gabriel move revealed soon amid Barcelona, Real Madrid talks",
+      "description": "JJ Gabriel's next move could be announced soon, while Arsenal and Liverpool will battle to sign Brentford's Kevin Schade. Transfer Talk has the latest.",
+      "published": "2026-10-17T16:08:36Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50200287/transfer-rumors-news-jj-gabriel-move-revealed-soon-amid-barcelona-real-madrid-talks",
+      "images": [
+        {
+          "dataSourceIdentifier": "cb6c50362a765",
+          "id": 49971087,
+          "type": "header",
+          "name": "JJ Gabriel [1296x729]",
+          "caption": "JJ Gabriel became the youngest winner of the Jimmy Murphy award last season, which is given to Manchester United's best youth player.",
+          "credit": "James Gill - Danehouse/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0918/r1718455_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Ogden: Man United have set Carrick up to fail",
+          "caption": "Ogden: Man United have set Carrick up to fail",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1012/dm_261012_COM_SOC_ANALYSIS_Ogden_Man_United_have_set_Carrick_up_to_fail_2026_10_12/dm_261012_COM_SOC_ANALYSIS_Ogden_Man_United_have_set_Carrick_up_to_fail_2026_10_12.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50192122,
+      "headline": "Álex Baena scores late at Espanyol as Atlético maintain pressure on Barça",
+      "description": "Atlético Madrid substitute Álex Baena scored late to secure a 1-0 LaLiga victory at Espanyol.\n\n",
+      "published": "2026-10-17T15:26:08Z",
+      "link": "http://www.espn.com/soccer/report/_/gameId/401882843",
+      "images": [
+        {
+          "dataSourceIdentifier": "6bf130ad197fa",
+          "id": 50201424,
+          "type": "header",
+          "name": "baena [594x334]",
+          "caption": "Alex Baena struck late to seal all three points for Atlético.",
+          "credit": "Getty",
+          "height": 334,
+          "width": 594,
+          "url": "https://a.espncdn.com/photo/2026/1017/r1732001_2_594x334_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Espanyol vs. Atletico Madrid - Game Highlights",
+          "caption": "Watch the Game Highlights from Espanyol vs. Atletico Madrid, 10/18/2026",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1017/db71eed8-dab2-48e7-90fd-780a807c64b8/db71eed8-dab2-48e7-90fd-780a807c64b8.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50201153,
+      "headline": "Espanyol vs. Atletico Madrid - Game Highlights",
+      "description": "Watch the Game Highlights from Espanyol vs. Atletico Madrid, 10/18/2026",
+      "published": "2026-10-17T14:08:36Z",
+      "link": "https://www.espn.com/video/clip/_/id/50201153/espanyol-vs-atletico-madrid-game-highlights",
+      "images": [
+        {
+          "name": "Espanyol vs. Atletico Madrid - Game Highlights",
+          "caption": "Watch the Game Highlights from Espanyol vs. Atletico Madrid, 10/18/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1017/db71eed8-dab2-48e7-90fd-780a807c64b8/db71eed8-dab2-48e7-90fd-780a807c64b8.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50200546,
+      "headline": "José Mourinho praises Vinícius Júnior's Real Madrid grit: If I were him, I'd have left",
+      "description": "José Mourinho has claimed that if he were Vinícius Júnior, he'd have left Real Madrid last summer, praising the forward's mentality in trying to turn his situation at the club around.",
+      "published": "2026-10-17T18:22:44Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50200546/jose-mourinho-praises-vinicius-junior-real-madrid-grit-were-left",
+      "images": [
+        {
+          "dataSourceIdentifier": "a288ab704add2",
+          "id": 50200535,
+          "type": "header",
+          "name": "Vinicius Junior of Real Madrid celebrates with José Mourinho, Head Coach of Real Madrid, after scoring their team's third goal during the LaLiga EA Sports 2026/27 match between Real Madrid and Real Sociedad\n [1296x729]",
+          "alt": "Vinicius Junior of Real Madrid celebrates with José Mourinho, Head Coach of Real Madrid, after scoring their team's third goal during the LaLiga EA Sports 2026/27 match between Real Madrid and Real Sociedad",
+          "credit": "Angel Martinez/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1017/r1731916_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Hislop: Mourinho adopting 'victim mentality' following Vinícius Júnior suspension",
+          "caption": "Hislop: Mourinho adopting 'victim mentality' following Vinícius Júnior suspension",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1016/dm_261016_Hislop_Mourinho_adopting_victim_mentality_following_Vinicius_Junior_suspension/dm_261016_Hislop_Mourinho_adopting_victim_mentality_following_Vinicius_Junior_suspension.jpg"
+        }
+      ]
+    },
     {
       "id": 50198191,
       "headline": "Deportivo La Coruña vs. Levante - Game Highlights",
@@ -157076,240 +157331,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1010/dm_261010_Hislop_Barcelona_are_playing_the_best_football_in_Europe/dm_261010_Hislop_Barcelona_are_playing_the_best_football_in_Europe.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50182804,
-      "headline": "Real Madrid's Vinícius Junior gets 4-game ban after red card; will miss Clásico",
-      "description": "Vinícius Junior has been handed a four-game ban for his sending-off in Real Madrid's LaLiga win over Villarreal and will miss this month's Clásico with Barcelona.",
-      "published": "2026-10-14T22:42:16Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50182804/real-madrid-vinicius-junior-suspension-red-card-clasico",
-      "images": [
-        {
-          "dataSourceIdentifier": "4637ae64e5bd9",
-          "id": 50183110,
-          "type": "header",
-          "name": "Vini Jr red card [1296x729]",
-          "caption": "Vinícius Júnior has been suspended four games after his red card against Villarreal.",
-          "alt": "Vinicius Junior of Real Madrid CF argue with referee Isidro Diaz Mero Escuderos red card during the LaLiga EA Sports 2026/27 match between Real Madrid and Villarreal CF at Estadio Santiago Bernabeu on October 10, 2026 in Madrid, Spain",
-          "credit": "Diego Souto/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1014/r1730741_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
-          "caption": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1013/dm_261013_COM_SOC_Presser_I_hope_youll_learn_Flick_responds_to_question_about_Real_Madrid_20261013/dm_261013_COM_SOC_Presser_I_hope_youll_learn_Flick_responds_to_question_about_Real_Madrid_20261013.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50180336,
-      "headline": "José Mourinho backs Vinícius Júnior to rediscover top form at Real Madrid",
-      "description": "Real Madrid coach José Mourinho believes it's only a question of time before Vinícius Júnior returns to top form.",
-      "published": "2026-10-14T17:07:43Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50180336/jose-mourinho-backs-vinicius-junior-rediscover-top-form-real-madrid",
-      "images": [
-        {
-          "dataSourceIdentifier": "e3e69c5cbd3d6",
-          "id": 50180314,
-          "type": "header",
-          "name": "Vinícius Júnior [1296x729]",
-          "alt": "MADRID, SPAIN - OCTOBER 10: Vinicius Junior of Real Madrid CF celebrates a goal that was later disallowed by VAR, after that he saw the red card for protest, during the Spanish League, LaLiga EA Sports, football match between Real Madrid and Villarreal CF",
-          "credit": "Oscar J. Barroso/Europa Press via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1014/r1730537_1296x729_16-9.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50175667,
-      "headline": "Real Madrid's Mourinho on media snub post-Villarreal: 'Watch first minute of game'",
-      "description": "José Mourinho has refused to explain why he skipped his post-match news conference after Real Madrid's 1-0 win over Villarreal,",
-      "published": "2026-10-13T18:47:44Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50175667/real-madrid-jose-mourinho-media-snub-villarreal-say",
-      "images": [
-        {
-          "dataSourceIdentifier": "41e53ef25c461",
-          "id": 50114960,
-          "type": "header",
-          "name": "Vinicius Junior and Jose Mourinho [1296x729]",
-          "caption": "Vinicius Junior and Jose Mourinho",
-          "alt": "Vinicius Junior and Jose Mourinho",
-          "credit": "Alberto Gardin/NurPhoto",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1006/r1726712_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
-          "caption": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1013/dm_261013_COM_SOC_Presser_I_hope_youll_learn_Flick_responds_to_question_about_Real_Madrid_20261013/dm_261013_COM_SOC_Presser_I_hope_youll_learn_Flick_responds_to_question_about_Real_Madrid_20261013.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50172116,
-      "headline": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
-      "description": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
-      "published": "2026-10-13T09:07:59Z",
-      "link": "https://www.espn.com/video/clip/_/id/50172116/i-hope-learn-flick-responds-question-real-madrid",
-      "images": [
-        {
-          "name": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
-          "caption": "'I hope you'll learn!' - Flick responds to question about Real Madrid",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1013/dm_261013_COM_SOC_Presser_I_hope_youll_learn_Flick_responds_to_question_about_Real_Madrid_20261013/dm_261013_COM_SOC_Presser_I_hope_youll_learn_Flick_responds_to_question_about_Real_Madrid_20261013.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50172084,
-      "headline": "Dani Carvajal joins Getafe after Real Madrid exit",
-      "description": "Dani Carvajal has joined Getafe on a free transfer, the LaLiga club announced on Tuesday.",
-      "published": "2026-10-13T08:56:19Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50172084/dani-carvajal-joins-getafe-real-madrid-exit",
-      "images": [
-        {
-          "dataSourceIdentifier": "850e79cad1fa4",
-          "id": 46749279,
-          "type": "header",
-          "name": "Carvajal vs Barcelona_251027 [1296x729]",
-          "credit": "Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2025/1027/r1567009_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Kirkland: Mourinho will get more time than most Real Madrid managers",
-          "caption": "Kirkland: Mourinho will get more time than most Real Madrid managers",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1011/dm_261011_Kirkland_Mourinho_will_get_more_time_than_most_Real_Madrid_managers/dm_261011_Kirkland_Mourinho_will_get_more_time_than_most_Real_Madrid_managers.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50168756,
-      "headline": "Levante vs. Sevilla - Game Highlights",
-      "description": "Watch the Game Highlights from Levante vs. Sevilla, 10/12/2026",
-      "published": "2026-10-12T21:16:49Z",
-      "link": "https://www.espn.com/video/clip/_/id/50168756/levante-vs-sevilla-game-highlights",
-      "images": [
-        {
-          "name": "Levante vs. Sevilla - Game Highlights",
-          "caption": "Watch the Game Highlights from Levante vs. Sevilla, 10/12/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1012/ae4e816d-8212-45c5-a290-7fbc9df3b503/ae4e816d-8212-45c5-a290-7fbc9df3b503.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50163474,
-      "headline": "Man City win at angry Anfield; Mourinho overshadows ugly Madrid win",
-      "description": "Despite the pregame vitriol and ongoing scandal, it was no surprise that Man City won at Liverpool on Sunday. PLUS: Real Madrid won ugly and Mourinho got up to his old tricks after Vinicius' red card.",
-      "published": "2026-10-12T13:03:10Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50163474/manchester-city-liverpool-premier-league-charges-jose-mourinho-real-madrid-vinicius-junior-analysis",
-      "images": [
-        {
-          "dataSourceIdentifier": "f8dc41e5983b8",
-          "id": 50165196,
-          "type": "header",
-          "name": "Man City celebrate 261012 [1296x729]",
-          "credit": "Michael Regan/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1012/r1729618_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Nicol and Burley clash over Gravenberch's red card vs. Man City",
-          "caption": "Nicol and Burley clash over Gravenberch's red card vs. Man City",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1011/dm_261011_Nicol_and_Burley_clash_over_Gravenberchs_red_card_vs_Man_City/dm_261011_Nicol_and_Burley_clash_over_Gravenberchs_red_card_vs_Man_City.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50160857,
-      "headline": "Racing Santander vs. Valencia - Game Highlights",
-      "description": "Watch the Game Highlights from Racing Santander vs. Valencia, 10/11/2026",
-      "published": "2026-10-11T21:05:42Z",
-      "link": "https://www.espn.com/video/clip/_/id/50160857/racing-santander-vs-valencia-game-highlights",
-      "images": [
-        {
-          "name": "Racing Santander vs. Valencia - Game Highlights",
-          "caption": "Watch the Game Highlights from Racing Santander vs. Valencia, 10/11/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1011/8ba0a4db-142b-4144-a99d-0d41b5304c25/8ba0a4db-142b-4144-a99d-0d41b5304c25.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50159471,
-      "headline": "Real Betis vs. Osasuna - Game Highlights",
-      "description": "Watch the Game Highlights from Real Betis vs. Osasuna, 10/11/2026",
-      "published": "2026-10-11T18:40:07Z",
-      "link": "https://www.espn.com/video/clip/_/id/50159471/real-betis-vs-osasuna-game-highlights",
-      "images": [
-        {
-          "name": "Real Betis vs. Osasuna - Game Highlights",
-          "caption": "Watch the Game Highlights from Real Betis vs. Osasuna, 10/11/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1011/548be288-827a-49d8-86bd-0af298117be4/548be288-827a-49d8-86bd-0af298117be4.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50158262,
-      "headline": "Real Sociedad vs. Deportivo La Coruña - Game Highlights",
-      "description": "Watch the Game Highlights from Real Sociedad vs. Deportivo La Coruña, 10/11/2026",
-      "published": "2026-10-11T16:19:57Z",
-      "link": "https://www.espn.com/video/clip/_/id/50158262/real-sociedad-vs-deportivo-la-coruna-game-highlights",
-      "images": [
-        {
-          "name": "Real Sociedad vs. Deportivo La Coruña - Game Highlights",
-          "caption": "Watch the Game Highlights from Real Sociedad vs. Deportivo La Coruña, 10/11/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1011/936bcaa9-94bf-434c-824a-19a64e9870a5/936bcaa9-94bf-434c-824a-19a64e9870a5.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50156871,
-      "headline": "Elche vs. Celta Vigo - Game Highlights",
-      "description": "Watch the Game Highlights from Elche vs. Celta Vigo, 10/11/2026",
-      "published": "2026-10-11T13:59:57Z",
-      "link": "https://www.espn.com/video/clip/_/id/50156871/elche-vs-celta-vigo-game-highlights",
-      "images": [
-        {
-          "name": "Elche vs. Celta Vigo - Game Highlights",
-          "caption": "Watch the Game Highlights from Elche vs. Celta Vigo, 10/11/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1011/84fb38d2-2cbf-4b3c-ac25-0311dc6868dc/84fb38d2-2cbf-4b3c-ac25-0311dc6868dc.jpg"
         }
       ]
     }
@@ -166420,7 +166441,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-17T09:23:30.914Z",
+    "updatedAt": "2026-10-18T09:39:11.731Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
