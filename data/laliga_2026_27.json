@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-19T10:47:51.660Z",
+    "generatedAt": "2026-10-20T10:05:58.082Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -156132,6 +156132,46 @@
     {
       "rank": 13,
       "team": {
+        "id": 101,
+        "name": "Rayo Vallecano",
+        "abbreviation": "RAY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
+      },
+      "points": 9,
+      "goalsDiff": -5,
+      "form": null,
+      "played": 8,
+      "wins": 2,
+      "draws": 3,
+      "losses": 3,
+      "gf": 12,
+      "ga": 17,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 14,
+      "team": {
+        "id": 2922,
+        "name": "Getafe",
+        "abbreviation": "GET",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
+      },
+      "points": 9,
+      "goalsDiff": -6,
+      "form": null,
+      "played": 9,
+      "wins": 2,
+      "draws": 3,
+      "losses": 4,
+      "gf": 5,
+      "ga": 11,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 15,
+      "team": {
         "id": 88,
         "name": "Espanyol",
         "abbreviation": "ESP",
@@ -156146,46 +156186,6 @@
       "losses": 5,
       "gf": 11,
       "ga": 12,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 14,
-      "team": {
-        "id": 101,
-        "name": "Rayo Vallecano",
-        "abbreviation": "RAY",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
-      },
-      "points": 8,
-      "goalsDiff": -5,
-      "form": null,
-      "played": 7,
-      "wins": 2,
-      "draws": 2,
-      "losses": 3,
-      "gf": 11,
-      "ga": 16,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 15,
-      "team": {
-        "id": 2922,
-        "name": "Getafe",
-        "abbreviation": "GET",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
-      },
-      "points": 8,
-      "goalsDiff": -6,
-      "form": null,
-      "played": 8,
-      "wins": 2,
-      "draws": 2,
-      "losses": 4,
-      "gf": 4,
-      "ga": 10,
       "home": null,
       "away": null
     },
@@ -156386,16 +156386,16 @@
     {
       "rank": 5,
       "player": {
-        "id": 390389,
-        "name": "Yassir Zabiri",
-        "shortName": "Y. Zabiri",
+        "id": 276652,
+        "name": "Sergio Camello",
+        "shortName": "S. Camello",
         "photo": null
       },
       "team": {
-        "id": 87,
-        "name": "Racing Santander",
-        "abbreviation": "RAC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
+        "id": 101,
+        "name": "Rayo Vallecano",
+        "abbreviation": "RAY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
       },
       "goals": {
         "total": 7,
@@ -156409,16 +156409,16 @@
     {
       "rank": 6,
       "player": {
-        "id": 276652,
-        "name": "Sergio Camello",
-        "shortName": "S. Camello",
+        "id": 390389,
+        "name": "Yassir Zabiri",
+        "shortName": "Y. Zabiri",
         "photo": null
       },
       "team": {
-        "id": 101,
-        "name": "Rayo Vallecano",
-        "abbreviation": "RAY",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
+        "id": 87,
+        "name": "Racing Santander",
+        "abbreviation": "RAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
       },
       "goals": {
         "total": 7,
@@ -156616,6 +156616,29 @@
     {
       "rank": 15,
       "player": {
+        "id": 125200,
+        "name": "Álvaro García",
+        "shortName": "Á. García",
+        "photo": null
+      },
+      "team": {
+        "id": 101,
+        "name": "Rayo Vallecano",
+        "abbreviation": "RAY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
+      },
+      "goals": {
+        "total": 3,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 16,
+      "player": {
         "id": 311054,
         "name": "Iván Romero",
         "shortName": "I. Romero",
@@ -156637,7 +156660,7 @@
       "rating": null
     },
     {
-      "rank": 16,
+      "rank": 17,
       "player": {
         "id": 198832,
         "name": "Mariano Díaz",
@@ -156660,7 +156683,7 @@
       "rating": null
     },
     {
-      "rank": 17,
+      "rank": 18,
       "player": {
         "id": 166396,
         "name": "Alejandro Grimaldo",
@@ -156683,7 +156706,7 @@
       "rating": null
     },
     {
-      "rank": 18,
+      "rank": 19,
       "player": {
         "id": 306263,
         "name": "Luka Sucic",
@@ -156706,7 +156729,7 @@
       "rating": null
     },
     {
-      "rank": 19,
+      "rank": 20,
       "player": {
         "id": 267591,
         "name": "Roger Brugué",
@@ -156718,29 +156741,6 @@
         "name": "Levante",
         "abbreviation": "LEV",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
-      },
-      "goals": {
-        "total": 3,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 20,
-      "player": {
-        "id": 300912,
-        "name": "Abde Ezzalzouli",
-        "shortName": "A. Ezzalzouli",
-        "photo": null
-      },
-      "team": {
-        "id": 244,
-        "name": "Real Betis",
-        "abbreviation": "BET",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
       },
       "goals": {
         "total": 3,
@@ -156788,10 +156788,165 @@
   },
   "news": [
     {
+      "id": 50226362,
+      "headline": "Do Real Madrid look better without Vinícius Júnior?",
+      "description": "Do Real Madrid look better without Vinícius Júnior?",
+      "published": "2026-10-20T09:49:24Z",
+      "link": "https://www.espn.com/video/clip/_/id/50226362/do-real-madrid-look-better-vinicius-junior",
+      "images": [
+        {
+          "name": "Do Real Madrid look better without Vinícius Júnior?",
+          "caption": "Do Real Madrid look better without Vinícius Júnior?",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1020/dm_261020_COM_SOC_Analysis_Do_Real_Madrid_look_better_without_VinC3ADcius_JC3BAnior3F__GLOBAL_2026-10-20/dm_261020_COM_SOC_Analysis_Do_Real_Madrid_look_better_without_VinC3ADcius_JC3BAnior3F__GLOBAL_2026-10-20.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50225503,
+      "headline": "Transfer rumors, news: Premier League clubs eye Alexander-Arnold amid Real Madrid uncertainty",
+      "description": "Real Madrid defender Trent Alexander-Arnold is considering his future at the Bernabéu, with Liverpool, Chelsea, Arsenal and Man City monitoring his situation. Transfer Talk has the latest.",
+      "published": "2026-10-20T09:40:41Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50225503/transfer-rumors-news-premier-league-clubs-eye-alexander-arnold-amid-real-madrid-uncertainty",
+      "images": [
+        {
+          "dataSourceIdentifier": "53d48fcb0a2b6",
+          "id": 50041010,
+          "type": "header",
+          "name": "Trent Alexander-Arnold [1296x729]",
+          "credit": "Florencia Tan Jun - UEFA/UEFA via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0927/r1722359_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Garcia: Real Madrid played with identity vs. Sevilla",
+          "caption": "Garcia: Real Madrid played with identity vs. Sevilla",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1018/dm_261018_COM_SOC_Analysis_Garcia3A_Real_Madrid_played_with_identity_vs_Sevilla_GLOBAL_2026-10-18/dm_261018_COM_SOC_Analysis_Garcia3A_Real_Madrid_played_with_identity_vs_Sevilla_GLOBAL_2026-10-18.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50226329,
+      "headline": "Steven Gerrard: 'No regrets' over ignoring Real Madrid, Inter Milan, Bayern Munich interest",
+      "description": "Former Liverpool captain Steven Gerrard has said he has \"no regrets\" about turning down moves to other European giants, including Real Madrid, during his playing career.",
+      "published": "2026-10-20T09:39:09Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50226329/steven-gerrard-no-regrets-ignoring-real-madrid-inter-milan-bayern-munich-interest",
+      "images": [
+        {
+          "dataSourceIdentifier": "268cb4d1a7f04",
+          "id": 44193173,
+          "type": "header",
+          "name": "Steven Gerrard of Liverpool  [1296x729]",
+          "credit": "Clive Brunskill/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2025/0310/r1462141_1296x729_16-9.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50226129,
+      "headline": "Gomez: Mourinho has created narrative that 'the world is against' Real Madrid",
+      "description": "Gomez: Mourinho has created narrative that 'the world is against' Real Madrid",
+      "published": "2026-10-20T09:04:09Z",
+      "link": "https://www.espn.com/video/clip/_/id/50226129/mourinho-created-narrative-world-real-madrid",
+      "images": [
+        {
+          "name": "Gomez: Mourinho has created narrative that 'the world is against' Real Madrid",
+          "caption": "Gomez: Mourinho has created narrative that 'the world is against' Real Madrid",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1020/dm_261020_Gomez_Mourinho_has_created_narrative_that_the_world_is_against_Real_Madrid/dm_261020_Gomez_Mourinho_has_created_narrative_that_the_world_is_against_Real_Madrid.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50166049,
+      "headline": "A global experiment: Can ESPN predict the Ballon d'Or awards?",
+      "description": "The Ballon d'Or awards are typically tough to predict, but can ESPN and our global resources do just that?",
+      "published": "2026-10-20T07:36:45Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50166049/a-global-experiment-espn-predict-ballon-dor",
+      "images": [
+        {
+          "dataSourceIdentifier": "5714dc2ea235d",
+          "id": 50140669,
+          "type": "header",
+          "name": "261020_soc_ballon-dor [1296x729]",
+          "caption": "261020_soc_ballon-dor",
+          "alt": "261020_soc_ballon-dor",
+          "credit": "ESPN Illustration",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1009/261020_soc_ballon-dor_mixed_16x9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "8b3d1f888c8c8",
+          "id": 50140681,
+          "type": "header",
+          "name": "261020_soc_ballon-dor [1296x864]",
+          "caption": "261020_soc_ballon-dor",
+          "alt": "261020_soc_ballon-dor",
+          "credit": "ESPN Illustration",
+          "height": 864,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1009/261020_soc_ballon-dor_mixed_3x2.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Enrique questions why Doué isn't a Ballon d'Or contender",
+          "caption": "Enrique questions why Doué isn't a Ballon d'Or contender",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/dm_260918_Enrique_questions_why_Doue_isnt_a_Ballon_dOr_contender/dm_260918_Enrique_questions_why_Doue_isnt_a_Ballon_dOr_contender.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50221935,
+      "headline": "Rae: Lamine Yamal is bringing joy back to football",
+      "description": "Rae: Lamine Yamal is bringing joy back to football",
+      "published": "2026-10-19T22:52:46Z",
+      "link": "https://www.espn.com/video/clip/_/id/50221935/lamine-yamal-bringing-joy-back-football",
+      "images": [
+        {
+          "name": "Rae: Lamine Yamal is bringing joy back to football",
+          "caption": "Rae: Lamine Yamal is bringing joy back to football",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1019/dm_261019_Rae_Lamine_Yamal_is_bringing_joy_back_to_football/dm_261019_Rae_Lamine_Yamal_is_bringing_joy_back_to_football.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50221374,
+      "headline": "Getafe vs. Rayo Vallecano - Game Highlights",
+      "description": "Watch the Game Highlights from Getafe vs. Rayo Vallecano, 10/19/2026",
+      "published": "2026-10-19T21:05:07Z",
+      "link": "https://www.espn.com/video/clip/_/id/50221374/getafe-vs-rayo-vallecano-game-highlights",
+      "images": [
+        {
+          "name": "Getafe vs. Rayo Vallecano - Game Highlights",
+          "caption": "Watch the Game Highlights from Getafe vs. Rayo Vallecano, 10/19/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1019/9301127a-6044-4544-a349-ea087383841f/9301127a-6044-4544-a349-ea087383841f.jpg"
+        }
+      ]
+    },
+    {
       "id": 50117234,
       "headline": "Barcelona's Yamal vs. Real Madrid's Mbappé: Which Clásico star has stronger Ballon d'Or claim?",
       "description": "In the tightest Ballon d'Or contest in years, top LaLiga players Lamine Yamal and Kylian Mbappé are among those vying to win soccer's top individual prize.",
-      "published": "2026-10-19T07:47:43Z",
+      "published": "2026-10-19T15:18:14Z",
       "link": "https://www.espn.com/soccer/story/_/id/50117234/barcelona-lamine-yamal-real-madrid-kylian-mbappe-clasico-star-ballon-dor",
       "images": [
         {
@@ -156901,11 +157056,11 @@
         },
         {
           "type": "Media",
-          "name": "Garcia: Real Madrid played with identity vs. Sevilla",
-          "caption": "Garcia: Real Madrid played with identity vs. Sevilla",
+          "name": "Do Real Madrid look better without Vinícius Júnior?",
+          "caption": "Do Real Madrid look better without Vinícius Júnior?",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1018/dm_261018_COM_SOC_Analysis_Garcia3A_Real_Madrid_played_with_identity_vs_Sevilla_GLOBAL_2026-10-18/dm_261018_COM_SOC_Analysis_Garcia3A_Real_Madrid_played_with_identity_vs_Sevilla_GLOBAL_2026-10-18.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1020/dm_261020_COM_SOC_Analysis_Do_Real_Madrid_look_better_without_VinC3ADcius_JC3BAnior3F__GLOBAL_2026-10-20/dm_261020_COM_SOC_Analysis_Do_Real_Madrid_look_better_without_VinC3ADcius_JC3BAnior3F__GLOBAL_2026-10-20.jpg"
         }
       ]
     },
@@ -157082,170 +157237,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1017/61b95dba-a2c4-4d67-935f-d6c3a603ad46/61b95dba-a2c4-4d67-935f-d6c3a603ad46.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50192146,
-      "headline": "Yamal helps Barcelona match best ever LaLiga start ahead of El Clásico ",
-      "description": "Barcelona equalled the best start to a LaLiga season in history by claiming a ninth successive win in a fiery 5-2 win over 10-man Real Betis.",
-      "published": "2026-10-17T19:13:48Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882846",
-      "images": [
-        {
-          "dataSourceIdentifier": "07c89c8c39b2d",
-          "id": 50202725,
-          "type": "header",
-          "name": "Yamal celeb Barcelona [1296x729]",
-          "caption": "Lamine Yamal celebrates after scoring Barcelona's opening goal against Real Betis.",
-          "alt": "Lamine Yamal of FC Barcelona celebrates after scoring their side's first goal during the LaLiga EA Sports 2026/27 match between Real Betis Balompie and FC Barcelona at Estadio La Cartuja on October 17, 2026 in Seville, Spain.",
-          "credit": "Jesus Ruiz/Quality Sport Images/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1017/r1732083_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Garcia: Red card helped Barcelona gain all three points vs. Real Betis",
-          "caption": "Garcia: Red card helped Barcelona gain all three points vs. Real Betis",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1017/dm_261017_COM_SOC_Analysis_Garcia3A_Red_card_helped_Barcelona_gain_all_three_points_vs_Real_Betis_GLOBAL_202/dm_261017_COM_SOC_Analysis_Garcia3A_Red_card_helped_Barcelona_gain_all_three_points_vs_Real_Betis_GLOBAL_202.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50201775,
-      "headline": "Villarreal vs. Elche - Game Highlights",
-      "description": "Watch the Game Highlights from Villarreal vs. Elche, 10/17/2026",
-      "published": "2026-10-17T16:25:20Z",
-      "link": "https://www.espn.com/video/clip/_/id/50201775/villarreal-vs-elche-game-highlights",
-      "images": [
-        {
-          "name": "Villarreal vs. Elche - Game Highlights",
-          "caption": "Watch the Game Highlights from Villarreal vs. Elche, 10/17/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1017/e99640a9-396d-43a6-a6a4-341a9b54e67b/e99640a9-396d-43a6-a6a4-341a9b54e67b.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50200287,
-      "headline": "Transfer rumors, news: JJ Gabriel move revealed soon amid Barcelona, Real Madrid talks",
-      "description": "JJ Gabriel's next move could be announced soon, while Arsenal and Liverpool will battle to sign Brentford's Kevin Schade. Transfer Talk has the latest.",
-      "published": "2026-10-17T16:08:36Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50200287/transfer-rumors-news-jj-gabriel-move-revealed-soon-amid-barcelona-real-madrid-talks",
-      "images": [
-        {
-          "dataSourceIdentifier": "cb6c50362a765",
-          "id": 49971087,
-          "type": "header",
-          "name": "JJ Gabriel [1296x729]",
-          "caption": "JJ Gabriel became the youngest winner of the Jimmy Murphy award last season, which is given to Manchester United's best youth player.",
-          "credit": "James Gill - Danehouse/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0918/r1718455_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Ogden: Man United have set Carrick up to fail",
-          "caption": "Ogden: Man United have set Carrick up to fail",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1012/dm_261012_COM_SOC_ANALYSIS_Ogden_Man_United_have_set_Carrick_up_to_fail_2026_10_12/dm_261012_COM_SOC_ANALYSIS_Ogden_Man_United_have_set_Carrick_up_to_fail_2026_10_12.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50192122,
-      "headline": "Álex Baena scores late at Espanyol as Atlético maintain pressure on Barça",
-      "description": "Atlético Madrid substitute Álex Baena scored late to secure a 1-0 LaLiga victory at Espanyol.\n\n",
-      "published": "2026-10-17T15:26:08Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882843",
-      "images": [
-        {
-          "dataSourceIdentifier": "6bf130ad197fa",
-          "id": 50201424,
-          "type": "header",
-          "name": "baena [594x334]",
-          "caption": "Alex Baena struck late to seal all three points for Atlético.",
-          "credit": "Getty",
-          "height": 334,
-          "width": 594,
-          "url": "https://a.espncdn.com/photo/2026/1017/r1732001_2_594x334_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Espanyol vs. Atletico Madrid - Game Highlights",
-          "caption": "Watch the Game Highlights from Espanyol vs. Atletico Madrid, 10/18/2026",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1017/db71eed8-dab2-48e7-90fd-780a807c64b8/db71eed8-dab2-48e7-90fd-780a807c64b8.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50201153,
-      "headline": "Espanyol vs. Atletico Madrid - Game Highlights",
-      "description": "Watch the Game Highlights from Espanyol vs. Atletico Madrid, 10/18/2026",
-      "published": "2026-10-17T14:08:36Z",
-      "link": "https://www.espn.com/video/clip/_/id/50201153/espanyol-vs-atletico-madrid-game-highlights",
-      "images": [
-        {
-          "name": "Espanyol vs. Atletico Madrid - Game Highlights",
-          "caption": "Watch the Game Highlights from Espanyol vs. Atletico Madrid, 10/18/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1017/db71eed8-dab2-48e7-90fd-780a807c64b8/db71eed8-dab2-48e7-90fd-780a807c64b8.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50200546,
-      "headline": "José Mourinho praises Vinícius Júnior's Real Madrid grit: If I were him, I'd have left",
-      "description": "José Mourinho has claimed that if he were Vinícius Júnior, he'd have left Real Madrid last summer, praising the forward's mentality in trying to turn his situation at the club around.",
-      "published": "2026-10-17T18:22:44Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50200546/jose-mourinho-praises-vinicius-junior-real-madrid-grit-were-left",
-      "images": [
-        {
-          "dataSourceIdentifier": "a288ab704add2",
-          "id": 50200535,
-          "type": "header",
-          "name": "Vinicius Junior of Real Madrid celebrates with José Mourinho, Head Coach of Real Madrid, after scoring their team's third goal during the LaLiga EA Sports 2026/27 match between Real Madrid and Real Sociedad\n [1296x729]",
-          "alt": "Vinicius Junior of Real Madrid celebrates with José Mourinho, Head Coach of Real Madrid, after scoring their team's third goal during the LaLiga EA Sports 2026/27 match between Real Madrid and Real Sociedad",
-          "credit": "Angel Martinez/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1017/r1731916_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Hislop: Mourinho adopting 'victim mentality' following Vinícius Júnior suspension",
-          "caption": "Hislop: Mourinho adopting 'victim mentality' following Vinícius Júnior suspension",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1016/dm_261016_Hislop_Mourinho_adopting_victim_mentality_following_Vinicius_Junior_suspension/dm_261016_Hislop_Mourinho_adopting_victim_mentality_following_Vinicius_Junior_suspension.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50198191,
-      "headline": "Deportivo La Coruña vs. Levante - Game Highlights",
-      "description": "Watch the Game Highlights from Deportivo La Coruña vs. Levante, 10/16/2026",
-      "published": "2026-10-16T21:05:27Z",
-      "link": "https://www.espn.com/video/clip/_/id/50198191/deportivo-la-coruna-vs-levante-game-highlights",
-      "images": [
-        {
-          "name": "Deportivo La Coruña vs. Levante - Game Highlights",
-          "caption": "Watch the Game Highlights from Deportivo La Coruña vs. Levante, 10/16/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1016/ea96469c-19e5-4106-8dcd-330c2962e3a7/ea96469c-19e5-4106-8dcd-330c2962e3a7.jpg"
         }
       ]
     }
@@ -166356,7 +166347,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-19T10:47:51.660Z",
+    "updatedAt": "2026-10-20T10:05:58.082Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
