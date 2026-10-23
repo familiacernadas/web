@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-22T10:12:57.639Z",
-    "requestsThisRun": 17,
+    "generatedAt": "2026-10-23T10:05:46.177Z",
+    "requestsThisRun": 27,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": false,
@@ -16,7 +16,7 @@
     "injuriesCount": 0,
     "newsCount": 20,
     "modelVersion": "3.0-oficial + 3.1-experimental",
-    "europeanMatchesCount": 13,
+    "europeanMatchesCount": 15,
     "predictionBalanceV31": {
       "total": 10,
       "correct": 5,
@@ -54705,9 +54705,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -55031,6 +55029,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-23T10:05:44.488Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 93,
+            "teamName": "Athletic Club",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 89,
+            "teamName": "Real Sociedad",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -55071,9 +55108,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -55397,6 +55432,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-23T10:05:44.680Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 83,
+            "teamName": "Barcelona",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 96,
+            "teamName": "Alavés",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -55437,9 +55511,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -55757,6 +55829,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-23T10:05:44.849Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 90,
+            "teamName": "Deportivo",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 97,
+            "teamName": "Osasuna",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -55797,9 +55908,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -56117,6 +56226,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-23T10:05:45.026Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 3751,
+            "teamName": "Elche",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 94,
+            "teamName": "Valencia",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -56157,9 +56305,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -56477,6 +56623,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-23T10:05:45.198Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 2922,
+            "teamName": "Getafe",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 243,
+            "teamName": "Sevilla",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -56517,9 +56702,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -56843,6 +57026,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-23T10:05:45.384Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 1538,
+            "teamName": "Levante",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 1068,
+            "teamName": "Atlético Madrid",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -56883,9 +57105,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -57209,6 +57429,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-23T10:05:45.572Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 87,
+            "teamName": "Racing Santander",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 86,
+            "teamName": "Real Madrid",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -57249,9 +57508,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -57575,6 +57832,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-23T10:05:45.738Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 101,
+            "teamName": "Rayo Vallecano",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 85,
+            "teamName": "Celta Vigo",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -57615,9 +57911,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -57941,6 +58235,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-23T10:05:45.905Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 244,
+            "teamName": "Real Betis",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 99,
+            "teamName": "Málaga",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -57981,9 +58314,7 @@
         "extratime": null,
         "penalty": null
       },
-      "broadcasts": [
-        "ESPN+"
-      ],
+      "broadcasts": [],
       "odds": [
         null
       ],
@@ -58307,6 +58638,45 @@
             "fatigueLevel": "baja"
           }
         }
+      },
+      "details": {
+        "updatedAt": "2026-10-23T10:05:46.175Z",
+        "source": "ESPN",
+        "lineups": [],
+        "statistics": [
+          {
+            "teamId": 102,
+            "teamName": "Villarreal",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          },
+          {
+            "teamId": 88,
+            "teamName": "Espanyol",
+            "possession": null,
+            "shotsTotal": null,
+            "shotsOnTarget": null,
+            "corners": null,
+            "fouls": null,
+            "offsides": null,
+            "yellowCards": null,
+            "redCards": null,
+            "goalkeeperSaves": null,
+            "passes": null,
+            "accuratePasses": null
+          }
+        ],
+        "players": [],
+        "events": []
       }
     },
     {
@@ -156788,10 +157158,330 @@
   },
   "news": [
     {
+      "id": 50239093,
+      "headline": "As Anthony Gordon prepares for El Clásico debut, how have other British stars fared?",
+      "description": "As Anthony Gordon prepares for his first El Clásico, we look at how other British stars got on in this storied fixture.",
+      "published": "2026-10-23T09:08:25Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50239093/anthony-gordon-el-clasico-debut-barcelona-real-madrid",
+      "images": [
+        {
+          "dataSourceIdentifier": "e0d0a19b6fea0",
+          "id": 50256141,
+          "type": "header",
+          "name": "El Clasico preview [1296x729]",
+          "caption": "Anthony Gordon is making his El Clasico debut this weekend.",
+          "alt": "Anthony Gordon is making his El Clasico debut this weekend.",
+          "credit": "Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1023/r1734933_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "8bd21fbd6c5d3",
+          "id": 50239143,
+          "type": "header",
+          "name": "Laurie Cunningham runs out for Real Madrid. Also pictured is Vicente del Bosque Gonzalez\n [1296x729]",
+          "alt": "Laurie Cunningham runs out for Real Madrid. Also pictured is Vicente del Bosque Gonzalez",
+          "credit": "Peter Robinson - PA Images via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1021/r1733987_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "acf1b87223bdf",
+          "id": 50239465,
+          "type": "header",
+          "name": "Steve Archibald (right) of Barcelona takes on Gatetano Scirea of Juventus during the European Cup match in Barcelona, Spain\n [1296x729]",
+          "alt": "Steve Archibald (right) of Barcelona takes on Gatetano Scirea of Juventus during the European Cup match in Barcelona, Spain",
+          "credit": "Allsport UK /Allsport",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1021/r1734012_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "2a6bf19c1809c",
+          "id": 50239444,
+          "type": "header",
+          "name": "Barcelona striker Gary Lineker (r) gets in a shot as Hugo Sanchez of Real Madrid looks on during the 'El Clasico' between Barcelona and Real Madrid at the Camp Nou\n [1296x729]",
+          "alt": "Barcelona striker Gary Lineker (r) gets in a shot as Hugo Sanchez of Real Madrid looks on during the 'El Clasico' between Barcelona and Real Madrid at the Camp Nou",
+          "credit": "Simon Bruty/Allsport/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1021/r1734007_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "c6b1fd4651ad5",
+          "id": 50239476,
+          "type": "header",
+          "name": "New Barcelona signing Mark Hughes pictured at the Nou Camp stadium in 1986 in Barcelona, Spain\n [1296x729]",
+          "alt": "New Barcelona signing Mark Hughes pictured at the Nou Camp stadium in 1986 in Barcelona, Spain",
+          "credit": "Simon Bruty/Allsport/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1021/r1734011_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "924e890c7cd44",
+          "id": 50239341,
+          "type": "header",
+          "name": "Real Madrid's Steve McManaman leaps over the challenge from Barcelona's Luis Enrique\n [1296x729]",
+          "alt": "Real Madrid's Steve McManaman leaps over the challenge from Barcelona's Luis Enrique",
+          "credit": "John Walton/EMPICS via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1021/r1734003_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "e4cd11a8d0865",
+          "id": 50239368,
+          "type": "header",
+          "name": "David Beckham of Real Madrid is challenged by Motta and Puyol of Barcelona during the Spanish Primera Liga match between Barcelona and Real Madrid at the Nou Camp Stadium\n [1296x729]",
+          "alt": "David Beckham of Real Madrid is challenged by Motta and Puyol of Barcelona during the Spanish Primera Liga match between Barcelona and Real Madrid at the Nou Camp Stadium",
+          "credit": "Shaun Botterill/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1021/r1734004_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "50150fe0fa5e6",
+          "id": 50239392,
+          "type": "header",
+          "name": "Real Madrid's Briton Michael Owen (L) vies with Barcelona's Dutch Giovani Van Bronckhorst (R) during their Premier League football match in Santiago Bernabeu stadium\n [1296x729]",
+          "alt": "Real Madrid's Briton Michael Owen (L) vies with Barcelona's Dutch Giovani Van Bronckhorst (R) during their Premier League football match in Santiago Bernabeu stadium",
+          "credit": "PIERRE-PHILIPPE MARCOU/AFP via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1021/r1734005_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "dd163b8ab8e8f",
+          "id": 50239284,
+          "type": "header",
+          "name": "Gareth Bale (L) of Real Madrid celebrates beside Xabi Alonso after scoring Real's 2nd goal during the Copa del Rey Final between Real Madrid and Barcelona at Estadio Mestalla\n [1296x729]",
+          "alt": "Gareth Bale (L) of Real Madrid celebrates beside Xabi Alonso after scoring Real's 2nd goal during the Copa del Rey Final between Real Madrid and Barcelona at Estadio Mestalla",
+          "credit": "Denis Doyle/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1021/r1734001_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "993efd5ffa59a",
+          "id": 50239299,
+          "type": "header",
+          "name": "Jude Bellingham of Real Madrid celebrates after Kylian Mbappe of Real Madrid (obscured) scores a goal, which is later disallowed following a VAR Review, during the LaLiga EA Sports match between Real Madrid CF and FC Barcelona\n [1296x729]",
+          "alt": "Jude Bellingham of Real Madrid celebrates after Kylian Mbappe of Real Madrid (obscured) scores a goal, which is later disallowed following a VAR Review, during the LaLiga EA Sports match between Real Madrid CF and FC Barcelona",
+          "credit": "Angel Martinez/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1021/r1733997_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "70daf2f65575a",
+          "id": 50239602,
+          "type": "header",
+          "name": "Marcus Rashford of FC Barcelona and Raul Asencio of Real Madrid battle for possession with during the Spanish Super Cup Final between FC Barcelona and Real Madrid at King Abdullah Sports City Hall Stadium\n [1296x729]",
+          "alt": "Marcus Rashford of FC Barcelona and Raul Asencio of Real Madrid battle for possession with during the Spanish Super Cup Final between FC Barcelona and Real Madrid at King Abdullah Sports City Hall Stadium",
+          "credit": "Yasser Bakhsh/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1021/r1734019_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "13edcf26c2d83",
+          "id": 50249720,
+          "type": "header",
+          "name": "Trent Alexander-Arnold Barcelona [1296x729]",
+          "caption": "Trent Alexander-Arnold has only played in one Real Madrid vs Barcelona fixture.",
+          "alt": "Trent Alexander-Arnold of Real Madrid looks dejected as he applauds the fans after defeat to FC Barcelona during the LaLiga EA Sports match between FC Barcelona and Real Madrid CF at Spotify Camp Nou on May 10, 2026 in Barcelona, Spain.",
+          "credit": "Alex Caparros/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1022/r1734552_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Flick: Rodri is rested for El Clasico",
+          "caption": "Flick: Rodri is rested for El Clasico",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1021/dm_261021_Flick_Rodri_is_rested_for_El_Clasico/dm_261021_Flick_Rodri_is_rested_for_El_Clasico.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50227950,
+      "headline": "Barcelona-Real Madrid: Clásico form, team news, combined XI, predictions, odds",
+      "description": "Let's run through the head-to-head, form, team news, combined XI and key clashes ahead of the 265th edition of El Clásico between Barcelona and Real Madrid.",
+      "published": "2026-10-23T07:34:32Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50227950/barcelona-real-madrid-laliga-clasico-form-team-news-combined-xi-predictions-odds-all-head-head",
+      "images": [
+        {
+          "dataSourceIdentifier": "89937eb9c69bf",
+          "id": 50241996,
+          "type": "header",
+          "name": "El Clásico preview: Barcelona vs. Real Madrid  [1296x729]",
+          "alt": "El Clásico preview: Barcelona vs. Real Madrid",
+          "credit": "ESPN Illustration",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1021/el-clasico-preview_16x9_1296x729.jpg"
+        },
+        {
+          "dataSourceIdentifier": "944bf707d1c65",
+          "id": 50225717,
+          "type": "header",
+          "name": "Barcelona v Real Madrid all-time head-to-head before first Clasico 2026-27 [1280x720]",
+          "credit": "ESPN Global Soccer Research",
+          "height": 720,
+          "width": 1280,
+          "url": "https://a.espncdn.com/photo/2026/1020/r1733305_1280x720_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "2052091a86935",
+          "id": 50228310,
+          "type": "header",
+          "name": "Bayern Munich v Tottenham Hotspur 2019 Hansi Flick and Jose Mourinho [1296x729]",
+          "credit": "Odd ANDERSEN / AFP via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1020/r1733398_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "ElClásico promo: Barcelona vs. Real Madrid",
+          "caption": "ElClásico promo: Barcelona vs. Real Madrid",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1019/dm_261019_el_clasico_promo/dm_261019_el_clasico_promo.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50251663,
+      "headline": "Who will win the Ballon d'Or? Messi, Yamal, Kane -- or someone else?",
+      "description": "There's no consensus pick for this year's Ballon d'Or -- but maybe there should be. Here's who actually deserves to win it.",
+      "published": "2026-10-23T07:09:46Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50251663/who-win-ballon-dor-messi-yamal-kane-else",
+      "images": [
+        {
+          "dataSourceIdentifier": "8ed746f488938",
+          "id": 50253593,
+          "type": "header",
+          "name": "4 way split [1296x729]",
+          "credit": "Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1023/r1734824_1296x729_16-9.png"
+        },
+        {
+          "type": "Media",
+          "name": "England teammates praise Kane, 'it's definitely possible' he could win the Ballon d'Or",
+          "caption": "England teammates praise Kane, 'it's definitely possible' he could win the Ballon d'Or",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1007/dm_261007_England_teammates_praise_Kane_its_definitely_possible_he_could_win_the_Ballon_dOr/dm_261007_England_teammates_praise_Kane_its_definitely_possible_he_could_win_the_Ballon_dOr.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50166049,
+      "headline": "A global experiment: Can ESPN predict the Ballon d'Or awards?",
+      "description": "The Ballon d'Or awards are typically tough to predict, but can ESPN and our global resources do just that?",
+      "published": "2026-10-23T08:57:06Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50166049/a-global-experiment-espn-predict-ballon-dor",
+      "images": [
+        {
+          "dataSourceIdentifier": "5714dc2ea235d",
+          "id": 50140669,
+          "type": "header",
+          "name": "261020_soc_ballon-dor [1296x729]",
+          "caption": "261020_soc_ballon-dor",
+          "alt": "261020_soc_ballon-dor",
+          "credit": "ESPN Illustration",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1009/261020_soc_ballon-dor_mixed_16x9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "8b3d1f888c8c8",
+          "id": 50140681,
+          "type": "header",
+          "name": "261020_soc_ballon-dor [1296x864]",
+          "caption": "261020_soc_ballon-dor",
+          "alt": "261020_soc_ballon-dor",
+          "credit": "ESPN Illustration",
+          "height": 864,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1009/261020_soc_ballon-dor_mixed_3x2.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Enrique questions why Doué isn't a Ballon d'Or contender",
+          "caption": "Enrique questions why Doué isn't a Ballon d'Or contender",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/dm_260918_Enrique_questions_why_Doue_isnt_a_Ballon_dOr_contender/dm_260918_Enrique_questions_why_Doue_isnt_a_Ballon_dOr_contender.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50252737,
+      "headline": "Before 'the special one', José Mourinho was 'the Barca one'",
+      "description": "Before 'the special one', José Mourinho was 'the Barca one'",
+      "published": "2026-10-22T22:17:50Z",
+      "link": "https://www.espn.com/video/clip/_/id/50252737/before-special-one-jose-mourinho-was-barca-one",
+      "images": [
+        {
+          "name": "Before 'the special one', José Mourinho was 'the Barca one'",
+          "caption": "Before 'the special one', José Mourinho was 'the Barca one'",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1022/dm_261022_When_the_special_one_was_the_Barca_one/dm_261022_When_the_special_one_was_the_Barca_one.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50252567,
+      "headline": "Should Real Madrid frustrate Barcelona with fouls in El Clásico?",
+      "description": "Should Real Madrid frustrate Barcelona with fouls in El Clásico?",
+      "published": "2026-10-22T21:48:39Z",
+      "link": "https://www.espn.com/video/clip/_/id/50252567/should-real-madrid-frustrate-barcelona-fouls-el-clasico",
+      "images": [
+        {
+          "name": "Should Real Madrid frustrate Barcelona with fouls in El Clásico?",
+          "caption": "Should Real Madrid frustrate Barcelona with fouls in El Clásico?",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1022/dm_261022_Should_Real_Madrid_frustrate_Barcelona_with_fouls_in_El_Clasico/dm_261022_Should_Real_Madrid_frustrate_Barcelona_with_fouls_in_El_Clasico.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50247061,
+      "headline": "José Mourinho complains Real Madrid have 24 hours less rest than Barcelona ahead of El Clásico",
+      "description": "Real Madrid coach José Mourinho was keen to point out after his side's win over Leipzig that his team will have 24 hours less rest than Sunday's rivals Barcelona heading into the Clásico.",
+      "published": "2026-10-22T10:31:36Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50247061/jose-mourinho-real-madrid-barcelona-el-clasico-less-rest",
+      "images": [
+        {
+          "dataSourceIdentifier": "3914f4d30c8c4",
+          "id": 50246993,
+          "type": "header",
+          "name": "Jose Mourinho [1296x729]",
+          "credit": "Angel Martinez - UEFA/UEFA via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1022/r1734427_1296x729_16-9.jpg"
+        }
+      ]
+    },
+    {
       "id": 50245408,
       "headline": "Mourinho made Real Madrid-Barcelona Clásico rivalry unmissable. Now, he's back for more",
       "description": "Thirteen years after helping turn soccer's biggest rivalry into must-see chaos, Real Madrid coach José Mourinho returns to face Barcelona in El Clásico with something to prove",
-      "published": "2026-10-22T09:29:50Z",
+      "published": "2026-10-22T14:12:50Z",
       "link": "https://www.espn.com/soccer/story/_/id/50245408/jose-mourinho-el-clasico-unmissable-real-madrid-barcelona-guardiola-messi-ronaldo",
       "images": [
         {
@@ -156830,7 +157520,7 @@
       "id": 50242608,
       "headline": "Valverde and Güler show why they'll be key for Madrid in Sunday's Clásico",
       "description": "Kylian Mbappé has warned that \"not much\" should be read into Madrid's dismantling of RB Leipzig ahead of Sunday's Clásico, but Jose Mourinho is surely starting to figure out who his best XI is.",
-      "published": "2026-10-21T23:50:25Z",
+      "published": "2026-10-22T14:11:49Z",
       "link": "https://www.espn.com/soccer/story/_/id/50242608/valverde-guler-show-why-theyll-key-madrid-sundays-clasico",
       "images": [
         {
@@ -157003,7 +157693,7 @@
       "id": 50196710,
       "headline": "How Raphinha's latest transformation made him into Barcelona's star striker",
       "description": "Before Raphinha became Barcelona's captain and converted into their main striker, he was Premier League battling relegation at Leeds United. It was the making of him.",
-      "published": "2026-10-21T13:10:54Z",
+      "published": "2026-10-22T14:14:04Z",
       "link": "https://www.espn.com/soccer/story/_/id/50196710/raphinha-latest-transformation-barcelona-star-striker-premier-league-leeds-united",
       "images": [
         {
@@ -157092,47 +157782,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1020/dm_261020_COM_SOC_Analysis_Do_Real_Madrid_look_better_without_VinC3ADcius_JC3BAnior3F__GLOBAL_2026-10-20/dm_261020_COM_SOC_Analysis_Do_Real_Madrid_look_better_without_VinC3ADcius_JC3BAnior3F__GLOBAL_2026-10-20.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50166049,
-      "headline": "A global experiment: Can ESPN predict the Ballon d'Or awards?",
-      "description": "The Ballon d'Or awards are typically tough to predict, but can ESPN and our global resources do just that?",
-      "published": "2026-10-20T10:21:15Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50166049/a-global-experiment-espn-predict-ballon-dor",
-      "images": [
-        {
-          "dataSourceIdentifier": "5714dc2ea235d",
-          "id": 50140669,
-          "type": "header",
-          "name": "261020_soc_ballon-dor [1296x729]",
-          "caption": "261020_soc_ballon-dor",
-          "alt": "261020_soc_ballon-dor",
-          "credit": "ESPN Illustration",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1009/261020_soc_ballon-dor_mixed_16x9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "8b3d1f888c8c8",
-          "id": 50140681,
-          "type": "header",
-          "name": "261020_soc_ballon-dor [1296x864]",
-          "caption": "261020_soc_ballon-dor",
-          "alt": "261020_soc_ballon-dor",
-          "credit": "ESPN Illustration",
-          "height": 864,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1009/261020_soc_ballon-dor_mixed_3x2.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Enrique questions why Doué isn't a Ballon d'Or contender",
-          "caption": "Enrique questions why Doué isn't a Ballon d'Or contender",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/dm_260918_Enrique_questions_why_Doue_isnt_a_Ballon_dOr_contender/dm_260918_Enrique_questions_why_Doue_isnt_a_Ballon_dOr_contender.jpg"
         }
       ]
     },
@@ -157239,152 +157888,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1020/dm_261020_COM_SOC_Analysis_Do_Real_Madrid_look_better_without_VinC3ADcius_JC3BAnior3F__GLOBAL_2026-10-20/dm_261020_COM_SOC_Analysis_Do_Real_Madrid_look_better_without_VinC3ADcius_JC3BAnior3F__GLOBAL_2026-10-20.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50226329,
-      "headline": "Steven Gerrard: 'No regrets' over ignoring Real Madrid, Inter Milan, Bayern Munich interest",
-      "description": "Former Liverpool captain Steven Gerrard has said he has \"no regrets\" about turning down moves to other European giants, including Real Madrid, during his playing career.",
-      "published": "2026-10-20T09:39:09Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50226329/steven-gerrard-no-regrets-ignoring-real-madrid-inter-milan-bayern-munich-interest",
-      "images": [
-        {
-          "dataSourceIdentifier": "268cb4d1a7f04",
-          "id": 44193173,
-          "type": "header",
-          "name": "Steven Gerrard of Liverpool  [1296x729]",
-          "credit": "Clive Brunskill/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2025/0310/r1462141_1296x729_16-9.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50226129,
-      "headline": "Gomez: Mourinho has created narrative that 'the world is against' Real Madrid",
-      "description": "Gomez: Mourinho has created narrative that 'the world is against' Real Madrid",
-      "published": "2026-10-20T09:04:09Z",
-      "link": "https://www.espn.com/video/clip/_/id/50226129/mourinho-created-narrative-world-real-madrid",
-      "images": [
-        {
-          "name": "Gomez: Mourinho has created narrative that 'the world is against' Real Madrid",
-          "caption": "Gomez: Mourinho has created narrative that 'the world is against' Real Madrid",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1020/dm_261020_Gomez_Mourinho_has_created_narrative_that_the_world_is_against_Real_Madrid/dm_261020_Gomez_Mourinho_has_created_narrative_that_the_world_is_against_Real_Madrid.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50221935,
-      "headline": "Rae: Lamine Yamal is bringing joy back to football",
-      "description": "Rae: Lamine Yamal is bringing joy back to football",
-      "published": "2026-10-19T22:52:46Z",
-      "link": "https://www.espn.com/video/clip/_/id/50221935/lamine-yamal-bringing-joy-back-football",
-      "images": [
-        {
-          "name": "Rae: Lamine Yamal is bringing joy back to football",
-          "caption": "Rae: Lamine Yamal is bringing joy back to football",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1019/dm_261019_Rae_Lamine_Yamal_is_bringing_joy_back_to_football/dm_261019_Rae_Lamine_Yamal_is_bringing_joy_back_to_football.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50221374,
-      "headline": "Getafe vs. Rayo Vallecano - Game Highlights",
-      "description": "Watch the Game Highlights from Getafe vs. Rayo Vallecano, 10/19/2026",
-      "published": "2026-10-19T21:05:07Z",
-      "link": "https://www.espn.com/video/clip/_/id/50221374/getafe-vs-rayo-vallecano-game-highlights",
-      "images": [
-        {
-          "name": "Getafe vs. Rayo Vallecano - Game Highlights",
-          "caption": "Watch the Game Highlights from Getafe vs. Rayo Vallecano, 10/19/2026",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1019/9301127a-6044-4544-a349-ea087383841f/9301127a-6044-4544-a349-ea087383841f.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50117234,
-      "headline": "Barcelona's Yamal vs. Real Madrid's Mbappé: Which Clásico star has stronger Ballon d'Or claim?",
-      "description": "In the tightest Ballon d'Or contest in years, top LaLiga players Lamine Yamal and Kylian Mbappé are among those vying to win soccer's top individual prize.",
-      "published": "2026-10-21T08:29:25Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50117234/barcelona-lamine-yamal-real-madrid-kylian-mbappe-clasico-star-ballon-dor",
-      "images": [
-        {
-          "dataSourceIdentifier": "2313b6fc66083",
-          "id": 50131694,
-          "type": "header",
-          "name": "Yamal Mbappe split pic [1296x729]",
-          "credit": "Jose Breton/Pics Action/NurPhoto via Getty Images / Manu Reino/DeFodi Images/DeFodi via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1008/r1727750_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "0ac442a30bd38",
-          "id": 50131405,
-          "type": "header",
-          "name": "Mbappe v Yamal 2025-26 season [1280x720]",
-          "credit": "ESPN Global Soccer Research",
-          "height": 720,
-          "width": 1280,
-          "url": "https://a.espncdn.com/photo/2026/1008/r1727736_1280x720_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "9948785e08bb9",
-          "id": 50131424,
-          "type": "header",
-          "name": "Mbappe v Yamal 2025-26 key matches [1280x720]",
-          "credit": "ESPN Global Soccer Research",
-          "height": 720,
-          "width": 1280,
-          "url": "https://a.espncdn.com/photo/2026/1008/r1727737_1280x720_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "ElClásico promo: Barcelona vs. Real Madrid",
-          "caption": "ElClásico promo: Barcelona vs. Real Madrid",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1019/dm_261019_el_clasico_promo/dm_261019_el_clasico_promo.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50213726,
-      "headline": "José Mourinho doesn't understand 'obsession' with elbow from Madrid's Güler",
-      "description": "José Mourinho claimed he hadn't seen \"images\" of an elbow by Arda Güler -- which saw no intervention from the referee -- in Real Madrid's 4-1 win over Sevilla.",
-      "published": "2026-10-19T08:14:56Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50213726/mourinho-obsession-elbow-madrid-guler",
-      "images": [
-        {
-          "dataSourceIdentifier": "c3bc33a992776",
-          "id": 50213785,
-          "type": "header",
-          "name": "Guler Madrid Sevilla_261018 [1296x729]",
-          "caption": "Arda Güler scored a goal in Real Madrid's win over Sevilla in LaLiga on Sunday.",
-          "alt": "Arda Güler scored a goal in Real Madrid's win over Sevilla in LaLiga on Sunday.",
-          "credit": "Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1018/r1732660_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Garcia: Real Madrid played with identity vs. Sevilla",
-          "caption": "Garcia: Real Madrid played with identity vs. Sevilla",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1018/dm_261018_COM_SOC_Analysis_Garcia3A_Real_Madrid_played_with_identity_vs_Sevilla_GLOBAL_2026-10-18/dm_261018_COM_SOC_Analysis_Garcia3A_Real_Madrid_played_with_identity_vs_Sevilla_GLOBAL_2026-10-18.jpg"
         }
       ]
     }
@@ -157721,6 +158224,52 @@
       "away": {
         "id": 11420,
         "name": "RB Leipzig",
+        "logo": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "401915555",
+      "date": "2026-10-22T19:00Z",
+      "timestamp": 1792695600,
+      "status": null,
+      "competition": "Europa League",
+      "competitionShort": "UEL",
+      "round": null,
+      "home": {
+        "id": 256,
+        "name": "Celtic",
+        "logo": null
+      },
+      "away": {
+        "id": 85,
+        "name": "Celta Vigo",
+        "logo": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "401915540",
+      "date": "2026-10-22T19:00Z",
+      "timestamp": 1792695600,
+      "status": null,
+      "competition": "Europa League",
+      "competitionShort": "UEL",
+      "round": null,
+      "home": {
+        "id": 987,
+        "name": "Lillestrom",
+        "logo": null
+      },
+      "away": {
+        "id": 89,
+        "name": "Real Sociedad",
         "logo": null
       },
       "score": {
@@ -166564,7 +167113,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-22T10:12:57.639Z",
+    "updatedAt": "2026-10-23T10:05:46.177Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
