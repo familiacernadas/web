@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-24T09:33:37.707Z",
+    "generatedAt": "2026-10-25T09:49:44.886Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -50707,7 +50707,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.576Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -50914,7 +50914,7 @@
         "confidence": 0.7281,
         "difficulty": "fácil",
         "generatedAt": "2026-09-10T22:53:14.287Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -51104,7 +51104,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.576Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -51311,7 +51311,7 @@
         "confidence": 0.5517,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.287Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -51501,7 +51501,7 @@
         "confidence": 0.4266,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.576Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -51714,7 +51714,7 @@
         "confidence": 0.3476,
         "difficulty": "difícil",
         "generatedAt": "2026-09-10T22:53:14.287Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -51904,7 +51904,7 @@
         "confidence": 0.4352,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.576Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -52123,7 +52123,7 @@
         "confidence": 0.7406,
         "difficulty": "fácil",
         "generatedAt": "2026-09-10T22:53:14.287Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -52313,7 +52313,7 @@
         "confidence": 0.4352,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.576Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -52532,7 +52532,7 @@
         "confidence": 0.5644,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.287Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -52722,7 +52722,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.577Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -52929,7 +52929,7 @@
         "confidence": 0.5487,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.287Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -53119,7 +53119,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.577Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -53326,7 +53326,7 @@
         "confidence": 0.604,
         "difficulty": "fácil",
         "generatedAt": "2026-09-10T22:53:14.287Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -53516,7 +53516,7 @@
         "confidence": 0.4266,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.577Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -53729,7 +53729,7 @@
         "confidence": 0.453,
         "difficulty": "difícil",
         "generatedAt": "2026-09-10T22:53:14.288Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -53919,7 +53919,7 @@
         "confidence": 0.4374,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.577Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -54126,7 +54126,7 @@
         "confidence": 0.5634,
         "difficulty": "media",
         "generatedAt": "2026-09-10T22:53:14.288Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -54316,7 +54316,7 @@
         "confidence": 0.4461,
         "difficulty": "difícil",
         "generatedAt": "2026-09-09T11:21:21.577Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.0",
           "weights": {
@@ -54529,7 +54529,7 @@
         "confidence": 0.6592,
         "difficulty": "fácil",
         "generatedAt": "2026-09-10T22:53:14.288Z",
-        "lockedAt": null,
+        "lockedAt": "2026-10-25T09:49:44.885Z",
         "model": {
           "version": "3.1-experimental",
           "baseModel": "3.0-official",
@@ -156287,14 +156287,14 @@
         "abbreviation": "ATM",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
       },
-      "points": 22,
-      "goalsDiff": 11,
+      "points": 25,
+      "goalsDiff": 12,
       "form": null,
-      "played": 9,
-      "wins": 7,
+      "played": 10,
+      "wins": 8,
       "draws": 1,
       "losses": 1,
-      "gf": 19,
+      "gf": 20,
       "ga": 8,
       "home": null,
       "away": null
@@ -156402,6 +156402,26 @@
     {
       "rank": 8,
       "team": {
+        "id": 102,
+        "name": "Villarreal",
+        "abbreviation": "VIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+      },
+      "points": 12,
+      "goalsDiff": 1,
+      "form": null,
+      "played": 10,
+      "wins": 3,
+      "draws": 3,
+      "losses": 4,
+      "gf": 15,
+      "ga": 14,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 9,
+      "team": {
         "id": 85,
         "name": "Celta Vigo",
         "abbreviation": "CEL",
@@ -156420,7 +156440,7 @@
       "away": null
     },
     {
-      "rank": 9,
+      "rank": 10,
       "team": {
         "id": 90,
         "name": "Deportivo",
@@ -156428,19 +156448,19 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
       },
       "points": 11,
-      "goalsDiff": 1,
+      "goalsDiff": 0,
       "form": null,
-      "played": 9,
+      "played": 10,
       "wins": 2,
       "draws": 5,
-      "losses": 2,
+      "losses": 3,
       "gf": 13,
-      "ga": 12,
+      "ga": 13,
       "home": null,
       "away": null
     },
     {
-      "rank": 10,
+      "rank": 11,
       "team": {
         "id": 97,
         "name": "Osasuna",
@@ -156460,7 +156480,27 @@
       "away": null
     },
     {
-      "rank": 11,
+      "rank": 12,
+      "team": {
+        "id": 87,
+        "name": "Racing Santander",
+        "abbreviation": "RAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
+      },
+      "points": 11,
+      "goalsDiff": -11,
+      "form": null,
+      "played": 10,
+      "wins": 3,
+      "draws": 2,
+      "losses": 5,
+      "gf": 15,
+      "ga": 26,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 13,
       "team": {
         "id": 1538,
         "name": "Levante",
@@ -156480,27 +156520,27 @@
       "away": null
     },
     {
-      "rank": 12,
+      "rank": 14,
       "team": {
-        "id": 102,
-        "name": "Villarreal",
-        "abbreviation": "VIL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+        "id": 3751,
+        "name": "Elche",
+        "abbreviation": "ELC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
       },
-      "points": 9,
-      "goalsDiff": 0,
+      "points": 10,
+      "goalsDiff": -3,
       "form": null,
-      "played": 9,
+      "played": 10,
       "wins": 2,
-      "draws": 3,
+      "draws": 4,
       "losses": 4,
-      "gf": 13,
-      "ga": 13,
+      "gf": 14,
+      "ga": 17,
       "home": null,
       "away": null
     },
     {
-      "rank": 13,
+      "rank": 15,
       "team": {
         "id": 93,
         "name": "Athletic Club",
@@ -156520,27 +156560,7 @@
       "away": null
     },
     {
-      "rank": 14,
-      "team": {
-        "id": 101,
-        "name": "Rayo Vallecano",
-        "abbreviation": "RAY",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
-      },
-      "points": 9,
-      "goalsDiff": -5,
-      "form": null,
-      "played": 8,
-      "wins": 2,
-      "draws": 3,
-      "losses": 3,
-      "gf": 12,
-      "ga": 17,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 15,
+      "rank": 16,
       "team": {
         "id": 2922,
         "name": "Getafe",
@@ -156560,7 +156580,27 @@
       "away": null
     },
     {
-      "rank": 16,
+      "rank": 17,
+      "team": {
+        "id": 101,
+        "name": "Rayo Vallecano",
+        "abbreviation": "RAY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
+      },
+      "points": 9,
+      "goalsDiff": -8,
+      "form": null,
+      "played": 9,
+      "wins": 2,
+      "draws": 3,
+      "losses": 4,
+      "gf": 12,
+      "ga": 20,
+      "home": null,
+      "away": null
+    },
+    {
+      "rank": 18,
       "team": {
         "id": 88,
         "name": "Espanyol",
@@ -156568,54 +156608,14 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
       },
       "points": 8,
-      "goalsDiff": -1,
+      "goalsDiff": -2,
       "form": null,
-      "played": 9,
+      "played": 10,
       "wins": 2,
       "draws": 2,
-      "losses": 5,
-      "gf": 11,
-      "ga": 12,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 17,
-      "team": {
-        "id": 87,
-        "name": "Racing Santander",
-        "abbreviation": "RAC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
-      },
-      "points": 8,
-      "goalsDiff": -12,
-      "form": null,
-      "played": 9,
-      "wins": 2,
-      "draws": 2,
-      "losses": 5,
-      "gf": 13,
-      "ga": 25,
-      "home": null,
-      "away": null
-    },
-    {
-      "rank": 18,
-      "team": {
-        "id": 3751,
-        "name": "Elche",
-        "abbreviation": "ELC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
-      },
-      "points": 7,
-      "goalsDiff": -6,
-      "form": null,
-      "played": 9,
-      "wins": 1,
-      "draws": 4,
-      "losses": 4,
-      "gf": 11,
-      "ga": 17,
+      "losses": 6,
+      "gf": 12,
+      "ga": 14,
       "home": null,
       "away": null
     },
@@ -156628,14 +156628,14 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
       },
       "points": 6,
-      "goalsDiff": -9,
+      "goalsDiff": -10,
       "form": null,
-      "played": 9,
+      "played": 10,
       "wins": 1,
       "draws": 3,
-      "losses": 5,
-      "gf": 6,
-      "ga": 15,
+      "losses": 6,
+      "gf": 7,
+      "ga": 17,
       "home": null,
       "away": null
     },
@@ -156710,16 +156710,16 @@
     {
       "rank": 3,
       "player": {
-        "id": 362150,
-        "name": "Lamine Yamal",
-        "shortName": "L. Yamal",
+        "id": 390389,
+        "name": "Yassir Zabiri",
+        "shortName": "Y. Zabiri",
         "photo": null
       },
       "team": {
-        "id": 83,
-        "name": "Barcelona",
-        "abbreviation": "BAR",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
+        "id": 87,
+        "name": "Racing Santander",
+        "abbreviation": "RAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
       },
       "goals": {
         "total": 8,
@@ -156733,19 +156733,19 @@
     {
       "rank": 4,
       "player": {
-        "id": 207288,
-        "name": "Ante Budimir",
-        "shortName": "A. Budimir",
+        "id": 362150,
+        "name": "Lamine Yamal",
+        "shortName": "L. Yamal",
         "photo": null
       },
       "team": {
-        "id": 97,
-        "name": "Osasuna",
-        "abbreviation": "OSA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
+        "id": 83,
+        "name": "Barcelona",
+        "abbreviation": "BAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
       },
       "goals": {
-        "total": 7,
+        "total": 8,
         "assists": 0
       },
       "assists": 0,
@@ -156779,16 +156779,16 @@
     {
       "rank": 6,
       "player": {
-        "id": 390389,
-        "name": "Yassir Zabiri",
-        "shortName": "Y. Zabiri",
+        "id": 207288,
+        "name": "Ante Budimir",
+        "shortName": "A. Budimir",
         "photo": null
       },
       "team": {
-        "id": 87,
-        "name": "Racing Santander",
-        "abbreviation": "RAC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
+        "id": 97,
+        "name": "Osasuna",
+        "abbreviation": "OSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
       },
       "goals": {
         "total": 7,
@@ -156825,29 +156825,6 @@
     {
       "rank": 8,
       "player": {
-        "id": 207236,
-        "name": "Lucas Boyé",
-        "shortName": "L. Boyé",
-        "photo": null
-      },
-      "team": {
-        "id": 96,
-        "name": "Alavés",
-        "abbreviation": "ALA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
-      },
-      "goals": {
-        "total": 5,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 9,
-      "player": {
         "id": 301684,
         "name": "Fer Niño",
         "shortName": "F. Niño",
@@ -156858,6 +156835,29 @@
         "name": "Elche",
         "abbreviation": "ELC",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+      },
+      "goals": {
+        "total": 6,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 9,
+      "player": {
+        "id": 297373,
+        "name": "Álex Baena",
+        "shortName": "Á. Baena",
+        "photo": null
+      },
+      "team": {
+        "id": 1068,
+        "name": "Atlético Madrid",
+        "abbreviation": "ATM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
       },
       "goals": {
         "total": 5,
@@ -156871,16 +156871,16 @@
     {
       "rank": 10,
       "player": {
-        "id": 297373,
-        "name": "Álex Baena",
-        "shortName": "Á. Baena",
+        "id": 207236,
+        "name": "Lucas Boyé",
+        "shortName": "L. Boyé",
         "photo": null
       },
       "team": {
-        "id": 1068,
-        "name": "Atlético Madrid",
-        "abbreviation": "ATM",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+        "id": 96,
+        "name": "Alavés",
+        "abbreviation": "ALA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
       },
       "goals": {
         "total": 5,
@@ -156986,16 +156986,16 @@
     {
       "rank": 15,
       "player": {
-        "id": 198832,
-        "name": "Mariano Díaz",
-        "shortName": "M. Díaz",
+        "id": 125200,
+        "name": "Álvaro García",
+        "shortName": "Á. García",
         "photo": null
       },
       "team": {
-        "id": 96,
-        "name": "Alavés",
-        "abbreviation": "ALA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
+        "id": 101,
+        "name": "Rayo Vallecano",
+        "abbreviation": "RAY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
       },
       "goals": {
         "total": 3,
@@ -157008,29 +157008,6 @@
     },
     {
       "rank": 16,
-      "player": {
-        "id": 291281,
-        "name": "Jude Bellingham",
-        "shortName": "J. Bellingham",
-        "photo": null
-      },
-      "team": {
-        "id": 86,
-        "name": "Real Madrid",
-        "abbreviation": "RMA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
-      },
-      "goals": {
-        "total": 3,
-        "assists": 0
-      },
-      "assists": 0,
-      "appearances": 0,
-      "minutes": 0,
-      "rating": null
-    },
-    {
-      "rank": 17,
       "player": {
         "id": 255889,
         "name": "Pape Gueye",
@@ -157053,18 +157030,41 @@
       "rating": null
     },
     {
-      "rank": 18,
+      "rank": 17,
       "player": {
-        "id": 125200,
-        "name": "Álvaro García",
-        "shortName": "Á. García",
+        "id": 300002,
+        "name": "Georges Mikautadze",
+        "shortName": "G. Mikautadze",
         "photo": null
       },
       "team": {
-        "id": 101,
-        "name": "Rayo Vallecano",
-        "abbreviation": "RAY",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
+        "id": 102,
+        "name": "Villarreal",
+        "abbreviation": "VIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+      },
+      "goals": {
+        "total": 3,
+        "assists": 0
+      },
+      "assists": 0,
+      "appearances": 0,
+      "minutes": 0,
+      "rating": null
+    },
+    {
+      "rank": 18,
+      "player": {
+        "id": 198832,
+        "name": "Mariano Díaz",
+        "shortName": "M. Díaz",
+        "photo": null
+      },
+      "team": {
+        "id": 96,
+        "name": "Alavés",
+        "abbreviation": "ALA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
       },
       "goals": {
         "total": 3,
@@ -157078,16 +157078,16 @@
     {
       "rank": 19,
       "player": {
-        "id": 311054,
-        "name": "Iván Romero",
-        "shortName": "I. Romero",
+        "id": 166396,
+        "name": "Alejandro Grimaldo",
+        "shortName": "A. Grimaldo",
         "photo": null
       },
       "team": {
-        "id": 1538,
-        "name": "Levante",
-        "abbreviation": "LEV",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+        "id": 1068,
+        "name": "Atlético Madrid",
+        "abbreviation": "ATM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
       },
       "goals": {
         "total": 3,
@@ -157101,16 +157101,16 @@
     {
       "rank": 20,
       "player": {
-        "id": 166396,
-        "name": "Alejandro Grimaldo",
-        "shortName": "A. Grimaldo",
+        "id": 291281,
+        "name": "Jude Bellingham",
+        "shortName": "J. Bellingham",
         "photo": null
       },
       "team": {
-        "id": 1068,
-        "name": "Atlético Madrid",
-        "abbreviation": "ATM",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+        "id": 86,
+        "name": "Real Madrid",
+        "abbreviation": "RMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
       },
       "goals": {
         "total": 3,
@@ -157158,142 +157158,232 @@
   },
   "news": [
     {
-      "id": 50261693,
-      "headline": "El Clásico is served! Get a taste of the LaLiga showdown",
-      "description": "El Clásico is served! Get a taste of the LaLiga showdown",
-      "published": "2026-10-24T00:19:46Z",
-      "link": "https://www.espn.com/video/clip/_/id/50261693/el-clasico-served-get-taste-laliga-showdown",
+      "id": 50272689,
+      "headline": "Alex Freeman adding to banner 2026 with goal",
+      "description": "See why Alex Freeman is adding to his stellar year with another sensational goal.",
+      "published": "2026-10-25T01:54:18Z",
+      "link": "https://www.espn.com/video/clip/_/id/50272689/alex-freeman-adding-banner-2026-goal",
       "images": [
         {
-          "name": "El Clásico is served! Get a taste of the LaLiga showdown",
-          "caption": "El Clásico is served! Get a taste of the LaLiga showdown",
+          "name": "Alex Freeman adding to banner 2026 with goal",
+          "caption": "See why Alex Freeman is adding to his stellar year with another sensational goal.",
           "alt": "",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/ss_20261023_201605091_3707432/ss_20261023_201605091_3707432.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1024/dm_261024_USMNT_FREEMAN/dm_261024_USMNT_FREEMAN.jpg"
         }
       ]
     },
     {
-      "id": 50260417,
-      "headline": "Alavés vs. Málaga - Game Highlights",
-      "description": "Watch the Game Highlights from Alavés vs. Málaga, 10/23/2026",
-      "published": "2026-10-23T21:00:29Z",
-      "link": "https://www.espn.com/video/clip/_/id/50260417/alaves-vs-malaga-game-highlights",
+      "id": 50271519,
+      "headline": "Barcelona making final preparations for Real Madrid",
+      "description": "Check out what Barcelona is doing in the final hours before they take on Real Madrid in El Clasico.",
+      "published": "2026-10-25T00:08:44Z",
+      "link": "https://www.espn.com/video/clip/_/id/50271519/barcelona-making-final-preparations-real-madrid",
       "images": [
         {
-          "name": "Alavés vs. Málaga - Game Highlights",
-          "caption": "Watch the Game Highlights from Alavés vs. Málaga, 10/23/2026",
+          "name": "Barcelona making final preparations for Real Madrid",
+          "caption": "Check out what Barcelona is doing in the final hours before they take on Real Madrid in El Clasico.",
           "alt": "",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1023/952cc53d-7a6a-4a43-bed7-681021c5f810/952cc53d-7a6a-4a43-bed7-681021c5f810.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1024/dm_261024_BarcelonaClasico/dm_261024_BarcelonaClasico.jpg"
         }
       ]
     },
     {
-      "id": 50260129,
-      "headline": "Will Carrick survive the weekend as Man United head coach?",
-      "description": "Will Carrick survive the weekend as Man United head coach?",
-      "published": "2026-10-23T19:54:06Z",
-      "link": "https://www.espn.com/video/clip/_/id/50260129/will-carrick-survive-weekend-man-united-head-coach",
+      "id": 50270296,
+      "headline": "Julián Álvarez apologizes to Atlético Madrid fans over bid to join Barcelona",
+      "description": "Julián Álvarez apologized to Atlético Madrid fans for attempting to force a departure from the club in the summer after ending his LaLiga goal drought.",
+      "published": "2026-10-24T22:46:20Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50270296/julian-alvarez-atletico-madrid-sorry-barcelona-transfer",
       "images": [
         {
-          "name": "Will Carrick survive the weekend as Man United head coach?",
-          "caption": "Will Carrick survive the weekend as Man United head coach?",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/dm_261023_COM_SOC_Analysis_Will_Carrick_survive_the_weekend_as_Man_United_head_coach3F__GLOBAL_2026-10-23/dm_261023_COM_SOC_Analysis_Will_Carrick_survive_the_weekend_as_Man_United_head_coach3F__GLOBAL_2026-10-23.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50260126,
-      "headline": "Is El Clásico more important for Barcelona or Real Madrid?",
-      "description": "Is El Clásico more important for Barcelona or Real Madrid?",
-      "published": "2026-10-23T19:53:33Z",
-      "link": "https://www.espn.com/video/clip/_/id/50260126/is-el-clasico-more-important-barcelona-real-madrid",
-      "images": [
-        {
-          "name": "Is El Clásico more important for Barcelona or Real Madrid?",
-          "caption": "Is El Clásico more important for Barcelona or Real Madrid?",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/dm_261023_COM_SOC_Analysis_Is_El_ClC3A1sico_more_important_for_Barcelona_or_Real_Madrid3F_GLOBAL_2026-10-23/dm_261023_COM_SOC_Analysis_Is_El_ClC3A1sico_more_important_for_Barcelona_or_Real_Madrid3F_GLOBAL_2026-10-23.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50255747,
-      "headline": "Transfer rumors, news: Barcelona to end up signing Sullivan?",
-      "description": "Cavan Sullivan has a pre-contract agreement with Manchester City, but could Barcelona swoop up and sign the young American prospect? Transfer Talk has the latest.",
-      "published": "2026-10-23T18:39:43Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50255747/transfer-rumors-news-comos-paz-destroyed-man-united-now-want-sign-him",
-      "images": [
-        {
-          "dataSourceIdentifier": "bf828bd22715a",
-          "id": 50259584,
+          "dataSourceIdentifier": "511015a66a418",
+          "id": 50270002,
           "type": "header",
-          "name": "Cavan Sullivan [1296x729]",
-          "credit": "(Photo by Terence Lewis/Icon Sportswire via Getty Images)",
+          "name": "Alvarez Atleti celeb [1296x729]",
+          "caption": "Julián Álvarez celebrates his goal in Atlético Madrid's win over Deportivo.",
+          "alt": "Julian Alvarez centre-forward of Atletico de Madrid and Argentina celebrates after scoring his sides first goal during the LaLiga EA Sports 2026/27 match between Atletico de Madrid and RC Deportivo de A Coruna at Riyadh Air Metropolitano on October 24, 20",
+          "credit": "Jose Breton/Pics Action/NurPhoto via Getty Images",
           "height": 729,
           "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1023/r1735106_1296x729_16-9.jpg"
+          "url": "https://a.espncdn.com/photo/2026/1024/r1735625_1296x729_16-9.jpg"
         },
         {
           "type": "Media",
-          "name": "Who is to blame at Manchester United?",
-          "caption": "Who is to blame at Manchester United?",
+          "name": "Julián Álvarez scores goal for Atletico Madrid",
+          "caption": "Julián Álvarez finds the back of the net for Atletico Madrid",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1022/dm_261022_Who_is_to_blame_at_Manchester_United/dm_261022_Who_is_to_blame_at_Manchester_United.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1024/063c46eb-f977-4d43-95ce-80ce521a6e40/063c46eb-f977-4d43-95ce-80ce521a6e40.jpg"
         }
       ]
     },
     {
-      "id": 50259618,
-      "headline": "Barcelona's Gavi and Cubarsi preview Sunday's crunch El Clásico",
-      "description": "Barcelona's Gavi and Cubarsi preview Sunday's crunch El Clásico",
-      "published": "2026-10-23T18:31:43Z",
-      "link": "https://www.espn.com/video/clip/_/id/50259618/barcelona-gavi-cubarsi-preview-sunday-crunch-el-clasico",
+      "id": 50270579,
+      "headline": "McManaman: Barcelona will have too much firepower for Real Madrid",
+      "description": "McManaman: Barcelona will have too much firepower for Real Madrid",
+      "published": "2026-10-24T22:25:56Z",
+      "link": "https://www.espn.com/video/clip/_/id/50270579/barcelona-too-much-firepower-real-madrid",
       "images": [
         {
-          "name": "Barcelona's Gavi and Cubarsi preview Sunday's crunch El Clásico",
-          "caption": "Barcelona's Gavi and Cubarsi preview Sunday's crunch El Clásico",
+          "name": "McManaman: Barcelona will have too much firepower for Real Madrid",
+          "caption": "McManaman: Barcelona will have too much firepower for Real Madrid",
           "alt": "",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/dm_261023_COM_SOC_Analysis_BarcelonaE28099s_Gavi_a871/dm_261023_COM_SOC_Analysis_BarcelonaE28099s_Gavi_a871.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1024/dm_261024_COM_SOC_Analysis_McManaman_Barcelona_will_have_too_much_firepower_for_Real_Madrid_20261024_GLOB/dm_261024_COM_SOC_Analysis_McManaman_Barcelona_will_have_too_much_firepower_for_Real_Madrid_20261024_GLOB.jpg"
         }
       ]
     },
     {
-      "id": 50257348,
-      "headline": "Tchouaméni: 'There was no fight' in Real Madrid dressing room with Valverde",
-      "description": "Real Madrid midfielder Aurélien Tchouaméni has claimed last season's dressing room clash with teammate Federico Valverde was \"a minor thing.\"",
-      "published": "2026-10-23T18:30:06Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50257348/tchouameni-real-madrid-incident-valverde-no-fight",
+      "id": 50253132,
+      "headline": "Álvarez's 1st LaLiga home goal in 11 months sees Atlético  close gap to Barça ",
+      "description": "Julián Álvarez scored his first LaLiga goal in eight months as Atlético Madrid beat Deportivo 1-0 to climb to within two points of leaders Barcelona.",
+      "published": "2026-10-24T22:38:40Z",
+      "link": "http://www.espn.com/soccer/report/_/gameId/401882834",
       "images": [
         {
-          "dataSourceIdentifier": "99daf6152d9f4",
-          "id": 48712693,
+          "dataSourceIdentifier": "ae7bc9b91a9ee",
+          "id": 50270789,
           "type": "header",
-          "name": "Valverde Tchouameni Real Madrid Girona 7/5/2026 [1296x729]",
-          "caption": "Federico Valverde y Aurélien Tchouaméni protagonizaron un altercado durante un entrenamiento de Real Madrid.",
-          "credit": "Denis Doyle/Getty Images",
+          "name": "Alvarez celeb [1296x729]",
+          "caption": "Julián Álvarez scored his first LaLiga goal of the season in Atlético Madrid's win over Deportivo.",
+          "alt": "Julian Alvarez centre-forward of Atletico de Madrid and Argentina celebrates after scoring his sides first goal during the LaLiga EA Sports 2026/27 match between Atletico de Madrid and RC Deportivo de A Coruna at Riyadh Air Metropolitano on October 24",
+          "credit": "Jose Breton/Pics Action/NurPhoto via Getty Images",
           "height": 729,
           "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0507/r1654811_1296x729_16-9.jpg"
+          "url": "https://a.espncdn.com/photo/2026/1024/r1735665_1296x729_16-9.jpg"
         },
         {
           "type": "Media",
-          "name": "Expectations for El Clasico - Can Real Madrid compete with Barcelona?",
-          "caption": "Expectations for El Clasico - Can Real Madrid compete with Barcelona?",
+          "name": "Julián Alvarez apologizes to Atlético Madrid fans",
+          "caption": "Alex Kirkland discusses if Julián Alvarez's apology can repair his relationship with the Atlético Madrid fans.",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1022/ss_20261022_172654411_37060831137/ss_20261022_172654411_37060831137.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1024/dm_261024_Atleti_Alvarez_IA/dm_261024_Atleti_Alvarez_IA.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50269798,
+      "headline": "Atletico Madrid vs. Deportivo La Coruña - Game Highlights",
+      "description": "Watch the Game Highlights from Atletico Madrid vs. Deportivo La Coruña, 10/24/2026",
+      "published": "2026-10-24T21:05:03Z",
+      "link": "https://www.espn.com/video/clip/_/id/50269798/atletico-madrid-vs-deportivo-la-coruna-game-highlights",
+      "images": [
+        {
+          "name": "Atletico Madrid vs. Deportivo La Coruña - Game Highlights",
+          "caption": "Watch the Game Highlights from Atletico Madrid vs. Deportivo La Coruña, 10/24/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1024/3037d631-b9f8-46a4-9693-f343fe349125/3037d631-b9f8-46a4-9693-f343fe349125.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50267991,
+      "headline": "Valencia vs. Villarreal - Game Highlights",
+      "description": "Watch the Game Highlights from Valencia vs. Villarreal, 10/24/2026",
+      "published": "2026-10-24T18:43:40Z",
+      "link": "https://www.espn.com/video/clip/_/id/50267991/valencia-vs-villarreal-game-highlights",
+      "images": [
+        {
+          "name": "Valencia vs. Villarreal - Game Highlights",
+          "caption": "Watch the Game Highlights from Valencia vs. Villarreal, 10/24/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1024/7deecb68-68f9-4211-b50d-f33b012e73d5/7deecb68-68f9-4211-b50d-f33b012e73d5.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50266487,
+      "headline": "Racing Santander vs. Espanyol - Game Highlights",
+      "description": "Watch the Game Highlights from Racing Santander vs. Espanyol, 10/24/2026",
+      "published": "2026-10-24T16:18:49Z",
+      "link": "https://www.espn.com/video/clip/_/id/50266487/racing-santander-vs-espanyol-game-highlights",
+      "images": [
+        {
+          "name": "Racing Santander vs. Espanyol - Game Highlights",
+          "caption": "Watch the Game Highlights from Racing Santander vs. Espanyol, 10/24/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1024/4636736f-4a63-47c2-874d-64bcb53bb050/4636736f-4a63-47c2-874d-64bcb53bb050.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50266146,
+      "headline": "Flick: El Clásico is the best game football offers",
+      "description": "Flick: El Clásico is the best game football offers",
+      "published": "2026-10-24T15:47:30Z",
+      "link": "https://www.espn.com/video/clip/_/id/50266146/el-clasico-best-game-football-offers",
+      "images": [
+        {
+          "name": "Flick: El Clásico is the best game football offers",
+          "caption": "Flick: El Clásico is the best game football offers",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1024/dm_261024_Flick_El_Clasico_is_the_best_game_football_offers/dm_261024_Flick_El_Clasico_is_the_best_game_football_offers.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50265950,
+      "headline": "Mourinho: Real Madrid win trophies with me",
+      "description": "Mourinho: Real Madrid win trophies with me",
+      "published": "2026-10-24T14:52:52Z",
+      "link": "https://www.espn.com/video/clip/_/id/50265950/real-madrid-win-trophies-me",
+      "images": [
+        {
+          "name": "Mourinho: Real Madrid win trophies with me",
+          "caption": "Mourinho: Real Madrid win trophies with me",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1024/dm_261024_Mourinho_Real_Madrid_win_trophies_with_me/dm_261024_Mourinho_Real_Madrid_win_trophies_with_me.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50265693,
+      "headline": "Rayo Vallecano vs. Elche - Game Highlights",
+      "description": "Watch the Game Highlights from Rayo Vallecano vs. Elche, 10/24/2026",
+      "published": "2026-10-24T14:08:17Z",
+      "link": "https://www.espn.com/video/clip/_/id/50265693/rayo-vallecano-vs-elche-game-highlights",
+      "images": [
+        {
+          "name": "Rayo Vallecano vs. Elche - Game Highlights",
+          "caption": "Watch the Game Highlights from Rayo Vallecano vs. Elche, 10/24/2026",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1024/30635c7d-fdee-4ef8-a159-755b30a4db48/30635c7d-fdee-4ef8-a159-755b30a4db48.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50265160,
+      "headline": "Anthony Gordon delivers rating out of 10 for his start at Barcelona",
+      "description": "Barcelona and England forward Anthony Gordon has told ESPN he is still a long way from where he wants to be as he prepares for Sunday's Clásico against Real Madrid.",
+      "published": "2026-10-24T15:17:36Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50265160/anthony-gordon-barcelona-real-madrid-clasico",
+      "images": [
+        {
+          "dataSourceIdentifier": "ec57cf0c8d3fd",
+          "id": 50265139,
+          "type": "header",
+          "name": "Anthony Gordon [1296x729]",
+          "credit": "Getty",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1024/r1735376_1296x729_16-9.jpg"
         }
       ]
     },
@@ -157301,7 +157391,7 @@
       "id": 50239093,
       "headline": "As Anthony Gordon prepares for El Clásico debut, how have other British stars fared?",
       "description": "As Anthony Gordon prepares for his first El Clásico, we look at how other British stars got on in this storied fixture.",
-      "published": "2026-10-23T09:08:25Z",
+      "published": "2026-10-24T12:20:52Z",
       "link": "https://www.espn.com/soccer/story/_/id/50239093/anthony-gordon-el-clasico-debut-barcelona-real-madrid",
       "images": [
         {
@@ -157449,190 +157539,50 @@
       ]
     },
     {
-      "id": 50227950,
-      "headline": "Barcelona-Real Madrid: Clásico form, team news, combined XI, predictions, odds",
-      "description": "Let's run through the head-to-head, form, team news, combined XI and key clashes ahead of the 265th edition of El Clásico between Barcelona and Real Madrid.",
-      "published": "2026-10-24T08:57:20Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50227950/barcelona-real-madrid-laliga-clasico-form-team-news-combined-xi-predictions-odds-all-head-head",
+      "id": 50265100,
+      "headline": "Barcelona outline plan to stop Real Madrid's Kylian Mbappé in El Clásico",
+      "description": "Barcelona coach Hansi Flick says his team's positioning and work off the ball is the key to stopping Real Madrid forward Kylian Mbappé in Sunday's Clásico.",
+      "published": "2026-10-24T12:10:04Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50265100/barcelona-real-madrid-kylian-mbappe-el-clasico",
       "images": [
         {
-          "dataSourceIdentifier": "89937eb9c69bf",
-          "id": 50241996,
+          "dataSourceIdentifier": "d55d3c8af9b1f",
+          "id": 48646435,
           "type": "header",
-          "name": "El Clásico preview: Barcelona vs. Real Madrid  [1296x729]",
-          "alt": "El Clásico preview: Barcelona vs. Real Madrid",
-          "credit": "ESPN Illustration",
+          "name": "Yamal Mbappe [1296x729]",
+          "caption": "Barcelona could wrap up the title against Real Madrid next weekend.",
+          "alt": "Kylian Mbappe of Real Madrid battles for possession with Lamine Yamal of FC Barcelona.",
+          "credit": "Photo by Yasser Bakhsh/Getty Images.",
           "height": 729,
           "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1021/el-clasico-preview_16x9_1296x729.jpg"
-        },
-        {
-          "dataSourceIdentifier": "944bf707d1c65",
-          "id": 50225717,
-          "type": "header",
-          "name": "Barcelona v Real Madrid all-time head-to-head before first Clasico 2026-27 [1280x720]",
-          "credit": "ESPN Global Soccer Research",
-          "height": 720,
-          "width": 1280,
-          "url": "https://a.espncdn.com/photo/2026/1020/r1733305_1280x720_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "2052091a86935",
-          "id": 50228310,
-          "type": "header",
-          "name": "Bayern Munich v Tottenham Hotspur 2019 Hansi Flick and Jose Mourinho [1296x729]",
-          "credit": "Odd ANDERSEN / AFP via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1020/r1733398_1296x729_16-9.jpg"
+          "url": "https://a.espncdn.com/photo/2026/0501/r1651868_1296x729_16-9.jpg"
         },
         {
           "type": "Media",
-          "name": "ElClásico promo: Barcelona vs. Real Madrid",
-          "caption": "ElClásico promo: Barcelona vs. Real Madrid",
+          "name": "Barcelona's Gavi and Cubarsi preview Sunday's crunch El Clásico",
+          "caption": "Barcelona's Gavi and Cubarsi preview Sunday's crunch El Clásico",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1019/dm_261019_el_clasico_promo/dm_261019_el_clasico_promo.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/dm_261023_COM_SOC_Analysis_BarcelonaE28099s_Gavi_a871/dm_261023_COM_SOC_Analysis_BarcelonaE28099s_Gavi_a871.jpg"
         }
       ]
     },
     {
-      "id": 50251663,
-      "headline": "Who will win the Ballon d'Or? Messi, Yamal, Kane -- or someone else?",
-      "description": "There's no consensus pick for this year's Ballon d'Or -- but maybe there should be. Here's who actually deserves to win it.",
-      "published": "2026-10-23T07:09:46Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50251663/who-win-ballon-dor-messi-yamal-kane-else",
+      "id": 50264660,
+      "headline": "José Mourinho backs himself ahead of El Clasico vs. Barcelona: 'Madrid with Mourinho wins trophies'",
+      "description": "José Mourinho backed himself to deliver at Real Madrid ahead of Sunday's high-stakes El Clásico with LaLiga leaders Barcelona, insisting that \"Madrid with Mourinho wins trophies.\"",
+      "published": "2026-10-24T12:09:52Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50264660/jose-mourinho-backs-ahead-el-clasico-vs-barcelona-madrid-mourinho-wins-trophies",
       "images": [
         {
-          "dataSourceIdentifier": "8ed746f488938",
-          "id": 50253593,
+          "dataSourceIdentifier": "1dbec0e83b8a5",
+          "id": 48835999,
           "type": "header",
-          "name": "4 way split [1296x729]",
-          "credit": "Getty Images",
+          "name": "Mourinho and Perez 260521 [1296x729]",
+          "credit": "FRANCK FIFE/AFP via Getty Images",
           "height": 729,
           "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1023/r1734824_1296x729_16-9.png"
-        },
-        {
-          "type": "Media",
-          "name": "England teammates praise Kane, 'it's definitely possible' he could win the Ballon d'Or",
-          "caption": "England teammates praise Kane, 'it's definitely possible' he could win the Ballon d'Or",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1007/dm_261007_England_teammates_praise_Kane_its_definitely_possible_he_could_win_the_Ballon_dOr/dm_261007_England_teammates_praise_Kane_its_definitely_possible_he_could_win_the_Ballon_dOr.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50166049,
-      "headline": "A global experiment: Can ESPN predict the Ballon d'Or awards?",
-      "description": "The Ballon d'Or awards are typically tough to predict, but can ESPN and our global resources do just that?",
-      "published": "2026-10-23T08:57:06Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50166049/a-global-experiment-espn-predict-ballon-dor",
-      "images": [
-        {
-          "dataSourceIdentifier": "5714dc2ea235d",
-          "id": 50140669,
-          "type": "header",
-          "name": "261020_soc_ballon-dor [1296x729]",
-          "caption": "261020_soc_ballon-dor",
-          "alt": "261020_soc_ballon-dor",
-          "credit": "ESPN Illustration",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1009/261020_soc_ballon-dor_mixed_16x9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "8b3d1f888c8c8",
-          "id": 50140681,
-          "type": "header",
-          "name": "261020_soc_ballon-dor [1296x864]",
-          "caption": "261020_soc_ballon-dor",
-          "alt": "261020_soc_ballon-dor",
-          "credit": "ESPN Illustration",
-          "height": 864,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1009/261020_soc_ballon-dor_mixed_3x2.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Enrique questions why Doué isn't a Ballon d'Or contender",
-          "caption": "Enrique questions why Doué isn't a Ballon d'Or contender",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/0918/dm_260918_Enrique_questions_why_Doue_isnt_a_Ballon_dOr_contender/dm_260918_Enrique_questions_why_Doue_isnt_a_Ballon_dOr_contender.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50252737,
-      "headline": "Before 'the special one', José Mourinho was 'the Barca one'",
-      "description": "Before 'the special one', José Mourinho was 'the Barca one'",
-      "published": "2026-10-22T22:17:50Z",
-      "link": "https://www.espn.com/video/clip/_/id/50252737/before-special-one-jose-mourinho-was-barca-one",
-      "images": [
-        {
-          "name": "Before 'the special one', José Mourinho was 'the Barca one'",
-          "caption": "Before 'the special one', José Mourinho was 'the Barca one'",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1022/dm_261022_When_the_special_one_was_the_Barca_one/dm_261022_When_the_special_one_was_the_Barca_one.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50252567,
-      "headline": "Should Real Madrid frustrate Barcelona with fouls in El Clásico?",
-      "description": "Should Real Madrid frustrate Barcelona with fouls in El Clásico?",
-      "published": "2026-10-22T21:48:39Z",
-      "link": "https://www.espn.com/video/clip/_/id/50252567/should-real-madrid-frustrate-barcelona-fouls-el-clasico",
-      "images": [
-        {
-          "name": "Should Real Madrid frustrate Barcelona with fouls in El Clásico?",
-          "caption": "Should Real Madrid frustrate Barcelona with fouls in El Clásico?",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1022/dm_261022_Should_Real_Madrid_frustrate_Barcelona_with_fouls_in_El_Clasico/dm_261022_Should_Real_Madrid_frustrate_Barcelona_with_fouls_in_El_Clasico.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50247061,
-      "headline": "José Mourinho complains Real Madrid have 24 hours less rest than Barcelona ahead of El Clásico",
-      "description": "Real Madrid coach José Mourinho was keen to point out after his side's win over Leipzig that his team will have 24 hours less rest than Sunday's rivals Barcelona heading into the Clásico.",
-      "published": "2026-10-22T10:31:36Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50247061/jose-mourinho-real-madrid-barcelona-el-clasico-less-rest",
-      "images": [
-        {
-          "dataSourceIdentifier": "3914f4d30c8c4",
-          "id": 50246993,
-          "type": "header",
-          "name": "Jose Mourinho [1296x729]",
-          "credit": "Angel Martinez - UEFA/UEFA via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1022/r1734427_1296x729_16-9.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50245408,
-      "headline": "Mourinho made Real Madrid-Barcelona Clásico rivalry unmissable. Now, he's back for more",
-      "description": "Thirteen years after helping turn soccer's biggest rivalry into must-see chaos, Real Madrid coach José Mourinho returns to face Barcelona in El Clásico with something to prove",
-      "published": "2026-10-24T08:58:34Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50245408/jose-mourinho-el-clasico-unmissable-real-madrid-barcelona-guardiola-messi-ronaldo",
-      "images": [
-        {
-          "dataSourceIdentifier": "f90ec9e92761b",
-          "id": 50246673,
-          "type": "header",
-          "name": "Real Madrid v Barcelona Jose Mourinho and Pep Guardiola [1296x729]",
-          "credit": "Jasper Juinen/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1022/r1734418_2_1296x729_16-9.jpg"
+          "url": "https://a.espncdn.com/photo/2026/0521/r1661518_1296x729_16-9.jpg"
         },
         {
           "dataSourceIdentifier": "b83fbd1b78342",
@@ -157648,138 +157598,106 @@
         },
         {
           "type": "Media",
-          "name": "Before 'the special one', José Mourinho was 'the Barca one'",
-          "caption": "Before 'the special one', José Mourinho was 'the Barca one'",
+          "name": "Is El Clásico more important for Barcelona or Real Madrid?",
+          "caption": "Is El Clásico more important for Barcelona or Real Madrid?",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1022/dm_261022_When_the_special_one_was_the_Barca_one/dm_261022_When_the_special_one_was_the_Barca_one.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/dm_261023_COM_SOC_Analysis_Is_El_ClC3A1sico_more_important_for_Barcelona_or_Real_Madrid3F_GLOBAL_2026-10-23/dm_261023_COM_SOC_Analysis_Is_El_ClC3A1sico_more_important_for_Barcelona_or_Real_Madrid3F_GLOBAL_2026-10-23.jpg"
         }
       ]
     },
     {
-      "id": 50242608,
-      "headline": "Valverde and Güler show why they'll be key for Madrid in Sunday's Clásico",
-      "description": "Kylian Mbappé has warned that \"not much\" should be read into Madrid's dismantling of RB Leipzig ahead of Sunday's Clásico, but Jose Mourinho is surely starting to figure out who his best XI is.",
-      "published": "2026-10-22T14:11:49Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50242608/valverde-guler-show-why-theyll-key-madrid-sundays-clasico",
+      "id": 50261693,
+      "headline": "El Clásico is served! Get a taste of the LaLiga showdown",
+      "description": "El Clásico is served! Get a taste of the LaLiga showdown",
+      "published": "2026-10-24T00:19:46Z",
+      "link": "https://www.espn.com/video/clip/_/id/50261693/el-clasico-served-get-taste-laliga-showdown",
       "images": [
         {
-          "dataSourceIdentifier": "76b49c1128162",
-          "id": 50242699,
-          "type": "header",
-          "name": "Fede Valverde and Arda Güler [1296x729]",
-          "caption": "Fede Valverde and Arda Güler",
-          "alt": "Fede Valverde and Arda Güler",
-          "credit": "Jesus Troyano/Real Madrid",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1021/r1734261_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Robson: Real Madrid's quality up top was too much for RB Leipzig",
-          "caption": "Robson: Real Madrid's quality up top was too much for RB Leipzig",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1021/dm_261021_COM_SOC_Analysis_Robson3A_Real_MadridE28099s_quality_up_top_was_too_much_for_RB_Leipzig_GLOBAL_2026-10-2/dm_261021_COM_SOC_Analysis_Robson3A_Real_MadridE28099s_quality_up_top_was_too_much_for_RB_Leipzig_GLOBAL_2026-10-2.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50240888,
-      "headline": "Levante vs. Athletic Club - Game Highlights",
-      "description": "Watch the Game Highlights from Levante vs. Athletic Club, 10/21/2026",
-      "published": "2026-10-21T20:09:53Z",
-      "link": "https://www.espn.com/video/clip/_/id/50240888/levante-vs-athletic-club-game-highlights",
-      "images": [
-        {
-          "name": "Levante vs. Athletic Club - Game Highlights",
-          "caption": "Watch the Game Highlights from Levante vs. Athletic Club, 10/21/2026",
+          "name": "El Clásico is served! Get a taste of the LaLiga showdown",
+          "caption": "El Clásico is served! Get a taste of the LaLiga showdown",
           "alt": "",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1021/5fd41580-6188-495f-bbec-b7b5590d6f49/5fd41580-6188-495f-bbec-b7b5590d6f49.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/ss_20261023_201605091_3707432/ss_20261023_201605091_3707432.jpg"
         }
       ]
     },
     {
-      "id": 50229304,
-      "headline": "What it takes to win a Ballon d'Or: Trophies, goals and playing the PR game",
-      "description": "It's no longer enough to be the best on-field player in order to have a shot at the Ballon d'Or, soccer's top individual prize. You have to make your case in the media, too -- and it takes a lot of work.",
-      "published": "2026-10-21T14:07:53Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50229304/ballon-dor-industry-harry-kane-lamine-yamal-kylian-mbappe",
+      "id": 50260417,
+      "headline": "Alavés vs. Málaga - Game Highlights",
+      "description": "Watch the Game Highlights from Alavés vs. Málaga, 10/23/2026",
+      "published": "2026-10-23T21:00:29Z",
+      "link": "https://www.espn.com/video/clip/_/id/50260417/alaves-vs-malaga-game-highlights",
       "images": [
         {
-          "dataSourceIdentifier": "8e80aa0ecb563",
-          "id": 50236770,
-          "type": "header",
-          "name": "Kane, Mbappe, Yamal [1296x729]",
-          "credit": "Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1021/r1733865_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "6c25d892f20f3",
-          "id": 50237375,
-          "type": "header",
-          "name": "Rodri with Ballon d'Or prize 261021 [1296x729]",
-          "credit": "Joe Prior/Visionhaus via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1021/r1733886_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Moreno: Flick needs to address Yamal's performance vs. PSG",
-          "caption": "Moreno: Flick needs to address Yamal's performance vs. PSG",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1020/dm_261020_COM_SOC_Analysis_Moreno_Flick_needs_to_address_Yamals_performance_vs_PSG_20261020_GLOBAL/dm_261020_COM_SOC_Analysis_Moreno_Flick_needs_to_address_Yamals_performance_vs_PSG_20261020_GLOBAL.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50237026,
-      "headline": "Barcelona confirm Dani Olmo adductor injury, could miss one month",
-      "description": "Barcelona confirm Dani Olmo adductor injury, could miss 1 month",
-      "published": "2026-10-21T17:28:24Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50237026/barcelona-dani-olmo-adductor-injury-one-month-out",
-      "images": [
-        {
-          "dataSourceIdentifier": "70f369454468f",
-          "id": 50237093,
-          "type": "header",
-          "name": " Dani Olmo of Barcelona [1296x729]",
-          "credit": "Photo by Federico Pestellini/Eurasia Sport Images/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1021/r1733877_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "ElClásico promo: Barcelona vs. Real Madrid",
-          "caption": "ElClásico promo: Barcelona vs. Real Madrid",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1019/dm_261019_el_clasico_promo/dm_261019_el_clasico_promo.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50236704,
-      "headline": "Flick: Rodri is rested for El Clasico",
-      "description": "Flick: Rodri is rested for El Clasico",
-      "published": "2026-10-21T12:02:32Z",
-      "link": "https://www.espn.com/video/clip/_/id/50236704/rodri-rested-el-clasico",
-      "images": [
-        {
-          "name": "Flick: Rodri is rested for El Clasico",
-          "caption": "Flick: Rodri is rested for El Clasico",
+          "name": "Alavés vs. Málaga - Game Highlights",
+          "caption": "Watch the Game Highlights from Alavés vs. Málaga, 10/23/2026",
           "alt": "",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1021/dm_261021_Flick_Rodri_is_rested_for_El_Clasico/dm_261021_Flick_Rodri_is_rested_for_El_Clasico.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1023/952cc53d-7a6a-4a43-bed7-681021c5f810/952cc53d-7a6a-4a43-bed7-681021c5f810.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50260129,
+      "headline": "Will Carrick survive the weekend as Man United head coach?",
+      "description": "Will Carrick survive the weekend as Man United head coach?",
+      "published": "2026-10-23T19:54:06Z",
+      "link": "https://www.espn.com/video/clip/_/id/50260129/will-carrick-survive-weekend-man-united-head-coach",
+      "images": [
+        {
+          "name": "Will Carrick survive the weekend as Man United head coach?",
+          "caption": "Will Carrick survive the weekend as Man United head coach?",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/dm_261023_COM_SOC_Analysis_Will_Carrick_survive_the_weekend_as_Man_United_head_coach3F__GLOBAL_2026-10-23/dm_261023_COM_SOC_Analysis_Will_Carrick_survive_the_weekend_as_Man_United_head_coach3F__GLOBAL_2026-10-23.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50260126,
+      "headline": "Is El Clásico more important for Barcelona or Real Madrid?",
+      "description": "Is El Clásico more important for Barcelona or Real Madrid?",
+      "published": "2026-10-23T19:53:33Z",
+      "link": "https://www.espn.com/video/clip/_/id/50260126/is-el-clasico-more-important-barcelona-real-madrid",
+      "images": [
+        {
+          "name": "Is El Clásico more important for Barcelona or Real Madrid?",
+          "caption": "Is El Clásico more important for Barcelona or Real Madrid?",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/dm_261023_COM_SOC_Analysis_Is_El_ClC3A1sico_more_important_for_Barcelona_or_Real_Madrid3F_GLOBAL_2026-10-23/dm_261023_COM_SOC_Analysis_Is_El_ClC3A1sico_more_important_for_Barcelona_or_Real_Madrid3F_GLOBAL_2026-10-23.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50255747,
+      "headline": "Transfer rumors, news: Barcelona to end up signing Sullivan?",
+      "description": "Cavan Sullivan has a pre-contract agreement with Manchester City, but could Barcelona swoop up and sign the young American prospect? Transfer Talk has the latest.",
+      "published": "2026-10-23T18:39:43Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50255747/transfer-rumors-news-comos-paz-destroyed-man-united-now-want-sign-him",
+      "images": [
+        {
+          "dataSourceIdentifier": "bf828bd22715a",
+          "id": 50259584,
+          "type": "header",
+          "name": "Cavan Sullivan [1296x729]",
+          "credit": "(Photo by Terence Lewis/Icon Sportswire via Getty Images)",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1023/r1735106_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Who is to blame at Manchester United?",
+          "caption": "Who is to blame at Manchester United?",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1022/dm_261022_Who_is_to_blame_at_Manchester_United/dm_261022_Who_is_to_blame_at_Manchester_United.jpg"
         }
       ]
     }
@@ -167005,7 +166923,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-24T09:33:37.707Z",
+    "updatedAt": "2026-10-25T09:49:44.886Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
