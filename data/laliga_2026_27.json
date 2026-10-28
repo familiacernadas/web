@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-27T10:36:42.870Z",
+    "generatedAt": "2026-10-28T11:21:43.901Z",
     "requestsThisRun": 17,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -157158,6 +157158,149 @@
   },
   "news": [
     {
+      "id": 50306336,
+      "headline": "LaLiga chief Javier Tebas holds talks with Chinese ambassador over Mbappé-Mao controversy",
+      "description": "LaLiga president Javier Tebas has met with China's Ambassador to Spain, Yao Jing, to \"find solutions\" to the Kylian Mbappé alleged dictator comment.",
+      "published": "2026-10-28T10:38:03Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50306336/laliga-chief-javier-tebas-holds-crisis-talks-chinese-ambassador-mbappe-mao-controversy",
+      "images": [
+        {
+          "dataSourceIdentifier": "3d5bb437a1049",
+          "id": 50306276,
+          "type": "header",
+          "name": "Kylian Mbappe [1296x729]",
+          "credit": "Photo by Pedro Salado/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1028/r1737420_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Mourinho: Real Madrid won El Clásico with all the merit",
+          "caption": "Mourinho: Real Madrid won El Clásico with all the merit",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1026/dm_261026_Mourinho_Real_Madrid_won_El_Clasico_with_all_the_merit/dm_261026_Mourinho_Real_Madrid_won_El_Clasico_with_all_the_merit.jpg"
+        }
+      ]
+    },
+    {
+      "id": 49637958,
+      "headline": "Arteta, Alonso, Iraola: Three Premier League managers all come from one tiny club",
+      "description": "Whether it be the Premier League, Champions League or World Cup, hiring a coach from Spain's northern coast is bringing clubs guaranteed success.",
+      "published": "2026-10-28T10:01:50Z",
+      "link": "https://www.espn.com/soccer/story/_/id/49637958/arteta-alonso-iraola-tiny-basque-club-shaped-premier-league-top-bosses",
+      "images": [
+        {
+          "dataSourceIdentifier": "f2912e253f01f",
+          "id": 49637897,
+          "type": "header",
+          "name": "Arteta, Iraola, Alonso [1296x729]",
+          "credit": "Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0817/r1702904_1296x729_16-9.jpg"
+        },
+        {
+          "dataSourceIdentifier": "8157161cbed9e",
+          "id": 49637964,
+          "type": "header",
+          "name": "Mikel Arteta",
+          "caption": "Mikel Arteta helped Arsenal to their first Premier League title in over two decades last season.",
+          "alt": "Mikel Arteta, Manager of Arsenal,  celebrates with the Premier League trophy, as Arsenal are crowned the Champions of the Premier League",
+          "credit": "Michael Regan/Getty Images For Premier League",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/0619/r1675980_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Alonso: Chelsea need to have maturity to deal with difficult moments",
+          "caption": "Alonso: Chelsea need to have maturity to deal with difficult moments",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1024/dm_261024_Alonso_Chelsea_need_to_have_maturity_to_deal_with_difficult_moments/dm_261024_Alonso_Chelsea_need_to_have_maturity_to_deal_with_difficult_moments.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50301676,
+      "headline": "Espanyol, with Watt among owners, sack González after loss to 4th-tier side",
+      "description": "Espanyol, the LaLiga side whose ownership group includes former NFL star J.J. Watt, have sacked coach Manolo González following Tuesday's Copa del Rey exit to fourth-tier side Sestao River.",
+      "published": "2026-10-27T22:59:30Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50301676/espanyol-watt-owners-sack-gonzalez-loss-4th-tier-side",
+      "images": [
+        {
+          "dataSourceIdentifier": "7cd69177968cd",
+          "id": 50301934,
+          "type": "header",
+          "name": "Manolo González Espanyol_261027 [1296x729]",
+          "caption": "Espanyol fired manager Manolo González after a shocking Copa del Rey loss to fourth-tier Sestao River on Tuesday.",
+          "alt": "Espanyol fired manager Manolo González after a shocking Copa del Rey loss to fourth-tier Sestao River on Tuesday.",
+          "credit": "Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1027/r1737240_1296x729_16-9.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50301141,
+      "headline": "Yamal excited despite Ballon d'Or miss: 'Good things take time'",
+      "description": "Barcelona star Lamine Yamal won best young talent for a third-straight year at Monday's Ballon d'Or, but the 19-year-old has his sights set on the big prize.",
+      "published": "2026-10-27T21:46:47Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50301141/yamal-excited-ballon-dor-miss",
+      "images": [
+        {
+          "dataSourceIdentifier": "78e5c796ef3e7",
+          "id": 50203253,
+          "type": "header",
+          "name": "Lamine Yamal celeb [1296x729]",
+          "caption": "Lamine Yamal struck the opening goal in Barcelona's win over Real Betis.",
+          "alt": "Lamine Yamal right winger of Barcelona and Spain celebrates after scoring his sides first goal during the LaLiga EA Sports 2026/27 match between Real Betis Balompie and FC Barcelona at Estadio La Cartuja on October 18, 2026 in Seville, Spain.",
+          "credit": "Jose Breton/Pics Action/NurPhoto via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1017/r1732115_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Flick 'not accepting excuses' after Barcelona's El Clásico defeat",
+          "caption": "Flick 'not accepting excuses' after Barcelona's El Clásico defeat",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1026/dm_261026_COM_SOC_Presser_Flick_not_accepting_excuses_after_Barcelonas_El_Clasico_defeat_20261026_GLOBA/dm_261026_COM_SOC_Presser_Flick_not_accepting_excuses_after_Barcelonas_El_Clasico_defeat_20261026_GLOBA.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50295834,
+      "headline": "Why Real Madrid's Mbappé, Barcelona's Yamal lost Ballon d'Or",
+      "description": "Kylian Mbappé and Lamine Yamal both achieved greatness last season, but it still wasn't enough for either of them to claim soccer's top individual prize.",
+      "published": "2026-10-27T14:04:11Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50295834/why-real-madrid-kylian-mbappe-barcelona-lamine-yamal-lost-ballon-dor-harry-kane",
+      "images": [
+        {
+          "dataSourceIdentifier": "8770ecae33bae",
+          "id": 50297063,
+          "type": "header",
+          "name": "Real Madrid's Kylian Mbappe Barcelona's Lamine Yamal split pic [1296x729]",
+          "credit": "Pedro Salado/Getty Images / David Ramos/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1027/r1736954_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Why Harry Kane was the rightful winner of the Ballon d'Or",
+          "caption": "Why Harry Kane was the rightful winner of the Ballon d'Or",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1026/dm_261026_COM_SOC_Analysis_Why_Harry_Kane_was_the_rightful_winner_of_the_Ballon_dOr_20261026_GLOBAL/dm_261026_COM_SOC_Analysis_Why_Harry_Kane_was_the_rightful_winner_of_the_Ballon_dOr_20261026_GLOBAL.jpg"
+        }
+      ]
+    },
+    {
       "id": 50290210,
       "headline": "If Clásico win is any indication, Mourinho's Madrid might just be special again",
       "description": "José Mourinho hasn't hit the ground running in Madrid, but the Clásico win over Barcelona showed that The Special One still has some magic left in him.",
@@ -157187,29 +157330,29 @@
       ]
     },
     {
-      "id": 50295266,
-      "headline": "Transfer rumors, news: Real Madrid eye Liverpool's Alexis Mac Allister",
-      "description": "Liverpool midfielder Alexis Mac Allister has admirers at Real Madrid, while the Reds line up potential replacements. Transfer Talk has the latest.",
-      "published": "2026-10-27T08:45:19Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50295266/transfer-rumors-news-real-madrid-eye-liverpool-alexis-mac-allister",
+      "id": 50295111,
+      "headline": "Kylian Mbappé dropped by Chinese brands after alleged dictator comment",
+      "description": "Kylian Mbappé's face appears in ads across China, but now companies are cutting ties with him after he made comments apparently referring to Mao Zedong.",
+      "published": "2026-10-27T15:57:16Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50295111/real-madrid-kylian-mbappe-chinese-brands-dictator-comment",
       "images": [
         {
-          "dataSourceIdentifier": "bb37513af4467",
-          "id": 49883958,
+          "dataSourceIdentifier": "c73c201a9acac",
+          "id": 49998044,
           "type": "header",
-          "name": "Alexis Mac Allister [1296x729]",
-          "credit": "Robbie Jay Barratt - AMA/Getty Images",
+          "name": "Mbappe [1296x729]",
+          "credit": "Jose Breton/Pics Action/NurPhoto via Getty Images",
           "height": 729,
           "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0909/r1713962_1296x729_16-9.jpg"
+          "url": "https://a.espncdn.com/photo/2026/0921/r1719974_1296x729_16-9.jpg"
         },
         {
           "type": "Media",
-          "name": "Who will replace Carrick if he's sacked as Manchester United head coach?",
-          "caption": "Who will replace Carrick if he's sacked as Manchester United head coach?",
+          "name": "Mbappé's brace powers Real Madrid to the win over Barca",
+          "caption": "Mbappé's brace powers Real Madrid to the win over Barca",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1026/dm_261026_COM_SOC_Analysis_Who_will_replace_Carrick_if_heE28099s_sacked_as_Manchester_United_head_coach3F_GLOBAL_2/dm_261026_COM_SOC_Analysis_Who_will_replace_Carrick_if_heE28099s_sacked_as_Manchester_United_head_coach3F_GLOBAL_2.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1025/b88457ba3822438581321ab4b5b9100b1096/b88457ba3822438581321ab4b5b9100b1096.jpg"
         }
       ]
     },
@@ -157531,172 +157674,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1025/dm_261025_Kylian_Mbappe_double_wins_El_Clasico_for_Real_Madrid/dm_261025_Kylian_Mbappe_double_wins_El_Clasico_for_Real_Madrid.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50278896,
-      "headline": "Barcelona vs. Real Madrid player ratings as Kylian Mbappé sinks out-of-sorts hosts",
-      "description": "A brace from Kylian Mbappé -- the latter his 100th goal for the club -- claimed a famous victory for Real Madrid over Barcelona at the Spotify Camp Nou.",
-      "published": "2026-10-25T22:39:08Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50278896/barcelona-real-madrid-laliga-kylian-mbappe-jude-bellingham-raphinha",
-      "images": [
-        {
-          "dataSourceIdentifier": "b1af658d847d5",
-          "id": 50281404,
-          "type": "header",
-          "name": "Kylian Mbappe [1296x729]",
-          "alt": "Kylian Mbappe celebrates.",
-          "credit": "(Photo by Josep LAGO / AFP via Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1025/r1736170_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "4ab5590a51ae9",
-          "id": 50281358,
-          "type": "header",
-          "name": "Raphinha [1296x729]",
-          "alt": "Raphinha celebrates.",
-          "credit": "(Photo by David Ramirez/Soccrates/Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1025/r1736167_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "933c7b5135a5d",
-          "id": 50281335,
-          "type": "header",
-          "name": "Marc Cucurella [1296x729]",
-          "alt": "Marc Cucurella tackles Lamine Yamal.",
-          "credit": "(Photo By Javier Borrego/Europa Press via Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1025/r1736165_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Flick: El Clásico is the best game football offers",
-          "caption": "Flick: El Clásico is the best game football offers",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1024/dm_261024_Flick_El_Clasico_is_the_best_game_football_offers/dm_261024_Flick_El_Clasico_is_the_best_game_football_offers.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50281290,
-      "headline": "Mbappé's brace powers Real Madrid to the win over Barca",
-      "description": "Mbappé's brace powers Real Madrid to the win over Barca",
-      "published": "2026-10-25T22:16:31Z",
-      "link": "https://www.espn.com/video/clip/_/id/50281290/mbappe-brace-powers-real-madrid-win-barca",
-      "images": [
-        {
-          "name": "Mbappé's brace powers Real Madrid to the win over Barca",
-          "caption": "Mbappé's brace powers Real Madrid to the win over Barca",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1025/b88457ba3822438581321ab4b5b9100b1096/b88457ba3822438581321ab4b5b9100b1096.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50253144,
-      "headline": "Mbappé double gives Madrid Clasico win over Barcelona",
-      "description": "Real Madrid cut the gap on LaLiga leaders Barcelona to three points after Kylian Mbappé struck a late winner in a 2-1 win at the Nou Camp on Sunday.",
-      "published": "2026-10-25T22:13:31Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882832",
-      "images": [
-        {
-          "dataSourceIdentifier": "d0b45f1ec0f76",
-          "id": 50280960,
-          "type": "header",
-          "name": "Mbappe Madrd celeb vs Barca_261025 [1024x576]",
-          "caption": "Real Madrid players celebrate after scoring a goal against Barcelona in LaLiga.",
-          "alt": "Real Madrid players celebrate after scoring a goal against Barcelona in LaLiga.",
-          "credit": "Getty Images",
-          "height": 576,
-          "width": 1024,
-          "url": "https://a.espncdn.com/photo/2026/1025/r1736144_1024x576_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Mourinho: Real Madrid won El Clásico with all the merit",
-          "caption": "Mourinho: Real Madrid won El Clásico with all the merit",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1026/dm_261026_Mourinho_Real_Madrid_won_El_Clasico_with_all_the_merit/dm_261026_Mourinho_Real_Madrid_won_El_Clasico_with_all_the_merit.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50246032,
-      "headline": "Kylian Mbappé scores 100th goal for Real Madrid in dramatic Clásico win",
-      "description": "Kylian Mbappé has scored his 100th goal for Real Madrid.",
-      "published": "2026-10-25T23:26:54Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50246032/kylian-mbappe-scores-100th-goal-real-madrid-dramatic-clasico-win",
-      "images": [
-        {
-          "dataSourceIdentifier": "930042840bc3b",
-          "id": 50280443,
-          "type": "header",
-          "name": "Kylian Mbappe [1296x729]",
-          "alt": "Kylian Mbappe celebrates.",
-          "credit": "(Photo by Lluis GENE / AFP via Getty Images)",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1025/r1736100_1296x729_16-9.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50275230,
-      "headline": "Real Madrid goalkeeper Thibaut Courtois out of Clasico with flu",
-      "description": "Real Madrid goalkeeper Thibaut Courtois will miss the team's Clásico clash with Barcelona with flu.",
-      "published": "2026-10-25T19:31:20Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50275230/real-madrid-goalkeeper-thibaut-courtois-clasico-vs-barcelona-flu",
-      "images": [
-        {
-          "dataSourceIdentifier": "1bf9edf924071",
-          "id": 49877988,
-          "type": "header",
-          "name": "Thibaut Courtois [1296x729]",
-          "alt": "MADRID, SPAIN - SEPTEMBER 08: Thibaut Courtois of Real Madrid CF celebrates during the UEFA Champions League 2026/27 League Phase MD1 match between Real Madrid C.F. and FC Internazionale Milano at Estadio Santiago Bernabeu on September 08, 2026 in Madrid,",
-          "credit": "Diego Souto/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0909/r1713669_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "1dbec0e83b8a5",
-          "id": 48835999,
-          "type": "header",
-          "name": "Mourinho and Perez 260521 [1296x729]",
-          "credit": "FRANCK FIFE/AFP via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/0521/r1661518_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "b83fbd1b78342",
-          "id": 50245645,
-          "type": "header",
-          "name": "Jose Mourinho [1296x729]",
-          "caption": "Jose Mourinho",
-          "alt": "Jose Mourinho",
-          "credit": "Pressefoto Ulmer\\ullstein bild",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1022/r1734402_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Is El Clásico more important for Barcelona or Real Madrid?",
-          "caption": "Is El Clásico more important for Barcelona or Real Madrid?",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1023/dm_261023_COM_SOC_Analysis_Is_El_ClC3A1sico_more_important_for_Barcelona_or_Real_Madrid3F_GLOBAL_2026-10-23/dm_261023_COM_SOC_Analysis_Is_El_ClC3A1sico_more_important_for_Barcelona_or_Real_Madrid3F_GLOBAL_2026-10-23.jpg"
         }
       ]
     }
@@ -166922,7 +166899,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-27T10:36:42.869Z",
+    "updatedAt": "2026-10-28T11:21:43.901Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
