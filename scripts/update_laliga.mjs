@@ -897,6 +897,7 @@ function extractLeadersFromJSON(
 async function getESPNScorers() {
     const json = await fetchJSON(
         `${ESPN_SITE_BASE}/${ESPN_LEAGUE}/statistics`,
+        {},
         "ESPN goleadores"
     );
     const goalsBlock = (json?.stats || []).find(x =>
@@ -1636,84 +1637,58 @@ function teamMetrics(
             aggregate(matches)
     };
 }
-function goalkeeperMetrics(
-    data,
-    teamId,
-    beforeTimestamp
-) {
+function goalkeeperMetrics(data, teamId, beforeTimestamp) {
     let saves = 0;
+    let shotsOnTargetFaced = 0;
     let conceded = 0;
     let appearances = 0;
-    for (
-        const match
-        of data.matches
-    ) {
-        if (
-            !match.timestamp ||
-            match.timestamp >=
-                beforeTimestamp
-        ) {
-            continue;
-        }
-        if (
-            ![
-                "FT",
-                "AET",
-                "PEN"
-            ].includes(
-                match.status
-            )
-        ) {
-            continue;
-        }
-        const statistics =
-            match.details?.statistics ||
-            [];
-        const teamStats =
-            statistics.find(
-                x =>
-                    x.teamId ===
-                    teamId
-            );
-        if (
-            teamStats
-        ) {
-            saves +=
-                number(
-                    teamStats.goalkeeperSaves
-                );
-        }
-        const isHome =
-            match.home?.id ===
-            teamId;
-        const goals =
-            isHome
-                ? match.score?.fulltime?.away
-                : match.score?.fulltime?.home;
-        conceded +=
-            number(
-                goals
-            );
+    let matchesWithValidStats = 0;
+
+    for (const match of data.matches) {
+        if (!match.timestamp || match.timestamp >= beforeTimestamp) continue;
+        if (!["FT", "AET", "PEN"].includes(String(match.status || "").toUpperCase())) continue;
+
+        const isHome = Number(match.home?.id) === Number(teamId);
+        const isAway = Number(match.away?.id) === Number(teamId);
+        if (!isHome && !isAway) continue; // CRÍTICO: solo partidos de este equipo.
+
+        const goalsAgainst = isHome
+            ? match.score?.fulltime?.away
+            : match.score?.fulltime?.home;
+        if (goalsAgainst === null || goalsAgainst === undefined || !Number.isFinite(Number(goalsAgainst))) continue;
+
         appearances++;
+        conceded += Number(goalsAgainst);
+
+        const stats = Array.isArray(match.details?.statistics) ? match.details.statistics : [];
+        const ownStats = stats.find(x => Number(x?.teamId) === Number(teamId));
+        const opponentId = isHome ? match.away?.id : match.home?.id;
+        const opponentStats = stats.find(x => Number(x?.teamId) === Number(opponentId));
+        const ownSaves = ownStats?.goalkeeperSaves;
+        const opponentShotsOnTarget = opponentStats?.shotsOnTarget;
+        const validSaves = ownSaves !== null && ownSaves !== undefined && ownSaves !== "" && Number.isFinite(Number(ownSaves) );
+        const validShots = opponentShotsOnTarget !== null && opponentShotsOnTarget !== undefined && opponentShotsOnTarget !== "" && Number.isFinite(Number(opponentShotsOnTarget));
+
+        if (validSaves && validShots && Number(opponentShotsOnTarget) >= Number(ownSaves)) {
+            saves += Number(ownSaves);
+            shotsOnTargetFaced += Number(opponentShotsOnTarget);
+            matchesWithValidStats++;
+        }
     }
-    const shots =
-        saves +
-        conceded;
+
+    // No estimar el porcentaje a partir de paradas + goles: sin tiros a puerta reales
+    // esa cifra no es una estadística válida. Exigimos una muestra mínima de datos.
+    const savePercentage = matchesWithValidStats >= 3 && shotsOnTargetFaced > 0
+        ? Number((saves / shotsOnTargetFaced * 100).toFixed(2))
+        : null;
+
     return {
         appearances,
+        matchesWithValidStats,
         saves,
+        shotsOnTargetFaced,
         conceded,
-        shots,
-        savePercentage:
-            shots
-                ? Number(
-                    (
-                        saves /
-                        shots *
-                        100
-                    ).toFixed(2)
-                )
-                : null
+        savePercentage
     };
 }
 function formationMetrics(
@@ -1863,15 +1838,15 @@ function createPrediction(
             home.venue.gfPerGame -
             away.venue.gaPerGame
         ) *
-        0.25;
+        0.35;
     awayScore +=
         (
             away.venue.gfPerGame -
             home.venue.gaPerGame
         ) *
-        0.25;
+        0.35;
     homeScore +=
-        0.30;
+        0.25;
     const homeGK =
         goalkeeperMetrics(
             data,
@@ -1884,28 +1859,8 @@ function createPrediction(
             match.away.id,
             timestamp
         );
-    if (
-        homeGK.savePercentage !==
-        null
-    ) {
-        homeScore +=
-            (
-                homeGK.savePercentage -
-                70
-            ) /
-            100;
-    }
-    if (
-        awayGK.savePercentage !==
-        null
-    ) {
-        awayScore +=
-            (
-                awayGK.savePercentage -
-                70
-            ) /
-            100;
-    }
+    // Las métricas de porteros se guardan como evidencia, pero no alteran el
+    // pronóstico hasta disponer de una fuente consistente y una muestra suficiente.
     homeScore =
         Math.max(
             0.05,
@@ -2003,17 +1958,13 @@ function createPrediction(
             version:
                 "3.0-official",
             weights: {
-                form:
-                    0.30,
-                attackDefense:
-                    0.30,
-                homeAdvantage:
-                    0.20,
-                goalkeeper:
-                    0.10,
-                tacticalAbsences:
-                    0.10
-            }
+                form: 0.40,
+                attackDefense: 0.35,
+                homeAdvantage: 0.25,
+                goalkeeper: 0,
+                tacticalAbsences: 0
+            },
+            notes: "Las estadísticas de portero y las ausencias tácticas no modifican las probabilidades; se conservan como evidencia solo cuando hay datos verificables."
         },
         evidence: {
             homeLast5:
@@ -2097,11 +2048,11 @@ function createPredictionV31(data, match) {
             version: "3.1-experimental",
             baseModel: "3.0-official",
             weights: {
-                form: 0.30,
-                attackDefense: 0.30,
-                homeAdvantage: 0.20,
-                goalkeeper: 0.10,
-                tacticalAbsences: 0.10
+                form: 0.40,
+                attackDefense: 0.35,
+                homeAdvantage: 0.25,
+                goalkeeper: 0,
+                tacticalAbsences: 0
             },
             experimentalAdjustment: {
                 europeanLoad: 0.05
@@ -2114,19 +2065,32 @@ function createPredictionV31(data, match) {
         }
     };
 }
+function isValidPreMatchPrediction(match, prediction) {
+    if (!prediction?.sign || !match?.timestamp) return false;
+    const generatedAt = Date.parse(prediction.generatedAt || "");
+    // No se evalúan pronósticos creados después del inicio del encuentro.
+    return Number.isFinite(generatedAt) && generatedAt < Number(match.timestamp) * 1000;
+}
+
 function updateModelBalance(data, predictionField, targetField) {
     const balance = {
         total: 0,
         correct: 0,
         accuracy: 0,
+        excludedPostMatch: 0,
         bySign: { "1": { total: 0, correct: 0 }, "X": { total: 0, correct: 0 }, "2": { total: 0, correct: 0 } },
         byDifficulty: { "fácil": { total: 0, correct: 0 }, "media": { total: 0, correct: 0 }, "difícil": { total: 0, correct: 0 } }
     };
     for (const match of data.matches) {
-        const prediction = match[predictionField];
-        if (!prediction?.sign || !["FT", "AET", "PEN"].includes(match.status)) continue;
+        if (!["FT", "AET", "PEN"].includes(String(match.status || "").toUpperCase())) continue;
         const real = getResult(match);
         if (!real) continue;
+        const prediction = match[predictionField];
+        if (!prediction?.sign) continue;
+        if (!isValidPreMatchPrediction(match, prediction)) {
+            balance.excludedPostMatch++;
+            continue;
+        }
         const correct = prediction.sign === real;
         balance.total++;
         if (correct) balance.correct++;
@@ -2143,124 +2107,8 @@ function updateModelBalance(data, predictionField, targetField) {
     balance.accuracy = balance.total ? Number((balance.correct / balance.total * 100).toFixed(2)) : 0;
     data[targetField] = balance;
 }
-function updatePredictionBalance(
-    data
-) {
-    const balance = {
-        total: 0,
-        correct: 0,
-        accuracy: 0,
-        bySign: {
-            "1": {
-                total: 0,
-                correct: 0
-            },
-            "X": {
-                total: 0,
-                correct: 0
-            },
-            "2": {
-                total: 0,
-                correct: 0
-            }
-        },
-        byDifficulty: {
-            "fácil": {
-                total: 0,
-                correct: 0
-            },
-            "media": {
-                total: 0,
-                correct: 0
-            },
-            "difícil": {
-                total: 0,
-                correct: 0
-            }
-        }
-    };
-    for (
-        const match
-        of data.matches
-    ) {
-        if (
-            !match.prediction?.sign
-        ) {
-            continue;
-        }
-        if (
-            ![
-                "FT",
-                "AET",
-                "PEN"
-            ].includes(
-                match.status
-            )
-        ) {
-            continue;
-        }
-        const real =
-            getResult(
-                match
-            );
-        if (!real) {
-            continue;
-        }
-        const prediction =
-            match.prediction.sign;
-        const correct =
-            prediction ===
-            real;
-        balance.total++;
-        if (correct) {
-            balance.correct++;
-        }
-
-   
-            if (
-            balance.bySign[
-                prediction
-            ]
-        ) {
-            balance.bySign[
-                prediction
-            ].total++;
-            if (correct) {
-                balance.bySign[
-                    prediction
-                ].correct++;
-            }
-        }
-        const difficulty =
-            match.prediction.difficulty ||
-            "media";
-        if (
-            balance.byDifficulty[
-                difficulty
-            ]
-        ) {
-            balance.byDifficulty[
-                difficulty
-            ].total++;
-            if (correct) {
-                balance.byDifficulty[
-                    difficulty
-                ].correct++;
-            }
-        }
-    }
-    balance.accuracy =
-        balance.total
-            ? Number(
-                (
-                    balance.correct /
-                    balance.total *
-                    100
-                ).toFixed(2)
-            )
-            : 0;
-    data.predictionBalance =
-        balance;
+function updatePredictionBalance(data) {
+    updateModelBalance(data, "prediction", "predictionBalance");
 }
 async function tryAPIFootballData(
     data
@@ -2289,16 +2137,13 @@ async function tryAPIFootballData(
                 ?.league
                 ?.standings?.[0] ||
             [];
-        if (
-            table.length
-        ) {
-            data.meta.apiFootballSeasonAvailable =
-                true;
-            data.meta.apiFootballStandings =
-                table.length;
-            console.log(
-                `API-Football clasificación disponible: ${table.length}`
-            );
+        if (table.length === 20) {
+            data.meta.apiFootballSeasonAvailable = true;
+            data.meta.apiFootballStandings = table.length;
+            console.log(`API-Football clasificación disponible: ${table.length}`);
+        } else {
+            data.meta.apiFootballSeasonAvailable = false;
+            console.warn(`API-Football devolvió ${table.length} equipos; no se considera validada la temporada.`);
         }
     } catch (error) {
         data.meta.apiFootballSeasonAvailable =
@@ -2517,6 +2362,24 @@ function validateSeasonCalendar(data) {
     if (uniqueIds.size !== ids.length) {
         errors.push(`Hay IDs duplicados: ${ids.length - uniqueIds.size}.`);
     }
+
+    const fixturePairs = new Set();
+    const teamIds = new Set();
+    for (const match of matches) {
+        const homeId = String(match.home?.id ?? "").trim();
+        const awayId = String(match.away?.id ?? "").trim();
+        if (!homeId || !awayId || homeId === "null" || awayId === "null") {
+            errors.push(`Partido ${match.id}: falta el identificador de uno de los equipos.`);
+            continue;
+        }
+        if (homeId === awayId) errors.push(`Partido ${match.id}: el equipo local y visitante son iguales.`);
+        teamIds.add(homeId);
+        teamIds.add(awayId);
+        const pair = `${homeId}|${awayId}`;
+        if (fixturePairs.has(pair)) errors.push(`Cruce local/visitante duplicado: ${match.home?.name} - ${match.away?.name}.`);
+        fixturePairs.add(pair);
+    }
+    if (teamIds.size !== 20) errors.push(`El calendario debe contener 20 equipos identificados; hay ${teamIds.size}.`);
 
     const byRound = new Map();
     const missingRound = [];
@@ -2793,61 +2656,57 @@ async function main() {
             }
         }
     }
-    console.log(
-        "9. Actualizando pronósticos..."
-    );
-    for (
-        const match
-        of data.matches
-    ) {
-        if (
-            !match.timestamp
-        ) {
-            continue;
-        }
-        if (
-            match.timestamp <=
-            now
-        ) {
-            continue;
-        }
-        const hours =
-            (
-                match.timestamp -
-                now
-            ) /
-            3600;
-        if (
-            !match.prediction
-        ) {
-            match.prediction =
-                createPrediction(
-                    data,
-                    match
-                );
-        }
-        if (
-            !match.prediction.lockedAt &&
-            hours <= 12
-        ) {
-            match.prediction.lockedAt =
-                new Date()
-                    .toISOString();
-        }
-    }
-    console.log(
-        "11. Calculando pronósticos V3.1 experimentales..."
-    );
+    console.log("9. Actualizando pronósticos...");
     for (const match of data.matches) {
-        if (!match.timestamp || match.timestamp <= now) continue;
-        if (!match.predictionV31 || !match.predictionV31.lockedAt) {
-            const hours = (match.timestamp - now) / 3600;
-            if (!match.predictionV31) {
-                match.predictionV31 = createPredictionV31(data, match);
-            }
-            if (!match.predictionV31.lockedAt && hours <= 12) {
-                match.predictionV31.lockedAt = new Date().toISOString();
-            }
+        if (!match.timestamp || !match.home?.id || !match.away?.id) continue;
+        if (match.timestamp <= now) continue; // No se fabrican pronósticos retrospectivos.
+
+        const hours = (match.timestamp - now) / 3600;
+        const oldPrediction = match.prediction;
+        const validLockedPrediction = Boolean(oldPrediction?.lockedAt) &&
+            Number.isFinite(Date.parse(oldPrediction.generatedAt || "")) &&
+            Date.parse(oldPrediction.generatedAt) < match.timestamp * 1000 &&
+            Number.isFinite(Date.parse(oldPrediction.lockedAt || "")) &&
+            Date.parse(oldPrediction.lockedAt) < match.timestamp * 1000;
+
+        // Se recalcula cada pronóstico provisional en cada ejecución. Solo se congela
+        // cuando ya estaba bloqueado con una generación realmente anterior al partido.
+        if (!validLockedPrediction) {
+            match.prediction = createPrediction(data, match);
+        }
+        if (!match.prediction.lockedAt && hours <= 12) {
+            match.prediction.lockedAt = new Date().toISOString();
+        }
+
+        // Mantener sincronizado el objeto que consume la sección de Quiniela.
+        match.quiniela = {
+            ...(match.quiniela && typeof match.quiniela === "object" ? match.quiniela : {}),
+            prediction: match.prediction.sign,
+            probability1: match.prediction.probabilities?.["1"] ?? null,
+            probabilityX: match.prediction.probabilities?.["X"] ?? null,
+            probability2: match.prediction.probabilities?.["2"] ?? null,
+            difficulty: match.prediction.difficulty ?? null,
+            confidence: match.prediction.confidence ?? null
+        };
+        delete match.quiniela.realResult;
+    }
+
+    console.log("10. Calculando pronósticos V3.1 experimentales...");
+    for (const match of data.matches) {
+        if (!match.timestamp || !match.home?.id || !match.away?.id || match.timestamp <= now) continue;
+        const hours = (match.timestamp - now) / 3600;
+        const oldPrediction = match.predictionV31;
+        const validLockedPrediction = Boolean(oldPrediction?.lockedAt) &&
+            Number.isFinite(Date.parse(oldPrediction.generatedAt || "")) &&
+            Date.parse(oldPrediction.generatedAt) < match.timestamp * 1000 &&
+            Number.isFinite(Date.parse(oldPrediction.lockedAt || "")) &&
+            Date.parse(oldPrediction.lockedAt) < match.timestamp * 1000;
+
+        if (!validLockedPrediction) {
+            match.predictionV31 = createPredictionV31(data, match);
+        }
+        if (!match.predictionV31.lockedAt && hours <= 12) {
+            match.predictionV31.lockedAt = new Date().toISOString();
         }
     }
     console.log(
@@ -3061,7 +2920,7 @@ async function main() {
         `Peticiones: ${requestsThisRun}`
     );
     console.log(
-        `Aciertos acumulados: ${
+        `Aciertos oficiales prepartido: ${
             data.predictionBalance.correct
         }/${
             data.predictionBalance.total
