@@ -5,7 +5,7 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-10-29T02:57:37.191Z",
+    "generatedAt": "2026-10-29T11:32:23.700Z",
     "requestsThisRun": 27,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
@@ -156110,6 +156110,54 @@
   },
   "news": [
     {
+      "id": 50316339,
+      "headline": "Spain's top two football divisions to observe minute's silence for train crash victims",
+      "description": "LaLiga have announced that a minute's silence will be held at all games in Spain's top two divisions this weekend in memory of the victims of the train crash in the province of Toledo.",
+      "published": "2026-10-29T10:32:00Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50316339/spain-top-two-football-divisions-observe-minutes-silence-train-crash-victims",
+      "images": [
+        {
+          "dataSourceIdentifier": "088f6a8bb53ad",
+          "id": 50316302,
+          "type": "header",
+          "name": "La liga [1296x729]",
+          "credit": "Burak Akbulut/Anadolu Agency/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1029/r1737982_1296x729_16-9.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50311567,
+      "headline": "Mbappé's 100 Real Madrid goals: Quicker than Ronaldo to hit century",
+      "description": "Kylian Mbappé has reached the 100-goal mark at Real Madrid. How does his century of strikes compare to some of the club's greatest forwards?",
+      "published": "2026-10-29T10:36:28Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50311567/mbappes-100-real-madrid-goals-quicker-ronaldo-hit-century",
+      "images": [
+        {
+          "dataSourceIdentifier": "cc526132abff5",
+          "id": 50312173,
+          "type": "header",
+          "name": "Kylian Mbappe [1296x729]",
+          "caption": "Kylian Mbappe",
+          "alt": "Kylian Mbappe",
+          "credit": "David Ramos/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1028/r1737810_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Real Madrid take the Clásico",
+          "caption": "Alex Kirkland recaps Real Madrid's performance against rivals Barcelona.",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1025/dm_261025_16x9_Real_Madrid_IA/dm_261025_16x9_Real_Madrid_IA.jpg"
+        }
+      ]
+    },
+    {
       "id": 50306327,
       "headline": "Barcelona fined €602 over Julián Álvarez approach",
       "description": "Barcelona have been fined €602 ($669) by the Royal Spanish Football Federation [RFEF] for approaching Julián Álvarez before notifying Atlético Madrid of their interest.",
@@ -156578,64 +156626,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1025/dm_261025_COM_SOC_Analysis_McManaman3A_Real_Madrid1155/dm_261025_COM_SOC_Analysis_McManaman3A_Real_Madrid1155.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50282143,
-      "headline": "Mourinho primes Madrid for statement win over Barça to blow LaLiga title race wide open",
-      "description": "Real Madrid haven't convinced this season, but José Mourinho's game plan overwhelmed Barça, and Los Blancos' 2-1 win brings them into the title race.",
-      "published": "2026-10-26T00:13:01Z",
-      "link": "https://www.espn.com/soccer/story/_/id/50282143/jose-mourinho-primes-real-madrid-statement-clasico-win-barcelona-blow-laliga-title-race-wide-open",
-      "images": [
-        {
-          "dataSourceIdentifier": "ccffb4a096780",
-          "id": 50282059,
-          "type": "header",
-          "name": "Kylian Mbappe 261025 [1296x729]",
-          "caption": "Kylian Mbappe",
-          "alt": "Kylian Mbappe",
-          "credit": "Javier Borrego/Europa Press via Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1025/r1736215_1296x729_16-9.jpg"
-        },
-        {
-          "dataSourceIdentifier": "cd8acb6814f68",
-          "id": 50282026,
-          "type": "header",
-          "name": "Pedri and Yan Diomande 261025 [1296x729]",
-          "caption": "Pedri and Yan Diomande",
-          "alt": "Pedri and Yan Diomande",
-          "credit": "David Ramirez/Soccrates/Getty Images",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1025/r1736210_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Mbappé's brace powers Real Madrid to the win over Barca",
-          "caption": "Mbappé's brace powers Real Madrid to the win over Barca",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1025/b88457ba3822438581321ab4b5b9100b1096/b88457ba3822438581321ab4b5b9100b1096.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50281913,
-      "headline": "Kylian Mbappé double wins El Clasico for Real Madrid",
-      "description": "Kylian Mbappé double wins El Clasico for Real Madrid",
-      "published": "2026-10-25T22:57:33Z",
-      "link": "https://www.espn.com/video/clip/_/id/50281913/kylian-mbappe-double-wins-el-clasico-real-madrid",
-      "images": [
-        {
-          "name": "Kylian Mbappé double wins El Clasico for Real Madrid",
-          "caption": "Kylian Mbappé double wins El Clasico for Real Madrid",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1025/dm_261025_Kylian_Mbappe_double_wins_El_Clasico_for_Real_Madrid/dm_261025_Kylian_Mbappe_double_wins_El_Clasico_for_Real_Madrid.jpg"
         }
       ]
     }
@@ -165861,7 +165851,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 51,
     "experimentalTotal": 10,
-    "updatedAt": "2026-10-29T02:57:37.191Z",
+    "updatedAt": "2026-10-29T11:32:23.700Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
