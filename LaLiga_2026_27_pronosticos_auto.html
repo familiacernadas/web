@@ -178,12 +178,13 @@ function normalizeScorerRow(s){
     return hit?.value??hit?.displayValue;
   };
   const goals=Number(s?.goals?.total ?? s?.goals ?? s?.value ?? findStat('totalGoals','goals') ?? 0);
-  const appearances=Number(s?.appearances ?? s?.matches ?? s?.played ?? findStat('appearances','apps') ?? NaN);
+  const rawAppearances=s?.appearances ?? s?.matches ?? s?.played ?? findStat('appearances','apps');
+  const appearances=rawAppearances===null||rawAppearances===undefined||rawAppearances===''?null:Number(rawAppearances);
   return {
     name:player?.name||player?.displayName||player?.fullName||s?.name||'',
     team:team?.name||team?.displayName||s?.teamName||'',
     goals:Number.isFinite(goals)?goals:0,
-    played:Number.isFinite(appearances)?appearances:null,
+    played:Number.isFinite(appearances)&&appearances>0?appearances:null,
     athleteId:String(player?.id||s?.athleteId||'')
   };
 }
@@ -517,6 +518,15 @@ function predict(home,away,standings){
 function predictionStore(){try{return JSON.parse(localStorage.getItem(PRED_CACHE_KEY)||'{}')}catch(e){return {};}}
 function savePredictionStore(x){localStorage.setItem(PRED_CACHE_KEY,JSON.stringify(x));}
 function outcome(h,a){return h>a?'1':h<a?'2':'X';}
+function predictionSign(p){
+ const values=[['1',Number(p?.ph??0)],['X',Number(p?.pd??0)],['2',Number(p?.pa??0)]];
+ return values.sort((a,b)=>b[1]-a[1])[0][0];
+}
+function matchKickoffMs(m){const t=new Date(m?.date||'').getTime();return Number.isFinite(t)?t:0;}
+function predictionWasPreMatch(saved,m){
+ const created=Number(saved?.createdAt||0),kickoff=matchKickoffMs(m);
+ return created>0&&kickoff>0&&created<kickoff;
+}
 function predictionResult(pred,m){
  if(m.state==='pre'||m.state==='in')return {cls:'pending',text:'Pendiente'};
  const actual=outcome(m.homeScore,m.awayScore),ok=pred.result===actual;
@@ -611,20 +621,26 @@ function selectRound(mode){
 
 /* NUEVO 2: crea y resuelve automáticamente todos los pronósticos disponibles. */
 function ensureAndResolveAllPredictions(matches,standings){
- const store=predictionStore();let changed=false;
- const ordered=[...(matches||[])].sort((a,b)=>new Date(a.date)-new Date(b.date));
+ const store=predictionStore();let changed=false;const now=Date.now();
+ const ordered=[...(matches||[])].sort((a,b)=>matchKickoffMs(a)-matchKickoffMs(b));
  ordered.forEach(m=>{
-  const existing=store[m.id];
-  const p=existing||predict(m.home,m.away,standings);
-  if(!existing){
-   store[m.id]={result:p.ph>p.pa&&p.ph>p.pd?'1':p.pa>p.ph&&p.pa>p.pd?'2':'X',score:p.score,ph:p.ph,pd:p.pd,pa:p.pa,createdAt:Date.now(),home:m.home,away:m.away,week:m.week};
-   changed=true;
-  }
-  if(m.state==='post'||m.state==='final'){
+  const id=String(m.id),existing=store[id],kickoff=matchKickoffMs(m);
+  const finished=m.state==='post'||m.state==='final';
+  const upcoming=m.state==='pre'&&kickoff>now;
+  // No crear pronósticos retrospectivos: hacerlo contaminaría el balance.
+  if(upcoming){
+   const p=predict(m.home,m.away,standings),next={
+    ...(existing||{}),result:predictionSign(p),score:p.score,
+    ph:p.ph,pd:p.pd,pa:p.pa,createdAt:now,
+    home:m.home,away:m.away,week:m.week
+   };
+   if(!existing||existing.result!==next.result||existing.ph!==next.ph||existing.pd!==next.pd||existing.pa!==next.pa||existing.score!==next.score||!existing.createdAt){
+    store[id]=next;changed=true;
+   }
+  }else if(finished&&existing){
    const actual=m.homeScore+' - '+m.awayScore,actualResult=outcome(m.homeScore,m.awayScore);
-   if(store[m.id].actual!==actual||store[m.id].actualResult!==actualResult){
-    store[m.id]={...store[m.id],actual,actualResult,resolvedAt:store[m.id].resolvedAt||Date.now()};
-    changed=true;
+   if(existing.actual!==actual||existing.actualResult!==actualResult){
+    store[id]={...existing,actual,actualResult,resolvedAt:existing.resolvedAt||now};changed=true;
    }
   }
  });
@@ -642,7 +658,7 @@ function renderSelectedRound(){
  setRoundButtonState();
  const store=ensureAndResolveAllPredictions(matchdayState.allMatches||matches,matchdayState.standings);
  el.innerHTML=matches.map(m=>{
-  const p=predict(m.home,m.away,matchdayState.standings),saved=store[m.id]||{result:p.ph>p.pa&&p.ph>p.pd?'1':p.pa>p.ph&&p.pa>p.pd?'2':'X',score:p.score,ph:p.ph,pd:p.pd,pa:p.pa};
+  const p=predict(m.home,m.away,matchdayState.standings),saved=store[String(m.id)]||{result:predictionSign(p),score:p.score,ph:p.ph,pd:p.pd,pa:p.pa};
   const dt=new Date(m.date).toLocaleString('es-ES',{weekday:'short',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}),finished=m.state==='post'||m.state==='final',status=predictionResult(saved,m),actual=finished?m.homeScore+' - '+m.awayScore:'Pendiente';
   return '<article class="card match"><div class="match-top"><span>Jornada '+esc(m.week)+'</span><span>'+esc(dt)+'</span></div><div class="teams">'+esc(m.home)+'<div class="score">'+(finished?esc(actual):esc(saved.score))+'</div>'+esc(m.away)+'</div><div class="pred"><span>Local <b>'+saved.ph+'%</b></span><span>Empate <b>'+saved.pd+'%</b></span><span>Visitante <b>'+saved.pa+'%</b></span></div><div class="resultline">Pronóstico: <b>'+esc(saved.result)+'</b> · '+(finished?'Resultado: <b>'+esc(actual)+'</b>':'Resultado: pendiente')+'</div><div class="match-actions"><span class="badge '+status.cls+'">'+status.text+'</span></div><div class="tv">'+tvInfo()+'</div><div class="analysis"><span class="tag">'+(finished?'RESULTADO':'PRONÓSTICO')+'</span><br>Modelo basado en fuerza del equipo, rendimiento disponible y ventaja de campo. El pronóstico oficial queda guardado para que la simulación posterior no lo modifique.</div></article>';
  }).join('');
@@ -656,7 +672,10 @@ function renderMatches(matches,standings){
 function updateStats(matches){
  const store=predictionStore();let total=0,hits=0;const signs={"1":{n:0,h:0},"X":{n:0,h:0},"2":{n:0,h:0}},conf={high:{n:0,h:0},mid:{n:0,h:0},low:{n:0,h:0}},resolved=[];
  Object.keys(store).forEach(id=>{
-  const saved=store[id],live=(matches||[]).find(m=>String(m.id)===String(id)),actual=live&&(live.state==='post'||live.state==='final')?outcome(live.homeScore,live.awayScore):saved.actualResult;
+  const saved=store[id],live=(matches||[]).find(m=>String(m.id)===String(id));
+  // Solo computar aciertos verificables: predicción guardada antes del inicio.
+  if(!live||!predictionWasPreMatch(saved,live))return;
+  const actual=(live.state==='post'||live.state==='final')?outcome(live.homeScore,live.awayScore):null;
   if(!actual||!['1','X','2'].includes(saved.result))return;
   const hit=saved.result===actual;total++;if(hit)hits++;
   if(signs[saved.result]){signs[saved.result].n++;if(hit)signs[saved.result].h++;}
@@ -728,7 +747,7 @@ function runSimulation(){
  const snaps=getHistoricalProfiles(matches);let total=0,hits=0;
  matches.forEach(m=>{
   if(!(m.state==='post'||m.state==='final'))return;
-  const saved=store[m.id];if(!saved)return;
+  const saved=store[String(m.id)];if(!saved||!predictionWasPreMatch(saved,m))return;
   const snap=snaps.get(String(m.id));if(!snap)return;
   const sim=simulationPrediction(m.home,m.away,snap,weights),actual=outcome(m.homeScore,m.awayScore);
   total++;if(sim.result===actual)hits++;
@@ -749,7 +768,7 @@ function renderQuiniela(matches){
  if(!matches||!matches.length){body.innerHTML='<tr><td colspan="10" class="loading">No hay partidos disponibles para esta jornada.</td></tr>';return;}
  const store=predictionStore();if(label){const n=Number(matches[0]?.week);label.textContent=Number.isFinite(n)?'Jornada '+n+' · '+matches.length+' partidos':'Jornada seleccionada · '+matches.length+' partidos';}
  body.innerHTML=matches.map((m,i)=>{
-  const p=store[m.id]||predict(m.home,m.away,matchdayState.standings),pick=p.result||'X',confidence=Math.max(Number(p.ph||0),Number(p.pd||0),Number(p.pa||0)),difficulty=100-confidence,diffClass=difficulty>=40?'high':difficulty>=30?'mid':'low',diffText=difficulty>=40?'Difícil':difficulty>=30?'Media':'Favorable',done=m.state==='post'||m.state==='final',actual=done?outcome(m.homeScore,m.awayScore):null,resultText=done?m.homeScore+'-'+m.awayScore:'—',hit=done&&actual===pick;
+  const p=store[String(m.id)]||predict(m.home,m.away,matchdayState.standings),pick=(m.state==='pre'?predictionSign(p):(p.result||predictionSign(p))),confidence=Math.max(Number(p.ph||0),Number(p.pd||0),Number(p.pa||0)),difficulty=100-confidence,diffClass=difficulty>=40?'high':difficulty>=30?'mid':'low',diffText=difficulty>=40?'Difícil':difficulty>=30?'Media':'Favorable',done=m.state==='post'||m.state==='final',actual=done?outcome(m.homeScore,m.awayScore):null,resultText=done?m.homeScore+'-'+m.awayScore:'—',hit=done&&actual===pick;
   return '<tr class="difficulty-'+diffClass+'"><td>'+(i+1)+'</td><td style="text-align:left"><b>'+esc(m.home)+'</b><br><span class="muted">'+esc(m.away)+'</span></td><td>'+Number(p.ph||0)+'%</td><td>'+Number(p.pd||0)+'%</td><td>'+Number(p.pa||0)+'%</td><td class="pick pick-'+pick.toLowerCase()+'">'+pick+'</td><td><b>'+confidence+'%</b><div class="accuracy-bar"><div class="accuracy-fill" style="width:'+confidence+'%"></div></div></td><td><span class="difficulty-pill '+diffClass+'">'+diffText+' · '+difficulty+'%</span></td><td class="real '+(done?(hit?'hit':'miss'):'pending')+'">'+resultText+(done?' · '+actual:'')+'</td><td>'+(done?(hit?'✅ Acierto':'❌ Fallo'):'⏳ Pendiente')+'</td></tr>';
  }).join('');
 }
@@ -763,8 +782,14 @@ async function getEuropeanMatches(){
  return all.sort((a,b)=>new Date(a.date)-new Date(b.date)).slice(0,12);
 }
 function renderEuropeanMatches(rows){
- const el=document.getElementById('euroMatches');if(!el)return;if(!rows.length){el.innerHTML='<div class="card loading">Todavía no hay próximos partidos europeos disponibles en la fuente automática.</div>';return;}
- el.innerHTML=rows.map(m=>{const dt=new Date(m.date).toLocaleString('es-ES',{weekday:'short',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}),done=m.state==='post'||m.state==='final';return '<article class="card match"><div class="match-top"><span>'+esc(m.comp)+'</span><span>'+esc(dt)+'</span></div><div class="teams">'+esc(m.home)+'<div class="score">'+(done?esc(m.homeScore+' - '+m.awayScore):'VS')+'</div>'+esc(m.away)+'</div><div class="small">'+(done?'Resultado final':'Próximo partido')+'</div></article>';}).join('');
+ const el=document.getElementById('euroMatches');if(!el)return;
+ const now=Date.now();
+ const relevant=(rows||[]).filter(m=>{
+  const date=new Date(m.date).getTime();
+  return Number.isFinite(date)&&date>=now-3*60*60*1000&&(m.state==='pre'||m.state==='in');
+ }).sort((a,b)=>new Date(a.date)-new Date(b.date)).slice(0,12);
+ if(!relevant.length){el.innerHTML='<div class="card loading">No hay próximos partidos europeos confirmados en la fuente automática.</div>';return;}
+ el.innerHTML=relevant.map(m=>{const dt=new Date(m.date).toLocaleString('es-ES',{weekday:'short',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}),live=m.state==='in';return '<article class="card match"><div class="match-top"><span>'+esc(m.comp)+'</span><span>'+esc(dt)+'</span></div><div class="teams">'+esc(m.home)+'<div class="score">'+(live?esc(m.homeScore+' - '+m.awayScore):'VS')+'</div>'+esc(m.away)+'</div><div class="small">'+(live?'En juego':'Próximo partido')+'</div></article>';}).join('');
 }
 async function getNews(){
   const urls=[
@@ -833,7 +858,7 @@ function normalizeStandings(rows){
       d:num(row?.d,row?.draws,row?.ties),
       l:num(row?.l,row?.losses,row?.lost),
       gf:num(row?.gf,row?.goalsFor,row?.pointsFor),
-      gc:num(row?.gc,row?.goalsAgainst,row?.pointsAgainst),
+      gc:num(row?.gc,row?.ga,row?.goalsAgainst,row?.pointsAgainst),
       gd:num(row?.gd,row?.goalsDiff,row?.goalDifference,row?.differential)
     };
   }).filter(x=>x.team&&x.team!=='Equipo').sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf||a.team.localeCompare(b.team,'es'));
