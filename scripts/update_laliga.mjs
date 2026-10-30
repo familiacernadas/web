@@ -937,8 +937,10 @@ async function getESPNScorers() {
                     assists: number(get("goalAssists", "assists"), 0)
                 },
                 assists: number(get("goalAssists", "assists"), 0),
-                appearances: number(get("appearances", "apps"), 0),
-                minutes: number(get("minutes"), 0),
+                // ESPN puede omitir estos campos en el leaderboard. No convertir
+                // la ausencia en cero: cero sería un dato deportivo falso.
+                appearances: get("appearances", "apps") === null ? null : number(get("appearances", "apps"), null),
+                minutes: get("minutes") === null ? null : number(get("minutes"), null),
                 rating: null
             };
         })
