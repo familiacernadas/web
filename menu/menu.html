@@ -53,6 +53,7 @@ textarea{width:100%;resize:vertical}
 .tree li>b.y{background:var(--y);color:var(--ink)}.tree li>b.r{background:var(--r)}
 .note{border-left:4px solid var(--y);background:#fff8e6;padding:10px 12px;border-radius:0 10px 10px 0;font-size:.9rem;margin-bottom:12px}
 .vid{display:inline-block;margin-left:6px;font-size:.78rem;font-weight:600;color:var(--r);background:#fbe6e2;border-radius:6px;padding:1px 8px;text-decoration:none;white-space:nowrap}.vid:hover{text-decoration:underline}
+a.btn{text-decoration:none;display:inline-block;text-align:center}
 details{margin-top:12px}summary{cursor:pointer;font-weight:600;color:var(--g)}
 ol{padding-left:20px}li code,pre{background:#e3efe9;border-radius:6px}pre{padding:8px;overflow-x:auto;font-size:.8rem}
 .li input[type=checkbox]{width:20px;height:20px;flex:0 0 auto}
@@ -91,6 +92,15 @@ ol{padding-left:20px}li code,pre{background:#e3efe9;border-radius:6px}pre{paddin
       </select>
       <button class="btn" id="madd">Añadir miembro</button>
     </div>
+  </div>
+  <div class="card">
+    <h2>Código postal</h2>
+    <p class="muted">Sirve para localizar las tiendas de tu zona y recordarte el código al abrir los folletos. Se guarda solo en este dispositivo.</p>
+    <div class="row">
+      <input id="cp" inputmode="numeric" maxlength="5" placeholder="Ej. 28001" aria-label="Código postal">
+      <button class="btn" id="cpsave">Guardar y buscar tiendas</button>
+    </div>
+    <p class="muted" id="cpmsg"></p>
   </div>
   <div class="card">
     <h2>Compartir con otra persona</h2>
@@ -147,6 +157,30 @@ ol{padding-left:20px}li code,pre{background:#e3efe9;border-radius:6px}pre{paddin
       <button class="btn alt" id="undemo">Quitar ejemplos</button>
     </div>
     <p class="muted">Los precios de ejemplo son inventados, solo sirven para probar. Sustitúyelos por las ofertas reales que veas.</p>
+  </div>
+  <div class="card">
+    <h2>Folletos de las tiendas</h2>
+    <p class="muted">Código postal: <b id="cpshow">sin indicar</b> <button class="btn alt" id="cpcopy" style="padding:4px 10px">Copiar</button></p>
+    <div class="row" id="flinks">
+      <a class="btn alt" href="https://froiz.es/folleto/" target="_blank" rel="noopener noreferrer" data-store="Froiz">Froiz</a>
+      <a class="btn alt" href="https://www.gadis.es/folleto-online/gadis-galicia-29-octubre-al-4-noviembre-2026" target="_blank" rel="noopener noreferrer" data-store="Gadis">Gadis</a>
+      <a class="btn alt" href="https://tienda.mercadona.es/categories/" target="_blank" rel="noopener noreferrer" data-store="Mercadona">Mercadona</a>
+      <a class="btn alt" href="https://www.carrefour.es/supermercado/ofertas/" target="_blank" rel="noopener noreferrer" data-store="Carrefour">Carrefour</a>
+    </div>
+    <p class="muted">Se abren en otra pestaña. Si piden el código postal, usa «Copiar». Después copia el texto de las ofertas y pégalo en la tarjeta de abajo: la tienda se rellena sola.</p>
+    <p class="muted">Los folletos de Froiz son imágenes y PDF, y suelen no dejar copiar el texto. El enlace de Gadis es de una semana concreta y caduca: cámbialo cuando salga el nuevo folleto.</p>
+    <details>
+      <summary>Cambiar el enlace de una tienda</summary>
+      <div class="row" style="margin-top:8px">
+        <select id="lks" aria-label="Tienda"><option>Gadis</option><option>Froiz</option><option>Mercadona</option><option>Carrefour</option></select>
+        <input id="lku" type="url" placeholder="Pega el enlace nuevo (https://…)" aria-label="Enlace nuevo">
+      </div>
+      <div class="row" style="margin-top:8px">
+        <button class="btn" id="lksave">Guardar enlace</button>
+        <button class="btn alt" id="lkreset">Volver al original</button>
+      </div>
+      <p class="muted" id="lkmsg"></p>
+    </details>
   </div>
   <div class="card">
     <h2>Pegar ofertas de un folleto</h2>
@@ -228,7 +262,7 @@ const R=[
 ];
 const DIAS=['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
 const KEY='menuCasaV1';
-let S={m:[{n:'Yo',f:1.1}],o:[],menu:null,done:[],near:[],ll:null};
+let S={m:[{n:'Yo',f:1.1}],o:[],menu:null,done:[],near:[],ll:null,cp:'',links:{}};
 try{const s=localStorage.getItem(KEY);if(s)S=Object.assign(S,JSON.parse(s))}catch(e){}
 let REF=null,applying=false;
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}if(REF&&!applying)pushSync()};
@@ -450,6 +484,40 @@ $('son').onclick=()=>{
 };
 $('soff').onclick=()=>{stopSync();SY={};try{localStorage.removeItem(SK)}catch(e){}setSync('Sincronización desactivada. Los datos siguen guardados en este dispositivo.',false)};
 if(SY.cfg){$('scode').value=SY.code||'';$('scfg').value=JSON.stringify(SY.cfg,null,1)}
+
+// ===== Código postal =====
+const showCp=()=>{$('cpshow').textContent=S.cp||'sin indicar';$('cp').value=S.cp||''};
+$('cpsave').onclick=async()=>{
+  const cp=$('cp').value.trim();
+  if(!/^\d{5}$/.test(cp)){$('cpmsg').textContent='Escribe un código postal de 5 cifras.';return}
+  S.cp=cp;save();showCp();$('cpmsg').textContent='Buscando la zona…';
+  try{
+    const r=await fetch('https://nominatim.openstreetmap.org/search?postalcode='+cp+'&country=Spain&format=json&limit=1&accept-language=es');
+    const j=await r.json();
+    if(!j.length)throw new Error('sin resultado');
+    $('lat').value=(+j[0].lat).toFixed(5);$('lon').value=(+j[0].lon).toFixed(5);
+    $('cpmsg').textContent='Código postal guardado. Buscando tiendas cercanas…';
+    await findStores();
+    $('cpmsg').textContent='Código postal guardado. Las tiendas de la zona están en la pestaña Ofertas.';
+  }catch(e){$('cpmsg').textContent='Código postal guardado, pero no pude localizar la zona. Puedes usar «Usar mi ubicación» en la pestaña Ofertas.'}
+};
+$('cpcopy').onclick=()=>{
+  if(!S.cp)return;
+  const b=$('cpcopy');
+  try{navigator.clipboard.writeText(S.cp).then(()=>{b.textContent='Copiado';setTimeout(()=>{b.textContent='Copiar'},1500)},()=>{})}catch(e){}
+};
+$('flinks').addEventListener('click',e=>{const a=e.target.closest('a');if(a&&a.dataset.store)$('pstore').value=a.dataset.store});
+// ===== Enlaces de folletos editables =====
+const LK0={};document.querySelectorAll('#flinks a').forEach(a=>{LK0[a.dataset.store]=a.getAttribute('href')});
+const applyLinks=()=>document.querySelectorAll('#flinks a').forEach(a=>{a.href=(S.links&&S.links[a.dataset.store])||LK0[a.dataset.store]});
+$('lksave').onclick=()=>{
+  const st=$('lks').value,u=$('lku').value.trim();
+  if(!/^https:\/\/[^\s]+$/i.test(u)){$('lkmsg').textContent='El enlace debe empezar por https:// y no llevar espacios.';return}
+  S.links=S.links||{};S.links[st]=u;save();applyLinks();$('lku').value='';$('lkmsg').textContent='Enlace de '+st+' actualizado.';
+};
+$('lkreset').onclick=()=>{const st=$('lks').value;if(S.links)delete S.links[st];save();applyLinks();$('lkmsg').textContent='Enlace de '+st+' restaurado al original.'};
+applyLinks();
+showCp();
 
 render();
 startSync();
