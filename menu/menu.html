@@ -1,1 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menú y compra de la casa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1f6f3;--ink:#16302a;--mut:#5d736c;--card:#fff;--line:#d5e2dc;--g:#1d6b58;--gd:#124a3d;--y:#f2b93b;--r:#c8402f;--h:'Bricolage Grotesque',system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif;padding-bottom:76px}
+h1,h2,h3{font-family:var(--h);margin:0;line-height:1.15}
+header{background:var(--gd);color:#fff;padding:18px 16px 14px}
+header h1{font-size:1.5rem}
+header p{margin:4px 0 0;color:#bcdcd2;font-size:.9rem}
+.sum{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.sum div{background:#ffffff1a;border-radius:10px;padding:6px 12px;font-size:.85rem}
+.sum b{display:block;font:700 1.15rem var(--h);color:var(--y)}
+main{max-width:820px;margin:0 auto;padding:16px}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);border-top:1px solid var(--line);z-index:5}
+nav button{flex:1;border:0;background:none;padding:10px 2px 12px;font:600 .8rem var(--h);color:var(--mut);cursor:pointer;border-top:3px solid transparent}
+nav button[aria-selected=true]{color:var(--g);border-top-color:var(--g)}
+nav button:focus-visible,.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--y);outline-offset:2px}
+section{display:none}section.on{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.row>*{flex:1 1 130px}
+input,select,textarea{font:inherit;padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);min-width:0}
+textarea{width:100%;resize:vertical}
+.btn{border:0;border-radius:9px;background:var(--g);color:#fff;font:600 .95rem var(--h);padding:10px 16px;cursor:pointer;flex:0 0 auto}
+.btn.alt{background:#e3efe9;color:var(--gd)}.btn.big{width:100%;padding:13px;font-size:1.05rem;background:var(--gd)}
+.x{background:none;border:0;color:var(--mut);font-size:1.2rem;cursor:pointer;padding:4px 8px;flex:0 0 auto}
+.li{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.li:last-child{border:0}.li>span:first-child{flex:1}
+.tag{font-size:.78rem;background:#e3efe9;color:var(--gd);border-radius:6px;padding:2px 8px;white-space:nowrap}
+.tag.of{background:#fbe6e2;color:var(--r)}
+.li.of{background:#fff1d6;border-left:4px solid var(--y);padding-left:8px;border-radius:6px}
+.price{font-size:.85rem;white-space:nowrap;color:var(--r);font-weight:700}.price s{color:var(--mut);font-weight:400;margin-right:4px}
+.card.hasof{border:2px solid var(--y)}
+.tag.demo{background:#e8e8ee;color:#55556a}.dist{font-size:.8rem;color:var(--mut);white-space:nowrap}
+.muted{color:var(--mut);font-size:.9rem}
+.day{display:grid;grid-template-columns:52px 1fr;gap:4px 10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.day:last-child{border:0}.day h3{font-size:1rem;color:var(--g);grid-row:span 2}
+.meal small{color:var(--mut)}
+.empty{text-align:center;color:var(--mut);padding:22px 10px}
+.store h3{font-size:1rem;margin-bottom:2px}
+.chk{width:26px;height:26px;border:2px solid var(--g);border-radius:50%;background:#fff;cursor:pointer;flex:0 0 auto}
+.chk:hover{background:#d9efe6}
+.tree,.tree ul{list-style:none;margin:0;padding-left:18px;border-left:2px solid var(--line)}
+.tree{padding-left:0;border:0}.tree li{margin:8px 0;position:relative}
+.tree li>b{display:inline-block;background:var(--g);color:#fff;border-radius:8px;padding:3px 10px;font:600 .9rem var(--h)}
+.tree li>b.y{background:var(--y);color:var(--ink)}.tree li>b.r{background:var(--r)}
+.note{border-left:4px solid var(--y);background:#fff8e6;padding:10px 12px;border-radius:0 10px 10px 0;font-size:.9rem;margin-bottom:12px}
+.vid{display:inline-block;margin-left:6px;font-size:.78rem;font-weight:600;color:var(--r);background:#fbe6e2;border-radius:6px;padding:1px 8px;text-decoration:none;white-space:nowrap}.vid:hover{text-decoration:underline}
+details{margin-top:12px}summary{cursor:pointer;font-weight:600;color:var(--g)}
+ol{padding-left:20px}li code,pre{background:#e3efe9;border-radius:6px}pre{padding:8px;overflow-x:auto;font-size:.8rem}
+.li input[type=checkbox]{width:20px;height:20px;flex:0 0 auto}
+@media(min-width:760px){body{padding:0}nav{position:static;max-width:820px;margin:0 auto;border:0;background:none}nav button{border-top:0;border-bottom:3px solid transparent;font-size:.95rem}nav button[aria-selected=true]{border-bottom-color:var(--g)}}
+@media(prefers-reduced-motion:no-preference){.card{transition:box-shadow .15s}.card:hover{box-shadow:0 2px 10px #16302a14}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Menú y compra de la casa</h1>
+  <p>Menú semanal con lo más barato y saludable de cada tienda</p>
+  <p id="sbadge" style="font-size:.8rem;margin-top:2px"></p>
+  <div class="sum" id="sum"></div>
+</header>
+<nav role="tablist" id="nav">
+  <button role="tab" data-t="casa" aria-selected="true">Casa</button>
+  <button role="tab" data-t="menu" aria-selected="false">Menú</button>
+  <button role="tab" data-t="ofertas" aria-selected="false">Ofertas</button>
+  <button role="tab" data-t="compra" aria-selected="false">Compra</button>
+  <button role="tab" data-t="mapa" aria-selected="false">Mapa</button>
+</nav>
+<main>
 
+<section id="casa" class="on">
+  <div class="card">
+    <h2>Miembros de la casa</h2>
+    <p class="muted">La actividad de cada persona ajusta las raciones del menú.</p>
+    <div id="miembros"></div>
+    <div class="row" style="margin-top:12px">
+      <input id="mn" placeholder="Nombre" aria-label="Nombre del miembro">
+      <select id="ma" aria-label="Actividad">
+        <option value="0.6">Niño o niña</option>
+        <option value="0.9">Sedentaria</option>
+        <option value="1.1" selected>Activa</option>
+        <option value="1.3">Deportista</option>
+      </select>
+      <button class="btn" id="madd">Añadir miembro</button>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Compartir con otra persona</h2>
+    <p class="muted" id="smsg">Sin sincronizar: los datos solo están en este dispositivo.</p>
+    <div class="row" style="margin-bottom:8px">
+      <input id="scode" placeholder="Código de la casa (mín. 6 caracteres)" aria-label="Código de la casa">
+      <button class="btn alt" id="sgen">Crear código</button>
+    </div>
+    <textarea id="scfg" rows="5" placeholder="Pega aquí la configuración de Firebase" aria-label="Configuración de Firebase"></textarea>
+    <div class="row" style="margin-top:8px">
+      <button class="btn" id="son">Activar sincronización</button>
+      <button class="btn alt" id="soff">Desactivar</button>
+    </div>
+    <details>
+      <summary>Cómo conseguir la configuración (una sola vez, gratis)</summary>
+      <ol>
+        <li>Entra en <b>console.firebase.google.com</b>, crea un proyecto y desactiva Google Analytics.</li>
+        <li>Ve a <b>Compilación → Realtime Database → Crear base de datos</b>. Elige una ubicación de Europa y empieza en modo de prueba.</li>
+        <li>En la pestaña <b>Reglas</b>, sustituye todo por esto y pulsa Publicar:
+<pre>{"rules":{"casas":{"$codigo":{".read":true,".write":true}}}}</pre></li>
+        <li>Pulsa el engranaje, <b>Configuración del proyecto → Tus apps → icono &lt;/&gt;</b>, ponle un nombre y copia el bloque <code>firebaseConfig</code>.</li>
+        <li>Pégalo arriba, pulsa <b>Crear código</b> y luego <b>Activar sincronización</b>. En el otro móvil pega la misma configuración y el mismo código.</li>
+      </ol>
+      <p class="muted">Quien conozca el código puede ver y cambiar la lista, así que no lo publiques. No guardes datos personales en la app.</p>
+    </details>
+  </div>
+</section>
+
+<section id="menu">
+  <button class="btn big" id="gen">Generar menú de la semana</button>
+  <p class="muted">Prioriza recetas baratas según tus ofertas, varía proteínas y limita la carne a 3 comidas por semana.</p>
+  <div class="card" id="menuout"></div>
+</section>
+
+<section id="ofertas">
+  <div class="card">
+    <h2>Tiendas cercanas</h2>
+    <p class="muted">Busca supermercados y tiendas alrededor de unas coordenadas (datos de OpenStreetMap).</p>
+    <div class="row">
+      <input id="lat" inputmode="decimal" placeholder="Latitud" aria-label="Latitud">
+      <input id="lon" inputmode="decimal" placeholder="Longitud" aria-label="Longitud">
+      <select id="rad" aria-label="Radio de búsqueda">
+        <option value="500">500 m</option><option value="1000" selected>1 km</option><option value="2000">2 km</option><option value="4000">4 km</option>
+      </select>
+    </div>
+    <div class="row" style="margin:8px 0">
+      <button class="btn alt" id="gps">Usar mi ubicación</button>
+      <button class="btn" id="find">Buscar tiendas</button>
+    </div>
+    <p class="muted" id="nmsg"></p>
+    <div id="nearout"></div>
+    <div class="row" style="margin-top:10px">
+      <button class="btn alt" id="demo">Rellenar ofertas de ejemplo</button>
+      <button class="btn alt" id="undemo">Quitar ejemplos</button>
+    </div>
+    <p class="muted">Los precios de ejemplo son inventados, solo sirven para probar. Sustitúyelos por las ofertas reales que veas.</p>
+  </div>
+  <div class="card">
+    <h2>Pegar ofertas de un folleto</h2>
+    <p class="muted">Copia el texto del folleto o de la web de la tienda y pégalo. Una oferta por línea, por ejemplo: Pollo entero 3,99 €/kg</p>
+    <textarea id="ptxt" rows="6" placeholder="Pollo entero 3,99 €/kg&#10;Merluza 6,50 €/kg&#10;Lentejas 1 kg 1,90 €" aria-label="Texto del folleto"></textarea>
+    <div class="row" style="margin-top:8px">
+      <input id="pstore" list="sts" placeholder="Tienda del folleto" aria-label="Tienda del folleto">
+      <button class="btn" id="pread">Leer ofertas</button>
+    </div>
+    <p class="muted" id="pmsg"></p>
+    <div id="pout"></div>
+  </div>
+  <div class="card">
+    <h2>Añadir oferta</h2>
+    <p class="muted">Apunta aquí lo que veas en folletos o apps. Hoy: <span id="hoy"></span></p>
+    <div class="row">
+      <input id="oi" list="ings" placeholder="Alimento" aria-label="Alimento">
+      <datalist id="ings"></datalist>
+      <input id="os" list="sts" placeholder="Tienda" aria-label="Tienda"><datalist id="sts"></datalist>
+      <input id="op" type="number" min="0" step="0.01" placeholder="€ por kg" aria-label="Precio por kilo">
+      <button class="btn" id="oadd">Guardar</button>
+    </div>
+  </div>
+  <div class="card" id="ofout"></div>
+</section>
+
+<section id="compra">
+  <div class="note">Modo prueba: la lista se guarda solo en este navegador. Para que dos personas la vean actualizada a la vez hace falta conectar una base de datos en tiempo real (ver pestaña Mapa).</div>
+  <p class="muted">Fondo amarillo = producto en oferta en esa tienda.</p>
+  <div id="cout"></div>
+</section>
+
+<section id="mapa">
+  <div class="card">
+    <h2>Organigrama de la app</h2>
+    <ul class="tree">
+      <li><b>Casa</b>
+        <ul>
+          <li><b>Usuario principal</b> invita y gestiona
+            <ul><li><b>Miembros</b> nombre y actividad (niño, sedentaria, activa, deportista)</li></ul>
+          </li>
+          <li><b class="r">Ofertas</b> manuales hoy, apps y folletos después
+            <ul><li>Supermercados, plataformas y tiendas pequeñas</li></ul>
+          </li>
+          <li><b>Menú semanal</b> combina miembros + ofertas + recetas saludables</li>
+          <li><b class="y">Lista de la compra</b> se genera del menú
+            <ul>
+              <li>Agrupada por tienda más barata</li>
+              <li>Cada compra se elimina de la lista de todos al instante</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>Para pasar a app real</h2>
+    <p><b>Tiempo real y varios usuarios:</b> Firebase o Supabase (plan gratuito). Esta página seguiría en GitHub Pages y solo se conectaría a la base de datos.</p>
+    <p><b>Ofertas automáticas:</b> la mayoría de supermercados no ofrece API pública. Lo realista es la entrada manual, con foto de folleto o pegado de texto como mejora siguiente.</p>
+    <p><b>Móvil:</b> esta web se instala en el teléfono como app (PWA) sin pasar por tiendas de aplicaciones.</p>
+  </div>
+</section>
+
+</main>
+<script>
+const R=[
+{n:'Lentejas con verduras',t:'legumbre',i:[['Lentejas',80,2.8],['Zanahoria',100,1.2],['Cebolla',40,1.1]]},
+{n:'Pollo al horno con patatas',t:'carne',i:[['Pollo',150,5.5],['Patata',200,1.1],['Pimiento',60,2.6]]},
+{n:'Merluza con ensalada',t:'pescado',i:[['Merluza',150,9],['Lechuga',80,1.8],['Tomate',100,2.4]]},
+{n:'Arroz con verduras y huevo',t:'huevo',i:[['Arroz',70,1.6],['Huevo',60,3.2],['Calabacín',120,1.9]]},
+{n:'Pasta integral con atún',t:'pescado',i:[['Pasta integral',80,1.7],['Atún en lata',50,8],['Tomate',100,2.4]]},
+{n:'Garbanzos con espinacas',t:'legumbre',i:[['Garbanzos',80,2.2],['Espinacas',100,3.5],['Huevo',30,3.2]]},
+{n:'Tortilla de patata y ensalada',t:'huevo',i:[['Huevo',90,3.2],['Patata',150,1.1],['Lechuga',80,1.8]]},
+{n:'Salmón con brócoli y arroz',t:'pescado',i:[['Salmón',140,13],['Brócoli',120,2.8],['Arroz',60,1.6]]},
+{n:'Crema de calabaza y pavo',t:'carne',i:[['Calabaza',200,1.5],['Pavo',100,7],['Pan integral',40,3]]},
+{n:'Ternera con pimientos y arroz',t:'carne',i:[['Ternera',120,11],['Pimiento',80,2.6],['Arroz',60,1.6]]},
+{n:'Sardinas con tomate',t:'pescado',i:[['Sardina',150,6],['Tomate',120,2.4],['Pan integral',40,3]]},
+{n:'Alubias con verduras',t:'legumbre',i:[['Alubias',80,2.6],['Zanahoria',80,1.2],['Puerro',80,2.4]]}
+];
+const DIAS=['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
+const KEY='menuCasaV1';
+let S={m:[{n:'Yo',f:1.1}],o:[],menu:null,done:[],near:[],ll:null};
+try{const s=localStorage.getItem(KEY);if(s)S=Object.assign(S,JSON.parse(s))}catch(e){}
+let REF=null,applying=false;
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}if(REF&&!applying)pushSync()};
+const setDone=(n,v)=>{if(REF)REF.child('done/'+n).set(v?true:null)};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const eur=n=>n.toLocaleString('es-ES',{style:'currency',currency:'EUR'});
+const yt=n=>`<a class="vid" href="https://www.youtube.com/results?search_query=${encodeURIComponent('receta '+n)}" target="_blank" rel="noopener" aria-label="Ver vídeo de la receta ${esc(n)} en YouTube">Ver vídeo</a>`;
+const lvl={'0.6':'Niño o niña','0.9':'Sedentaria','1.1':'Activa','1.3':'Deportista'};
+const norm=s=>s.trim().toLowerCase();
+
+function offerFor(name){
+  let best=null;
+  S.o.forEach(o=>{if(norm(o.i)===norm(name)&&(!best||o.p<best.p))best=o});
+  return best;
+}
+function priceOf(ing){const o=offerFor(ing[0]);return o&&o.p<ing[2]?{p:o.p,s:o.s}:{p:ing[2],s:null}}
+function recipeCost(r){return r.i.reduce((a,g)=>a+g[1]/1000*priceOf(g).p,0)}
+const portions=()=>S.m.reduce((a,m)=>a+m.f,0);
+
+function generate(){
+  const used=[];let meat=0;const out=[];
+  for(let s=0;s<14;s++){
+    let c=R.map((r,i)=>({r,i,c:recipeCost(r)})).filter(x=>!used.slice(-4).includes(x.i)&&!(x.r.t==='carne'&&meat>=3));
+    c.sort((a,b)=>a.c-b.c);
+    const pick=c[Math.floor(Math.random()*Math.min(3,c.length))];
+    used.push(pick.i);out.push(pick.i);if(pick.r.t==='carne')meat++;
+  }
+  S.menu=out;S.done=[];save();if(REF)REF.child('done').remove();render();
+}
+
+function shopping(){
+  const map={};
+  (S.menu||[]).forEach(ri=>R[ri].i.forEach(g=>{
+    const k=g[0];map[k]=map[k]||{n:k,g:0,base:g[2]};map[k].g+=g[1]*portions();
+  }));
+  return Object.values(map).map(x=>{
+    const pr=priceOf([x.n,0,x.base]);
+    return {n:x.n,g:x.g,store:pr.s||'Cualquier tienda',cost:x.g/1000*pr.p,base:x.g/1000*x.base,pk:pr.p,bk:x.base,of:!!pr.s};
+  });
+}
+const qty=g=>g>=1000?(g/1000).toFixed(1).replace('.',',')+' kg':Math.round(g/10)*10+' g';
+
+function render(){
+  // casa
+  $('miembros').innerHTML=S.m.map((m,i)=>`<div class="li"><span>${esc(m.n)}</span><span class="tag">${lvl[m.f]}</span><button class="x" data-del="${i}" aria-label="Quitar a ${esc(m.n)}">×</button></div>`).join('')||'<p class="empty">Añade al primer miembro de la casa.</p>';
+  // tiendas cercanas
+  const fd=d=>d>=1000?(d/1000).toFixed(1).replace('.',',')+' km':d+' m';
+  $('nearout').innerHTML=S.near.slice(0,15).map(t=>`<div class="li"><span>${esc(t.n)} <span class="dist">${esc(t.t)}</span></span><span class="dist">${fd(t.d)}</span></div>`).join('');
+  $('sts').innerHTML=S.near.map(t=>`<option value="${esc(t.n)}">`).join('');
+  // ofertas
+  $('ofout').innerHTML=S.o.length?'<h2>Ofertas guardadas</h2>'+S.o.map((o,i)=>`<div class="li"><span>${esc(o.i)}<br><small><b>${esc(o.s)}</b> <span class="muted">· ${esc(o.d)}</span></small></span>${o.demo?'<span class="tag demo">ejemplo</span>':''}<span class="tag of">${eur(o.p)}/kg</span><button class="x" data-odel="${i}" aria-label="Borrar oferta">×</button></div>`).join(''):'<p class="empty">Aún no hay ofertas. Las que añadas bajarán el coste del menú.</p>';
+  // menú
+  if(S.menu){
+    $('menuout').innerHTML=DIAS.map((d,i)=>{
+      const a=R[S.menu[i*2]],b=R[S.menu[i*2+1]];
+      return `<div class="day"><h3>${d}</h3><div class="meal"><small>Comida</small><br>${a.n} ${yt(a.n)}</div><div class="meal"><small>Cena</small><br>${b.n} ${yt(b.n)}</div></div>`;
+    }).join('');
+  }else $('menuout').innerHTML='<p class="empty">Pulsa «Generar menú de la semana» para empezar.</p>';
+  // compra
+  const L=shopping();const open=L.filter(x=>!S.done.includes(x.n));const done=L.filter(x=>S.done.includes(x.n));
+  const tot=L.reduce((a,x)=>a+x.cost,0),base=L.reduce((a,x)=>a+x.base,0);
+  $('sum').innerHTML=`<div><b>${S.m.length}</b>miembros</div><div><b>${eur(tot)}</b>compra estimada</div><div><b>${eur(Math.max(0,base-tot))}</b>ahorro en ofertas</div>`;
+  if(!L.length){$('cout').innerHTML='<div class="card empty">Genera primero el menú y aquí aparecerá la compra.</div>';return}
+  const st={};open.forEach(x=>(st[x.store]=st[x.store]||[]).push(x));
+  let h=Object.keys(st).sort((a,b)=>(a==='Cualquier tienda')-(b==='Cualquier tienda')||a.localeCompare(b)).map(s=>`<div class="card store${st[s].some(x=>x.of)?' hasof':''}"><h3>${esc(s)}</h3><p class="muted" style="margin:0 0 4px">${st[s].length} productos · ${eur(st[s].reduce((a,x)=>a+x.cost,0))}${st[s].some(x=>x.of)?' · '+st[s].filter(x=>x.of).length+' en oferta':''}</p>`+st[s].map(x=>`<div class="li${x.of?' of':''}"><button class="chk" data-buy="${esc(x.n)}" aria-label="Marcar ${esc(x.n)} como comprado"></button><span>${esc(x.n)}${x.of?`<br><small style="color:var(--r);font-weight:600">en ${esc(x.store)}</small>`:''}</span>${x.of?`<span class="price"><s>${eur(x.bk)}</s>${eur(x.pk)}/kg</span>`:''}<span class="tag">${qty(x.g)}</span></div>`).join('')+'</div>').join('');
+  if(!open.length)h='<div class="card empty">Compra terminada. Buen trabajo.</div>';
+  if(done.length)h+=`<div class="card"><h3>Comprado (${done.length})</h3>`+done.map(x=>`<div class="li"><span class="muted">${esc(x.n)}</span><button class="btn alt" data-undo="${esc(x.n)}">Deshacer</button></div>`).join('')+'</div>';
+  const ofs=open.filter(x=>x.of);
+  $('cout').innerHTML=(ofs.length?'<div class="card hasof"><h3>Ofertas de esta compra</h3>'+ofs.map(x=>`<div class="li of"><span>${esc(x.n)}<br><small style="color:var(--r);font-weight:600">${esc(x.store)}</small></span><span class="price"><s>${eur(x.bk)}</s>${eur(x.pk)}/kg</span></div>`).join('')+'</div>':'')+h;
+}
+
+// eventos
+$('nav').addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  document.querySelectorAll('nav button').forEach(x=>x.setAttribute('aria-selected',x===b));
+  document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===b.dataset.t));
+  scrollTo(0,0);
+});
+$('madd').onclick=()=>{const n=$('mn').value.trim();if(!n)return;S.m.push({n,f:parseFloat($('ma').value)});$('mn').value='';save();render()};
+$('oadd').onclick=()=>{
+  const i=$('oi').value.trim(),s=$('os').value.trim(),p=parseFloat($('op').value);
+  if(!i||!s||!(p>0))return;
+  S.o.push({i,s,p,d:new Date().toLocaleDateString('es-ES')});
+  ['oi','os','op'].forEach(x=>$(x).value='');save();render();
+};
+const TIPO={supermarket:'Supermercado',convenience:'Tienda de barrio',greengrocer:'Frutería',butcher:'Carnicería',seafood:'Pescadería',bakery:'Panadería'};
+const hav=(a,b,c,d)=>{const r=Math.PI/180,x=(c-a)*r,y=(d-b)*r,h=Math.sin(x/2)**2+Math.cos(a*r)*Math.cos(c*r)*Math.sin(y/2)**2;return 12742000*Math.asin(Math.sqrt(h))};
+async function findStores(){
+  const la=parseFloat($('lat').value.replace(',','.')),lo=parseFloat($('lon').value.replace(',','.')),r=+$('rad').value;
+  if(!isFinite(la)||!isFinite(lo)||Math.abs(la)>90||Math.abs(lo)>180){$('nmsg').textContent='Escribe unas coordenadas válidas o pulsa «Usar mi ubicación».';return}
+  $('nmsg').textContent='Buscando tiendas…';
+  const q='[out:json][timeout:20];nwr(around:'+r+','+la+','+lo+')["shop"~"^(supermarket|convenience|greengrocer|butcher|seafood|bakery)$"]["name"];out center 80;';
+  try{
+    const res=await fetch('https://overpass-api.de/api/interpreter',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'data='+encodeURIComponent(q)});
+    if(!res.ok)throw new Error(res.status);
+    const j=await res.json(),best=new Map();
+    j.elements.forEach(e=>{
+      const a=e.lat!==undefined?e.lat:(e.center&&e.center.lat),b=e.lon!==undefined?e.lon:(e.center&&e.center.lon);
+      if(a===undefined||b===undefined)return;
+      const t={n:e.tags.name,t:TIPO[e.tags.shop]||'Tienda',d:Math.round(hav(la,lo,a,b))},k=norm(t.n);
+      if(!best.has(k)||best.get(k).d>t.d)best.set(k,t);
+    });
+    S.near=[...best.values()].sort((x,y)=>x.d-y.d);S.ll=[la,lo];save();
+    $('nmsg').textContent=S.near.length?S.near.length+' tiendas encontradas, de la más cercana a la más lejana.':'No hay tiendas en ese radio. Prueba con uno mayor.';
+  }catch(e){$('nmsg').textContent='No se pudo consultar el servicio de mapas. Comprueba la conexión e inténtalo de nuevo.'}
+  render();
+}
+$('find').onclick=findStores;
+$('gps').onclick=()=>{
+  if(!navigator.geolocation){$('nmsg').textContent='Tu navegador no permite obtener la ubicación. Escribe las coordenadas.';return}
+  $('nmsg').textContent='Obteniendo ubicación…';
+  navigator.geolocation.getCurrentPosition(p=>{$('lat').value=p.coords.latitude.toFixed(5);$('lon').value=p.coords.longitude.toFixed(5);findStores()},
+    ()=>{$('nmsg').textContent='No se pudo obtener la ubicación. Revisa el permiso del navegador o escribe las coordenadas.'},{timeout:10000});
+};
+const DEMO=[['Lentejas',1.9],['Pollo',3.9],['Merluza',6.5],['Huevo',2.2],['Salmón',9.9],['Tomate',1.5],['Arroz',1.1],['Garbanzos',1.6],['Pimiento',1.7],['Zanahoria',0.8]];
+$('demo').onclick=()=>{
+  const names=[...new Set(S.near.slice(0,6).map(t=>t.n))];const st=names.length?names:['Tienda A','Tienda B','Tienda C'];
+  const hoy=new Date().toLocaleDateString('es-ES');
+  DEMO.forEach((d,i)=>{if(!S.o.some(o=>o.demo&&norm(o.i)===norm(d[0])))S.o.push({i:d[0],s:st[i%st.length],p:d[1],d:hoy,demo:true})});
+  save();render();
+};
+$('undemo').onclick=()=>{S.o=S.o.filter(o=>!o.demo);save();render()};
+if(S.ll){$('lat').value=S.ll[0];$('lon').value=S.ll[1]}
+$('gen').onclick=generate;
+document.body.addEventListener('click',e=>{
+  const t=e.target;
+  if(t.dataset.del!==undefined){S.m.splice(+t.dataset.del,1);save();render()}
+  if(t.dataset.odel!==undefined){S.o.splice(+t.dataset.odel,1);save();render()}
+  if(t.dataset.buy){if(!S.done.includes(t.dataset.buy))S.done.push(t.dataset.buy);setDone(t.dataset.buy,true);save();render()}
+  if(t.dataset.undo){S.done=S.done.filter(x=>x!==t.dataset.undo);setDone(t.dataset.undo,false);save();render()}
+});
+$('hoy').textContent=new Date().toLocaleDateString('es-ES',{weekday:'long',day:'numeric',month:'long'});
+$('ings').innerHTML=[...new Set(R.flatMap(r=>r.i.map(g=>g[0])))].sort().map(n=>`<option value="${n}">`).join('');
+// ===== Pegar ofertas de un folleto =====
+const fold=t=>t.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const fecha=()=>new Date().toLocaleDateString('es-ES');
+const STEM=[['lenteja','Lentejas'],['zanahoria','Zanahoria'],['cebolla','Cebolla'],['pollo','Pollo'],['patata','Patata'],['pimiento','Pimiento'],['merluza','Merluza'],['lechuga','Lechuga'],['tomate','Tomate'],['arroz','Arroz'],['huevo','Huevo'],['calabacin','Calabacín'],['pasta integral','Pasta integral'],['atun','Atún en lata'],['garbanzo','Garbanzos'],['espinaca','Espinacas'],['salmon','Salmón'],['brocoli','Brócoli'],['calabaza','Calabaza'],['pavo','Pavo'],['pan integral','Pan integral'],['ternera','Ternera'],['sardina','Sardina'],['alubia','Alubias'],['puerro','Puerro']];
+const BASE={};R.forEach(r=>r.i.forEach(g=>{BASE[g[0]]=g[2]}));
+let PEND=null;
+function parseText(t){
+  const ok=[],rev=[];let sin=0;
+  t.split(/\n+/).map(x=>x.trim()).filter(x=>x.length>2).forEach(l=>{
+    const f=fold(l),hit=STEM.find(x=>f.includes(x[0]));
+    if(!hit){sin++;return}
+    const pm=f.match(/(\d+(?:[.,]\d{1,2})?)\s*(?:€|eur)/)||f.match(/(?:€|eur)\s*(\d+(?:[.,]\d{1,2})?)/)||f.match(/(\d+[.,]\d{2})(?!\d)/);
+    if(!pm){rev.push(l);return}
+    let p=parseFloat(pm[1].replace(',','.'));
+    const kg=/(\/\s*kg|€\s*kg\b|el kilo|por kilo|\bkilo\b)/.test(f);
+    const w=f.replace(pm[0],' ').match(/(\d+(?:[.,]\d+)?)\s*(kg|gr?)\b/);
+    if(!kg&&w){const q=parseFloat(w[1].replace(',','.'))*(w[2]==='kg'?1000:1);p=q>0?p/q*1000:NaN}
+    else if(!kg){rev.push(l);return}
+    if(!isFinite(p)||p<=0){rev.push(l);return}
+    p=Math.round(p*100)/100;
+    ok.push({i:hit[1],p,raw:l,sel:p<BASE[hit[1]]});
+  });
+  return {ok,rev,sin};
+}
+function drawPend(){
+  if(!PEND){$('pout').innerHTML='';return}
+  const {ok,rev,sin}=PEND;let h='';
+  if(ok.length)h+='<h3 style="margin:12px 0 4px">Ofertas reconocidas</h3>'+ok.map((x,k)=>`<label class="li"><input type="checkbox" data-pk="${k}"${x.sel?' checked':''}><span style="flex:1">${esc(x.i)} <small class="muted">${esc(x.raw)}</small></span><span class="price">${eur(x.p)}/kg</span>${x.sel?'':'<span class="tag">no baja del precio habitual</span>'}</label>`).join('')+'<button class="btn big" id="padd" style="margin-top:10px">Añadir las seleccionadas</button>';
+  if(rev.length)h+=`<p class="muted"><b>Revisar a mano (${rev.length}):</b> ${rev.map(esc).join(' · ')}</p>`;
+  if(sin)h+=`<p class="muted">${sin} líneas ignoradas porque no coinciden con alimentos de tus recetas.</p>`;
+  if(!ok.length&&!rev.length)h='<p class="muted">No he reconocido ninguna oferta. Prueba con líneas como «Pollo entero 3,99 €/kg».</p>'+h;
+  $('pout').innerHTML=h;
+}
+$('pread').onclick=()=>{
+  const t=$('ptxt').value;
+  if(!t.trim()){$('pmsg').textContent='Pega primero el texto del folleto.';return}
+  PEND=parseText(t);$('pmsg').textContent='';drawPend();
+};
+document.body.addEventListener('change',e=>{if(PEND&&e.target.dataset.pk!==undefined)PEND.ok[+e.target.dataset.pk].sel=e.target.checked});
+$('pout').addEventListener('click',e=>{
+  if(e.target.id!=='padd')return;
+  const st=$('pstore').value.trim(),sel=PEND.ok.filter(x=>x.sel);
+  if(!st){$('pmsg').textContent='Escribe el nombre de la tienda del folleto.';return}
+  if(!sel.length){$('pmsg').textContent='Marca al menos una oferta.';return}
+  sel.forEach(x=>{S.o=S.o.filter(o=>!(norm(o.i)===norm(x.i)&&norm(o.s)===norm(st)));S.o.push({i:x.i,s:st,p:x.p,d:fecha()})});
+  PEND=null;$('ptxt').value='';$('pmsg').textContent=sel.length+' ofertas añadidas a '+st+'.';
+  save();render();drawPend();
+});
+
+// ===== Sincronización en tiempo real (Firebase) =====
+const SK='menuCasaSync';
+let SY={};try{SY=JSON.parse(localStorage.getItem(SK)||'{}')}catch(e){}
+const setSync=(m,on)=>{$('smsg').textContent=m;$('sbadge').textContent=on?'● Sincronizado con la casa':''};
+const loadScript=u=>new Promise((ok,ko)=>{const x=document.createElement('script');x.src=u;x.onload=ok;x.onerror=ko;document.head.appendChild(x)});
+const parseCfg=t=>{const c={};t.replace(/["']?(\w+)["']?\s*:\s*["']([^"']+)["']/g,(m,k,v)=>{c[k]=v;return m});return c};
+function pushSync(){try{REF.update({m:S.m,o:S.o,menu:S.menu||null})}catch(e){}}
+function stopSync(){if(REF){try{REF.off()}catch(e){}REF=null}}
+async function startSync(){
+  if(!SY.cfg||!SY.cfg.databaseURL||!SY.code){setSync('Sin sincronizar: los datos solo están en este dispositivo.',false);return}
+  setSync('Conectando…',false);
+  try{
+    if(!window.firebase){const b='https://www.gstatic.com/firebasejs/10.12.2/';await loadScript(b+'firebase-app-compat.js');await loadScript(b+'firebase-database-compat.js')}
+    if(!firebase.apps.length)firebase.initializeApp(SY.cfg);
+    REF=firebase.database().ref('casas/'+SY.code);
+    REF.on('value',snap=>{
+      const v=snap.val();
+      if(!v){pushSync();return}
+      applying=true;
+      S.m=v.m||[];S.o=v.o||[];S.menu=v.menu||null;S.done=Object.keys(v.done||{});
+      save();applying=false;render();
+      setSync('Sincronizado con la casa «'+SY.code+'». Los cambios llegan al instante a los demás dispositivos.',true);
+    },()=>setSync('No se pudo leer la base de datos. Revisa las reglas y la dirección databaseURL.',false));
+  }catch(e){REF=null;setSync('No se pudo conectar. Comprueba la conexión y la configuración pegada.',false)}
+}
+$('sgen').onclick=()=>{
+  const A='abcdefghjkmnpqrstuvwxyz23456789',b=new Uint8Array(10);crypto.getRandomValues(b);
+  $('scode').value=[...b].map(x=>A[x%A.length]).join('');
+};
+$('son').onclick=()=>{
+  const cfg=parseCfg($('scfg').value||''),code=$('scode').value.trim().replace(/[.#$\[\]\/\s]/g,'');
+  if(!cfg.apiKey||!cfg.databaseURL){setSync('Falta la configuración de Firebase (debe incluir apiKey y databaseURL).',false);return}
+  if(code.length<6){setSync('El código de la casa debe tener al menos 6 caracteres.',false);return}
+  SY={cfg,code};try{localStorage.setItem(SK,JSON.stringify(SY))}catch(e){}
+  stopSync();startSync();
+};
+$('soff').onclick=()=>{stopSync();SY={};try{localStorage.removeItem(SK)}catch(e){}setSync('Sincronización desactivada. Los datos siguen guardados en este dispositivo.',false)};
+if(SY.cfg){$('scode').value=SY.code||'';$('scfg').value=JSON.stringify(SY.cfg,null,1)}
+
+render();
+startSync();
+</script>
+</body>
+</html>
