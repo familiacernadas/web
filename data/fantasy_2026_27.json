@@ -4,7 +4,7 @@
     "seasonLabel": "2026/27",
     "source": "PrecioFantasy / fuentes Fantasy disponibles",
     "sourceShort": "PrecioFantasy",
-    "generatedAt": "2026-11-16T13:52:27.846Z",
+    "generatedAt": "2026-11-17T14:45:10.484Z",
     "status": "Sin datos Fantasy todavía: fuente pública sin estructura importable.",
     "schemaVersion": "1.0",
     "playersCount": 0
@@ -325,6 +325,10 @@
     },
     {
       "timestamp": "2026-11-16T13:52:27.846Z",
+      "players": []
+    },
+    {
+      "timestamp": "2026-11-17T14:45:10.484Z",
       "players": []
     }
   ],
