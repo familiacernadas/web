@@ -5,8 +5,8 @@
     "league": "LaLiga",
     "seasonLabel": "2026/27",
     "source": "ESPN + API-Football",
-    "generatedAt": "2026-11-26T15:19:37.087Z",
-    "requestsThisRun": 27,
+    "generatedAt": "2026-11-27T15:07:32.936Z",
+    "requestsThisRun": 37,
     "primarySource": "ESPN",
     "secondarySource": "API-Football",
     "apiFootballSeasonAvailable": false,
@@ -16,7 +16,7 @@
     "injuriesCount": 0,
     "newsCount": 20,
     "modelVersion": "3.0-oficial + 3.1-experimental",
-    "europeanMatchesCount": 23,
+    "europeanMatchesCount": 25,
     "predictionBalanceV31": {
       "total": 10,
       "correct": 5,
@@ -78469,7 +78469,7 @@
         },
         "confidence": 0.3959,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.047Z",
+        "generatedAt": "2026-11-27T15:07:32.893Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -78574,7 +78574,7 @@
         },
         "confidence": 0.3959,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.070Z",
+        "generatedAt": "2026-11-27T15:07:32.918Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -78729,7 +78729,7 @@
         },
         "confidence": 0.6174,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.047Z",
+        "generatedAt": "2026-11-27T15:07:32.893Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -78834,7 +78834,7 @@
         },
         "confidence": 0.6174,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.070Z",
+        "generatedAt": "2026-11-27T15:07:32.919Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -78989,7 +78989,7 @@
         },
         "confidence": 0.4515,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.047Z",
+        "generatedAt": "2026-11-27T15:07:32.893Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -79094,7 +79094,7 @@
         },
         "confidence": 0.4515,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.070Z",
+        "generatedAt": "2026-11-27T15:07:32.919Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -79249,7 +79249,7 @@
         },
         "confidence": 0.5446,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.048Z",
+        "generatedAt": "2026-11-27T15:07:32.893Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -79354,7 +79354,7 @@
         },
         "confidence": 0.5446,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.070Z",
+        "generatedAt": "2026-11-27T15:07:32.919Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -79509,7 +79509,7 @@
         },
         "confidence": 0.6187,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.048Z",
+        "generatedAt": "2026-11-27T15:07:32.894Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -79614,7 +79614,7 @@
         },
         "confidence": 0.6188,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.070Z",
+        "generatedAt": "2026-11-27T15:07:32.919Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -79769,7 +79769,7 @@
         },
         "confidence": 0.5243,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.048Z",
+        "generatedAt": "2026-11-27T15:07:32.894Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -79874,7 +79874,7 @@
         },
         "confidence": 0.5242,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.070Z",
+        "generatedAt": "2026-11-27T15:07:32.919Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -80029,7 +80029,7 @@
         },
         "confidence": 0.3854,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.048Z",
+        "generatedAt": "2026-11-27T15:07:32.894Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -80134,7 +80134,7 @@
         },
         "confidence": 0.3854,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.070Z",
+        "generatedAt": "2026-11-27T15:07:32.919Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -80289,7 +80289,7 @@
         },
         "confidence": 0.6095,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.048Z",
+        "generatedAt": "2026-11-27T15:07:32.894Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -80394,7 +80394,7 @@
         },
         "confidence": 0.6094,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.070Z",
+        "generatedAt": "2026-11-27T15:07:32.919Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -80549,7 +80549,7 @@
         },
         "confidence": 0.4921,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.048Z",
+        "generatedAt": "2026-11-27T15:07:32.894Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -80654,7 +80654,7 @@
         },
         "confidence": 0.4921,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.070Z",
+        "generatedAt": "2026-11-27T15:07:32.919Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -80809,7 +80809,7 @@
         },
         "confidence": 0.7322,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.048Z",
+        "generatedAt": "2026-11-27T15:07:32.894Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -80914,7 +80914,7 @@
         },
         "confidence": 0.7323,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.070Z",
+        "generatedAt": "2026-11-27T15:07:32.919Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -81069,7 +81069,7 @@
         },
         "confidence": 0.5794,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.049Z",
+        "generatedAt": "2026-11-27T15:07:32.895Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -81174,7 +81174,7 @@
         },
         "confidence": 0.5794,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.070Z",
+        "generatedAt": "2026-11-27T15:07:32.919Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -81329,7 +81329,7 @@
         },
         "confidence": 0.4201,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.049Z",
+        "generatedAt": "2026-11-27T15:07:32.895Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -81434,7 +81434,7 @@
         },
         "confidence": 0.4201,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.919Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -81589,7 +81589,7 @@
         },
         "confidence": 0.4417,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.049Z",
+        "generatedAt": "2026-11-27T15:07:32.895Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -81694,7 +81694,7 @@
         },
         "confidence": 0.4417,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.919Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -81849,7 +81849,7 @@
         },
         "confidence": 0.9307,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.049Z",
+        "generatedAt": "2026-11-27T15:07:32.895Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -81954,7 +81954,7 @@
         },
         "confidence": 0.9307,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.920Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -82109,7 +82109,7 @@
         },
         "confidence": 0.4947,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.049Z",
+        "generatedAt": "2026-11-27T15:07:32.895Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -82214,7 +82214,7 @@
         },
         "confidence": 0.4947,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.920Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -82369,7 +82369,7 @@
         },
         "confidence": 0.4414,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.049Z",
+        "generatedAt": "2026-11-27T15:07:32.895Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -82474,7 +82474,7 @@
         },
         "confidence": 0.4414,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.920Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -82629,7 +82629,7 @@
         },
         "confidence": 0.4397,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.049Z",
+        "generatedAt": "2026-11-27T15:07:32.895Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -82734,7 +82734,7 @@
         },
         "confidence": 0.4397,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -82889,7 +82889,7 @@
         },
         "confidence": 0.5756,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.049Z",
+        "generatedAt": "2026-11-27T15:07:32.895Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -82994,7 +82994,7 @@
         },
         "confidence": 0.5756,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -83149,7 +83149,7 @@
         },
         "confidence": 0.7119,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.050Z",
+        "generatedAt": "2026-11-27T15:07:32.895Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -83254,7 +83254,7 @@
         },
         "confidence": 0.7119,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -83409,7 +83409,7 @@
         },
         "confidence": 0.4506,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.050Z",
+        "generatedAt": "2026-11-27T15:07:32.896Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -83514,7 +83514,7 @@
         },
         "confidence": 0.4506,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -83669,7 +83669,7 @@
         },
         "confidence": 0.7891,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.050Z",
+        "generatedAt": "2026-11-27T15:07:32.896Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -83774,7 +83774,7 @@
         },
         "confidence": 0.789,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -83929,7 +83929,7 @@
         },
         "confidence": 0.5547,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.050Z",
+        "generatedAt": "2026-11-27T15:07:32.896Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -84034,7 +84034,7 @@
         },
         "confidence": 0.5547,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -84189,7 +84189,7 @@
         },
         "confidence": 0.424,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.050Z",
+        "generatedAt": "2026-11-27T15:07:32.896Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -84294,7 +84294,7 @@
         },
         "confidence": 0.424,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -84449,7 +84449,7 @@
         },
         "confidence": 0.6906,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.050Z",
+        "generatedAt": "2026-11-27T15:07:32.896Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -84554,7 +84554,7 @@
         },
         "confidence": 0.6906,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -84709,7 +84709,7 @@
         },
         "confidence": 0.5469,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.050Z",
+        "generatedAt": "2026-11-27T15:07:32.896Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -84814,7 +84814,7 @@
         },
         "confidence": 0.5469,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -84969,7 +84969,7 @@
         },
         "confidence": 0.8855,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.051Z",
+        "generatedAt": "2026-11-27T15:07:32.896Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -85074,7 +85074,7 @@
         },
         "confidence": 0.8856,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.071Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -85229,7 +85229,7 @@
         },
         "confidence": 0.4461,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.051Z",
+        "generatedAt": "2026-11-27T15:07:32.896Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -85334,7 +85334,7 @@
         },
         "confidence": 0.4461,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -85489,7 +85489,7 @@
         },
         "confidence": 0.5499,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.051Z",
+        "generatedAt": "2026-11-27T15:07:32.897Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -85594,7 +85594,7 @@
         },
         "confidence": 0.5498,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -85749,7 +85749,7 @@
         },
         "confidence": 0.4849,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.051Z",
+        "generatedAt": "2026-11-27T15:07:32.897Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -85854,7 +85854,7 @@
         },
         "confidence": 0.4849,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -86009,7 +86009,7 @@
         },
         "confidence": 0.433,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.051Z",
+        "generatedAt": "2026-11-27T15:07:32.897Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -86114,7 +86114,7 @@
         },
         "confidence": 0.433,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -86269,7 +86269,7 @@
         },
         "confidence": 0.6956,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.051Z",
+        "generatedAt": "2026-11-27T15:07:32.897Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -86374,7 +86374,7 @@
         },
         "confidence": 0.6957,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -86529,7 +86529,7 @@
         },
         "confidence": 0.5332,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.051Z",
+        "generatedAt": "2026-11-27T15:07:32.897Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -86634,7 +86634,7 @@
         },
         "confidence": 0.5332,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.921Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -86789,7 +86789,7 @@
         },
         "confidence": 0.7174,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.051Z",
+        "generatedAt": "2026-11-27T15:07:32.897Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -86894,7 +86894,7 @@
         },
         "confidence": 0.7174,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -87049,7 +87049,7 @@
         },
         "confidence": 0.6308,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.051Z",
+        "generatedAt": "2026-11-27T15:07:32.899Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -87154,7 +87154,7 @@
         },
         "confidence": 0.6308,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -87309,7 +87309,7 @@
         },
         "confidence": 0.412,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.052Z",
+        "generatedAt": "2026-11-27T15:07:32.899Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -87414,7 +87414,7 @@
         },
         "confidence": 0.412,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -87569,7 +87569,7 @@
         },
         "confidence": 0.47,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.052Z",
+        "generatedAt": "2026-11-27T15:07:32.899Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -87674,7 +87674,7 @@
         },
         "confidence": 0.47,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -87829,7 +87829,7 @@
         },
         "confidence": 0.4414,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.052Z",
+        "generatedAt": "2026-11-27T15:07:32.899Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -87934,7 +87934,7 @@
         },
         "confidence": 0.4414,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -88089,7 +88089,7 @@
         },
         "confidence": 0.5201,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.052Z",
+        "generatedAt": "2026-11-27T15:07:32.899Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -88194,7 +88194,7 @@
         },
         "confidence": 0.5202,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -88349,7 +88349,7 @@
         },
         "confidence": 0.4983,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.052Z",
+        "generatedAt": "2026-11-27T15:07:32.900Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -88454,7 +88454,7 @@
         },
         "confidence": 0.4983,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -88609,7 +88609,7 @@
         },
         "confidence": 0.5666,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.052Z",
+        "generatedAt": "2026-11-27T15:07:32.900Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -88714,7 +88714,7 @@
         },
         "confidence": 0.5666,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -88869,7 +88869,7 @@
         },
         "confidence": 0.5724,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.052Z",
+        "generatedAt": "2026-11-27T15:07:32.900Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -88974,7 +88974,7 @@
         },
         "confidence": 0.5724,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -89129,7 +89129,7 @@
         },
         "confidence": 0.6816,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.052Z",
+        "generatedAt": "2026-11-27T15:07:32.900Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -89234,7 +89234,7 @@
         },
         "confidence": 0.6816,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.072Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -89389,7 +89389,7 @@
         },
         "confidence": 0.8255,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.052Z",
+        "generatedAt": "2026-11-27T15:07:32.900Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -89494,7 +89494,7 @@
         },
         "confidence": 0.8255,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -89649,7 +89649,7 @@
         },
         "confidence": 0.4317,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.053Z",
+        "generatedAt": "2026-11-27T15:07:32.900Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -89754,7 +89754,7 @@
         },
         "confidence": 0.4317,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -89909,7 +89909,7 @@
         },
         "confidence": 0.5626,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.053Z",
+        "generatedAt": "2026-11-27T15:07:32.900Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -90014,7 +90014,7 @@
         },
         "confidence": 0.5626,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -90169,7 +90169,7 @@
         },
         "confidence": 0.5055,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.053Z",
+        "generatedAt": "2026-11-27T15:07:32.900Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -90274,7 +90274,7 @@
         },
         "confidence": 0.5055,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -90429,7 +90429,7 @@
         },
         "confidence": 0.3936,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.053Z",
+        "generatedAt": "2026-11-27T15:07:32.900Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -90534,7 +90534,7 @@
         },
         "confidence": 0.3936,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -90689,7 +90689,7 @@
         },
         "confidence": 0.8181,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.053Z",
+        "generatedAt": "2026-11-27T15:07:32.901Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -90794,7 +90794,7 @@
         },
         "confidence": 0.818,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -90949,7 +90949,7 @@
         },
         "confidence": 0.546,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.053Z",
+        "generatedAt": "2026-11-27T15:07:32.901Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -91054,7 +91054,7 @@
         },
         "confidence": 0.546,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -91209,7 +91209,7 @@
         },
         "confidence": 0.512,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.053Z",
+        "generatedAt": "2026-11-27T15:07:32.901Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -91314,7 +91314,7 @@
         },
         "confidence": 0.512,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.922Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -91469,7 +91469,7 @@
         },
         "confidence": 0.5191,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.053Z",
+        "generatedAt": "2026-11-27T15:07:32.901Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -91574,7 +91574,7 @@
         },
         "confidence": 0.5191,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -91729,7 +91729,7 @@
         },
         "confidence": 0.5889,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.053Z",
+        "generatedAt": "2026-11-27T15:07:32.901Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -91834,7 +91834,7 @@
         },
         "confidence": 0.5889,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -91989,7 +91989,7 @@
         },
         "confidence": 0.5222,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.053Z",
+        "generatedAt": "2026-11-27T15:07:32.901Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -92094,7 +92094,7 @@
         },
         "confidence": 0.5222,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -92249,7 +92249,7 @@
         },
         "confidence": 0.4358,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.054Z",
+        "generatedAt": "2026-11-27T15:07:32.901Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -92354,7 +92354,7 @@
         },
         "confidence": 0.4358,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -92509,7 +92509,7 @@
         },
         "confidence": 0.4953,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.054Z",
+        "generatedAt": "2026-11-27T15:07:32.901Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -92614,7 +92614,7 @@
         },
         "confidence": 0.4953,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -92769,7 +92769,7 @@
         },
         "confidence": 0.5551,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.054Z",
+        "generatedAt": "2026-11-27T15:07:32.901Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -92874,7 +92874,7 @@
         },
         "confidence": 0.5551,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -93029,7 +93029,7 @@
         },
         "confidence": 0.7905,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.054Z",
+        "generatedAt": "2026-11-27T15:07:32.901Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -93134,7 +93134,7 @@
         },
         "confidence": 0.7904,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.073Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -93289,7 +93289,7 @@
         },
         "confidence": 0.8507,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.054Z",
+        "generatedAt": "2026-11-27T15:07:32.902Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -93394,7 +93394,7 @@
         },
         "confidence": 0.8506,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -93549,7 +93549,7 @@
         },
         "confidence": 0.8186,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.054Z",
+        "generatedAt": "2026-11-27T15:07:32.902Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -93654,7 +93654,7 @@
         },
         "confidence": 0.8186,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -93809,7 +93809,7 @@
         },
         "confidence": 0.4413,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.054Z",
+        "generatedAt": "2026-11-27T15:07:32.902Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -93914,7 +93914,7 @@
         },
         "confidence": 0.4413,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -94069,7 +94069,7 @@
         },
         "confidence": 0.4751,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.054Z",
+        "generatedAt": "2026-11-27T15:07:32.902Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -94174,7 +94174,7 @@
         },
         "confidence": 0.4751,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -94329,7 +94329,7 @@
         },
         "confidence": 0.8961,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.902Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -94434,7 +94434,7 @@
         },
         "confidence": 0.8961,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -94589,7 +94589,7 @@
         },
         "confidence": 0.4686,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.902Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -94694,7 +94694,7 @@
         },
         "confidence": 0.4686,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -94849,7 +94849,7 @@
         },
         "confidence": 0.4176,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.902Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -94954,7 +94954,7 @@
         },
         "confidence": 0.4176,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -95109,7 +95109,7 @@
         },
         "confidence": 0.6324,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.902Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -95214,7 +95214,7 @@
         },
         "confidence": 0.6324,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -95369,7 +95369,7 @@
         },
         "confidence": 0.6958,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.902Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -95474,7 +95474,7 @@
         },
         "confidence": 0.6958,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -95629,7 +95629,7 @@
         },
         "confidence": 0.3936,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.902Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -95734,7 +95734,7 @@
         },
         "confidence": 0.3936,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -95889,7 +95889,7 @@
         },
         "confidence": 0.4854,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.902Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -95994,7 +95994,7 @@
         },
         "confidence": 0.4854,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.923Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -96149,7 +96149,7 @@
         },
         "confidence": 0.4002,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.902Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -96254,7 +96254,7 @@
         },
         "confidence": 0.4002,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -96409,7 +96409,7 @@
         },
         "confidence": 0.4716,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.903Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -96514,7 +96514,7 @@
         },
         "confidence": 0.4716,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -96669,7 +96669,7 @@
         },
         "confidence": 0.5594,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.903Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -96774,7 +96774,7 @@
         },
         "confidence": 0.5594,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -96929,7 +96929,7 @@
         },
         "confidence": 0.6487,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.903Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -97034,7 +97034,7 @@
         },
         "confidence": 0.6486,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.074Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -97189,7 +97189,7 @@
         },
         "confidence": 0.4029,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.903Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -97294,7 +97294,7 @@
         },
         "confidence": 0.4029,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -97449,7 +97449,7 @@
         },
         "confidence": 0.649,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.903Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -97554,7 +97554,7 @@
         },
         "confidence": 0.649,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -97709,7 +97709,7 @@
         },
         "confidence": 0.5617,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.056Z",
+        "generatedAt": "2026-11-27T15:07:32.903Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -97814,7 +97814,7 @@
         },
         "confidence": 0.5617,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -97969,7 +97969,7 @@
         },
         "confidence": 0.6407,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.903Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -98074,7 +98074,7 @@
         },
         "confidence": 0.6407,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -98229,7 +98229,7 @@
         },
         "confidence": 0.7898,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.903Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -98334,7 +98334,7 @@
         },
         "confidence": 0.7898,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -98489,7 +98489,7 @@
         },
         "confidence": 0.4969,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.903Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -98594,7 +98594,7 @@
         },
         "confidence": 0.4969,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -98749,7 +98749,7 @@
         },
         "confidence": 0.5108,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.904Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -98854,7 +98854,7 @@
         },
         "confidence": 0.5108,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -99009,7 +99009,7 @@
         },
         "confidence": 0.7246,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.904Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -99114,7 +99114,7 @@
         },
         "confidence": 0.7247,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -99269,7 +99269,7 @@
         },
         "confidence": 0.5492,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.904Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -99374,7 +99374,7 @@
         },
         "confidence": 0.5492,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -99529,7 +99529,7 @@
         },
         "confidence": 0.9019,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.904Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -99634,7 +99634,7 @@
         },
         "confidence": 0.9019,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -99789,7 +99789,7 @@
         },
         "confidence": 0.3726,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.904Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -99894,7 +99894,7 @@
         },
         "confidence": 0.3726,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -100049,7 +100049,7 @@
         },
         "confidence": 0.5659,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.904Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -100154,7 +100154,7 @@
         },
         "confidence": 0.5659,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -100309,7 +100309,7 @@
         },
         "confidence": 0.6746,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.904Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -100414,7 +100414,7 @@
         },
         "confidence": 0.6746,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.924Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -100569,7 +100569,7 @@
         },
         "confidence": 0.5304,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.905Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -100674,7 +100674,7 @@
         },
         "confidence": 0.5305,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.075Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -100829,7 +100829,7 @@
         },
         "confidence": 0.4781,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.905Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -100934,7 +100934,7 @@
         },
         "confidence": 0.4781,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.076Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -101089,7 +101089,7 @@
         },
         "confidence": 0.6017,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.905Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -101194,7 +101194,7 @@
         },
         "confidence": 0.6017,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.077Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -101349,7 +101349,7 @@
         },
         "confidence": 0.5706,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.905Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -101454,7 +101454,7 @@
         },
         "confidence": 0.5705,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.077Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -101609,7 +101609,7 @@
         },
         "confidence": 0.391,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.905Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -101714,7 +101714,7 @@
         },
         "confidence": 0.391,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.077Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -101869,7 +101869,7 @@
         },
         "confidence": 0.807,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.057Z",
+        "generatedAt": "2026-11-27T15:07:32.905Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -101974,7 +101974,7 @@
         },
         "confidence": 0.807,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.077Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -102129,7 +102129,7 @@
         },
         "confidence": 0.4628,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.905Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -102234,7 +102234,7 @@
         },
         "confidence": 0.4628,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.077Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -102389,7 +102389,7 @@
         },
         "confidence": 0.6264,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.905Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -102494,7 +102494,7 @@
         },
         "confidence": 0.6263,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.077Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -102649,7 +102649,7 @@
         },
         "confidence": 0.6701,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.906Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -102754,7 +102754,7 @@
         },
         "confidence": 0.67,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.077Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -102909,7 +102909,7 @@
         },
         "confidence": 0.621,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.906Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -103014,7 +103014,7 @@
         },
         "confidence": 0.621,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.077Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -103169,7 +103169,7 @@
         },
         "confidence": 0.3695,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.906Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -103274,7 +103274,7 @@
         },
         "confidence": 0.3695,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.077Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -103429,7 +103429,7 @@
         },
         "confidence": 0.4292,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.906Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -103534,7 +103534,7 @@
         },
         "confidence": 0.4292,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.077Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -103689,7 +103689,7 @@
         },
         "confidence": 0.422,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.906Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -103794,7 +103794,7 @@
         },
         "confidence": 0.422,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.077Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -103949,7 +103949,7 @@
         },
         "confidence": 0.4845,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.906Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -104054,7 +104054,7 @@
         },
         "confidence": 0.4845,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.077Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -104209,7 +104209,7 @@
         },
         "confidence": 0.6456,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.906Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -104314,7 +104314,7 @@
         },
         "confidence": 0.6456,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.077Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -104469,7 +104469,7 @@
         },
         "confidence": 0.5774,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.906Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -104574,7 +104574,7 @@
         },
         "confidence": 0.5774,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -104729,7 +104729,7 @@
         },
         "confidence": 0.3699,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.906Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -104834,7 +104834,7 @@
         },
         "confidence": 0.3699,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.925Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -104989,7 +104989,7 @@
         },
         "confidence": 0.7887,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.906Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -105094,7 +105094,7 @@
         },
         "confidence": 0.7887,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -105249,7 +105249,7 @@
         },
         "confidence": 0.5846,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.906Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -105354,7 +105354,7 @@
         },
         "confidence": 0.5846,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -105509,7 +105509,7 @@
         },
         "confidence": 0.6637,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.058Z",
+        "generatedAt": "2026-11-27T15:07:32.907Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -105614,7 +105614,7 @@
         },
         "confidence": 0.6637,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -105769,7 +105769,7 @@
         },
         "confidence": 0.7069,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.907Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -105874,7 +105874,7 @@
         },
         "confidence": 0.707,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -106029,7 +106029,7 @@
         },
         "confidence": 0.6219,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.907Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -106134,7 +106134,7 @@
         },
         "confidence": 0.6219,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -106289,7 +106289,7 @@
         },
         "confidence": 0.5322,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.907Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -106394,7 +106394,7 @@
         },
         "confidence": 0.5322,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -106549,7 +106549,7 @@
         },
         "confidence": 0.7103,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.907Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -106654,7 +106654,7 @@
         },
         "confidence": 0.7103,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -106809,7 +106809,7 @@
         },
         "confidence": 0.7661,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.907Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -106914,7 +106914,7 @@
         },
         "confidence": 0.7662,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -107069,7 +107069,7 @@
         },
         "confidence": 0.5605,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.907Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -107174,7 +107174,7 @@
         },
         "confidence": 0.5605,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -107329,7 +107329,7 @@
         },
         "confidence": 0.7239,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.907Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -107434,7 +107434,7 @@
         },
         "confidence": 0.7239,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -107589,7 +107589,7 @@
         },
         "confidence": 0.6783,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.907Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -107694,7 +107694,7 @@
         },
         "confidence": 0.6783,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -107849,7 +107849,7 @@
         },
         "confidence": 0.9042,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.907Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -107954,7 +107954,7 @@
         },
         "confidence": 0.9041,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -108109,7 +108109,7 @@
         },
         "confidence": 0.4435,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.907Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -108214,7 +108214,7 @@
         },
         "confidence": 0.4435,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -108369,7 +108369,7 @@
         },
         "confidence": 0.4887,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.907Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -108474,7 +108474,7 @@
         },
         "confidence": 0.4887,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -108629,7 +108629,7 @@
         },
         "confidence": 0.8295,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.907Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -108734,7 +108734,7 @@
         },
         "confidence": 0.8295,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -108889,7 +108889,7 @@
         },
         "confidence": 0.4986,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.908Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -108994,7 +108994,7 @@
         },
         "confidence": 0.4986,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.078Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -109149,7 +109149,7 @@
         },
         "confidence": 0.4099,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.908Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -109254,7 +109254,7 @@
         },
         "confidence": 0.4099,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.926Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -109409,7 +109409,7 @@
         },
         "confidence": 0.5937,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.059Z",
+        "generatedAt": "2026-11-27T15:07:32.908Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -109514,7 +109514,7 @@
         },
         "confidence": 0.5937,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -109669,7 +109669,7 @@
         },
         "confidence": 0.6697,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.060Z",
+        "generatedAt": "2026-11-27T15:07:32.908Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -109774,7 +109774,7 @@
         },
         "confidence": 0.6696,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -109929,7 +109929,7 @@
         },
         "confidence": 0.4633,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.060Z",
+        "generatedAt": "2026-11-27T15:07:32.908Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -110034,7 +110034,7 @@
         },
         "confidence": 0.4633,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -110189,7 +110189,7 @@
         },
         "confidence": 0.5462,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.060Z",
+        "generatedAt": "2026-11-27T15:07:32.908Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -110294,7 +110294,7 @@
         },
         "confidence": 0.5461,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -110449,7 +110449,7 @@
         },
         "confidence": 0.5397,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.060Z",
+        "generatedAt": "2026-11-27T15:07:32.908Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -110554,7 +110554,7 @@
         },
         "confidence": 0.5397,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -110709,7 +110709,7 @@
         },
         "confidence": 0.7108,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.060Z",
+        "generatedAt": "2026-11-27T15:07:32.908Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -110814,7 +110814,7 @@
         },
         "confidence": 0.7108,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -110969,7 +110969,7 @@
         },
         "confidence": 0.5587,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.060Z",
+        "generatedAt": "2026-11-27T15:07:32.908Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -111074,7 +111074,7 @@
         },
         "confidence": 0.5587,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -111229,7 +111229,7 @@
         },
         "confidence": 0.44,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.060Z",
+        "generatedAt": "2026-11-27T15:07:32.908Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -111334,7 +111334,7 @@
         },
         "confidence": 0.44,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -111489,7 +111489,7 @@
         },
         "confidence": 0.6017,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.060Z",
+        "generatedAt": "2026-11-27T15:07:32.908Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -111594,7 +111594,7 @@
         },
         "confidence": 0.6017,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -111749,7 +111749,7 @@
         },
         "confidence": 0.8931,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.060Z",
+        "generatedAt": "2026-11-27T15:07:32.908Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -111854,7 +111854,7 @@
         },
         "confidence": 0.8931,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -112009,7 +112009,7 @@
         },
         "confidence": 0.5183,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.060Z",
+        "generatedAt": "2026-11-27T15:07:32.908Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -112114,7 +112114,7 @@
         },
         "confidence": 0.5184,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -112269,7 +112269,7 @@
         },
         "confidence": 0.6123,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.060Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -112374,7 +112374,7 @@
         },
         "confidence": 0.6123,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -112529,7 +112529,7 @@
         },
         "confidence": 0.8058,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.060Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -112634,7 +112634,7 @@
         },
         "confidence": 0.8058,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -112789,7 +112789,7 @@
         },
         "confidence": 0.5652,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -112894,7 +112894,7 @@
         },
         "confidence": 0.5653,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -113049,7 +113049,7 @@
         },
         "confidence": 0.6483,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -113154,7 +113154,7 @@
         },
         "confidence": 0.6483,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -113309,7 +113309,7 @@
         },
         "confidence": 0.5138,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -113414,7 +113414,7 @@
         },
         "confidence": 0.5139,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.079Z",
+        "generatedAt": "2026-11-27T15:07:32.927Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -113569,7 +113569,7 @@
         },
         "confidence": 0.4002,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -113674,7 +113674,7 @@
         },
         "confidence": 0.4002,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -113829,7 +113829,7 @@
         },
         "confidence": 0.5291,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -113934,7 +113934,7 @@
         },
         "confidence": 0.5291,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -114089,7 +114089,7 @@
         },
         "confidence": 0.4455,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -114194,7 +114194,7 @@
         },
         "confidence": 0.4455,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -114349,7 +114349,7 @@
         },
         "confidence": 0.3729,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -114454,7 +114454,7 @@
         },
         "confidence": 0.3729,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -114609,7 +114609,7 @@
         },
         "confidence": 0.5068,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -114714,7 +114714,7 @@
         },
         "confidence": 0.5068,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -114869,7 +114869,7 @@
         },
         "confidence": 0.4804,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -114974,7 +114974,7 @@
         },
         "confidence": 0.4804,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -115129,7 +115129,7 @@
         },
         "confidence": 0.6894,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -115234,7 +115234,7 @@
         },
         "confidence": 0.6894,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -115389,7 +115389,7 @@
         },
         "confidence": 0.6754,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -115494,7 +115494,7 @@
         },
         "confidence": 0.6754,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -115649,7 +115649,7 @@
         },
         "confidence": 0.6157,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.909Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -115754,7 +115754,7 @@
         },
         "confidence": 0.6156,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -115909,7 +115909,7 @@
         },
         "confidence": 0.5331,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.910Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -116014,7 +116014,7 @@
         },
         "confidence": 0.5331,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -116169,7 +116169,7 @@
         },
         "confidence": 0.7057,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.061Z",
+        "generatedAt": "2026-11-27T15:07:32.910Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -116274,7 +116274,7 @@
         },
         "confidence": 0.7057,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -116429,7 +116429,7 @@
         },
         "confidence": 0.5832,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.062Z",
+        "generatedAt": "2026-11-27T15:07:32.910Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -116534,7 +116534,7 @@
         },
         "confidence": 0.5832,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -116689,7 +116689,7 @@
         },
         "confidence": 0.3958,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.062Z",
+        "generatedAt": "2026-11-27T15:07:32.910Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -116794,7 +116794,7 @@
         },
         "confidence": 0.3958,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -116949,7 +116949,7 @@
         },
         "confidence": 0.658,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.062Z",
+        "generatedAt": "2026-11-27T15:07:32.910Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -117054,7 +117054,7 @@
         },
         "confidence": 0.6579,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -117209,7 +117209,7 @@
         },
         "confidence": 0.6713,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.062Z",
+        "generatedAt": "2026-11-27T15:07:32.910Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -117314,7 +117314,7 @@
         },
         "confidence": 0.6712,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.928Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -117469,7 +117469,7 @@
         },
         "confidence": 0.6886,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.062Z",
+        "generatedAt": "2026-11-27T15:07:32.910Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -117574,7 +117574,7 @@
         },
         "confidence": 0.6887,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.080Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -117729,7 +117729,7 @@
         },
         "confidence": 0.6072,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.062Z",
+        "generatedAt": "2026-11-27T15:07:32.910Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -117834,7 +117834,7 @@
         },
         "confidence": 0.6073,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -117989,7 +117989,7 @@
         },
         "confidence": 0.4745,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.062Z",
+        "generatedAt": "2026-11-27T15:07:32.910Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -118094,7 +118094,7 @@
         },
         "confidence": 0.4745,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -118249,7 +118249,7 @@
         },
         "confidence": 0.4647,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.062Z",
+        "generatedAt": "2026-11-27T15:07:32.910Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -118354,7 +118354,7 @@
         },
         "confidence": 0.4647,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -118509,7 +118509,7 @@
         },
         "confidence": 0.464,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.062Z",
+        "generatedAt": "2026-11-27T15:07:32.910Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -118614,7 +118614,7 @@
         },
         "confidence": 0.464,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -118769,7 +118769,7 @@
         },
         "confidence": 0.7114,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.062Z",
+        "generatedAt": "2026-11-27T15:07:32.910Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -118874,7 +118874,7 @@
         },
         "confidence": 0.7114,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -119029,7 +119029,7 @@
         },
         "confidence": 0.4499,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.062Z",
+        "generatedAt": "2026-11-27T15:07:32.910Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -119134,7 +119134,7 @@
         },
         "confidence": 0.4499,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -119289,7 +119289,7 @@
         },
         "confidence": 0.675,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.062Z",
+        "generatedAt": "2026-11-27T15:07:32.911Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -119394,7 +119394,7 @@
         },
         "confidence": 0.675,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -119549,7 +119549,7 @@
         },
         "confidence": 0.7033,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.062Z",
+        "generatedAt": "2026-11-27T15:07:32.911Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -119654,7 +119654,7 @@
         },
         "confidence": 0.7033,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -119809,7 +119809,7 @@
         },
         "confidence": 0.4797,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.911Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -119914,7 +119914,7 @@
         },
         "confidence": 0.4797,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -120069,7 +120069,7 @@
         },
         "confidence": 0.4203,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.911Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -120174,7 +120174,7 @@
         },
         "confidence": 0.4203,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -120329,7 +120329,7 @@
         },
         "confidence": 0.6404,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.911Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -120434,7 +120434,7 @@
         },
         "confidence": 0.6404,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -120589,7 +120589,7 @@
         },
         "confidence": 0.6456,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.911Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -120694,7 +120694,7 @@
         },
         "confidence": 0.6457,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -120849,7 +120849,7 @@
         },
         "confidence": 0.4041,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.911Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -120954,7 +120954,7 @@
         },
         "confidence": 0.4041,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -121109,7 +121109,7 @@
         },
         "confidence": 0.4531,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.911Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -121214,7 +121214,7 @@
         },
         "confidence": 0.4531,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -121369,7 +121369,7 @@
         },
         "confidence": 0.5837,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.911Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -121474,7 +121474,7 @@
         },
         "confidence": 0.5837,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.929Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -121629,7 +121629,7 @@
         },
         "confidence": 0.7906,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.911Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -121734,7 +121734,7 @@
         },
         "confidence": 0.7906,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -121889,7 +121889,7 @@
         },
         "confidence": 0.7269,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.911Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -121994,7 +121994,7 @@
         },
         "confidence": 0.7269,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.081Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -122149,7 +122149,7 @@
         },
         "confidence": 0.5574,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.911Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -122254,7 +122254,7 @@
         },
         "confidence": 0.5574,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -122409,7 +122409,7 @@
         },
         "confidence": 0.6174,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.911Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -122514,7 +122514,7 @@
         },
         "confidence": 0.6174,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -122669,7 +122669,7 @@
         },
         "confidence": 0.4127,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.912Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -122774,7 +122774,7 @@
         },
         "confidence": 0.4127,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -122929,7 +122929,7 @@
         },
         "confidence": 0.7435,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.912Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -123034,7 +123034,7 @@
         },
         "confidence": 0.7435,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -123189,7 +123189,7 @@
         },
         "confidence": 0.3959,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.063Z",
+        "generatedAt": "2026-11-27T15:07:32.912Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -123294,7 +123294,7 @@
         },
         "confidence": 0.3959,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -123449,7 +123449,7 @@
         },
         "confidence": 0.5662,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.912Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -123554,7 +123554,7 @@
         },
         "confidence": 0.5662,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -123709,7 +123709,7 @@
         },
         "confidence": 0.5598,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.912Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -123814,7 +123814,7 @@
         },
         "confidence": 0.5598,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -123969,7 +123969,7 @@
         },
         "confidence": 0.6164,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.912Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -124074,7 +124074,7 @@
         },
         "confidence": 0.6164,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -124229,7 +124229,7 @@
         },
         "confidence": 0.4299,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.912Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -124334,7 +124334,7 @@
         },
         "confidence": 0.4299,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -124489,7 +124489,7 @@
         },
         "confidence": 0.4375,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.912Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -124594,7 +124594,7 @@
         },
         "confidence": 0.4375,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -124749,7 +124749,7 @@
         },
         "confidence": 0.4362,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.912Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -124854,7 +124854,7 @@
         },
         "confidence": 0.4362,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -125009,7 +125009,7 @@
         },
         "confidence": 0.3948,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.912Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -125114,7 +125114,7 @@
         },
         "confidence": 0.3948,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -125269,7 +125269,7 @@
         },
         "confidence": 0.5249,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.912Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -125374,7 +125374,7 @@
         },
         "confidence": 0.525,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.930Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -125529,7 +125529,7 @@
         },
         "confidence": 0.4408,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.912Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -125634,7 +125634,7 @@
         },
         "confidence": 0.4408,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -125789,7 +125789,7 @@
         },
         "confidence": 0.7548,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.913Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -125894,7 +125894,7 @@
         },
         "confidence": 0.7549,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -126049,7 +126049,7 @@
         },
         "confidence": 0.7722,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.913Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -126154,7 +126154,7 @@
         },
         "confidence": 0.7722,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.082Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -126309,7 +126309,7 @@
         },
         "confidence": 0.4723,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.913Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -126414,7 +126414,7 @@
         },
         "confidence": 0.4723,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -126569,7 +126569,7 @@
         },
         "confidence": 0.5725,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.913Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -126674,7 +126674,7 @@
         },
         "confidence": 0.5725,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -126829,7 +126829,7 @@
         },
         "confidence": 0.785,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.064Z",
+        "generatedAt": "2026-11-27T15:07:32.913Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -126934,7 +126934,7 @@
         },
         "confidence": 0.7849,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -127089,7 +127089,7 @@
         },
         "confidence": 0.363,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.065Z",
+        "generatedAt": "2026-11-27T15:07:32.913Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -127194,7 +127194,7 @@
         },
         "confidence": 0.363,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -127349,7 +127349,7 @@
         },
         "confidence": 0.5143,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.065Z",
+        "generatedAt": "2026-11-27T15:07:32.913Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -127454,7 +127454,7 @@
         },
         "confidence": 0.5144,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -127609,7 +127609,7 @@
         },
         "confidence": 0.3726,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.065Z",
+        "generatedAt": "2026-11-27T15:07:32.913Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -127714,7 +127714,7 @@
         },
         "confidence": 0.3726,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -127869,7 +127869,7 @@
         },
         "confidence": 0.3999,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.065Z",
+        "generatedAt": "2026-11-27T15:07:32.913Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -127974,7 +127974,7 @@
         },
         "confidence": 0.3999,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -128129,7 +128129,7 @@
         },
         "confidence": 0.8397,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.065Z",
+        "generatedAt": "2026-11-27T15:07:32.913Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -128234,7 +128234,7 @@
         },
         "confidence": 0.8397,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -128389,7 +128389,7 @@
         },
         "confidence": 0.3936,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.065Z",
+        "generatedAt": "2026-11-27T15:07:32.913Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -128494,7 +128494,7 @@
         },
         "confidence": 0.3936,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -128649,7 +128649,7 @@
         },
         "confidence": 0.7025,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.065Z",
+        "generatedAt": "2026-11-27T15:07:32.913Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -128754,7 +128754,7 @@
         },
         "confidence": 0.7025,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -128909,7 +128909,7 @@
         },
         "confidence": 0.5305,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.065Z",
+        "generatedAt": "2026-11-27T15:07:32.913Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -129014,7 +129014,7 @@
         },
         "confidence": 0.5304,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -129169,7 +129169,7 @@
         },
         "confidence": 0.6867,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.065Z",
+        "generatedAt": "2026-11-27T15:07:32.914Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -129274,7 +129274,7 @@
         },
         "confidence": 0.6867,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.931Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -129429,7 +129429,7 @@
         },
         "confidence": 0.7896,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.065Z",
+        "generatedAt": "2026-11-27T15:07:32.914Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -129534,7 +129534,7 @@
         },
         "confidence": 0.7895,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -129689,7 +129689,7 @@
         },
         "confidence": 0.749,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.065Z",
+        "generatedAt": "2026-11-27T15:07:32.914Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -129794,7 +129794,7 @@
         },
         "confidence": 0.749,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -129949,7 +129949,7 @@
         },
         "confidence": 0.62,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.065Z",
+        "generatedAt": "2026-11-27T15:07:32.914Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -130054,7 +130054,7 @@
         },
         "confidence": 0.62,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -130209,7 +130209,7 @@
         },
         "confidence": 0.5374,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.065Z",
+        "generatedAt": "2026-11-27T15:07:32.914Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -130314,7 +130314,7 @@
         },
         "confidence": 0.5374,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.083Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -130469,7 +130469,7 @@
         },
         "confidence": 0.4631,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.914Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -130574,7 +130574,7 @@
         },
         "confidence": 0.4631,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -130729,7 +130729,7 @@
         },
         "confidence": 0.6299,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.914Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -130834,7 +130834,7 @@
         },
         "confidence": 0.6299,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -130989,7 +130989,7 @@
         },
         "confidence": 0.6002,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.914Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -131094,7 +131094,7 @@
         },
         "confidence": 0.6003,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -131249,7 +131249,7 @@
         },
         "confidence": 0.4898,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.914Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -131354,7 +131354,7 @@
         },
         "confidence": 0.4898,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -131509,7 +131509,7 @@
         },
         "confidence": 0.4161,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.914Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -131614,7 +131614,7 @@
         },
         "confidence": 0.4161,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -131769,7 +131769,7 @@
         },
         "confidence": 0.5161,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.914Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -131874,7 +131874,7 @@
         },
         "confidence": 0.5161,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -132029,7 +132029,7 @@
         },
         "confidence": 0.4472,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.914Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -132134,7 +132134,7 @@
         },
         "confidence": 0.4472,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -132289,7 +132289,7 @@
         },
         "confidence": 0.5248,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.914Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -132394,7 +132394,7 @@
         },
         "confidence": 0.5248,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -132549,7 +132549,7 @@
         },
         "confidence": 0.696,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.915Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -132654,7 +132654,7 @@
         },
         "confidence": 0.696,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -132809,7 +132809,7 @@
         },
         "confidence": 0.4203,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.915Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -132914,7 +132914,7 @@
         },
         "confidence": 0.4203,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.932Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -133069,7 +133069,7 @@
         },
         "confidence": 0.7534,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.915Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -133174,7 +133174,7 @@
         },
         "confidence": 0.7534,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -133329,7 +133329,7 @@
         },
         "confidence": 0.6006,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.915Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -133434,7 +133434,7 @@
         },
         "confidence": 0.6006,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -133589,7 +133589,7 @@
         },
         "confidence": 0.4292,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.915Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -133694,7 +133694,7 @@
         },
         "confidence": 0.4292,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -133849,7 +133849,7 @@
         },
         "confidence": 0.5152,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.066Z",
+        "generatedAt": "2026-11-27T15:07:32.915Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -133954,7 +133954,7 @@
         },
         "confidence": 0.5152,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -134109,7 +134109,7 @@
         },
         "confidence": 0.4178,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.067Z",
+        "generatedAt": "2026-11-27T15:07:32.915Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -134214,7 +134214,7 @@
         },
         "confidence": 0.4178,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -134369,7 +134369,7 @@
         },
         "confidence": 0.4555,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.067Z",
+        "generatedAt": "2026-11-27T15:07:32.915Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -134474,7 +134474,7 @@
         },
         "confidence": 0.4555,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.084Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -134629,7 +134629,7 @@
         },
         "confidence": 0.4837,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.067Z",
+        "generatedAt": "2026-11-27T15:07:32.915Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -134734,7 +134734,7 @@
         },
         "confidence": 0.4837,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -134889,7 +134889,7 @@
         },
         "confidence": 0.4833,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.067Z",
+        "generatedAt": "2026-11-27T15:07:32.915Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -134994,7 +134994,7 @@
         },
         "confidence": 0.4833,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -135149,7 +135149,7 @@
         },
         "confidence": 0.7685,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.067Z",
+        "generatedAt": "2026-11-27T15:07:32.915Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -135254,7 +135254,7 @@
         },
         "confidence": 0.7684,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -135409,7 +135409,7 @@
         },
         "confidence": 0.6525,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.067Z",
+        "generatedAt": "2026-11-27T15:07:32.915Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -135514,7 +135514,7 @@
         },
         "confidence": 0.6525,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -135669,7 +135669,7 @@
         },
         "confidence": 0.4735,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.067Z",
+        "generatedAt": "2026-11-27T15:07:32.916Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -135774,7 +135774,7 @@
         },
         "confidence": 0.4735,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -135929,7 +135929,7 @@
         },
         "confidence": 0.4335,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.067Z",
+        "generatedAt": "2026-11-27T15:07:32.916Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -136034,7 +136034,7 @@
         },
         "confidence": 0.4335,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -136189,7 +136189,7 @@
         },
         "confidence": 0.462,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.067Z",
+        "generatedAt": "2026-11-27T15:07:32.916Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -136294,7 +136294,7 @@
         },
         "confidence": 0.462,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -136449,7 +136449,7 @@
         },
         "confidence": 0.6517,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.067Z",
+        "generatedAt": "2026-11-27T15:07:32.916Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -136554,7 +136554,7 @@
         },
         "confidence": 0.6517,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.933Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -136709,7 +136709,7 @@
         },
         "confidence": 0.7823,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.067Z",
+        "generatedAt": "2026-11-27T15:07:32.916Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -136814,7 +136814,7 @@
         },
         "confidence": 0.7823,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -136969,7 +136969,7 @@
         },
         "confidence": 0.4494,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.067Z",
+        "generatedAt": "2026-11-27T15:07:32.916Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -137074,7 +137074,7 @@
         },
         "confidence": 0.4494,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -137229,7 +137229,7 @@
         },
         "confidence": 0.7002,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.067Z",
+        "generatedAt": "2026-11-27T15:07:32.916Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -137334,7 +137334,7 @@
         },
         "confidence": 0.7002,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -137489,7 +137489,7 @@
         },
         "confidence": 0.6666,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.068Z",
+        "generatedAt": "2026-11-27T15:07:32.916Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -137594,7 +137594,7 @@
         },
         "confidence": 0.6666,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -137749,7 +137749,7 @@
         },
         "confidence": 0.7415,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.068Z",
+        "generatedAt": "2026-11-27T15:07:32.916Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -137854,7 +137854,7 @@
         },
         "confidence": 0.7414,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -138009,7 +138009,7 @@
         },
         "confidence": 0.675,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.068Z",
+        "generatedAt": "2026-11-27T15:07:32.916Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -138114,7 +138114,7 @@
         },
         "confidence": 0.675,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.085Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -138269,7 +138269,7 @@
         },
         "confidence": 0.4832,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.068Z",
+        "generatedAt": "2026-11-27T15:07:32.916Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -138374,7 +138374,7 @@
         },
         "confidence": 0.4832,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -138529,7 +138529,7 @@
         },
         "confidence": 0.5846,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.068Z",
+        "generatedAt": "2026-11-27T15:07:32.916Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -138634,7 +138634,7 @@
         },
         "confidence": 0.5846,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -138789,7 +138789,7 @@
         },
         "confidence": 0.8794,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.068Z",
+        "generatedAt": "2026-11-27T15:07:32.917Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -138894,7 +138894,7 @@
         },
         "confidence": 0.8794,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -139049,7 +139049,7 @@
         },
         "confidence": 0.5642,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.068Z",
+        "generatedAt": "2026-11-27T15:07:32.917Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -139154,7 +139154,7 @@
         },
         "confidence": 0.5642,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -139309,7 +139309,7 @@
         },
         "confidence": 0.5214,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.068Z",
+        "generatedAt": "2026-11-27T15:07:32.917Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -139414,7 +139414,7 @@
         },
         "confidence": 0.5213,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -139569,7 +139569,7 @@
         },
         "confidence": 0.7234,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.068Z",
+        "generatedAt": "2026-11-27T15:07:32.917Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -139674,7 +139674,7 @@
         },
         "confidence": 0.7235,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -139829,7 +139829,7 @@
         },
         "confidence": 0.595,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.068Z",
+        "generatedAt": "2026-11-27T15:07:32.917Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -139934,7 +139934,7 @@
         },
         "confidence": 0.595,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -140089,7 +140089,7 @@
         },
         "confidence": 0.6861,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.068Z",
+        "generatedAt": "2026-11-27T15:07:32.917Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -140194,7 +140194,7 @@
         },
         "confidence": 0.6861,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -140349,7 +140349,7 @@
         },
         "confidence": 0.4009,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.068Z",
+        "generatedAt": "2026-11-27T15:07:32.917Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -140454,7 +140454,7 @@
         },
         "confidence": 0.4009,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.934Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -140609,7 +140609,7 @@
         },
         "confidence": 0.5762,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.068Z",
+        "generatedAt": "2026-11-27T15:07:32.917Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -140714,7 +140714,7 @@
         },
         "confidence": 0.5762,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.935Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -140869,7 +140869,7 @@
         },
         "confidence": 0.3488,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.069Z",
+        "generatedAt": "2026-11-27T15:07:32.917Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -140974,7 +140974,7 @@
         },
         "confidence": 0.3488,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.935Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -141129,7 +141129,7 @@
         },
         "confidence": 0.4502,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.069Z",
+        "generatedAt": "2026-11-27T15:07:32.917Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -141234,7 +141234,7 @@
         },
         "confidence": 0.4502,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.935Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -141389,7 +141389,7 @@
         },
         "confidence": 0.4132,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.069Z",
+        "generatedAt": "2026-11-27T15:07:32.917Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -141494,7 +141494,7 @@
         },
         "confidence": 0.4132,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.935Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -141649,7 +141649,7 @@
         },
         "confidence": 0.7871,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.069Z",
+        "generatedAt": "2026-11-27T15:07:32.917Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -141754,7 +141754,7 @@
         },
         "confidence": 0.7871,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.935Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -141909,7 +141909,7 @@
         },
         "confidence": 0.8704,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.069Z",
+        "generatedAt": "2026-11-27T15:07:32.918Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -142014,7 +142014,7 @@
         },
         "confidence": 0.8704,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.086Z",
+        "generatedAt": "2026-11-27T15:07:32.935Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -142169,7 +142169,7 @@
         },
         "confidence": 0.6794,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.069Z",
+        "generatedAt": "2026-11-27T15:07:32.918Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -142274,7 +142274,7 @@
         },
         "confidence": 0.6794,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.087Z",
+        "generatedAt": "2026-11-27T15:07:32.935Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -142429,7 +142429,7 @@
         },
         "confidence": 0.5168,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.069Z",
+        "generatedAt": "2026-11-27T15:07:32.918Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -142534,7 +142534,7 @@
         },
         "confidence": 0.5168,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.087Z",
+        "generatedAt": "2026-11-27T15:07:32.935Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -142689,7 +142689,7 @@
         },
         "confidence": 0.4383,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.069Z",
+        "generatedAt": "2026-11-27T15:07:32.918Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -142794,7 +142794,7 @@
         },
         "confidence": 0.4383,
         "difficulty": "difícil",
-        "generatedAt": "2026-11-26T15:19:37.087Z",
+        "generatedAt": "2026-11-27T15:07:32.935Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -142949,7 +142949,7 @@
         },
         "confidence": 0.5994,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.069Z",
+        "generatedAt": "2026-11-27T15:07:32.918Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -143054,7 +143054,7 @@
         },
         "confidence": 0.5994,
         "difficulty": "fácil",
-        "generatedAt": "2026-11-26T15:19:37.087Z",
+        "generatedAt": "2026-11-27T15:07:32.935Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -143209,7 +143209,7 @@
         },
         "confidence": 0.5183,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.069Z",
+        "generatedAt": "2026-11-27T15:07:32.918Z",
         "lockedAt": null,
         "model": {
           "version": "3.0-official",
@@ -143314,7 +143314,7 @@
         },
         "confidence": 0.5184,
         "difficulty": "media",
-        "generatedAt": "2026-11-26T15:19:37.087Z",
+        "generatedAt": "2026-11-27T15:07:32.935Z",
         "lockedAt": null,
         "model": {
           "version": "3.1-experimental",
@@ -144318,12 +144318,66 @@
   },
   "news": [
     {
+      "id": 50611810,
+      "headline": "Mourinho embarrasses his 'cousin' at Real Madrid press conference",
+      "description": "Jose Mourinho ended his Real Madrid press conference by embarrassing his 'cousin' in front of the gathered media.",
+      "published": "2026-11-27T14:58:51Z",
+      "link": "https://www.espn.com/video/clip/_/id/50611810/mourinho-embarrasses-cousin-real-madrid-press-conference",
+      "images": [
+        {
+          "name": "Mourinho embarrasses his 'cousin' at Real Madrid press conference",
+          "caption": "Jose Mourinho ended his Real Madrid press conference by embarrassing his 'cousin' in front of the gathered media.",
+          "alt": "",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1127/dm_261127_Mourinho_embarrasses_his_cousin_at_Real_Madrid_press_conference/dm_261127_Mourinho_embarrasses_his_cousin_at_Real_Madrid_press_conference.jpg"
+        }
+      ]
+    },
+    {
+      "id": 50610066,
+      "headline": "Transfer rumors, news:Transfer rumors, news: Nico Paz open to Man United; against Real Madrid return",
+      "description": "Manchester United see Como's Nico Paz as a possible replacement for Bruno Fernandes. For his part, Paz is at least open to it. Transfer Talk has the latest.",
+      "published": "2026-11-27T08:56:05Z",
+      "link": "https://www.espn.com/soccer/story/_/id/50610066/transfer-rumors-news-nico-paz-man-united-real-madrid-como",
+      "images": [
+        {
+          "dataSourceIdentifier": "7ff000ad7c966",
+          "id": 50610109,
+          "type": "header",
+          "name": "Nico Paz [1296x729]",
+          "credit": "sportinfoto/DeFodi Images/DeFodi via Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1127/r1751970_1296x729_16-9.jpg"
+        },
+        {
+          "type": "Media",
+          "name": "Hislop: Next games a 'barometer' in Man United relegation battle",
+          "caption": "Shaka Hislop and Steve Nicol question whether Manchester United are at risk of relegation from the Premier League.",
+          "height": 324,
+          "width": 576,
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1126/dm_261126_COM_SOC_Analysis_Hislop_Next_games_a_barometer_in_Man_United_relegation_battle_20261126_GLOBA/dm_261126_COM_SOC_Analysis_Hislop_Next_games_a_barometer_in_Man_United_relegation_battle_20261126_GLOBA.jpg"
+        }
+      ]
+    },
+    {
       "id": 50602698,
-      "headline": "Transfer rumors, news: Barcelona among clubs eyeing Man United's Ayden Heaven",
-      "description": "Barcelona are interested in a loan move for Manchester United defender Ayden Heaven. Transfer Talk has the latest.",
-      "published": "2026-11-26T15:05:13Z",
+      "headline": "Transfer rumors, news: Barça, Madrid jockey for position in Erling Haaland chase",
+      "description": "Barcelona and Real Madrid are positioning themselves for a move for Man City striker Erling Haaland. Transfer Talk has the latest.",
+      "published": "2026-11-26T18:35:42Z",
       "link": "https://www.espn.com/soccer/story/_/id/50602698/transfer-rumors-news-manchester-united-barcelona-heaven",
       "images": [
+        {
+          "dataSourceIdentifier": "c6b1315fb0569",
+          "id": 50201094,
+          "type": "header",
+          "name": "Erling Haaland [1296x729]",
+          "credit": "Kate McShane/Getty Images",
+          "height": 729,
+          "width": 1296,
+          "url": "https://a.espncdn.com/photo/2026/1017/r1731964_1296x729_16-9.jpg"
+        },
         {
           "dataSourceIdentifier": "459cd0230fdcd",
           "id": 50602765,
@@ -144336,11 +144390,11 @@
         },
         {
           "type": "Media",
-          "name": "Moreno: Disallowing Sporting's equaliser would have 'bailed out' Lammens",
-          "caption": "Ale Moreno criticises Manchester United goalkeeper Senne Lammens for not 'catching the ball' in the build-up to Sporting CP's equaliser in their 2-2 Champions League draw.",
+          "name": "Can Erling Haaland only score from crosses for Man City?",
+          "caption": "The ESPN FC crew react to Manchester City's 2-2 draw with Napoli in the UEFA Champions League.",
           "height": 324,
           "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1125/dm_261125_Moreno_Disallowing_Sportings_equaliser_would_have_bailed_out_Lammens/dm_261125_Moreno_Disallowing_Sportings_equaliser_would_have_bailed_out_Lammens.jpg"
+          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1124/dm_261124_COM_SOC_Analysis_Can_Erling_Haaland_only_score_from_crosses_for_Man_City_20261124_GLOBAL/dm_261124_COM_SOC_Analysis_Can_Erling_Haaland_only_score_from_crosses_for_Man_City_20261124_GLOBAL.jpg"
         }
       ]
     },
@@ -144728,52 +144782,6 @@
           "height": 324,
           "width": 576,
           "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1121/cadd68b593244ad0ba8f84afea9f2e281021/cadd68b593244ad0ba8f84afea9f2e281021.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50554950,
-      "headline": "Bellingham & Espí rescue Real Madrid after Mbappé's missed penalty",
-      "description": "Real Madrid overcome Pablo Durán's early strike and Kylian Mbappé's missed penalty to win 2-1 over Celta Vigo, thanks to goals from Jude Bellingham and Carlos Espí.",
-      "published": "2026-11-21T22:42:56Z",
-      "link": "https://www.espn.com/video/clip/_/id/50554950/bellingham-espi-rescue-real-madrid-mbappe-missed-penalty",
-      "images": [
-        {
-          "name": "Bellingham & Espí rescue Real Madrid after Mbappé's missed penalty",
-          "caption": "Real Madrid overcome Pablo Durán's early strike and Kylian Mbappé's missed penalty to win 2-1 over Celta Vigo, thanks to goals from Jude Bellingham and Carlos Espí.",
-          "alt": "",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1121/dm_261121_Bellingham_Espi_rescue_Real_Madrid_after_Mbappes_missed_penalty/dm_261121_Bellingham_Espi_rescue_Real_Madrid_after_Mbappes_missed_penalty.jpg"
-        }
-      ]
-    },
-    {
-      "id": 50515369,
-      "headline": "Bellingham, Espí rescue Madrid after Mbappé's missed penalty",
-      "description": "Real Madrid came from behind to defeat Celta Vigo 2-1 and draw level on points with Barcelona at the top of LaLiga.",
-      "published": "2026-11-21T22:23:49Z",
-      "link": "http://www.espn.com/soccer/report/_/gameId/401882798",
-      "images": [
-        {
-          "dataSourceIdentifier": "fb5e8d01b8941",
-          "id": 50554606,
-          "type": "header",
-          "name": "Espi Madrid celeb [1296x729]",
-          "caption": "Arda Guler of Real Madrid , Carlos Espi of Real Madrid , Dean Huijsen of Real Madrid celebrates 2-1 during the LaLiga EA Sports match between Real Madrid v Celta de Vigo at the Estadio Santiago Bernabeu on November 21, 2026 in Madrid, Spain",
-          "alt": "Arda Guler of Real Madrid , Carlos Espi of Real Madrid , Dean Huijsen of Real Madrid celebrates 2-1 during the LaLiga EA Sports match between Real Madrid v Celta de Vigo at the Estadio Santiago Bernabeu on November 21, 2026 in Madrid, Spain",
-          "credit": "Maria Gracia Jimenez/Soccrates/Getty Ima",
-          "height": 729,
-          "width": 1296,
-          "url": "https://a.espncdn.com/photo/2026/1121/r1749211_1296x729_16-9.jpg"
-        },
-        {
-          "type": "Media",
-          "name": "Bellingham & Espí rescue Real Madrid after Mbappé's missed penalty",
-          "caption": "Real Madrid overcome Pablo Durán's early strike and Kylian Mbappé's missed penalty to win 2-1 over Celta Vigo, thanks to goals from Jude Bellingham and Carlos Espí.",
-          "height": 324,
-          "width": 576,
-          "url": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1121/dm_261121_Bellingham_Espi_rescue_Real_Madrid_after_Mbappes_missed_penalty/dm_261121_Bellingham_Espi_rescue_Real_Madrid_after_Mbappes_missed_penalty.jpg"
         }
       ]
     }
@@ -145340,6 +145348,52 @@
       "away": {
         "id": 102,
         "name": "Villarreal",
+        "logo": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "401915519",
+      "date": "2026-11-26T17:45Z",
+      "timestamp": 1795715100,
+      "status": null,
+      "competition": "Europa League",
+      "competitionShort": "UEL",
+      "round": null,
+      "home": {
+        "id": 85,
+        "name": "Celta Vigo",
+        "logo": null
+      },
+      "away": {
+        "id": 349,
+        "name": "AFC Bournemouth",
+        "logo": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "401915504",
+      "date": "2026-11-26T20:00Z",
+      "timestamp": 1795723200,
+      "status": null,
+      "competition": "Europa League",
+      "competitionShort": "UEL",
+      "round": null,
+      "home": {
+        "id": 384,
+        "name": "Crystal Palace",
+        "logo": null
+      },
+      "away": {
+        "id": 89,
+        "name": "Real Sociedad",
         "logo": null
       },
       "score": {
@@ -154183,7 +154237,7 @@
     "experimentalAccuracy": 50,
     "officialTotal": 44,
     "experimentalTotal": 10,
-    "updatedAt": "2026-11-26T15:19:37.087Z",
+    "updatedAt": "2026-11-27T15:07:32.936Z",
     "note": "V3.1 permanece experimental hasta disponer de una muestra suficiente para comparar con V3.0."
   },
   "predictionBalanceV31": {
